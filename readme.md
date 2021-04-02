@@ -14,16 +14,21 @@
 
 <br>
 
-1. [Official SvelteKit docs](https://kit.svelte.dev)
+1. [Official SvelteKit docs](https://kit.svelte.dev) [[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)]
 2. [NYTimes Tracking the Coronavirus](https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html)
-     - uses: [Pancakes](https://github.com/Rich-Harris/pancake)
-3. [SK Incognito](https://sk-incognito.vercel.app) (the unofficial SvelteKit docs)
-     - uses: [MDsveX](https://github.com/pngwn/MDsveX), [Tailwind CSS](https://tailwindcss.com)
-4. [Geometric Bayes](https://svelte-geometric-bayes.netlify.app)
-     - uses: [MDsveX](https://github.com/pngwn/MDsveX)
+     - uses: [Pancakes][]
+3. [SK Incognito](https://sk-incognito.vercel.app) (the unofficial SvelteKit docs) [[code](https://github.com/GrygrFlzr/kit-docs)]
+     - uses: [MDsveX][], [Tailwind CSS][]
+4. [Geometric Bayes](https://svelte-geometric-bayes.netlify.app) [[code](https://github.com/janosh/svelte-geometric-bayes)]
+     - uses: [MDsveX][]
+5. [TikZ](https://svelte-tikz.netlify.app) [[code](https://github.com/janosh/tikz)]
 
 ## 🎉 Open to Suggestions
 
 See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md)
 
-If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) or [start a discussion](https://github.com/janosh/awesome-svelte-kit/discussions/new). This repo is meant to be a community effort.
+If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) or [start a discussion](https://github.com/janosh/awesome-svelte-kit/discussions). This repo is meant to be a community effort.
+
+[MDsveX]: https://github.com/pngwn/MDsveX
+[Tailwind CSS]: https://tailwindcss.com
+[Pancakes]: https://github.com/Rich-Harris/pancake
