@@ -23,6 +23,7 @@
    - uses: [MDsveX][]
 5. [TikZ](https://svelte-tikz.netlify.app) [[code](https://github.com/janosh/tikz)]
 6. [markushatvan.com](https://markushatvan.com) [[code](https://github.com/mhatvan/markushatvan.com)]
+   - uses: [Tailwind JIT][], [MDsveX][], blog posts with code snippets, contact form with [Svelte Forms Lib][], RSS feed and sitemap
 
 ## 🎉 Open to Suggestions
 
@@ -32,4 +33,6 @@ If you're unsure if a paper or resource belongs in this list, feel free to [open
 
 [MDsveX]: https://github.com/pngwn/MDsveX
 [Tailwind CSS]: https://tailwindcss.com
+[Tailwind JIT]: https://github.com/tailwindlabs/tailwindcss-jit
 [Pancakes]: https://github.com/Rich-Harris/pancake
+[Svelte Forms Lib]: https://github.com/tjinauyeung/svelte-forms-lib
