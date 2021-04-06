@@ -27,9 +27,7 @@
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md)
-
-If you're unsure if a paper or resource belongs in this list, feel free to [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) or [start a discussion](https://github.com/janosh/awesome-svelte-kit/discussions). This repo is meant to be a community effort.
+See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md) If you're unsure if a site belongs on this list, feel free to [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) first or [start a discussion](https://github.com/janosh/awesome-svelte-kit/discussions). This repo is meant to be a community effort.
 
 [MDsveX]: https://github.com/pngwn/MDsveX
 [Tailwind CSS]: https://tailwindcss.com
