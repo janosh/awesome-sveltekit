@@ -8,7 +8,6 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-svelte-kit/pulls)
-[![License](https://img.shields.io/github/license/janosh/awesome-svelte-kit?label=License)](license)
 [![Markdown linting](https://github.com/janosh/awesome-svelte-kit/workflows/Linter/badge.svg)](https://github.com/janosh/awesome-svelte-kit/actions)
 </h4>
 
@@ -24,6 +23,10 @@
 5. [TikZ](https://svelte-tikz.netlify.app) [[code](https://github.com/janosh/tikz)]
 6. [markushatvan.com](https://markushatvan.com) [[code](https://github.com/mhatvan/markushatvan.com)]
    - uses: [Tailwind], [MDsveX], blog posts with code snippets, contact form with [Svelte Forms Lib], RSS feed and sitemap
+7. [Afara](https://afara.foundation) [[code](https://github.com/janosh/afara)]
+   - uses: [Contentful], [Algolia], [GraphQL]
+8. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)]
+   - uses: [Contentful], [Algolia], [GraphQL]
 
 ## 🎉 Open to Suggestions
 
@@ -33,3 +36,6 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [Tailwind]: https://tailwindcss.com
 [Pancakes]: https://github.com/Rich-Harris/pancake
 [Svelte Forms Lib]: https://github.com/tjinauyeung/svelte-forms-lib
+[Contentful]: https://contentful.com
+[Algolia]: https://algolia.com
+[GraphQL]: https://graphql.org
