@@ -27,7 +27,8 @@
    - uses: [Contentful], [Algolia], [GraphQL]
 8. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)]
    - uses: [Contentful], [Algolia], [GraphQL]
-
+9. [Guess The Year browser game](https://guess-the-year.davjhan.com) [[code](https://github.com/davjhan/guess-the-year-game)]
+   - uses: [Tailwind (JIT)]
 ## 🎉 Open to Suggestions
 
 See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md) If you're unsure if a site belongs on this list, feel free to [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) first or [start a discussion](https://github.com/janosh/awesome-svelte-kit/discussions). This repo is meant to be a community effort.
