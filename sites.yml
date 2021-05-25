@@ -1,0 +1,92 @@
+# New Tags should strike a balance between generality and specificity so they convey
+# useful information but are still applicable to at least a few other sites.
+
+- title: Official SvelteKit docs
+  author: Rich Harris & Svelte Community
+  url: https://kit.svelte.dev
+  repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
+  uses: [Netlify, PNPM]
+  tags: [docs, monorepo]
+  lastUpdated: 2021-05-25
+
+- title: NYTimes Tracking the Coronavirus
+  author: unknown, maybe Rich Harris?
+  url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
+  repo: null
+  uses: [Pancake]
+  tags: [news, journalism, Covid]
+  lastUpdated: 2021-05-25
+
+- title: SK Incognito
+  author: GrygrFlzr
+  authorTwitter: GrygrFlzr
+  url: https://sk-incognito.vercel.app
+  repo: https://github.com/GrygrFlzr/kit-docs
+  description: Unofficial documentation for SvelteKit.
+  uses: [MDsveX, Tailwind, PNPM]
+  tags: [docs, Vercel]
+  lastUpdated: 2021-05-25
+
+- title: Geometric Bayes
+  author: Janosh Riebesell
+  authorTwitter: jnbr_
+  url: https://svelte-geometric-bayes.netlify.app
+  repo: https://github.com/janosh/svelte-geometric-bayes
+  description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
+  uses: [MDsveX]
+  tags: [math, education, interactive]
+  lastUpdated: 2021-05-25
+
+- title: TikZ
+  author: Janosh Riebesell
+  authorTwitter: jnbr_
+  url: https://svelte-tikz.netlify.app
+  repo: https://github.com/janosh/tikz
+  description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
+  tags: [research, science, diagrams, graphics, latex]
+  lastUpdated: 2021-05-25
+
+- title: markushatvan.com
+  author: Markus Hatvan
+  authorTwitter: HatvanMarkus
+  url: https://markushatvan.com
+  repo: https://github.com/mhatvan/markushatvan.com
+  description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS feed and sitemap.
+  uses: [Tailwind, MDsveX, Svelte Forms Lib]
+  tags: [blog, rss, sitemap, contact form]
+  lastUpdated: 2021-05-25
+
+- title: Afara
+  author: Janosh Riebesell
+  authorTwitter: jnbr_
+  url: https://afara.foundation
+  repo: https://github.com/janosh/afara
+  description: |
+    Homepage of the German student-run non-profit Afara e.V. supporting educational and youth welfare projects in Africa.
+  uses: [Contentful, Algolia, GraphQL, Netlify]
+  tags: [non-profit, volunteering, education, health]
+  lastUpdated: 2021-05-25
+
+- title: Ocean artUp
+  author: Janosh Riebesell
+  authorTwitter: jnbr_
+  url: https://ocean-artup.eu
+  repo: https://github.com/janosh/ocean-artup
+  description: |
+    Homepage of the ERC Advanced Grant research project Ocean artUp.
+    It aims to study the feasibility, effectiveness, associated risks and potential side effects of artificial upwelling in increasing ocean productivity, raising fish production, and enhancing oceanic CO2 sequestration.
+  uses: [Contentful, Algolia, GraphQL, Netlify]
+  tags: [research, science]
+  lastUpdated: 2021-05-25
+
+- title: Guess The Year
+  author: David Han
+  authorTwitter: davjhan
+  url: https://guess-the-year.davjhan.com
+  repo: https://github.com/davjhan/guess-the-year-game
+  description: |
+    Round-based browser game where you guess the year in which famous event happened.
+    Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
+  uses: [Tailwind, Netlify]
+  tags: [webgame]
+  lastUpdated: 2021-05-25

@@ -15,7 +15,7 @@
 
 1. [Official SvelteKit docs](https://kit.svelte.dev) [[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)]
 2. [NYTimes Tracking the Coronavirus](https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html)
-   - uses: [Pancakes]
+   - uses: [Pancake]
 3. [SK Incognito](https://sk-incognito.vercel.app) (the unofficial SvelteKit docs) [[code](https://github.com/GrygrFlzr/kit-docs)]
    - uses: [MDsveX], [Tailwind]
 4. [Geometric Bayes](https://svelte-geometric-bayes.netlify.app) [[code](https://github.com/janosh/svelte-geometric-bayes)]
@@ -36,7 +36,7 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 
 [MDsveX]: https://github.com/pngwn/MDsveX
 [Tailwind]: https://tailwindcss.com
-[Pancakes]: https://github.com/Rich-Harris/pancake
+[Pancake]: https://github.com/Rich-Harris/pancake
 [Svelte Forms Lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [Contentful]: https://contentful.com
 [Algolia]: https://algolia.com
