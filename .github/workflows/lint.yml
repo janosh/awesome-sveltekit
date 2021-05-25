@@ -23,3 +23,14 @@ jobs:
 
       - name: Run markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
+
+  yamllint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Run yamllint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          config_file: .yamllint.yml

@@ -62,7 +62,8 @@
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
   description: |
-    Homepage of the German student-run non-profit Afara e.V. supporting educational and youth welfare projects in Africa.
+    Homepage of the German student-run non-profit Afara e.V.
+    Supports educational and youth welfare projects in Africa.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [non-profit, volunteering, education, health]
   lastUpdated: 2021-05-25
@@ -74,7 +75,9 @@
   repo: https://github.com/janosh/ocean-artup
   description: |
     Homepage of the ERC Advanced Grant research project Ocean artUp.
-    It aims to study the feasibility, effectiveness, associated risks and potential side effects of artificial upwelling in increasing ocean productivity, raising fish production, and enhancing oceanic CO2 sequestration.
+    It aims to study the feasibility, effectiveness, associated risks and potential
+    side effects of artificial upwelling in increasing ocean productivity, raising
+    fish production, and enhancing oceanic CO2 sequestration.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [research, science]
   lastUpdated: 2021-05-25
