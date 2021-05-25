@@ -1,4 +1,4 @@
----
-MD013: false # disable line length errors
-MD033: false # disable inline HTML errors
-MD041: false # disable First line in a file should be a top-level heading
+# see example config at https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.yaml
+MD013: false  # disable line length errors
+MD033: false  # disable inline HTML errors
+MD041: false  # disable First line in a file should be a top-level heading
