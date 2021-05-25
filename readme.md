@@ -27,6 +27,8 @@
    - uses: [Contentful], [Algolia], [GraphQL]
 8. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)]
    - uses: [Contentful], [Algolia], [GraphQL]
+9. [Guess The Year](https://guess-the-year.davjhan.com) browser game [[code](https://github.com/davjhan/guess-the-year-game)]
+   - uses: [Tailwind]
 
 ## 🎉 Open to Suggestions
 
