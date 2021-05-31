@@ -93,3 +93,15 @@
   uses: [Tailwind, Netlify]
   tags: [webgame]
   lastUpdated: 2021-05-25
+
+- title: Gitpod
+  author: Mike Nikles and others
+  authorTwitter: mikenikles
+  url: https://gitpod.io
+  repo: https://github.com/gitpod-io/website
+  description: |
+    Gitpod streamlines developer workflows by providing prebuilt, collaborative
+    development environments in your browser - powered by VS Code.
+  uses: [MDsveX, Tailwind, Netlify]
+  tags: [commercial, dev tools, cloud computing]
+  lastUpdated: 2021-05-31
