@@ -20,7 +20,7 @@
     - uses: [MDsveX], [Tailwind]
 4. [Geometric Bayes](https://svelte-geometric-bayes.netlify.app) [[code](https://github.com/janosh/svelte-geometric-bayes)]
     - uses: [MDsveX]
-5. [TikZ](https://svelte-tikz.netlify.app) [[code](https://github.com/janosh/tikz)]
+5. [TikZ](https://tikz.netlify.app) [[code](https://github.com/janosh/tikz)]
 6. [markushatvan.com](https://markushatvan.com) [[code](https://github.com/mhatvan/markushatvan.com)]
     - uses: [Tailwind], [MDsveX], blog posts with code snippets, contact form with [Svelte Forms Lib], RSS feed and sitemap
 7. [Afara](https://afara.foundation) [[code](https://github.com/janosh/afara)]
