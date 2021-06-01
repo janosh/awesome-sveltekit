@@ -31,6 +31,8 @@
     - uses: [Tailwind]
 10. [Gitpod](https://gitpod.io) by Mike Nikles and others [[code](https://github.com/gitpod-io/website)]
     - uses: [MDsveX], [Tailwind], [Netlify]
+11. [Svelte Themes](https://sveltethemes.dev) by Sharath Kumar
+    - uses: [Tailwind], [Netlify]
 
 ## 🎉 Open to Suggestions
 
@@ -43,3 +45,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [Contentful]: https://contentful.com
 [Algolia]: https://algolia.com
 [GraphQL]: https://graphql.org
+[Netlify]: https://netlify.com
