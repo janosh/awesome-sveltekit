@@ -105,3 +105,11 @@
   uses: [MDsveX, Tailwind, Netlify]
   tags: [commercial, dev tools, cloud computing]
   lastUpdated: 2021-05-31
+
+- title: Svelte Themes
+  author: Sharath Kumar
+  url: https://sveltethemes.dev
+  repo: null
+  uses: [Netlify, Tailwind]
+  tags: [directory, resources]
+  lastUpdated: 2021-06-01
