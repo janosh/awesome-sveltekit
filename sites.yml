@@ -40,7 +40,7 @@
 - title: TikZ
   author: Janosh Riebesell
   authorTwitter: jnbr_
-  url: https://svelte-tikz.netlify.app
+  url: https://tikz.netlify.app
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
   tags: [research, science, diagrams, graphics, latex]
