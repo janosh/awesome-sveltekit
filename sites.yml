@@ -29,7 +29,7 @@
 
 - title: Geometric Bayes
   author: Janosh Riebesell
-  authorTwitter: jnbr_
+  authorTwitter: _jarib
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
@@ -39,7 +39,7 @@
 
 - title: TikZ
   author: Janosh Riebesell
-  authorTwitter: jnbr_
+  authorTwitter: _jarib
   url: https://tikz.netlify.app
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
@@ -56,9 +56,22 @@
   tags: [blog, rss, sitemap, contact form]
   lastUpdated: 2021-05-25
 
+- title: Studenten bilden Schüler
+  author: Janosh Riebesell
+  authorTwitter: _jarib
+  url: https://studenten-bilden-schueler.de
+  repo: https://github.com/sbsev/svelte-site
+  description: |
+    Studenten bilden Schüler e.V. is a student-run nonprofit initiative with chapters located in university
+    towns all across Germany. Their mission is to contribute towards educational equality by providing free
+    tutoring to children from underprivileged families.
+  uses: [Contentful, Algolia, GraphQL, Netlify]
+  tags: [non-profit, volunteering, education, equality]
+  lastUpdated: 2021-06-09
+
 - title: Afara
   author: Janosh Riebesell
-  authorTwitter: jnbr_
+  authorTwitter: _jarib
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
   description: |
@@ -70,7 +83,7 @@
 
 - title: Ocean artUp
   author: Janosh Riebesell
-  authorTwitter: jnbr_
+  authorTwitter: _jarib
   url: https://ocean-artup.eu
   repo: https://github.com/janosh/ocean-artup
   description: |

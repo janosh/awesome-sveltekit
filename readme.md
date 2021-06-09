@@ -23,17 +23,19 @@
 5. [TikZ](https://tikz.netlify.app) [[code](https://github.com/janosh/tikz)]
 6. [markushatvan.com](https://markushatvan.com) [[code](https://github.com/mhatvan/markushatvan.com)]
     - uses: [Tailwind], [MDsveX], blog posts with code snippets, contact form with [Svelte Forms Lib], RSS feed and sitemap
-7. [Afara](https://afara.foundation) [[code](https://github.com/janosh/afara)]
-    - uses: [Contentful], [Algolia], [GraphQL]
-8. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)]
-    - uses: [Contentful], [Algolia], [GraphQL]
-9. [Guess The Year](https://guess-the-year.davjhan.com) browser game [[code](https://github.com/davjhan/guess-the-year-game)]
+7. [Studenten bilden Schüler](https://studenten-bilden-schueler.de) [[code](https://github.com/sbsev/svelte-site)]
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify]
+8. [Afara](https://afara.foundation) [[code](https://github.com/janosh/afara)]
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify]
+9. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)]
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify]
+10. [Guess The Year](https://guess-the-year.davjhan.com) browser game [[code](https://github.com/davjhan/guess-the-year-game)]
     - uses: [Tailwind]
-10. [Gitpod](https://gitpod.io) by Mike Nikles and others [[code](https://github.com/gitpod-io/website)]
+11. [Gitpod](https://gitpod.io) by Mike Nikles and others [[code](https://github.com/gitpod-io/website)]
     - uses: [MDsveX], [Tailwind], [Netlify]
-11. [Svelte Themes](https://sveltethemes.dev) by Sharath Kumar
+12. [Svelte Themes](https://sveltethemes.dev) by Sharath Kumar
     - uses: [Tailwind], [Netlify]
-12. [SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app) by Tarun Kumar Sukhu [[code](https://github.com/tsukhu/sveltekit-demo)]
+13. [SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app) by Tarun Kumar Sukhu [[code](https://github.com/tsukhu/sveltekit-demo)]
     - uses: [Tailwind], [Vercel], [GraphQL], [Firebase], [Typescript]
 
 ## 🎉 Open to Suggestions
