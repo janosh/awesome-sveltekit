@@ -33,6 +33,8 @@
     - uses: [MDsveX], [Tailwind], [Netlify]
 11. [Svelte Themes](https://sveltethemes.dev) by Sharath Kumar
     - uses: [Tailwind], [Netlify]
+12. [SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app) by Tarun Kumar Sukhu [[code](https://github.com/tsukhu/sveltekit-demo)]
+    - uses: [Tailwind], [Vercel], [GraphQL], [Firebase], [Typescript]
 
 ## 🎉 Open to Suggestions
 
@@ -46,3 +48,6 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [Algolia]: https://algolia.com
 [GraphQL]: https://graphql.org
 [Netlify]: https://netlify.com
+[Vercel]: https://vercel.com
+[Firebase]: https://firebase.google.com
+[Typescript]: https://typescriptlang.org

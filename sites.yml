@@ -113,3 +113,15 @@
   uses: [Netlify, Tailwind]
   tags: [directory, resources]
   lastUpdated: 2021-06-01
+
+- title: SvelteKit Experiments
+  author: Tarun Kumar Sukhu
+  authorTwitter: TarunKumarSukhu
+  url: https://sveltekit-demo-psi.vercel.app
+  repo: https://github.com/tsukhu/sveltekit-demo
+  description: |
+    A set of example apps built with SvelteKit and deployed on Vercel. As an ongoing project,
+    this will continue to be enhanced with more examples to showcase the power of SvelteKit.
+  uses: [Tailwind, Vercel, Firebase v9, Google Authentication, Typescript]
+  tags: [sample applications, cloud computing]
+  lastUpdated: 2021-06-09
