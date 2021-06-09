@@ -117,11 +117,11 @@
 - title: SvelteKit Experiments
   author: Tarun Kumar Sukhu
   authorTwitter: TarunKumarSukhu
-  url: https://sveltekit-demo-psi.vercel.app/
+  url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
   description: |
-    This provides a complete set of samples built with SvelteKit and deployed on Vercel. 
-    This is an ongoing project and will continue to be enhanced with more samples which bring out the power of SvelteKit.
+    A set of example apps built with SvelteKit and deployed on Vercel. As an ongoing project,
+    this will continue to be enhanced with more examples to showcase the power of SvelteKit.
   uses: [Tailwind, Vercel, Firebase v9, Google Authentication, Typescript]
   tags: [sample applications, cloud computing]
   lastUpdated: 2021-06-09
