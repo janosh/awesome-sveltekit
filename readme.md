@@ -37,6 +37,8 @@
     - uses: [Tailwind], [Netlify]
 13. [SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app) by Tarun Kumar Sukhu [[code](https://github.com/tsukhu/sveltekit-demo)]
     - uses: [Tailwind], [Vercel], [GraphQL], [Firebase], [Typescript]
+14. [puruvj.dev](https://puruvj.dev) by Puru Vijay [[code](https://github.com/puruvj/puruvjdev3)]
+    - uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
 
 ## 🎉 Open to Suggestions
 
