@@ -138,3 +138,14 @@
   uses: [Tailwind, Vercel, Firebase v9, Google Authentication, Typescript]
   tags: [sample applications, cloud computing]
   lastUpdated: 2021-06-09
+
+- title: puruvj.dev
+  author: Puru Vijay
+  authorTwitter: puruvjdev
+  url: https://puruvj.dev
+  repo: https://github.com/puruvj/puruvjdev3
+  description: |
+   Puru Vijay's blog site.
+  uses: [Vercel, TypeScript, SCSS, Cloudinary]
+  tags: [blog]
+  lastUpdated: 2021-06-11
