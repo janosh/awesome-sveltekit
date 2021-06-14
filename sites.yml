@@ -153,7 +153,7 @@
 - title: SvelteKit Starter Blog
   author: Scott Spence
   authorTwitter: spences10
-  url: https://scottspence.com/2021/05/06/graphcms-svelte-starter/
+  url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
   description: |
    This starter shows how to use the SvelteKit with GraphCMS. It uses graphql-request and GraphCMS for the backend.
