@@ -39,6 +39,8 @@
     - uses: [Tailwind], [Vercel], [GraphQL], [Firebase], [TypeScript]
 14. [puruvj.dev](https://puruvj.dev) by Puru Vijay [[code](https://github.com/puruvj/puruvjdev3)]
     - uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
+15. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](http://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://github.com/spences10/sveltekit-starter-blog)]
+    - uses: [Vercel], [Tailwind], [GraphCMS]
 
 ## 🎉 Open to Suggestions
 
@@ -57,3 +59,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [TypeScript]: https://typescriptlang.org
 [SCSS]: https://sass-lang.com
 [Cloudinary]: https://cloudinary.com
+[GraphCMS]: https://graphcms.com
