@@ -13,34 +13,50 @@
 
 <br>
 
-1. [Official SvelteKit docs](https://kit.svelte.dev) [[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)]
+1. [Official SvelteKit docs](https://kit.svelte.dev) [[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)] ![GitHub repo stars](https://img.shields.io/github/stars/sveltejs/sites)
+    - added: 2021-05-25
 2. [NYTimes Tracking the Coronavirus](https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html)
     - uses: [Pancake]
-3. [SK Incognito](https://sk-incognito.vercel.app) (the unofficial SvelteKit docs) [[code](https://github.com/GrygrFlzr/kit-docs)]
+    - added: 2021-05-25
+3. [SK Incognito](https://sk-incognito.vercel.app) (the unofficial SvelteKit docs) [[code](https://github.com/GrygrFlzr/kit-docs)] ![GitHub repo stars](https://img.shields.io/github/stars/GrygrFlzr/kit-docs)
     - uses: [MDsveX], [Tailwind]
-4. [Geometric Bayes](https://svelte-geometric-bayes.netlify.app) [[code](https://github.com/janosh/svelte-geometric-bayes)]
+    - added: 2021-05-25
+4. [Geometric Bayes](https://svelte-geometric-bayes.netlify.app) [[code](https://github.com/janosh/svelte-geometric-bayes)] ![GitHub repo stars](https://img.shields.io/github/stars/janosh/svelte-geometric-bayes)
     - uses: [MDsveX]
-5. [TikZ](https://tikz.netlify.app) [[code](https://github.com/janosh/tikz)]
-6. [markushatvan.com](https://markushatvan.com) [[code](https://github.com/mhatvan/markushatvan.com)]
+    - added: 2021-05-25
+5. [TikZ](https://tikz.netlify.app) [[code](https://github.com/janosh/tikz)] ![GitHub repo stars](https://img.shields.io/github/stars/janosh/tikz)
+    - uses: [Netlify], [Svicons]
+    - added: 2021-05-25
+6. [markushatvan.com](https://markushatvan.com) [[code](https://github.com/mhatvan/markushatvan.com)] ![GitHub repo stars](https://img.shields.io/github/stars/mhatvan/markushatvan.com)
     - uses: [Tailwind], [MDsveX], blog posts with code snippets, contact form with [Svelte Forms Lib], RSS feed and sitemap
-7. [Studenten bilden Schüler](https://studenten-bilden-schueler.de) [[code](https://github.com/sbsev/svelte-site)]
-    - uses: [Contentful], [Algolia], [GraphQL], [Netlify]
-8. [Afara](https://afara.foundation) [[code](https://github.com/janosh/afara)]
-    - uses: [Contentful], [Algolia], [GraphQL], [Netlify]
-9. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)]
-    - uses: [Contentful], [Algolia], [GraphQL], [Netlify]
-10. [Guess The Year](https://guess-the-year.davjhan.com) browser game [[code](https://github.com/davjhan/guess-the-year-game)]
+    - added: 2021-05-25
+7. [Studenten bilden Schüler](https://studenten-bilden-schueler.de) [[code](https://github.com/sbsev/svelte-site)] ![GitHub repo stars](https://img.shields.io/github/stars/sbsev/svelte-site)
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons]
+    - added: 2021-06-09
+8. [Afara](https://afara.foundation) [[code](https://github.com/janosh/afara)] ![GitHub repo stars](https://img.shields.io/github/stars/janosh/afara)
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons]
+    - added: 2021-05-25
+9. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)] ![GitHub repo stars](https://img.shields.io/github/stars/janosh/ocean-artup)
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons]
+    - added: 2021-05-25
+10. [Guess The Year](https://guess-the-year.davjhan.com) browser game [[code](https://github.com/davjhan/guess-the-year-game)] ![GitHub repo stars](https://img.shields.io/github/stars/davjhan/guess-the-year-game)
     - uses: [Tailwind]
-11. [Gitpod](https://gitpod.io) by Mike Nikles and others [[code](https://github.com/gitpod-io/website)]
+    - added: 2021-05-25
+11. [Gitpod](https://gitpod.io) by Mike Nikles and others [[code](https://github.com/gitpod-io/website)] ![GitHub repo stars](https://img.shields.io/github/stars/gitpod-io/website)
     - uses: [MDsveX], [Tailwind], [Netlify]
+    - added: 2021-05-31
 12. [Svelte Themes](https://sveltethemes.dev) by Sharath Kumar
     - uses: [Tailwind], [Netlify]
-13. [SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app) by Tarun Kumar Sukhu [[code](https://github.com/tsukhu/sveltekit-demo)]
+    - added: 2021-06-01
+13. [SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app) by Tarun Kumar Sukhu [[code](https://github.com/tsukhu/sveltekit-demo)] ![GitHub repo stars](https://img.shields.io/github/stars/tsukhu/sveltekit-demo)
     - uses: [Tailwind], [Vercel], [GraphQL], [Firebase], [TypeScript]
-14. [puruvj.dev](https://puruvj.dev) by Puru Vijay [[code](https://github.com/puruvj/puruvjdev3)]
+    - added: 2021-06-09
+14. [puruvj.dev](https://puruvj.dev) by Puru Vijay [[code](https://github.com/puruvj/puruvjdev3)] ![GitHub repo stars](https://img.shields.io/github/stars/puruvj/puruvjdev3)
     - uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
-15. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](http://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://github.com/spences10/sveltekit-starter-blog)]
+    - added: 2021-06-11
+15. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](http://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://github.com/spences10/sveltekit-starter-blog)] ![GitHub repo stars](https://img.shields.io/github/stars/spences10/sveltekit-starter-blog)
     - uses: [Vercel], [Tailwind], [GraphCMS]
+    - added: 2021-06-14
 
 ## 🎉 Open to Suggestions
 
@@ -60,3 +76,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [SCSS]: https://sass-lang.com
 [Cloudinary]: https://cloudinary.com
 [GraphCMS]: https://graphcms.com
+[Svicons]: https://github.com/janosh/svicons
