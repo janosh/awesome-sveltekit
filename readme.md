@@ -57,6 +57,9 @@
 15. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](http://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://github.com/spences10/sveltekit-starter-blog)] ![GitHub repo stars](https://img.shields.io/github/stars/spences10/sveltekit-starter-blog)
     - uses: [Vercel], [Tailwind], [GraphCMS]
     - added: 2021-06-14
+16. [Beatbump](https://beatbump.ml) by Scott Spence [[code](http://github.com/snuffyDev/beatbump)] ![GitHub repo stars](https://img.shields.io/github/stars/snuffyDev/beatbump)
+    - uses: [TypeScript], [PostCSS], [Sass]
+    - added: 2021-07-08
 
 ## 🎉 Open to Suggestions
 
@@ -77,3 +80,5 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [Cloudinary]: https://cloudinary.com
 [GraphCMS]: https://graphcms.com
 [Svicons]: https://github.com/janosh/svicons
+[PostCSS]: https://postcss.org
+[Sass]: https://sass-lang.com

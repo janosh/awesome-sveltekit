@@ -1,6 +1,8 @@
 # New Tags should strike a balance between generality and specificity so they convey
 # useful information but are still applicable to at least a few other sites.
 
+# The field 'created' is usually the date of first commit on a project.
+
 # 1
 - title: Official SvelteKit docs
   author: Rich Harris & Svelte Community
@@ -8,6 +10,7 @@
   repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
   uses: [Netlify, PNPM]
   tags: [docs, monorepo]
+  created: 2021-03-10  # https://git.io/JcQYo
   lastUpdated: 2021-05-25
 
 # 2
@@ -28,6 +31,7 @@
   description: Unofficial documentation for SvelteKit.
   uses: [MDsveX, Tailwind, PNPM]
   tags: [docs, Vercel]
+  created: 2021-02-15
   lastUpdated: 2021-05-25
 
 # 4
@@ -39,6 +43,7 @@
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
   uses: [MDsveX]
   tags: [math, education, interactive]
+  created: 2020-10-04
   lastUpdated: 2021-05-25
 
 # 5
@@ -49,6 +54,7 @@
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
   tags: [research, science, diagrams, graphics, latex]
+  created: 2020-08-09
   lastUpdated: 2021-05-25
 
 # 6
@@ -60,6 +66,7 @@
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS feed and sitemap.
   uses: [Tailwind, MDsveX, Svelte Forms Lib]
   tags: [blog, rss, sitemap, contact form]
+  created: 2020-08-21
   lastUpdated: 2021-05-25
 
 # 7
@@ -74,6 +81,7 @@
     tutoring to children from underprivileged families.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [non-profit, volunteering, education, equality]
+  created: 2020-12-12
   lastUpdated: 2021-06-09
 
 # 8
@@ -87,6 +95,7 @@
     Supports educational and youth welfare projects in Africa.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [non-profit, volunteering, education, health]
+  created: 2021-01-24
   lastUpdated: 2021-05-25
 
 # 9
@@ -102,6 +111,7 @@
     fish production, and enhancing oceanic CO2 sequestration.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [research, science]
+  created: 2021-01-31
   lastUpdated: 2021-05-25
 
 # 10
@@ -115,6 +125,7 @@
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
   uses: [Tailwind, Netlify]
   tags: [webgame]
+  created: 2021-05-09
   lastUpdated: 2021-05-25
 
 # 11
@@ -128,6 +139,7 @@
     development environments in your browser - powered by VS Code.
   uses: [MDsveX, Tailwind, Netlify]
   tags: [commercial, dev tools, cloud computing]
+  created: 2021-03-17
   lastUpdated: 2021-05-31
 
 # 12
@@ -150,6 +162,7 @@
     this will continue to be enhanced with more examples to showcase the power of SvelteKit.
   uses: [Tailwind, Vercel, Firebase v9, Google Authentication, Typescript]
   tags: [sample applications, cloud computing]
+  created: 2021-05-27
   lastUpdated: 2021-06-09
 
 # 14
@@ -162,6 +175,7 @@
    Puru Vijay's blog site.
   uses: [Vercel, TypeScript, SCSS, Cloudinary]
   tags: [blog]
+  created: 2021-05-06
   lastUpdated: 2021-06-11
 
 # 15
@@ -173,4 +187,16 @@
   description: This blog starter shows how to use SvelteKit with GraphCMS.
   uses: [Vercel, TailWind, SCSS, GraphCMS]
   tags: [blog]
+  created: 2021-05-16
   lastUpdated: 2021-06-14
+
+# 16
+- title: Beatbump
+  author: snuffy
+  url: https://beatbump.ml
+  repo: https://github.com/snuffyDev/beatbump
+  description: Alternative frontend for YouTube Music.
+  uses: [TypeScript, PostCSS, Sass]
+  tags: [blog]
+  created: 2021-06-17
+  lastUpdated: 2021-07-08
