@@ -5,17 +5,17 @@
 
 # 1
 - title: Official SvelteKit docs
-  author: Rich Harris & Svelte Community
+  creator: Rich Harris & Svelte Community
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
   uses: [Netlify, PNPM]
   tags: [docs, monorepo]
-  created: 2021-03-10  # https://git.io/JcQYo
+  dateCreated: 2021-03-10  # https://git.io/JcQYo
   lastUpdated: 2021-05-25
 
 # 2
 - title: NYTimes Tracking the Coronavirus
-  author: unknown, maybe Rich Harris?
+  creator: unknown, maybe Rich Harris?
   url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
   repo: null
   uses: [Pancake]
@@ -24,55 +24,55 @@
 
 # 3
 - title: SK Incognito
-  author: GrygrFlzr
-  authorTwitter: GrygrFlzr
+  creator: GrygrFlzr
+  creatorTwitter: GrygrFlzr
   url: https://sk-incognito.vercel.app
   repo: https://github.com/GrygrFlzr/kit-docs
   description: Unofficial documentation for SvelteKit.
   uses: [MDsveX, Tailwind, PNPM]
   tags: [docs, Vercel]
-  created: 2021-02-15
+  dateCreated: 2021-02-15
   lastUpdated: 2021-05-25
 
 # 4
 - title: Geometric Bayes
-  author: Janosh Riebesell
-  authorTwitter: _jarib
+  creator: Janosh Riebesell
+  creatorTwitter: _jarib
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
   uses: [MDsveX]
   tags: [math, education, interactive]
-  created: 2020-10-04
+  dateCreated: 2020-10-04
   lastUpdated: 2021-05-25
 
 # 5
 - title: TikZ
-  author: Janosh Riebesell
-  authorTwitter: _jarib
+  creator: Janosh Riebesell
+  creatorTwitter: _jarib
   url: https://tikz.netlify.app
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
   tags: [research, science, diagrams, graphics, latex]
-  created: 2020-08-09
+  dateCreated: 2020-08-09
   lastUpdated: 2021-05-25
 
 # 6
 - title: markushatvan.com
-  author: Markus Hatvan
-  authorTwitter: HatvanMarkus
+  creator: Markus Hatvan
+  creatorTwitter: HatvanMarkus
   url: https://markushatvan.com
   repo: https://github.com/mhatvan/markushatvan.com
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS feed and sitemap.
   uses: [Tailwind, MDsveX, Svelte Forms Lib]
   tags: [blog, rss, sitemap, contact form]
-  created: 2020-08-21
+  dateCreated: 2020-08-21
   lastUpdated: 2021-05-25
 
 # 7
 - title: Studenten bilden Schüler
-  author: Janosh Riebesell
-  authorTwitter: _jarib
+  creator: Janosh Riebesell
+  creatorTwitter: _jarib
   url: https://studenten-bilden-schueler.de
   repo: https://github.com/sbsev/svelte-site
   description: |
@@ -81,13 +81,13 @@
     tutoring to children from underprivileged families.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [non-profit, volunteering, education, equality]
-  created: 2020-12-12
+  dateCreated: 2020-12-12
   lastUpdated: 2021-06-09
 
 # 8
 - title: Afara
-  author: Janosh Riebesell
-  authorTwitter: _jarib
+  creator: Janosh Riebesell
+  creatorTwitter: _jarib
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
   description: |
@@ -95,13 +95,13 @@
     Supports educational and youth welfare projects in Africa.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [non-profit, volunteering, education, health]
-  created: 2021-01-24
+  dateCreated: 2021-01-24
   lastUpdated: 2021-05-25
 
 # 9
 - title: Ocean artUp
-  author: Janosh Riebesell
-  authorTwitter: _jarib
+  creator: Janosh Riebesell
+  creatorTwitter: _jarib
   url: https://ocean-artup.eu
   repo: https://github.com/janosh/ocean-artup
   description: |
@@ -111,13 +111,13 @@
     fish production, and enhancing oceanic CO2 sequestration.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [research, science]
-  created: 2021-01-31
+  dateCreated: 2021-01-31
   lastUpdated: 2021-05-25
 
 # 10
 - title: Guess The Year
-  author: David Han
-  authorTwitter: davjhan
+  creator: David Han
+  creatorTwitter: davjhan
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
   description: |
@@ -125,13 +125,13 @@
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
   uses: [Tailwind, Netlify]
   tags: [webgame]
-  created: 2021-05-09
+  dateCreated: 2021-05-09
   lastUpdated: 2021-05-25
 
 # 11
 - title: Gitpod
-  author: Mike Nikles and others
-  authorTwitter: mikenikles
+  creator: Mike Nikles and others
+  creatorTwitter: mikenikles
   url: https://gitpod.io
   repo: https://github.com/gitpod-io/website
   description: |
@@ -139,12 +139,12 @@
     development environments in your browser - powered by VS Code.
   uses: [MDsveX, Tailwind, Netlify]
   tags: [commercial, dev tools, cloud computing]
-  created: 2021-03-17
+  dateCreated: 2021-03-17
   lastUpdated: 2021-05-31
 
 # 12
 - title: Svelte Themes
-  author: Sharath Kumar
+  creator: Sharath Kumar
   url: https://sveltethemes.dev
   repo: null
   uses: [Netlify, Tailwind]
@@ -153,8 +153,8 @@
 
 # 13
 - title: SvelteKit Experiments
-  author: Tarun Kumar Sukhu
-  authorTwitter: TarunKumarSukhu
+  creator: Tarun Kumar Sukhu
+  creatorTwitter: TarunKumarSukhu
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
   description: |
@@ -162,41 +162,53 @@
     this will continue to be enhanced with more examples to showcase the power of SvelteKit.
   uses: [Tailwind, Vercel, Firebase v9, Google Authentication, Typescript]
   tags: [sample applications, cloud computing]
-  created: 2021-05-27
+  dateCreated: 2021-05-27
   lastUpdated: 2021-06-09
 
 # 14
 - title: puruvj.dev
-  author: Puru Vijay
-  authorTwitter: puruvjdev
+  creator: Puru Vijay
+  creatorTwitter: puruvjdev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
   description: |
    Puru Vijay's blog site.
   uses: [Vercel, TypeScript, SCSS, Cloudinary]
   tags: [blog]
-  created: 2021-05-06
+  dateCreated: 2021-05-06
   lastUpdated: 2021-06-11
 
 # 15
 - title: GraphCMS Starter Blog
-  author: Scott Spence
-  authorTwitter: spences10
+  creator: Scott Spence
+  creatorTwitter: spences10
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
   description: This blog starter shows how to use SvelteKit with GraphCMS.
   uses: [Vercel, TailWind, SCSS, GraphCMS]
   tags: [blog]
-  created: 2021-05-16
+  dateCreated: 2021-05-16
   lastUpdated: 2021-06-14
 
 # 16
 - title: Beatbump
-  author: snuffy
+  creator: snuffy
   url: https://beatbump.ml
   repo: https://github.com/snuffyDev/beatbump
   description: Alternative frontend for YouTube Music.
   uses: [TypeScript, PostCSS, Sass]
   tags: [blog]
-  created: 2021-06-17
+  dateCreated: 2021-06-17
   lastUpdated: 2021-07-08
+
+# 17
+- title: Impfdashboard
+  creator: German Ministry of Health
+  creatorUrl: https://nand.io/projects/vaccination-dashboard
+  url: https://impfdashboard.de/en
+  repo:
+  description: The official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH,
+    Studio NAND GmbH and Truth & Beauty. Data supplied by Robert Koch Institut.
+  tags: [covid, pandemic, health, government, science]
+  dateCreated: 2021-01-01
+  lastUpdated: 2021-07-30

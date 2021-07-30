@@ -60,6 +60,8 @@
 16. [Beatbump](https://beatbump.ml) by Scott Spence [[code](http://github.com/snuffyDev/beatbump)] ![GitHub repo stars](https://img.shields.io/github/stars/snuffyDev/beatbump)
     - uses: [TypeScript], [PostCSS], [Sass]
     - added: 2021-07-08
+17. [Impfdashboard](https://impfdashboard.de/en) by German Ministry of Health
+    - added: 2021-07-30
 
 ## 🎉 Open to Suggestions
 
