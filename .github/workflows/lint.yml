@@ -11,6 +11,7 @@ jobs:
 
       - name: Run markdownlint
         uses: reviewdog/action-markdownlint@master
+        # docs at https://git.io/JBaid
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
@@ -23,6 +24,7 @@ jobs:
 
       - name: Run markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
+        # docs at https://git.io/JBaKu
 
   yamllint:
     runs-on: ubuntu-latest
@@ -32,5 +34,6 @@ jobs:
 
       - name: Run yamllint
         uses: ibiqlik/action-yamllint@v3
+        # docs at https://git.io/JBa6q
         with:
-          config_file: .yamllint.yml
+          config_file: .github/.yamllint.yml
