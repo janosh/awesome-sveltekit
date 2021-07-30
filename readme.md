@@ -4,12 +4,12 @@
 
 <h1 align="center">Awesome examples of SvelteKit in the wild</h1>
 
-<p align="center">
+<h4 align="center">
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-svelte-kit/pulls)
 [![Markdown linting](https://github.com/janosh/awesome-svelte-kit/workflows/Linter/badge.svg)](https://github.com/janosh/awesome-svelte-kit/actions)
-</p>
+</h4>
 
 <br>
 
@@ -28,7 +28,7 @@
     - uses: [Netlify], [Svicons]
     - added: 2021-05-25
 6. [markushatvan.com](https://markushatvan.com) [[code](https://github.com/mhatvan/markushatvan.com)] ![GitHub repo stars](https://img.shields.io/github/stars/mhatvan/markushatvan.com)
-    - uses: [Tailwind], [MDsveX], blog posts with code snippets, contact form with [Svelte Forms Lib], RSS feed and sitemap
+    - uses: [Tailwind], [MDsveX], [TypeScript], blog posts with code snippets, contact form with [Svelte Forms Lib], RSS feed and sitemap
     - added: 2021-05-25
 7. [Studenten bilden Schüler](https://studenten-bilden-schueler.de) [[code](https://github.com/sbsev/svelte-site)] ![GitHub repo stars](https://img.shields.io/github/stars/sbsev/svelte-site)
     - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons]
