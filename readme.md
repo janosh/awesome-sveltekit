@@ -31,13 +31,13 @@
     - uses: [Tailwind], [MDsveX], [TypeScript], blog posts with code snippets, contact form with [Svelte Forms Lib], RSS feed and sitemap
     - added: 2021-05-25
 7. [Studenten bilden Schüler](https://studenten-bilden-schueler.de) [[code](https://github.com/sbsev/svelte-site)] ![GitHub repo stars](https://img.shields.io/github/stars/sbsev/svelte-site)
-    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons]
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons], [Plausible]
     - added: 2021-06-09
 8. [Afara](https://afara.foundation) [[code](https://github.com/janosh/afara)] ![GitHub repo stars](https://img.shields.io/github/stars/janosh/afara)
-    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons]
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons], [Google Analytics]
     - added: 2021-05-25
 9. [Ocean artUp](https://ocean-artup.eu) [[code](https://github.com/janosh/ocean-artup)] ![GitHub repo stars](https://img.shields.io/github/stars/janosh/ocean-artup)
-    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons]
+    - uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Svicons], [Google Analytics]
     - added: 2021-05-25
 10. [Guess The Year](https://guess-the-year.davjhan.com) browser game [[code](https://github.com/davjhan/guess-the-year-game)] ![GitHub repo stars](https://img.shields.io/github/stars/davjhan/guess-the-year-game)
     - uses: [Tailwind]
@@ -62,6 +62,11 @@
     - added: 2021-07-08
 17. [Impfdashboard](https://impfdashboard.de/en) by German Ministry of Health
     - added: 2021-07-30
+18. [Paper Trader Game](https://paper-trader.davjhan.com) browser game
+    [[code]](https://github.com/davjhan/paper-trader-game)
+    ![GitHub repo stars](https://img.shields.io/github/stars/davjhan/paper-trader-game)
+    - uses: [Tailwind], [Netlify], [Chart.js], [Tailwind], [Plausible]
+    - added: 2021-08-01
 
 ## 🎉 Open to Suggestions
 
@@ -84,3 +89,6 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [Svicons]: https://github.com/janosh/svicons
 [PostCSS]: https://postcss.org
 [Sass]: https://sass-lang.com
+[Chart.js]: https://chartjs.org
+[Plausible]: https://plausible.io
+[Google Analytics]: https://analytics.google.com
