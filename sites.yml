@@ -118,6 +118,7 @@
 - title: Guess The Year
   creator: David Han
   creatorTwitter: davjhan
+  creatorUrl: https://davjhan.com
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
   description: |
@@ -212,3 +213,16 @@
   tags: [covid, pandemic, health, government, science]
   dateCreated: 2021-01-01
   lastUpdated: 2021-07-30
+
+# 18
+- title: Paper Trader Game
+  creator: David Han
+  creatorTwitter: davjhan
+  creatorUrl: https://davjhan.com
+  url: https://paper-trader.davjhan.com
+  repo: https://github.com/davjhan/paper-trader-game
+  description: A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
+    fake stock.
+  tags: [Game, Mobile, TailWind, ChartJs]
+  dateCreated: 2021-07-25
+  lastUpdated: 2021-08-01
