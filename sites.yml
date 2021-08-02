@@ -222,7 +222,7 @@
   url: https://paper-trader.davjhan.com
   repo: https://github.com/davjhan/paper-trader-game
   description: A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
-  fake stock.
+    fake stock.
   tags: [Game, Mobile, TailWind, ChartJs]
   dateCreated: 2021-07-25
-  lastUpdated: 2021-07-25
+  lastUpdated: 2021-08-01
