@@ -25,6 +25,9 @@ jobs:
       - name: Run markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         # docs at https://git.io/JBaKu
+        with:
+          # sets status code 500 (Internal Server Error) and 503 (Service Unavailable) as alive
+          config-file: .github/workflows/markdown_link_check_config.json
 
   yamllint:
     runs-on: ubuntu-latest
