@@ -149,7 +149,7 @@
   url: https://sveltethemes.dev
   repo: null
   uses: [Netlify, Tailwind]
-  tags: [directory, resources]
+  tags: [site directory, learning resources]
   lastUpdated: 2021-06-01
 
 # 13
@@ -223,6 +223,18 @@
   repo: https://github.com/davjhan/paper-trader-game
   description: A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
     fake stock.
-  tags: [Game, Mobile, TailWind, ChartJs]
+  tags: [game, mobile, TailWind, ChartJs]
   dateCreated: 2021-07-25
   lastUpdated: 2021-08-01
+
+# 19
+- title: SveltePress
+  creator: Evan Geop
+  creatorTwitter: GeopJr1312
+  creatorUrl: https://geopjr.dev
+  url: https://sveltepress.geopjr.dev
+  repo: https://github.com/GeopJr/SveltePress
+  description: SvelteKit-powered documentation site generator. Made for humans.
+  tags: [documentation, markdown, Netlify, PNPM]
+  dateCreated: 2021-07-09
+  lastUpdated: 2021-08-10
