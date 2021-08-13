@@ -238,3 +238,15 @@
   tags: [documentation, markdown, Netlify, PNPM]
   dateCreated: 2021-07-09
   lastUpdated: 2021-08-10
+
+# 20
+- title: neovim craft
+  creator: Eric Bower
+  creatorTwitter: neurosnap
+  creatorUrl: https://erock.io
+  url: https://neovimcraft.com
+  repo: https://github.com/neurosnap/neovimcraft
+  description: Curated list of neovim plugins
+  tags: [programming, ressource list, TypeScript]
+  dateCreated: 2021-07-18
+  lastUpdated: 2021-08-13
