@@ -72,6 +72,11 @@
     ![GitHub repo stars](https://img.shields.io/github/stars/GeopJr/SveltePress)
     - uses:  [Netlify], [MarkedJS], [PNPM]
     - added: 2021-08-10
+20. [neovim craft](https://neovimcraft.com) curated list of neovim plugins
+    [[code]](https://github.com/neurosnap/neovimcraft)
+    ![GitHub repo stars](https://img.shields.io/github/stars/neurosnap/neovimcraft)
+    - uses:  [TypeScript]
+    - added: 2021-08-13
 
 ## 🎉 Open to Suggestions
 
