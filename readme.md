@@ -77,6 +77,11 @@
     ![GitHub repo stars](https://img.shields.io/github/stars/neurosnap/neovimcraft)
     - uses:  [TypeScript]
     - added: 2021-08-13
+21. [swyxdotio](https://swyx.io) personal and work-related blog + idea showcase
+    [[code]](https://github.com/sw-yx/swyxdotio)
+    ![GitHub repo stars](https://img.shields.io/github/stars/sw-yx/swyxdotio)
+    - uses:  [Tailwind], [Rollup], [PostCSS]
+    - added: 2021-09-01
 
 ## 🎉 Open to Suggestions
 
@@ -104,3 +109,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [Google Analytics]: https://analytics.google.com
 [MarkedJS]: https://marked.js.org
 [PNPM]: https://pnpm.io
+[Rollup]: https://rollupjs.org

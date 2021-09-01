@@ -250,3 +250,15 @@
   tags: [programming, ressource list, TypeScript]
   dateCreated: 2021-07-18
   lastUpdated: 2021-08-13
+
+# 21
+- title: swyxdotio
+  creator: Shawn Wang
+  creatorTwitter: swyx
+  creatorUrl: https://swyx.io
+  url: https://swyx.io
+  repo: https://github.com/sw-yx/swyxdotio
+  description: personal and work-related writing, idea showcase
+  tags: [programming, blog, portfolio, Tailwind, Rollup, PostCSS]
+  dateCreated: 2020-09-11
+  lastUpdated: 2021-09-01
