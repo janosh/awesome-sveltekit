@@ -1,0 +1,7 @@
+semi: false
+singleQuote: true
+svelteBracketNewLine: false
+overrides:
+  - files: '*.svelte'
+    options:
+      printWidth: 90

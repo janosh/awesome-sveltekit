@@ -1,0 +1,34 @@
+:root {
+  --bg: #1b073e;
+}
+body {
+  background: var(--bg);
+  padding: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  margin: auto;
+  color: #eee;
+  line-height: 3ex;
+  overflow-x: hidden;
+}
+* {
+  scroll-margin-top: 100px;
+}
+div#svelte {
+  display: flex;
+}
+main {
+  max-width: 70em;
+  margin: auto;
+  margin-bottom: 3em;
+  width: 100%;
+}
+ul li {
+  margin: 1ex 0;
+}
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+}
