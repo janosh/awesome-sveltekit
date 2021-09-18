@@ -37,6 +37,7 @@
 # 4
 - title: Geometric Bayes
   creator: Janosh Riebesell
+  creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
@@ -49,6 +50,7 @@
 # 5
 - title: TikZ
   creator: Janosh Riebesell
+  creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
   url: https://tikz.netlify.app
   repo: https://github.com/janosh/tikz
@@ -72,6 +74,7 @@
 # 7
 - title: Studenten bilden Schüler
   creator: Janosh Riebesell
+  creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
   url: https://studenten-bilden-schueler.de
   repo: https://github.com/sbsev/svelte-site
@@ -87,6 +90,7 @@
 # 8
 - title: Afara
   creator: Janosh Riebesell
+  creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
@@ -101,6 +105,7 @@
 # 9
 - title: Ocean artUp
   creator: Janosh Riebesell
+  creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
   url: https://ocean-artup.eu
   repo: https://github.com/janosh/ocean-artup

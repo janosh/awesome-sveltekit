@@ -1,0 +1,47 @@
+{
+  "name": "awesome-svelte-kit",
+  "description": "Awesome examples of SvelteKit in the wild",
+  "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
+  "homepage": "https://awesome-svelte-kit.netlify.app",
+  "repository": "https://github.com/janosh/awesome-svelte-kit",
+  "license": "MIT",
+  "version": "0.1.0",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/janosh/awesome-svelte-kit/issues"
+  },
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "prebuild": "node src/scripts/index.js",
+    "predev": "node src/scripts/index.js",
+    "preview": "svelte-kit preview",
+    "serve": "yarn build && yarn preview",
+    "check": "svelte-check"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.17",
+    "@sveltejs/kit": "^1.0.0-next.156",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "js-yaml": "^4.1.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-svelte": "^2.3.1",
+    "puppeteer": "^10.2.0",
+    "svelte": "^3.42.2",
+    "svelte-check": "^2.2.4",
+    "svelte-multiselect": "^1.1.11",
+    "svelte-preprocess": "^4.7.4",
+    "svelte2tsx": "^0.4.5",
+    "typescript": "^4.3.5",
+    "vite": "^2.5.0"
+  },
+  "keywords": [
+    "svelte-kit",
+    "awesome collection",
+    "example sites",
+    "learning resource"
+  ]
+}

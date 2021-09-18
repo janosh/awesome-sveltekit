@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/svelte-kit.svg" alt="SvelteKit" width="500">
+  <img src="static/svelte-kit.svg" alt="SvelteKit" width="500">
 </p>
 
 <h1 align="center">Awesome examples of SvelteKit in the wild</h1>
@@ -12,6 +12,8 @@
 </h4>
 
 <br>
+
+You can view the full list of sites with screenshots and search filters at **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)**.
 
 1. [Official SvelteKit docs](https://kit.svelte.dev) [[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)] ![GitHub repo stars](https://img.shields.io/github/stars/sveltejs/sites)
     - added: 2021-05-25

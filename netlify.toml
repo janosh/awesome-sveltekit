@@ -1,0 +1,7 @@
+[build]
+command = "yarn build"
+publish = "build"
+
+[build.environment]
+NODE_VERSION = "16.9.0"
+YARN_VERSION = "1.22.10"
