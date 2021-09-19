@@ -11,16 +11,26 @@ const page = await browser.newPage()
 
 fs.mkdirSync(`static/screenshots`, { recursive: true })
 
-for (const site of sites) {
+const updateExisting = process.argv[2] === `update-existing`
+
+if (updateExisting) console.log(`Updating all existing screenshots`)
+
+let nChanged = 0
+
+for (const [idx, site] of sites.entries()) {
   const id = site.title.toLowerCase().replaceAll(` `, `-`)
 
-  if (fs.existsSync(`static/screenshots/${id}.png`)) continue
+  if (!updateExisting && fs.existsSync(`static/screenshots/${id}.png`)) continue
+
+  console.log(`${idx + 1}/${sites.length}: generating ${id}.png`)
 
   await page.goto(site.url)
 
   await page.screenshot({ path: `static/screenshots/${id}.png` })
+
+  nChanged += 1
 }
 
 await browser.close()
 
-console.log(`Finished taking site screenshots`)
+console.log(`Finished generating ${nChanged} screenshots`)
