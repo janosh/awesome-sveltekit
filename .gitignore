@@ -9,4 +9,4 @@ build
 .netlify
 
 # auto-generated
-src/sites.ts
+site/src/sites.ts

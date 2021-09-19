@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="static/svelte-kit.svg" alt="SvelteKit" width="500">
+  <img src="site/static/svelte-kit.svg" alt="SvelteKit" width="500">
 </p>
 
 <h1 align="center">Awesome examples of SvelteKit in the wild</h1>

@@ -3,7 +3,7 @@ import yaml from 'js-yaml'
 
 import fs from 'fs'
 
-const sites = yaml.load(fs.readFileSync(`sites.yml`))
+const sites = yaml.load(fs.readFileSync(`../sites.yml`))
 
 fs.writeFileSync(
   `src/sites.ts`,
