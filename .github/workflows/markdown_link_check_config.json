@@ -1,7 +1,3 @@
 {
-  "aliveStatusCodes": [
-    200,
-    500,
-    503
-  ]
+  "aliveStatusCodes": [200, 500, 503]
 }
