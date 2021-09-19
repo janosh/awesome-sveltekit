@@ -6,3 +6,5 @@ rules:
   document-start: disable
   truthy:
     check-keys: false
+  comments:
+    min-spaces-from-content: 1

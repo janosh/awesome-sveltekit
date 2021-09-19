@@ -24,4 +24,4 @@ rules:
   no-console: [error, allow: [warn, error]]
   no-var: error
   # allow triple slash for typescript file referencing https://git.io/JCeqO
-  spaced-comment: [error, always, {markers: [/]}]
+  spaced-comment: [error, always, { markers: [/] }]
