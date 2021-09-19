@@ -3,7 +3,7 @@ name: Update Site Screenshots
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 1 */3 *' # https://crontab.guru/every-quarter
+    - cron: "0 0 1 */3 *" # https://crontab.guru/every-quarter
 
 jobs:
   take-screenshots:
@@ -21,14 +21,14 @@ jobs:
         run: yarn add puppeteer js-yaml
 
       - name: Run takeScreenshots.js
-        run: node src/scripts/takeScreenshots.js update-existing
+        run: node site/src/scripts/takeScreenshots.js update-existing
 
       - name: Push new screenshots
         run: |
           if [[ -n $(git status -s) ]]; then
             git config user.name github-actions
             git config user.email github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-            git add static/screenshots/*
+            git add site/static/screenshots/*
             git commit -m "Update site screenshots"
             git push
           else
