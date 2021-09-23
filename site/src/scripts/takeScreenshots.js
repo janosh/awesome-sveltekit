@@ -20,17 +20,21 @@ let nChanged = 0
 for (const [idx, site] of sites.entries()) {
   const id = site.title.toLowerCase().replaceAll(` `, `-`)
 
-  if (!updateExisting && fs.existsSync(`static/screenshots/${id}.png`)) {
+  if (!updateExisting && fs.existsSync(`static/screenshots/${id}.webp`)) {
     continue
   }
 
-  console.log(`${idx + 1}/${sites.length}: generating ${id}.png`)
+  try {
+    console.log(`${idx + 1}/${sites.length}: generating ${id}.webp`)
 
-  await page.goto(site.url, { timeout: 10000, waitUntil: `networkidle0` })
+    await page.goto(site.url, { timeout: 10000, waitUntil: `networkidle0` })
 
-  await page.screenshot({ path: `static/screenshots/${id}.png` })
+    await page.screenshot({ path: `static/screenshots/${id}.webp` })
 
-  nChanged += 1
+    nChanged += 1
+  } catch (error) {
+    console.log(`${error} for URL ${site.url}, skipping...`)
+  }
 }
 
 await browser.close()

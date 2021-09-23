@@ -9,6 +9,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-svelte-kit/pulls)
 [![Markdown linting](https://github.com/janosh/awesome-svelte-kit/workflows/Linter/badge.svg)](https://github.com/janosh/awesome-svelte-kit/actions)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-svelte-kit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-svelte-kit/main)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-svelte-kit/deploys)
 
 </h4>

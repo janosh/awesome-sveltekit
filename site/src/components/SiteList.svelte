@@ -25,7 +25,9 @@
           <h1>
             <a href={url}>{title}</a>
           </h1>
-          <img src="/screenshots/{title.toLowerCase().replaceAll(` `, `-`)}.png" alt="" />
+          <img
+            src="/screenshots/{title.toLowerCase().replaceAll(` `, `-`)}.webp"
+            alt={title} />
           <p>{description}</p>
           <p>
             Creator: {creator}
@@ -59,5 +61,6 @@
   }
   ol li img {
     cursor: pointer;
+    width: 100%;
   }
 </style>
