@@ -4,6 +4,7 @@
     "strict": true,
     "module": "es2020",
     "target": "es2020",
+    "moduleResolution": "node", // needed for import { ... } from 'svelte' in TS files
 
     // Svelte Preprocess cannot figure out whether you have a value or a type, so tell TypeScript
     // to enforce using `import type` instead of `import` for Types.

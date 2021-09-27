@@ -16,7 +16,9 @@
 
 <br>
 
-You can view the full list of sites with screenshots and search filters at **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)**.
+You can view the full list of sites with screenshots + search & sort at **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)**.
+
+## Sites
 
 1. [Official SvelteKit docs](https://kit.svelte.dev) [[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)] ![GitHub repo stars](https://img.shields.io/github/stars/sveltejs/sites)
    - added: 2021-05-25
@@ -59,7 +61,7 @@ You can view the full list of sites with screenshots and search filters at **[aw
 14. [puruvj.dev](https://puruvj.dev) by Puru Vijay [[code](https://github.com/puruvj/puruvjdev3)] ![GitHub repo stars](https://img.shields.io/github/stars/puruvj/puruvjdev3)
     - uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
     - added: 2021-06-11
-15. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](http://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://github.com/spences10/sveltekit-starter-blog)] ![GitHub repo stars](https://img.shields.io/github/stars/spences10/sveltekit-starter-blog)
+15. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](http://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://scottspence.com/posts/graphcms-svelte-starter)] ![GitHub repo stars](https://img.shields.io/github/stars/spences10/sveltekit-starter-blog)
     - uses: [Vercel], [Tailwind], [GraphCMS]
     - added: 2021-06-14
 16. [Beatbump](https://beatbump.ml) by Scott Spence [[code](http://github.com/snuffyDev/beatbump)] ![GitHub repo stars](https://img.shields.io/github/stars/snuffyDev/beatbump)
