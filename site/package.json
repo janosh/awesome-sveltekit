@@ -28,6 +28,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-svelte3": "^3.2.0",
     "js-yaml": "^4.1.0",
+    "node-fetch": "^3.0.0",
     "prettier": "^2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
     "puppeteer": "^10.4.0",

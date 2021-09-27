@@ -5,6 +5,7 @@ export type Site = {
   url: string
   description?: string
   repo: string | null
+  repoStars?: number
   creator: string
   creatorUrl?: string
   creatorTwitter?: string
