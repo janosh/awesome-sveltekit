@@ -89,6 +89,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     ![GitHub repo stars](https://img.shields.io/github/stars/sw-yx/swyxdotio)
     - uses: [Tailwind], [Rollup], [PostCSS]
     - added: 2021-09-01
+22. [Flayks](https://flayks.com) Portfolio of Félix Péault, Digital Designer and Art Director
+    [[interview]](https://www.sanity.io/blog/felix-peault-community-interview)
+    - uses: [Sanity], [anime.js], [Vercel], [TypeScript], [SCSS], [PostCSS]
+    - added: 2021-10-01
 
 ## 🎉 Open to Suggestions
 
@@ -117,3 +121,5 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [markedjs]: https://marked.js.org
 [pnpm]: https://pnpm.io
 [rollup]: https://rollupjs.org
+[sanity]: https://www.sanity.io
+[anime.js]: https://animejs.com
