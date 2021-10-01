@@ -33,11 +33,7 @@ for (const [idx, site] of sites.entries()) {
   try {
     await page.goto(site.url, { timeout: 5000, waitUntil: `networkidle2` })
   } catch (error) {
-    try {
-      await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
-    } catch (error) {
-      console.log(`${error} for URL ${site.url}, skipping...`)
-    }
+    await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
   }
 
   await page.screenshot({ path: imgPath })

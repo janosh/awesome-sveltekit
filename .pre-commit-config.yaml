@@ -23,3 +23,11 @@ repos:
           - prettier
           - prettier-plugin-svelte
           - svelte
+
+  - repo: local
+    hooks:
+      - id: webp-screenshots
+        name: Screenshots must use WebP format
+        entry: screenshot filenames must end in .webp
+        language: fail
+        files: '^site/static/screenshots/.*(?<!\.webp)$'

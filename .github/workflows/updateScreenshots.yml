@@ -21,7 +21,7 @@ jobs:
         run: yarn add puppeteer js-yaml
 
       - name: Run takeScreenshots.js
-        run: node site/src/scripts/takeScreenshots.js update-existing
+        run: node site/scripts/takeScreenshots.js update-existing
 
       - name: Push new screenshots
         run: |
