@@ -265,7 +265,19 @@
   creatorUrl: https://swyx.io
   url: https://swyx.io
   repo: https://github.com/sw-yx/swyxdotio
-  description: personal and work-related writing, idea showcase
+  description: Personal and work-related writing, idea showcase.
   tags: [programming, blog, portfolio, Tailwind, Rollup, PostCSS]
   dateCreated: 2020-09-11
   lastUpdated: 2021-09-01
+
+# 22
+- title: Svelte Society
+  creator: Ben McCann
+  creatorTwitter: benjaminmccann
+  creatorUrl: https://benmccann.com
+  url: https://sveltesociety.dev
+  repo: https://github.com/svelte-society/sveltesociety.dev
+  description: The Svelte Society website, a global network of Svelte fans striving to promote Svelte and its ecosystem.
+  tags: [programming, components, events, cheat sheets, TypeScript, GitPod]
+  dateCreated: 2020-10-01
+  lastUpdated: 2020-10-01

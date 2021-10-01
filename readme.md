@@ -49,7 +49,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 10. [Guess The Year](https://guess-the-year.davjhan.com) browser game [[code](https://github.com/davjhan/guess-the-year-game)] ![GitHub repo stars](https://img.shields.io/github/stars/davjhan/guess-the-year-game)
     - uses: [Tailwind]
     - added: 2021-05-25
-11. [Gitpod](https://gitpod.io) by Mike Nikles and others [[code](https://github.com/gitpod-io/website)] ![GitHub repo stars](https://img.shields.io/github/stars/gitpod-io/website)
+11. [Gitpod] by Mike Nikles and others [[code](https://github.com/gitpod-io/website)] ![GitHub repo stars](https://img.shields.io/github/stars/gitpod-io/website)
     - uses: [MDsveX], [Tailwind], [Netlify]
     - added: 2021-05-31
 12. [Svelte Themes](https://sveltethemes.dev) by Sharath Kumar
@@ -89,6 +89,11 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     ![GitHub repo stars](https://img.shields.io/github/stars/sw-yx/swyxdotio)
     - uses: [Tailwind], [Rollup], [PostCSS]
     - added: 2021-09-01
+22. [Svelte Society](https://sveltesociety.dev) global network of Svelte fans striving to promote Svelte and its ecosystem
+    [[code]](https://github.com/svelte-society/sveltesociety.dev)
+    ![GitHub repo stars](https://img.shields.io/github/stars/svelte-society/sveltesociety.dev)
+    - uses: [TypeScript], [Gitpod]
+    - added: 2021-10-01
 
 ## 🎉 Open to Suggestions
 
@@ -117,3 +122,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [markedjs]: https://marked.js.org
 [pnpm]: https://pnpm.io
 [rollup]: https://rollupjs.org
+[gitpod]: https://gitpod.io
