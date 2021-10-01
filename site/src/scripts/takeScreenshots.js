@@ -4,7 +4,7 @@ import fs from 'fs'
 import puppeteer from 'puppeteer'
 import yaml from 'js-yaml'
 
-const sites = yaml.load(fs.readFileSync(`../sites.yml`))
+const sites = yaml.load(fs.readFileSync(`${process.cwd()}/sites.yml`))
 
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
