@@ -36,7 +36,6 @@
     display: flex;
     flex-wrap: wrap;
     place-content: center;
-    max-width: 40em;
     margin: auto;
     place-items: center;
     gap: 1em;

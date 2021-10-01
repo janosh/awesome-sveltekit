@@ -13,7 +13,7 @@
       (query?.length === 0 || JSON.stringify(site).includes(query)) &&
       ($filterTags.length === 0 || site.tags.some((tag) => $filterTags.includes(tag)))
   )
-  let sortedSites = sites
+  $: sortedSites = filteredSites
 
   // arr.sort() sorts in-place but we need to reassign filteredSites so Svelte rerenders
   $: if ($sortBy === `GitHub repo stars`) {
@@ -37,12 +37,16 @@
 
 <main>
   <img src="/svelte-kit.svg" alt="Logo" width="200px" />
-  <h1>Awesome examples of SvelteKit in the wild</h1>
+  <h1>{sites.length} Awesome Examples of SvelteKit in the Wild</h1>
 
   <Filters
     {tags}
     bind:query
     on:toggleSort={() => (sortedSites = sortedSites.reverse())} />
+  {#if filteredSites.length < sites.length}
+    <p>{filteredSites.length} match{filteredSites.length !== 1 ? `es` : 0}</p>
+  {/if}
+
   <SiteList sites={sortedSites} />
 </main>
 
@@ -51,7 +55,8 @@
     --ghc-color: var(--bg);
     --ghc-bg: white;
   }
-  h1 {
+  h1,
+  p {
     text-align: center;
   }
 </style>

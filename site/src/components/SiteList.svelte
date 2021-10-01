@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Site } from '../global'
+  import { Site } from '../types'
   import Modal from './Modal.svelte'
   import Screenshot from './Screenshot.svelte'
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
@@ -19,11 +19,15 @@
 </script>
 
 <ol>
-  {#each sites as { title, url, tags, creator, creatorTwitter, creatorUrl, dateCreated, description, repo, repoStars } (url)}
+  {#each sites as { title, url, tags, creator, creatorTwitter, creatorUrl, dateCreated, description, repo, repoStars }, idx (url)}
     <li>
       <Screenshot {title} on:click={() => (activeSite = url)} />
       <div class="flex" style="justify-content: space-between;">
-        <a href={url} on:click|stopPropagation>{title}</a>
+        <span>
+          {idx + 1}.
+          <!-- stopPropagation to prevent opening modal -->
+          <a href={url} on:click|stopPropagation>{title}</a>
+        </span>
         {#if repoStars}
           <small class="flex"><Star width="1em" />&nbsp;{repoStars}</small>
         {/if}
