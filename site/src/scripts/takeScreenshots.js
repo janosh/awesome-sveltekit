@@ -4,7 +4,9 @@ import fs from 'fs'
 import puppeteer from 'puppeteer'
 import yaml from 'js-yaml'
 
-const sites = yaml.load(fs.readFileSync(`../sites.yml`))
+import { rootDir } from './index.js'
+
+const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
 
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
@@ -20,7 +22,9 @@ let nChanged = 0
 for (const [idx, site] of sites.entries()) {
   const id = site.title.toLowerCase().replaceAll(` `, `-`)
 
-  if (!updateExisting && fs.existsSync(`static/screenshots/${id}.webp`)) {
+  const imgPath = `${rootDir}/site/static/screenshots/${id}.webp`
+
+  if (!updateExisting && fs.existsSync(imgPath)) {
     continue
   }
 
@@ -29,7 +33,7 @@ for (const [idx, site] of sites.entries()) {
 
     await page.goto(site.url, { timeout: 10000, waitUntil: `networkidle0` })
 
-    await page.screenshot({ path: `static/screenshots/${id}.webp` })
+    await page.screenshot({ path: imgPath })
 
     nChanged += 1
   } catch (error) {
