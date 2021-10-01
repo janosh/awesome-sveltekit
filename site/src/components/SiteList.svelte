@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Site } from '../global'
+  import { Site } from '../global'
   import Modal from './Modal.svelte'
   import Screenshot from './Screenshot.svelte'
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
