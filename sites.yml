@@ -272,14 +272,14 @@
 
 # 22
 - title: Svelte Society
-  creator: Ben McCann
+  creator: Ben McCann and others
   creatorTwitter: benjaminmccann
   creatorUrl: https://benmccann.com
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
   description: The Svelte Society website, a global network of Svelte fans striving to promote Svelte and its ecosystem.
   tags: [programming, components, events, cheat sheets, TypeScript, GitPod]
-  dateCreated: 2020-10-01
+  dateCreated: 2020-05-03
   lastUpdated: 2020-10-01
 
 # 23

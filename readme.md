@@ -134,4 +134,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [gitpod]: https://gitpod.io
 [sanity]: https://sanity.io
 [anime.js]: https://animejs.com
-[iconoir]: https://iconoir.com/
+[iconoir]: https://iconoir.com
