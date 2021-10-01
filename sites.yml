@@ -1,10 +1,10 @@
 # New Tags should strike a balance between generality and specificity so they convey
 # useful information but are still applicable to at least a few other sites.
 
-# The field 'created' is usually the date of first commit on a project.
+# The field 'dateCreated' is usually the date of first commit on a project.
 
-# 1
-- title: Official SvelteKit docs
+- id: 1
+  title: Official SvelteKit docs
   creator: Rich Harris & Svelte Community
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
@@ -13,8 +13,8 @@
   dateCreated: 2021-03-10 # https://git.io/JcQYo
   lastUpdated: 2021-05-25
 
-# 2
-- title: NYTimes Tracking the Coronavirus
+- id: 2
+  title: NYTimes Tracking the Coronavirus
   creator: unknown, maybe Rich Harris?
   url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
   repo: null
@@ -22,8 +22,8 @@
   tags: [news, journalism, Covid]
   lastUpdated: 2021-05-25
 
-# 3
-- title: SK Incognito
+- id: 3
+  title: SK Incognito
   creator: GrygrFlzr
   creatorTwitter: GrygrFlzr
   url: https://sk-incognito.vercel.app
@@ -34,8 +34,8 @@
   dateCreated: 2021-02-15
   lastUpdated: 2021-05-25
 
-# 4
-- title: Geometric Bayes
+- id: 4
+  title: Geometric Bayes
   creator: Janosh Riebesell
   creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
@@ -47,8 +47,8 @@
   dateCreated: 2020-10-04
   lastUpdated: 2021-05-25
 
-# 5
-- title: TikZ
+- id: 5
+  title: TikZ
   creator: Janosh Riebesell
   creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
@@ -59,8 +59,8 @@
   dateCreated: 2020-08-09
   lastUpdated: 2021-05-25
 
-# 6
-- title: markushatvan.com
+- id: 6
+  title: markushatvan.com
   creator: Markus Hatvan
   creatorTwitter: HatvanMarkus
   url: https://markushatvan.com
@@ -71,8 +71,8 @@
   dateCreated: 2020-08-21
   lastUpdated: 2021-05-25
 
-# 7
-- title: Studenten bilden Schüler
+- id: 7
+  title: Studenten bilden Schüler
   creator: Janosh Riebesell
   creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
@@ -87,8 +87,8 @@
   dateCreated: 2020-12-12
   lastUpdated: 2021-06-09
 
-# 8
-- title: Afara
+- id: 8
+  title: Afara
   creator: Janosh Riebesell
   creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
@@ -102,8 +102,8 @@
   dateCreated: 2021-01-24
   lastUpdated: 2021-05-25
 
-# 9
-- title: Ocean artUp
+- id: 9
+  title: Ocean artUp
   creator: Janosh Riebesell
   creatorUrl: https://janosh.dev
   creatorTwitter: _jarib
@@ -119,8 +119,8 @@
   dateCreated: 2021-01-31
   lastUpdated: 2021-05-25
 
-# 10
-- title: Guess The Year
+- id: 10
+  title: Guess The Year
   creator: David Han
   creatorTwitter: davjhan
   creatorUrl: https://davjhan.com
@@ -134,8 +134,8 @@
   dateCreated: 2021-05-09
   lastUpdated: 2021-05-25
 
-# 11
-- title: Gitpod
+- id: 11
+  title: Gitpod
   creator: Mike Nikles and others
   creatorTwitter: mikenikles
   url: https://gitpod.io
@@ -148,8 +148,8 @@
   dateCreated: 2021-03-17
   lastUpdated: 2021-05-31
 
-# 12
-- title: Svelte Themes
+- id: 12
+  title: Svelte Themes
   creator: Sharath Kumar
   url: https://sveltethemes.dev
   repo: null
@@ -157,8 +157,8 @@
   tags: [site directory, learning resources]
   lastUpdated: 2021-06-01
 
-# 13
-- title: SvelteKit Experiments
+- id: 13
+  title: SvelteKit Experiments
   creator: Tarun Kumar Sukhu
   creatorTwitter: TarunKumarSukhu
   url: https://sveltekit-demo-psi.vercel.app
@@ -171,8 +171,8 @@
   dateCreated: 2021-05-27
   lastUpdated: 2021-06-09
 
-# 14
-- title: puruvj.dev
+- id: 14
+  title: puruvj.dev
   creator: Puru Vijay
   creatorTwitter: puruvjdev
   url: https://puruvj.dev
@@ -184,8 +184,8 @@
   dateCreated: 2021-05-06
   lastUpdated: 2021-06-11
 
-# 15
-- title: GraphCMS Starter Blog
+- id: 15
+  title: GraphCMS Starter Blog
   creator: Scott Spence
   creatorTwitter: spences10
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
@@ -196,8 +196,8 @@
   dateCreated: 2021-05-16
   lastUpdated: 2021-06-14
 
-# 16
-- title: Beatbump
+- id: 16
+  title: Beatbump
   creator: snuffy
   url: https://beatbump.ml
   repo: https://github.com/snuffyDev/beatbump
@@ -207,8 +207,8 @@
   dateCreated: 2021-06-17
   lastUpdated: 2021-07-08
 
-# 17
-- title: Impfdashboard
+- id: 17
+  title: Impfdashboard
   creator: German Ministry of Health
   creatorUrl: https://nand.io/projects/vaccination-dashboard
   url: https://impfdashboard.de/en
@@ -220,8 +220,8 @@
   dateCreated: 2021-01-01
   lastUpdated: 2021-07-30
 
-# 18
-- title: Paper Trader Game
+- id: 18
+  title: Paper Trader Game
   creator: David Han
   creatorTwitter: davjhan
   creatorUrl: https://davjhan.com
@@ -234,8 +234,8 @@
   dateCreated: 2021-07-25
   lastUpdated: 2021-08-01
 
-# 19
-- title: SveltePress
+- id: 19
+  title: SveltePress
   creator: Evan Geop
   creatorTwitter: GeopJr1312
   creatorUrl: https://geopjr.dev
@@ -246,8 +246,8 @@
   dateCreated: 2021-07-09
   lastUpdated: 2021-08-10
 
-# 20
-- title: neovim craft
+- id: 20
+  title: neovim craft
   creator: Eric Bower
   creatorTwitter: neurosnap
   creatorUrl: https://erock.io
@@ -258,8 +258,8 @@
   dateCreated: 2021-07-18
   lastUpdated: 2021-08-13
 
-# 21
-- title: swyxdotio
+- id: 21
+  title: swyxdotio
   creator: Shawn Wang
   creatorTwitter: swyx
   creatorUrl: https://swyx.io
@@ -270,8 +270,8 @@
   dateCreated: 2020-09-11
   lastUpdated: 2021-09-01
 
-# 22
-- title: Svelte Society
+- id: 22
+  title: Svelte Society
   creator: Ben McCann and others
   creatorTwitter: benjaminmccann
   creatorUrl: https://benmccann.com
@@ -282,8 +282,8 @@
   dateCreated: 2020-05-03
   lastUpdated: 2020-10-01
 
-# 23
-- title: Flayks
+- id: 23
+  title: Flayks
   creator: Félix Péault
   creatorTwitter: flayks
   creatorUrl: https://flayks.com
@@ -293,8 +293,8 @@
   dateCreated: 2021-10-01
   lastUpdated: 2021-10-01
 
-# 24
-- title: Matt Fantinel
+- id: 24
+  title: Matt Fantinel
   creator: Matt Fantinel
   creatorTwitter: matt_fantinel
   creatorUrl: https://fantinel.dev
