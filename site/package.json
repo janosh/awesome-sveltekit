@@ -13,8 +13,8 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "prebuild": "node src/scripts/index.js",
-    "predev": "node src/scripts/index.js",
+    "prebuild": "node scripts/index.js",
+    "predev": "node scripts/index.js",
     "preview": "svelte-kit preview",
     "serve": "yarn build && yarn preview",
     "check": "svelte-check"
