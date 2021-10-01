@@ -3,6 +3,7 @@
   import Modal from './Modal.svelte'
   import Screenshot from './Screenshot.svelte'
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
+  import Star from '@svicons/octicons/star.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
 
   export let sites: Site[]
@@ -18,11 +19,18 @@
 </script>
 
 <ol>
-  {#each sites as { title, url, tags, creator, creatorTwitter, creatorUrl, dateCreated, description, repo } (url)}
+  {#each sites as { title, url, tags, creator, creatorTwitter, creatorUrl, dateCreated, description, repo, repoStars } (url)}
     <li>
       <Screenshot {title} on:click={() => (activeSite = url)} />
-      <a href={url} on:click|stopPropagation>{title}</a><br />
-      <small>{tags.join(`, `)}</small>
+      <div class="flex" style="justify-content: space-between;">
+        <a href={url} on:click|stopPropagation>{title}</a>
+        {#if repoStars}
+          <small class="flex"><Star width="1em" />&nbsp;{repoStars}</small>
+        {/if}
+      </div>
+      <p>
+        <small>{tags.join(`, `)}</small>
+      </p>
     </li>
     {#if activeSite === url}
       <Modal on:close={() => (activeSite = null)} style="background: #2c2b35;">
