@@ -28,17 +28,21 @@ for (const [idx, site] of sites.entries()) {
     continue
   }
 
+  console.log(`${idx + 1}/${sites.length}: generating ${id}.webp`)
+
   try {
-    console.log(`${idx + 1}/${sites.length}: generating ${id}.webp`)
-
-    await page.goto(site.url, { timeout: 10000, waitUntil: `networkidle0` })
-
-    await page.screenshot({ path: imgPath })
-
-    nChanged += 1
+    await page.goto(site.url, { timeout: 5000, waitUntil: `networkidle2` })
   } catch (error) {
-    console.log(`${error} for URL ${site.url}, skipping...`)
+    try {
+      await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
+    } catch (error) {
+      console.log(`${error} for URL ${site.url}, skipping...`)
+    }
   }
+
+  await page.screenshot({ path: imgPath })
+
+  nChanged += 1
 }
 
 await browser.close()
