@@ -292,3 +292,15 @@
   tags: [portfolio, Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
   dateCreated: 2021-10-01
   lastUpdated: 2021-10-01
+
+# 24
+- title: Matt Fantinel
+  creator: Matt Fantinel
+  creatorTwitter: matt_fantinel
+  creatorUrl: https://fantinel.dev
+  url: https://fantinel.dev
+  description: Personal website and blog of Matt Fantinel, web developer
+  uses: [MDsveX, SCSS, Iconoir, Plausible]
+  tags: [personal, blog, portfolio, SCSS, MDsveX]
+  dateCreated: 2021-09-07
+  lastUpdated: 2021-09-15

@@ -98,6 +98,11 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     [[interview](https://sanity.io/blog/felix-peault-community-interview)]
     - uses: [Sanity], [anime.js], [Vercel], [TypeScript], [SCSS], [PostCSS]
     - added: 2021-10-01
+24. [Matt Fantinel](https://fantinel.dev) Personal website and blog of Matt Fantinel, web developer
+    [[code]](https://github.com/matfantinel/matfantinel.github.io)
+    ![GitHub repo stars](https://img.shields.io/github/stars/matfantinel/matfantinel.github.io)
+    - uses: [MDsveX], [SCSS], [Iconoir], [Plausible]
+    - added: 2021-10-01
 
 ## 🎉 Open to Suggestions
 
@@ -129,3 +134,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [gitpod]: https://gitpod.io
 [sanity]: https://sanity.io
 [anime.js]: https://animejs.com
+[iconoir]: https://iconoir.com/
