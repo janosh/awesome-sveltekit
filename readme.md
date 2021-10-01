@@ -94,6 +94,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     ![GitHub repo stars](https://img.shields.io/github/stars/svelte-society/sveltesociety.dev)
     - uses: [TypeScript], [Gitpod]
     - added: 2021-10-01
+23. [Flayks](https://flayks.com) Portfolio of Félix Péault, Digital Designer and Art Director
+    [[interview](https://sanity.io/blog/felix-peault-community-interview)]
+    - uses: [Sanity], [anime.js], [Vercel], [TypeScript], [SCSS], [PostCSS]
+    - added: 2021-10-01
 
 ## 🎉 Open to Suggestions
 
@@ -123,3 +127,5 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [pnpm]: https://pnpm.io
 [rollup]: https://rollupjs.org
 [gitpod]: https://gitpod.io
+[sanity]: https://sanity.io
+[anime.js]: https://animejs.com
