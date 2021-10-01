@@ -1,10 +1,12 @@
 /* eslint-disable no-console */
+import fs from 'fs'
+
 import yaml from 'js-yaml'
 import fetch from 'node-fetch'
 
-import fs from 'fs'
+import { rootDir } from './index.js'
 
-const sites = yaml.load(fs.readFileSync(`../sites.yml`))
+const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
 
 for (const site of sites) {
   if (!site.repo) continue
@@ -16,7 +18,7 @@ for (const site of sites) {
 }
 
 fs.writeFileSync(
-  `src/sites.ts`,
+  `${rootDir}/site/src/sites.ts`,
   `export default ${JSON.stringify(sites, null, 2)}`
 )
 
