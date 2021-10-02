@@ -25,12 +25,11 @@ jobs:
 
       - name: Push new screenshots
         run: |
-          if [[ -n $(git status -s site/static/screenshots) ]]; then
-            git config user.name github-actions
-            git config user.email github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-            git add site/static/screenshots/*
-            git commit -m "Update site screenshots"
-            git push
-          else
+          if git diff --quiet site/static/screenshots; then
             echo "No changes to commit"
+            exit 0
           fi
+          git config user.name='Janosh Riebesell'
+          git config user.email=janosh.riebesell@gmail.com
+          git commit -a -m 'update site screenshots'
+          git push
