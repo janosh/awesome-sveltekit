@@ -117,6 +117,9 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/matfantinel/matfantinel.github.io" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [SCSS], [Iconoir], [Plausible]
     - added: 2021-10-01
+25. [Level Up Tutorials](https://leveluptutorials.com) Video tutorials for web developers and designers
+    - uses: [TypeScript], [Google Analytics]
+    - added: 2021-10-5
 
 ## 🎉 Open to Suggestions
 

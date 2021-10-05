@@ -253,7 +253,7 @@
   creatorUrl: https://erock.io
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
-  description: Curated list of neovim plugins
+  description: Curated list of neovim plugins.
   tags: [programming, ressource list, TypeScript]
   dateCreated: 2021-07-18
   lastUpdated: 2021-08-13
@@ -288,7 +288,7 @@
   creatorTwitter: flayks
   creatorUrl: https://flayks.com
   url: https://flayks.com
-  description: Portfolio of Félix Péault, Digital Designer and Art Director
+  description: Portfolio of Félix Péault, Digital Designer and Art Director.
   tags: [portfolio, Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
   dateCreated: 2021-10-01
   lastUpdated: 2021-10-01
@@ -299,8 +299,20 @@
   creatorTwitter: matt_fantinel
   creatorUrl: https://fantinel.dev
   url: https://fantinel.dev
-  description: Personal website and blog of Matt Fantinel, web developer
+  description: Personal website and blog of Matt Fantinel, web developer.
   uses: [MDsveX, SCSS, Iconoir, Plausible]
   tags: [personal, blog, portfolio, SCSS, MDsveX]
   dateCreated: 2021-09-07
   lastUpdated: 2021-09-15
+
+- id: 25
+  title: Level Up Tutorials
+  creator: Scott Tolinski
+  creatorTwitter: stolinski
+  creatorUrl: https://scotttolinski.com
+  url: https://leveluptutorials.com
+  description: Video tutorials for web developers and designers.
+  uses: [TypeScript, Google Tag Manager]
+  tags: [tutorials, education, videos, web development, design]
+  dateCreated: 2021-09-01
+  lastUpdated: 2021-10-05
