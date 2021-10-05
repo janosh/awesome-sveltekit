@@ -24,6 +24,11 @@ repos:
           - prettier-plugin-svelte
           - svelte
 
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.26.3
+    hooks:
+      - id: yamllint
+
   - repo: local
     hooks:
       - id: webp-screenshots
