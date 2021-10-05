@@ -28,15 +28,3 @@ jobs:
         with:
           # sets status code 500 (Internal Server Error) and 503 (Service Unavailable) as alive
           config-file: .github/workflows/markdown_link_check_config.json
-
-  yamllint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Run yamllint
-        uses: ibiqlik/action-yamllint@v3
-        # docs at https://git.io/JBa6q
-        with:
-          config_file: .github/.yamllint.yml
