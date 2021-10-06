@@ -120,6 +120,9 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 25. [Level Up Tutorials](https://leveluptutorials.com) Video tutorials for web developers and designers
     - uses: [TypeScript], [Google Analytics]
     - added: 2021-10-5
+26. [MortimerBaltus](https://mortimerbaltus.com) is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
+    - uses: [Cloudinary], [Cloudflare]
+    - added: 2021-10-6
 
 ## 🎉 Open to Suggestions
 
@@ -138,6 +141,7 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [typescript]: https://typescriptlang.org
 [scss]: https://sass-lang.com
 [cloudinary]: https://cloudinary.com
+[cloudflare]: https://cloudflare.com
 [graphcms]: https://graphcms.com
 [svicons]: https://github.com/janosh/svicons
 [postcss]: https://postcss.org

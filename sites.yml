@@ -316,3 +316,15 @@
   tags: [tutorials, education, videos, web development, design]
   dateCreated: 2021-09-01
   lastUpdated: 2021-10-05
+
+- id: 26
+  title: MortimerBaltus
+  creator: Theodor Baltus Steiner & Moritz Mortimer Müller
+  creatorTwitter: _TheoSteiner
+  creatorUrl: https://mortimerbaltus.com
+  url: https://mortimerbaltus.com
+  description: MortimerBaltus is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
+  uses: [Cloudinary, Cloudflare Pages, Cloudflare Workers]
+  tags: [web development, design, intercultural guidance]
+  dateCreated: 2021-09-21
+  lastUpdated: 2021-10-06
