@@ -120,7 +120,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 25. [Level Up Tutorials](https://leveluptutorials.com) Video tutorials for web developers and designers
     - uses: [TypeScript], [Google Analytics]
     - added: 2021-10-5
-26. [MortimerBaltus](https://mortimerbaltus.com) MortimerBaltus is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
+26. [MortimerBaltus](https://mortimerbaltus.com) is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
     - uses: [cloudinary], [cloudflare]
     - added: 2021-10-6
 
