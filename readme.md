@@ -121,7 +121,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     - uses: [TypeScript], [Google Analytics]
     - added: 2021-10-5
 26. [MortimerBaltus](https://mortimerbaltus.com) is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
-    - uses: [cloudinary], [cloudflare]
+    - uses: [Cloudinary], [Cloudflare]
     - added: 2021-10-6
 
 ## 🎉 Open to Suggestions
