@@ -1,10 +1,9 @@
-name: Markdown link check
+name: Link check
 
 on:
-  push:
-    paths: [readme.md, sites.yml]
-  pull_request:
-    paths: [readme.md, sites.yml]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *" # monthly
 
 jobs:
   markdown-link-check:
