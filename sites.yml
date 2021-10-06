@@ -7,7 +7,7 @@
   title: Official SvelteKit docs
   creator: Rich Harris & Svelte Community
   url: https://kit.svelte.dev
-  repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
+  # repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
   uses: [Netlify, PNPM]
   tags: [docs, monorepo]
   dateCreated: 2021-03-10 # https://git.io/JcQYo
