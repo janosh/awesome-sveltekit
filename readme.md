@@ -21,7 +21,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 ## Sites
 
 1. [Official SvelteKit docs](https://kit.svelte.dev) [[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)]
-   <!-- <img src="https://img.shields.io/github/stars/sveltejs/sites" alt="GitHub stars" valign="middle"> -->
+   <img src="https://img.shields.io/github/stars/sveltejs/sites" alt="GitHub stars" valign="middle">
    - added: 2021-05-25
 2. [NYTimes Tracking the Coronavirus](https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html)
    - uses: [Pancake]
