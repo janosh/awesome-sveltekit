@@ -1,0 +1,21 @@
+name: Markdown link check
+
+on:
+  push:
+    paths: [readme.md, sites.yml]
+  pull_request:
+    paths: [readme.md, sites.yml]
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Run markdown link check
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        # docs at https://git.io/JBaKu
+        with:
+          # sets status code 500 (Internal Server Error) and 503 (Service Unavailable) as alive
+          config-file: dotfiles/markdown_link_check_config.json
