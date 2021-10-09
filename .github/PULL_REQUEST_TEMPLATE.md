@@ -1,1 +1,3 @@
-Please make sure you're adding new sites to **both** `readme.md` and `sites.yml`. If you're committing from <github.com>, you can first edit the readme, open your PR and then edit `sites.yml` (or vice versa) within the same PR.
+<!-- Please make sure you're adding new sites to **both** `readme.md` and `sites.yml`. -->
+
+Adds <put new site url, remove if not adding a site>
