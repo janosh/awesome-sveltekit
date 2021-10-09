@@ -328,3 +328,15 @@
   tags: [web development, design, intercultural guidance]
   dateCreated: 2021-09-21
   lastUpdated: 2021-10-06
+
+- id: 27
+  title: JSchallenger
+  creator: Erik Kückelheim
+  creatorTwitter: kueckelheim
+  creatorUrl: https://erik-kueckelheim.com
+  url: https://jschallenger.com
+  description: Free Javascript challenges. Learn Javascript online by solving coding exercises.
+  uses: [Tailwind, DynamoDB, AWS]
+  tags: [education, coding challenges, JavaScript]
+  dateCreated: 2021-10-09
+  lastUpdated: 2021-10-09
