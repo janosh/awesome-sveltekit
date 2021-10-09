@@ -123,7 +123,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 26. [MortimerBaltus](https://mortimerbaltus.com) is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
     - uses: [Cloudinary], [Cloudflare]
     - added: 2021-10-6
-27. [JSchallenger](https://www.jschallenger.com) Free Javascript challenges. Learn Javascript online by solving coding exercises.
+27. [JSchallenger](https://jschallenger.com) Free Javascript challenges. Learn Javascript online by solving coding exercises.
     - uses: [Tailwind], [DynamoDB], [AWS]
     - added: 2021-10-9
 
@@ -159,3 +159,5 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [sanity]: https://sanity.io
 [anime.js]: https://animejs.com
 [iconoir]: https://iconoir.com
+[dynamodb]: https://aws.amazon.com/dynamodb
+[aws]: https://aws.amazon.com
