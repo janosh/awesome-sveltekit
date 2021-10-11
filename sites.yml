@@ -340,3 +340,14 @@
   tags: [education, coding challenges, JavaScript]
   dateCreated: 2021-10-09
   lastUpdated: 2021-10-09
+
+- id: 28
+  title: Files
+  creator: Yair Aichenbaum and others
+  url: https://files.community
+  repo: https://github.com/files-community/website
+  description: 3rd Party File Manager for Windows.
+  uses: [PNPM, TypeScript, SCSS, Vercel]
+  tags: [education, coding challenges, JavaScript]
+  dateCreated: 2021-05-20
+  lastUpdated: 2021-10-11

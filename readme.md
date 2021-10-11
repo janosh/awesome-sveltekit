@@ -126,6 +126,11 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 27. [JSchallenger](https://jschallenger.com) Free Javascript challenges. Learn Javascript online by solving coding exercises.
     - uses: [Tailwind], [DynamoDB], [AWS]
     - added: 2021-10-9
+28. [Files](https://files.community) 3rd Party File Manager for Windows.
+    [[code](https://github.com/files-community/website)]
+    <img src="https://img.shields.io/github/stars/files-community/website" alt="GitHub stars" valign="middle">
+    - uses: [PNPM], [Typescript], [Vercel], [SCSS]
+    - added: 2021-10-11
 
 ## 🎉 Open to Suggestions
 
