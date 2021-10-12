@@ -351,3 +351,15 @@
   tags: [education, coding challenges, JavaScript]
   dateCreated: 2021-05-20
   lastUpdated: 2021-10-11
+
+- id: 29
+  title: Svelte Summit 2021 Fall
+  creator: [Kevin Åberg Kultalahti, Johan Ronsse]
+  creatorTwitter: [kevmodrome, wolfr_2]
+  url: https://sveltesummit.com
+  repo: https://github.com/svelte-society/svelte-summit
+  description: The 4th virtual conference about Svelte
+  uses: [Elder.js, PostCSS, Cloudflare]
+  tags: [conference, community event, learning, news]
+  dateCreated: 2021-07-25
+  lastUpdated: 2021-10-12
