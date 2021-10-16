@@ -108,6 +108,11 @@
     require-relative "^0.8.7"
     svelte-hmr "^0.14.7"
 
+"@svicons/fa-brands@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@svicons/fa-brands/-/fa-brands-0.1.3.tgz#29e82a1d2d3b07b103db6f11183c6728841aa258"
+  integrity sha512-EymGe+Crf8eZJFiTORcivstAHx3KAtbAyyO5/Phbv0G3KrKPHQY0S74AwwxCqxeT7BOGdDQhdhgNCCqRI09qpQ==
+
 "@svicons/octicons@^0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@svicons/octicons/-/octicons-0.1.3.tgz#e4eba607ea349472b18c9e9396ef38c0c50935fc"

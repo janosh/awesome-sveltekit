@@ -152,7 +152,6 @@
   title: Svelte Themes
   creator: Sharath Kumar
   url: https://sveltethemes.dev
-  repo: null
   uses: [Netlify, Tailwind]
   tags: [site directory, learning resources]
   lastUpdated: 2021-06-01
@@ -212,7 +211,6 @@
   creator: German Ministry of Health
   creatorUrl: https://nand.io/projects/vaccination-dashboard
   url: https://impfdashboard.de/en
-  repo:
   description:
     The official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH,
     Studio NAND GmbH and Truth & Beauty. Data supplied by Robert Koch Institut.
@@ -254,7 +252,7 @@
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
   description: Curated list of neovim plugins.
-  tags: [programming, ressource list, TypeScript]
+  tags: [programming, resource list, TypeScript]
   dateCreated: 2021-07-18
   lastUpdated: 2021-08-13
 
