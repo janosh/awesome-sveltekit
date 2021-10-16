@@ -5,6 +5,10 @@
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
   import Star from '@svicons/octicons/star.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
+  import LinkExternal from '@svicons/octicons/link-external.svelte'
+  import Twitter from '@svicons/fa-brands/twitter.svelte'
+  import Project from '@svicons/octicons/project.svelte'
+  import Person from '@svicons/octicons/person.svelte'
 
   export let sites: Site[]
 
@@ -43,7 +47,7 @@
             <a href={url}>{title}</a>
             {#if repo}
               <small class="flex" style="gap: 6pt;">
-                <MarkGithub width="1.2em" /><a href={repo}>Code</a>
+                <MarkGithub width="1.2em" /><a href={repo}>Repo</a>
               </small>
             {/if}
           </h1>
@@ -52,29 +56,27 @@
             <p>{description}</p>
           {/if}
           <p class="flex">
-            Creator: {creator}
+            <Person width="1em" />&emsp;Creator:&nbsp;
             {#if creatorUrl}
-              &nbsp;&mdash;&nbsp;<a href={creatorUrl}>Web</a>
+              <a href={creatorUrl} class="flex">
+                {creator}&nbsp;<LinkExternal width="1em" /></a>
+            {:else}
+              {creator}
             {/if}
-            {#if creatorTwitter}
-              &nbsp;&mdash;&nbsp;<a href="https://twitter.com/@{creatorTwitter}">
-                Twitter</a>
-            {/if}
-            {#if repo}
-              &nbsp;&mdash;&nbsp;<img
-                src="https://img.shields.io/github/stars/{repo
-                  .split('/')
-                  .slice(3, 5)
-                  .join('/')}"
-                alt="GitHub repo stars"
-                height="16pt" />
+            {#if creatorTwitter}&nbsp;&mdash;&nbsp;
+              <a href="https://twitter.com/@{creatorTwitter}" class="flex">
+                <Twitter width="1.1em" />&nbsp;@{creatorTwitter}</a>
             {/if}
           </p>
           {#if dateCreated}
-            <p>Project started on: {prettyDate(dateCreated)}</p>
+            <p class="flex">
+              <Project width="1em" />&emsp;Project started on: {prettyDate(dateCreated)}
+            </p>
           {/if}
           {#if tags?.length > 0}
-            <p class="flex"><Tag width="1.2em" />&nbsp;Tags: {tags.join(`, `)}</p>
+            <p class="flex">
+              <Tag width="1em" height="1.2em" />&emsp;Tags: {tags.join(`, `)}
+            </p>
           {/if}
         </div>
       </Modal>
@@ -89,9 +91,6 @@
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  }
-  ol li img {
-    cursor: pointer;
   }
   .flex {
     display: flex;

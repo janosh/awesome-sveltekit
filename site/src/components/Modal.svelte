@@ -13,7 +13,7 @@
   let origScrollPos: [number, number]
   let origActiveElement: HTMLElement | null
 
-  // record original scroll position and focussed element
+  // record original scroll position and focused element
   // to return to when modal closes (see onDestroy)
   onMount(() => {
     origScrollPos = [window.scrollX, window.scrollY]
@@ -79,7 +79,7 @@
     max-width: 40em;
     max-height: calc(100vh - 8em);
     overflow: auto;
-    padding: 1em;
+    padding: 0 1em;
     border-radius: 5pt;
     background: rgba(0, 0, 0, 0.6);
   }

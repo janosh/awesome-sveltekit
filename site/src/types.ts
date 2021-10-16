@@ -2,7 +2,7 @@ export type Site = {
   title: string
   url: string
   description?: string
-  repo: string | null
+  repo?: string
   repoStars?: number
   creator: string
   creatorUrl?: string
