@@ -1,87 +1,41 @@
 <script lang="ts">
+  import { flip } from 'svelte/animate'
+  import Star from '@svicons/octicons/star.svelte'
+
   import { Site } from '../types'
   import Modal from './Modal.svelte'
   import Screenshot from './Screenshot.svelte'
-  import MarkGithub from '@svicons/octicons/mark-github.svelte'
-  import Star from '@svicons/octicons/star.svelte'
-  import Tag from '@svicons/octicons/tag.svelte'
-  import LinkExternal from '@svicons/octicons/link-external.svelte'
-  import Twitter from '@svicons/fa-brands/twitter.svelte'
-  import Project from '@svicons/octicons/project.svelte'
-  import Person from '@svicons/octicons/person.svelte'
+  import SiteDetails from './SiteDetails.svelte'
 
   export let sites: Site[]
 
-  let activeSite: string | null = null
-
-  const prettyDate = (date = ``): string =>
-    new Date(date).toLocaleString(`en`, {
-      month: `short`,
-      year: `numeric`,
-      day: `numeric`,
-    })
+  let activeSite: Site | null = null
 </script>
 
 <ol>
-  {#each sites as { title, url, tags, creator, creatorTwitter, creatorUrl, dateCreated, description, repo, repoStars }, idx (url)}
-    <li>
-      <Screenshot {title} on:click={() => (activeSite = url)} />
+  {#each sites as site, idx (site.url)}
+    <li animate:flip={{ duration: 400 }}>
+      <Screenshot title={site.title} on:click={() => (activeSite = site)} />
       <div class="flex" style="justify-content: space-between;">
         <span>
           {idx + 1}.
           <!-- stopPropagation to prevent opening modal -->
-          <a href={url} on:click|stopPropagation>{title}</a>
+          <a href={site.url} on:click|stopPropagation>{site.title}</a>
         </span>
-        {#if repoStars}
-          <small class="flex"><Star width="1em" />&nbsp;{repoStars}</small>
+        {#if site.repoStars}
+          <small class="flex"><Star width="1em" />&nbsp;{site.repoStars}</small>
         {/if}
       </div>
       <p>
-        <small>{tags.join(`, `)}</small>
+        <small>{site.tags.join(`, `)}</small>
       </p>
     </li>
-    {#if activeSite === url}
-      <Modal on:close={() => (activeSite = null)} style="background: #2c2b35;">
-        <div>
-          <h1 class="flex" style="gap: 1em; justify-content: space-between;">
-            <a href={url}>{title}</a>
-            {#if repo}
-              <small class="flex" style="gap: 6pt;">
-                <MarkGithub width="1.2em" /><a href={repo}>Repo</a>
-              </small>
-            {/if}
-          </h1>
-          <Screenshot {title} />
-          {#if description}
-            <p>{description}</p>
-          {/if}
-          <p class="flex">
-            <Person width="1em" />&emsp;Creator:&nbsp;
-            {#if creatorUrl}
-              <a href={creatorUrl} class="flex">
-                {creator}&nbsp;<LinkExternal width="1em" /></a>
-            {:else}
-              {creator}
-            {/if}
-            {#if creatorTwitter}&nbsp;&mdash;&nbsp;
-              <a href="https://twitter.com/@{creatorTwitter}" class="flex">
-                <Twitter width="1.1em" />&nbsp;@{creatorTwitter}</a>
-            {/if}
-          </p>
-          {#if dateCreated}
-            <p class="flex">
-              <Project width="1em" />&emsp;Project started on: {prettyDate(dateCreated)}
-            </p>
-          {/if}
-          {#if tags?.length > 0}
-            <p class="flex">
-              <Tag width="1em" height="1.2em" />&emsp;Tags: {tags.join(`, `)}
-            </p>
-          {/if}
-        </div>
-      </Modal>
-    {/if}
   {/each}
+  {#if activeSite}
+    <Modal on:close={() => (activeSite = null)} style="background: #2c2b35;">
+      <SiteDetails site={activeSite} />
+    </Modal>
+  {/if}
 </ol>
 
 <style>
@@ -91,12 +45,5 @@
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  }
-  .flex {
-    display: flex;
-    align-items: center;
-  }
-  h1 small {
-    font-size: 14pt;
   }
 </style>

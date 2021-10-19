@@ -58,9 +58,17 @@
     border: none;
     outline: none;
     padding: 4pt 1ex;
-    border-radius: 3pt;
+    border-radius: 4pt;
     color: inherit;
     background: black;
     box-shadow: 0 0 1pt gray;
+    height: 37px; /* same as MultiSelect */
+  }
+  input[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    background: url(/favicon.svg) no-repeat;
+    cursor: pointer;
   }
 </style>

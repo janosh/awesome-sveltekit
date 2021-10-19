@@ -17,7 +17,6 @@
   title: NYTimes Tracking the Coronavirus
   creator: unknown, maybe Rich Harris?
   url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
-  repo: null
   uses: [Pancake]
   tags: [news, journalism, Covid]
   lastUpdated: 2021-05-25
