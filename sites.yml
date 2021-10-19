@@ -360,3 +360,12 @@
   tags: [conference, community event, learning, news]
   dateCreated: 2021-07-25
   lastUpdated: 2021-10-12
+
+- id: 30
+  title: cybernetic.dev
+  creator: unknown
+  url: https://cybernetic.dev
+  description: Data-centric UI experiments
+  uses: [Three.js, Cytoscape.js, Vercel]
+  tags: [data visualization, statistics, machine learning]
+  lastUpdated: 2021-10-17
