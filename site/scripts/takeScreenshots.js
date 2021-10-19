@@ -17,7 +17,7 @@ const updateExisting = process.argv[2] === `update-existing`
 
 if (updateExisting) console.log(`Updating all existing screenshots`)
 
-let nChanged = 0
+let [nNew, nUpdated] = [0, 0]
 
 console.time(`Finished taking screenshots`)
 
@@ -25,8 +25,9 @@ for (const [idx, site] of sites.entries()) {
   const id = site.title.toLowerCase().replaceAll(` `, `-`)
 
   const imgPath = `${rootDir}/site/static/screenshots/${id}.webp`
+  const imgExists = fs.existsSync(imgPath)
 
-  if (!updateExisting && fs.existsSync(imgPath)) {
+  if (!updateExisting && imgExists) {
     continue
   }
 
@@ -38,12 +39,15 @@ for (const [idx, site] of sites.entries()) {
     await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
   }
 
+  await page.waitForTimeout(1000) // wait 1s for sites with landing animations to settle
+  // e.g. https://mortimerbaltus.com, https://flayks.com
   await page.screenshot({ path: imgPath })
 
-  nChanged += 1
+  if (imgExists) nUpdated += 1
+  else nNew += 1
 }
 
 await browser.close()
 
 console.timeEnd(`Finished taking screenshots`)
-console.log(`  - ${nChanged} new/updated screenshots`)
+console.log(`  - ${nNew} new, ${nUpdated} updated`)
