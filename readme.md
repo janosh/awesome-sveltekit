@@ -136,6 +136,9 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/svelte-society/svelte-summit" alt="GitHub stars" valign="middle">
     - uses: [Elder.js], [PostCSS], [Cloudflare]
     - added: 2021-10-12
+30. [cybernetic.dev](https://cybernetic.dev) Data-centric UI experiments
+    - uses: [Three.js], [Cytoscape.js], [Vercel]
+    - added: 2021-10-19
 
 ## 🎉 Open to Suggestions
 
@@ -172,3 +175,5 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [dynamodb]: https://aws.amazon.com/dynamodb
 [aws]: https://aws.amazon.com
 [elder.js]: https://github.com/Elderjs/elderjs
+[three.js]: https://threejs.org
+[cytoscape.js]: https://js.cytoscape.org
