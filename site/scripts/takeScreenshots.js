@@ -19,6 +19,8 @@ if (updateExisting) console.log(`Updating all existing screenshots`)
 
 let nChanged = 0
 
+console.time(`Finished taking screenshots`)
+
 for (const [idx, site] of sites.entries()) {
   const id = site.title.toLowerCase().replaceAll(` `, `-`)
 
@@ -43,4 +45,5 @@ for (const [idx, site] of sites.entries()) {
 
 await browser.close()
 
-console.log(`Finished generating ${nChanged} screenshots`)
+console.timeEnd(`Finished taking screenshots`)
+console.log(`  - ${nChanged} new/updated screenshots`)

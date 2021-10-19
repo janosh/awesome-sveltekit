@@ -8,6 +8,8 @@ import { rootDir } from './index.js'
 
 const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
 
+console.time(`Parsed sites.yml`)
+
 for (const site of sites) {
   if (!site.repo) continue
 
@@ -22,4 +24,4 @@ fs.writeFileSync(
   `export default ${JSON.stringify(sites, null, 2)}`
 )
 
-console.log(`Finished parsing sites.yml`)
+console.timeEnd(`Parsed sites.yml`)
