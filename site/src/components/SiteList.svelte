@@ -46,4 +46,7 @@
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   }
+  ol li {
+    cursor: pointer;
+  }
 </style>

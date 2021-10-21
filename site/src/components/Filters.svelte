@@ -36,20 +36,20 @@
     display: flex;
     flex-wrap: wrap;
     place-content: center;
-    margin: auto;
-    place-items: center;
+    margin: 2em auto;
     gap: 1em;
   }
   :global(.multiselect) {
     box-shadow: 0 0 1pt gray;
-    border: none !important;
-    display: inline-flex !important;
+    border: none;
+    display: inline-flex;
     min-width: 12em;
-    background-color: black !important;
+    background-color: black;
     padding: 4pt 1ex;
+    margin: 0;
   }
   :global(.multiselect ul.options) {
-    background-color: black !important;
+    background-color: black;
   }
   :global(.multiselect ul.options li) {
     margin: 0;
@@ -62,7 +62,6 @@
     color: inherit;
     background: black;
     box-shadow: 0 0 1pt gray;
-    height: 37px; /* same as MultiSelect */
   }
   input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: none;

@@ -11,7 +11,7 @@ const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
 
-fs.mkdirSync(`static/screenshots`, { recursive: true })
+fs.mkdirSync(`${rootDir}/site/static/screenshots`, { recursive: true })
 
 const updateExisting = process.argv[2] === `update-existing`
 

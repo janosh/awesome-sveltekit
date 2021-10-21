@@ -35,7 +35,7 @@
     "puppeteer": "^10.4.0",
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.7",
-    "svelte-multiselect": "^1.2.0",
+    "svelte-multiselect": "^1.2.1",
     "svelte-preprocess": "^4.9.8",
     "svelte2tsx": "^0.4.7",
     "typescript": "^4.4.4",
