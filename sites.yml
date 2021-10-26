@@ -369,3 +369,14 @@
   uses: [Three.js, Cytoscape.js, Vercel]
   tags: [data visualization, statistics, machine learning]
   lastUpdated: 2021-10-17
+  
+- id: 31
+title: Kudadam.com
+creator: Lucretius Biah
+creatorTwitter: lucretius_1
+url: https://www.kudadam.com
+repo: https://gituhb.com/biah/kudadam
+description: A personal website and blog
+uses: [mdsvex, Tailwind]
+tags: [blog, rss, personal-website]
+lastUpdated: 2021-10-26
