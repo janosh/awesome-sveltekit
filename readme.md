@@ -140,6 +140,11 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     - uses: [Three.js], [Cytoscape.js], [Vercel]
     - added: 2021-10-19
 
+31. [kudadam.com](https://www.kudadam.com) Personal Website
+      <img src="https://img.shields.io/github/stars/biah/kudadam" alt="GitHub stars" valign="middle">
+      - uses: [mdsvex], [Tailwind]
+      - added: 2021-10-26
+
 ## 🎉 Open to Suggestions
 
 See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md) Remember to add each new site both to the readme and to `sites.yml`. If you're unsure if a site belongs on this list, feel free to [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) first. This repo is meant to be a community effort.
