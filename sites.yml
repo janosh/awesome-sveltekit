@@ -375,8 +375,9 @@ title: Kudadam.com
 creator: Lucretius Biah
 creatorTwitter: lucretius_1
 url: https://www.kudadam.com
-repo: https://gituhb.com/biah/kudadam
+repo: https://github.com/biah/kudadam
 description: A personal website and blog
 uses: [mdsvex, Tailwind]
 tags: [blog, rss, personal-website]
+dateCreated: 2021-08-06
 lastUpdated: 2021-10-26
