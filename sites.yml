@@ -66,7 +66,7 @@
   repo: https://github.com/mhatvan/markushatvan.com
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS feed and sitemap.
   uses: [Tailwind, MDsveX, Svelte Forms Lib]
-  tags: [blog, rss, sitemap, contact form] 
+  tags: [blog, rss, sitemap, contact form]
   dateCreated: 2020-08-21
   lastUpdated: 2021-05-25
 
@@ -369,7 +369,7 @@
   uses: [Three.js, Cytoscape.js, Vercel]
   tags: [data visualization, statistics, machine learning]
   lastUpdated: 2021-10-17
-  
+
 - id: 31
 title: Kudadam.com
 creator: Lucretius Biah
