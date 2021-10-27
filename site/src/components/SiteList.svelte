@@ -6,6 +6,15 @@
   import Modal from './Modal.svelte'
   import Screenshot from './Screenshot.svelte'
   import SiteDetails from './SiteDetails.svelte'
+  import Tag from '@svicons/octicons/tag.svelte'
+
+  import { filterTags } from '../stores'
+
+  const appendTagToFilters = (tag: string) => () => {
+    if (!$filterTags.includes(tag)) {
+      $filterTags = [tag, ...$filterTags]
+    }
+  }
 
   export let sites: Site[]
 
@@ -15,7 +24,10 @@
 <ol>
   {#each sites as site, idx (site.url)}
     <li animate:flip={{ duration: 400 }}>
-      <Screenshot title={site.title} on:click={() => (activeSite = site)} />
+      <Screenshot
+        title={site.title}
+        on:click={() => (activeSite = site)}
+        style="cursor: pointer;" />
       <div class="flex" style="justify-content: space-between;">
         <span>
           {idx + 1}.
@@ -26,8 +38,17 @@
           <small class="flex"><Star width="1em" />&nbsp;{site.repoStars}</small>
         {/if}
       </div>
-      <p>
-        <small>{site.tags.join(`, `)}</small>
+      <p class="tags flex">
+        <Tag width="1em" height="1.2em" style="margin-right: 1ex;" />
+        {#each site.tags as tag, idx}
+          {#if idx > 0},&thinsp;{/if}
+          <small
+            class:active={$filterTags.includes(tag)}
+            title={$filterTags.includes(tag)
+              ? `Already selected`
+              : `Filter list of sites to include tag '${tag}'`}
+            on:click={appendTagToFilters(tag)}>{tag}</small>
+        {/each}
       </p>
     </li>
   {/each}
@@ -46,7 +67,8 @@
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   }
-  ol li {
+  p.tags small:not(.active):hover {
     cursor: pointer;
+    text-decoration: underline;
   }
 </style>
