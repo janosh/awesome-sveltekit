@@ -1,12 +1,19 @@
 <script lang="ts">
-  export let options: (string | number)[]
-  export let selected: string | number | undefined = undefined
+  import { createEventDispatcher } from 'svelte'
+
+  export let options: Option[]
+  export let selected: Option | undefined = undefined
+
+  type Option = string | number
+
+  const dispatch = createEventDispatcher()
+  const handler = (value: Option) => () => dispatch(`change`, { value })
 </script>
 
 <div>
   {#each options as value}
     <label>
-      <input type="radio" bind:group={selected} {value} on:change />
+      <input type="radio" bind:group={selected} {value} on:change={handler(value)} />
       <span>{value}</span></label>
   {/each}
 </div>
@@ -17,6 +24,7 @@
     border-radius: 3pt;
     max-width: max-content;
     overflow: hidden;
+    height: fit-content;
   }
   input {
     display: none;

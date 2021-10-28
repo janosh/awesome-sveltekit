@@ -24,7 +24,7 @@ const ymlHasMoreSites = sites.length > prevParsedSites.length
 
 // Only update site/src/sites.js if a new site was added to sites.yml
 // or repo star counts were last fetched more than a month ago.
-if (ymlHasMoreSites || daysSinceLastParse >= 0) {
+if (ymlHasMoreSites || daysSinceLastParse >= 30) {
   for (const site of sites) {
     if (!site.repo) continue
 
