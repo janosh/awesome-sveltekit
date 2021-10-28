@@ -3,17 +3,29 @@
   import Filters from '../components/Filters.svelte'
   import SiteList from '../components/SiteList.svelte'
   import sites from '../sites'
-  import { filterTags, sortBy } from '../stores'
+  import { filterTags, tagFilterMode, sortBy } from '../stores'
+  import { Site } from '../types'
 
   const tags = [...new Set(sites.map((site) => site.tags).flat(1))]
   let query = ``
 
+  function filterByQuery(site: Site) {
+    return query?.length === 0 || JSON.stringify(site).includes(query)
+  }
+  function filterByTags(site: Site, filterTags: string[], filterMode: `AND` | `OR`) {
+    if (filterTags.length === 0) return true
+    if (filterMode === `OR`) return filterTags.some((tag) => site.tags.includes(tag))
+    if (filterMode === `AND`) return filterTags.every((tag) => site.tags.includes(tag))
+    console.error(
+      `Unexpected state during tag filtering: filterTags=
+      ${JSON.stringify(filterTags)}, filterMode=${filterMode}`
+    )
+  }
+
   $: filteredSites = sites.filter(
-    (site) =>
-      (query?.length === 0 || JSON.stringify(site).includes(query)) &&
-      ($filterTags.length === 0 || site.tags.some((tag) => $filterTags.includes(tag)))
+    (site) => filterByQuery(site) && filterByTags(site, $filterTags, $tagFilterMode)
   )
-  $: sortedSites = filteredSites
+  $: sortedSites = filteredSites // copy array reference
 
   // arr.sort() sorts in-place but we need to reassign filteredSites so Svelte rerenders
   $: if ($sortBy === `GitHub repo stars`) {

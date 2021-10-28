@@ -4,7 +4,7 @@
   import MultiSelect from 'svelte-multiselect'
   import RadioButtons from './RadioButtons.svelte'
 
-  import { sortByOptions, sortBy, filterTags } from '../stores'
+  import { sortByOptions, sortBy, filterTags, tagFilterMode } from '../stores'
 
   export let tags: string[]
   export let query = ``
@@ -18,6 +18,12 @@
     options={tags}
     placeholder="Filter by tag..."
     bind:selected={$filterTags} />
+  {#if $filterTags.length > 0}
+    <RadioButtons
+      selected="AND"
+      on:change={({ detail }) => ($tagFilterMode = detail.value)}
+      options={[`AND`, `OR`]} />
+  {/if}
   <MultiSelect
     options={sortByOptions.filter(Boolean)}
     placeholder="Sort by..."
@@ -36,6 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     place-content: center;
+    align-items: center;
     margin: 2em auto;
     gap: 1em;
   }

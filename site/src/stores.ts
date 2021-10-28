@@ -10,3 +10,5 @@ export const sortByOptions = [
 export const sortBy = writable<typeof sortByOptions[number]>(``)
 
 export const filterTags = writable<string[]>([])
+
+export const tagFilterMode = writable<`AND` | `OR`>(`AND`)
