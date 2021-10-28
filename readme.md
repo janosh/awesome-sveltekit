@@ -143,6 +143,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/biah/kudadam" alt="GitHub stars" valign="middle">
     - uses: [mdsvex], [Tailwind]
     - added: 2021-10-26
+32. [digital criticism](https://critique-digitale.ch/) A website for a scholarly conference in the Digital Humanities. [[code](https://github.com/critique-digitale/critique-digitale.ch)]
+    <img src="https://img.shields.io/github/stars/critique-digitale/critique-digitale.ch" alt="GitHub stars" valign="middle">
+    - uses: [mdsvex], [Cloudflare], [mvp.css]
+    - added: 2021-10-28
 
 ## 🎉 Open to Suggestions
 
@@ -181,3 +185,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [elder.js]: https://github.com/Elderjs/elderjs
 [three.js]: https://threejs.org
 [cytoscape.js]: https://js.cytoscape.org
+[mvp.css]: https://github.com/andybrewer/mvp/
