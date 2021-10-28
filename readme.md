@@ -141,8 +141,12 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     - added: 2021-10-19
 31. [kudadam.com](https://kudadam.com) Personal Website [[code](https://gituhb.com/biah/kudadam)]
     <img src="https://img.shields.io/github/stars/biah/kudadam" alt="GitHub stars" valign="middle">
-    - uses: [mdsvex], [Tailwind]
+    - uses: [MDsveX], [Tailwind]
     - added: 2021-10-26
+32. [digital criticism](https://critique-digitale.ch/) Scholarly conference in the digital Humanities. [[code](https://github.com/critique-digitale/critique-digitale.ch)]
+    <img src="https://img.shields.io/github/stars/critique-digitale/critique-digitale.ch" alt="GitHub stars" valign="middle">
+    - uses: [MDsveX], [Cloudflare], [mvp.css]
+    - added: 2021-10-28
 
 ## 🎉 Open to Suggestions
 
@@ -181,3 +185,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [elder.js]: https://github.com/Elderjs/elderjs
 [three.js]: https://threejs.org
 [cytoscape.js]: https://js.cytoscape.org
+[mvp.css]: https://github.com/andybrewer/mvp

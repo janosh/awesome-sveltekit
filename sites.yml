@@ -381,3 +381,15 @@
   tags: [blog, rss, personal, portfolio, sitemap]
   dateCreated: 2021-05-15
   lastUpdated: 2021-10-26
+
+- id: 32
+  title: digital criticism
+  creator: [maehr, Tobias Hodel, Vlad Atanasiu]
+  creatorTwitter: [moritzmaehr, thist_be]
+  url: https://critique-digitale.ch/
+  repo: https://github.com/critique-digitale/critique-digitale.ch
+  description: A website for a scholarly conference in the Digital Humanities.
+  uses: [MDsveX, MVP.css, Cloudflare]
+  tags: [education, conference, community event, learning]
+  dateCreated: 2021-07-06
+  lastUpdated: 2021-10-23
