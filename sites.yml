@@ -386,7 +386,7 @@
   title: digital criticism
   creator: [maehr, Tobias Hodel, Vlad Atanasiu]
   creatorTwitter: [moritzmaehr, thist_be]
-  url: https://critique-digitale.ch/
+  url: https://critique-digitale.ch
   repo: https://github.com/critique-digitale/critique-digitale.ch
   description: A website for a scholarly conference in the Digital Humanities.
   uses: [MDsveX, MVP.css, Cloudflare]
