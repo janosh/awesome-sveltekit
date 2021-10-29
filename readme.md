@@ -143,7 +143,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/biah/kudadam" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [Tailwind]
     - added: 2021-10-26
-32. [digital criticism](https://critique-digitale.ch/) Scholarly conference in the digital Humanities. [[code](https://github.com/critique-digitale/critique-digitale.ch)]
+32. [digital criticism](https://critique-digitale.ch) Scholarly conference in the digital Humanities. [[code](https://github.com/critique-digitale/critique-digitale.ch)]
     <img src="https://img.shields.io/github/stars/critique-digitale/critique-digitale.ch" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [Cloudflare], [mvp.css]
     - added: 2021-10-28
