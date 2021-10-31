@@ -37,13 +37,30 @@
   <p class="flex">
     <Person width="1em" />&emsp;Creator:&nbsp;
     {#if creatorUrl}
-      <a href={creatorUrl} class="flex"> {creator}&nbsp;<LinkExternal width="1em" /></a>
+      {#if Array.isArray(creatorUrl)}
+        {#each creatorUrl as creatorLink, idx}
+          <a href={creatorLink} class="flex">
+            {creator[idx]}&nbsp;<LinkExternal width="1em" /></a>
+        {/each}
+      {:else}
+        <a href={creatorUrl} class="flex"> {creator}&nbsp;<LinkExternal width="1em" /></a>
+      {/if}
+    {:else if Array.isArray(creator)}
+      {creator.join(', ')}
     {:else}
       {creator}
     {/if}
     {#if creatorTwitter}&nbsp;&mdash;&nbsp;
-      <a href="https://twitter.com/@{creatorTwitter}" class="flex">
-        <Twitter width="1.1em" />&nbsp;@{creatorTwitter}</a>
+      {#if Array.isArray(creatorTwitter)}
+        {#each creatorTwitter as creatorTwitterLink, idx}
+          <a href="https://twitter.com/@{creatorTwitterLink}" class="flex">
+            <Twitter width="1.1em" />&nbsp;@{creator[idx]}</a
+          >&nbsp;
+        {/each}
+      {:else}
+        <a href="https://twitter.com/@{creatorTwitter}" class="flex">
+          <Twitter width="1.1em" />&nbsp;@{creatorTwitter}</a>
+      {/if}
     {/if}
   </p>
   {#if dateCreated}
