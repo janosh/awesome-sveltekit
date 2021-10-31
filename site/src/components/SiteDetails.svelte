@@ -11,7 +11,7 @@
 
   export let site: Site
 
-  $: ({ title, url, tags, creator, creatorTwitter, creatorUrl, dateCreated } = site)
+  $: ({ title, url, tags, creators, dateCreated } = site)
 
   const prettyDate = (date = ``): string =>
     new Date(date).toLocaleString(`en`, {
@@ -19,6 +19,11 @@
       year: `numeric`,
       day: `numeric`,
     })
+
+  const renderSeparator = (index: number, separator: string) => {
+    if (index > 0) return separator
+    return ''
+  }
 </script>
 
 <div>
@@ -36,32 +41,27 @@
   {/if}
   <p class="flex">
     <Person width="1em" />&emsp;Creator:&nbsp;
-    {#if creatorUrl}
-      {#if Array.isArray(creatorUrl)}
-        {#each creatorUrl as creatorLink, idx}
-          <a href={creatorLink} class="flex">
-            {creator[idx]}&nbsp;<LinkExternal width="1em" /></a>
-        {/each}
+    {#each creators as creator, idx}
+      {#if creator.url}
+        {renderSeparator(idx, ',')}
+        <a href={creator.url} class="flex">
+          &nbsp;{creator.name}&nbsp;<LinkExternal width="1em" />
+        </a>
       {:else}
-        <a href={creatorUrl} class="flex"> {creator}&nbsp;<LinkExternal width="1em" /></a>
+        {renderSeparator(idx, ',')}
+        {creator.name}
       {/if}
-    {:else if Array.isArray(creator)}
-      {creator.join(', ')}
-    {:else}
-      {creator}
+    {/each}
+    {#if creators.some((creator) => creator.twitter)}
+      &nbsp;&mdash;&nbsp;
     {/if}
-    {#if creatorTwitter}&nbsp;&mdash;&nbsp;
-      {#if Array.isArray(creatorTwitter)}
-        {#each creatorTwitter as creatorTwitterLink, idx}
-          <a href="https://twitter.com/@{creatorTwitterLink}" class="flex">
-            <Twitter width="1.1em" />&nbsp;@{creator[idx]}</a
-          >&nbsp;
-        {/each}
-      {:else}
-        <a href="https://twitter.com/@{creatorTwitter}" class="flex">
-          <Twitter width="1.1em" />&nbsp;@{creatorTwitter}</a>
+    {#each creators as creator}
+      {#if creator.twitter}
+        <a href="https://twitter.com/@{creator.twitter}" class="flex">
+          <Twitter width="1.1em" />&nbsp;@{creator.name}
+        </a>&nbsp;
       {/if}
-    {/if}
+    {/each}
   </p>
   {#if dateCreated}
     <p class="flex">
