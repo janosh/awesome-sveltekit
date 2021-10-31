@@ -4,7 +4,7 @@ export type Site = {
   description?: string
   repo?: string
   repoStars?: number
-  creator: Creator[]
+  creators: Creator[]
   tags: string[]
   dateCreated?: string
   lastUpdated: string
