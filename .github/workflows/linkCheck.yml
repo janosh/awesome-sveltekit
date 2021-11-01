@@ -3,7 +3,7 @@ name: Link check
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 1 * *" # monthly
+    - cron: '0 0 1 * *' # monthly
 
 jobs:
   markdown-link-check:

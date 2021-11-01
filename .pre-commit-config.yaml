@@ -18,7 +18,7 @@ repos:
     rev: v2.4.1
     hooks:
       - id: prettier
-        args: [--write] # edit files in-place
+        args: [--config, site/.prettierrc.yml, --write] # edit files in-place
         additional_dependencies:
           - prettier
           - prettier-plugin-svelte
@@ -49,3 +49,17 @@ repos:
     hooks:
       - id: codespell
         exclude: yarn.lock
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v7.32.0
+    hooks:
+      - id: eslint
+        types: [file]
+        files: \.(svelte|js)$
+        additional_dependencies:
+          - eslint
+          - svelte
+          - typescript
+          - eslint-plugin-svelte3
+          - '@typescript-eslint/eslint-plugin'
+          - '@typescript-eslint/parser'
