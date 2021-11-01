@@ -27,6 +27,7 @@
     width: var(--ghc-size, 50pt);
     fill: var(--ghc-bg, black);
     color: var(--ghc-color, white);
+    z-index: 1;
   }
   a:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
