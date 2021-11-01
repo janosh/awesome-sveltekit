@@ -19,11 +19,6 @@
       year: `numeric`,
       day: `numeric`,
     })
-
-  const renderSeparator = (index: number, separator: string) => {
-    if (index > 0) return separator
-    return ''
-  }
 </script>
 
 <div>
@@ -40,26 +35,19 @@
     <p>{site.description}</p>
   {/if}
   <p class="flex">
-    <Person width="1em" />&emsp;Creator:&nbsp;
+    <Person width="1em" />&emsp;Creator:
     {#each creators as creator, idx}
-      {#if creator.url}
-        {renderSeparator(idx, ',')}
+      {#if idx > 0}&#44;{/if}
+      {creator.name}
+      {#if creator.url}&nbsp;
         <a href={creator.url} class="flex">
-          &nbsp;{creator.name}&nbsp;<LinkExternal width="1em" />
+          <LinkExternal width="1em" />
         </a>
-      {:else}
-        {renderSeparator(idx, ',')}
-        {creator.name}
       {/if}
-    {/each}
-    {#if creators.some((creator) => creator.twitter)}
-      &nbsp;&mdash;&nbsp;
-    {/if}
-    {#each creators as creator}
-      {#if creator.twitter}
+      {#if creator.twitter}&nbsp;
         <a href="https://twitter.com/@{creator.twitter}" class="flex">
-          <Twitter width="1.1em" />&nbsp;@{creator.name}
-        </a>&nbsp;
+          <Twitter width="1.1em" />
+        </a>
       {/if}
     {/each}
   </p>
