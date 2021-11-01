@@ -11,7 +11,7 @@
 
   export let site: Site
 
-  $: ({ title, url, tags, creator, creatorTwitter, creatorUrl, dateCreated } = site)
+  $: ({ title, url, tags, creators, dateCreated } = site)
 
   const prettyDate = (date = ``): string =>
     new Date(date).toLocaleString(`en`, {
@@ -35,16 +35,21 @@
     <p>{site.description}</p>
   {/if}
   <p class="flex">
-    <Person width="1em" />&emsp;Creator:&nbsp;
-    {#if creatorUrl}
-      <a href={creatorUrl} class="flex"> {creator}&nbsp;<LinkExternal width="1em" /></a>
-    {:else}
-      {creator}
-    {/if}
-    {#if creatorTwitter}&nbsp;&mdash;&nbsp;
-      <a href="https://twitter.com/@{creatorTwitter}" class="flex">
-        <Twitter width="1.1em" />&nbsp;@{creatorTwitter}</a>
-    {/if}
+    <Person width="1em" />&emsp;Creator:
+    {#each creators as creator, idx}
+      {#if idx > 0}&ensp;+&ensp;{/if}
+      {creator.name}
+      {#if creator.url}&nbsp;
+        <a href={creator.url} class="flex">
+          <LinkExternal width="1.1em" />
+        </a>
+      {/if}
+      {#if creator.twitter}&nbsp;
+        <a href="https://twitter.com/@{creator.twitter}" class="flex">
+          <Twitter width="1.1em" />
+        </a>
+      {/if}
+    {/each}
   </p>
   {#if dateCreated}
     <p class="flex">

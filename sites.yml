@@ -1,11 +1,17 @@
-# New Tags should strike a balance between generality and specificity so they convey
+# For admissible fields see site/src/types.ts. If you introduce a new field,
+# please mention in your PR.
+
+# New tags should strike a balance between generality and specificity so they convey
 # useful information but are still applicable to at least a few other sites.
 
 # The field 'dateCreated' is usually the date of first commit on a project.
 
 - id: 1
   title: Official SvelteKit docs
-  creator: Rich Harris & Svelte Community
+  creators:
+    - name: Rich Harris & Svelte Community
+      twitter: rich_harris
+      email: richard.a.harris@gmail.com
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
   uses: [Netlify, PNPM]
@@ -15,7 +21,8 @@
 
 - id: 2
   title: NYTimes Tracking the Coronavirus
-  creator: unknown, maybe Rich Harris?
+  creators:
+    - name: unknown, maybe Rich Harris?
   url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
   uses: [Pancake]
   tags: [news, journalism, Covid]
@@ -23,8 +30,9 @@
 
 - id: 3
   title: SK Incognito
-  creator: GrygrFlzr
-  creatorTwitter: GrygrFlzr
+  creators:
+    - name: GrygrFlzr
+      twitter: GrygrFlzr
   url: https://sk-incognito.vercel.app
   repo: https://github.com/GrygrFlzr/kit-docs
   description: Unofficial documentation for SvelteKit.
@@ -35,9 +43,10 @@
 
 - id: 4
   title: Geometric Bayes
-  creator: Janosh Riebesell
-  creatorUrl: https://janosh.dev
-  creatorTwitter: _jarib
+  creators:
+    - name: Janosh Riebesell
+      url: https://janosh.dev
+      twitter: _jarib
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
@@ -48,9 +57,10 @@
 
 - id: 5
   title: TikZ
-  creator: Janosh Riebesell
-  creatorUrl: https://janosh.dev
-  creatorTwitter: _jarib
+  creators:
+    - name: Janosh Riebesell
+      url: https://janosh.dev
+      twitter: _jarib
   url: https://tikz.netlify.app
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
@@ -60,8 +70,9 @@
 
 - id: 6
   title: markushatvan.com
-  creator: Markus Hatvan
-  creatorTwitter: HatvanMarkus
+  creators:
+    - name: Markus Hatvan
+      twitter: HatvanMarkus
   url: https://markushatvan.com
   repo: https://github.com/mhatvan/markushatvan.com
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS feed and sitemap.
@@ -72,9 +83,10 @@
 
 - id: 7
   title: Studenten bilden Schüler
-  creator: Janosh Riebesell
-  creatorUrl: https://janosh.dev
-  creatorTwitter: _jarib
+  creators:
+    - name: Janosh Riebesell
+      url: https://janosh.dev
+      twitter: _jarib
   url: https://studenten-bilden-schueler.de
   repo: https://github.com/sbsev/svelte-site
   description: |
@@ -88,9 +100,10 @@
 
 - id: 8
   title: Afara
-  creator: Janosh Riebesell
-  creatorUrl: https://janosh.dev
-  creatorTwitter: _jarib
+  creators:
+    - name: Janosh Riebesell
+      url: https://janosh.dev
+      twitter: _jarib
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
   description: |
@@ -103,9 +116,10 @@
 
 - id: 9
   title: Ocean artUp
-  creator: Janosh Riebesell
-  creatorUrl: https://janosh.dev
-  creatorTwitter: _jarib
+  creators:
+    - name: Janosh Riebesell
+      url: https://janosh.dev
+      twitter: _jarib
   url: https://ocean-artup.eu
   repo: https://github.com/janosh/ocean-artup
   description: |
@@ -120,9 +134,10 @@
 
 - id: 10
   title: Guess The Year
-  creator: David Han
-  creatorTwitter: davjhan
-  creatorUrl: https://davjhan.com
+  creators:
+    - name: David Han
+      twitter: davjhan
+      url: https://davjhan.com
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
   description: |
@@ -135,8 +150,9 @@
 
 - id: 11
   title: Gitpod
-  creator: Mike Nikles and others
-  creatorTwitter: mikenikles
+  creators:
+    - name: Mike Nikles and others
+      twitter: mikenikles
   url: https://gitpod.io
   repo: https://github.com/gitpod-io/website
   description: |
@@ -149,7 +165,8 @@
 
 - id: 12
   title: Svelte Themes
-  creator: Sharath Kumar
+  creators:
+    - name: Sharath Kumar
   url: https://sveltethemes.dev
   uses: [Netlify, Tailwind]
   tags: [site directory, learning resources]
@@ -157,8 +174,9 @@
 
 - id: 13
   title: SvelteKit Experiments
-  creator: Tarun Kumar Sukhu
-  creatorTwitter: TarunKumarSukhu
+  creators:
+    - name: Tarun Kumar Sukhu
+      twitter: TarunKumarSukhu
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
   description: |
@@ -171,8 +189,9 @@
 
 - id: 14
   title: puruvj.dev
-  creator: Puru Vijay
-  creatorTwitter: puruvjdev
+  creators:
+    - name: Puru Vijay
+      twitter: puruvjdev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
   description: |
@@ -184,8 +203,9 @@
 
 - id: 15
   title: GraphCMS Starter Blog
-  creator: Scott Spence
-  creatorTwitter: spences10
+  creators:
+    - name: Scott Spence
+      twitter: spences10
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
   description: This blog starter shows how to use SvelteKit with GraphCMS.
@@ -196,7 +216,8 @@
 
 - id: 16
   title: Beatbump
-  creator: snuffy
+  creators:
+    - name: snuffy
   url: https://beatbump.ml
   repo: https://github.com/snuffyDev/beatbump
   description: Alternative frontend for YouTube Music.
@@ -207,8 +228,10 @@
 
 - id: 17
   title: Impfdashboard
-  creator: German Ministry of Health
-  creatorUrl: https://nand.io/projects/vaccination-dashboard
+  creators:
+    - name: German Ministry of Health
+    - name: Studio NAND
+      url: https://nand.io/projects/vaccination-dashboard
   url: https://impfdashboard.de/en
   description:
     The official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH,
@@ -219,9 +242,10 @@
 
 - id: 18
   title: Paper Trader Game
-  creator: David Han
-  creatorTwitter: davjhan
-  creatorUrl: https://davjhan.com
+  creators:
+    - name: David Han
+      twitter: davjhan
+      url: https://davjhan.com
   url: https://paper-trader.davjhan.com
   repo: https://github.com/davjhan/paper-trader-game
   description:
@@ -233,9 +257,10 @@
 
 - id: 19
   title: SveltePress
-  creator: Evan Geop
-  creatorTwitter: GeopJr1312
-  creatorUrl: https://geopjr.dev
+  creators:
+    - name: Evan Geop
+      twitter: GeopJr1312
+      url: https://geopjr.dev
   url: https://sveltepress.geopjr.dev
   repo: https://github.com/GeopJr/SveltePress
   description: SvelteKit-powered documentation site generator. Made for humans.
@@ -245,9 +270,10 @@
 
 - id: 20
   title: neovim craft
-  creator: Eric Bower
-  creatorTwitter: neurosnap
-  creatorUrl: https://erock.io
+  creators:
+    - name: Eric Bower
+      twitter: neurosnap
+      url: https://erock.io
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
   description: Curated list of neovim plugins.
@@ -257,9 +283,10 @@
 
 - id: 21
   title: swyxdotio
-  creator: Shawn Wang
-  creatorTwitter: swyx
-  creatorUrl: https://swyx.io
+  creators:
+    - name: Shawn Wang
+      twitter: swyx
+      url: https://swyx.io
   url: https://swyx.io
   repo: https://github.com/sw-yx/swyxdotio
   description: Personal and work-related writing, idea showcase.
@@ -269,9 +296,10 @@
 
 - id: 22
   title: Svelte Society
-  creator: Ben McCann and others
-  creatorTwitter: benjaminmccann
-  creatorUrl: https://benmccann.com
+  creators:
+    - name: Ben McCann and others
+      twitter: benjaminmccann
+      url: https://benmccann.com
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
   description: The Svelte Society website, a global network of Svelte fans striving to promote Svelte and its ecosystem.
@@ -281,9 +309,10 @@
 
 - id: 23
   title: Flayks
-  creator: Félix Péault
-  creatorTwitter: flayks
-  creatorUrl: https://flayks.com
+  creators:
+    - name: Félix Péault
+      twitter: flayks
+      url: https://flayks.com
   url: https://flayks.com
   description: Portfolio of Félix Péault, Digital Designer and Art Director.
   tags: [portfolio, Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
@@ -292,9 +321,10 @@
 
 - id: 24
   title: Matt Fantinel
-  creator: Matt Fantinel
-  creatorTwitter: matt_fantinel
-  creatorUrl: https://fantinel.dev
+  creators:
+    - name: Matt Fantinel
+      twitter: matt_fantinel
+      url: https://fantinel.dev
   url: https://fantinel.dev
   description: Personal website and blog of Matt Fantinel, web developer.
   uses: [MDsveX, SCSS, Iconoir, Plausible]
@@ -304,9 +334,10 @@
 
 - id: 25
   title: Level Up Tutorials
-  creator: Scott Tolinski
-  creatorTwitter: stolinski
-  creatorUrl: https://scotttolinski.com
+  creators:
+    - name: Scott Tolinski
+      twitter: stolinski
+      url: https://scotttolinski.com
   url: https://leveluptutorials.com
   description: Video tutorials for web developers and designers.
   uses: [TypeScript, Google Tag Manager]
@@ -316,9 +347,11 @@
 
 - id: 26
   title: MortimerBaltus
-  creator: Theodor Baltus Steiner & Moritz Mortimer Müller
-  creatorTwitter: _TheoSteiner
-  creatorUrl: https://mortimerbaltus.com
+  creators:
+    - name: Theodor Baltus Steiner
+      twitter: _TheoSteiner
+    - name: Moritz Mortimer Müller
+      url: https://mortimerbaltus.com
   url: https://mortimerbaltus.com
   description: MortimerBaltus is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
   uses: [Cloudinary, Cloudflare Pages, Cloudflare Workers]
@@ -328,9 +361,10 @@
 
 - id: 27
   title: JSchallenger
-  creator: Erik Kückelheim
-  creatorTwitter: kueckelheim
-  creatorUrl: https://erik-kueckelheim.com
+  creators:
+    - name: Erik Kückelheim
+      twitter: kueckelheim
+      url: https://erik-kueckelheim.com
   url: https://jschallenger.com
   description: Free Javascript challenges. Learn Javascript online by solving coding exercises.
   uses: [Tailwind, DynamoDB, AWS]
@@ -340,7 +374,8 @@
 
 - id: 28
   title: Files
-  creator: Yair Aichenbaum and others
+  creators:
+    - name: Yair Aichenbaum and others
   url: https://files.community
   repo: https://github.com/files-community/website
   description: 3rd Party File Manager for Windows.
@@ -351,8 +386,11 @@
 
 - id: 29
   title: Svelte Summit 2021 Fall
-  creator: [Kevin Åberg Kultalahti, Johan Ronsse]
-  creatorTwitter: [kevmodrome, wolfr_2]
+  creators:
+    - name: Kevin Åberg Kultalahti
+      twitter: kevmodrome
+    - name: Johan Ronsse
+      twitter: wolfr_2
   url: https://sveltesummit.com
   repo: https://github.com/svelte-society/svelte-summit
   description: The 4th virtual conference about Svelte
@@ -363,7 +401,8 @@
 
 - id: 30
   title: cybernetic.dev
-  creator: unknown
+  creators:
+    - name: unknown
   url: https://cybernetic.dev
   description: Data-centric UI experiments
   uses: [Three.js, Cytoscape.js, Vercel]
@@ -372,8 +411,9 @@
 
 - id: 31
   title: Kudadam.com
-  creator: Lucretius Biah
-  creatorTwitter: lucretius_1
+  creators:
+    - name: Lucretius Biah
+      twitter: lucretius_1
   url: https://kudadam.com
   repo: https://gituhb.com/biah/kudadam
   description: A personal website and blog.
@@ -384,8 +424,12 @@
 
 - id: 32
   title: digital criticism
-  creator: [maehr, Tobias Hodel, Vlad Atanasiu]
-  creatorTwitter: [moritzmaehr, thist_be]
+  creators:
+    - name: maehr
+      twitter: moritzmaehr
+    - name: Tobias Hodel
+      twitter: thist_be
+    - name: Vlad Atanasiu
   url: https://critique-digitale.ch
   repo: https://github.com/critique-digitale/critique-digitale.ch
   description: A website for a scholarly conference in the Digital Humanities.

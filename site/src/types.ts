@@ -4,10 +4,16 @@ export type Site = {
   description?: string
   repo?: string
   repoStars?: number
-  creator: string | string[]
-  creatorUrl?: string | string[]
-  creatorTwitter?: string | string[]
+  creators: Creator[]
   tags: string[]
   dateCreated?: string
   lastUpdated: string
+}
+
+export type Creator = {
+  name: string
+  url?: string
+  twitter?: string
+  github?: string
+  email?: string
 }
