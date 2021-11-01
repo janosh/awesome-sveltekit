@@ -37,11 +37,11 @@
   <p class="flex">
     <Person width="1em" />&emsp;Creator:
     {#each creators as creator, idx}
-      {#if idx > 0}&#44;{/if}
+      {#if idx > 0}&ensp;+&ensp;{/if}
       {creator.name}
       {#if creator.url}&nbsp;
         <a href={creator.url} class="flex">
-          <LinkExternal width="1em" />
+          <LinkExternal width="1.1em" />
         </a>
       {/if}
       {#if creator.twitter}&nbsp;
