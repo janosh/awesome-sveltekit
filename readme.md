@@ -147,6 +147,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/critique-digitale/critique-digitale.ch" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [Cloudflare], [mvp.css]
     - added: 2021-10-28
+33. [The Pudding](https://pudding.cool) Digital publication with emphasis on data viz. [[code](https://github.com/the-pudding/website)]
+    <img src="https://img.shields.io/github/stars/the-pudding/website" alt="GitHub stars" valign="middle">
+    - uses: [D3], [PostCSS], [Lodash], [PNPM]
+    - added: 2021-11-01
 
 ## 🎉 Open to Suggestions
 
@@ -186,3 +190,5 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [three.js]: https://threejs.org
 [cytoscape.js]: https://js.cytoscape.org
 [mvp.css]: https://github.com/andybrewer/mvp
+[lodash]: https://lodash.com
+[d3]: https://d3js.org
