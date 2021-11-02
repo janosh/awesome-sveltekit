@@ -152,7 +152,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     - uses: [D3], [PostCSS], [Lodash], [PNPM]
     - added: 2021-11-01
 34. [BrittneyPostma.com](https://brittneypostma.com) Landing page for Brittney Postma, owner and designer of bDesigned. [[code](https://github.com/brittneypostma/brittneypostma.com)]
-   - uses: [netlify], [animations]
+   - uses: [netlify]
    - added: 2021-11-01
 
 ## 🎉 Open to Suggestions
