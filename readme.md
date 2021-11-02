@@ -151,6 +151,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/the-pudding/website" alt="GitHub stars" valign="middle">
     - uses: [D3], [PostCSS], [Lodash], [PNPM]
     - added: 2021-11-01
+34. [BrittneyPostma.com](https://brittneypostma.com) Portfolio page for owner of bDesigned. [[code](https://github.com/brittneypostma/brittneypostma.com)]
+    <img src="https://img.shields.io/github/stars/brittneypostma/brittneypostma.com" alt="GitHub stars" valign="middle">
+    - uses: [Netlify, service worker]
+    - added: 2021-11-01
 
 ## 🎉 Open to Suggestions
 
