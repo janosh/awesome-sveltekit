@@ -486,3 +486,18 @@
   tags: [digital publishing, data viz, education]
   dateCreated: 2021-09-03
   lastUpdated: 2021-11-01
+
+- id: 34
+  title: BrittneyPostma.com
+  creators:
+    - name: Brittney Postma
+      twitter: brittneypostma
+      url: http://brittneypostma.com
+      github: brittneypostma
+  url: https://brittneypostma.com
+  repo: https://github.com/brittneypostma/brittneypostma.com
+  description: Landing page for Brittney Postma, owner and designer of bDesigned.
+  uses: [Netlify, service worker]
+  tags: [portfolio, playful, animations]
+  dateCreated: 2020-08-15
+  lastUpdated: 2021-08-15
