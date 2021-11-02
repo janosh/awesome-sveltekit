@@ -497,7 +497,7 @@
   url: https://brittneypostma.com
   repo: https://github.com/brittneypostma/brittneypostma.com
   description: Landing page for Brittney Postma, owner and designer of bDesigned.
-  uses: [netlify]
-  tags: [portfolio, Netlify, animations]
+  uses: [Netlify, service worker]
+  tags: [portfolio, playful, animations]
   dateCreated: 2020-08-15
   lastUpdated: 2021-08-15
