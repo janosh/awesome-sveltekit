@@ -155,6 +155,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/brittneypostma/brittneypostma.com" alt="GitHub stars" valign="middle">
     - uses: [Netlify, service worker]
     - added: 2021-11-01
+35. [Urara](https://urara-demo.netlify.app) Sweet & Powerful SvelteKit Blog Template. [[code](https://github.com/importantimport/urara)]
+    <img src="https://img.shields.io/github/stars/importantimport/urara" alt="GitHub stars" valign="middle">
+    - uses: [MDsveX], [Windi], [DaisyUI], [TypeScript], [PNPM]
+    - added: 2021-11-05
 
 ## 🎉 Open to Suggestions
 
@@ -196,3 +200,5 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [mvp.css]: https://github.com/andybrewer/mvp
 [lodash]: https://lodash.com
 [d3]: https://d3js.org
+[windi]: https://windicss.org
+[daisyui]: https://daisyui.com

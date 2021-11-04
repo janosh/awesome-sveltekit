@@ -501,3 +501,17 @@
   tags: [portfolio, playful, animations]
   dateCreated: 2020-08-15
   lastUpdated: 2021-08-15
+
+- id: 35
+  title: Urara
+  creators:
+    - name: 藍
+      url: https://kwaa.dev
+      github: kwaa
+  url: https://urara-demo.netlify.app
+  repo: https://github.com/importantimport/urara
+  description: Sweet & Powerful SvelteKit Blog Template.
+  uses: [MDsveX, Windi, DaisyUI, TypeScript, PNPM]
+  tags: [blog, template]
+  dateCreated: 2021-11-01
+  lastUpdated: 2021-11-05
