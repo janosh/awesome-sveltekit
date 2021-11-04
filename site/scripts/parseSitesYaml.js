@@ -1,10 +1,8 @@
 /* eslint-disable no-console */
 import fs from 'fs'
-
 import yaml from 'js-yaml'
 import fetch from 'node-fetch'
-
-import { rootDir } from './index.js'
+import { rootDir, titleToSlug } from './index.js'
 
 const inPath = `${rootDir}/sites.yml`
 const outPath = `${rootDir}/site/src/sites.js`
@@ -22,10 +20,18 @@ const daysSinceLastParse = Math.round(
 
 const ymlHasMoreSites = sites.length > prevParsedSites.length
 
+const seenSlugs = new Set()
+
 // Only update site/src/sites.js if a new site was added to sites.yml
 // or repo star counts were last fetched more than a month ago.
 if (ymlHasMoreSites || daysSinceLastParse >= 30) {
   for (const site of sites) {
+    const slug = titleToSlug(site.title)
+
+    if (seenSlugs.has(slug)) throw new Error(`Duplicate slug ${slug}`)
+    seenSlugs.add(slug)
+
+    site.slug = slug
     if (!site.repo) continue
 
     const repoHandle = site.repo.split(`github.com/`)[1]

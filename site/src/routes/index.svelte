@@ -1,9 +1,9 @@
 <script lang="ts">
-  import GitHubCorner from '../components/GitHubCorner.svelte'
   import Filters from '../components/Filters.svelte'
+  import GitHubCorner from '../components/GitHubCorner.svelte'
   import SiteList from '../components/SiteList.svelte'
   import sites from '../sites'
-  import { filterTags, tagFilterMode, sortBy } from '../stores'
+  import { filterTags, sortBy, tagFilterMode } from '../stores'
   import { Site } from '../types'
 
   const tags = [...new Set(sites.map((site) => site.tags).flat(1))]

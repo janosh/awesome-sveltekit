@@ -1,11 +1,13 @@
 export type Site = {
   title: string
   url: string
+  slug: string
   description?: string
   repo?: string
   repoStars?: number
   creators: Creator[]
   tags: string[]
+  uses?: string[]
   dateCreated?: string
   lastUpdated: string
 }
