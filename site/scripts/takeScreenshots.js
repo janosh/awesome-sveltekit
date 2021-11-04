@@ -1,10 +1,8 @@
 /* eslint-disable no-console */
 import fs from 'fs'
-
-import puppeteer from 'puppeteer'
 import yaml from 'js-yaml'
-
-import { rootDir } from './index.js'
+import puppeteer from 'puppeteer'
+import { rootDir, titleToSlug } from './index.js'
 
 const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
 
@@ -22,16 +20,16 @@ let [nNew, nUpdated] = [0, 0]
 console.time(`Finished taking screenshots`)
 
 for (const [idx, site] of sites.entries()) {
-  const id = site.title.toLowerCase().replaceAll(` `, `-`)
+  const slug = titleToSlug(site.title)
 
-  const imgPath = `${rootDir}/site/static/screenshots/${id}.webp`
+  const imgPath = `${rootDir}/site/static/screenshots/${slug}.webp`
   const imgExists = fs.existsSync(imgPath)
 
   if (!updateExisting && imgExists) {
     continue
   }
 
-  console.log(`${idx + 1}/${sites.length}: generating ${id}.webp`)
+  console.log(`${idx + 1}/${sites.length}: generating ${slug}.webp`)
 
   try {
     await page.goto(site.url, { timeout: 5000, waitUntil: `networkidle2` })

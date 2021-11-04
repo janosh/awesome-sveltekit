@@ -1,14 +1,10 @@
 <script lang="ts">
-  import { flip } from 'svelte/animate'
   import Star from '@svicons/octicons/star.svelte'
-
-  import { Site } from '../types'
-  import Modal from './Modal.svelte'
-  import Screenshot from './Screenshot.svelte'
-  import SiteDetails from './SiteDetails.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
-
+  import { flip } from 'svelte/animate'
   import { filterTags } from '../stores'
+  import { Site } from '../types'
+  import Screenshot from './Screenshot.svelte'
 
   const appendTagToFilters = (tag: string) => () => {
     if (!$filterTags.includes(tag)) {
@@ -17,22 +13,17 @@
   }
 
   export let sites: Site[]
-
-  let activeSite: Site | null = null
 </script>
 
 <ol>
   {#each sites as site, idx (site.url)}
     <li animate:flip={{ duration: 400 }}>
-      <Screenshot
-        title={site.title}
-        on:click={() => (activeSite = site)}
-        style="cursor: pointer;" />
+      <a href="/{site.slug}" sveltekit:prefetch>
+        <Screenshot title={site.title} style="cursor: pointer;" />
+      </a>
       <div class="flex" style="justify-content: space-between;">
         <span>
-          {idx + 1}.
-          <!-- stopPropagation to prevent opening modal -->
-          <a href={site.url} on:click|stopPropagation>{site.title}</a>
+          {idx + 1}. <a href={site.url}>{site.title}</a>
         </span>
         {#if site.repoStars}
           <small class="flex"><Star width="1em" />&nbsp;{site.repoStars}</small>
@@ -52,11 +43,6 @@
       </p>
     </li>
   {/each}
-  {#if activeSite}
-    <Modal on:close={() => (activeSite = null)} style="background: #2c2b35;">
-      <SiteDetails site={activeSite} />
-    </Modal>
-  {/if}
 </ol>
 
 <style>
