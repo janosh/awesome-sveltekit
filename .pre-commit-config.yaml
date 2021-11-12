@@ -35,15 +35,6 @@ repos:
     hooks:
       - id: markdownlint
         args: [--config, dotfiles/.markdownlint.yml]
-
-  - repo: local
-    hooks:
-      - id: webp-screenshots
-        name: Screenshots must use WebP format
-        entry: screenshot filenames must end in .webp
-        language: fail
-        files: '^site/static/screenshots/.*(?<!\.webp)$'
-
   - repo: https://github.com/codespell-project/codespell
     rev: v2.1.0
     hooks:
@@ -63,3 +54,44 @@ repos:
           - eslint-plugin-svelte3
           - '@typescript-eslint/eslint-plugin'
           - '@typescript-eslint/parser'
+
+  - repo: local
+    hooks:
+      - id: webp-screenshots
+        name: Screenshots must use WebP format
+        entry: screenshot filenames must end in .webp
+        language: fail
+        files: '^site/static/screenshots/.*(?<!\.webp)$'
+
+  - repo: local
+    hooks:
+      - id: no-bracket-links
+        name: 'Brackets should not be inside links [[link]](url) -> [[link](url)]'
+        entry: '\]\]\('
+        language: pygrep
+        types: [markdown]
+
+  - repo: local
+    hooks:
+      - id: no-trailing-slash
+        name: URLs should not have trailing slashes
+        entry: 'https?:\/\/.+\/(\s|\?)'
+        language: pygrep
+        types_or: [markdown, yaml]
+
+  - repo: local
+    hooks:
+      - id: no-http
+        name: URLs must use HTTPS
+        entry: 'http:'
+        language: pygrep
+        types_or: [markdown, yaml]
+        exclude: .pre-commit-config.yaml
+
+  - repo: local
+    hooks:
+      - id: no-repeated-whitespace
+        name: No repeated spaces
+        entry: '\S+\s{2,}'
+        language: pygrep
+        types: [text]
