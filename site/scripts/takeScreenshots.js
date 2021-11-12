@@ -1,8 +1,11 @@
 /* eslint-disable no-console */
 import fs from 'fs'
 import yaml from 'js-yaml'
+import { performance } from 'perf_hooks'
 import puppeteer from 'puppeteer'
 import { rootDir, titleToSlug } from './index.js'
+
+const start = performance.now()
 
 const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
 
@@ -16,8 +19,6 @@ const updateExisting = process.argv[2] === `update-existing`
 if (updateExisting) console.log(`Updating all existing screenshots`)
 
 let [nNew, nUpdated] = [0, 0]
-
-console.time(`Finished taking screenshots`)
 
 for (const [idx, site] of sites.entries()) {
   const slug = titleToSlug(site.title)
@@ -47,5 +48,9 @@ for (const [idx, site] of sites.entries()) {
 
 await browser.close()
 
-console.timeEnd(`Finished taking screenshots`)
-console.log(`  - ${nNew} new, ${nUpdated} updated`)
+const took = ((performance.now() - start) / 1000).toFixed(2)
+if (nNew > 0 || nUpdated > 0) {
+  console.log(
+    `takeScreenshots.js created ${nNew} new, updated ${nUpdated} in ${took}s`
+  )
+}

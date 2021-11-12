@@ -210,7 +210,6 @@
       github: nisarhassan12
       email: syednisarhassan12@gmail.com
     - name: Estelle Weyl
-      url: http://standardista.com
       github: estelle
       email: estelle@openwebdocs.org
     - name: others
@@ -522,7 +521,7 @@
   creators:
     - name: Russell Goldenberg
       twitter: codenberg
-      url: http://russellgoldenberg.com
+      url: https://russellgoldenberg.com
       github: russellgoldenberg
     - name: Jan Diehm
       twitter: jadiehm
@@ -540,7 +539,7 @@
   creators:
     - name: Brittney Postma
       twitter: brittneypostma
-      url: http://brittneypostma.com
+      url: https://brittneypostma.com
       github: brittneypostma
   url: https://brittneypostma.com
   repo: https://github.com/brittneypostma/brittneypostma.com

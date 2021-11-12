@@ -77,38 +77,38 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/puruvj/puruvjdev3" alt="GitHub stars" valign="middle">
     - uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
     - added: 2021-06-11
-16. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](http://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://scottspence.com/posts/graphcms-svelte-starter)]
+16. [GraphCMS Starter Blog](https://sveltekit-starter-blog.vercel.app) by Scott Spence [[code](https://github.com/spences10/sveltekit-starter-blog)] [[blog post](https://scottspence.com/posts/graphcms-svelte-starter)]
     <img src="https://img.shields.io/github/stars/spences10/sveltekit-starter-blog" alt="GitHub stars" valign="middle">
     - uses: [Vercel], [Tailwind], [GraphCMS]
     - added: 2021-06-14
-17. [Beatbump](https://beatbump.ml) by Scott Spence [[code](http://github.com/snuffyDev/beatbump)]
+17. [Beatbump](https://beatbump.ml) by Scott Spence [[code](https://github.com/snuffyDev/beatbump)]
     <img src="https://img.shields.io/github/stars/snuffyDev/beatbump" alt="GitHub stars" valign="middle">
     - uses: [TypeScript], [PostCSS], [Sass]
     - added: 2021-07-08
 18. [Impfdashboard](https://impfdashboard.de/en) by German Ministry of Health
     - added: 2021-07-30
 19. [Paper Trader Game](https://paper-trader.davjhan.com) browser game
-    [[code]](https://github.com/davjhan/paper-trader-game)
+    [[code](https://github.com/davjhan/paper-trader-game)]
     <img src="https://img.shields.io/github/stars/davjhan/paper-trader-game" alt="GitHub stars" valign="middle">
     - uses: [Tailwind], [Netlify], [Chart.js], [Plausible]
     - added: 2021-08-01
 20. [SveltePress](https://sveltepress.geopjr.dev) docs site generator
-    [[code]](https://github.com/GeopJr/SveltePress)
+    [[code](https://github.com/GeopJr/SveltePress)]
     <img src="https://img.shields.io/github/stars/GeopJr/SveltePress" alt="GitHub stars" valign="middle">
     - uses: [Netlify], [MarkedJS], [PNPM]
     - added: 2021-08-10
 21. [neovim craft](https://neovimcraft.com) curated list of neovim plugins
-    [[code]](https://github.com/neurosnap/neovimcraft)
+    [[code](https://github.com/neurosnap/neovimcraft)]
     <img src="https://img.shields.io/github/stars/neurosnap/neovimcraft" alt="GitHub stars" valign="middle">
     - uses: [TypeScript]
     - added: 2021-08-13
 22. [swyxdotio](https://swyx.io) personal and work-related blog + idea showcase
-    [[code]](https://github.com/sw-yx/swyxdotio)
+    [[code](https://github.com/sw-yx/swyxdotio)]
     <img src="https://img.shields.io/github/stars/sw-yx/swyxdotio" alt="GitHub stars" valign="middle">
     - uses: [Tailwind], [Rollup], [PostCSS]
     - added: 2021-09-01
 23. [Svelte Society](https://sveltesociety.dev) global network of Svelte fans striving to promote Svelte and its ecosystem
-    [[code]](https://github.com/svelte-society/sveltesociety.dev)
+    [[code](https://github.com/svelte-society/sveltesociety.dev)]
     <img src="https://img.shields.io/github/stars/svelte-society/sveltesociety.dev" alt="GitHub stars" valign="middle">
     - uses: [TypeScript], [Gitpod]
     - added: 2021-10-01
@@ -117,7 +117,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     - uses: [Sanity], [anime.js], [Vercel], [TypeScript], [SCSS], [PostCSS]
     - added: 2021-10-01
 25. [Matt Fantinel](https://fantinel.dev) Personal website and blog of Matt Fantinel, web developer
-    [[code]](https://github.com/matfantinel/matfantinel.github.io)
+    [[code](https://github.com/matfantinel/matfantinel.github.io)]
     <img src="https://img.shields.io/github/stars/matfantinel/matfantinel.github.io" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [SCSS], [Iconoir], [Plausible]
     - added: 2021-10-01
