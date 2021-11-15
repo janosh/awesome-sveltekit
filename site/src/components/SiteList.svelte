@@ -21,7 +21,7 @@
       <a href="/{site.slug}" sveltekit:prefetch>
         <Screenshot title={site.title} style="cursor: pointer;" />
       </a>
-      <div class="flex" style="justify-content: space-between;">
+      <div class="flex">
         <span>
           {idx + 1}. <a href={site.url}>{site.title}</a>
         </span>
@@ -31,8 +31,7 @@
       </div>
       <p class="tags flex">
         <Tag width="1em" height="1.2em" style="margin-right: 1ex;" />
-        {#each site.tags as tag, idx}
-          {#if idx > 0},&thinsp;{/if}
+        {#each site.tags as tag}
           <small
             class:active={$filterTags.includes(tag)}
             title={$filterTags.includes(tag)
@@ -52,6 +51,20 @@
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  }
+  div.flex {
+    margin-top: 6pt;
+    justify-content: space-between;
+  }
+  p.tags small {
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 1.2em;
+    padding: 1pt 3pt;
+    margin: 3pt 0;
+    border-radius: 3pt;
+  }
+  p.tags small:not(:last-child) {
+    margin-right: 1ex;
   }
   p.tags small:not(.active):hover {
     cursor: pointer;

@@ -48,7 +48,7 @@
 <GitHubCorner href="https://github.com/janosh/awesome-svelte-kit" />
 
 <main>
-  <img src="/svelte-kit.svg" alt="Logo" width="200px" />
+  <img src="/svelte-kit.svg" alt="Logo" />
   <h1>{sites.length} Awesome Examples of SvelteKit in the Wild</h1>
 
   <Filters
