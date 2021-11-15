@@ -3,11 +3,10 @@
 }
 body {
   background: var(--bg);
-  padding: 2em;
+  padding: 5vw;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   margin: auto;
   color: #eee;
-  line-height: 3ex;
   overflow-x: hidden;
 }
 * {

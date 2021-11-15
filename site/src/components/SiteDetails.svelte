@@ -1,11 +1,10 @@
 <script lang="ts">
-  import Twitter from '@svicons/fa-brands/twitter.svelte'
-  import LinkExternal from '@svicons/octicons/link-external.svelte'
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
   import Person from '@svicons/octicons/person.svelte'
   import Project from '@svicons/octicons/project.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
   import { Site } from '../types'
+  import Creator from './Creator.svelte'
   import Screenshot from './Screenshot.svelte'
 
   export let site: Site
@@ -20,8 +19,8 @@
     })
 </script>
 
-<div>
-  <main style="flex: 2;">
+<main>
+  <section style="flex: 2;">
     <h1 class="flex" style="gap: 1em; justify-content: space-between;">
       <a href={url}>{title}</a>
       {#if site.repo}
@@ -35,23 +34,20 @@
       <p>{site.description}</p>
     {/if}
     <hr />
-    <p class="flex">
+    <div>
       <Person width="1em" />&emsp;Creator{creators.length > 1 ? `s` : ``}:
-      {#each creators as creator, idx}
-        {#if idx > 0}&ensp;+&ensp;{/if}
-        {creator.name}
-        {#if creator.url}&nbsp;
-          <a href={creator.url} class="flex">
-            <LinkExternal width="1.1em" />
-          </a>
-        {/if}
-        {#if creator.twitter}&nbsp;
-          <a href="https://twitter.com/@{creator.twitter}" class="flex">
-            <Twitter width="1.1em" />
-          </a>
-        {/if}
-      {/each}
-    </p>
+      {#if creators.length > 1}
+        <ol class="creators">
+          {#each creators as creator}
+            <li>
+              <Creator {creator} />
+            </li>
+          {/each}
+        </ol>
+      {:else}
+        &nbsp;&emsp;<Creator creator={creators[0]} />
+      {/if}
+    </div>
     {#if dateCreated}
       <hr />
       <p class="flex">
@@ -60,8 +56,9 @@
     {/if}
     {#if tags?.length > 0}
       <hr />
-      <p class="flex">
-        <Tag width="1em" height="1.2em" />&emsp;Tags: {tags.join(`, `)}
+      <p>
+        <Tag width="1em" height="1.2em" />&emsp;Tags:
+        {tags.join(`, `)}
       </p>
     {/if}
     {#if uses && uses?.length > 0}
@@ -70,19 +67,19 @@
         <Tag width="1em" height="1.2em" />&emsp;Uses: {uses.join(`, `)}
       </p>
     {/if}
-  </main>
-  <figure style="flex: 3;"><Screenshot {title} /></figure>
-</div>
+  </section>
+  <aside style="flex: 3;"><Screenshot {title} /></aside>
+</main>
 
 <style>
-  div {
+  main {
     display: flex;
     max-width: 1000px;
     gap: 2em;
     margin: 6em auto 2em;
   }
   @media (max-width: 600px) {
-    div {
+    main {
       flex-direction: column;
       flex-direction: column-reverse;
       gap: 1em;
@@ -95,5 +92,8 @@
     height: 0.1px;
     background-color: lightblue;
     border: none;
+  }
+  ol.creators {
+    line-height: 1.6em;
   }
 </style>
