@@ -2,6 +2,7 @@
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
   import Person from '@svicons/octicons/person.svelte'
   import Project from '@svicons/octicons/project.svelte'
+  import Stack from '@svicons/octicons/stack.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
   import { Site } from '../types'
   import Creator from './Creator.svelte'
@@ -64,7 +65,7 @@
     {#if uses && uses?.length > 0}
       <hr />
       <p class="flex">
-        <Tag width="1em" height="1.2em" />&emsp;Uses: {uses.join(`, `)}
+        <Stack width="1em" height="1.2em" />&emsp;Uses: {uses.join(`, `)}
       </p>
     {/if}
   </section>
