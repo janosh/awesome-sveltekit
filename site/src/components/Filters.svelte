@@ -17,23 +17,27 @@
   <MultiSelect
     options={tags}
     placeholder="Filter by tag..."
-    bind:selected={$filterTags} />
+    bind:selected={$filterTags}
+  />
   {#if $filterTags.length > 0}
     <RadioButtons
       selected="AND"
       on:change={({ detail }) => ($tagFilterMode = detail.value)}
-      options={[`AND`, `OR`]} />
+      options={[`AND`, `OR`]}
+    />
   {/if}
   <MultiSelect
     options={sortByOptions.filter(Boolean)}
     placeholder="Sort by..."
     maxSelect={1}
-    bind:selected={$sortBy} />
+    bind:selected={$sortBy}
+  />
   {#if $sortBy.length > 0}
     <RadioButtons
       selected="Descending"
       on:change={() => dispatch(`toggleSort`)}
-      options={[`Ascending`, `Descending`]} />
+      options={[`Ascending`, `Descending`]}
+    />
   {/if}
 </div>
 

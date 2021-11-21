@@ -46,7 +46,7 @@ repos:
         exclude: yarn.lock
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v7.32.0
+    rev: v8.3.0
     hooks:
       - id: eslint
         types: [file]

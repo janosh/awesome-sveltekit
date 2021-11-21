@@ -37,7 +37,10 @@
             title={$filterTags.includes(tag)
               ? `Already selected`
               : `Filter list of sites to include tag '${tag}'`}
-            on:click={appendTagToFilters(tag)}>{tag}</small>
+            on:click={appendTagToFilters(tag)}
+          >
+            {tag}
+          </small>
         {/each}
       </p>
     </li>
