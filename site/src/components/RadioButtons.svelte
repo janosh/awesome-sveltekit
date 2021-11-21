@@ -14,7 +14,8 @@
   {#each options as value}
     <label>
       <input type="radio" bind:group={selected} {value} on:change={handler(value)} />
-      <span>{value}</span></label>
+      <span>{value}</span>
+    </label>
   {/each}
 </div>
 

@@ -54,7 +54,8 @@
   <Filters
     {tags}
     bind:query
-    on:toggleSort={() => (sortedSites = sortedSites.reverse())} />
+    on:toggleSort={() => (sortedSites = sortedSites.reverse())}
+  />
 
   {#if filteredSites.length < sites.length}
     <p>{filteredSites.length} match{filteredSites.length !== 1 ? `es` : ``}</p>
