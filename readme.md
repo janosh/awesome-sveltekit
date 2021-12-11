@@ -163,6 +163,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/importantimport/urara" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [Windi], [DaisyUI], [TypeScript], [PNPM]
     - added: 2021-11-05
+37. [connorrothschild.com](https://connorrothschild.com) Creative, content-based personal portfolio site of Connor Rothschild [[code](https://github.com/connorrothschild/.com)]
+    <img src="https://img.shields.io/github/stars/connorrothschild/.com" alt="GitHub stars" valign="middle">
+    - uses: [MDsveX], [GSAP], [Netlify]
+    - added: 2021-12-11
 
 ## 🎉 Open to Suggestions
 
@@ -210,3 +214,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [mapbox]: https://mapbox.com
 [docker]: https://docker.com
 [google maps]: https://developers.google.com/maps/documentation/javascript
+[gsap]: https://greensock.com/gsap
