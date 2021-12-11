@@ -567,11 +567,11 @@
   title: connorrothschild.com
   creators:
     - name: Connor Rothschild
-      url: https://www.connorrothschild.com
+      url: https://connorrothschild.com
       github: connorrothschild
-  url: https://www.connorrothschild.com
+  url: https://connorrothschild.com
   repo: https://github.com/connorrothschild/.com
-  description: Creative, content-based portfolio site of Connor Rothschild
+  description: Creative, content-based portfolio site of Connor Rothschild.
   uses: [MDsveX, GSAP, Netlify]
   tags: [blog, portfolio, animations]
   dateCreated: 2021-12-10
