@@ -562,3 +562,17 @@
   tags: [blog, template]
   dateCreated: 2021-11-01
   lastUpdated: 2021-11-05
+
+- id: 37
+  title: connorrothschild.com
+  creators:
+    - name: Connor Rothschild
+      url: https://www.connorrothschild.com
+      github: connorrothschild
+  url: https://www.connorrothschild.com
+  repo: https://github.com/connorrothschild/.com
+  description: Creative, content-based portfolio site of Connor Rothschild
+  uses: [MDsveX, GSAP, Netlify]
+  tags: [blog, portfolio, animations]
+  dateCreated: 2021-12-10
+  lastUpdated: 2021-12-10
