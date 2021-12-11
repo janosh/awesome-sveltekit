@@ -9,7 +9,6 @@ repos:
       - id: check-symlinks
       - id: check-yaml
       - id: destroyed-symlinks
-      - id: double-quote-string-fixer
       - id: end-of-file-fixer
       - id: mixed-line-ending
       - id: trailing-whitespace
@@ -28,7 +27,7 @@ repos:
     rev: v1.26.3
     hooks:
       - id: yamllint
-        args: [--config-file, dotfiles/.yamllint.yml]
+        args: [--config-file, utils/.yamllint.yml]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.30.0
@@ -99,3 +98,11 @@ repos:
         entry: '\S+\s{2,}'
         language: pygrep
         types: [text]
+
+  - repo: local
+    hooks:
+      - id: format-urls
+        name: Format URLs
+        entry: ./utils/format_urls.py
+        language: python
+        files: ^(sites.yml|readme.md|utils/format_urls.py)$

@@ -17,4 +17,4 @@ jobs:
         # docs at https://git.io/JBaKu
         with:
           # sets status code 500 (Internal Server Error) and 503 (Service Unavailable) as alive
-          config-file: dotfiles/markdown_link_check_config.json
+          config-file: utils/markdown_link_check_config.json
