@@ -9,10 +9,10 @@
   const tags = [...new Set(sites.map((site) => site.tags).flat(1))]
   let query = ``
 
-  function filterByQuery(site: Site) {
+  $: filterByQuery = (site: Site) => {
     return query?.length === 0 || JSON.stringify(site).includes(query)
   }
-  function filterByTags(site: Site, filterTags: string[], filterMode: `AND` | `OR`) {
+  $: filterByTags = (site: Site, filterTags: string[], filterMode: `AND` | `OR`) => {
     if (filterTags.length === 0) return true
     if (filterMode === `OR`) return filterTags.some((tag) => site.tags.includes(tag))
     if (filterMode === `AND`) return filterTags.every((tag) => site.tags.includes(tag))
