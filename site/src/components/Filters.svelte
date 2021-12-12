@@ -71,6 +71,8 @@
     color: inherit;
     background: black;
     box-shadow: 0 0 1pt gray;
+    line-height: 17pt;
+    font-size: 1em;
   }
   input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: none;

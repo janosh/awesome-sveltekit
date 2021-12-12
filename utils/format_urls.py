@@ -11,9 +11,14 @@ def main() -> int:
 
         # remove trailing slash from URLs
         if filename == "readme.md":
+            # target markdown inline links [link](url/)
             text = re.sub(r"/\)", ")", text)
-        if filename == "sites.yml":
-            text = re.sub(r"(.+https?://.+)/$", r"\g<1>", text, flags=re.MULTILINE)
+
+        # target URLs with a slash followed by white space, question mark (start of
+        # query string) or end of line
+        text = re.sub(
+            "(.*https?://.+)/(\\s|\\?|$)", r"\g<1>\g<2>", text, flags=re.MULTILINE
+        )
 
         with open(filename, "w") as file:
             file.write(text)
