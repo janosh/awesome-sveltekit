@@ -576,3 +576,20 @@
   tags: [blog, portfolio, animations]
   dateCreated: 2021-12-10
   lastUpdated: 2021-12-10
+
+- id: 38
+  title: Svelte Cubed
+  creators:
+    - name: Rich Harris
+      twitter: rich_harris
+      email: richard.a.harris@gmail.com
+      github: Rich-Harris
+    - name: others
+      url: https://github.com/Rich-Harris/svelte-cubed/graphs/contributors
+  url: https://svelte-cubed.vercel.app
+  repo: https://github.com/Rich-Harris/svelte-cubed
+  description: Three.js component library for Svelte.
+  uses: [TypeScript, PNPM, Vercel, MDsveX]
+  tags: [components, library, animations, interactive]
+  dateCreated: 2021-05-18
+  lastUpdated: 2021-12-19
