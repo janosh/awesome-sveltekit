@@ -167,6 +167,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/connorrothschild/.com" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [GSAP], [Netlify]
     - added: 2021-12-11
+38. [Svelte Cubed](https://svelte-cubed.vercel.app) Three.js component library for Svelte [[code](https://github.com/Rich-Harris/svelte-cubed)]
+    <img src="https://img.shields.io/github/stars/Rich-Harris/svelte-cubed" alt="GitHub stars" valign="middle">
+    - uses: [MDsveX], [PNPM], [Vercel], [MDSvex]
+    - added: 2021-12-19
 
 ## 🎉 Open to Suggestions
 
