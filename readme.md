@@ -143,7 +143,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 31. [cybernetic.dev](https://cybernetic.dev) Data-centric UI experiments
     - uses: [Three.js], [Cytoscape.js], [Vercel]
     - added: 2021-10-19
-32. [kudadam.com](https://kudadam.com) Personal Website [[code](https://gituhb.com/biah/kudadam)]
+32. [kudadam.com](https://kudadam.com) Personal Website [[code](https://github.com/kudadam/kudadam.com)]
     <img src="https://img.shields.io/github/stars/biah/kudadam" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [Tailwind]
     - added: 2021-10-26
