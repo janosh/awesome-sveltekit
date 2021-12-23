@@ -493,7 +493,7 @@
     - name: Lucretius Biah
       twitter: lucretius_1
   url: https://kudadam.com
-  repo: https://gituhb.com/biah/kudadam
+  repo: https://github.com/kudadam/kudadam.com
   description: A personal website and blog.
   uses: [MDsveX, Tailwind]
   tags: [blog, rss, personal, portfolio, sitemap]
