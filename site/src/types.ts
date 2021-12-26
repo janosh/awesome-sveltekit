@@ -4,6 +4,7 @@ export type Site = {
   slug: string
   description?: string
   repo?: string
+  siteSrc?: string
   repoStars?: number
   creators: Creator[]
   tags: string[]

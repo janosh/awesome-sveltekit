@@ -48,9 +48,10 @@ for (const [idx, site] of sites.entries()) {
 
 await browser.close()
 
-const took = ((performance.now() - start) / 1000).toFixed(2)
+const wallTime = ((performance.now() - start) / 1000).toFixed(2)
+
 if (nNew > 0 || nUpdated > 0) {
   console.log(
-    `takeScreenshots.js created ${nNew} new, updated ${nUpdated} in ${took}s`
+    `takeScreenshots.js created ${nNew} new, updated ${nUpdated} in ${wallTime}s`
   )
 }
