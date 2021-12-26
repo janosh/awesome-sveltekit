@@ -7,7 +7,9 @@ export const sortByOptions = [
   `GitHub repo stars`,
 ] as const
 
-export const sortBy = writable<typeof sortByOptions[number]>(``)
+export type sortByType = typeof sortByOptions[number]
+
+export const sortBy = writable<sortByType>(``)
 
 export const filterTags = writable<string[]>([])
 

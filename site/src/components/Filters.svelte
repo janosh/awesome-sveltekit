@@ -15,7 +15,7 @@
   <MultiSelect
     options={tags}
     placeholder="Filter by tag..."
-    bind:selected={$filterTags}
+    bind:selectedLabels={$filterTags}
   />
   {#if $filterTags.length > 0}
     <RadioButtons
@@ -28,9 +28,9 @@
     options={sortByOptions.filter(Boolean)}
     placeholder="Sort by..."
     maxSelect={1}
-    bind:selected={$sortBy}
+    on:change={(e) => ($sortBy = e.detail.token.label)}
   />
-  {#if $sortBy.length > 0}
+  {#if $sortBy !== ``}
     <RadioButtons
       selected="Descending"
       on:change={() => dispatch(`toggleSort`)}

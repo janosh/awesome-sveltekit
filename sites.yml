@@ -27,8 +27,9 @@
     - name: others
       url: https://github.com/sveltejs/svelte/graphs/contributors
   url: https://svelte.dev
-  repo: https://github.com/sveltejs/svelte/tree/master/site
-  # to be moved to https://github.com/sveltejs/sites (https://git.io/JXSh1)
+  repo: https://github.com/sveltejs/svelte
+  # Sapper to SvelteKit migration in https://git.io/JXSh1
+  siteSrc: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
   tags: [docs, monorepo, dev tools, blog, REPL]
@@ -57,7 +58,8 @@
     - name: others
       url: https://github.com/sveltejs/kit/graphs/contributors
   url: https://kit.svelte.dev
-  repo: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
+  repo: https://github.com/sveltejs/kit
+  siteSrc: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
   description: The fastest way to build Svelte apps.
   uses: [Netlify, PNPM]
   tags: [docs, monorepo]
