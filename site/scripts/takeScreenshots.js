@@ -33,9 +33,18 @@ for (const [idx, site] of sites.entries()) {
   console.log(`${idx + 1}/${sites.length}: generating ${slug}.webp`)
 
   try {
-    await page.goto(site.url, { timeout: 5000, waitUntil: `networkidle2` })
+    try {
+      await page.goto(site.url, { timeout: 5000, waitUntil: `networkidle2` })
+    } catch (error) {
+      if (error instanceof puppeteer.errors.TimeoutError) {
+        // retry page.goto(), this time waiting only for 'load' event
+        await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
+      } else {
+        throw error // rethrow if not a TimeoutError
+      }
+    }
   } catch (error) {
-    await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
+    console.log(`skipping ${slug} due to ${error}`)
   }
 
   await page.waitForTimeout(1000) // wait 1s for sites with landing animations to settle
@@ -54,4 +63,6 @@ if (nNew > 0 || nUpdated > 0) {
   console.log(
     `takeScreenshots.js created ${nNew} new, updated ${nUpdated} in ${wallTime}s`
   )
+} else {
+  console.log(`no changes from takeScreenshots.js in ${wallTime}s`)
 }
