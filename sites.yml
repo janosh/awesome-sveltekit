@@ -595,3 +595,19 @@
   tags: [components, library, animations, interactive]
   dateCreated: 2021-05-18
   lastUpdated: 2021-12-19
+
+- id: 39
+  title: Multi-Monitor Calculator
+  creators:
+    - name: Kevin Van Cott
+      twitter: ThomasVanCott
+      email: kevinvandy656@gmail.com
+      github: KevinVandy
+      url: https://kevinvancott.dev
+  url: https://multimonitorcalculator.com
+  repo: https://github.com/KevinVandy/multi-monitor_calculator
+  description: A tool for planning your multi-monitor setup.
+  uses: [TypeScript, Svelte Material UI (SMUI), SASS]
+  tags: [interactive, 3d, calculator, monitor]
+  dateCreated: 2018-06-08
+  lastUpdated: 2022-01-01
