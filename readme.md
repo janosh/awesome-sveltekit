@@ -102,8 +102,8 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/neurosnap/neovimcraft" alt="GitHub stars" valign="middle">
     - uses: [TypeScript]
     - added: 2021-08-13
-22. [swyxdotio](https://swyx.io) personal and work-related blog + idea showcase
-    [[code](https://github.com/sw-yx/swyxdotio)]
+22. [swyxkit](https://swyxkit.netlify.app) An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!
+    [[code](https://github.com/sw-yx/swyxkit)]
     <img src="https://img.shields.io/github/stars/sw-yx/swyxdotio" alt="GitHub stars" valign="middle">
     - uses: [Tailwind], [Rollup], [PostCSS]
     - added: 2021-09-01
