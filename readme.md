@@ -171,6 +171,10 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/Rich-Harris/svelte-cubed" alt="GitHub stars" valign="middle">
     - uses: [MDsveX], [PNPM], [Vercel], [MDSvex]
     - added: 2021-12-19
+39. [Multi-Monitor Calculator](https://multimonitorcalculator.com) A tool for planning your multi-monitor setup. [[code](https://github.com/KevinVandy/multi-monitor_calculator)]
+    <img src="https://img.shields.io/github/stars/KevinVandy/multi-monitor_calculator" alt="GitHub stars" valign="middle">
+    - uses: [TypeScript], [SMUI], [Sass]
+    - added: 2022-01-01
 
 ## 🎉 Open to Suggestions
 
@@ -219,3 +223,4 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [docker]: https://docker.com
 [google maps]: https://developers.google.com/maps/documentation/javascript
 [gsap]: https://greensock.com/gsap
+[smui]: https://sveltematerialui.com
