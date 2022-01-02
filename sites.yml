@@ -604,7 +604,7 @@
       email: kevinvandy656@gmail.com
       github: KevinVandy
       url: https://kevinvancott.dev
-  url: https://multimonitorcalculator.com/
+  url: https://multimonitorcalculator.com
   repo: https://github.com/KevinVandy/multi-monitor_calculator
   description: A tool for planning your multi-monitor setup.
   uses: [TypeScript, Svelte Material UI (SMUI), SASS]
