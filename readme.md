@@ -173,8 +173,6 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     - added: 2021-12-19
 39. [Multi-Monitor Calculator](https://multimonitorcalculator.com) A tool for planning your multi-monitor setup. [[code](https://github.com/KevinVandy/multi-monitor_calculator)]
     <img src="https://img.shields.io/github/stars/KevinVandy/multi-monitor_calculator" alt="GitHub stars" valign="middle">
-
-
     - uses: [typescript], [smui], [sass]
     - added: 2022-01-01
 
