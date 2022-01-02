@@ -353,7 +353,7 @@
   url: https://swyx.io
   repo: https://github.com/sw-yx/swyxkit
   description: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!
-  tags: [programming, blog, portfolio, Tailwind, Rollup, PostCSS]
+  tags: [programming, blog, portfolio, Tailwind]
   dateCreated: 2020-09-11
   lastUpdated: 2021-09-01
 

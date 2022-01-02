@@ -1,6 +1,10 @@
 name: Update Site Screenshots
 
 on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 */3 *' # https://crontab.guru/every-quarter
@@ -20,8 +24,13 @@ jobs:
       - name: Install dependencies
         run: yarn add puppeteer js-yaml
 
-      - name: Run takeScreenshots.js
+      - name: Update existing screenshots on scheduled and manually dispatched runs
+        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
         run: node site/scripts/takeScreenshots.js update-existing
+
+      - name: Add screenshots for new sites on PRs and push to main
+        if: ${{ github.event_name == 'pull_request' || github.event_name == 'push' }}
+        run: node site/scripts/takeScreenshots.js
 
       - name: Push new screenshots
         run: |
