@@ -24,12 +24,12 @@ jobs:
       - name: Install dependencies
         run: yarn add puppeteer js-yaml
 
-      - name: Update existing screenshots on scheduled and manually dispatched runs
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      - name: Update existing screenshots on scheduled runs
+        if: github.event_name == 'schedule'
         run: node site/scripts/takeScreenshots.js update-existing
 
-      - name: Add screenshots for new sites on PRs and push to main
-        if: ${{ github.event_name == 'pull_request' || github.event_name == 'push' }}
+      - name: Add screenshots for new sites on PRs/push to main and manually dispatched runs
+        if: github.event_name != 'schedule'
         run: node site/scripts/takeScreenshots.js
 
       - name: Push new screenshots

@@ -314,7 +314,7 @@
   description:
     A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
     fake stock.
-  tags: [game, mobile, TailWind, ChartJs]
+  tags: [game, mobile, TailWind, Chart.js]
   dateCreated: 2021-07-25
   lastUpdated: 2021-08-01
 
@@ -611,3 +611,18 @@
   tags: [interactive, 3d, calculator, monitor]
   dateCreated: 2018-06-08
   lastUpdated: 2022-01-01
+
+- id: 40
+  title: Modern Fluid Typography Editor
+  creators:
+    - name: Adrian Bece
+      twitter: AdrianBeceDev
+      github: codeAdrian
+      url: https://codeadrian.github.io
+  url: https://modern-fluid-typography.vercel.app
+  repo: https://github.com/codeAdrian/modern-fluid-typography-editor
+  description: Easily create and fine-tune fluid typography values with Modern CSS clamp().
+  uses: [TypeScript, PostCSS, Chart.js, cssnano]
+  tags: [developer tool, design, frontend, typography]
+  dateCreated: 2021-11-29
+  lastUpdated: 2022-01-04
