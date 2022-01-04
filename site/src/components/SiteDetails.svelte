@@ -23,7 +23,7 @@
 <main>
   <section style="flex: 2;">
     <h1 class="flex" style="gap: 1em; justify-content: space-between;">
-      <a href={url}>{title}</a>
+      <a href={url} target="_blank">{title}</a>
       {#if site.repo}
         <small class="flex" style="gap: 6pt;">
           <MarkGithub width="1.2em" /><a href={site.repo}>Repo</a>
