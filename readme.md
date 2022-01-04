@@ -175,52 +175,57 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
     <img src="https://img.shields.io/github/stars/KevinVandy/multi-monitor_calculator" alt="GitHub stars" valign="middle">
     - uses: [TypeScript], [SMUI], [Sass]
     - added: 2022-01-01
+40. [Modern Fluid Typography Editor](https://modern-fluid-typography.vercel.app) Easily create and fine-tune fluid typography values with Modern CSS `clamp()`. [[code](https://github.com/codeAdrian/modern-fluid-typography-editor)]
+    <img src="https://img.shields.io/github/stars/codeAdrian/modern-fluid-typography-editor" alt="GitHub stars" valign="middle">
+    - uses: [TypeScript], [PostCSS], [Chart.js], [cssnano]
+    - added: 2022-01-04
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md) Remember to add each new site to both [readme.md](readme.md) and [`sites.yml`](sites.yml). If you're unsure if a site belongs on this list, feel free to [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) first. This repo is meant to be a community effort.
+See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md) Remember to add each new site to [readme.md](readme.md) _and_ [`sites.yml`](sites.yml). If you're unsure if a site belongs on this list, [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) to discuss. This repo is meant to be a community effort.
 
-[mdsvex]: https://github.com/pngwn/MDsveX
-[tailwind]: https://tailwindcss.com
-[pancake]: https://github.com/Rich-Harris/pancake
-[svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
-[contentful]: https://contentful.com
 [algolia]: https://algolia.com
-[graphql]: https://graphql.org
-[netlify]: https://netlify.com
-[vercel]: https://vercel.com
-[firebase]: https://firebase.google.com
-[typescript]: https://typescriptlang.org
-[scss]: https://sass-lang.com
-[cloudinary]: https://cloudinary.com
-[cloudflare]: https://cloudflare.com
-[graphcms]: https://graphcms.com
-[svicons]: https://github.com/janosh/svicons
-[postcss]: https://postcss.org
-[sass]: https://sass-lang.com
-[chart.js]: https://chartjs.org
-[plausible]: https://plausible.io
-[google analytics]: https://analytics.google.com
-[markedjs]: https://marked.js.org
-[pnpm]: https://pnpm.io
-[rollup]: https://rollupjs.org
-[gitpod]: https://gitpod.io
-[sanity]: https://sanity.io
 [anime.js]: https://animejs.com
-[iconoir]: https://iconoir.com
-[dynamodb]: https://aws.amazon.com/dynamodb
 [aws]: https://aws.amazon.com
-[elder.js]: https://github.com/Elderjs/elderjs
-[three.js]: https://threejs.org
-[cytoscape.js]: https://js.cytoscape.org
-[mvp.css]: https://github.com/andybrewer/mvp
-[lodash]: https://lodash.com
-[d3]: https://d3js.org
-[windi]: https://windicss.org
-[daisyui]: https://daisyui.com
+[chart.js]: https://chartjs.org
+[cloudflare]: https://cloudflare.com
+[cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net
-[mapbox]: https://mapbox.com
+[contentful]: https://contentful.com
+[cssnano]: https://cssnano.co
+[cytoscape.js]: https://js.cytoscape.org
+[d3]: https://d3js.org
+[daisyui]: https://daisyui.com
 [docker]: https://docker.com
+[dynamodb]: https://aws.amazon.com/dynamodb
+[elder.js]: https://github.com/Elderjs/elderjs
+[firebase]: https://firebase.google.com
+[gitpod]: https://gitpod.io
+[google analytics]: https://analytics.google.com
 [google maps]: https://developers.google.com/maps/documentation/javascript
+[graphcms]: https://graphcms.com
+[graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
+[iconoir]: https://iconoir.com
+[lodash]: https://lodash.com
+[mapbox]: https://mapbox.com
+[markedjs]: https://marked.js.org
+[mdsvex]: https://github.com/pngwn/MDsveX
+[mvp.css]: https://github.com/andybrewer/mvp
+[netlify]: https://netlify.com
+[pancake]: https://github.com/Rich-Harris/pancake
+[plausible]: https://plausible.io
+[pnpm]: https://pnpm.io
+[postcss]: https://postcss.org
+[rollup]: https://rollupjs.org
+[sanity]: https://sanity.io
+[sass]: https://sass-lang.com
+[scss]: https://sass-lang.com
 [smui]: https://sveltematerialui.com
+[svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
+[svicons]: https://github.com/janosh/svicons
+[tailwind]: https://tailwindcss.com
+[three.js]: https://threejs.org
+[typescript]: https://typescriptlang.org
+[vercel]: https://vercel.com
+[windi]: https://windicss.org
