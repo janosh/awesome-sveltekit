@@ -77,6 +77,7 @@
       github: Rich-Harris
     - name: others unknown
   url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
+  description: Charts and maps of coronavirus cases, deaths, hospitalizations and vaccinations in NYC.
   uses: [Pancake]
   tags: [news, journalism, Covid]
   dateAdded: 2021-05-25
@@ -89,7 +90,7 @@
       twitter: GrygrFlzr
   url: https://sk-incognito.vercel.app
   repo: https://github.com/GrygrFlzr/kit-docs
-  description: Unofficial documentation for SvelteKit.
+  description: The unofficial SvelteKit docs.
   uses: [MDsveX, Tailwind, PNPM]
   tags: [docs, Vercel]
   dateCreated: 2021-02-15
@@ -133,7 +134,7 @@
       twitter: HatvanMarkus
   url: https://markushatvan.com
   repo: https://github.com/mhatvan/markushatvan.com
-  description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS feed and sitemap.
+  description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.
   uses: [Tailwind, MDsveX, Svelte Forms Lib]
   tags: [blog, rss, sitemap, contact form]
   dateCreated: 2020-08-21
@@ -148,10 +149,10 @@
       twitter: _jarib
   url: https://studenten-bilden-schueler.de
   repo: https://github.com/sbsev/svelte-site
-  description: >
-    Studenten bilden Schüler e.V. is a student-run nonprofit initiative with chapters located in university
-    towns all across Germany. Their mission is to contribute towards educational equality by providing free
-    tutoring to children from underprivileged families.
+  description: >-
+    Student-run nonprofit initiative with chapters located in university towns all across Germany.
+    Mission is to contribute towards educational equality by providing free tutoring to children
+    from underprivileged families.
   uses: [Contentful, Algolia, GraphQL, Netlify, MapBox]
   tags: [non-profit, volunteering, education, equality]
   dateCreated: 2020-12-12
@@ -166,7 +167,7 @@
       twitter: _jarib
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
-  description: >
+  description: >-
     Homepage of the German student-run non-profit Afara e.V.
     Supports educational and youth welfare projects in Africa.
   uses: [Contentful, Algolia, GraphQL, Netlify]
@@ -183,11 +184,10 @@
       twitter: _jarib
   url: https://ocean-artup.eu
   repo: https://github.com/janosh/ocean-artup
-  description: >
-    Homepage of the ERC Advanced Grant research project Ocean artUp.
-    It aims to study the feasibility, effectiveness, associated risks and potential
-    side effects of artificial upwelling in increasing ocean productivity, raising
-    fish production, and enhancing oceanic CO2 sequestration.
+  description: >-
+    ERC Advanced Grant research project. Aims to study feasibility, effectiveness, associated risks
+    and side effects of artificial upwelling for increasing ocean productivity, raising fish production,
+    and enhancing oceanic CO2 sequestration.
   uses: [Contentful, Algolia, GraphQL, Netlify, Google Maps]
   tags: [research, science]
   dateCreated: 2021-01-31
@@ -202,7 +202,7 @@
       url: https://davjhan.com
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
-  description: >
+  description: >-
     Round-based browser game where you guess the year in which famous event happened.
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
   uses: [Tailwind, Netlify]
@@ -230,7 +230,7 @@
       url: https://github.com/gitpod-io/website/graphs/contributors
   url: https://gitpod.io
   repo: https://github.com/gitpod-io/website
-  description: >
+  description: >-
     Gitpod streamlines developer workflows by providing prebuilt, collaborative
     development environments in your browser - powered by VS Code.
   uses: [MDsveX, Tailwind, Netlify]
@@ -244,6 +244,7 @@
   creators:
     - name: Sharath Kumar
   url: https://sveltethemes.dev
+  description: Collection of Svelte site themes, starters and component libraries.
   uses: [Netlify, Tailwind]
   tags: [site directory, learning resources]
   dateAdded: 2021-06-01
@@ -256,10 +257,10 @@
       twitter: TarunKumarSukhu
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
-  description: >
+  description: >-
     A set of example apps built with SvelteKit and deployed on Vercel. As an ongoing project,
     this will continue to be enhanced with more examples to showcase the power of SvelteKit.
-  uses: [Tailwind, Vercel, Firebase, Google Authentication, Typescript]
+  uses: [Tailwind, Vercel, GraphQL, Firebase, Typescript]
   tags: [sample applications, cloud computing]
   dateCreated: 2021-05-27
   dateAdded: 2021-06-09
@@ -272,7 +273,7 @@
       twitter: puruvjdev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
-  description: >
+  description: >-
     Puru Vijay's blog site.
   uses: [Vercel, TypeScript, SCSS, Cloudinary]
   tags: [blog]
@@ -314,10 +315,12 @@
     - name: Studio NAND
       url: https://nand.io/projects/vaccination-dashboard
   url: https://impfdashboard.de/en
-  description: >
-    The official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH,
-    Studio NAND GmbH and Truth & Beauty. Data supplied by Robert Koch Institut.
-  tags: [covid, pandemic, health, government, science]
+  description: >-
+    Official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH, Studio NAND GmbH
+    and Truth & Beauty. Data supplied by Robert Koch Institut. Not actually SvelteKit (yet, might
+    be updated) but shows what's possible with data viz in Svelte.
+  tags: [covid, pandemic, health, government, science, i18n]
+  uses: [Tabler Icons, WeePeople]
   dateCreated: 2021-01-01
   dateAdded: 2021-07-30
   lastUpdated: 2021-07-30
@@ -330,10 +333,11 @@
       url: https://davjhan.com
   url: https://paper-trader.davjhan.com
   repo: https://github.com/davjhan/paper-trader-game
-  description: >
+  description: >-
     A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
     fake stock.
-  tags: [game, mobile, TailWind, Chart.js]
+  tags: [game, mobile]
+  uses: [TailWind, Netlify, Chart.js, Plausible]
   dateCreated: 2021-07-25
   dateAdded: 2021-08-01
   lastUpdated: 2021-08-01
@@ -347,7 +351,8 @@
   url: https://sveltepress.geopjr.dev
   repo: https://github.com/GeopJr/SveltePress
   description: SvelteKit-powered documentation site generator. Made for humans.
-  tags: [documentation, markdown, Netlify, PNPM]
+  tags: [documentation, markdown]
+  uses: [Netlify, MarkedJS, PNPM, SCSS, Dart, Pandoc]
   dateCreated: 2021-07-09
   dateAdded: 2021-08-10
   lastUpdated: 2021-08-10
@@ -361,7 +366,8 @@
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
   description: Curated list of neovim plugins.
-  tags: [programming, resource list, TypeScript]
+  tags: [programming, resource list]
+  uses: [TypeScript, Husky]
   dateCreated: 2021-07-18
   dateAdded: 2021-08-13
   lastUpdated: 2021-08-13
@@ -375,7 +381,8 @@
   url: https://swyx.io
   repo: https://github.com/sw-yx/swyxkit
   description: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!
-  tags: [programming, blog, portfolio, Tailwind]
+  tags: [programming, blog, portfolio]
+  uses: [Tailwind, Netlify]
   dateCreated: 2020-09-11
   dateAdded: 2021-09-01
   lastUpdated: 2021-09-01
@@ -401,7 +408,8 @@
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
   description: The Svelte Society website, a global network of Svelte fans striving to promote Svelte and its ecosystem.
-  tags: [programming, components, events, cheat sheets, TypeScript, GitPod]
+  tags: [programming, components, events, cheat sheets]
+  uses: [TypeScript, Gitpod]
   dateCreated: 2020-05-03
   dateAdded: 2021-10-01
   lastUpdated: 2020-10-01
@@ -413,10 +421,11 @@
       twitter: flayks
       url: https://flayks.com
   url: https://flayks.com
-  description: >
+  description: >-
     Portfolio of Félix Péault, Digital Designer and Art Director
     [[interview](https://sanity.io/blog/felix-peault-community-interview)]
-  tags: [portfolio, Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
+  tags: [portfolio]
+  uses: [Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
   dateCreated: 2021-10-01
   dateAdded: 2021-10-01
   lastUpdated: 2021-10-01
@@ -458,7 +467,7 @@
       url: https://mortimerbaltus.com
   url: https://mortimerbaltus.com
   description: MortimerBaltus is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
-  uses: [Cloudinary, Cloudflare Pages, Cloudflare Workers]
+  uses: [Cloudinary, Cloudflare]
   tags: [web development, design, intercultural guidance]
   dateCreated: 2021-09-21
   dateAdded: 2021-10-6

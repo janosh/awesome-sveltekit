@@ -156,6 +156,7 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [cytoscape.js]: https://js.cytoscape.org
 [d3]: https://d3js.org
 [daisyui]: https://daisyui.com
+[dart]: https://dart.dev
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
 [elder.js]: https://github.com/Elderjs/elderjs
@@ -163,9 +164,12 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
 [google maps]: https://developers.google.com/maps/documentation/javascript
+[google tag manager]: https://tagmanager.google.com
 [graphcms]: https://graphcms.com
 [graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
+[husky]: https://github.com/typicode/husky
+[i18n]: https://github.com/sveltejs/kit/issues/553
 [iconoir]: https://iconoir.com
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
@@ -174,6 +178,7 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [mvp.css]: https://github.com/andybrewer/mvp
 [netlify]: https://netlify.com
 [pancake]: https://github.com/Rich-Harris/pancake
+[pandoc]: https://pandoc.org
 [plausible]: https://plausible.io
 [pnpm]: https://pnpm.io
 [postcss]: https://postcss.org
@@ -181,11 +186,14 @@ See something that's missing from this list? [PRs welcome!](https://github.com/j
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
 [scss]: https://sass-lang.com
+[service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svicons]: https://github.com/janosh/svicons
+[tabler icons]: https://tabler-icons.io
 [tailwind]: https://tailwindcss.com
 [three.js]: https://threejs.org
 [typescript]: https://typescriptlang.org
 [vercel]: https://vercel.com
+[weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org

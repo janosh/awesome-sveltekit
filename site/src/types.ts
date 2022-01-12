@@ -8,7 +8,7 @@ export type Site = {
   repoStars?: number
   creators: Creator[]
   tags: string[]
-  uses?: string[]
+  uses: string[]
   dateCreated?: string
   lastUpdated: string
 }
