@@ -1,6 +1,8 @@
 # For admissible fields see site/src/types.ts. If you introduce a new field,
 # please mention in your PR.
 
+# The description key supports full markdown syntax.
+
 # New tags should strike a balance between generality and specificity so they convey
 # useful information but are still applicable to at least a few other sites.
 
@@ -34,6 +36,7 @@
   uses: [CodeMirror, Mapbox, Docker]
   tags: [docs, monorepo, dev tools, blog, REPL]
   dateCreated: 2021-10-19 # https://git.io/JXShN
+  dateAdded: 2021-11-11
   lastUpdated: 2021-11-11
 
 - id: 2
@@ -64,6 +67,7 @@
   uses: [Netlify, PNPM]
   tags: [docs, monorepo]
   dateCreated: 2021-03-10 # https://git.io/JcQYo
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 3
@@ -75,8 +79,10 @@
       github: Rich-Harris
     - name: others unknown
   url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
+  description: Charts and maps of coronavirus cases, deaths, hospitalizations and vaccinations in NYC.
   uses: [Pancake]
   tags: [news, journalism, Covid]
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 4
@@ -86,10 +92,11 @@
       twitter: GrygrFlzr
   url: https://sk-incognito.vercel.app
   repo: https://github.com/GrygrFlzr/kit-docs
-  description: Unofficial documentation for SvelteKit.
+  description: The unofficial SvelteKit docs.
   uses: [MDsveX, Tailwind, PNPM]
   tags: [docs, Vercel]
   dateCreated: 2021-02-15
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 5
@@ -104,6 +111,7 @@
   uses: [MDsveX]
   tags: [math, education, interactive]
   dateCreated: 2020-10-04
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 6
@@ -116,7 +124,9 @@
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
   tags: [research, science, diagrams, graphics, latex]
+  uses: [TypeScript, Netlify, Svicons]
   dateCreated: 2020-08-09
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 7
@@ -126,10 +136,11 @@
       twitter: HatvanMarkus
   url: https://markushatvan.com
   repo: https://github.com/mhatvan/markushatvan.com
-  description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS feed and sitemap.
+  description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.
   uses: [Tailwind, MDsveX, Svelte Forms Lib]
   tags: [blog, rss, sitemap, contact form]
   dateCreated: 2020-08-21
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 8
@@ -140,13 +151,14 @@
       twitter: _jarib
   url: https://studenten-bilden-schueler.de
   repo: https://github.com/sbsev/svelte-site
-  description: |
-    Studenten bilden Schüler e.V. is a student-run nonprofit initiative with chapters located in university
-    towns all across Germany. Their mission is to contribute towards educational equality by providing free
-    tutoring to children from underprivileged families.
+  description: >-
+    Student-run nonprofit initiative with chapters located in university towns all across Germany.
+    Mission is to contribute towards educational equality by providing free tutoring to children
+    from underprivileged families.
   uses: [Contentful, Algolia, GraphQL, Netlify, MapBox]
   tags: [non-profit, volunteering, education, equality]
   dateCreated: 2020-12-12
+  dateAdded: 2021-06-09
   lastUpdated: 2021-06-09
 
 - id: 9
@@ -157,12 +169,13 @@
       twitter: _jarib
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
-  description: |
+  description: >-
     Homepage of the German student-run non-profit Afara e.V.
     Supports educational and youth welfare projects in Africa.
   uses: [Contentful, Algolia, GraphQL, Netlify]
   tags: [non-profit, volunteering, education, health]
   dateCreated: 2021-01-24
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 10
@@ -173,14 +186,14 @@
       twitter: _jarib
   url: https://ocean-artup.eu
   repo: https://github.com/janosh/ocean-artup
-  description: |
-    Homepage of the ERC Advanced Grant research project Ocean artUp.
-    It aims to study the feasibility, effectiveness, associated risks and potential
-    side effects of artificial upwelling in increasing ocean productivity, raising
-    fish production, and enhancing oceanic CO2 sequestration.
+  description: >-
+    ERC Advanced Grant research project. Aims to study feasibility, effectiveness, associated risks
+    and side effects of artificial upwelling for increasing ocean productivity, raising fish production,
+    and enhancing oceanic CO2 sequestration.
   uses: [Contentful, Algolia, GraphQL, Netlify, Google Maps]
   tags: [research, science]
   dateCreated: 2021-01-31
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 11
@@ -191,12 +204,13 @@
       url: https://davjhan.com
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
-  description: |
+  description: >-
     Round-based browser game where you guess the year in which famous event happened.
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
   uses: [Tailwind, Netlify]
   tags: [webgame]
   dateCreated: 2021-05-09
+  dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
 - id: 12
@@ -218,12 +232,13 @@
       url: https://github.com/gitpod-io/website/graphs/contributors
   url: https://gitpod.io
   repo: https://github.com/gitpod-io/website
-  description: |
+  description: >-
     Gitpod streamlines developer workflows by providing prebuilt, collaborative
     development environments in your browser - powered by VS Code.
   uses: [MDsveX, Tailwind, Netlify]
   tags: [commercial, dev tools, cloud computing]
   dateCreated: 2021-03-17
+  dateAdded: 2021-05-31
   lastUpdated: 2021-05-31
 
 - id: 13
@@ -231,8 +246,10 @@
   creators:
     - name: Sharath Kumar
   url: https://sveltethemes.dev
+  description: Collection of Svelte site themes, starters and component libraries.
   uses: [Netlify, Tailwind]
   tags: [site directory, learning resources]
+  dateAdded: 2021-06-01
   lastUpdated: 2021-06-01
 
 - id: 14
@@ -242,12 +259,13 @@
       twitter: TarunKumarSukhu
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
-  description: |
+  description: >-
     A set of example apps built with SvelteKit and deployed on Vercel. As an ongoing project,
     this will continue to be enhanced with more examples to showcase the power of SvelteKit.
-  uses: [Tailwind, Vercel, Firebase v9, Google Authentication, Typescript]
+  uses: [Tailwind, Vercel, GraphQL, Firebase, Typescript]
   tags: [sample applications, cloud computing]
   dateCreated: 2021-05-27
+  dateAdded: 2021-06-09
   lastUpdated: 2021-06-09
 
 - id: 15
@@ -257,11 +275,12 @@
       twitter: puruvjdev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
-  description: |
+  description: >-
     Puru Vijay's blog site.
   uses: [Vercel, TypeScript, SCSS, Cloudinary]
   tags: [blog]
   dateCreated: 2021-05-06
+  dateAdded: 2021-06-11
   lastUpdated: 2021-06-11
 
 - id: 16
@@ -275,6 +294,7 @@
   uses: [Vercel, TailWind, SCSS, GraphCMS]
   tags: [blog]
   dateCreated: 2021-05-16
+  dateAdded: 2021-06-14
   lastUpdated: 2021-06-14
 
 - id: 17
@@ -287,6 +307,7 @@
   uses: [TypeScript, PostCSS, Sass]
   tags: [blog]
   dateCreated: 2021-06-17
+  dateAdded: 2021-07-08
   lastUpdated: 2021-07-08
 
 - id: 18
@@ -296,11 +317,14 @@
     - name: Studio NAND
       url: https://nand.io/projects/vaccination-dashboard
   url: https://impfdashboard.de/en
-  description:
-    The official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH,
-    Studio NAND GmbH and Truth & Beauty. Data supplied by Robert Koch Institut.
-  tags: [covid, pandemic, health, government, science]
+  description: >-
+    Official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH, Studio NAND GmbH
+    and Truth & Beauty. Data supplied by Robert Koch Institut. Not actually SvelteKit (yet, might
+    be updated) but shows what's possible with data viz in Svelte.
+  tags: [covid, pandemic, health, government, science, i18n]
+  uses: [Tabler Icons, WeePeople]
   dateCreated: 2021-01-01
+  dateAdded: 2021-07-30
   lastUpdated: 2021-07-30
 
 - id: 19
@@ -311,11 +335,13 @@
       url: https://davjhan.com
   url: https://paper-trader.davjhan.com
   repo: https://github.com/davjhan/paper-trader-game
-  description:
+  description: >-
     A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
     fake stock.
-  tags: [game, mobile, TailWind, Chart.js]
+  tags: [game, mobile]
+  uses: [TailWind, Netlify, Chart.js, Plausible]
   dateCreated: 2021-07-25
+  dateAdded: 2021-08-01
   lastUpdated: 2021-08-01
 
 - id: 20
@@ -326,9 +352,11 @@
       url: https://geopjr.dev
   url: https://sveltepress.geopjr.dev
   repo: https://github.com/GeopJr/SveltePress
-  description: SvelteKit-powered documentation site generator. Made for humans.
-  tags: [documentation, markdown, Netlify, PNPM]
+  description: SvelteKit-powered doc site generator. Made for humans.
+  tags: [documentation, markdown]
+  uses: [Netlify, MarkedJS, PNPM, SCSS, Dart, Pandoc]
   dateCreated: 2021-07-09
+  dateAdded: 2021-08-10
   lastUpdated: 2021-08-10
 
 - id: 21
@@ -340,8 +368,10 @@
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
   description: Curated list of neovim plugins.
-  tags: [programming, resource list, TypeScript]
+  tags: [programming, resource list]
+  uses: [TypeScript, Husky]
   dateCreated: 2021-07-18
+  dateAdded: 2021-08-13
   lastUpdated: 2021-08-13
 
 - id: 22
@@ -349,12 +379,14 @@
   creators:
     - name: swyx
       twitter: swyx
-      url: https://swyx.io
-  url: https://swyx.io
+      url: https://swyxkit.netlify.app
+  url: https://swyxkit.netlify.app
   repo: https://github.com/sw-yx/swyxkit
   description: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!
-  tags: [programming, blog, portfolio, Tailwind]
+  tags: [programming, blog, portfolio]
+  uses: [Tailwind, Netlify]
   dateCreated: 2020-09-11
+  dateAdded: 2021-09-01
   lastUpdated: 2021-09-01
 
 - id: 23
@@ -377,9 +409,11 @@
       url: https://github.com/svelte-society/sveltesociety.dev/graphs/contributors
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
-  description: The Svelte Society website, a global network of Svelte fans striving to promote Svelte and its ecosystem.
-  tags: [programming, components, events, cheat sheets, TypeScript, GitPod]
+  description: Global network of Svelte fans striving to promote Svelte and its ecosystem.
+  tags: [programming, components, events, cheat sheets]
+  uses: [TypeScript, Gitpod]
   dateCreated: 2020-05-03
+  dateAdded: 2021-10-01
   lastUpdated: 2020-10-01
 
 - id: 24
@@ -389,9 +423,13 @@
       twitter: flayks
       url: https://flayks.com
   url: https://flayks.com
-  description: Portfolio of Félix Péault, Digital Designer and Art Director.
-  tags: [portfolio, Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
+  description: >-
+    Portfolio of Félix Péault, Digital Designer and Art Director
+    [[interview](https://sanity.io/blog/felix-peault-community-interview)]
+  tags: [portfolio]
+  uses: [Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
   dateCreated: 2021-10-01
+  dateAdded: 2021-10-01
   lastUpdated: 2021-10-01
 
 - id: 25
@@ -401,10 +439,12 @@
       twitter: matt_fantinel
       url: https://fantinel.dev
   url: https://fantinel.dev
+  repo: https://github.com/matfantinel/matfantinel.github.io
   description: Personal website and blog of Matt Fantinel, web developer.
   uses: [MDsveX, SCSS, Iconoir, Plausible]
   tags: [personal, blog, portfolio, SCSS, MDsveX]
   dateCreated: 2021-09-07
+  dateAdded: 2021-10-01
   lastUpdated: 2021-09-15
 
 - id: 26
@@ -418,6 +458,7 @@
   uses: [TypeScript, Google Tag Manager]
   tags: [tutorials, education, videos, web development, design]
   dateCreated: 2021-09-01
+  dateAdded: 2021-10-5
   lastUpdated: 2021-10-05
 
 - id: 27
@@ -429,9 +470,10 @@
       url: https://mortimerbaltus.com
   url: https://mortimerbaltus.com
   description: MortimerBaltus is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
-  uses: [Cloudinary, Cloudflare Pages, Cloudflare Workers]
+  uses: [Cloudinary, Cloudflare]
   tags: [web development, design, intercultural guidance]
   dateCreated: 2021-09-21
+  dateAdded: 2021-10-6
   lastUpdated: 2021-10-06
 
 - id: 28
@@ -445,6 +487,7 @@
   uses: [Tailwind, DynamoDB, AWS]
   tags: [education, coding challenges, JavaScript]
   dateCreated: 2021-10-09
+  dateAdded: 2021-10-9
   lastUpdated: 2021-10-09
 
 - id: 29
@@ -462,10 +505,11 @@
   uses: [PNPM, TypeScript, SCSS, Vercel]
   tags: [education, coding challenges, JavaScript]
   dateCreated: 2021-05-20
+  dateAdded: 2021-10-11
   lastUpdated: 2021-10-11
 
 - id: 30
-  title: Svelte Summit 2021 Fall
+  title: Svelte Summit Fall 2021
   creators:
     - name: Kevin Åberg Kultalahti
       twitter: kevmodrome
@@ -477,6 +521,7 @@
   uses: [Elder.js, PostCSS, Cloudflare]
   tags: [conference, community event, learning, news]
   dateCreated: 2021-07-25
+  dateAdded: 2021-10-12
   lastUpdated: 2021-10-12
 
 - id: 31
@@ -487,6 +532,7 @@
   description: Data-centric UI experiments
   uses: [Three.js, Cytoscape.js, Vercel]
   tags: [data visualization, statistics, machine learning]
+  dateAdded: 2021-10-19
   lastUpdated: 2021-10-17
 
 - id: 32
@@ -496,10 +542,11 @@
       twitter: lucretius_1
   url: https://kudadam.com
   repo: https://github.com/kudadam/kudadam.com
-  description: A personal website and blog.
+  description: Personal website and blog.
   uses: [MDsveX, Tailwind]
   tags: [blog, rss, personal, portfolio, sitemap]
   dateCreated: 2021-05-15
+  dateAdded: 2021-10-26
   lastUpdated: 2021-10-26
 
 - id: 33
@@ -516,6 +563,7 @@
   uses: [MDsveX, MVP.css, Cloudflare]
   tags: [education, conference, community event, learning]
   dateCreated: 2021-07-06
+  dateAdded: 2021-10-28
   lastUpdated: 2021-10-23
 
 - id: 34
@@ -534,6 +582,7 @@
   uses: [D3, PostCSS, Lodash, PNPM]
   tags: [digital publishing, data viz, education]
   dateCreated: 2021-09-03
+  dateAdded: 2021-11-01
   lastUpdated: 2021-11-01
 
 - id: 35
@@ -545,10 +594,11 @@
       github: brittneypostma
   url: https://brittneypostma.com
   repo: https://github.com/brittneypostma/brittneypostma.com
-  description: Landing page for Brittney Postma, owner and designer of bDesigned.
+  description: Landing page.
   uses: [Netlify, service worker]
   tags: [portfolio, playful, animations]
   dateCreated: 2020-08-15
+  dateAdded: 2021-11-01
   lastUpdated: 2021-08-15
 
 - id: 36
@@ -563,6 +613,7 @@
   uses: [MDsveX, Windi, DaisyUI, TypeScript, PNPM]
   tags: [blog, template]
   dateCreated: 2021-11-01
+  dateAdded: 2021-11-05
   lastUpdated: 2021-11-05
 
 - id: 37
@@ -577,6 +628,7 @@
   uses: [MDsveX, GSAP, Netlify]
   tags: [blog, portfolio, animations]
   dateCreated: 2021-12-10
+  dateAdded: 2021-12-11
   lastUpdated: 2021-12-10
 
 - id: 38
@@ -594,6 +646,7 @@
   uses: [TypeScript, PNPM, Vercel, MDsveX]
   tags: [components, library, animations, interactive]
   dateCreated: 2021-05-18
+  dateAdded: 2021-12-19
   lastUpdated: 2021-12-19
 
 - id: 39
@@ -607,9 +660,10 @@
   url: https://multimonitorcalculator.com
   repo: https://github.com/KevinVandy/multi-monitor_calculator
   description: A tool for planning your multi-monitor setup.
-  uses: [TypeScript, Svelte Material UI (SMUI), SASS]
+  uses: [TypeScript, SMUI, Sass]
   tags: [interactive, 3d, calculator, monitor]
   dateCreated: 2018-06-08
+  dateAdded: 2022-01-01
   lastUpdated: 2022-01-01
 
 - id: 40
@@ -621,8 +675,9 @@
       url: https://codeadrian.github.io
   url: https://modern-fluid-typography.vercel.app
   repo: https://github.com/codeAdrian/modern-fluid-typography-editor
-  description: Easily create and fine-tune fluid typography values with Modern CSS clamp().
+  description: Easily create and fine-tune fluid typography values with Modern CSS `clamp()`.
   uses: [TypeScript, PostCSS, Chart.js, cssnano]
   tags: [developer tool, design, frontend, typography]
   dateCreated: 2021-11-29
+  dateAdded: 2022-01-04
   lastUpdated: 2022-01-04

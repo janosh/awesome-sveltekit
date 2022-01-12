@@ -32,7 +32,7 @@
     </h1>
 
     {#if site.description}
-      <p>{site.description}</p>
+      <p>{@html site.description}</p>
     {/if}
     <hr />
     <div>

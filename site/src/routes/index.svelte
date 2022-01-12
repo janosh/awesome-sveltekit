@@ -1,6 +1,6 @@
 <script lang="ts">
+  import GitHubCorner from 'svelte-github-corner'
   import Filters from '../components/Filters.svelte'
-  import GitHubCorner from '../components/GitHubCorner.svelte'
   import SiteList from '../components/SiteList.svelte'
   import sites from '../sites'
   import { filterTags, sortBy, tagFilterMode } from '../stores'
@@ -45,7 +45,11 @@
   }
 </script>
 
-<GitHubCorner href="https://github.com/janosh/awesome-svelte-kit" />
+<GitHubCorner
+  href="https://github.com/janosh/awesome-svelte-kit"
+  --ghc-bg="white"
+  --ghc-color="var(--bg)"
+/>
 
 <main>
   <img src="/svelte-kit.svg" alt="Logo" />

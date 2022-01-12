@@ -93,11 +93,12 @@ repos:
         entry: '\S+\s{2,}'
         language: pygrep
         types: [text]
+        exclude_types: [javascript]
 
   - repo: local
     hooks:
       - id: format-urls
         name: Format URLs
-        entry: ./utils/format_urls.py
+        entry: utils/format_urls.py
         language: python
         files: ^(sites.yml|readme.md|utils/format_urls.py)$
