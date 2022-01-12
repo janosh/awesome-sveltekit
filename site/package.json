@@ -35,6 +35,7 @@
     "puppeteer": "^11.0.0",
     "svelte": "^3.44.2",
     "svelte-check": "^2.2.10",
+    "svelte-github-corner": "^0.1.0",
     "svelte-multiselect": "^2.0.0",
     "svelte-preprocess": "^4.9.8",
     "svelte2tsx": "^0.4.10",

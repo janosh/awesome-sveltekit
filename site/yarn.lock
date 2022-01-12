@@ -1471,6 +1471,11 @@ svelte-check@^2.2.10:
     svelte-preprocess "^4.0.0"
     typescript "*"
 
+svelte-github-corner@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/svelte-github-corner/-/svelte-github-corner-0.1.0.tgz#5675580cdcb72898b9908c71997c7b391e6fed3a"
+  integrity sha512-uJh+S/9Nur7lISSwzXoeEHKEamwNHCFtI5v/yExdywuYBeYbncGVgW2x3OrLhNsovV0UYoRKjyhaM0l+WHKmaw==
+
 svelte-hmr@^0.14.7:
   version "0.14.7"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.7.tgz#7fa8261c7b225d9409f0a86f3b9ea5c3ca6f6607"
