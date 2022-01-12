@@ -350,7 +350,7 @@
       url: https://geopjr.dev
   url: https://sveltepress.geopjr.dev
   repo: https://github.com/GeopJr/SveltePress
-  description: SvelteKit-powered documentation site generator. Made for humans.
+  description: SvelteKit-powered doc site generator. Made for humans.
   tags: [documentation, markdown]
   uses: [Netlify, MarkedJS, PNPM, SCSS, Dart, Pandoc]
   dateCreated: 2021-07-09
@@ -377,8 +377,8 @@
   creators:
     - name: swyx
       twitter: swyx
-      url: https://swyx.io
-  url: https://swyx.io
+      url: https://swyxkit.netlify.app
+  url: https://swyxkit.netlify.app
   repo: https://github.com/sw-yx/swyxkit
   description: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!
   tags: [programming, blog, portfolio]
@@ -407,7 +407,7 @@
       url: https://github.com/svelte-society/sveltesociety.dev/graphs/contributors
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
-  description: The Svelte Society website, a global network of Svelte fans striving to promote Svelte and its ecosystem.
+  description: Global network of Svelte fans striving to promote Svelte and its ecosystem.
   tags: [programming, components, events, cheat sheets]
   uses: [TypeScript, Gitpod]
   dateCreated: 2020-05-03
@@ -437,6 +437,7 @@
       twitter: matt_fantinel
       url: https://fantinel.dev
   url: https://fantinel.dev
+  repo: https://github.com/matfantinel/matfantinel.github.io
   description: Personal website and blog of Matt Fantinel, web developer.
   uses: [MDsveX, SCSS, Iconoir, Plausible]
   tags: [personal, blog, portfolio, SCSS, MDsveX]
@@ -506,7 +507,7 @@
   lastUpdated: 2021-10-11
 
 - id: 30
-  title: Svelte Summit 2021 Fall
+  title: Svelte Summit Fall 2021
   creators:
     - name: Kevin Åberg Kultalahti
       twitter: kevmodrome
@@ -539,7 +540,7 @@
       twitter: lucretius_1
   url: https://kudadam.com
   repo: https://github.com/kudadam/kudadam.com
-  description: A personal website and blog.
+  description: Personal website and blog.
   uses: [MDsveX, Tailwind]
   tags: [blog, rss, personal, portfolio, sitemap]
   dateCreated: 2021-05-15
@@ -591,7 +592,7 @@
       github: brittneypostma
   url: https://brittneypostma.com
   repo: https://github.com/brittneypostma/brittneypostma.com
-  description: Landing page for Brittney Postma, owner and designer of bDesigned.
+  description: Landing page.
   uses: [Netlify, service worker]
   tags: [portfolio, playful, animations]
   dateCreated: 2020-08-15
