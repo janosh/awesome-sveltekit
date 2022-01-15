@@ -1,36 +1,41 @@
 /* eslint-disable no-console */
 import fs from 'fs'
+import imagemin from 'imagemin'
+import imageminWebp from 'imagemin-webp'
 import yaml from 'js-yaml'
 import { performance } from 'perf_hooks'
 import puppeteer from 'puppeteer'
 import { rootDir, titleToSlug } from './index.js'
 
 const start = performance.now()
+const outDir = `${rootDir}/site/static/screenshots`
 
 const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
 
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
 
-fs.mkdirSync(`${rootDir}/site/static/screenshots`, { recursive: true })
+fs.mkdirSync(outDir, { recursive: true })
 
 const updateExisting = process.argv[2] === `update-existing`
 
 if (updateExisting) console.log(`Updating all existing screenshots`)
 
-let [nNew, nUpdated] = [0, 0]
+const [created, updated, skipped, existed] = [[], [], [], []]
 
 for (const [idx, site] of sites.entries()) {
-  const slug = titleToSlug(site.title)
+  site.slug = titleToSlug(site.title)
+  const { slug } = site
 
-  const imgPath = `${rootDir}/site/static/screenshots/${slug}.webp`
+  const imgPath = `${outDir}/${slug}.webp`
   const imgExists = fs.existsSync(imgPath)
 
   if (!updateExisting && imgExists) {
+    existed.push(site.slug)
     continue
   }
 
-  console.log(`${idx + 1}/${sites.length}: generating ${slug}.webp`)
+  console.log(`${idx + 1}/${sites.length}: ${slug}`)
 
   try {
     try {
@@ -45,24 +50,40 @@ for (const [idx, site] of sites.entries()) {
     }
   } catch (error) {
     console.log(`skipping ${slug} due to ${error}`)
+    skipped.push(site.slug)
   }
 
   await page.waitForTimeout(1000) // wait 1s for sites with landing animations to settle
   // e.g. https://mortimerbaltus.com, https://flayks.com
+  await page.setViewport({ width: 1200, height: 900 })
   await page.screenshot({ path: imgPath })
+  await page.setViewport({ width: 1200, height: 900, deviceScaleFactor: 0.5 })
+  await page.screenshot({ path: `${outDir}/${slug}.small.webp` })
 
-  if (imgExists) nUpdated += 1
-  else nNew += 1
+  if (imgExists) updated.push(site.slug)
+  else created.push(site.slug)
 }
 
 await browser.close()
 
 const wallTime = ((performance.now() - start) / 1000).toFixed(2)
 
-if (nNew > 0 || nUpdated > 0) {
+if (created.length > 0 || updated.length > 0 || existed.length > 0) {
   console.log(
-    `takeScreenshots.js created ${nNew} new, updated ${nUpdated} in ${wallTime}s`
+    `takeScreenshots.js took ${wallTime}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots`
   )
+
+  const toCompress = [...created, ...updated].flatMap((slug) => [
+    `${outDir}/${slug}.webp`,
+    `${outDir}/${slug}.small.webp`,
+  ])
+
+  const compressedFiles = await imagemin(toCompress, {
+    destination: `static/screenshots`,
+    plugins: [imageminWebp({ quality: 50 })],
+  })
+
+  console.log(`compressed ${compressedFiles.length} files`)
 } else {
   console.log(`no changes from takeScreenshots.js in ${wallTime}s`)
 }

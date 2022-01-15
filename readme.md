@@ -143,7 +143,7 @@ You can view the full list of sites with screenshots + search & sort at **[aweso
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome!](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md) Remember to add each new site to [readme.md](readme.md) _and_ [`sites.yml`](sites.yml). If you're unsure if a site belongs on this list, [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) to discuss. This repo is meant to be a community effort.
+See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md)! Remember to add new sites to [`sites.yml`](sites.yml), not [readme.md](readme.md) (auto-generated). If you're unsure if a site belongs here, [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) to discuss. This repo is meant to be a community effort.
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
