@@ -19,7 +19,7 @@
   {#each sites as site, idx (site.url)}
     <li animate:flip={{ duration: 400 }}>
       <a href="/{site.slug}" sveltekit:prefetch>
-        <Screenshot title={site.title} style="cursor: pointer;" />
+        <Screenshot title={site.title} resolution=".small" style="cursor: pointer;" />
       </a>
       <div class="flex">
         <span>

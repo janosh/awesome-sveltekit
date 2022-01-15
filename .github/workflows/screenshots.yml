@@ -22,7 +22,7 @@ jobs:
           node-version: 17
 
       - name: Install dependencies
-        run: yarn add puppeteer js-yaml
+        run: yarn add puppeteer js-yaml imagemin imagemin-webp
 
       - name: Update existing screenshots on scheduled runs
         if: github.event_name == 'schedule'
