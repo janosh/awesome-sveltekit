@@ -681,3 +681,19 @@
   dateCreated: 2021-11-29
   dateAdded: 2022-01-04
   lastUpdated: 2022-01-04
+  
+  - id: 41
+  title: Rememo.io
+  creators:
+    - name: thousandsofraccons
+      github: thousandsofraccoons
+      url: https://github.com/thousandsofraccoons
+  url: https://rememo.io
+  repo: https://github.com/rememo-io/rememo/issues
+  description: Free Kanban app without limits for project, team or files.
+  uses: [TypeScript, Tailwindcss, Chart.js, cssnano]
+  tags: [kanban, freeware]
+  dateCreated: 2021-01-16
+  dateAdded: 2022-01-16
+  lastUpdated: 2022-01-16
+
