@@ -6,8 +6,12 @@
 
   export let tags: string[]
   export let query = ``
+  let selectedTags: { label: string; value: string }[] = []
 
   const dispatch = createEventDispatcher()
+  filterTags.subscribe((tags) => {
+    selectedTags = tags.map((tag) => ({ label: tag, value: tag }))
+  })
 </script>
 
 <div>
@@ -16,6 +20,8 @@
     options={tags}
     placeholder="Filter by tag..."
     bind:selectedLabels={$filterTags}
+    bind:selected={selectedTags}
+    --sms-input-height="none"
   />
   {#if $filterTags.length > 0}
     <RadioButtons
@@ -29,6 +35,7 @@
     placeholder="Sort by..."
     maxSelect={1}
     on:change={(e) => ($sortBy = e.detail.token.label)}
+    --sms-input-height="none"
   />
   {#if $sortBy !== ``}
     <RadioButtons
@@ -71,8 +78,9 @@
     color: inherit;
     background: black;
     box-shadow: 0 0 1pt gray;
-    line-height: 17pt;
+    line-height: 18pt;
     font-size: 1em;
+    min-width: 26ex;
   }
   input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: none;

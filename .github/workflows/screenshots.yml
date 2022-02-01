@@ -13,13 +13,15 @@ jobs:
   take-screenshots:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Check out repo
         uses: actions/checkout@v2
 
-      - name: Setup node
+      - name: Set up node
         uses: actions/setup-node@v2
         with:
           node-version: 17
+          cache: yarn
+          cache-dependency-path: site/yarn.lock
 
       - name: Install dependencies
         run: yarn add puppeteer js-yaml imagemin imagemin-webp

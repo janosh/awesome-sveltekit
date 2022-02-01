@@ -51,6 +51,7 @@ repos:
     rev: v8.6.0
     hooks:
       - id: eslint
+        args: [--plugin, eslint-plugin-svelte3]
         types: [file]
         files: \.(svelte|js)$
         additional_dependencies:

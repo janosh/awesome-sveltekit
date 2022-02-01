@@ -6,11 +6,12 @@
   export const load: Load = async ({ params, fetch }) => {
     const response = await fetch(`/${params.slug}.json`)
 
-    // return nothing if site was not found to fall through to __error.svelte
     if (response.ok) {
       const site = await response.json()
       return { props: { site } }
-    } else return { fallthrough: true }
+    } else {
+      return { fallthrough: true }
+    }
   }
 </script>
 

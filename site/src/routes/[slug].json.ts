@@ -6,7 +6,4 @@ export const get: RequestHandler = ({ params }) => {
 
   if (site) return { body: site }
   else return { fallthrough: true }
-
-  // Not returning is equivalent to a 404 response.
-  // https://kit.svelte.dev/docs#routing-endpoints
 }
