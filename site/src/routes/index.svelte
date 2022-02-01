@@ -7,6 +7,7 @@
   import { Site } from '../types'
 
   const tags = [...new Set(sites.map((site) => site.tags).flat(1))]
+  $: tags.sort((a, b) => a.localeCompare(b))
   let query = ``
 
   $: filterByQuery = (site: Site) => {
