@@ -70,7 +70,7 @@ const wallTime = ((performance.now() - start) / 1000).toFixed(2)
 
 if (created.length > 0 || updated.length > 0 || existed.length > 0) {
   console.log(
-    `takeScreenshots.js took ${wallTime}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots`
+    `screenshots.js took ${wallTime}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots`
   )
 
   const toCompress = [...created, ...updated].flatMap((slug) => [
@@ -85,5 +85,5 @@ if (created.length > 0 || updated.length > 0 || existed.length > 0) {
 
   console.log(`compressed ${compressedFiles.length} files`)
 } else {
-  console.log(`no changes from takeScreenshots.js in ${wallTime}s`)
+  console.log(`no changes from screenshots.js in ${wallTime}s`)
 }
