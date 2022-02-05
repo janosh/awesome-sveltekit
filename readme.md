@@ -198,3 +198,4 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
+[cypress]: https://cypress.io
