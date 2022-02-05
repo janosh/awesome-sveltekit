@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Set up node
         uses: actions/setup-node@v2
@@ -46,5 +48,5 @@ jobs:
           fi
           git config user.name 'Janosh Riebesell'
           git config user.email janosh.riebesell@gmail.com
-          git commit -a -m 'update site screenshots'
+          git commit -am 'update readme + screenshots'
           git push
