@@ -16,7 +16,7 @@
 
 <br>
 
-You can view the full list of sites with screenshots + search & sort at **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)**.
+Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)** to view this list with screenshots plus search and sort functionality (e.g. based on GH stars).
 
 ## Sites
 

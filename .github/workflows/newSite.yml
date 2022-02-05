@@ -1,10 +1,12 @@
-name: Update Site Screenshots
+name: Update readme.md + site screenshots on changed sites.yml
 
 on:
   pull_request:
     branches: [main]
+    paths: [sites.yml, site/scripts/*]
   push:
     branches: [main]
+    paths: [sites.yml, site/scripts/*]
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 */3 *' # https://crontab.guru/every-quarter
@@ -28,15 +30,42 @@ jobs:
 
       - name: Update existing screenshots on scheduled runs
         if: github.event_name == 'schedule'
-        run: node site/scripts/takeScreenshots.js update-existing
+        run: node site/scripts/screenshots.js update-existing
 
       - name: Add screenshots for new sites on PRs/push to main and manually dispatched runs
         if: github.event_name != 'schedule'
-        run: node site/scripts/takeScreenshots.js
+        run: node site/scripts/screenshots.js
 
-      - name: Push new screenshots
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+
+      - name: Set up node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17
+          cache: yarn
+          cache-dependency-path: site/yarn.lock
+
+      - name: Install dependencies
+        run: yarn add js-yaml
+
+      - name: Update site list in readme.md
+        if: github.event_name != 'schedule'
+        run: node site/scripts/readmeSiteList.js
+
+  push-changes:
+    runs-on: ubuntu-latest
+    needs: [take-screenshots, update-readme]
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+
+      - name: Push changes if any
         run: |
-          if git diff --quiet site/static/screenshots; then
+          if git diff --quiet site/static/screenshots readme.md; then
             echo "No changes to commit"
             exit 0
           fi

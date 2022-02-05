@@ -11,5 +11,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   // module was not imported but called directly
   const { fork } = await import(`child_process`)
   fork(`${rootDir}/site/scripts/parseSitesYaml.js`)
-  fork(`${rootDir}/site/scripts/takeScreenshots.js`)
+  fork(`${rootDir}/site/scripts/screenshots.js`)
 }
