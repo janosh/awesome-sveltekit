@@ -699,3 +699,32 @@
   dateCreated: 2019-11-13
   dateAdded: 2022-02-05
   lastUpdated: 2022-02-05
+
+- id: 42
+  title: svelte-realworld
+  creators:
+    - name: Rich Harris
+      twitter: rich_harris
+      email: richard.a.harris@gmail.com
+      github: Rich-Harris
+    - name: Ben McCann
+      twitter: benjaminmccann
+      url: https://benmccann.com
+      github: benmccann
+    - name: pngwn
+      twitter: evilpingwin
+      github: pngwn
+    - name: Eric Simons
+      github: EricSimons
+      twitter: ericsimons40
+      url: https://esft.com
+    - name: others
+      url: https://github.com/sveltejs/kit/graphs/contributors
+  url: https://realworld.svelte.dev
+  repo: https://github.com/sveltejs/realworld
+  description: SvelteKit implementation of the RealWorld app.
+  uses: [Netlify, MarkedJS]
+  tags: [demo, performance, benchmark]
+  dateCreated: 2017-04-20
+  dateAdded: 2022-02-06
+  lastUpdated: 2022-02-06
