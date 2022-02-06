@@ -143,6 +143,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 41. [mermaid-live-editor](https://mermaid.live) [[code](https://github.com/mermaid-js/mermaid-live-editor)] <img src="https://img.shields.io/github/stars/mermaid-js/mermaid-live-editor" alt="GitHub stars" valign="middle"><br>
     Edit, live preview and share mermaid charts and diagrams.<br>
     uses: [TypeScript], [Docker], [Tailwind], [PostCSS], [Cypress], [Husky]
+42. [svelte-realworld](https://realworld.svelte.dev) [[code](https://github.com/sveltejs/realworld)] <img src="https://img.shields.io/github/stars/sveltejs/realworld" alt="GitHub stars" valign="middle"><br>
+    SvelteKit implementation of the RealWorld app.<br>
+    uses: [Netlify], [MarkedJS]
 
 ## 🎉 Open to Suggestions
 
