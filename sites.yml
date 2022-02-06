@@ -681,3 +681,21 @@
   dateCreated: 2021-11-29
   dateAdded: 2022-01-04
   lastUpdated: 2022-01-04
+
+- id: 41
+  title: mermaid-live-editor
+  creators:
+    - name: Sidharth Vinod
+      twitter: sidv42
+      github: sidharthv96
+      url: https://sidharth.dev
+    - name: others
+      url: https://github.com/mermaid-js/mermaid-live-editor/graphs/contributors
+  url: https://mermaid.live
+  repo: https://github.com/mermaid-js/mermaid-live-editor
+  description: Edit, live preview and share mermaid charts and diagrams.
+  uses: [TypeScript, Docker, Tailwind, PostCSS, Cypress, Husky]
+  tags: [developer tool, diagrams, charts, graphics]
+  dateCreated: 2019-11-13
+  dateAdded: 2022-02-05
+  lastUpdated: 2022-02-05
