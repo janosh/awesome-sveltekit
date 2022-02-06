@@ -53,7 +53,7 @@ for (const [idx, site] of sites.entries()) {
     skipped.push(site.slug)
   }
 
-  await page.waitForTimeout(1000) // wait 1s for sites with landing animations to settle
+  await page.waitForTimeout(2000) // wait 1s for sites with landing animations to settle
   // e.g. https://mortimerbaltus.com, https://flayks.com
   await page.setViewport({ width: 1200, height: 900 })
   await page.screenshot({ path: imgPath })

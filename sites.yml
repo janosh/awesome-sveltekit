@@ -728,3 +728,19 @@
   dateCreated: 2017-04-20
   dateAdded: 2022-02-06
   lastUpdated: 2022-02-06
+
+- id: 43
+  title: macos-web
+  creators:
+    - name: Puru Vijay
+      twitter: puruvjdev
+    - name: others
+      url: https://github.com/PuruVJ/macos-web/graphs/contributors
+  url: https://macos-web.app
+  repo: https://github.com/PuruVJ/macos-web
+  description: Replicate some of the macOS desktop experience on the web.
+  uses: [TypeScript, Vercel, SCSS, PNPM, Iconify]
+  tags: [demo, proof of concept]
+  dateCreated: 2021-08-12
+  dateAdded: 2022-02-06
+  lastUpdated: 2022-02-06
