@@ -48,5 +48,6 @@ jobs:
           fi
           git config user.name 'Janosh Riebesell'
           git config user.email janosh.riebesell@gmail.com
-          git commit -am 'update readme + screenshots'
+          git add readme.md site/static/screenshots
+          git commit -m 'update readme + screenshots'
           git push
