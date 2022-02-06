@@ -79,7 +79,7 @@ if (created.length > 0 || updated.length > 0 || existed.length > 0) {
   ])
 
   const compressedFiles = await imagemin(toCompress, {
-    destination: `static/screenshots`,
+    destination: outDir,
     plugins: [imageminWebp({ quality: 50 })],
   })
 

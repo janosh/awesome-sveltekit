@@ -140,6 +140,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 40. [Modern Fluid Typography Editor](https://modern-fluid-typography.vercel.app) [[code](https://github.com/codeAdrian/modern-fluid-typography-editor)] <img src="https://img.shields.io/github/stars/codeAdrian/modern-fluid-typography-editor" alt="GitHub stars" valign="middle"><br>
     Easily create and fine-tune fluid typography values with Modern CSS `clamp()`.<br>
     uses: [TypeScript], [PostCSS], [Chart.js], [cssnano]
+41. [mermaid-live-editor](https://mermaid.live) [[code](https://github.com/mermaid-js/mermaid-live-editor)] <img src="https://img.shields.io/github/stars/mermaid-js/mermaid-live-editor" alt="GitHub stars" valign="middle"><br>
+    Edit, live preview and share mermaid charts and diagrams.<br>
+    uses: [TypeScript], [Docker], [Tailwind], [PostCSS], [Cypress], [Husky]
 
 ## 🎉 Open to Suggestions
 
@@ -198,3 +201,4 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
+[cypress]: https://cypress.io
