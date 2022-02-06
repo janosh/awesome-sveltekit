@@ -25,19 +25,19 @@ const newSites = sites
           throw `bad repo handle ${repoHandle}`
         }
         codeLink =
-          ` [[code](${siteSrc ?? repo})]` +
-          ` <img src="https://img.shields.io/github/stars/${repoHandle}" alt="GitHub stars" valign="middle">`
+          `&emsp;[[code](${siteSrc ?? repo})]` +
+          `&emsp;<img src="https://img.shields.io/github/stars/${repoHandle}" alt="GitHub stars" valign="middle">`
       }
 
       const indent = ` `.repeat(idx > 8 ? 4 : 3)
-      let usesInfo = ``
+      let metadata = description
       if (uses?.length > 0) {
-        usesInfo = `<br>\n${indent}uses: [${uses.join(`], [`)}]`
+        metadata += `<br>\n${indent}uses: [${uses.join(`], [`)}]`
       }
 
       return `${
         idx + 1
-      }. [${title}](${url})${codeLink}<br>\n${indent}${description}${usesInfo}`
+      }. **[${title}](${url})**${codeLink}<br>\n${indent}${metadata}`
     } catch (err) {
       throw `${err} for site '${title}'`
     }

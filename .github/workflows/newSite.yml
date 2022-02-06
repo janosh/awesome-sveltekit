@@ -4,9 +4,6 @@ on:
   pull_request:
     branches: [main]
     paths: [sites.yml, site/scripts/*]
-  push:
-    branches: [main]
-    paths: [sites.yml, site/scripts/*]
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 */3 *' # https://crontab.guru/every-quarter
@@ -36,9 +33,7 @@ jobs:
 
       - name: Add screenshots for new sites and update readme
         if: github.event_name != 'schedule'
-        run: |
-          node site/scripts/screenshots.js
-          node site/scripts/readmeSiteList.js
+        run: node site/scripts/index.js
 
       - name: Push changes if any
         run: |

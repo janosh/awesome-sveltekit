@@ -12,4 +12,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const { fork } = await import(`child_process`)
   fork(`${rootDir}/site/scripts/parseSitesYaml.js`)
   fork(`${rootDir}/site/scripts/screenshots.js`)
+  fork(`${rootDir}/site/scripts/readmeSiteList.js`)
 }
