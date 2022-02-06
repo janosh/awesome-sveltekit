@@ -146,6 +146,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 42. **[svelte-realworld](https://realworld.svelte.dev)**&emsp;[[code](https://github.com/sveltejs/realworld)]&emsp;<img src="https://img.shields.io/github/stars/sveltejs/realworld" alt="GitHub stars" valign="middle"><br>
     SvelteKit implementation of the RealWorld app.<br>
     uses: [Netlify], [MarkedJS]
+43. **[macos-web](https://macos-web.app)**&emsp;[[code](https://github.com/PuruVJ/macos-web)]&emsp;<img src="https://img.shields.io/github/stars/PuruVJ/macos-web" alt="GitHub stars" valign="middle"><br>
+    Replicate some of the macOS desktop experience on the web.<br>
+    uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
 
 ## 🎉 Open to Suggestions
 
@@ -205,3 +208,4 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
 [cypress]: https://cypress.io
+[iconify]: https://iconify.design
