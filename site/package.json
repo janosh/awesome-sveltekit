@@ -24,6 +24,7 @@
     "@svicons/octicons": "^0.1.6",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
+    "dotenv": "^16.0.0",
     "eslint": "^8.8.0",
     "eslint-plugin-svelte3": "^3.4.0",
     "imagemin": "^8.0.1",

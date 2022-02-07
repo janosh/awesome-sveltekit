@@ -10,3 +10,6 @@ build
 
 # auto-generated
 site/src/sites.js
+
+# secrets
+site/.env
