@@ -27,9 +27,11 @@ jobs:
       - name: Install dependencies
         run: yarn add puppeteer js-yaml imagemin imagemin-webp
 
-      - name: Update existing screenshots on scheduled runs
+      - name: Update existing site screenshots and repo contributors on scheduled runs
         if: github.event_name == 'schedule'
-        run: node site/scripts/screenshots.js update-existing
+        run: |
+          node site/scripts/screenshots.js update-existing
+          node site/scripts/parseSitesYaml.js update-existing
 
       - name: Add screenshots for new sites and update readme
         if: github.event_name != 'schedule'

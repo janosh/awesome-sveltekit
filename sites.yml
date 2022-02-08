@@ -10,24 +10,6 @@
 
 - id: 1
   title: Svelte.dev
-  creators:
-    - name: Ben McCann
-      twitter: benjaminmccann
-      url: https://benmccann.com
-      github: benmccann
-    - name: Bjorn Lu
-      twitter: bluwyoo
-      github: bluwy
-      url: https://bjornlu.com
-    - name: Conduitry
-      github: Conduitry
-      email: conduitry@chor.date
-      url: https://conduitry.dev
-    - name: pngwn
-      twitter: evilpingwin
-      github: pngwn
-    - name: others
-      url: https://github.com/sveltejs/svelte/graphs/contributors
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
   # Sapper to SvelteKit migration in https://git.io/JXSh1
@@ -41,25 +23,6 @@
 
 - id: 2
   title: Official SvelteKit docs
-  creators:
-    - name: Rich Harris
-      twitter: rich_harris
-      email: richard.a.harris@gmail.com
-      github: Rich-Harris
-    - name: Ben McCann
-      twitter: benjaminmccann
-      url: https://benmccann.com
-      github: benmccann
-    - name: Ignatius Bagus
-      twitter: alchemauss
-      url: https://mauss.dev
-      github: ignatiusmb
-    - name: GrygrFlzr
-      github: GrygrFlzr
-    - name: Simon H
-      github: dummdidumm
-    - name: others
-      url: https://github.com/sveltejs/kit/graphs/contributors
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
   siteSrc: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
@@ -72,12 +35,6 @@
 
 - id: 3
   title: NYTimes Tracking the Coronavirus
-  creators:
-    - name: Rich Harris
-      twitter: rich_harris
-      email: richard.a.harris@gmail.com
-      github: Rich-Harris
-    - name: others unknown
   url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
   description: Charts and maps of coronavirus cases, deaths, hospitalizations and vaccinations in NYC.
   uses: [Pancake]
@@ -87,9 +44,6 @@
 
 - id: 4
   title: SK Incognito
-  creators:
-    - name: GrygrFlzr
-      twitter: GrygrFlzr
   url: https://sk-incognito.vercel.app
   repo: https://github.com/GrygrFlzr/kit-docs
   description: The unofficial SvelteKit docs.
@@ -101,10 +55,6 @@
 
 - id: 5
   title: Geometric Bayes
-  creators:
-    - name: Janosh Riebesell
-      url: https://janosh.dev
-      twitter: _jarib
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
@@ -116,10 +66,6 @@
 
 - id: 6
   title: TikZ
-  creators:
-    - name: Janosh Riebesell
-      url: https://janosh.dev
-      twitter: _jarib
   url: https://tikz.netlify.app
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
@@ -131,9 +77,6 @@
 
 - id: 7
   title: markushatvan.com
-  creators:
-    - name: Markus Hatvan
-      twitter: HatvanMarkus
   url: https://markushatvan.com
   repo: https://github.com/mhatvan/markushatvan.com
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.
@@ -145,10 +88,6 @@
 
 - id: 8
   title: Studenten bilden Schüler
-  creators:
-    - name: Janosh Riebesell
-      url: https://janosh.dev
-      twitter: _jarib
   url: https://studenten-bilden-schueler.de
   repo: https://github.com/sbsev/svelte-site
   description: >-
@@ -163,10 +102,6 @@
 
 - id: 9
   title: Afara
-  creators:
-    - name: Janosh Riebesell
-      url: https://janosh.dev
-      twitter: _jarib
   url: https://afara.foundation
   repo: https://github.com/janosh/afara
   description: >-
@@ -180,10 +115,6 @@
 
 - id: 10
   title: Ocean artUp
-  creators:
-    - name: Janosh Riebesell
-      url: https://janosh.dev
-      twitter: _jarib
   url: https://ocean-artup.eu
   repo: https://github.com/janosh/ocean-artup
   description: >-
@@ -198,10 +129,6 @@
 
 - id: 11
   title: Guess The Year
-  creators:
-    - name: David Han
-      twitter: davjhan
-      url: https://davjhan.com
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
   description: >-
@@ -215,21 +142,6 @@
 
 - id: 12
   title: Gitpod
-  creators:
-    - name: Mike Nikles
-      twitter: mikenikles
-      url: https://mikenikles.com
-      github: mikenikles
-    - name: Nisar Hassan Naqvi
-      twitter: nisarhassan12
-      url: https://nisar.dev
-      github: nisarhassan12
-      email: syednisarhassan12@gmail.com
-    - name: Estelle Weyl
-      github: estelle
-      email: estelle@openwebdocs.org
-    - name: others
-      url: https://github.com/gitpod-io/website/graphs/contributors
   url: https://gitpod.io
   repo: https://github.com/gitpod-io/website
   description: >-
@@ -243,8 +155,6 @@
 
 - id: 13
   title: Svelte Themes
-  creators:
-    - name: Sharath Kumar
   url: https://sveltethemes.dev
   description: Collection of Svelte site themes, starters and component libraries.
   uses: [Netlify, Tailwind]
@@ -254,9 +164,6 @@
 
 - id: 14
   title: SvelteKit Experiments
-  creators:
-    - name: Tarun Kumar Sukhu
-      twitter: TarunKumarSukhu
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
   description: >-
@@ -270,9 +177,6 @@
 
 - id: 15
   title: puruvj.dev
-  creators:
-    - name: Puru Vijay
-      twitter: puruvjdev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
   description: >-
@@ -285,9 +189,6 @@
 
 - id: 16
   title: GraphCMS Starter Blog
-  creators:
-    - name: Scott Spence
-      twitter: spences10
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
   description: This blog starter shows how to use SvelteKit with GraphCMS.
@@ -299,8 +200,6 @@
 
 - id: 17
   title: Beatbump
-  creators:
-    - name: snuffy
   url: https://beatbump.ml
   repo: https://github.com/snuffyDev/beatbump
   description: Alternative frontend for YouTube Music.
@@ -312,10 +211,6 @@
 
 - id: 18
   title: Impfdashboard
-  creators:
-    - name: German Ministry of Health
-    - name: Studio NAND
-      url: https://nand.io/projects/vaccination-dashboard
   url: https://impfdashboard.de/en
   description: >-
     Official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH, Studio NAND GmbH
@@ -329,10 +224,6 @@
 
 - id: 19
   title: Paper Trader Game
-  creators:
-    - name: David Han
-      twitter: davjhan
-      url: https://davjhan.com
   url: https://paper-trader.davjhan.com
   repo: https://github.com/davjhan/paper-trader-game
   description: >-
@@ -346,10 +237,6 @@
 
 - id: 20
   title: SveltePress
-  creators:
-    - name: Evan Geop
-      twitter: GeopJr1312
-      url: https://geopjr.dev
   url: https://sveltepress.geopjr.dev
   repo: https://github.com/GeopJr/SveltePress
   description: SvelteKit-powered doc site generator. Made for humans.
@@ -361,10 +248,6 @@
 
 - id: 21
   title: neovim craft
-  creators:
-    - name: Eric Bower
-      twitter: neurosnap
-      url: https://erock.io
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
   description: Curated list of neovim plugins.
@@ -376,10 +259,6 @@
 
 - id: 22
   title: swyxkit
-  creators:
-    - name: swyx
-      twitter: swyx
-      url: https://swyxkit.netlify.app
   url: https://swyxkit.netlify.app
   repo: https://github.com/sw-yx/swyxkit
   description: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!
@@ -391,22 +270,6 @@
 
 - id: 23
   title: Svelte Society
-  creators:
-    - name: Ben McCann
-      twitter: benjaminmccann
-      url: https://benmccann.com
-      github: benmccann
-    - name: Brittney Postma
-      twitter: brittneypostma
-      url: https://bdesigned.dev
-      github: brittneypostma
-      email: bdesignedwebdev@gmail.com
-    - name: Dietrich
-      twitter: haudraufhaun1
-      url: https://haudraufhauns.vercel.app
-      github: haudraufhaun
-    - name: others
-      url: https://github.com/svelte-society/sveltesociety.dev/graphs/contributors
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
   description: Global network of Svelte fans striving to promote Svelte and its ecosystem.
@@ -418,10 +281,6 @@
 
 - id: 24
   title: Flayks
-  creators:
-    - name: Félix Péault
-      twitter: flayks
-      url: https://flayks.com
   url: https://flayks.com
   description: >-
     Portfolio of Félix Péault, Digital Designer and Art Director
@@ -434,10 +293,6 @@
 
 - id: 25
   title: Matt Fantinel
-  creators:
-    - name: Matt Fantinel
-      twitter: matt_fantinel
-      url: https://fantinel.dev
   url: https://fantinel.dev
   repo: https://github.com/matfantinel/matfantinel.github.io
   description: Personal website and blog of Matt Fantinel, web developer.
@@ -449,10 +304,6 @@
 
 - id: 26
   title: Level Up Tutorials
-  creators:
-    - name: Scott Tolinski
-      twitter: stolinski
-      url: https://scotttolinski.com
   url: https://leveluptutorials.com
   description: Video tutorials for web developers and designers.
   uses: [TypeScript, Google Tag Manager]
@@ -463,11 +314,6 @@
 
 - id: 27
   title: MortimerBaltus
-  creators:
-    - name: Theodor Baltus Steiner
-      twitter: _TheoSteiner
-    - name: Moritz Mortimer Müller
-      url: https://mortimerbaltus.com
   url: https://mortimerbaltus.com
   description: MortimerBaltus is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
   uses: [Cloudinary, Cloudflare]
@@ -478,10 +324,6 @@
 
 - id: 28
   title: JSchallenger
-  creators:
-    - name: Erik Kückelheim
-      twitter: kueckelheim
-      url: https://erik-kueckelheim.com
   url: https://jschallenger.com
   description: Free Javascript challenges. Learn Javascript online by solving coding exercises.
   uses: [Tailwind, DynamoDB, AWS]
@@ -492,13 +334,6 @@
 
 - id: 29
   title: Files
-  creators:
-    - name: Tropical
-      github: Tropix126
-    - name: Yair Aichenbaum
-      github: yaichenbaum
-    - name: others
-      url: https://github.com/files-community/Website/graphs/contributors
   url: https://files.community
   repo: https://github.com/files-community/website
   description: 3rd Party File Manager for Windows.
@@ -510,11 +345,6 @@
 
 - id: 30
   title: Svelte Summit Fall 2021
-  creators:
-    - name: Kevin Åberg Kultalahti
-      twitter: kevmodrome
-    - name: Johan Ronsse
-      twitter: wolfr_2
   url: https://sveltesummit.com
   repo: https://github.com/svelte-society/svelte-summit
   description: The 4th virtual conference about Svelte
@@ -526,8 +356,6 @@
 
 - id: 31
   title: cybernetic.dev
-  creators:
-    - name: unknown
   url: https://cybernetic.dev
   description: Data-centric UI experiments
   uses: [Three.js, Cytoscape.js, Vercel]
@@ -537,9 +365,6 @@
 
 - id: 32
   title: Kudadam.com
-  creators:
-    - name: Lucretius Biah
-      twitter: kudadam_
   url: https://kudadam.com
   repo: https://github.com/kudadam/kudadam.com
   description: Personal website and blog.
@@ -551,12 +376,6 @@
 
 - id: 33
   title: digital criticism
-  creators:
-    - name: maehr
-      twitter: moritzmaehr
-    - name: Tobias Hodel
-      twitter: thist_be
-    - name: Vlad Atanasiu
   url: https://critique-digitale.ch
   repo: https://github.com/critique-digitale/critique-digitale.ch
   description: Scholarly conference in the digital humanities.
@@ -568,14 +387,6 @@
 
 - id: 34
   title: The Pudding
-  creators:
-    - name: Russell Goldenberg
-      twitter: codenberg
-      url: https://russellgoldenberg.com
-      github: russellgoldenberg
-    - name: Jan Diehm
-      twitter: jadiehm
-      url: https://jandiehmdesigns.com
   url: https://pudding.cool
   repo: https://github.com/the-pudding/website
   description: Digital publication with emphasis on data viz.
@@ -587,11 +398,6 @@
 
 - id: 35
   title: BrittneyPostma.com
-  creators:
-    - name: Brittney Postma
-      twitter: brittneypostma
-      url: https://brittneypostma.com
-      github: brittneypostma
   url: https://brittneypostma.com
   repo: https://github.com/brittneypostma/brittneypostma.com
   description: Landing page.
@@ -603,10 +409,6 @@
 
 - id: 36
   title: Urara
-  creators:
-    - name: 藍
-      url: https://kwaa.dev
-      github: kwaa
   url: https://urara-demo.netlify.app
   repo: https://github.com/importantimport/urara
   description: Sweet & Powerful SvelteKit Blog Template.
@@ -618,10 +420,6 @@
 
 - id: 37
   title: connorrothschild.com
-  creators:
-    - name: Connor Rothschild
-      url: https://connorrothschild.com
-      github: connorrothschild
   url: https://connorrothschild.com
   repo: https://github.com/connorrothschild/.com
   description: Creative, content-based portfolio site of Connor Rothschild.
@@ -633,13 +431,6 @@
 
 - id: 38
   title: Svelte Cubed
-  creators:
-    - name: Rich Harris
-      twitter: rich_harris
-      email: richard.a.harris@gmail.com
-      github: Rich-Harris
-    - name: others
-      url: https://github.com/Rich-Harris/svelte-cubed/graphs/contributors
   url: https://svelte-cubed.vercel.app
   repo: https://github.com/Rich-Harris/svelte-cubed
   description: Three.js component library for Svelte.
@@ -651,12 +442,6 @@
 
 - id: 39
   title: Multi-Monitor Calculator
-  creators:
-    - name: Kevin Van Cott
-      twitter: ThomasVanCott
-      email: kevinvandy656@gmail.com
-      github: KevinVandy
-      url: https://kevinvancott.dev
   url: https://multimonitorcalculator.com
   repo: https://github.com/KevinVandy/multi-monitor_calculator
   description: A tool for planning your multi-monitor setup.
@@ -668,11 +453,6 @@
 
 - id: 40
   title: Modern Fluid Typography Editor
-  creators:
-    - name: Adrian Bece
-      twitter: AdrianBeceDev
-      github: codeAdrian
-      url: https://codeadrian.github.io
   url: https://modern-fluid-typography.vercel.app
   repo: https://github.com/codeAdrian/modern-fluid-typography-editor
   description: Easily create and fine-tune fluid typography values with Modern CSS `clamp()`.
@@ -684,13 +464,6 @@
 
 - id: 41
   title: mermaid-live-editor
-  creators:
-    - name: Sidharth Vinod
-      twitter: sidv42
-      github: sidharthv96
-      url: https://sidharth.dev
-    - name: others
-      url: https://github.com/mermaid-js/mermaid-live-editor/graphs/contributors
   url: https://mermaid.live
   repo: https://github.com/mermaid-js/mermaid-live-editor
   description: Edit, live preview and share mermaid charts and diagrams.
@@ -702,24 +475,6 @@
 
 - id: 42
   title: svelte-realworld
-  creators:
-    - name: Rich Harris
-      twitter: rich_harris
-      email: richard.a.harris@gmail.com
-      github: Rich-Harris
-    - name: Ben McCann
-      twitter: benjaminmccann
-      url: https://benmccann.com
-      github: benmccann
-    - name: pngwn
-      twitter: evilpingwin
-      github: pngwn
-    - name: Eric Simons
-      github: EricSimons
-      twitter: ericsimons40
-      url: https://esft.com
-    - name: others
-      url: https://github.com/sveltejs/kit/graphs/contributors
   url: https://realworld.svelte.dev
   repo: https://github.com/sveltejs/realworld
   description: SvelteKit implementation of the RealWorld app.
@@ -731,16 +486,11 @@
 
 - id: 43
   title: macos-web
-  creators:
-    - name: Puru Vijay
-      twitter: puruvjdev
-    - name: others
-      url: https://github.com/PuruVJ/macos-web/graphs/contributors
   url: https://macos-web.app
   repo: https://github.com/PuruVJ/macos-web
   description: Replicate some of the macOS desktop experience on the web.
   uses: [TypeScript, Vercel, SCSS, PNPM, Iconify]
-  tags: [demo, proof of concept]
+  tags: [demo, proof of concept, learning]
   dateCreated: 2021-08-12
   dateAdded: 2022-02-06
   lastUpdated: 2022-02-06

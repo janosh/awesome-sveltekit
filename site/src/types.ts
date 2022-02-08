@@ -6,17 +6,20 @@ export type Site = {
   repo?: string
   siteSrc?: string
   repoStars?: number
-  creators: Creator[]
+  contributors: Contributor[]
   tags: string[]
   uses: string[]
   dateCreated?: string
   lastUpdated: string
 }
 
-export type Creator = {
+export type Contributor = {
   name: string
   url?: string
   twitter?: string
   github?: string
   email?: string
+  avatar?: string
+  location?: string
+  company?: string
 }

@@ -2,24 +2,24 @@
   import Twitter from '@svicons/fa-brands/twitter.svelte'
   import LinkExternal from '@svicons/octicons/link-external.svelte'
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
-  import { Creator } from '../types'
+  import { Contributor } from '../types'
 
-  export let creator: Creator
+  export let contributor: Contributor
 </script>
 
-{creator.name}
-{#if creator.twitter}
-  <a href="https://twitter.com/@{creator.twitter}">
+{contributor.name}
+{#if contributor.twitter}
+  <a href="https://twitter.com/@{contributor.twitter}">
     <Twitter width="1em" />
   </a>
 {/if}
-{#if creator.github}
-  <a href="https://github.com/{creator.github}">
+{#if contributor.github}
+  <a href="https://github.com/{contributor.github}">
     <MarkGithub width="1em" />
   </a>
 {/if}
-{#if creator.url}
-  <a href={creator.url}>
+{#if contributor.url}
+  <a href={contributor.url}>
     <LinkExternal width="1em" />
   </a>
 {/if}
