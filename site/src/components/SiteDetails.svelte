@@ -35,20 +35,22 @@
       <p>{@html site.description}</p>
     {/if}
     <hr />
-    <div>
-      <Person width="1em" />&emsp;Contributor{contributors.length > 1 ? `s` : ``}:
-      {#if contributors.length > 1}
-        <ol class="contributors">
-          {#each contributors as contributor}
-            <li>
-              <Contributor {contributor} />
-            </li>
-          {/each}
-        </ol>
-      {:else}
-        &nbsp;&emsp;<Contributor contributor={contributors[0]} />
-      {/if}
-    </div>
+    {#if contributors?.length > 0}
+      <div>
+        <Person width="1em" />&emsp;Contributor{contributors.length > 1 ? `s` : ``}:
+        {#if contributors.length > 1}
+          <ol class="contributors">
+            {#each contributors as contributor}
+              <li>
+                <Contributor {contributor} />
+              </li>
+            {/each}
+          </ol>
+        {:else}
+          &nbsp;&emsp;<Contributor contributor={contributors[0]} />
+        {/if}
+      </div>
+    {/if}
     {#if dateCreated}
       <hr />
       <p class="flex">
