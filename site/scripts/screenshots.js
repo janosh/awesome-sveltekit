@@ -1,8 +1,12 @@
 /* eslint-disable no-console */
+/* This file parses sites.yml, generates low+hi-res screenshots for each site,
+saves them site/static/screenshots/ and compresses them. */
+
 import fs from 'fs'
 import imagemin from 'imagemin'
 import imageminWebp from 'imagemin-webp'
 import yaml from 'js-yaml'
+import { basename } from 'path'
 import { performance } from 'perf_hooks'
 import puppeteer from 'puppeteer'
 import { rootDir, titleToSlug } from './index.js'
@@ -70,7 +74,11 @@ const wallTime = ((performance.now() - start) / 1000).toFixed(2)
 
 if (created.length > 0 || updated.length > 0 || existed.length > 0) {
   console.log(
-    `screenshots.js took ${wallTime}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots`
+    `${basename(process.argv[1])} took ${wallTime}s, created ${
+      created.length
+    } new, ${updated.length} updated, ${skipped.length} skipped, ${
+      existed.length
+    } already had screenshots`
   )
 
   const toCompress = [...created, ...updated].flatMap((slug) => [

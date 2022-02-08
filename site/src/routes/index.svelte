@@ -2,7 +2,7 @@
   import GitHubCorner from 'svelte-github-corner'
   import Filters from '../components/Filters.svelte'
   import SiteList from '../components/SiteList.svelte'
-  import sites from '../sites'
+  import sites from '../sites.yml'
   import { filterTags, sortBy, tagFilterMode } from '../stores'
   import { Site } from '../types'
 

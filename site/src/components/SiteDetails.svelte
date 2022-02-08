@@ -5,12 +5,12 @@
   import Stack from '@svicons/octicons/stack.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
   import { Site } from '../types'
-  import Creator from './Creator.svelte'
+  import Contributor from './Contributor.svelte'
   import Screenshot from './Screenshot.svelte'
 
   export let site: Site
 
-  $: ({ title, url, tags, uses, creators, dateCreated } = site)
+  $: ({ title, url, tags, uses, contributors, dateCreated } = site)
 
   const prettyDate = (date = ``): string =>
     new Date(date).toLocaleString(`en`, {
@@ -35,20 +35,22 @@
       <p>{@html site.description}</p>
     {/if}
     <hr />
-    <div>
-      <Person width="1em" />&emsp;Creator{creators.length > 1 ? `s` : ``}:
-      {#if creators.length > 1}
-        <ol class="creators">
-          {#each creators as creator}
-            <li>
-              <Creator {creator} />
-            </li>
-          {/each}
-        </ol>
-      {:else}
-        &nbsp;&emsp;<Creator creator={creators[0]} />
-      {/if}
-    </div>
+    {#if contributors?.length > 0}
+      <div>
+        <Person width="1em" />&emsp;Contributor{contributors.length > 1 ? `s` : ``}:
+        {#if contributors.length > 1}
+          <ol class="contributors">
+            {#each contributors as contributor}
+              <li>
+                <Contributor {contributor} />
+              </li>
+            {/each}
+          </ol>
+        {:else}
+          &nbsp;&emsp;<Contributor contributor={contributors[0]} />
+        {/if}
+      </div>
+    {/if}
     {#if dateCreated}
       <hr />
       <p class="flex">
@@ -94,7 +96,7 @@
     background-color: lightblue;
     border: none;
   }
-  ol.creators {
+  ol.contributors {
     line-height: 1.6em;
   }
 </style>

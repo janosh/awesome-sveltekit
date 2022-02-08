@@ -53,6 +53,7 @@ repos:
       - id: eslint
         types: [file]
         files: \.(svelte|js)$
+        args: [--plugin, eslint-plugin-svelte3]
         additional_dependencies:
           - eslint
           - svelte

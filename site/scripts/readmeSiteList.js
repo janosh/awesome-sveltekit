@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+/* This file parses sites.yml and uses that data to update the list of sites in the readme. */
+
 import fs from 'fs'
 import yaml from 'js-yaml'
 import { rootDir } from './index.js'
