@@ -29,6 +29,12 @@ const headers = {
   authorization: `token ${process.env.GH_TOKEN}`,
 }
 
+function normalizeUrl(url) {
+  if (!url) return null
+  if (url.startsWith(`http`)) return url.replace(`http://`, `https://`)
+  return `https://${url}`
+}
+
 // Only update site/src/sites.js if a new site was added to sites.yml
 // or repo star counts were last fetched more than a month ago.
 for (const site of sites) {
@@ -70,7 +76,7 @@ for (const site of sites) {
   site.contributors = contributors.map(({ name, location, company, ...c }) => ({
     github: c.login,
     twitter: c.twitter_username,
-    url: c.blog?.replace(`http://`, `https://`),
+    url: normalizeUrl(c.blog),
     avatar: c.avatar_url,
     name,
     location,

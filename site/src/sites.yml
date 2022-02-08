@@ -51,7 +51,7 @@
       company: null
     - github: dummdidumm
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/5968653?v=4
       name: Simon H
       location: Germany
@@ -90,7 +90,7 @@
       company: null
     - github: github-actions[bot]
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/in/15368?v=4
       name: null
       location: null
@@ -145,7 +145,7 @@
   contributors:
     - github: GrygrFlzr
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/1460917?v=4
       name: null
       location: null
@@ -171,7 +171,7 @@
   contributors:
     - github: janosh
       twitter: _jarib
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
       location: Sol
@@ -201,7 +201,7 @@
   contributors:
     - github: janosh
       twitter: _jarib
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
       location: Sol
@@ -262,7 +262,7 @@
   contributors:
     - github: janosh
       twitter: _jarib
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
       location: Sol
@@ -292,7 +292,7 @@
   contributors:
     - github: janosh
       twitter: _jarib
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
       location: Sol
@@ -323,7 +323,7 @@
   contributors:
     - github: janosh
       twitter: _jarib
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
       location: Sol
@@ -398,7 +398,7 @@
       company: '@gitpod-io '
     - github: mlworks
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/4543395?v=4
       name: Michael Lee
       location: Tokyo, Japan
@@ -522,7 +522,7 @@
   contributors:
     - github: snuffyDev
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/72365477?v=4
       name: snuffy
       location: In the Clouds
@@ -572,7 +572,7 @@
   contributors:
     - github: davjhan
       twitter: davjhan
-      url: davjhan.com
+      url: https://davjhan.com
       avatar: https://avatars.githubusercontent.com/u/10100613?v=4
       name: David Han
       location: Seattle
@@ -600,7 +600,7 @@
   contributors:
     - github: renovate[bot]
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/in/2740?v=4
       name: null
       location: null
@@ -684,14 +684,14 @@
   contributors:
     - github: kevmodrome
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
       company: null
     - github: brittneypostma
       twitter: brittneypostma
-      url: brittneypostma.com
+      url: https://brittneypostma.com
       avatar: https://avatars.githubusercontent.com/u/45889730?v=4
       name: Brittney Postma
       location: Holland, MI
@@ -705,14 +705,14 @@
       company: null
     - github: MacFJA
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/1475671?v=4
       name: null
       location: null
       company: null
     - github: haudraufhaun
       twitter: haudraufhaun1
-      url: haudraufhauns.vercel.app
+      url: https://haudraufhauns.vercel.app
       avatar: https://avatars.githubusercontent.com/u/47633893?v=4
       name: Dietrich
       location: Germany
@@ -760,7 +760,7 @@
   contributors:
     - github: matfantinel
       twitter: Matt_fantinel
-      url: fantinel.dev
+      url: https://fantinel.dev
       avatar: https://avatars.githubusercontent.com/u/24247035?v=4
       name: Matt Fantinel
       location: Caxias do Sul, Brazil
@@ -839,21 +839,21 @@
   contributors:
     - github: Tropix126
       twitter: null
-      url: tropix126.vercel.app
+      url: https://tropix126.vercel.app
       avatar: https://avatars.githubusercontent.com/u/42101043?v=4
       name: Tropical
       location: null
       company: null
     - github: yaichenbaum
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/39923744?v=4
       name: Yair Aichenbaum
       location: null
       company: '@mirage-id '
     - github: TheOnlyTails
       twitter: The_Only_Tails
-      url: theonlytails.com
+      url: https://theonlytails.com
       avatar: https://avatars.githubusercontent.com/u/65342367?v=4
       name: TheOnlyTails
       location: Here
@@ -887,7 +887,7 @@
   contributors:
     - github: kevmodrome
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
@@ -963,14 +963,14 @@
   contributors:
     - github: maehr
       twitter: moritzmaehr
-      url: moritzmaehr.ch
+      url: https://moritzmaehr.ch
       avatar: https://avatars.githubusercontent.com/u/14755525?v=4
       name: Moritz Mähr
       location: Zurich / Basel
       company: ETH Zurich / Unversity of Basel
     - github: thodel
       twitter: thist_be
-      url: dh.unibe.ch
+      url: https://dh.unibe.ch
       avatar: https://avatars.githubusercontent.com/u/18015683?v=4
       name: Tobias Hodel
       location: Bern
@@ -1004,7 +1004,7 @@
       company: '@the-pudding'
     - github: jadiehm
       twitter: jadiehm
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/10521931?v=4
       name: Jan Diehm
       location: San Antonio
@@ -1029,7 +1029,7 @@
   contributors:
     - github: brittneypostma
       twitter: brittneypostma
-      url: brittneypostma.com
+      url: https://brittneypostma.com
       avatar: https://avatars.githubusercontent.com/u/45889730?v=4
       name: Brittney Postma
       location: Holland, MI
@@ -1082,7 +1082,7 @@
   contributors:
     - github: connorrothschild
       twitter: CL_Rothschild
-      url: connorrothschild.com
+      url: https://connorrothschild.com
       avatar: https://avatars.githubusercontent.com/u/13339581?v=4
       name: Connor Rothschild
       location: The Web
@@ -1137,7 +1137,7 @@
   contributors:
     - github: KevinVandy
       twitter: ThomasVanCott
-      url: kevinvancott.dev
+      url: https://kevinvancott.dev
       avatar: https://avatars.githubusercontent.com/u/28243511?v=4
       name: Kevin Van Cott
       location: Nebraska
@@ -1197,21 +1197,21 @@
   contributors:
     - github: sidharthv96
       twitter: sidv42
-      url: sidharth.dev
+      url: https://sidharth.dev
       avatar: https://avatars.githubusercontent.com/u/10703445?v=4
       name: Sidharth Vinod
       location: null
       company: '@TurgenSec | ex-@Oracle'
     - github: dependabot[bot]
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/in/29110?v=4
       name: null
       location: null
       company: null
     - github: knsv
       twitter: null
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/5837277?v=4
       name: Knut Sveidqvist
       location: null
@@ -1271,7 +1271,7 @@
       company: null
     - github: pngwn
       twitter: evilpingwin
-      url: ''
+      url: null
       avatar: https://avatars.githubusercontent.com/u/12937446?v=4
       name: pngwn
       location: London, UK
