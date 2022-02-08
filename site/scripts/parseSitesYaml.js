@@ -26,7 +26,7 @@ const prevIds = oldSites.map((site) => site.id)
 let [seenSlugs, skippedSites] = [new Set(), {}]
 
 const headers = {
-  authorization: `token ${process.env.GITHUB_TOKEN}`,
+  authorization: `token ${process.env.GH_TOKEN}`,
 }
 
 // Only update site/src/sites.js if a new site was added to sites.yml
