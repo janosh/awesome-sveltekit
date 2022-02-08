@@ -1,21 +1,6 @@
-<script lang="ts" context="module">
-  import type { Load } from '@sveltejs/kit'
+<script lang="ts">
   import SiteDetails from '../components/SiteDetails.svelte'
   import { Site } from '../types'
-
-  export const load: Load = async ({ params, fetch }) => {
-    const response = await fetch(`/${params.slug}.json`)
-
-    if (response.ok) {
-      const site = await response.json()
-      return { props: { site } }
-    } else {
-      return { fallthrough: true }
-    }
-  }
-</script>
-
-<script lang="ts">
   export let site: Site
 </script>
 
