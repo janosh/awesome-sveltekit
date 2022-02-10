@@ -53,7 +53,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 11. **[Guess The Year](https://guess-the-year.davjhan.com)**&emsp;[[code](https://github.com/davjhan/guess-the-year-game)]&emsp;<img src="https://img.shields.io/github/stars/davjhan/guess-the-year-game" alt="GitHub stars" valign="middle"><br>
     Round-based browser game where you guess the year in which famous event happened. Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.<br>
     uses: [Tailwind], [Netlify]
-12. **[Gitpod](https://gitpod.io)**&emsp;[[code](https://github.com/gitpod-io/website)]&emsp;<img src="https://img.shields.io/github/stars/gitpod-io/website" alt="GitHub stars" valign="middle"><br>
+12. **[Gitpod](https://www.gitpod.io)**&emsp;[[code](https://github.com/gitpod-io/website)]&emsp;<img src="https://img.shields.io/github/stars/gitpod-io/website" alt="GitHub stars" valign="middle"><br>
     Gitpod streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code.<br>
     uses: [MDsveX], [Tailwind], [Netlify]
 13. **[Svelte Themes](https://sveltethemes.dev)**<br>
