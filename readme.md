@@ -199,6 +199,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
+[sveltestrap]: https://sveltestrap.js.org
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io
 [tailwind]: https://tailwindcss.com
