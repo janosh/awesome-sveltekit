@@ -15,7 +15,9 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.head_ref }}
+          # allow git checkout of forks in GHA newSite.yml workflow
+          ref: ${{github.event.pull_request.head.ref}}
+          repository: ${{github.event.pull_request.head.repo.full_name}}
 
       - name: Set up node
         uses: actions/setup-node@v2
