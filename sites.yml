@@ -494,3 +494,14 @@
   dateCreated: 2021-08-12
   dateAdded: 2022-02-06
   lastUpdated: 2022-02-06
+
+- id: 44
+  title: Japanese Learners Lite
+  url: https://lite.japanese-learners.com
+  repo: https://github.com/japanese-learners/japanese-learners-app
+  description: A lite Japanese Learning web application.
+  uses: [Sveltestrap, TypeScript, docker, tailwind]
+  tags: [demo, proof of concept, learning]
+  dateCreated: 2021-08-12
+  dateAdded: 2022-02-06
+  lastUpdated: 2022-02-06
