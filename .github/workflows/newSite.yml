@@ -11,6 +11,8 @@ on:
 jobs:
   new-site:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - name: Check out repo
         uses: actions/checkout@v2
