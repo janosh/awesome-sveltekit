@@ -11,15 +11,14 @@ on:
 jobs:
   new-site:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
     steps:
       - name: Check out repo
         uses: actions/checkout@v2
         with:
+          token: ${{ secrets.GH_PAT }} # gives permission to push to fork PRs
           # allow git checkout of forks in GHA newSite.yml workflow
-          ref: ${{github.event.pull_request.head.ref}}
-          repository: ${{github.event.pull_request.head.repo.full_name}}
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Set up node
         uses: actions/setup-node@v2
