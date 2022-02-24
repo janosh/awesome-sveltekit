@@ -149,6 +149,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 43. **[macos-web](https://macos-web.app)**&emsp;[[code](https://github.com/PuruVJ/macos-web)]&emsp;<img src="https://img.shields.io/github/stars/PuruVJ/macos-web" alt="GitHub stars" valign="middle"><br>
     Replicate some of the macOS desktop experience on the web.<br>
     uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
+44. **[inlang dashboard](https://inlang.dev)**&emsp;[[code](https://github.com/inlang/inlang/tree/main/apps/dashboard)]&emsp;<img src="https://img.shields.io/github/stars/inlang/inlang" alt="GitHub stars" valign="middle"><br>
+    Translate software products 2x faster.<br>
+    uses: [TypeScript], [Vercel], [IBM Carbon], [TailwindCSS], [Supabase]
 
 ## 🎉 Open to Suggestions
 
@@ -180,6 +183,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [gsap]: https://greensock.com/gsap
 [husky]: https://github.com/typicode/husky
 [i18n]: https://github.com/sveltejs/kit/issues/553
+[ibm carbon]: https://carbondesignsystem.com
 [iconoir]: https://iconoir.com
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
@@ -198,6 +202,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [scss]: https://sass-lang.com
 [service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
+[supabase]: https://supabase.com
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io
