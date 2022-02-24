@@ -183,6 +183,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [gsap]: https://greensock.com/gsap
 [husky]: https://github.com/typicode/husky
 [i18n]: https://github.com/sveltejs/kit/issues/553
+[ibm carbon]: https://carbondesignsystem.com
 [iconoir]: https://iconoir.com
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
@@ -201,6 +202,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [scss]: https://sass-lang.com
 [service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
+[supabase]: https://supabase.com
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io
