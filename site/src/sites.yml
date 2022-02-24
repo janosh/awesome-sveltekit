@@ -1305,3 +1305,62 @@
       name: Puru Vijay
       location: Jaipur
       company: '@stackblitz'
+- id: 44
+  title: inlang dashboard
+  url: https://inlang.dev
+  repo: https://github.com/inlang/inlang
+  siteSrc: https://github.com/inlang/inlang/tree/main/apps/dashboard
+  description: Translate software products 2x faster.
+  uses:
+    - TypeScript
+    - Vercel
+    - IBM Carbon
+    - TailwindCSS
+    - Supabase
+  tags:
+    - front-end
+    - developer tool
+    - localization
+    - i18n
+    - open source
+  dateCreated: 2021-08-04T00:00:00.000Z
+  dateAdded: 2022-02-23T00:00:00.000Z
+  lastUpdated: 2022-02-23T00:00:00.000Z
+  slug: inlang-dashboard
+  repoStars: 122
+  contributors:
+    - github: samuelstroschein
+      twitter: SamuelStros
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/35429197?v=4
+      name: Samuel Stroschein
+      location: Berlin
+      company: null
+    - github: SebastianLJ
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/37780699?v=4
+      name: Sebastian Lund Jensen
+      location: Denmark
+      company: null
+    - github: Zalamar
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/15159648?v=4
+      name: Tobias Rydberg
+      location: Denmark
+      company: null
+    - github: s184186
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/43650196?v=4
+      name: null
+      location: null
+      company: null
+    - github: doofin
+      twitter: null
+      url: https://github.com/doofin
+      avatar: https://avatars.githubusercontent.com/u/6041353?v=4
+      name: eason du
+      location: Denmark
+      company: Danmarks Tekniske Universitet

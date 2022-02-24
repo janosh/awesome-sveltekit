@@ -149,6 +149,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 43. **[macos-web](https://macos-web.app)**&emsp;[[code](https://github.com/PuruVJ/macos-web)]&emsp;<img src="https://img.shields.io/github/stars/PuruVJ/macos-web" alt="GitHub stars" valign="middle"><br>
     Replicate some of the macOS desktop experience on the web.<br>
     uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
+44. **[inlang dashboard](https://inlang.dev)**&emsp;[[code](https://github.com/inlang/inlang/tree/main/apps/dashboard)]&emsp;<img src="https://img.shields.io/github/stars/inlang/inlang" alt="GitHub stars" valign="middle"><br>
+    Translate software products 2x faster.<br>
+    uses: [TypeScript], [Vercel], [IBM Carbon], [TailwindCSS], [Supabase]
 
 ## 🎉 Open to Suggestions
 

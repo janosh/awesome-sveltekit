@@ -499,6 +499,7 @@
   title: inlang dashboard
   url: https://inlang.dev
   repo: https://github.com/inlang/inlang
+  siteSrc: https://github.com/inlang/inlang/tree/main/apps/dashboard
   description: Translate software products 2x faster.
   uses: [TypeScript, Vercel, IBM Carbon, TailwindCSS, Supabase]
   tags: [front-end, developer tool, localization, i18n, open source]
