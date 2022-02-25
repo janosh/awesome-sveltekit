@@ -151,7 +151,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
     uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
 44. **[inlang dashboard](https://inlang.dev)**&emsp;[[code](https://github.com/inlang/inlang/tree/main/apps/dashboard)]&emsp;<img src="https://img.shields.io/github/stars/inlang/inlang" alt="GitHub stars" valign="middle"><br>
     Translate software products 2x faster.<br>
-    uses: [TypeScript], [Vercel], [IBM Carbon], [TailwindCSS], [Supabase]
+    uses: [TypeScript], [Vercel], [IBM Carbon], [Tailwind], [Supabase]
 
 ## 🎉 Open to Suggestions
 
@@ -166,6 +166,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [codemirror]: https://codemirror.net
 [contentful]: https://contentful.com
 [cssnano]: https://cssnano.co
+[cypress]: https://cypress.io
 [cytoscape.js]: https://js.cytoscape.org
 [d3]: https://d3js.org
 [daisyui]: https://daisyui.com
@@ -184,6 +185,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [husky]: https://github.com/typicode/husky
 [i18n]: https://github.com/sveltejs/kit/issues/553
 [ibm carbon]: https://carbondesignsystem.com
+[iconify]: https://iconify.design
 [iconoir]: https://iconoir.com
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
@@ -212,5 +214,3 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
-[cypress]: https://cypress.io
-[iconify]: https://iconify.design
