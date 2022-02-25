@@ -33,15 +33,6 @@
   dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
-- id: 3
-  title: NYTimes Tracking the Coronavirus
-  url: https://nytimes.com/interactive/2021/us/new-york-city-new-york-covid-cases.html
-  description: Charts and maps of coronavirus cases, deaths, hospitalizations and vaccinations in NYC.
-  uses: [Pancake]
-  tags: [news, journalism, Covid]
-  dateAdded: 2021-05-25
-  lastUpdated: 2021-05-25
-
 - id: 4
   title: SK Incognito
   url: https://sk-incognito.vercel.app
@@ -153,15 +144,6 @@
   dateAdded: 2021-05-31
   lastUpdated: 2021-05-31
 
-- id: 13
-  title: Svelte Themes
-  url: https://sveltethemes.dev
-  description: Collection of Svelte site themes, starters and component libraries.
-  uses: [Netlify, Tailwind]
-  tags: [site directory, learning resources]
-  dateAdded: 2021-06-01
-  lastUpdated: 2021-06-01
-
 - id: 14
   title: SvelteKit Experiments
   url: https://sveltekit-demo-psi.vercel.app
@@ -208,19 +190,6 @@
   dateCreated: 2021-06-17
   dateAdded: 2021-07-08
   lastUpdated: 2021-07-08
-
-- id: 18
-  title: Impfdashboard
-  url: https://impfdashboard.de/en
-  description: >-
-    Official German Covid 19 vaccination dashboard. By Cosmonauts & Kings GmbH, Studio NAND GmbH
-    and Truth & Beauty. Data supplied by Robert Koch Institut. Not actually SvelteKit (yet, might
-    be updated) but shows what's possible with data viz in Svelte.
-  tags: [covid, pandemic, health, government, science, i18n]
-  uses: [Tabler Icons, WeePeople]
-  dateCreated: 2021-01-01
-  dateAdded: 2021-07-30
-  lastUpdated: 2021-07-30
 
 - id: 19
   title: Paper Trader Game
@@ -283,8 +252,9 @@
   title: Flayks
   url: https://flayks.com
   description: >-
-    Portfolio of Félix Péault, Digital Designer and Art Director
-    [[interview](https://sanity.io/blog/felix-peault-community-interview)]
+    Portfolio of Félix Péault, Digital Designer and Art Director.
+    Sanity.io [[interview](https://sanity.io/blog/felix-peault-community-interview)],
+    [feature](https://sanity.io/projects/flayks-portfolio-2021).
   tags: [portfolio]
   uses: [Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
   dateCreated: 2021-10-01
@@ -311,16 +281,6 @@
   dateCreated: 2021-09-01
   dateAdded: 2021-10-5
   lastUpdated: 2021-10-05
-
-- id: 27
-  title: MortimerBaltus
-  url: https://mortimerbaltus.com
-  description: MortimerBaltus is a Hamburg & Tokyo based Partnership realizing holistic brand experiences.
-  uses: [Cloudinary, Cloudflare]
-  tags: [web development, design, intercultural guidance]
-  dateCreated: 2021-09-21
-  dateAdded: 2021-10-6
-  lastUpdated: 2021-10-06
 
 - id: 28
   title: JSchallenger
@@ -501,8 +461,8 @@
   repo: https://github.com/inlang/inlang
   siteSrc: https://github.com/inlang/inlang/tree/main/apps/dashboard
   description: Translate software products 2x faster.
-  uses: [TypeScript, Vercel, IBM Carbon, TailwindCSS, Supabase]
-  tags: [front-end, developer tool, localization, i18n, open source]
+  uses: [TypeScript, Vercel, IBM Carbon, Tailwind, Supabase]
+  tags: [front-end, developer tool, localization, i18n]
   dateCreated: 2021-08-04
   dateAdded: 2022-02-23
   lastUpdated: 2022-02-23
