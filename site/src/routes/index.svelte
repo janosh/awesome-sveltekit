@@ -6,7 +6,7 @@
   import { filterTags, sortBy, tagFilterMode } from '../stores'
   import { Site } from '../types'
 
-  const tags = [...new Set(sites.map((site) => site.tags).flat(1))]
+  const tags = [...new Set(sites.flatMap((site) => site.tags))]
   $: tags.sort((a, b) => a.localeCompare(b))
   let query = ``
 
