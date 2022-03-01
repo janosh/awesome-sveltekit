@@ -23,7 +23,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 1. **[Svelte.dev](https://svelte.dev)**&emsp;[[code](https://github.com/sveltejs/sites/tree/master/sites/svelte.dev)]&emsp;<img src="https://img.shields.io/github/stars/sveltejs/svelte" alt="GitHub stars" valign="middle"><br>
    Cybernetically enhanced web apps.<br>
    uses: [CodeMirror], [Mapbox], [Docker]
-2. **[Official SvelteKit docs](https://kit.svelte.dev)**&emsp;[[code](https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev)]&emsp;<img src="https://img.shields.io/github/stars/sveltejs/kit" alt="GitHub stars" valign="middle"><br>
+2. **[Official SvelteKit docs](https://kit.svelte.dev)**&emsp;[[code](https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev)]&emsp;<img src="https://img.shields.io/github/stars/sveltejs/kit" alt="GitHub stars" valign="middle"><br>
    The fastest way to build Svelte apps.<br>
    uses: [Netlify], [PNPM]
 3. **[SK Incognito](https://sk-incognito.vercel.app)**&emsp;[[code](https://github.com/GrygrFlzr/kit-docs)]&emsp;<img src="https://img.shields.io/github/stars/GrygrFlzr/kit-docs" alt="GitHub stars" valign="middle"><br>

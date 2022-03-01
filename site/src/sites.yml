@@ -61,7 +61,7 @@
   title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
-  siteSrc: https://github.com/sveltejs/sites/tree/master/sites/kit.svelte.dev
+  siteSrc: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
   description: The fastest way to build Svelte apps.
   uses:
     - Netlify
