@@ -466,3 +466,14 @@
   dateCreated: 2021-08-04
   dateAdded: 2022-02-23
   lastUpdated: 2022-02-23
+
+- id: 45
+  title: UltiDex
+  url: https://pokedex.ultirequiem.com
+  repo: https://github.com/UltiRequiem/pokedex
+  description: A Pokedex built with SvelteKit, Tailwind CSS and TypeScript
+  uses: [TypeScript, Netlify, Tailwind, PostCSS]
+  tags: [front-end, demo, proof of concept, learning]
+  dateCreated: 2022-02-26
+  dateAdded: 2022-02-27
+  lastUpdated: 2022-02-27
