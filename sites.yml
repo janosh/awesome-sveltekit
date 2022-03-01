@@ -372,7 +372,7 @@
   url: https://urara-demo.netlify.app
   repo: https://github.com/importantimport/urara
   description: Sweet & Powerful SvelteKit Blog Template.
-  uses: [MDsveX, Windi, DaisyUI, TypeScript, PNPM]
+  uses: [MDsveX, PostCSS, Tailwind, DaisyUI, TypeScript, PNPM]
   tags: [blog, template]
   dateCreated: 2021-11-01
   dateAdded: 2021-11-05
