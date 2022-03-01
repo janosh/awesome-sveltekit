@@ -34,7 +34,7 @@
     options={sortByOptions.filter(Boolean)}
     placeholder="Sort by..."
     maxSelect={1}
-    on:change={(e) => ($sortBy = e.detail.token.label)}
+    on:change={(e) => ($sortBy = e.detail.option.label)}
     --sms-input-height="none"
   />
   {#if $sortBy !== ``}
