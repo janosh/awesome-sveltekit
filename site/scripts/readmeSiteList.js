@@ -1,17 +1,18 @@
-#!/usr/bin/env node
+/* eslint-disable no-console */
 /* This file parses sites.yml, then updates the list of sites in the readme. */
 
 import fs from 'fs'
 import yaml from 'js-yaml'
-import { rootDir } from './index.js'
+import { basename } from 'path'
+import { root_dir } from './index.js'
 
-const readmePath = `${rootDir}/readme.md`
-const sitesYaml = `${rootDir}/sites.yml`
+const readmePath = `${root_dir}/readme.md`
+const sitesYaml = `${root_dir}/sites.yml`
 
 const readme = fs.readFileSync(readmePath, `utf8`)
 const sites = yaml.load(fs.readFileSync(sitesYaml))
 
-const newSites = sites
+const new_sites = sites
   .map((site, idx) => {
     const { title, repo, uses, description, url, siteSrc } = site
 
@@ -49,7 +50,10 @@ const newSites = sites
 // replace old sites
 const newReadme = readme.replace(
   /## Sites\n\n[\s\S]+\n\n## /, // match everything up to next heading
-  `## Sites\n\n${newSites}\n\n## `
+  `## Sites\n\n${new_sites}\n\n## `
 )
 
 fs.writeFileSync(readmePath, newReadme)
+
+const this_file = basename(process.argv[1])
+console.log(`${this_file} updated readme\n`)

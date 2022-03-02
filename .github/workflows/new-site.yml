@@ -11,9 +11,10 @@ on:
 jobs:
   new-site:
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'janosh'
     steps:
       - name: Check out repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
 
@@ -29,9 +30,7 @@ jobs:
 
       - name: Update existing site screenshots and repo contributors on scheduled runs
         if: github.event_name == 'schedule'
-        run: |
-          node site/scripts/screenshots.js update-existing
-          node site/scripts/parseSitesYaml.js update-existing
+        run: node site/scripts/index.js update-existing
 
       - name: Add screenshots for new sites and update readme
         if: github.event_name != 'schedule'

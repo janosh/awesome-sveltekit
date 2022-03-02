@@ -1001,7 +1001,8 @@
   description: Sweet & Powerful SvelteKit Blog Template.
   uses:
     - MDsveX
-    - Windi
+    - PostCSS
+    - Tailwind
     - DaisyUI
     - TypeScript
     - PNPM
