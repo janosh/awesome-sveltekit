@@ -8,7 +8,7 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-svelte-kit/pulls)
-[![Link check](https://github.com/janosh/awesome-svelte-kit/actions/workflows/linkCheck.yml/badge.svg)](https://github.com/janosh/awesome-svelte-kit/actions/workflows/linkCheck.yml)
+[![Link check](https://github.com/janosh/awesome-svelte-kit/actions/workflows/link-check.yml/badge.svg)](https://github.com/janosh/awesome-svelte-kit/actions/workflows/link-check.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-svelte-kit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-svelte-kit/main)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-svelte-kit/deploys)
 
@@ -115,7 +115,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
     uses: [Netlify], [service worker]
 32. **[Urara](https://urara-demo.netlify.app)**&emsp;[[code](https://github.com/importantimport/urara)]&emsp;<img src="https://img.shields.io/github/stars/importantimport/urara" alt="GitHub stars" valign="middle"><br>
     Sweet & Powerful SvelteKit Blog Template.<br>
-    uses: [MDsveX], [Windi], [DaisyUI], [TypeScript], [PNPM]
+    uses: [MDsveX], [PostCSS], [Tailwind], [DaisyUI], [TypeScript], [PNPM]
 33. **[connorrothschild.com](https://connorrothschild.com)**&emsp;[[code](https://github.com/connorrothschild/.com)]&emsp;<img src="https://img.shields.io/github/stars/connorrothschild/.com" alt="GitHub stars" valign="middle"><br>
     Creative, content-based portfolio site of Connor Rothschild.<br>
     uses: [MDsveX], [GSAP], [Netlify]

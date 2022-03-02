@@ -9,12 +9,12 @@ import yaml from 'js-yaml'
 import { basename } from 'path'
 import { performance } from 'perf_hooks'
 import puppeteer from 'puppeteer'
-import { rootDir, titleToSlug } from './index.js'
+import { root_dir, title_to_slug } from './index.js'
 
 const start = performance.now()
-const outDir = `${rootDir}/site/static/screenshots`
+const outDir = `${root_dir}/site/static/screenshots`
 
-const sites = yaml.load(fs.readFileSync(`${rootDir}/sites.yml`))
+const sites = yaml.load(fs.readFileSync(`${root_dir}/sites.yml`))
 
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
@@ -28,7 +28,7 @@ if (updateExisting) console.log(`Updating all existing screenshots`)
 const [created, updated, skipped, existed] = [[], [], [], []]
 
 for (const [idx, site] of sites.entries()) {
-  site.slug = titleToSlug(site.title)
+  site.slug = title_to_slug(site.title)
   const { slug } = site
 
   const imgPath = `${outDir}/${slug}.webp`
@@ -70,15 +70,13 @@ for (const [idx, site] of sites.entries()) {
 
 await browser.close()
 
-const wallTime = ((performance.now() - start) / 1000).toFixed(2)
+const wall_time = ((performance.now() - start) / 1000).toFixed(2)
 
-if (created.length > 0 || updated.length > 0 || existed.length > 0) {
+const this_file = basename(process.argv[1])
+
+if (created.length > 0 || updated.length > 0) {
   console.log(
-    `${basename(process.argv[1])} took ${wallTime}s, created ${
-      created.length
-    } new, ${updated.length} updated, ${skipped.length} skipped, ${
-      existed.length
-    } already had screenshots`
+    `${this_file} took ${wall_time}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots\n`
   )
 
   const toCompress = [...created, ...updated].flatMap((slug) => [
@@ -93,5 +91,5 @@ if (created.length > 0 || updated.length > 0 || existed.length > 0) {
 
   console.log(`compressed ${compressedFiles.length} files`)
 } else {
-  console.log(`no changes from screenshots.js in ${wallTime}s`)
+  console.log(`No changes from ${this_file} in ${wall_time}s\n`)
 }
