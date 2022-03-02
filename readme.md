@@ -115,7 +115,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
     uses: [Netlify], [service worker]
 32. **[Urara](https://urara-demo.netlify.app)**&emsp;[[code](https://github.com/importantimport/urara)]&emsp;<img src="https://img.shields.io/github/stars/importantimport/urara" alt="GitHub stars" valign="middle"><br>
     Sweet & Powerful SvelteKit Blog Template.<br>
-    uses: [MDsveX], [Windi], [DaisyUI], [TypeScript], [PNPM]
+    uses: [MDsveX], [PostCSS], [Tailwind], [DaisyUI], [TypeScript], [PNPM]
 33. **[connorrothschild.com](https://connorrothschild.com)**&emsp;[[code](https://github.com/connorrothschild/.com)]&emsp;<img src="https://img.shields.io/github/stars/connorrothschild/.com" alt="GitHub stars" valign="middle"><br>
     Creative, content-based portfolio site of Connor Rothschild.<br>
     uses: [MDsveX], [GSAP], [Netlify]
