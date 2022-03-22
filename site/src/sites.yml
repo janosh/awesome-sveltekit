@@ -1332,3 +1332,33 @@
       name: eason du
       location: Denmark
       company: Danmarks Tekniske Universitet
+- id: 45
+  title: Houdini GraphQL
+  url: https://houdinigraphql.com
+  repo: https://github.com/HoudiniGraphql/docs
+  description: Documentation site for houdini.
+  uses:
+    - PNPM
+    - MDsveX
+    - Husky
+    - highlight.js
+  tags:
+    - graphql
+    - data fetching
+    - front-end
+    - developer tool
+    - minimal
+    - open source
+  dateCreated: 2021-01-19T00:00:00.000Z
+  dateAdded: 2022-03-22T00:00:00.000Z
+  lastUpdated: 2022-03-22T00:00:00.000Z
+  slug: houdini-graphql
+  repoStars: 0
+  contributors:
+    - github: AlecAivazis
+      twitter: null
+      url: https://alec.aivazis.com
+      avatar: https://avatars.githubusercontent.com/u/916317?v=4
+      name: Alec Aivazis
+      location: Los Angeles
+      company: null
