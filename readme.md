@@ -140,6 +140,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 40. **[inlang dashboard](https://inlang.dev)**&emsp;[[code](https://github.com/inlang/inlang/tree/main/apps/dashboard)]&emsp;<img src="https://img.shields.io/github/stars/inlang/inlang" alt="GitHub stars" valign="middle"><br>
     Translate software products 2x faster.<br>
     uses: [TypeScript], [Vercel], [IBM Carbon], [Tailwind], [Supabase]
+41. **[Houdini GraphQL](https://houdinigraphql.com)**&emsp;[[code](https://github.com/HoudiniGraphql/docs)]&emsp;<img src="https://img.shields.io/github/stars/HoudiniGraphql/docs" alt="GitHub stars" valign="middle"><br>
+    Documentation site for houdini.<br>
+    uses: [PNPM], [MDsveX], [Husky], [highlight.js]
 
 ## 🎉 Open to Suggestions
 
@@ -170,6 +173,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [graphcms]: https://graphcms.com
 [graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
+[highlight.js]: https://highlightjs.org
 [husky]: https://github.com/typicode/husky
 [i18n]: https://github.com/sveltejs/kit/issues/553
 [ibm carbon]: https://carbondesignsystem.com
