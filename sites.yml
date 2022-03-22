@@ -466,3 +466,14 @@
   dateCreated: 2021-08-04
   dateAdded: 2022-02-23
   lastUpdated: 2022-02-23
+
+- id: 45
+  title: Houdini GraphQL
+  url: https://houdinigraphql.com
+  repo: https://github.com/HoudiniGraphql/docs
+  description: Documentation site for houdini.
+  uses: [PNPM, MDsveX, Husky, highlight.js]
+  tags: [graphql, data fetching, front-end, developer tool, minimal]
+  dateCreated: 2021-01-19
+  dateAdded: 2022-03-22
+  lastUpdated: 2022-03-22

@@ -46,11 +46,7 @@
   }
 </script>
 
-<GitHubCorner
-  href="https://github.com/janosh/awesome-svelte-kit"
-  --ghc-bg="white"
-  --ghc-color="var(--bg)"
-/>
+<GitHubCorner href="https://github.com/janosh/awesome-svelte-kit" />
 
 <main>
   <img src="/svelte-kit.svg" alt="Logo" />
@@ -70,10 +66,6 @@
 </main>
 
 <style>
-  :global(:root) {
-    --ghc-color: var(--bg);
-    --ghc-bg: white;
-  }
   h1,
   p {
     text-align: center;

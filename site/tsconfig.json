@@ -2,8 +2,8 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "es2020",
-    "target": "es2020",
+    "module": "esnext",
+    "target": "esnext",
     "moduleResolution": "node", // needed for import { ... } from 'svelte' in TS files
 
     // To have warnings/errors of the Svelte compiler at the correct position,

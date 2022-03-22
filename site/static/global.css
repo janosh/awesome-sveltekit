@@ -1,5 +1,14 @@
 :root {
   --bg: #1b073e;
+
+  --ghc-color: var(--bg);
+  --ghc-bg: white;
+
+  --sms-selected-bg: rgba(255, 255, 255, 0.15);
+  --sms-input-bg: black;
+  --sms-options-bg: #0f0422;
+  --sms-border: 1px solid #333;
+  --sms-li-active-bg: rgba(255, 255, 255, 0.15);
 }
 body {
   background: var(--bg);
@@ -8,9 +17,6 @@ body {
   margin: auto;
   color: #eee;
   overflow-x: hidden;
-}
-* {
-  scroll-margin-top: 100px;
 }
 /* outer div = hydration target */
 body > div {
@@ -22,8 +28,15 @@ main {
   margin-bottom: 3em;
   width: 100%;
 }
-ul li {
-  margin: 1ex 0;
+input[type='search'] {
+  border: 1px solid #333;
+  outline: none;
+  padding: 4pt 1ex;
+  border-radius: 3pt;
+  color: inherit;
+  background: black;
+  line-height: 15pt;
+  font-size: 1em;
 }
 a {
   color: cornflowerblue;
@@ -36,4 +49,7 @@ a:hover {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+:where(h1, h2, h3, h4, h5, h6) {
+  scroll-margin-top: 100px;
 }

@@ -8,6 +8,8 @@ export default {
   kit: {
     adapter: adapter(),
 
+    prerender: { default: true },
+
     vite: {
       plugins: [rollupYaml()],
     },
