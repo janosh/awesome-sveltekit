@@ -13,10 +13,10 @@
   $: filterByQuery = (site: Site) => {
     return query?.length === 0 || JSON.stringify(site).includes(query)
   }
-  $: filterByTags = (site: Site, filterTags: string[], filterMode: `AND` | `OR`) => {
+  $: filterByTags = (site: Site, filterTags: string[], filterMode: `and` | `or`) => {
     if (filterTags.length === 0) return true
-    if (filterMode === `OR`) return filterTags.some((tag) => site.tags.includes(tag))
-    if (filterMode === `AND`) return filterTags.every((tag) => site.tags.includes(tag))
+    if (filterMode === `or`) return filterTags.some((tag) => site.tags.includes(tag))
+    if (filterMode === `and`) return filterTags.every((tag) => site.tags.includes(tag))
     console.error(
       `Unexpected state during tag filtering: filterTags=
       ${JSON.stringify(filterTags)}, filterMode=${filterMode}`

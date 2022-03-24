@@ -24,9 +24,9 @@
   />
   {#if $filterTags.length > 0}
     <RadioButtons
-      selected="AND"
+      selected="or"
       on:change={({ detail }) => ($tagFilterMode = detail.value)}
-      options={[`AND`, `OR`]}
+      options={[`and`, `or`]}
     />
   {/if}
   <MultiSelect
