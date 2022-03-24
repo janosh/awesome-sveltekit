@@ -4,7 +4,7 @@
   import { filterTags, sortBy, sortByOptions, tagFilterMode } from '../stores'
   import RadioButtons from './RadioButtons.svelte'
 
-  export let tags: string[]
+  export let tags: [string, number][]
   export let query = ``
   let selectedTags: { label: string; value: string }[] = []
 
@@ -18,11 +18,16 @@
   <input type="search" bind:value={query} placeholder="Search..." />
   <div>
     <MultiSelect
-      options={tags}
+      options={tags.map((el) => el[0])}
       placeholder="Filter by tag..."
       bind:selectedLabels={$filterTags}
       bind:selected={selectedTags}
-    />
+    >
+      <span slot="option" let:idx style="display: flex; justify-content: space-between;">
+        {tags[idx][0]} <span />
+        {tags[idx][1]}
+      </span>
+    </MultiSelect>
     {#if $filterTags.length > 0}
       <RadioButtons bind:selected={$tagFilterMode} options={[`and`, `or`]} />
     {/if}

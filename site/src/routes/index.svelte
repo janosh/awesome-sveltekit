@@ -6,8 +6,15 @@
   import { filterTags, sortBy, tagFilterMode } from '../stores'
   import { Site } from '../types'
 
-  const tags = [...new Set(sites.flatMap((site) => site.tags))]
-  $: tags.sort((a, b) => a.localeCompare(b))
+  const tags = Object.entries(
+    sites
+      .flatMap((site) => site.tags)
+      .reduce((acc, el) => {
+        acc[el] = (acc[el] ?? 0) + 1
+        return acc
+      }, {} as Record<string, number>)
+  )
+  $: tags.sort(([a], [b]) => a.localeCompare(b))
   let query = ``
 
   $: filterByQuery = (site: Site) => {
