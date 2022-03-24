@@ -2,6 +2,7 @@
   import Star from '@svicons/octicons/star.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
   import { flip } from 'svelte/animate'
+  import { fade } from 'svelte/transition'
   import { filterTags } from '../stores'
   import { Site } from '../types'
   import Screenshot from './Screenshot.svelte'
@@ -17,7 +18,11 @@
 
 <ol>
   {#each sites as site, idx (site.url)}
-    <li animate:flip={{ duration: 400 }}>
+    <li
+      animate:flip={{ duration: 400 }}
+      in:fade|local={{ delay: 100 }}
+      out:fade|local={{ delay: 100 }}
+    >
       <a href="/{site.slug}" sveltekit:prefetch>
         <Screenshot title={site.title} resolution=".small" style="cursor: pointer;" />
       </a>
