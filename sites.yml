@@ -484,7 +484,7 @@
   repo: https://github.com/mcmxcdev/ConcertMash
   description: Easily generate a playlist for your upcoming concerts based on selected artists!
   uses: [TypeScript, Tailwind, Spotify Web API, Filepond, PNPM, Netlify]
-  tags: [music, spotify-playlist, playlist-generator, music-library]
+  tags: [music, playlist-generator]
   dateCreated: 2022-03-15
   dateAdded: 2022-03-24
   lastUpdated: 2022-03-24
