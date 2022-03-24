@@ -143,6 +143,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 41. **[Houdini GraphQL](https://houdinigraphql.com)**&emsp;[[code](https://github.com/HoudiniGraphql/docs)]&emsp;<img src="https://img.shields.io/github/stars/HoudiniGraphql/docs" alt="GitHub stars" valign="middle"><br>
     Documentation site for houdini.<br>
     uses: [PNPM], [MDsveX], [Husky], [highlight.js]
+42. **[ConcertMash](https://concertmash.com)**&emsp;[[code](https://github.com/mcmxcdev/ConcertMash)]&emsp;<img src="https://img.shields.io/github/stars/mcmxcdev/ConcertMash" alt="GitHub stars" valign="middle"><br>
+    Easily generate a playlist for your upcoming concerts based on selected artists!<br>
+    uses: [TypeScript], [Tailwind], [Spotify Web API], [Filepond], [PNPM], [Netlify]
 
 ## 🎉 Open to Suggestions
 
@@ -165,6 +168,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
 [elder.js]: https://github.com/Elderjs/elderjs
+[filepond]: https://pqina.nl/filepond/
 [firebase]: https://firebase.google.com
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
@@ -196,6 +200,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [scss]: https://sass-lang.com
 [service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
+[spotify web api]: https://github.com/JMPerez/spotify-web-api-js
 [supabase]: https://supabase.com
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svicons]: https://github.com/janosh/svicons
