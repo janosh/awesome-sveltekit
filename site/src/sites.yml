@@ -1362,3 +1362,27 @@
       name: Alec Aivazis
       location: Los Angeles
       company: null
+- id: 46
+  title: ConcertMash
+  url: https://concertmash.com
+  repo: https://github.com/mcmxcdev/ConcertMash
+  description: >-
+    Easily generate a playlist for your upcoming concerts based on selected
+    artists!
+  uses:
+    - TypeScript
+    - Tailwind
+    - Spotify Web API
+    - Filepond
+    - PNPM
+    - Netlify
+  tags:
+    - music
+    - playlist-generator
+    - open source
+  dateCreated: 2022-03-15T00:00:00.000Z
+  dateAdded: 2022-03-24T00:00:00.000Z
+  lastUpdated: 2022-03-24T00:00:00.000Z
+  slug: concertmash
+  repoStars: 1
+  contributors: []
