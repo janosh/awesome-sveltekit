@@ -4,11 +4,13 @@
   --ghc-color: var(--bg);
   --ghc-bg: white;
 
+  --sms-bg: black;
+  --sms-max-width: 22em;
   --sms-selected-bg: rgba(255, 255, 255, 0.15);
-  --sms-input-bg: black;
   --sms-options-bg: #0f0422;
   --sms-border: 1px solid #333;
   --sms-li-active-bg: rgba(255, 255, 255, 0.15);
+  --sms-placeholder-color: gray;
 }
 body {
   background: var(--bg);
@@ -31,12 +33,14 @@ main {
 input[type='search'] {
   border: 1px solid #333;
   outline: none;
-  padding: 4pt 1ex;
+  padding: 3pt 1ex;
   border-radius: 3pt;
   color: inherit;
   background: black;
-  line-height: 15pt;
   font-size: 1em;
+}
+input[type='search']::placeholder {
+  color: gray;
 }
 a {
   color: cornflowerblue;

@@ -13,4 +13,8 @@ export const sortBy = writable<sortByType>(``)
 
 export const filterTags = writable<string[]>([])
 
-export const tagFilterMode = writable<`AND` | `OR`>(`AND`)
+export const tagFilterMode = writable<`and` | `or`>(`or`)
+
+tagFilterMode.subscribe((mode) => {
+  if ([`and`, `or`].includes(mode)) return mode
+})
