@@ -8,7 +8,6 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-svelte-kit/pulls)
-[![Link check](https://github.com/janosh/awesome-svelte-kit/actions/workflows/link-check.yml/badge.svg)](https://github.com/janosh/awesome-svelte-kit/actions/workflows/link-check.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-svelte-kit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-svelte-kit/main)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-svelte-kit/deploys)
 
@@ -168,7 +167,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
 [elder.js]: https://github.com/Elderjs/elderjs
-[filepond]: https://pqina.nl/filepond/
+[filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com

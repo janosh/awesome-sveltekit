@@ -52,7 +52,7 @@ repos:
     hooks:
       - id: eslint
         types: [file]
-        files: \.(svelte|js)$
+        files: \.(svelte|js|ts)$
         additional_dependencies:
           - eslint
           - svelte

@@ -480,7 +480,7 @@
 
 - id: 46
   title: ConcertMash
-  url: https://concertmash.com/
+  url: https://concertmash.com
   repo: https://github.com/mcmxcdev/ConcertMash
   description: Easily generate a playlist for your upcoming concerts based on selected artists!
   uses: [TypeScript, Tailwind, Spotify Web API, Filepond, PNPM, Netlify]
