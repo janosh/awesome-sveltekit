@@ -69,7 +69,6 @@
 - id: 7
   title: markushatvan.com
   url: https://markushatvan.com
-  repo: https://github.com/mhatvan/markushatvan.com
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.
   uses: [Tailwind, MDsveX, Svelte Forms Lib]
   tags: [blog, rss, sitemap, contact form]

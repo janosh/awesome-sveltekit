@@ -34,7 +34,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 5. **[TikZ](https://tikz.netlify.app)**&emsp;[[code](https://github.com/janosh/tikz)]&emsp;<img src="https://img.shields.io/github/stars/janosh/tikz" alt="GitHub stars" valign="middle"><br>
    Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.<br>
    uses: [TypeScript], [Netlify], [Svicons]
-6. **[markushatvan.com](https://markushatvan.com)**&emsp;[[code](https://github.com/mhatvan/markushatvan.com)]&emsp;<img src="https://img.shields.io/github/stars/mhatvan/markushatvan.com" alt="GitHub stars" valign="middle"><br>
+6. **[markushatvan.com](https://markushatvan.com)**<br>
    Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.<br>
    uses: [Tailwind], [MDsveX], [Svelte Forms Lib]
 7. **[Studenten bilden Schüler](https://studenten-bilden-schueler.de)**&emsp;[[code](https://github.com/sbsev/svelte-site)]&emsp;<img src="https://img.shields.io/github/stars/sbsev/svelte-site" alt="GitHub stars" valign="middle"><br>
