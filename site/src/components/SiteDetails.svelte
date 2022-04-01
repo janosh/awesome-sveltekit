@@ -4,13 +4,14 @@
   import Project from '@svicons/octicons/project.svelte'
   import Stack from '@svicons/octicons/stack.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
+  import Star from '@svicons/octicons/star-fill.svelte'
   import { Site } from '../types'
   import Contributor from './Contributor.svelte'
   import Screenshot from './Screenshot.svelte'
 
   export let site: Site
 
-  $: ({ title, url, tags, uses, contributors, dateCreated } = site)
+  $: ({ title, url, tags, uses, contributors, dateCreated, repoStars } = site)
 
   const prettyDate = (date = ``): string =>
     new Date(date).toLocaleString(`en`, {
@@ -25,9 +26,11 @@
     <h1 class="flex" style="gap: 1em; justify-content: space-between;">
       <a href={url}>{title}</a>
       {#if site.repo}
-        <small class="flex" style="gap: 6pt;">
-          <MarkGithub width="1.2em" /><a href={site.repo}>Repo</a>
-        </small>
+        <a href={site.repo}>
+          <small class="flex" style="gap: 6pt;">
+            <MarkGithub width="1.2em" color="white" />Repo
+          </small>
+        </a>
       {/if}
     </h1>
 
@@ -35,9 +38,17 @@
       <p>{@html site.description}</p>
     {/if}
     <hr />
+    {#if repoStars}
+      <p class="flex">
+        <Star width="1em" />&emsp;Star count: <span style="flex: 1" />{repoStars}
+      </p>
+    {/if}
+    <hr />
     {#if contributors?.length > 0}
-      <div>
-        <Person width="1em" />&emsp;Contributor{contributors.length > 1 ? `s` : ``}:
+      <div class:flex={contributors.length === 1} style="margin: 1em 0;">
+        <Person width="1em" style="margin-right: 1em;" /> &emsp; {contributors.length > 1
+          ? `Contributors`
+          : `Creator`}:
         {#if contributors.length > 1}
           <ol class="contributors">
             {#each contributors as contributor}
@@ -47,27 +58,30 @@
             {/each}
           </ol>
         {:else}
-          &nbsp;&emsp;<Contributor contributor={contributors[0]} />
+          <span style="flex: 1" />
+          <Contributor contributor={contributors[0]} />
         {/if}
       </div>
     {/if}
     {#if dateCreated}
       <hr />
       <p class="flex">
-        <Project width="1em" />&emsp;Project started on: {prettyDate(dateCreated)}
+        <Project width="1em" />&emsp;Project started on:
+        <span style="flex: 1" />{prettyDate(dateCreated)}
       </p>
     {/if}
     {#if tags?.length > 0}
       <hr />
       <p>
-        <Tag width="1em" height="1.2em" />&emsp;Tags:
+        <span><Tag width="1em" height="1.2em" />&emsp;Tags:</span>
         {tags.join(`, `)}
       </p>
     {/if}
     {#if uses && uses?.length > 0}
       <hr />
       <p class="flex">
-        <Stack width="1em" height="1.2em" />&emsp;Uses: {uses.join(`, `)}
+        <Stack width="1em" height="1.2em" />&emsp;Uses:
+        <span style="flex: 1" />{uses.join(`, `)}
       </p>
     {/if}
   </section>
@@ -83,7 +97,6 @@
   }
   @media (max-width: 600px) {
     main {
-      flex-direction: column;
       flex-direction: column-reverse;
       gap: 1em;
     }

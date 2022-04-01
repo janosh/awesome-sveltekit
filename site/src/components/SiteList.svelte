@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Star from '@svicons/octicons/star.svelte'
+  import Star from '@svicons/octicons/star-fill.svelte'
   import Tag from '@svicons/octicons/tag.svelte'
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'

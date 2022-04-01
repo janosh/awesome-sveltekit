@@ -7,26 +7,28 @@
   export let contributor: Contributor
 </script>
 
-{contributor.name}
-{#if contributor.twitter}
-  <a href="https://twitter.com/@{contributor.twitter}">
-    <Twitter width="1em" />
-  </a>
-{/if}
-{#if contributor.github}
-  <a href="https://github.com/{contributor.github}">
-    <MarkGithub width="1em" />
-  </a>
-{/if}
-{#if contributor.url}
-  <a href={contributor.url}>
-    <LinkExternal width="1em" />
-  </a>
-{/if}
+<span>
+  {contributor.name}
+  {#if contributor.twitter}
+    <a href="https://twitter.com/@{contributor.twitter}">
+      <Twitter width="1em" />
+    </a>
+  {/if}
+  {#if contributor.github}
+    <a href="https://github.com/{contributor.github}">
+      <MarkGithub width="1em" />
+    </a>
+  {/if}
+  {#if contributor.url}
+    <a href={contributor.url}>
+      <LinkExternal width="1em" />
+    </a>
+  {/if}
+</span>
 
 <style>
   a {
-    margin-left: 3pt;
+    margin-left: 5pt;
     vertical-align: -2pt;
   }
 </style>
