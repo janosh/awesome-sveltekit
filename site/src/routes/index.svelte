@@ -13,8 +13,8 @@
         acc[el] = (acc[el] ?? 0) + 1
         return acc
       }, {} as Record<string, number>)
-  )
-  $: tags.sort(([a], [b]) => a.localeCompare(b))
+  ).filter(([, count]) => count > 2)
+  tags.sort(([a], [b]) => a.localeCompare(b))
   let query = ``
 
   $: filterByQuery = (site: Site) => {

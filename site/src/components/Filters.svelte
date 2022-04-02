@@ -18,14 +18,18 @@
   <input type="search" bind:value={query} placeholder="Search..." />
   <div>
     <MultiSelect
-      options={tags.map((el) => el[0])}
+      options={tags.map(([label, count]) => ({ label, count }))}
       placeholder="Filter by tag..."
       bind:selectedLabels={$filterTags}
       bind:selected={selectedTags}
     >
-      <span slot="option" let:idx style="display: flex; justify-content: space-between;">
-        {tags[idx][0]} <span />
-        {tags[idx][1]}
+      <span
+        slot="option"
+        let:option
+        style="display: flex; justify-content: space-between;"
+      >
+        {option.label} <span />
+        {option.count}
       </span>
     </MultiSelect>
     {#if $filterTags.length > 0}
@@ -38,6 +42,7 @@
       placeholder="Sort by..."
       maxSelect={1}
       on:change={(e) => ($sortBy = e.detail.option.label)}
+      --sms-max-width="14em"
     />
     {#if $sortBy !== ``}
       <RadioButtons
