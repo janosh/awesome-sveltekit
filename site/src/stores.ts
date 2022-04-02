@@ -1,20 +1,36 @@
 import { writable } from 'svelte/store'
 
-export const sortByOptions = [
-  ``,
-  `Date created`,
-  `Date last updated`,
-  `GitHub repo stars`,
-] as const
+function sessionStore<T>(name: string, initialValue: T) {
+  if (typeof sessionStorage !== `undefined` && sessionStorage[name]) {
+    initialValue = JSON.parse(sessionStorage[name])
+  }
 
-export type sortByType = typeof sortByOptions[number]
+  const { subscribe, set } = writable(initialValue)
 
-export const sortBy = writable<sortByType>(``)
+  return {
+    subscribe,
+    set: (val: T) => {
+      if (val !== undefined && typeof sessionStorage !== `undefined`) {
+        sessionStorage[name] = JSON.stringify(val)
+      }
+      set(val)
+    },
+  }
+}
 
-export const filterTags = writable<string[]>([])
+export const sortBy = sessionStore<{ label: string; value: string }[]>(
+  `sortBy`,
+  []
+)
 
-export const tagFilterMode = writable<`and` | `or`>(`or`)
+export const search = sessionStore<string>(`search`, ``)
+
+export const tagFilterMode = sessionStore<`and` | `or`>(`tag-filter-mode`, `or`)
 
 tagFilterMode.subscribe((mode) => {
   if ([`and`, `or`].includes(mode)) return mode
 })
+
+export const filterTags = sessionStore<
+  { label: string; value: string; count: number }[]
+>(`filter-tags`, [])

@@ -1,53 +1,43 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte'
   import MultiSelect from 'svelte-multiselect'
-  import { filterTags, sortBy, sortByOptions, tagFilterMode } from '../stores'
+  import { filterTags, sortBy, tagFilterMode, search } from '../stores'
   import RadioButtons from './RadioButtons.svelte'
 
   export let tags: [string, number][]
-  export let query = ``
-  let selectedTags: { label: string; value: string }[] = []
 
   const dispatch = createEventDispatcher()
-  filterTags.subscribe((tags) => {
-    selectedTags = tags.map((tag) => ({ label: tag, value: tag }))
-  })
 </script>
 
 <div class="filters">
-  <input type="search" bind:value={query} placeholder="Search..." />
+  <input type="search" bind:value={$search} placeholder="Search..." />
   <div>
     <MultiSelect
       options={tags.map(([label, count]) => ({ label, count }))}
       placeholder="Filter by tag..."
-      bind:selectedLabels={$filterTags}
-      bind:selected={selectedTags}
+      bind:selected={$filterTags}
     >
-      <span
-        slot="option"
-        let:option
-        style="display: flex; justify-content: space-between;"
-      >
-        {option.label} <span />
+      <span slot="option" let:option style="display: flex;">
+        {option.label} <span style="flex: 1;" />
         {option.count}
       </span>
     </MultiSelect>
-    {#if $filterTags.length > 0}
+    {#if $filterTags.length > 1}
       <RadioButtons bind:selected={$tagFilterMode} options={[`and`, `or`]} />
     {/if}
   </div>
   <div>
     <MultiSelect
-      options={sortByOptions.filter(Boolean)}
+      options={[`Date created`, `Date last updated`, `GitHub repo stars`]}
       placeholder="Sort by..."
       maxSelect={1}
-      on:change={(e) => ($sortBy = e.detail.option.label)}
+      bind:selected={$sortBy}
       --sms-max-width="14em"
     />
-    {#if $sortBy !== ``}
+    {#if $sortBy}
       <RadioButtons
         selected="desc"
-        on:change={() => dispatch(`toggleSort`)}
+        on:change={() => dispatch(`toggle-sort`)}
         options={[`asc`, `desc`]}
       />
     {/if}
