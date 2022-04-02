@@ -2557,10 +2557,10 @@ svelte-hmr@^0.14.11:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.11.tgz#63d532dc9c2c849ab708592f034765fa2502e568"
   integrity sha512-R9CVfX6DXxW1Kn45Jtmx+yUe+sPhrbYSUp7TkzbW0jI5fVPn6lsNG9NEs5dFg5qRhFNAoVdRw5qQDLALNKhwbQ==
 
-svelte-multiselect@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/svelte-multiselect/-/svelte-multiselect-4.0.3.tgz#22a739e7c548d8d6ff078abfe74f5a319dc0657d"
-  integrity sha512-PaIDsBWI7eu2AJnbXllXLZQgfD/+DmyqV60GJvCyoUVe9nI8zYLxyC86z6cWUxFumLvC4shzTdy1cE7JiyFD8g==
+svelte-multiselect@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/svelte-multiselect/-/svelte-multiselect-4.0.5.tgz#64d48c2916f0c18684c4c5a196145453821a2f0c"
+  integrity sha512-LVtEpyIaFZw0ixuFoU0FIO0Qwpa49KX1TtHTBYechGBmr9O1I2X2wun/sMq7XX3Ph56+KIkD2Nmd+nWGq0Wzug==
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.4:
   version "4.10.4"

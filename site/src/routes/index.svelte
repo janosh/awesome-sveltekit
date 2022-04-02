@@ -3,7 +3,7 @@
   import Filters from '../components/Filters.svelte'
   import SiteList from '../components/SiteList.svelte'
   import sites from '../sites.yml'
-  import { filterTags, sortBy, tagFilterMode } from '../stores'
+  import { filterTags, sortBy, tagFilterMode, search } from '../stores'
   import { Site } from '../types'
 
   const tags = Object.entries(
@@ -15,10 +15,9 @@
       }, {} as Record<string, number>)
   ).filter(([, count]) => count > 2)
   tags.sort(([a], [b]) => a.localeCompare(b))
-  let query = ``
 
   $: filterByQuery = (site: Site) => {
-    return query?.length === 0 || JSON.stringify(site).includes(query)
+    return $search?.length === 0 || JSON.stringify(site).includes($search)
   }
   $: filterByTags = (site: Site, filterTags: string[], filterMode: `and` | `or`) => {
     if (filterTags.length === 0) return true
@@ -31,21 +30,27 @@
   }
 
   $: filteredSites = sites.filter(
-    (site) => filterByQuery(site) && filterByTags(site, $filterTags, $tagFilterMode)
+    (site) =>
+      filterByQuery(site) &&
+      filterByTags(
+        site,
+        $filterTags.map((t) => t.label),
+        $tagFilterMode
+      )
   )
   $: sortedSites = filteredSites // copy array reference
 
   // arr.sort() sorts in-place but we need to reassign filteredSites so Svelte rerenders
-  $: if ($sortBy === `GitHub repo stars`) {
+  $: if ($sortBy.find?.((sel) => sel.label === `GitHub repo stars`)) {
     sortedSites = filteredSites.sort(
       (siteA, siteB) => (siteB.repoStars ?? 0) - (siteA.repoStars ?? 0)
     )
-  } else if ($sortBy === `Date created`) {
+  } else if ($sortBy.find?.((sel) => sel.label === `Date created`)) {
     sortedSites = filteredSites.sort(
       (siteA, siteB) =>
         +new Date(siteB.dateCreated ?? 0) - +new Date(siteA.dateCreated ?? 0)
     )
-  } else if ($sortBy === `Date last updated`) {
+  } else if ($sortBy.find?.((sel) => sel.label === `Date last updated`)) {
     sortedSites = filteredSites.sort(
       (siteA, siteB) =>
         +new Date(siteB.lastUpdated ?? 0) - +new Date(siteA.lastUpdated ?? 0)
@@ -59,17 +64,13 @@
   <img src="/svelte-kit.svg" alt="Logo" />
   <h1>{sites.length} Awesome Examples of SvelteKit in the Wild</h1>
 
-  <Filters
-    {tags}
-    bind:query
-    on:toggleSort={() => (sortedSites = sortedSites.reverse())}
-  />
+  <Filters {tags} on:toggle-sort={() => (sortedSites = sortedSites.reverse())} />
 
   {#if filteredSites.length < sites.length}
     <p>{filteredSites.length} match{filteredSites.length !== 1 ? `es` : ``}</p>
   {/if}
 
-  <SiteList sites={sortedSites} />
+  <SiteList sites={sortedSites} {tags} />
 </main>
 
 <style>

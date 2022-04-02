@@ -7,12 +7,6 @@
   import { Site } from '../types'
   import Screenshot from './Screenshot.svelte'
 
-  const appendTagToFilters = (tag: string) => () => {
-    if (!$filterTags.includes(tag)) {
-      $filterTags = [tag, ...$filterTags]
-    }
-  }
-
   export let sites: Site[]
 </script>
 
@@ -37,13 +31,7 @@
       <p class="tags flex">
         <Tag width="1em" height="1.2em" style="margin-right: 1ex;" />
         {#each site.tags as tag}
-          <small
-            class:active={$filterTags.includes(tag)}
-            title={$filterTags.includes(tag)
-              ? `Already selected`
-              : `Filter list of sites to include tag '${tag}'`}
-            on:click={appendTagToFilters(tag)}
-          >
+          <small class:active={$filterTags.find((t) => t.label === tag)}>
             {tag}
           </small>
         {/each}
@@ -74,8 +62,7 @@
   p.tags small:not(:last-child) {
     margin-right: 1ex;
   }
-  p.tags small:not(.active):hover {
-    cursor: pointer;
-    text-decoration: underline;
+  p.tags small.active {
+    font-weight: bold;
   }
 </style>
