@@ -16,7 +16,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.5.1
+    rev: v2.6.2
     hooks:
       - id: prettier
         args: [--config, site/.prettierrc.yml, --write] # edit files in-place
@@ -32,7 +32,7 @@ repos:
         args: [--config-file, utils/.yamllint.yml]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.30.0
+    rev: v0.31.1
     hooks:
       - id: markdownlint
         # MD013: line too long
@@ -48,7 +48,7 @@ repos:
         exclude: yarn.lock
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.6.0
+    rev: v8.12.0
     hooks:
       - id: eslint
         types: [file]
