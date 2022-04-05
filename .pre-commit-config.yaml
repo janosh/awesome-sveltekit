@@ -3,6 +3,8 @@ ci:
 
 default_stages: [commit]
 
+default_install_hook_types: [pre-commit, commit-msg]
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.1.0
@@ -44,6 +46,7 @@ repos:
     rev: v2.1.0
     hooks:
       - id: codespell
+        args: [--ignore-words-list, ons]
         stages: [commit, commit-msg]
         exclude: yarn.lock
 

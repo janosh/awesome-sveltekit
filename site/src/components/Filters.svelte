@@ -34,7 +34,7 @@
       bind:selected={$sortBy}
       --sms-max-width="14em"
     />
-    {#if $sortBy}
+    {#if $sortBy?.length > 0}
       <RadioButtons
         selected="desc"
         on:change={() => dispatch(`toggle-sort`)}
