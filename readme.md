@@ -145,6 +145,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 42. **[ConcertMash](https://concertmash.com)**&emsp;[[code](https://github.com/mcmxcdev/ConcertMash)]&emsp;<img src="https://img.shields.io/github/stars/mcmxcdev/ConcertMash" alt="GitHub stars" valign="middle"><br>
     Easily generate a playlist for your upcoming concerts based on selected artists!<br>
     uses: [TypeScript], [Tailwind], [Spotify Web API], [Filepond], [PNPM], [Netlify]
+43. **[Layer Cake](https://layercake.graphics)**&emsp;[[code](https://github.com/mhkeller/layercake)]&emsp;<img src="https://img.shields.io/github/stars/mhkeller/layercake" alt="GitHub stars" valign="middle"><br>
+    Graphics framework for Svelte with colorful demo page. Can generate responsive graphics server-side that work without JavaScript.<br>
+    uses: [d3], [GitHub Pages], [JSDoc], [Mocha], [Underscore]
 
 ## 🎉 Open to Suggestions
 
@@ -169,6 +172,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [elder.js]: https://github.com/Elderjs/elderjs
 [filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
+[github pages]: https://pages.github.com
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
 [google maps]: https://developers.google.com/maps/documentation/javascript
@@ -182,13 +186,14 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [ibm carbon]: https://carbondesignsystem.com
 [iconify]: https://iconify.design
 [iconoir]: https://iconoir.com
+[jsdoc]: https://jsdoc.app
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
 [markedjs]: https://marked.js.org
 [mdsvex]: https://github.com/pngwn/MDsveX
+[mocha]: https://mochajs.org
 [mvp.css]: https://github.com/andybrewer/mvp
 [netlify]: https://netlify.com
-[pancake]: https://github.com/Rich-Harris/pancake
 [pandoc]: https://pandoc.org
 [plausible]: https://plausible.io
 [pnpm]: https://pnpm.io
@@ -207,6 +212,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [tailwind]: https://tailwindcss.com
 [three.js]: https://threejs.org
 [typescript]: https://typescriptlang.org
+[underscore]: https://underscorejs.org
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org

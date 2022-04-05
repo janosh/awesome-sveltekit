@@ -1342,3 +1342,43 @@
   slug: concertmash
   repoStars: 1
   contributors: []
+- title: Layer Cake
+  url: https://layercake.graphics
+  repo: https://github.com/mhkeller/layercake
+  description: >-
+    Graphics framework for Svelte with colorful demo page. Can generate
+    responsive graphics server-side that work without JavaScript.
+  uses:
+    - d3
+    - GitHub Pages
+    - JSDoc
+    - Mocha
+    - Underscore
+  tags:
+    - charts
+    - dataviz
+    - graphics
+    - layers
+    - canvas
+    - WebGL
+    - open source
+  dateCreated: 2018-10-18T00:00:00.000Z
+  dateAdded: 2022-03-24T00:00:00.000Z
+  lastUpdated: 2022-03-24T00:00:00.000Z
+  slug: layer-cake
+  repoStars: 563
+  contributors:
+    - github: mhkeller
+      twitter: null
+      url: https://mhkeller.com
+      avatar: https://avatars.githubusercontent.com/u/498744?v=4
+      name: Michael Keller
+      location: New York, NY
+      company: csv soundsytem, NY Times
+    - github: jtrim-ons
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/79704945?v=4
+      name: James Trimble's ONS work
+      location: UK
+      company: Office for National Statistics

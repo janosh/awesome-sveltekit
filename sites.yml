@@ -445,3 +445,15 @@
   dateCreated: 2022-03-15
   dateAdded: 2022-03-24
   lastUpdated: 2022-03-24
+
+- title: Layer Cake
+  url: https://layercake.graphics
+  repo: https://github.com/mhkeller/layercake
+  description: Graphics framework for Svelte with colorful demo page. Can generate responsive
+    graphics server-side that work without JavaScript.
+  uses: [d3, GitHub Pages, JSDoc, Mocha, Underscore]
+  tags: [charts, dataviz, graphics, layers, canvas, WebGL]
+  dateCreated: 2018-10-18
+  dateAdded: 2022-03-24
+  lastUpdated: 2022-03-24
+
