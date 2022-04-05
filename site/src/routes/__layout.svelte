@@ -1,4 +1,6 @@
 <script lang="ts">
+  import '../app.css'
+
   let innerWidth: number
 </script>
 

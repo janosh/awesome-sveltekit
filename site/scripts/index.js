@@ -10,7 +10,8 @@ export function title_to_slug(title) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   // module was not imported but called directly
   // process.argv.slice(2) passes on CLI args to child process
-  fork(`${root_dir}/site/scripts/parseSitesYaml.js`, process.argv.slice(2))
-  fork(`${root_dir}/site/scripts/screenshots.js`, process.argv.slice(2))
-  fork(`${root_dir}/site/scripts/readmeSiteList.js`, process.argv.slice(2))
+  const argv = process.argv.slice(2)
+  fork(`${root_dir}/site/scripts/fetch-github-metadata.js`, argv)
+  fork(`${root_dir}/site/scripts/screenshots.js`, argv)
+  fork(`${root_dir}/site/scripts/update-readme.js`, argv)
 }
