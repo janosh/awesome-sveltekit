@@ -1382,3 +1382,35 @@
       name: James Trimble's ONS work
       location: UK
       company: Office for National Statistics
+- title: Pancake
+  url: https://pancake-charts.surge.sh
+  repo: https://github.com/Rich-Harris/pancake
+  description: >-
+    Experimental Svelte charting library. Visualize data with a combination of
+    HTML, SVG and canvas/WebGL. Designed with server-side rendering in mind, so
+    graphs potentially work without JavaScript. [Blog
+    post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).
+  uses:
+    - d3
+    - surge.sh
+    - TypeScript
+  tags:
+    - charts
+    - dataviz
+    - graphics
+    - canvas
+    - WebGL
+    - open source
+  dateCreated: 2019-10-01T00:00:00.000Z
+  dateAdded: 2022-04-05T00:00:00.000Z
+  lastUpdated: 2022-04-05T00:00:00.000Z
+  slug: pancake
+  repoStars: 990
+  contributors:
+    - github: Rich-Harris
+      twitter: null
+      url: https://twitter.com/rich_harris
+      avatar: https://avatars.githubusercontent.com/u/1162160?v=4
+      name: Rich Harris
+      location: NYC
+      company: null

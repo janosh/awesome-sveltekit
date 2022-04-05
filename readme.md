@@ -148,6 +148,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 43. **[Layer Cake](https://layercake.graphics)**&emsp;[[code](https://github.com/mhkeller/layercake)]&emsp;<img src="https://img.shields.io/github/stars/mhkeller/layercake" alt="GitHub stars" valign="middle"><br>
     Graphics framework for Svelte with colorful demo page. Can generate responsive graphics server-side that work without JavaScript.<br>
     uses: [d3], [GitHub Pages], [JSDoc], [Mocha], [Underscore]
+44. **[Pancake](https://pancake-charts.surge.sh)**&emsp;[[code](https://github.com/Rich-Harris/pancake)]&emsp;<img src="https://img.shields.io/github/stars/Rich-Harris/pancake" alt="GitHub stars" valign="middle"><br>
+    Experimental Svelte charting library. Visualize data with a combination of HTML, SVG and canvas/WebGL. Designed with server-side rendering in mind, so graphs potentially work without JavaScript. [Blog post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).<br>
+    uses: [d3], [surge.sh], [TypeScript]
 
 ## 🎉 Open to Suggestions
 
@@ -206,6 +209,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
 [supabase]: https://supabase.com
+[surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io

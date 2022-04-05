@@ -449,7 +449,8 @@
 - title: Layer Cake
   url: https://layercake.graphics
   repo: https://github.com/mhkeller/layercake
-  description: Graphics framework for Svelte with colorful demo page. Can generate responsive
+  description: >-
+    Graphics framework for Svelte with colorful demo page. Can generate responsive
     graphics server-side that work without JavaScript.
   uses: [d3, GitHub Pages, JSDoc, Mocha, Underscore]
   tags: [charts, dataviz, graphics, layers, canvas, WebGL]
@@ -457,3 +458,15 @@
   dateAdded: 2022-03-24
   lastUpdated: 2022-03-24
 
+- title: Pancake
+  url: https://pancake-charts.surge.sh
+  repo: https://github.com/Rich-Harris/pancake
+  description: >-
+    Experimental Svelte charting library. Visualize data with a combination of HTML,
+    SVG and canvas/WebGL. Designed with server-side rendering in mind, so graphs potentially work without JavaScript.
+    [Blog post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).
+  uses: [d3, surge.sh, TypeScript]
+  tags: [charts, dataviz, graphics, canvas, WebGL]
+  dateCreated: 2019-10-01
+  dateAdded: 2022-04-05
+  lastUpdated: 2022-04-05
