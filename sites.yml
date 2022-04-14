@@ -470,3 +470,14 @@
   dateCreated: 2019-10-01
   dateAdded: 2022-04-05
   lastUpdated: 2022-04-05
+
+- title: Svelte Headless UI
+  url: https://svelte-headlessui.goss.io
+  repo: https://github.com/rgossiaux/svelte-headlessui
+  description: >-
+    Unofficial Svelte port of Headless UI components.
+  uses: [MDsveX, TypeScript, PostCSS, Tailwind, cssnano, Jest, rehype]
+  tags: [component library, a11y]
+  dateCreated: 2021-12-05
+  dateAdded: 2022-04-14
+  lastUpdated: 2022-04-14

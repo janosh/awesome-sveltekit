@@ -1414,3 +1414,32 @@
       name: Rich Harris
       location: NYC
       company: null
+- title: Svelte Headless UI
+  url: https://svelte-headlessui.goss.io
+  repo: https://github.com/rgossiaux/svelte-headlessui
+  description: Unofficial Svelte port of Headless UI components.
+  uses:
+    - MDsveX
+    - TypeScript
+    - PostCSS
+    - Tailwind
+    - cssnano
+    - Jest
+    - rehype
+  tags:
+    - component library
+    - a11y
+    - open source
+  dateCreated: 2021-12-05T00:00:00.000Z
+  dateAdded: 2022-04-14T00:00:00.000Z
+  lastUpdated: 2022-04-14T00:00:00.000Z
+  slug: svelte-headless-ui
+  repoStars: 573
+  contributors:
+    - github: rgossiaux
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/3475509?v=4
+      name: Ryan Gossiaux
+      location: San Francisco
+      company: null
