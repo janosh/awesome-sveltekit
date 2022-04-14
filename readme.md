@@ -151,6 +151,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 44. **[Pancake](https://pancake-charts.surge.sh)**&emsp;[[code](https://github.com/Rich-Harris/pancake)]&emsp;<img src="https://img.shields.io/github/stars/Rich-Harris/pancake" alt="GitHub stars" valign="middle"><br>
     Experimental Svelte charting library. Visualize data with a combination of HTML, SVG and canvas/WebGL. Designed with server-side rendering in mind, so graphs potentially work without JavaScript. [Blog post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).<br>
     uses: [d3], [surge.sh], [TypeScript]
+45. **[Svelte Headless UI](https://svelte-headlessui.goss.io)**&emsp;[[code](https://github.com/rgossiaux/svelte-headlessui)]&emsp;<img src="https://img.shields.io/github/stars/rgossiaux/svelte-headlessui" alt="GitHub stars" valign="middle"><br>
+    Unofficial Svelte port of Headless UI components.<br>
+    uses: [MDsveX], [TypeScript], [PostCSS], [Tailwind], [cssnano], [Jest], [rehype]
 
 ## 🎉 Open to Suggestions
 
@@ -189,6 +192,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [ibm carbon]: https://carbondesignsystem.com
 [iconify]: https://iconify.design
 [iconoir]: https://iconoir.com
+[jest]: https://jestjs.io
 [jsdoc]: https://jsdoc.app
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
@@ -201,6 +205,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [plausible]: https://plausible.io
 [pnpm]: https://pnpm.io
 [postcss]: https://postcss.org
+[rehype]: https://github.com/rehypejs/rehype
 [rollup]: https://rollupjs.org
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
