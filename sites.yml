@@ -481,3 +481,14 @@
   dateCreated: 2021-12-05
   dateAdded: 2022-04-14
   lastUpdated: 2022-04-14
+
+- title: Svelte Material UI
+  url: https://sveltematerialui.com
+  repo: https://github.com/hperrin/svelte-material-ui
+  siteSrc: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  description: Svelte Material UI Components.
+  uses: [MDsveX, TypeScript, highlight.js, remarkjs, Sass]
+  tags: [material design, component library]
+  dateCreated: 2019-07-17
+  dateAdded: 2022-04-16
+  lastUpdated: 2022-04-16

@@ -1443,3 +1443,38 @@
       name: Ryan Gossiaux
       location: San Francisco
       company: null
+- title: Svelte Material UI
+  url: https://sveltematerialui.com
+  repo: https://github.com/hperrin/svelte-material-ui
+  siteSrc: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  description: Svelte Material UI Components.
+  uses:
+    - MDsveX
+    - TypeScript
+    - highlight.js
+    - remarkjs
+    - Sass
+  tags:
+    - material design
+    - component library
+    - open source
+  dateCreated: 2019-07-17T00:00:00.000Z
+  dateAdded: 2022-04-16T00:00:00.000Z
+  lastUpdated: 2022-04-16T00:00:00.000Z
+  slug: svelte-material-ui
+  repoStars: 2362
+  contributors:
+    - github: hperrin
+      twitter: SciActive
+      url: https://hperrin.com
+      avatar: https://avatars.githubusercontent.com/u/195918?v=4
+      name: Hunter Perrin
+      location: San Diego, CA
+      company: '@sciactive'
+    - github: fiorelorenzo
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/29930922?v=4
+      name: Lorenzo Fiore
+      location: Milan, Italy
+      company: '@efebia-com '
