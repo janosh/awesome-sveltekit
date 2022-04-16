@@ -154,6 +154,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 45. **[Svelte Headless UI](https://svelte-headlessui.goss.io)**&emsp;[[code](https://github.com/rgossiaux/svelte-headlessui)]&emsp;<img src="https://img.shields.io/github/stars/rgossiaux/svelte-headlessui" alt="GitHub stars" valign="middle"><br>
     Unofficial Svelte port of Headless UI components.<br>
     uses: [MDsveX], [TypeScript], [PostCSS], [Tailwind], [cssnano], [Jest], [rehype]
+46. **[Svelte Material UI](https://sveltematerialui.com)**&emsp;[[code](https://github.com/hperrin/svelte-material-ui/tree/master/packages/site)]&emsp;<img src="https://img.shields.io/github/stars/hperrin/svelte-material-ui" alt="GitHub stars" valign="middle"><br>
+    Svelte Material UI Components.<br>
+    uses: [MDsveX], [TypeScript], [highlight.js], [remarkjs], [Sass]
 
 ## 🎉 Open to Suggestions
 
@@ -205,6 +208,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [plausible]: https://plausible.io
 [pnpm]: https://pnpm.io
 [postcss]: https://postcss.org
+[remark]: https://github.com/remarkjs/remark
 [rehype]: https://github.com/rehypejs/rehype
 [rollup]: https://rollupjs.org
 [sanity]: https://sanity.io
