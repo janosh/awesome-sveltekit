@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Twitter from '@svicons/fa-brands/twitter.svelte'
-  import LinkExternal from '@svicons/octicons/link-external.svelte'
-  import MarkGithub from '@svicons/octicons/mark-github.svelte'
+  import Twitter from '~icons/fa-brands/twitter'
+  import LinkExternal from '~icons/octicon/link-external'
+  import MarkGithub from '~icons/octicon/mark-github'
   import { Contributor } from '../types'
 
   export let contributor: Contributor
