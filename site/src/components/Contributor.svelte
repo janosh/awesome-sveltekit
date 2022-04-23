@@ -5,23 +5,25 @@
   import { Contributor } from '../types'
 
   export let contributor: Contributor
+
+  $: ({ name, twitter, github, url } = contributor)
 </script>
 
 <span>
-  {contributor.name}
-  {#if contributor.twitter}
-    <a href="https://twitter.com/@{contributor.twitter}">
-      <Twitter width="1em" />
+  {name ?? github}
+  {#if twitter}
+    <a href="https://twitter.com/@{twitter}">
+      <Twitter />
     </a>
   {/if}
-  {#if contributor.github}
-    <a href="https://github.com/{contributor.github}">
-      <MarkGithub width="1em" />
+  {#if github}
+    <a href="https://github.com/{github}">
+      <MarkGithub />
     </a>
   {/if}
-  {#if contributor.url}
-    <a href={contributor.url}>
-      <LinkExternal width="1em" />
+  {#if url}
+    <a href={url}>
+      <LinkExternal />
     </a>
   {/if}
 </span>

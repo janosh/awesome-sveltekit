@@ -6,11 +6,11 @@ import yaml from 'js-yaml'
 import { basename } from 'path'
 import { root_dir } from './index.js'
 
-const readmePath = `${root_dir}/readme.md`
-const sitesYaml = `${root_dir}/sites.yml`
+const readme_path = `${root_dir}/readme.md`
+const sites_yaml_path = `${root_dir}/sites.yml`
 
-const readme = fs.readFileSync(readmePath, `utf8`)
-const sites = yaml.load(fs.readFileSync(sitesYaml))
+const readme = fs.readFileSync(readme_path, `utf8`)
+const sites = yaml.load(fs.readFileSync(sites_yaml_path))
 
 const new_sites = sites
   .map((site, idx) => {
@@ -47,13 +47,19 @@ const new_sites = sites
   })
   .join(`\n`)
 
+const uses_links = Object.entries(
+  yaml.load(fs.readFileSync(`${root_dir}/uses-links.yml`))
+)
+  .map(([name, url]) => `[${name}]: ${url}`)
+  .join(`\n`)
+
 // replace old sites
-const newReadme = readme.replace(
+const new_readme = readme.replace(
   /## Sites\n\n[\s\S]+\n\n## /, // match everything up to next heading
-  `## Sites\n\n${new_sites}\n\n## `
+  `## Sites\n\n${new_sites}\n\n${uses_links}\n\n## `
 )
 
-fs.writeFileSync(readmePath, newReadme)
+fs.writeFileSync(readme_path, new_readme)
 
 const this_file = basename(process.argv[1])
 console.log(`${this_file} updated readme\n`)

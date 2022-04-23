@@ -5,6 +5,7 @@
   import Stack from '~icons/octicon/stack-16'
   import Star from '~icons/octicon/star'
   import Tag from '~icons/octicon/tag'
+  import uses_links from '../../../uses-links.yml'
   import { Site } from '../types'
   import Contributor from './Contributor.svelte'
   import Screenshot from './Screenshot.svelte'
@@ -28,7 +29,7 @@
       {#if site.repo}
         <a href={site.repo}>
           <small class="flex" style="gap: 6pt;">
-            <MarkGithub width="1.2em" color="white" />Repo
+            <MarkGithub color="white" />Repo
           </small>
         </a>
       {/if}
@@ -40,13 +41,13 @@
     {#if repoStars}
       <hr />
       <p class="flex">
-        <Star width="1em" />&emsp;Star count: <span style="flex: 1" />{repoStars}
+        <Star />&emsp;Star count: <span style="flex: 1" />{repoStars}
       </p>
     {/if}
     {#if contributors?.length > 0}
       <hr />
       <div class:flex={contributors.length === 1} style="margin: 1em 0;">
-        <Person width="1em" style="margin-right: 1em;" /> &emsp; {contributors.length > 1
+        <Person style="margin-right: 1em;" /> &emsp; {contributors.length > 1
           ? `Contributors`
           : `Creator`}:
         {#if contributors.length > 1}
@@ -66,22 +67,31 @@
     {#if dateCreated}
       <hr />
       <p class="flex">
-        <Project width="1em" />&emsp;Project started on:
+        <Project width="12pt" />&emsp;Project started on:
         <span style="flex: 1" />{prettyDate(dateCreated)}
       </p>
     {/if}
     {#if tags?.length > 0}
       <hr />
       <p>
-        <span><Tag width="1em" height="1.2em" />&emsp;Tags:</span>
+        <span><Tag />&emsp;Tags:</span>
         {tags.join(`, `)}
       </p>
     {/if}
     {#if uses && uses?.length > 0}
       <hr />
-      <p class="flex">
-        <Stack width="1em" height="1.2em" />&emsp;Uses:
-        <span style="flex: 1" />{uses.join(`, `)}
+      <p class="uses flex">
+        <Stack />&emsp;Uses:
+        <span style="flex: 1" />
+        {#each uses as tool}
+          {@const href = uses_links[tool.toLowerCase()]}
+          {#if href?.startsWith(`https://`)}
+            <a {href}>{tool}</a>
+          {:else}
+            {href.trigger_error_in_else_case}
+            <!-- all tools should have an https link -->
+          {/if}
+        {/each}
       </p>
     {/if}
   </section>
@@ -111,5 +121,15 @@
   }
   ol.contributors {
     line-height: 1.6em;
+  }
+  p.uses a {
+    background-color: rgba(255, 255, 255, 0.15);
+    line-height: 1.2em;
+    padding: 1pt 3pt;
+    margin: 3pt 0;
+    border-radius: 3pt;
+  }
+  p.uses a:not(:last-child) {
+    margin-right: 1ex;
   }
 </style>
