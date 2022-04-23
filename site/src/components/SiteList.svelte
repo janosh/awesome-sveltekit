@@ -25,11 +25,11 @@
           {idx + 1}. <a href={site.url}>{site.title}</a>
         </span>
         {#if site.repoStars}
-          <small class="flex"><Star width="1em" />&nbsp;{site.repoStars}</small>
+          <small class="flex"><Star />&nbsp;{site.repoStars}</small>
         {/if}
       </div>
       <p class="tags flex">
-        <Tag width="1em" height="1.2em" style="margin-right: 1ex;" />
+        <Tag style="margin-right: 1ex;" />
         {#each site.tags as tag}
           <small class:active={$filterTags.find((t) => t.label === tag)}>
             {tag}

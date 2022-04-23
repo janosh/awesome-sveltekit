@@ -70,7 +70,7 @@
     <p>{filteredSites.length} match{filteredSites.length !== 1 ? `es` : ``}</p>
   {/if}
 
-  <SiteList sites={sortedSites} {tags} />
+  <SiteList sites={sortedSites} />
 </main>
 
 <style>

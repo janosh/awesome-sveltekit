@@ -83,18 +83,25 @@ for (const site of sites) {
   }
 
   // fetch star count
-  const repo_data = await fetch_check(
-    `https://api.github.com/repos/${repoHandle}`
-  )
-
-  site.repoStars = repo_data.stargazers_count
+  try {
+    const url = `https://api.github.com/repos/${repoHandle}`
+    const repo = await fetch_check(url)
+    site.repoStars = repo.stargazers_count
+  } catch (error) {
+    console.error(`Error fetching star count for ${site.title}:`, error)
+  }
 
   // fetch most active contributors
   let contributors = await fetch_check(
     `https://api.github.com/repos/${repoHandle}/contributors`
   )
 
-  contributors = contributors.filter((c) => c.contributions > 10).slice(0, 5)
+  // show at most 5 contributors and only those with more than 10 commits
+  // and of type 'User' (to filter out bots) sorted by number of contributions
+  contributors = contributors
+    .filter((c) => c.contributions > 10 && c.type === `User`)
+    .sort((c1, c2) => c2.contributions - c1.contributions)
+    .slice(0, 5)
 
   contributors = await Promise.all(
     contributors.map(({ url }) => fetch(url, { headers }).then((r) => r.json()))

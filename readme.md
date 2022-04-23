@@ -156,11 +156,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
     uses: [MDsveX], [TypeScript], [PostCSS], [Tailwind], [cssnano], [Jest], [rehype]
 46. **[Svelte Material UI](https://sveltematerialui.com)**&emsp;[[code](https://github.com/hperrin/svelte-material-ui/tree/master/packages/site)]&emsp;<img src="https://img.shields.io/github/stars/hperrin/svelte-material-ui" alt="GitHub stars" valign="middle"><br>
     Svelte Material UI Components.<br>
-    uses: [MDsveX], [TypeScript], [highlight.js], [remarkjs], [Sass]
-
-## 🎉 Open to Suggestions
-
-See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md)! Remember to add new sites to [`sites.yml`](sites.yml), not [readme.md](readme.md) (auto-generated). If you're unsure if a site belongs here, [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) to discuss. This repo is meant to be a community effort.
+    uses: [MDsveX], [TypeScript], [highlight.js], [remark], [Sass]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
@@ -229,3 +225,7 @@ See something that's missing from this list? [PRs welcome](https://github.com/ja
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
+
+## 🎉 Open to Suggestions
+
+See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md)! Remember to add new sites to [`sites.yml`](sites.yml), not [readme.md](readme.md) (auto-generated). If you're unsure if a site belongs here, [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) to discuss. This repo is meant to be a community effort.
