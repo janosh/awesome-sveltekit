@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Star from '@svicons/octicons/star-fill.svelte'
-  import Tag from '@svicons/octicons/tag.svelte'
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
+  import Star from '~icons/octicon/star'
+  import Tag from '~icons/octicon/tag'
   import { filterTags } from '../stores'
   import { Site } from '../types'
   import Screenshot from './Screenshot.svelte'

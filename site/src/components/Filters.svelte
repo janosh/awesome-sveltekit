@@ -1,7 +1,7 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte'
   import MultiSelect from 'svelte-multiselect'
-  import { filterTags, sortBy, tagFilterMode, search } from '../stores'
+  import { filterTags, search, sortBy, tagFilterMode } from '../stores'
   import RadioButtons from './RadioButtons.svelte'
 
   export let tags: [string, number][]

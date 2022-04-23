@@ -18,10 +18,7 @@ function sessionStore<T>(name: string, initialValue: T) {
   }
 }
 
-export const sortBy = sessionStore<{ label: string; value: string }[]>(
-  `sortBy`,
-  []
-)
+export const sortBy = sessionStore<string[]>(`sortBy`, [])
 
 export const search = sessionStore<string>(`search`, ``)
 

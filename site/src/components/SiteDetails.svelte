@@ -1,10 +1,10 @@
 <script lang="ts">
-  import MarkGithub from '@svicons/octicons/mark-github.svelte'
-  import Person from '@svicons/octicons/person.svelte'
-  import Project from '@svicons/octicons/project.svelte'
-  import Stack from '@svicons/octicons/stack.svelte'
-  import Tag from '@svicons/octicons/tag.svelte'
-  import Star from '@svicons/octicons/star-fill.svelte'
+  import MarkGithub from '~icons/octicon/mark-github'
+  import Person from '~icons/octicon/person'
+  import Project from '~icons/octicon/project'
+  import Stack from '~icons/octicon/stack-16'
+  import Star from '~icons/octicon/star'
+  import Tag from '~icons/octicon/tag'
   import { Site } from '../types'
   import Contributor from './Contributor.svelte'
   import Screenshot from './Screenshot.svelte'
@@ -37,14 +37,14 @@
     {#if site.description}
       <p>{@html site.description}</p>
     {/if}
-    <hr />
     {#if repoStars}
+      <hr />
       <p class="flex">
         <Star width="1em" />&emsp;Star count: <span style="flex: 1" />{repoStars}
       </p>
     {/if}
-    <hr />
     {#if contributors?.length > 0}
+      <hr />
       <div class:flex={contributors.length === 1} style="margin: 1em 0;">
         <Person width="1em" style="margin-right: 1em;" /> &emsp; {contributors.length > 1
           ? `Contributors`

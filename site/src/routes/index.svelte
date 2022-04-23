@@ -3,7 +3,7 @@
   import Filters from '../components/Filters.svelte'
   import SiteList from '../components/SiteList.svelte'
   import sites from '../sites.yml'
-  import { filterTags, sortBy, tagFilterMode, search } from '../stores'
+  import { filterTags, search, sortBy, tagFilterMode } from '../stores'
   import { Site } from '../types'
 
   const tags = Object.entries(
@@ -41,16 +41,16 @@
   $: sortedSites = filteredSites // copy array reference
 
   // arr.sort() sorts in-place but we need to reassign filteredSites so Svelte rerenders
-  $: if ($sortBy.find?.((sel) => sel.label === `GitHub repo stars`)) {
+  $: if ($sortBy[0] === `GitHub repo stars`) {
     sortedSites = filteredSites.sort(
       (siteA, siteB) => (siteB.repoStars ?? 0) - (siteA.repoStars ?? 0)
     )
-  } else if ($sortBy.find?.((sel) => sel.label === `Date created`)) {
+  } else if ($sortBy[0] === `Date created`) {
     sortedSites = filteredSites.sort(
       (siteA, siteB) =>
         +new Date(siteB.dateCreated ?? 0) - +new Date(siteA.dateCreated ?? 0)
     )
-  } else if ($sortBy.find?.((sel) => sel.label === `Date last updated`)) {
+  } else if ($sortBy[0] === `Date last updated`) {
     sortedSites = filteredSites.sort(
       (siteA, siteB) =>
         +new Date(siteB.lastUpdated ?? 0) - +new Date(siteA.lastUpdated ?? 0)
