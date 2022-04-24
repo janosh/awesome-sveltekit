@@ -44,8 +44,9 @@ pandoc: https://pandoc.org
 plausible: https://plausible.io
 pnpm: https://pnpm.io
 postcss: https://postcss.org
-remark: https://github.com/remarkjs/remark
+prism: https://prismjs.com
 rehype: https://github.com/rehypejs/rehype
+remark: https://github.com/remarkjs/remark
 rollup: https://rollupjs.org
 sanity: https://sanity.io
 sass: https://sass-lang.com

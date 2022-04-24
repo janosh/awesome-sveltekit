@@ -492,3 +492,25 @@
   dateCreated: 2019-07-17
   dateAdded: 2022-04-16
   lastUpdated: 2022-04-16
+
+- title: Fluent Svelte
+  url: https://fluent-svelte.vercel.app
+  repo: https://github.com/Tropix126/fluent-svelte
+  description: A faithful implementation of Microsoft's Fluent design system in Svelte.
+  uses: [MDsveX, SCSS, TypeScript, remark, rehype, PNPM, PostCSS, Prism]
+  tags: [windows ui, component library, design system]
+  dateCreated: 2021-06-05
+  dateAdded: 2022-04-24
+  lastUpdated: 2022-04-24
+
+- title: SvelteKit on Edge
+  url: https://sveltekit-on-the-edge.vercel.app
+  repo: https://github.com/Rich-Harris/sveltekit-on-the-edge
+  description:
+    SvelteKit, running on the edge. In this case, Vercel's edge network.
+    See <https://twitter.com/leeerob/status/1517627769924034565>.
+  uses: [PNPM, Vercel]
+  tags: [speed, caching, deployment]
+  dateCreated: 2022-04-20
+  dateAdded: 2022-04-24
+  lastUpdated: 2022-04-24

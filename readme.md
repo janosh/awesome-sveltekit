@@ -157,6 +157,12 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 46. **[Svelte Material UI](https://sveltematerialui.com)**&emsp;[[code](https://github.com/hperrin/svelte-material-ui/tree/master/packages/site)]&emsp;<img src="https://img.shields.io/github/stars/hperrin/svelte-material-ui" alt="GitHub stars" valign="middle"><br>
     Svelte Material UI Components.<br>
     uses: [MDsveX], [TypeScript], [highlight.js], [remark], [Sass]
+47. **[Fluent Svelte](https://fluent-svelte.vercel.app)**&emsp;[[code](https://github.com/Tropix126/fluent-svelte)]&emsp;<img src="https://img.shields.io/github/stars/Tropix126/fluent-svelte" alt="GitHub stars" valign="middle"><br>
+    A faithful implementation of Microsoft's Fluent design system in Svelte.<br>
+    uses: [MDsveX], [SCSS], [TypeScript], [remark], [rehype], [PNPM], [PostCSS], [Prism]
+48. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)**&emsp;[[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&emsp;<img src="https://img.shields.io/github/stars/Rich-Harris/sveltekit-on-the-edge" alt="GitHub stars" valign="middle"><br>
+    SvelteKit, running on the edge. In this case, Vercel's edge network. See <https://twitter.com/leeerob/status/1517627769924034565>.<br>
+    uses: [PNPM], [Vercel]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
@@ -204,8 +210,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [plausible]: https://plausible.io
 [pnpm]: https://pnpm.io
 [postcss]: https://postcss.org
-[remark]: https://github.com/remarkjs/remark
+[prism]: https://prismjs.com
 [rehype]: https://github.com/rehypejs/rehype
+[remark]: https://github.com/remarkjs/remark
 [rollup]: https://rollupjs.org
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com

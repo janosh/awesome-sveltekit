@@ -1464,3 +1464,68 @@
       name: Lorenzo Fiore
       location: Milan, Italy
       company: '@efebia-com '
+- title: Fluent Svelte
+  url: https://fluent-svelte.vercel.app
+  repo: https://github.com/Tropix126/fluent-svelte
+  description: A faithful implementation of Microsoft's Fluent design system in Svelte.
+  uses:
+    - MDsveX
+    - SCSS
+    - TypeScript
+    - remark
+    - rehype
+    - PNPM
+    - PostCSS
+    - Prism
+  tags:
+    - windows ui
+    - component library
+    - design system
+    - open source
+  dateCreated: 2021-06-05T00:00:00.000Z
+  dateAdded: 2022-04-24T00:00:00.000Z
+  lastUpdated: 2022-04-24T00:00:00.000Z
+  slug: fluent-svelte
+  repoStars: 244
+  contributors:
+    - github: Tropix126
+      twitter: null
+      url: https://tropix126.vercel.app
+      avatar: https://avatars.githubusercontent.com/u/42101043?v=4
+      name: Tropical
+      location: null
+      company: null
+    - github: TheOnlyTails
+      twitter: The_Only_Tails
+      url: https://theonlytails.com
+      avatar: https://avatars.githubusercontent.com/u/65342367?v=4
+      name: TheOnlyTails
+      location: Here
+      company: null
+- title: SvelteKit on Edge
+  url: https://sveltekit-on-the-edge.vercel.app
+  repo: https://github.com/Rich-Harris/sveltekit-on-the-edge
+  description: >-
+    SvelteKit, running on the edge. In this case, Vercel's edge network. See
+    <https://twitter.com/leeerob/status/1517627769924034565>.
+  uses:
+    - PNPM
+    - Vercel
+  tags:
+    - speed
+    - caching
+    - deployment
+    - open source
+  dateCreated: 2022-04-20T00:00:00.000Z
+  dateAdded: 2022-04-24T00:00:00.000Z
+  lastUpdated: 2022-04-24T00:00:00.000Z
+  slug: sveltekit-on-edge
+  repoStars: 63
+  contributors:
+    - github: Rich-Harris
+      twitter: null
+      url: https://twitter.com/rich_harris
+      avatar: https://avatars.githubusercontent.com/u/1162160?v=4
+      name: Rich Harris
+      location: NYC
+      company: null
