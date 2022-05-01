@@ -1,6 +1,7 @@
 algolia: https://algolia.com
 anime.js: https://animejs.com
 aws: https://aws.amazon.com
+changesets: https://github.com/changesets/changesets
 chart.js: https://chartjs.org
 cloudflare: https://cloudflare.com
 cloudinary: https://cloudinary.com
@@ -14,6 +15,7 @@ daisyui: https://daisyui.com
 dart: https://dart.dev
 docker: https://docker.com
 dynamodb: https://aws.amazon.com/dynamodb
+echarts: https://github.com/apache/echarts
 elder.js: https://github.com/Elderjs/elderjs
 filepond: https://pqina.nl/filepond
 firebase: https://firebase.google.com
@@ -63,6 +65,7 @@ tailwind: https://tailwindcss.com
 three.js: https://threejs.org
 typescript: https://typescriptlang.org
 underscore: https://underscorejs.org
+uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 weepeople: https://github.com/propublica/weepeople
 windi: https://windicss.org

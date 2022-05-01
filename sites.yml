@@ -514,3 +514,14 @@
   dateCreated: 2022-04-20
   dateAdded: 2022-04-24
   lastUpdated: 2022-04-24
+
+- title: evidence
+  url: https://evidence.dev
+  repo: https://github.com/evidence-dev/evidence
+  siteSrc: https://github.com/evidence-dev/evidence/tree/main/sites/example-project
+  description: Evidence enables analysts to deliver a polished business intelligence system using SQL and markdown.
+  uses: [PNPM, Changesets, echarts, uvu]
+  tags: [analytics, business-intelligence, sql, markdown, data-viz, charts]
+  dateCreated: 2021-05-27
+  dateAdded: 2022-05-01
+  lastUpdated: 2022-05-01
