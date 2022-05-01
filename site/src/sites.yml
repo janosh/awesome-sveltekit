@@ -1529,3 +1529,43 @@
       name: Rich Harris
       location: NYC
       company: null
+- title: evidence
+  url: https://evidence.dev
+  repo: https://github.com/evidence-dev/evidence
+  siteSrc: https://github.com/evidence-dev/evidence/tree/main/sites/example-project
+  description: >-
+    Evidence enables analysts to deliver a polished business intelligence system
+    using SQL and markdown.
+  uses:
+    - PNPM
+    - Changesets
+    - echarts
+    - uvu
+  tags:
+    - analytics
+    - business-intelligence
+    - sql
+    - markdown
+    - data-viz
+    - charts
+    - open source
+  dateCreated: 2021-05-27T00:00:00.000Z
+  dateAdded: 2022-05-01T00:00:00.000Z
+  lastUpdated: 2022-05-01T00:00:00.000Z
+  slug: evidence
+  repoStars: 659
+  contributors:
+    - github: hughess
+      twitter: null
+      url: https://evidence.dev
+      avatar: https://avatars.githubusercontent.com/u/12602440?v=4
+      name: null
+      location: Toronto
+      company: Evidence
+    - github: mcrascal
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/6857673?v=4
+      name: Adam
+      location: Toronto, Ontario
+      company: null

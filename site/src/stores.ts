@@ -18,7 +18,7 @@ function sessionStore<T>(name: string, initialValue: T) {
   }
 }
 
-export const sortBy = sessionStore<string[]>(`sortBy`, [])
+export const sortBy = sessionStore<string[]>(`sortBy`, [`GitHub repo stars`])
 
 export const search = sessionStore<string>(`search`, ``)
 

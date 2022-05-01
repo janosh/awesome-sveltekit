@@ -163,10 +163,14 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 48. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)**&emsp;[[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&emsp;<img src="https://img.shields.io/github/stars/Rich-Harris/sveltekit-on-the-edge" alt="GitHub stars" valign="middle"><br>
     SvelteKit, running on the edge. In this case, Vercel's edge network. See <https://twitter.com/leeerob/status/1517627769924034565>.<br>
     uses: [PNPM], [Vercel]
+49. **[evidence](https://evidence.dev)**&emsp;[[code](https://github.com/evidence-dev/evidence/tree/main/sites/example-project)]&emsp;<img src="https://img.shields.io/github/stars/evidence-dev/evidence" alt="GitHub stars" valign="middle"><br>
+    Evidence enables analysts to deliver a polished business intelligence system using SQL and markdown.<br>
+    uses: [PNPM], [Changesets], [echarts], [uvu]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
+[changesets]: https://github.com/changesets/changesets
 [chart.js]: https://chartjs.org
 [cloudflare]: https://cloudflare.com
 [cloudinary]: https://cloudinary.com
@@ -180,6 +184,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [dart]: https://dart.dev
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
+[echarts]: https://github.com/apache/echarts
 [elder.js]: https://github.com/Elderjs/elderjs
 [filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
@@ -229,6 +234,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [three.js]: https://threejs.org
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
+[uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
