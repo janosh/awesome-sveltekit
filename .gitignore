@@ -9,4 +9,4 @@ build
 .netlify
 
 # secrets
-site/.env
+.env
