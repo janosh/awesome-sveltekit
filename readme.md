@@ -33,13 +33,13 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
    uses: [MDsveX]
 5. **[TikZ](https://tikz.netlify.app)**&emsp;[[code](https://github.com/janosh/tikz)]&emsp;<img src="https://img.shields.io/github/stars/janosh/tikz" alt="GitHub stars" valign="middle"><br>
    Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.<br>
-   uses: [TypeScript], [Netlify], [Svicons]
+   uses: [TypeScript], [Netlify], [Svicons], [svelte-multiselect]
 6. **[markushatvan.com](https://markushatvan.com)**<br>
    Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.<br>
    uses: [Tailwind], [MDsveX], [Svelte Forms Lib]
 7. **[Studenten bilden Schüler](https://studenten-bilden-schueler.de)**&emsp;[[code](https://github.com/sbsev/svelte-site)]&emsp;<img src="https://img.shields.io/github/stars/sbsev/svelte-site" alt="GitHub stars" valign="middle"><br>
    Student-run nonprofit initiative with chapters located in university towns all across Germany. Mission is to contribute towards educational equality by providing free tutoring to children from underprivileged families.<br>
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox]
+   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect]
 8. **[Afara](https://afara.foundation)**&emsp;[[code](https://github.com/janosh/afara)]&emsp;<img src="https://img.shields.io/github/stars/janosh/afara" alt="GitHub stars" valign="middle"><br>
    Homepage of the German student-run non-profit Afara e.V. Supports educational and youth welfare projects in Africa.<br>
    uses: [Contentful], [Algolia], [GraphQL], [Netlify]
@@ -166,6 +166,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 49. **[evidence](https://evidence.dev)**&emsp;[[code](https://github.com/evidence-dev/evidence/tree/main/sites/example-project)]&emsp;<img src="https://img.shields.io/github/stars/evidence-dev/evidence" alt="GitHub stars" valign="middle"><br>
     Evidence enables analysts to deliver a polished business intelligence system using SQL and markdown.<br>
     uses: [PNPM], [Changesets], [echarts], [uvu]
+50. **[Coolify](https://coolify.io)**&emsp;[[code](https://github.com/coollabsio/coolify)]&emsp;<img src="https://img.shields.io/github/stars/coollabsio/coolify" alt="GitHub stars" valign="middle"><br>
+    An open-source & self-hostable Heroku / Netlify alternative.<br>
+    uses: [PNPM], [TypeScript], [Tailwind], [sveltekit-i18n], [PostCSS], [Husky]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
@@ -228,6 +231,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [supabase]: https://supabase.com
 [surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
+[svelte-multiselect]: https://github.com/janosh/svelte-multiselect
+[sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io
 [tailwind]: https://tailwindcss.com

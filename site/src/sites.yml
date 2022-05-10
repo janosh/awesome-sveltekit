@@ -177,6 +177,7 @@
     - TypeScript
     - Netlify
     - Svicons
+    - svelte-multiselect
   dateCreated: 2020-08-09T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
@@ -230,6 +231,7 @@
     - GraphQL
     - Netlify
     - MapBox
+    - svelte-multiselect
   tags:
     - non-profit
     - volunteering
@@ -1569,3 +1571,57 @@
       name: Adam
       location: Toronto, Ontario
       company: null
+- title: Coolify
+  url: https://coolify.io
+  repo: https://github.com/coollabsio/coolify
+  description: An open-source & self-hostable Heroku / Netlify alternative.
+  uses:
+    - PNPM
+    - TypeScript
+    - Tailwind
+    - sveltekit-i18n
+    - PostCSS
+    - Husky
+  tags:
+    - self-hosting
+    - deployment
+    - sql
+    - docker
+    - redis
+    - mongodb
+    - databases
+    - open source
+  dateCreated: 2021-03-24T00:00:00.000Z
+  dateAdded: 2022-05-10T00:00:00.000Z
+  lastUpdated: 2022-05-10T00:00:00.000Z
+  slug: coolify
+  repoStars: 3534
+  contributors:
+    - github: andrasbacsai
+      twitter: andrasbacsai
+      url: https://coolify.io
+      avatar: https://avatars.githubusercontent.com/u/5845193?v=4
+      name: Andras Bacsai
+      location: Székesfehérvár, Hungary
+      company: '@codesandbox '
+    - github: dominicbachmann
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/64000291?v=4
+      name: Dominic Bachmann
+      location: Switzerland
+      company: null
+    - github: restray
+      twitter: Restray2
+      url: https://restray.dev
+      avatar: https://avatars.githubusercontent.com/u/27992458?v=4
+      name: Restray
+      location: Paris, France
+      company: '@42School'
+    - github: SaraVieira
+      twitter: NikkitaFTW
+      url: https://iamsaravieira.com
+      avatar: https://avatars.githubusercontent.com/u/1051509?v=4
+      name: Sara Vieira
+      location: Germany
+      company: '@codesandbox '
