@@ -5,7 +5,6 @@ site, then writes the results to site/src/sites.yml. */
 import dotenv from 'dotenv'
 import fs from 'fs'
 import yaml from 'js-yaml'
-import fetch from 'node-fetch'
 import { basename } from 'path'
 import { performance } from 'perf_hooks'
 import { root_dir, title_to_slug } from './index.js'
@@ -65,6 +64,7 @@ for (const site of sites) {
   // add open-source tag for all sites with repo key
   if (site.repo && !site.tags.includes(`open source`)) {
     site.tags.push(`open source`)
+    site.tags.sort((a, b) => a.localeCompare(b)) // sort tags alphabetically in place
   }
 
   // skip site if it doesn't have a repo key or if data was fetched for it before

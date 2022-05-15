@@ -9,17 +9,17 @@
     - Mapbox
     - Docker
   tags:
+    - blog
+    - dev tools
     - docs
     - monorepo
-    - dev tools
-    - blog
-    - REPL
     - open source
+    - REPL
   dateCreated: 2021-10-19T00:00:00.000Z
   dateAdded: 2021-11-11T00:00:00.000Z
   lastUpdated: 2021-11-11T00:00:00.000Z
   slug: svelte.dev
-  repoStars: 57551
+  repoStars: 58129
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -72,7 +72,7 @@
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
   slug: official-sveltekit-docs
-  repoStars: 8045
+  repoStars: 8351
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -119,13 +119,13 @@
     - PNPM
   tags:
     - docs
-    - Vercel
     - open source
+    - Vercel
   dateCreated: 2021-02-15T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
   slug: sk-incognito
-  repoStars: 93
+  repoStars: 92
   contributors:
     - github: GrygrFlzr
       twitter: null
@@ -143,9 +143,9 @@
   uses:
     - MDsveX
   tags:
-    - math
     - education
     - interactive
+    - math
     - open source
   dateCreated: 2020-10-04T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
@@ -167,12 +167,12 @@
     Random collection of MIT-licensed standalone TikZ images, mostly about
     physics and machine learning.
   tags:
-    - research
-    - science
     - diagrams
     - graphics
     - latex
     - open source
+    - research
+    - science
   uses:
     - TypeScript
     - Netlify
@@ -182,7 +182,7 @@
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
   slug: tikz
-  repoStars: 66
+  repoStars: 69
   contributors:
     - github: janosh
       twitter: _jarib
@@ -233,16 +233,16 @@
     - MapBox
     - svelte-multiselect
   tags:
-    - non-profit
-    - volunteering
     - education
     - equality
+    - non-profit
     - open source
+    - volunteering
   dateCreated: 2020-12-12T00:00:00.000Z
   dateAdded: 2021-06-09T00:00:00.000Z
   lastUpdated: 2021-06-09T00:00:00.000Z
   slug: studenten-bilden-schüler
-  repoStars: 7
+  repoStars: 9
   contributors:
     - github: janosh
       twitter: _jarib
@@ -263,11 +263,11 @@
     - GraphQL
     - Netlify
   tags:
-    - non-profit
-    - volunteering
     - education
     - health
+    - non-profit
     - open source
+    - volunteering
   dateCreated: 2021-01-24T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
@@ -296,9 +296,9 @@
     - Netlify
     - Google Maps
   tags:
+    - open source
     - research
     - science
-    - open source
   dateCreated: 2021-01-31T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
@@ -323,8 +323,8 @@
     - Tailwind
     - Netlify
   tags:
-    - webgame
     - open source
+    - webgame
   dateCreated: 2021-05-09T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
@@ -342,15 +342,15 @@
     - Tailwind
     - Netlify
   tags:
+    - cloud computing
     - commercial
     - dev tools
-    - cloud computing
     - open source
   dateCreated: 2021-03-17T00:00:00.000Z
   dateAdded: 2021-05-31T00:00:00.000Z
   lastUpdated: 2021-05-31T00:00:00.000Z
   slug: gitpod
-  repoStars: 216
+  repoStars: 220
   contributors:
     - github: mikenikles
       twitter: mikenikles
@@ -373,13 +373,6 @@
       name: Estelle Weyl
       location: California, USA
       company: Standardista
-    - github: ghuntley
-      twitter: GeoffreyHuntley
-      url: https://www.ghuntley.com/now
-      avatar: https://avatars.githubusercontent.com/u/127353?v=4
-      name: Geoffrey Huntley
-      location: Kangaroo Island, Australia
-      company: '@gitpod-io '
     - github: Cahllagerfeld
       twitter: CahlLagerfeld
       url: null
@@ -387,6 +380,13 @@
       name: null
       location: Black Forest, Germany
       company: '@Gitpod-io'
+    - github: ghuntley
+      twitter: GeoffreyHuntley
+      url: https://www.ghuntley.com/now
+      avatar: https://avatars.githubusercontent.com/u/127353?v=4
+      name: Geoffrey Huntley
+      location: Kangaroo Island, Australia
+      company: '@gitpod-io '
 - title: SvelteKit Experiments
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
@@ -401,14 +401,14 @@
     - Firebase
     - Typescript
   tags:
-    - sample applications
     - cloud computing
     - open source
+    - sample applications
   dateCreated: 2021-05-27T00:00:00.000Z
   dateAdded: 2021-06-09T00:00:00.000Z
   lastUpdated: 2021-06-09T00:00:00.000Z
   slug: sveltekit-experiments
-  repoStars: 41
+  repoStars: 42
   contributors:
     - github: tsukhu
       twitter: TarunKumarSukhu
@@ -489,7 +489,7 @@
   dateAdded: 2021-07-08T00:00:00.000Z
   lastUpdated: 2021-07-08T00:00:00.000Z
   slug: beatbump
-  repoStars: 179
+  repoStars: 200
   contributors:
     - github: snuffyDev
       twitter: null
@@ -517,7 +517,7 @@
   dateAdded: 2021-08-01T00:00:00.000Z
   lastUpdated: 2021-08-01T00:00:00.000Z
   slug: paper-trader-game
-  repoStars: 81
+  repoStars: 82
   contributors:
     - github: davjhan
       twitter: davjhan
@@ -545,7 +545,7 @@
   dateAdded: 2021-08-10T00:00:00.000Z
   lastUpdated: 2021-08-10T00:00:00.000Z
   slug: sveltepress
-  repoStars: 210
+  repoStars: 209
   contributors:
     - github: GeopJr
       twitter: GeopJr1312
@@ -559,9 +559,9 @@
   repo: https://github.com/neurosnap/neovimcraft
   description: Curated list of neovim plugins.
   tags:
+    - open source
     - programming
     - resource list
-    - open source
   uses:
     - TypeScript
     - Husky
@@ -569,7 +569,7 @@
   dateAdded: 2021-08-13T00:00:00.000Z
   lastUpdated: 2021-08-13T00:00:00.000Z
   slug: neovim-craft
-  repoStars: 104
+  repoStars: 110
   contributors:
     - github: neurosnap
       twitter: null
@@ -585,10 +585,10 @@
     An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed
     for 2022!
   tags:
-    - programming
     - blog
-    - portfolio
     - open source
+    - portfolio
+    - programming
   uses:
     - Tailwind
     - Netlify
@@ -596,7 +596,7 @@
   dateAdded: 2021-09-01T00:00:00.000Z
   lastUpdated: 2021-09-01T00:00:00.000Z
   slug: swyxkit
-  repoStars: 278
+  repoStars: 287
   contributors:
     - github: sw-yx
       twitter: swyx
@@ -610,11 +610,11 @@
   repo: https://github.com/svelte-society/sveltesociety.dev
   description: Global network of Svelte fans striving to promote Svelte and its ecosystem.
   tags:
-    - programming
+    - cheat sheets
     - components
     - events
-    - cheat sheets
     - open source
+    - programming
   uses:
     - TypeScript
     - Gitpod
@@ -622,7 +622,7 @@
   dateAdded: 2021-10-01T00:00:00.000Z
   lastUpdated: 2020-10-01T00:00:00.000Z
   slug: svelte-society
-  repoStars: 148
+  repoStars: 150
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
@@ -688,17 +688,17 @@
     - Iconoir
     - Plausible
   tags:
-    - personal
     - blog
-    - portfolio
-    - SCSS
     - MDsveX
     - open source
+    - personal
+    - portfolio
+    - SCSS
   dateCreated: 2021-09-07T00:00:00.000Z
   dateAdded: 2021-10-01T00:00:00.000Z
   lastUpdated: 2021-09-15T00:00:00.000Z
   slug: matt-fantinel
-  repoStars: 117
+  repoStars: 122
   contributors:
     - github: matfantinel
       twitter: Matt_fantinel
@@ -750,15 +750,15 @@
     - SCSS
     - Vercel
   tags:
-    - education
     - coding challenges
+    - education
     - JavaScript
     - open source
   dateCreated: 2021-05-20T00:00:00.000Z
   dateAdded: 2021-10-11T00:00:00.000Z
   lastUpdated: 2021-10-11T00:00:00.000Z
   slug: files
-  repoStars: 156
+  repoStars: 175
   contributors:
     - github: Tropix126
       twitter: null
@@ -797,8 +797,8 @@
     - PostCSS
     - Cloudflare
   tags:
-    - conference
     - community event
+    - conference
     - learning
     - news
     - open source
@@ -845,16 +845,16 @@
     - Tailwind
   tags:
     - blog
-    - rss
+    - open source
     - personal
     - portfolio
+    - rss
     - sitemap
-    - open source
   dateCreated: 2021-05-15T00:00:00.000Z
   dateAdded: 2021-10-26T00:00:00.000Z
   lastUpdated: 2021-10-26T00:00:00.000Z
   slug: kudadam.com
-  repoStars: 7
+  repoStars: 8
   contributors:
     - github: kudadam
       twitter: kudadam_
@@ -872,9 +872,9 @@
     - MVP.css
     - Cloudflare
   tags:
-    - education
-    - conference
     - community event
+    - conference
+    - education
     - learning
     - open source
   dateCreated: 2021-07-06T00:00:00.000Z
@@ -888,8 +888,8 @@
       url: https://moritzmaehr.ch
       avatar: https://avatars.githubusercontent.com/u/14755525?v=4
       name: Moritz Mähr
-      location: Zurich / Basel
-      company: ETH Zurich / Unversity of Basel
+      location: Basel
+      company: Unversity of Basel
     - github: thodel
       twitter: thist_be
       url: https://dh.unibe.ch
@@ -907,15 +907,15 @@
     - Lodash
     - PNPM
   tags:
-    - digital publishing
     - data viz
+    - digital publishing
     - education
     - open source
   dateCreated: 2021-09-03T00:00:00.000Z
   dateAdded: 2021-11-01T00:00:00.000Z
   lastUpdated: 2021-11-01T00:00:00.000Z
   slug: the-pudding
-  repoStars: 30
+  repoStars: 32
   contributors:
     - github: russellgoldenberg
       twitter: codenberg
@@ -939,10 +939,10 @@
     - Netlify
     - service worker
   tags:
-    - portfolio
-    - playful
     - animations
     - open source
+    - playful
+    - portfolio
   dateCreated: 2020-08-15T00:00:00.000Z
   dateAdded: 2021-11-01T00:00:00.000Z
   lastUpdated: 2021-08-15T00:00:00.000Z
@@ -969,19 +969,19 @@
     - PNPM
   tags:
     - blog
-    - template
     - open source
+    - template
   dateCreated: 2021-11-01T00:00:00.000Z
   dateAdded: 2021-11-05T00:00:00.000Z
   lastUpdated: 2021-11-05T00:00:00.000Z
   slug: urara
-  repoStars: 58
+  repoStars: 75
   contributors:
     - github: kwaa
       twitter: null
       url: https://kwaa.dev
       avatar: https://avatars.githubusercontent.com/u/50108258?v=4
-      name: 藍#+85CD
+      name: 藍+85CD
       location: SolIII
       company: '@importantimport'
 - title: connorrothschild.com
@@ -993,15 +993,15 @@
     - GSAP
     - Netlify
   tags:
-    - blog
-    - portfolio
     - animations
+    - blog
     - open source
+    - portfolio
   dateCreated: 2021-12-10T00:00:00.000Z
   dateAdded: 2021-12-11T00:00:00.000Z
   lastUpdated: 2021-12-10T00:00:00.000Z
   slug: connorrothschild.com
-  repoStars: 26
+  repoStars: 32
   contributors:
     - github: connorrothschild
       twitter: CL_Rothschild
@@ -1020,16 +1020,16 @@
     - Vercel
     - MDsveX
   tags:
-    - components
-    - library
     - animations
+    - components
     - interactive
+    - library
     - open source
   dateCreated: 2021-05-18T00:00:00.000Z
   dateAdded: 2021-12-19T00:00:00.000Z
   lastUpdated: 2021-12-19T00:00:00.000Z
   slug: svelte-cubed
-  repoStars: 946
+  repoStars: 974
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1047,16 +1047,16 @@
     - SMUI
     - Sass
   tags:
-    - interactive
     - 3d
     - calculator
+    - interactive
     - monitor
     - open source
   dateCreated: 2018-06-08T00:00:00.000Z
   dateAdded: 2022-01-01T00:00:00.000Z
   lastUpdated: 2022-01-01T00:00:00.000Z
   slug: multi-monitor-calculator
-  repoStars: 23
+  repoStars: 24
   contributors:
     - github: KevinVandy
       twitter: ThomasVanCott
@@ -1077,16 +1077,16 @@
     - Chart.js
     - cssnano
   tags:
-    - developer tool
     - design
+    - developer tool
     - frontend
-    - typography
     - open source
+    - typography
   dateCreated: 2021-11-29T00:00:00.000Z
   dateAdded: 2022-01-04T00:00:00.000Z
   lastUpdated: 2022-01-04T00:00:00.000Z
   slug: modern-fluid-typography-editor
-  repoStars: 219
+  repoStars: 223
   contributors: []
 - title: mermaid-live-editor
   url: https://mermaid.live
@@ -1100,16 +1100,16 @@
     - Cypress
     - Husky
   tags:
+    - charts
     - developer tool
     - diagrams
-    - charts
     - graphics
     - open source
   dateCreated: 2019-11-13T00:00:00.000Z
   dateAdded: 2022-02-05T00:00:00.000Z
   lastUpdated: 2022-02-05T00:00:00.000Z
   slug: mermaid-live-editor
-  repoStars: 1306
+  repoStars: 1387
   contributors:
     - github: sidharthv96
       twitter: sidv42
@@ -1147,15 +1147,15 @@
     - Netlify
     - MarkedJS
   tags:
-    - demo
-    - performance
     - benchmark
+    - demo
     - open source
+    - performance
   dateCreated: 2017-04-20T00:00:00.000Z
   dateAdded: 2022-02-06T00:00:00.000Z
   lastUpdated: 2022-02-06T00:00:00.000Z
   slug: svelte-realworld
-  repoStars: 1436
+  repoStars: 1478
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1164,13 +1164,6 @@
       name: Rich Harris
       location: NYC
       company: null
-    - github: EricSimons
-      twitter: null
-      url: https://twitter.com/ericsimons40
-      avatar: https://avatars.githubusercontent.com/u/556934?v=4
-      name: Eric Simons
-      location: San Francisco, CA
-      company: '@StackBlitz'
     - github: benmccann
       twitter: null
       url: https://www.benmccann.com
@@ -1178,6 +1171,13 @@
       name: Ben McCann
       location: California
       company: null
+    - github: EricSimons
+      twitter: null
+      url: https://twitter.com/ericsimons40
+      avatar: https://avatars.githubusercontent.com/u/556934?v=4
+      name: Eric Simons
+      location: San Francisco, CA
+      company: '@StackBlitz'
     - github: pngwn
       twitter: evilpingwin
       url: null
@@ -1197,14 +1197,14 @@
     - Iconify
   tags:
     - demo
-    - proof of concept
     - learning
     - open source
+    - proof of concept
   dateCreated: 2021-08-12T00:00:00.000Z
   dateAdded: 2022-02-06T00:00:00.000Z
   lastUpdated: 2022-02-06T00:00:00.000Z
   slug: macos-web
-  repoStars: 1281
+  repoStars: 1336
   contributors:
     - github: PuruVJ
       twitter: puruvjdev
@@ -1225,16 +1225,16 @@
     - Tailwind
     - Supabase
   tags:
-    - front-end
     - developer tool
-    - localization
+    - front-end
     - i18n
+    - localization
     - open source
   dateCreated: 2021-08-04T00:00:00.000Z
   dateAdded: 2022-02-23T00:00:00.000Z
   lastUpdated: 2022-02-23T00:00:00.000Z
   slug: inlang-dashboard
-  repoStars: 151
+  repoStars: 156
   contributors:
     - github: samuelstroschein
       twitter: SamuelStros
@@ -1281,10 +1281,10 @@
     - Husky
     - highlight.js
   tags:
-    - graphql
     - data fetching
-    - front-end
     - developer tool
+    - front-end
+    - graphql
     - minimal
     - open source
   dateCreated: 2021-01-19T00:00:00.000Z
@@ -1315,8 +1315,8 @@
     - Netlify
   tags:
     - music
-    - playlist-generator
     - open source
+    - playlist-generator
   dateCreated: 2022-03-15T00:00:00.000Z
   dateAdded: 2022-03-24T00:00:00.000Z
   lastUpdated: 2022-03-24T00:00:00.000Z
@@ -1343,18 +1343,18 @@
     - Mocha
     - Underscore
   tags:
+    - canvas
     - charts
     - dataviz
     - graphics
     - layers
-    - canvas
-    - WebGL
     - open source
+    - WebGL
   dateCreated: 2018-10-18T00:00:00.000Z
   dateAdded: 2022-03-24T00:00:00.000Z
   lastUpdated: 2022-03-24T00:00:00.000Z
   slug: layer-cake
-  repoStars: 571
+  repoStars: 586
   contributors:
     - github: mhkeller
       twitter: null
@@ -1383,17 +1383,17 @@
     - surge.sh
     - TypeScript
   tags:
+    - canvas
     - charts
     - dataviz
     - graphics
-    - canvas
-    - WebGL
     - open source
+    - WebGL
   dateCreated: 2019-10-01T00:00:00.000Z
   dateAdded: 2022-04-05T00:00:00.000Z
   lastUpdated: 2022-04-05T00:00:00.000Z
   slug: pancake
-  repoStars: 996
+  repoStars: 1004
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1415,14 +1415,14 @@
     - Jest
     - rehype
   tags:
-    - component library
     - a11y
+    - component library
     - open source
   dateCreated: 2021-12-05T00:00:00.000Z
   dateAdded: 2022-04-14T00:00:00.000Z
   lastUpdated: 2022-04-14T00:00:00.000Z
   slug: svelte-headless-ui
-  repoStars: 602
+  repoStars: 663
   contributors:
     - github: rgossiaux
       twitter: null
@@ -1443,14 +1443,14 @@
     - remark
     - Sass
   tags:
-    - material design
     - component library
+    - material design
     - open source
   dateCreated: 2019-07-17T00:00:00.000Z
   dateAdded: 2022-04-16T00:00:00.000Z
   lastUpdated: 2022-04-16T00:00:00.000Z
   slug: svelte-material-ui
-  repoStars: 2377
+  repoStars: 2412
   contributors:
     - github: hperrin
       twitter: SciActive
@@ -1480,15 +1480,15 @@
     - PostCSS
     - Prism
   tags:
-    - windows ui
     - component library
     - design system
     - open source
+    - windows ui
   dateCreated: 2021-06-05T00:00:00.000Z
   dateAdded: 2022-04-24T00:00:00.000Z
   lastUpdated: 2022-04-24T00:00:00.000Z
   slug: fluent-svelte
-  repoStars: 244
+  repoStars: 258
   contributors:
     - github: Tropix126
       twitter: null
@@ -1514,15 +1514,15 @@
     - PNPM
     - Vercel
   tags:
-    - speed
     - caching
     - deployment
     - open source
+    - speed
   dateCreated: 2022-04-20T00:00:00.000Z
   dateAdded: 2022-04-24T00:00:00.000Z
   lastUpdated: 2022-04-24T00:00:00.000Z
   slug: sveltekit-on-edge
-  repoStars: 63
+  repoStars: 89
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1546,16 +1546,16 @@
   tags:
     - analytics
     - business-intelligence
-    - sql
-    - markdown
-    - data-viz
     - charts
+    - data-viz
+    - markdown
     - open source
+    - sql
   dateCreated: 2021-05-27T00:00:00.000Z
   dateAdded: 2022-05-01T00:00:00.000Z
   lastUpdated: 2022-05-01T00:00:00.000Z
   slug: evidence
-  repoStars: 659
+  repoStars: 666
   contributors:
     - github: hughess
       twitter: null
@@ -1571,6 +1571,13 @@
       name: Adam
       location: Toronto, Ontario
       company: null
+    - github: archiewood
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/58074498?v=4
+      name: Archie
+      location: null
+      company: '@evidence-dev '
 - title: Coolify
   url: https://coolify.io
   repo: https://github.com/coollabsio/coolify
@@ -1583,19 +1590,19 @@
     - PostCSS
     - Husky
   tags:
-    - self-hosting
-    - deployment
-    - sql
-    - docker
-    - redis
-    - mongodb
     - databases
+    - deployment
+    - docker
+    - mongodb
     - open source
+    - redis
+    - self-hosting
+    - sql
   dateCreated: 2021-03-24T00:00:00.000Z
   dateAdded: 2022-05-10T00:00:00.000Z
   lastUpdated: 2022-05-10T00:00:00.000Z
   slug: coolify
-  repoStars: 3534
+  repoStars: 3585
   contributors:
     - github: andrasbacsai
       twitter: andrasbacsai
