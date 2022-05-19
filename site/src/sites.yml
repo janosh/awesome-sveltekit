@@ -180,7 +180,7 @@
     - svelte-multiselect
   dateCreated: 2020-08-09T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  lastUpdated: 2022-05-10T00:00:00.000Z
   slug: tikz
   repoStars: 69
   contributors:
@@ -232,6 +232,7 @@
     - Netlify
     - MapBox
     - svelte-multiselect
+    - Playwright
   tags:
     - education
     - equality
@@ -240,7 +241,7 @@
     - volunteering
   dateCreated: 2020-12-12T00:00:00.000Z
   dateAdded: 2021-06-09T00:00:00.000Z
-  lastUpdated: 2021-06-09T00:00:00.000Z
+  lastUpdated: 2022-05-19T00:00:00.000Z
   slug: studenten-bilden-schüler
   repoStars: 9
   contributors:
@@ -1632,3 +1633,82 @@
       name: Sara Vieira
       location: Germany
       company: '@codesandbox '
+- title: Flowbite
+  url: https://flowbite-svelte.com
+  repo: https://github.com/themesberg/flowbite-svelte
+  description: >-
+    Official Svelte components built for Flowbite and Tailwind CSS. All
+    interactivity handled by Svelte.
+  uses:
+    - PNPM
+    - TypeScript
+    - Tailwind
+    - MDsveX
+    - Prism
+    - PostCSS
+    - Playwright
+  tags:
+    - component library
+    - dark-mode
+    - forms
+    - modals
+    - open source
+    - spinners
+    - toast
+  dateCreated: 2022-01-24T00:00:00.000Z
+  dateAdded: 2022-05-19T00:00:00.000Z
+  lastUpdated: 2022-05-19T00:00:00.000Z
+  slug: flowbite
+  repoStars: 85
+  contributors:
+    - github: shinokada
+      twitter: shinokada
+      url: https://blog.codewithshin.com/
+      avatar: https://avatars.githubusercontent.com/u/147320?v=4
+      name: Shinichi Okada
+      location: Kobe, Japan
+      company: null
+    - github: orefalo
+      twitter: null
+      url: https://www.snapcore.com
+      avatar: https://avatars.githubusercontent.com/u/52085?v=4
+      name: Olivier Refalo
+      location: Dubai, UAE
+      company: SnapCore
+- title: Good First Issue Finder
+  url: https://finder.eddiehub.io
+  repo: https://github.com/EddieHubCommunity/good-first-issue-finder
+  description: >-
+    Good First Issue Finder helps new contributors pave their path into the
+    world of OSS.
+  uses:
+    - TypeScript
+    - Tailwind
+    - Husky
+    - Octokit
+    - PostCSS
+  tags:
+    - community
+    - developer guide
+    - open source
+    - oss
+  dateCreated: 2022-01-20T00:00:00.000Z
+  dateAdded: 2022-05-19T00:00:00.000Z
+  lastUpdated: 2022-05-19T00:00:00.000Z
+  slug: good-first-issue-finder
+  repoStars: 38
+  contributors:
+    - github: Cahllagerfeld
+      twitter: CahlLagerfeld
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/43843195?v=4
+      name: null
+      location: Black Forest, Germany
+      company: '@Gitpod-io'
+    - github: eddiejaoude
+      twitter: eddiejaoude
+      url: https://eddiejaoude.io
+      avatar: https://avatars.githubusercontent.com/u/624760?v=4
+      name: Eddie Jaoude
+      location: London, UK | Porto, Portugal | Bali
+      company: Open Source Engineer
