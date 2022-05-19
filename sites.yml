@@ -59,7 +59,7 @@
   uses: [TypeScript, Netlify, Svicons, svelte-multiselect]
   dateCreated: 2020-08-09
   dateAdded: 2021-05-25
-  lastUpdated: 2021-05-25
+  lastUpdated: 2022-05-10
 
 - title: markushatvan.com
   url: https://markushatvan.com
@@ -77,11 +77,18 @@
     Student-run nonprofit initiative with chapters located in university towns all across Germany.
     Mission is to contribute towards educational equality by providing free tutoring to children
     from underprivileged families.
-  uses: [Contentful, Algolia, GraphQL, Netlify, MapBox, svelte-multiselect]
+  uses:
+    - Contentful
+    - Algolia
+    - GraphQL
+    - Netlify
+    - MapBox
+    - svelte-multiselect
+    - Playwright
   tags: [non-profit, volunteering, education, equality]
   dateCreated: 2020-12-12
   dateAdded: 2021-06-09
-  lastUpdated: 2021-06-09
+  lastUpdated: 2022-05-19
 
 - title: Afara
   url: https://afara.foundation
@@ -535,3 +542,23 @@
   dateCreated: 2021-03-24
   dateAdded: 2022-05-10
   lastUpdated: 2022-05-10
+
+- title: Flowbite
+  url: https://flowbite-svelte.com
+  repo: https://github.com/themesberg/flowbite-svelte
+  description: Official Svelte components built for Flowbite and Tailwind CSS. All interactivity handled by Svelte.
+  uses: [PNPM, TypeScript, Tailwind, MDsveX, Prism, PostCSS, Playwright]
+  tags: [component library, forms, modals, spinners, dark-mode, toast]
+  dateCreated: 2022-01-24
+  dateAdded: 2022-05-19
+  lastUpdated: 2022-05-19
+
+- title: Good First Issue Finder
+  url: https://finder.eddiehub.io
+  repo: https://github.com/EddieHubCommunity/good-first-issue-finder
+  description: Good First Issue Finder helps new contributors pave their path into the world of OSS.
+  uses: [TypeScript, Tailwind, Husky, Octokit, PostCSS]
+  tags: [oss, community, developer guide]
+  dateCreated: 2022-01-20
+  dateAdded: 2022-05-19
+  lastUpdated: 2022-05-19

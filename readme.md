@@ -39,7 +39,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
    uses: [Tailwind], [MDsveX], [Svelte Forms Lib]
 7. **[Studenten bilden Schüler](https://studenten-bilden-schueler.de)**&emsp;[[code](https://github.com/sbsev/svelte-site)]&emsp;<img src="https://img.shields.io/github/stars/sbsev/svelte-site" alt="GitHub stars" valign="middle"><br>
    Student-run nonprofit initiative with chapters located in university towns all across Germany. Mission is to contribute towards educational equality by providing free tutoring to children from underprivileged families.<br>
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect]
+   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect], [Playwright]
 8. **[Afara](https://afara.foundation)**&emsp;[[code](https://github.com/janosh/afara)]&emsp;<img src="https://img.shields.io/github/stars/janosh/afara" alt="GitHub stars" valign="middle"><br>
    Homepage of the German student-run non-profit Afara e.V. Supports educational and youth welfare projects in Africa.<br>
    uses: [Contentful], [Algolia], [GraphQL], [Netlify]
@@ -169,6 +169,12 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 50. **[Coolify](https://coolify.io)**&emsp;[[code](https://github.com/coollabsio/coolify)]&emsp;<img src="https://img.shields.io/github/stars/coollabsio/coolify" alt="GitHub stars" valign="middle"><br>
     An open-source & self-hostable Heroku / Netlify alternative.<br>
     uses: [PNPM], [TypeScript], [Tailwind], [sveltekit-i18n], [PostCSS], [Husky]
+51. **[Flowbite](https://flowbite-svelte.com)**&emsp;[[code](https://github.com/themesberg/flowbite-svelte)]&emsp;<img src="https://img.shields.io/github/stars/themesberg/flowbite-svelte" alt="GitHub stars" valign="middle"><br>
+    Official Svelte components built for Flowbite and Tailwind CSS. All interactivity handled by Svelte.<br>
+    uses: [PNPM], [TypeScript], [Tailwind], [MDsveX], [Prism], [PostCSS], [Playwright]
+52. **[Good First Issue Finder](https://finder.eddiehub.io)**&emsp;[[code](https://github.com/EddieHubCommunity/good-first-issue-finder)]&emsp;<img src="https://img.shields.io/github/stars/EddieHubCommunity/good-first-issue-finder" alt="GitHub stars" valign="middle"><br>
+    Good First Issue Finder helps new contributors pave their path into the world of OSS.<br>
+    uses: [TypeScript], [Tailwind], [Husky], [Octokit], [PostCSS]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
@@ -216,6 +222,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [netlify]: https://netlify.com
 [pandoc]: https://pandoc.org
 [plausible]: https://plausible.io
+[playwright]: https://playwright.dev
 [pnpm]: https://pnpm.io
 [postcss]: https://postcss.org
 [prism]: https://prismjs.com
@@ -243,6 +250,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
+[octokit]: https://github.com/octokit/octokit.js
 
 ## 🎉 Open to Suggestions
 

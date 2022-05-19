@@ -44,6 +44,7 @@ mvp.css: https://github.com/andybrewer/mvp
 netlify: https://netlify.com
 pandoc: https://pandoc.org
 plausible: https://plausible.io
+playwright: https://playwright.dev
 pnpm: https://pnpm.io
 postcss: https://postcss.org
 prism: https://prismjs.com
@@ -71,3 +72,4 @@ uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 weepeople: https://github.com/propublica/weepeople
 windi: https://windicss.org
+octokit: https://github.com/octokit/octokit.js
