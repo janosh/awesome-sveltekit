@@ -12,8 +12,10 @@ const sites_yaml_path = `${root_dir}/sites.yml`
 const readme = fs.readFileSync(readme_path, `utf8`)
 const sites = yaml.load(fs.readFileSync(sites_yaml_path))
 
+const new_line = `\n   `
+
 const new_sites = sites
-  .map((site, idx) => {
+  .map((site) => {
     const { title, repo, uses, description, url, siteSrc } = site
 
     if ([title, uses, description, url].includes(undefined)) {
@@ -21,26 +23,24 @@ const new_sites = sites
     }
 
     try {
-      let codeLink = ``
+      let code_link = ``
       if (repo) {
-        const repoHandle = repo.split(`github.com/`)[1]
-        if (repoHandle.split(`/`).length !== 2) {
-          throw `bad repo handle ${repoHandle}`
+        const repo_handle = repo.split(`github.com/`)[1]
+        if (repo_handle.split(`/`).length !== 2) {
+          throw `bad repo handle ${repo_handle}`
         }
-        codeLink =
-          `&emsp;[[code](${siteSrc ?? repo})]` +
-          `&emsp;<img src="https://img.shields.io/github/stars/${repoHandle}" alt="GitHub stars" valign="middle">`
+        const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}" alt="GitHub stars" valign="middle">`
+        code_link =
+          ` &emsp;${new_line}[[code](${siteSrc ?? repo})]&emsp;${new_line}` +
+          `<a href="${repo}/stargazers">${new_line}${star_badge}${new_line}</a>`
       }
 
-      const indent = ` `.repeat(idx > 8 ? 4 : 3)
       let metadata = description
       if (uses?.length > 0) {
-        metadata += `<br>\n${indent}uses: [${uses.join(`], [`)}]`
+        metadata += `<br>\n${new_line}uses: [${uses.join(`], [`)}]`
       }
 
-      return `${
-        idx + 1
-      }. **[${title}](${url})**${codeLink}<br>\n${indent}${metadata}`
+      return `1. **[${title}](${url})**${code_link}\n${new_line}${metadata}\n`
     } catch (err) {
       throw `${err} for site '${title}'`
     }
@@ -56,7 +56,7 @@ const uses_links = Object.entries(
 // replace old sites
 const new_readme = readme.replace(
   /## Sites\n\n[\s\S]+\n\n## /, // match everything up to next heading
-  `## Sites\n\n${new_sites}\n\n${uses_links}\n\n## `
+  `## Sites\n\n${new_sites}\n${uses_links}\n\n## `
 )
 
 fs.writeFileSync(readme_path, new_readme)
