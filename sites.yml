@@ -1,12 +1,12 @@
-# For admissible fields see site/src/types.ts. If you introduce a new field,
-# please mention in your PR.
-
 # The description key supports full markdown syntax.
 
 # New tags should strike a balance between generality and specificity so they convey
 # useful information but are still applicable to at least a few other sites.
 
-# The field 'dateCreated' is usually the date of first commit on a project.
+# dateCreated is usually the date of first commit on a project.
+# siteSrc is the link to a subfolder if e.g. the site is part of a monorepo.
+
+# If you introduce a new field, please mention in the PR and add it to site/src/types.ts.
 
 - title: Svelte.dev
   url: https://svelte.dev
