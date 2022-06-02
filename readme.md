@@ -83,7 +83,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    Student-run nonprofit initiative with chapters located in university towns all across Germany. Mission is to contribute towards educational equality by providing free tutoring to children from underprivileged families.<br>
 
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect], [Playwright]
+   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect], [Playwright], [Vitest]
 
 1. **[Afara](https://afara.foundation)** &emsp;
    [[code](https://github.com/janosh/afara)]&emsp;
@@ -549,6 +549,16 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Storybook], [Babel], [Testing Library], [Jest], [PostCSS], [Prism]
 
+1. **[Svelvet](https://svelvet.io)** &emsp;
+   [[code](https://github.com/oslabs-beta/Svelvet)]&emsp;
+   <a href="https://github.com/oslabs-beta/Svelvet/stargazers">
+   <img src="https://img.shields.io/github/stars/oslabs-beta/Svelvet" alt="GitHub stars" valign="middle">
+   </a>
+
+   A lightweight Svelte component library for building interactive node-based flow diagrams.<br>
+
+   uses: [Playwright], [D3], [Testing Library], [Tailwind], [PostCSS], [Vitest]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -622,12 +632,13 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io
 [tailwind]: https://tailwindcss.com
-[testing-library]: https://testing-library.com
+[testing library]: https://testing-library.com
 [three.js]: https://threejs.org
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
+[vitest]: https://vitest.dev
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
 

@@ -235,6 +235,7 @@
     - MapBox
     - svelte-multiselect
     - Playwright
+    - Vitest
   tags:
     - education
     - equality
@@ -835,7 +836,7 @@
     - Cytoscape.js
     - Vercel
   tags:
-    - data visualization
+    - data viz
     - statistics
     - machine learning
   dateAdded: 2021-10-19T00:00:00.000Z
@@ -1552,7 +1553,7 @@
     - analytics
     - business-intelligence
     - charts
-    - data-viz
+    - data viz
     - markdown
     - open source
     - sql
@@ -1729,7 +1730,7 @@
     - svelte-multiselect
   tags:
     - chemistry
-    - data-viz
+    - data viz
     - open source
     - plotting
     - science
@@ -1829,4 +1830,50 @@
       avatar: https://avatars.githubusercontent.com/u/305993?v=4
       name: Dayton Lowell
       location: Lincoln, NE
+      company: null
+- title: Svelvet
+  url: https://svelvet.io
+  repo: https://github.com/oslabs-beta/Svelvet
+  description: >-
+    A lightweight Svelte component library for building interactive node-based
+    flow diagrams.
+  uses:
+    - Playwright
+    - D3
+    - Testing Library
+    - Tailwind
+    - PostCSS
+    - Vitest
+  tags:
+    - component library
+    - dev tool
+    - flow diagrams
+    - open source
+    - visualization
+  dateCreated: 2022-05-06T00:00:00.000Z
+  dateAdded: 2022-06-02T00:00:00.000Z
+  lastUpdated: 2022-06-02T00:00:00.000Z
+  slug: svelvet
+  repoStars: 196
+  contributors:
+    - github: andrew-widjaja
+      twitter: null
+      url: https://www.linkedin.com/in/andrew-widjaja/
+      avatar: https://avatars.githubusercontent.com/u/24427237?v=4
+      name: Andrew Widjaja
+      location: San Francisco, CA
+      company: null
+    - github: awillettnyc
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/95263176?v=4
+      name: Aaron
+      location: null
+      company: null
+    - github: anulepau
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/91222945?v=4
+      name: Anu (they/them)
+      location: Greater Seattle Area
       company: null
