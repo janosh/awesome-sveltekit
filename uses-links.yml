@@ -1,6 +1,7 @@
 algolia: https://algolia.com
 anime.js: https://animejs.com
 aws: https://aws.amazon.com
+babel: https://babeljs.io
 changesets: https://github.com/changesets/changesets
 chart.js: https://chartjs.org
 cloudflare: https://cloudflare.com
@@ -35,6 +36,7 @@ iconify: https://iconify.design
 iconoir: https://iconoir.com
 jest: https://jestjs.io
 jsdoc: https://jsdoc.app
+liveblocks: https://liveblocks.io
 lodash: https://lodash.com
 mapbox: https://mapbox.com
 markedjs: https://marked.js.org
@@ -42,11 +44,14 @@ mdsvex: https://github.com/pngwn/MDsveX
 mocha: https://mochajs.org
 mvp.css: https://github.com/andybrewer/mvp
 netlify: https://netlify.com
+octokit: https://github.com/octokit/octokit.js
 pandoc: https://pandoc.org
+panzoom: https://github.com/timmywil/panzoom
 plausible: https://plausible.io
 playwright: https://playwright.dev
 pnpm: https://pnpm.io
 postcss: https://postcss.org
+pre-commit: https://pre-commit.com
 prism: https://prismjs.com
 rehype: https://github.com/rehypejs/rehype
 remark: https://github.com/remarkjs/remark
@@ -57,6 +62,7 @@ scss: https://sass-lang.com
 service worker: https://kit.svelte.dev/docs#service-workers
 smui: https://sveltematerialui.com
 spotify web api: https://github.com/JMPerez/spotify-web-api-js
+storybook: https://storybook.js.org
 supabase: https://supabase.com
 surge.sh: https://surge.sh
 svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
@@ -65,6 +71,7 @@ sveltekit-i18n: https://github.com/sveltekit-i18n/lib
 svicons: https://github.com/janosh/svicons
 tabler icons: https://tabler-icons.io
 tailwind: https://tailwindcss.com
+testing-library: https://testing-library.com
 three.js: https://threejs.org
 typescript: https://typescriptlang.org
 underscore: https://underscorejs.org
@@ -72,4 +79,3 @@ uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 weepeople: https://github.com/propublica/weepeople
 windi: https://windicss.org
-octokit: https://github.com/octokit/octokit.js

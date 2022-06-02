@@ -142,6 +142,7 @@
     geometrically.
   uses:
     - MDsveX
+    - pre-commit
   tags:
     - education
     - interactive
@@ -178,6 +179,7 @@
     - Netlify
     - Svicons
     - svelte-multiselect
+    - pre-commit
   dateCreated: 2020-08-09T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2022-05-10T00:00:00.000Z
@@ -263,6 +265,7 @@
     - Algolia
     - GraphQL
     - Netlify
+    - pre-commit
   tags:
     - education
     - health
@@ -296,6 +299,7 @@
     - GraphQL
     - Netlify
     - Google Maps
+    - pre-commit
   tags:
     - open source
     - research
@@ -1338,7 +1342,7 @@
     Graphics framework for Svelte with colorful demo page. Can generate
     responsive graphics server-side that work without JavaScript.
   uses:
-    - d3
+    - D3
     - GitHub Pages
     - JSDoc
     - Mocha
@@ -1380,7 +1384,7 @@
     graphs potentially work without JavaScript. [Blog
     post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).
   uses:
-    - d3
+    - D3
     - surge.sh
     - TypeScript
   tags:
@@ -1712,3 +1716,117 @@
       name: Eddie Jaoude
       location: London, UK | Porto, Portugal | Bali
       company: Open Source Engineer
+- title: Periodic Table
+  url: https://ptable-elements.netlify.app
+  repo: https://github.com/janosh/periodic-table
+  description: >-
+    Dynamic periodic table of elements written in Svelte. Supports plotting heat
+    maps and hover data.
+  uses:
+    - TypeScript
+    - pre-commit
+    - D3
+    - svelte-multiselect
+  tags:
+    - chemistry
+    - data-viz
+    - open source
+    - plotting
+    - science
+  dateCreated: 2022-05-31T00:00:00.000Z
+  dateAdded: 2022-06-02T00:00:00.000Z
+  lastUpdated: 2022-06-02T00:00:00.000Z
+  slug: periodic-table
+  repoStars: 0
+  contributors:
+    - github: janosh
+      twitter: _jarib
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/30958850?v=4
+      name: Janosh Riebesell
+      location: null
+      company: Cambridge University
+- title: Pixel Art Together
+  url: https://pixelart.liveblocks.app
+  repo: https://github.com/liveblocks/pixel-art-together
+  description: A multiplayer pixel art editor powered by Liveblocks.
+  uses:
+    - TypeScript
+    - Liveblocks
+    - Tailwind
+    - PostCSS
+    - panzoom
+  tags:
+    - art
+    - collaboration
+    - drawing
+    - multiplayer
+    - open source
+  dateCreated: 2022-02-17T00:00:00.000Z
+  dateAdded: 2022-06-02T00:00:00.000Z
+  lastUpdated: 2022-06-02T00:00:00.000Z
+  slug: pixel-art-together
+  repoStars: 110
+  contributors:
+    - github: CTNicholas
+      twitter: ctnicholasdev
+      url: https://ctnicholas.dev
+      avatar: https://avatars.githubusercontent.com/u/33033422?v=4
+      name: Chris
+      location: United Kingdom
+      company: null
+- title: Sveltestrap
+  url: https://sveltestrap.js.org
+  repo: https://github.com/bestguy/sveltestrap
+  description: Bootstrap 4 & 5 components for Svelte.
+  uses:
+    - Storybook
+    - Babel
+    - Testing Library
+    - Jest
+    - PostCSS
+    - Prism
+  tags:
+    - component library
+    - open source
+  dateCreated: 2017-03-19T00:00:00.000Z
+  dateAdded: 2022-06-02T00:00:00.000Z
+  lastUpdated: 2022-06-02T00:00:00.000Z
+  slug: sveltestrap
+  repoStars: 945
+  contributors:
+    - github: bestguy
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/405608?v=4
+      name: Gary Thomas
+      location: San Diego, California
+      company: null
+    - github: eddie0329
+      twitter: null
+      url: https://eddie-sunny.tistory.com/
+      avatar: https://avatars.githubusercontent.com/u/40482274?v=4
+      name: Eddie
+      location: Seoul, Korea
+      company: Kakao Mobility
+    - github: BlackFenix2
+      twitter: ErnieFrancisIV
+      url: https://erniefrancisiv.com
+      avatar: https://avatars.githubusercontent.com/u/15244006?v=4
+      name: Ernie Francis
+      location: null
+      company: null
+    - github: frederikhors
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/41120635?v=4
+      name: null
+      location: null
+      company: null
+    - github: daytonlowell
+      twitter: daytonlowell
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/305993?v=4
+      name: Dayton Lowell
+      location: Lincoln, NE
+      company: null

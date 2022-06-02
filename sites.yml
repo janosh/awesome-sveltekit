@@ -45,7 +45,7 @@
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
-  uses: [MDsveX]
+  uses: [MDsveX, pre-commit]
   tags: [math, education, interactive]
   dateCreated: 2020-10-04
   dateAdded: 2021-05-25
@@ -56,7 +56,7 @@
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
   tags: [research, science, diagrams, graphics, latex]
-  uses: [TypeScript, Netlify, Svicons, svelte-multiselect]
+  uses: [TypeScript, Netlify, Svicons, svelte-multiselect, pre-commit]
   dateCreated: 2020-08-09
   dateAdded: 2021-05-25
   lastUpdated: 2022-05-10
@@ -96,7 +96,7 @@
   description: >-
     Homepage of the German student-run non-profit Afara e.V.
     Supports educational and youth welfare projects in Africa.
-  uses: [Contentful, Algolia, GraphQL, Netlify]
+  uses: [Contentful, Algolia, GraphQL, Netlify, pre-commit]
   tags: [non-profit, volunteering, education, health]
   dateCreated: 2021-01-24
   dateAdded: 2021-05-25
@@ -109,7 +109,7 @@
     ERC Advanced Grant research project. Aims to study feasibility, effectiveness, associated risks
     and side effects of artificial upwelling for increasing ocean productivity, raising fish production,
     and enhancing oceanic CO2 sequestration.
-  uses: [Contentful, Algolia, GraphQL, Netlify, Google Maps]
+  uses: [Contentful, Algolia, GraphQL, Netlify, Google Maps, pre-commit]
   tags: [research, science]
   dateCreated: 2021-01-31
   dateAdded: 2021-05-25
@@ -459,7 +459,7 @@
   description: >-
     Graphics framework for Svelte with colorful demo page. Can generate responsive
     graphics server-side that work without JavaScript.
-  uses: [d3, GitHub Pages, JSDoc, Mocha, Underscore]
+  uses: [D3, GitHub Pages, JSDoc, Mocha, Underscore]
   tags: [charts, dataviz, graphics, layers, canvas, WebGL]
   dateCreated: 2018-10-18
   dateAdded: 2022-03-24
@@ -472,7 +472,7 @@
     Experimental Svelte charting library. Visualize data with a combination of HTML,
     SVG and canvas/WebGL. Designed with server-side rendering in mind, so graphs potentially work without JavaScript.
     [Blog post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).
-  uses: [d3, surge.sh, TypeScript]
+  uses: [D3, surge.sh, TypeScript]
   tags: [charts, dataviz, graphics, canvas, WebGL]
   dateCreated: 2019-10-01
   dateAdded: 2022-04-05
@@ -562,3 +562,33 @@
   dateCreated: 2022-01-20
   dateAdded: 2022-05-19
   lastUpdated: 2022-05-19
+
+- title: Periodic Table
+  url: https://ptable-elements.netlify.app
+  repo: https://github.com/janosh/periodic-table
+  description: Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
+  uses: [TypeScript, pre-commit, D3, svelte-multiselect]
+  tags: [chemistry, science, data-viz, plotting]
+  dateCreated: 2022-05-31
+  dateAdded: 2022-06-02
+  lastUpdated: 2022-06-02
+
+- title: Pixel Art Together
+  url: https://pixelart.liveblocks.app
+  repo: https://github.com/liveblocks/pixel-art-together
+  description: A multiplayer pixel art editor powered by Liveblocks.
+  uses: [TypeScript, Liveblocks, Tailwind, PostCSS, panzoom]
+  tags: [art, drawing, multiplayer, collaboration]
+  dateCreated: 2022-02-17
+  dateAdded: 2022-06-02
+  lastUpdated: 2022-06-02
+
+- title: Sveltestrap
+  url: https://sveltestrap.js.org
+  repo: https://github.com/bestguy/sveltestrap
+  description: Bootstrap 4 & 5 components for Svelte.
+  uses: [Storybook, Babel, Testing Library, Jest, PostCSS, Prism]
+  tags: [component library]
+  dateCreated: 2017-03-19
+  dateAdded: 2022-06-02
+  lastUpdated: 2022-06-02
