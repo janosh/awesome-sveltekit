@@ -57,7 +57,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.<br>
 
-   uses: [MDsveX]
+   uses: [MDsveX], [pre-commit]
 
 1. **[TikZ](https://tikz.netlify.app)** &emsp;
    [[code](https://github.com/janosh/tikz)]&emsp;
@@ -67,7 +67,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.<br>
 
-   uses: [TypeScript], [Netlify], [Svicons], [svelte-multiselect]
+   uses: [TypeScript], [Netlify], [Svicons], [svelte-multiselect], [pre-commit]
 
 1. **[markushatvan.com](https://markushatvan.com)**
 
@@ -93,7 +93,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    Homepage of the German student-run non-profit Afara e.V. Supports educational and youth welfare projects in Africa.<br>
 
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify]
+   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [pre-commit]
 
 1. **[Ocean artUp](https://ocean-artup.eu)** &emsp;
    [[code](https://github.com/janosh/ocean-artup)]&emsp;
@@ -103,7 +103,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    ERC Advanced Grant research project. Aims to study feasibility, effectiveness, associated risks and side effects of artificial upwelling for increasing ocean productivity, raising fish production, and enhancing oceanic CO2 sequestration.<br>
 
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Google Maps]
+   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Google Maps], [pre-commit]
 
 1. **[Guess The Year](https://guess-the-year.davjhan.com)** &emsp;
    [[code](https://github.com/davjhan/guess-the-year-game)]&emsp;
@@ -427,7 +427,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    Graphics framework for Svelte with colorful demo page. Can generate responsive graphics server-side that work without JavaScript.<br>
 
-   uses: [d3], [GitHub Pages], [JSDoc], [Mocha], [Underscore]
+   uses: [D3], [GitHub Pages], [JSDoc], [Mocha], [Underscore]
 
 1. **[Pancake](https://pancake-charts.surge.sh)** &emsp;
    [[code](https://github.com/Rich-Harris/pancake)]&emsp;
@@ -437,7 +437,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    Experimental Svelte charting library. Visualize data with a combination of HTML, SVG and canvas/WebGL. Designed with server-side rendering in mind, so graphs potentially work without JavaScript. [Blog post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).<br>
 
-   uses: [d3], [surge.sh], [TypeScript]
+   uses: [D3], [surge.sh], [TypeScript]
 
 1. **[Svelte Headless UI](https://svelte-headlessui.goss.io)** &emsp;
    [[code](https://github.com/rgossiaux/svelte-headlessui)]&emsp;
@@ -519,9 +519,40 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Tailwind], [Husky], [Octokit], [PostCSS]
 
+1. **[Periodic Table](https://ptable-elements.netlify.app)** &emsp;
+   [[code](https://github.com/janosh/periodic-table)]&emsp;
+   <a href="https://github.com/janosh/periodic-table/stargazers">
+   <img src="https://img.shields.io/github/stars/janosh/periodic-table" alt="GitHub stars" valign="middle">
+   </a>
+
+   Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
+
+   uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect]
+
+1. **[Pixel Art Together](https://pixelart.liveblocks.app)** &emsp;
+   [[code](https://github.com/liveblocks/pixel-art-together)]&emsp;
+   <a href="https://github.com/liveblocks/pixel-art-together/stargazers">
+   <img src="https://img.shields.io/github/stars/liveblocks/pixel-art-together" alt="GitHub stars" valign="middle">
+   </a>
+
+   A multiplayer pixel art editor powered by Liveblocks.<br>
+
+   uses: [TypeScript], [Liveblocks], [Tailwind], [PostCSS], [panzoom]
+
+1. **[Sveltestrap](https://sveltestrap.js.org)** &emsp;
+   [[code](https://github.com/bestguy/sveltestrap)]&emsp;
+   <a href="https://github.com/bestguy/sveltestrap/stargazers">
+   <img src="https://img.shields.io/github/stars/bestguy/sveltestrap" alt="GitHub stars" valign="middle">
+   </a>
+
+   Bootstrap 4 & 5 components for Svelte.<br>
+
+   uses: [Storybook], [Babel], [Testing Library], [Jest], [PostCSS], [Prism]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
+[babel]: https://babeljs.io
 [changesets]: https://github.com/changesets/changesets
 [chart.js]: https://chartjs.org
 [cloudflare]: https://cloudflare.com
@@ -556,6 +587,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [iconoir]: https://iconoir.com
 [jest]: https://jestjs.io
 [jsdoc]: https://jsdoc.app
+[liveblocks]: https://liveblocks.io
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
 [markedjs]: https://marked.js.org
@@ -563,11 +595,14 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [mocha]: https://mochajs.org
 [mvp.css]: https://github.com/andybrewer/mvp
 [netlify]: https://netlify.com
+[octokit]: https://github.com/octokit/octokit.js
 [pandoc]: https://pandoc.org
+[panzoom]: https://github.com/timmywil/panzoom
 [plausible]: https://plausible.io
 [playwright]: https://playwright.dev
 [pnpm]: https://pnpm.io
 [postcss]: https://postcss.org
+[pre-commit]: https://pre-commit.com
 [prism]: https://prismjs.com
 [rehype]: https://github.com/rehypejs/rehype
 [remark]: https://github.com/remarkjs/remark
@@ -578,6 +613,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
+[storybook]: https://storybook.js.org
 [supabase]: https://supabase.com
 [surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
@@ -586,6 +622,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io
 [tailwind]: https://tailwindcss.com
+[testing-library]: https://testing-library.com
 [three.js]: https://threejs.org
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
@@ -593,7 +630,6 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [vercel]: https://vercel.com
 [weepeople]: https://github.com/propublica/weepeople
 [windi]: https://windicss.org
-[octokit]: https://github.com/octokit/octokit.js
 
 ## 🎉 Open to Suggestions
 
