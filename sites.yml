@@ -85,6 +85,7 @@
     - MapBox
     - svelte-multiselect
     - Playwright
+    - Vitest
   tags: [non-profit, volunteering, education, equality]
   dateCreated: 2020-12-12
   dateAdded: 2021-06-09
@@ -298,7 +299,7 @@
   url: https://cybernetic.dev
   description: Data-centric UI experiments
   uses: [Three.js, Cytoscape.js, Vercel]
-  tags: [data visualization, statistics, machine learning]
+  tags: [data viz, statistics, machine learning]
   dateAdded: 2021-10-19
   lastUpdated: 2021-10-17
 
@@ -528,7 +529,7 @@
   siteSrc: https://github.com/evidence-dev/evidence/tree/main/sites/example-project
   description: Evidence enables analysts to deliver a polished business intelligence system using SQL and markdown.
   uses: [PNPM, Changesets, echarts, uvu]
-  tags: [analytics, business-intelligence, sql, markdown, data-viz, charts]
+  tags: [analytics, business-intelligence, sql, markdown, data viz, charts]
   dateCreated: 2021-05-27
   dateAdded: 2022-05-01
   lastUpdated: 2022-05-01
@@ -568,7 +569,7 @@
   repo: https://github.com/janosh/periodic-table
   description: Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
   uses: [TypeScript, pre-commit, D3, svelte-multiselect]
-  tags: [chemistry, science, data-viz, plotting]
+  tags: [chemistry, science, data viz, plotting]
   dateCreated: 2022-05-31
   dateAdded: 2022-06-02
   lastUpdated: 2022-06-02
@@ -590,5 +591,15 @@
   uses: [Storybook, Babel, Testing Library, Jest, PostCSS, Prism]
   tags: [component library]
   dateCreated: 2017-03-19
+  dateAdded: 2022-06-02
+  lastUpdated: 2022-06-02
+
+- title: Svelvet
+  url: https://svelvet.io
+  repo: https://github.com/oslabs-beta/Svelvet
+  description: A lightweight Svelte component library for building interactive node-based flow diagrams.
+  uses: [Playwright, D3, Testing Library, Tailwind, PostCSS, Vitest]
+  tags: [flow diagrams, dev tool, component library, visualization]
+  dateCreated: 2022-05-06
   dateAdded: 2022-06-02
   lastUpdated: 2022-06-02
