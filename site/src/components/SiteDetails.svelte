@@ -73,16 +73,17 @@
     {/if}
     {#if tags?.length > 0}
       <hr />
-      <p>
-        <span><Tag />&emsp;Tags:</span>
-        {tags.join(`, `)}
+      <p class="tags flex">
+        <Tag />&emsp;Tags:&emsp;
+        {#each tags as tag}
+          <span>{tag}</span>
+        {/each}
       </p>
     {/if}
     {#if uses && uses?.length > 0}
       <hr />
       <p class="uses flex">
-        <Stack />&emsp;Uses:
-        <span style="flex: 1" />
+        <Stack />&emsp;Uses:&emsp;
         {#each uses as tool}
           {@const href = uses_links[tool.toLowerCase()]}
           {#if href?.startsWith(`https://`)}
@@ -122,14 +123,16 @@
   ol.contributors {
     line-height: 1.6em;
   }
-  p.uses a {
-    background-color: rgba(255, 255, 255, 0.15);
+  p.uses,
+  p.tags {
+    gap: 5pt;
+  }
+  p.uses a,
+  p.tags span {
+    background-color: rgba(255, 255, 255, 0.1);
     line-height: 1.2em;
     padding: 1pt 3pt;
     margin: 3pt 0;
     border-radius: 3pt;
-  }
-  p.uses a:not(:last-child) {
-    margin-right: 1ex;
   }
 </style>
