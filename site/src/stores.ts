@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store'
 
-function sessionStore<T>(name: string, initialValue: T) {
+function session_store<T>(name: string, initialValue: T) {
   if (typeof sessionStorage !== `undefined` && sessionStorage[name]) {
     initialValue = JSON.parse(sessionStorage[name])
   }
@@ -18,16 +18,31 @@ function sessionStore<T>(name: string, initialValue: T) {
   }
 }
 
-export const sortBy = sessionStore<string[]>(`sortBy`, [`GitHub repo stars`])
+export const sort_by = session_store<string[]>(`sort_by`, [`GitHub repo stars`])
 
-export const search = sessionStore<string>(`search`, ``)
+export const search = session_store<string>(`search`, ``)
 
-export const tagFilterMode = sessionStore<`and` | `or`>(`tag-filter-mode`, `or`)
+export const tag_filter_mode = session_store<`and` | `or`>(
+  `tag-filter-mode`,
+  `or`
+)
+export const contributor_filter_mode = session_store<`and` | `or`>(
+  `contributor-filter-mode`,
+  `or`
+)
 
-tagFilterMode.subscribe((mode) => {
+tag_filter_mode.subscribe((mode) => {
   if ([`and`, `or`].includes(mode)) return mode
 })
 
-export const filterTags = sessionStore<
+contributor_filter_mode.subscribe((mode) => {
+  if ([`and`, `or`].includes(mode)) return mode
+})
+
+export const filter_tags = session_store<
   { label: string; value: string; count: number }[]
 >(`filter-tags`, [])
+
+export const filter_contributors = session_store<
+  { label: string; value: string; count: number }[]
+>(`filter-contributors`, [])

@@ -3,7 +3,7 @@
   import { fade } from 'svelte/transition'
   import Star from '~icons/octicon/star'
   import Tag from '~icons/octicon/tag'
-  import { filterTags } from '../stores'
+  import { filter_tags } from '../stores'
   import { Site } from '../types'
   import Screenshot from './Screenshot.svelte'
 
@@ -31,7 +31,7 @@
       <p class="tags flex">
         <Tag style="margin-right: 1ex;" />
         {#each site.tags as tag}
-          <small class:active={$filterTags.find((t) => t.label === tag)}>
+          <small class:active={$filter_tags.find((t) => t.label === tag)}>
             {tag}
           </small>
         {/each}
