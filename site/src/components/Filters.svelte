@@ -1,10 +1,18 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte'
   import MultiSelect from 'svelte-multiselect'
-  import { filterTags, search, sortBy, tagFilterMode } from '../stores'
+  import {
+    contributor_filter_mode,
+    filter_contributors,
+    filter_tags,
+    search,
+    sort_by,
+    tag_filter_mode,
+  } from '../stores'
   import RadioButtons from './RadioButtons.svelte'
 
   export let tags: [string, number][]
+  export let contributors: [string, number][]
 
   const dispatch = createEventDispatcher()
 </script>
@@ -15,15 +23,30 @@
     <MultiSelect
       options={tags.map(([label, count]) => ({ label, count }))}
       placeholder="Filter by tag..."
-      bind:selected={$filterTags}
+      bind:selected={$filter_tags}
     >
       <span slot="option" let:option style="display: flex;">
         {option.label} <span style="flex: 1;" />
         {option.count}
       </span>
     </MultiSelect>
-    {#if $filterTags.length > 1}
-      <RadioButtons bind:selected={$tagFilterMode} options={[`and`, `or`]} />
+    {#if $filter_tags.length > 1}
+      <RadioButtons bind:selected={$tag_filter_mode} options={[`and`, `or`]} />
+    {/if}
+  </div>
+  <div>
+    <MultiSelect
+      options={contributors.map(([label, count]) => ({ label, count }))}
+      placeholder="Filter by contributor..."
+      bind:selected={$filter_contributors}
+    >
+      <span slot="option" let:option style="display: flex;">
+        {option.label} <span style="flex: 1;" />
+        {option.count}
+      </span>
+    </MultiSelect>
+    {#if $filter_contributors.length > 1}
+      <RadioButtons bind:selected={$contributor_filter_mode} options={[`and`, `or`]} />
     {/if}
   </div>
   <div>
@@ -31,10 +54,10 @@
       options={[`Date created`, `Date last updated`, `GitHub repo stars`]}
       placeholder="Sort by..."
       maxSelect={1}
-      bind:selected={$sortBy}
+      bind:selected={$sort_by}
       --sms-max-width="14em"
     />
-    {#if $sortBy?.length > 0}
+    {#if $sort_by?.length > 0}
       <RadioButtons
         selected="desc"
         on:change={() => dispatch(`toggle-sort`)}
