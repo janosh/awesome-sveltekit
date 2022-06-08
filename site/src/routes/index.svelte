@@ -37,43 +37,28 @@
       }, {} as Record<string, number>)
   ).sort((c1, c2) => c2[1] - c1[1])
 
-  $: filter_by_query = (site: Site) => {
-    return $search?.length === 0 || JSON.stringify(site).includes($search)
-  }
-  $: filter_by_tags = (site: Site) => {
-    const current_tags = $filter_tags.map((t) => t.label)
-    if (current_tags.length === 0) return true
-    if ($tag_filter_mode === `or`)
-      return current_tags.some((tag) => site.tags.includes(tag))
-    if ($tag_filter_mode === `and`)
-      return current_tags.every((tag) => site.tags.includes(tag))
-    console.error(
-      `Unexpected state while filtering for current_tags=
-      ${JSON.stringify(current_tags)}, filter_mode=${$tag_filter_mode}`
-    )
-  }
-  $: filter_by_contributors = (site: Site) => {
-    const current_contributors = $filter_contributors.map((c) => c.label)
-    if (current_contributors.length === 0) return true
-    if ($contributor_filter_mode === `or`)
-      return current_contributors.some((contributor) =>
-        site.contributors?.map((c) => c.name).includes(contributor)
-      )
-    if ($contributor_filter_mode === `and`)
-      return current_contributors.every((contributor) =>
-        site.contributors?.map((c) => c.name).includes(contributor)
-      )
-    console.error(
-      `Unexpected state while filtering for current_contributors=
-      ${JSON.stringify(current_contributors)}, filter_mode=${$contributor_filter_mode}`
-    )
+  function arr_includes(arr: string[], values: string[], mode: 'all' | 'any'): boolean {
+    if (arr.length === 0) return false
+    if (values.length === 0) return true
+    if (mode === `all`) return values.every((val) => arr.includes(val))
+    if (mode === `any`) return values.some((val) => arr.includes(val))
+    else throw `Unexpected filter mode=${mode}`
   }
 
   $: filtered_sites = sites.filter((site) => {
-    const query_match = filter_by_query(site)
-    const tag_match = filter_by_tags(site)
-    const contributor_match = filter_by_contributors(site)
-    return query_match && tag_match && contributor_match
+    const query_match = $search?.length === 0 || JSON.stringify(site).includes($search)
+
+    const _tags = $filter_tags.map((t) => t.label)
+    const _contribs = $filter_contributors.map((c) => c.label)
+
+    const tag_match = arr_includes(site.tags ?? [], _tags, $tag_filter_mode)
+    const contrib_match = arr_includes(
+      site.contributors?.map((c) => c.name) ?? [],
+      _contribs,
+      $contributor_filter_mode
+    )
+
+    return query_match && tag_match && contrib_match
   })
   $: sorted_sites = filtered_sites // copy array reference
 

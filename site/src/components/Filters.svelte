@@ -31,7 +31,7 @@
       </span>
     </MultiSelect>
     {#if $filter_tags.length > 1}
-      <RadioButtons bind:selected={$tag_filter_mode} options={[`and`, `or`]} />
+      <RadioButtons bind:selected={$tag_filter_mode} options={[`all`, `any`]} />
     {/if}
   </div>
   <div>
@@ -46,7 +46,7 @@
       </span>
     </MultiSelect>
     {#if $filter_contributors.length > 1}
-      <RadioButtons bind:selected={$contributor_filter_mode} options={[`and`, `or`]} />
+      <RadioButtons bind:selected={$contributor_filter_mode} options={[`all`, `any`]} />
     {/if}
   </div>
   <div>
