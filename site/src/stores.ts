@@ -22,21 +22,21 @@ export const sort_by = session_store<string[]>(`sort_by`, [`GitHub repo stars`])
 
 export const search = session_store<string>(`search`, ``)
 
-export const tag_filter_mode = session_store<`and` | `or`>(
+export const tag_filter_mode = session_store<`all` | `any`>(
   `tag-filter-mode`,
-  `or`
+  `any`
 )
-export const contributor_filter_mode = session_store<`and` | `or`>(
+export const contributor_filter_mode = session_store<`all` | `any`>(
   `contributor-filter-mode`,
-  `or`
+  `any`
 )
 
 tag_filter_mode.subscribe((mode) => {
-  if ([`and`, `or`].includes(mode)) return mode
+  if ([`all`, `any`].includes(mode)) return mode
 })
 
 contributor_filter_mode.subscribe((mode) => {
-  if ([`and`, `or`].includes(mode)) return mode
+  if ([`all`, `any`].includes(mode)) return mode
 })
 
 export const filter_tags = session_store<
