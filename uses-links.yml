@@ -35,7 +35,9 @@ ibm carbon: https://carbondesignsystem.com
 iconify: https://iconify.design
 iconoir: https://iconoir.com
 jest: https://jestjs.io
+js-yaml: https://github.com/nodeca/js-yaml
 jsdoc: https://jsdoc.app
+json5: https://github.com/json5/json5
 liveblocks: https://liveblocks.io
 lodash: https://lodash.com
 mapbox: https://mapbox.com
@@ -56,6 +58,7 @@ prism: https://prismjs.com
 rehype: https://github.com/rehypejs/rehype
 remark: https://github.com/remarkjs/remark
 rollup: https://rollupjs.org
+sanitize-html: https://github.com/apostrophecms/sanitize-html
 sanity: https://sanity.io
 sass: https://sass-lang.com
 scss: https://sass-lang.com
@@ -66,6 +69,7 @@ storybook: https://storybook.js.org
 supabase: https://supabase.com
 surge.sh: https://surge.sh
 svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
+svelte-intl-precompile: https://github.com/cibernox/svelte-intl-precompile
 svelte-multiselect: https://github.com/janosh/svelte-multiselect
 sveltekit-i18n: https://github.com/sveltekit-i18n/lib
 svicons: https://github.com/janosh/svicons

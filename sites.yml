@@ -3,7 +3,10 @@
 # New tags should strike a balance between generality and specificity so they convey
 # useful information but are still applicable to at least a few other sites.
 
-# dateCreated is usually the date of first commit on a project.
+# dateCreated is usually the date of first commit on a project which can be found
+# by opening the 'Insights > Network' tab on a repo (e.g.
+# https://github.com/janosh/awesome-svelte-kit/network) and clicking
+# cmd/crtl + left arrow to jump to the very start of the commit history.
 # siteSrc is the link to a subfolder if e.g. the site is part of a monorepo.
 
 # If you introduce a new field, please mention in the PR and add it to site/src/types.ts.
@@ -603,3 +606,26 @@
   dateCreated: 2022-05-06
   dateAdded: 2022-06-02
   lastUpdated: 2022-06-02
+
+- title: Cryptgeon
+  url: https://cryptgeon.nicco.io
+  repo: https://github.com/cupcakearmy/cryptgeon
+  siteSrc: https://github.com/cupcakearmy/cryptgeon/tree/main/frontend
+  description: A secure, open source notes and file sharing service inspired by PrivNote written in Rust & Svelte.
+  uses: [svelte-intl-precompile, sanitize-html]
+  tags: [file sharing, note sharing, secure notes, privacy, data protection]
+  dateCreated: 2021-05-01
+  dateAdded: 2022-06-09
+  lastUpdated: 2022-06-09
+
+- title: Svelte Intl Precompile
+  url: https://svelte-intl-precompile.com
+  repo: https://github.com/cibernox/svelte-intl-precompile
+  description:
+    I18n library for Svelte that analyzes your keys at build time for maximum performance and
+    minimal footprint. Built as a SvelteKit plugin so good to use as a reference if you want to build one yourself.
+  uses: [JS-Yaml, JSON5]
+  tags: [i18n, translation, internationalization, localization]
+  dateCreated: 2021-04-15
+  dateAdded: 2022-06-09
+  lastUpdated: 2022-06-09

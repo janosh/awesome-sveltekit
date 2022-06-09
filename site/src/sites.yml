@@ -1877,3 +1877,62 @@
       name: Anu (they/them)
       location: Greater Seattle Area
       company: null
+- title: Cryptgeon
+  url: https://cryptgeon.nicco.io
+  repo: https://github.com/cupcakearmy/cryptgeon
+  siteSrc: https://github.com/cupcakearmy/cryptgeon/tree/main/frontend
+  description: >-
+    A secure, open source notes and file sharing service inspired by PrivNote
+    written in Rust & Svelte.
+  uses:
+    - svelte-intl-precompile
+    - sanitize-html
+  tags:
+    - data protection
+    - file sharing
+    - note sharing
+    - open source
+    - privacy
+    - secure notes
+  dateCreated: 2021-05-01T00:00:00.000Z
+  dateAdded: 2022-06-09T00:00:00.000Z
+  lastUpdated: 2022-06-09T00:00:00.000Z
+  slug: cryptgeon
+  repoStars: 286
+  contributors:
+    - github: cupcakearmy
+      twitter: null
+      url: https://nicco.io
+      avatar: https://avatars.githubusercontent.com/u/14948823?v=4
+      name: Nicco
+      location: Germany
+      company: '@lovoo'
+- title: Svelte Intl Precompile
+  url: https://svelte-intl-precompile.com
+  repo: https://github.com/cibernox/svelte-intl-precompile
+  description: >-
+    I18n library for Svelte that analyzes your keys at build time for maximum
+    performance and minimal footprint. Built as a SvelteKit plugin so good to
+    use as a reference if you want to build one yourself.
+  uses:
+    - JS-Yaml
+    - JSON5
+  tags:
+    - i18n
+    - internationalization
+    - localization
+    - open source
+    - translation
+  dateCreated: 2021-04-15T00:00:00.000Z
+  dateAdded: 2022-06-09T00:00:00.000Z
+  lastUpdated: 2022-06-09T00:00:00.000Z
+  slug: svelte-intl-precompile
+  repoStars: 216
+  contributors:
+    - github: cibernox
+      twitter: miguelcamba
+      url: https://miguelcamba.com
+      avatar: https://avatars.githubusercontent.com/u/265339?v=4
+      name: Miguel Camba
+      location: Coruña, Spain
+      company: null
