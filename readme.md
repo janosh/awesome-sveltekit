@@ -559,6 +559,26 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Playwright], [D3], [Testing Library], [Tailwind], [PostCSS], [Vitest]
 
+1. **[Cryptgeon](https://cryptgeon.nicco.io)** &emsp;
+   [[code](https://github.com/cupcakearmy/cryptgeon/tree/main/frontend)]&emsp;
+   <a href="https://github.com/cupcakearmy/cryptgeon/stargazers">
+   <img src="https://img.shields.io/github/stars/cupcakearmy/cryptgeon" alt="GitHub stars" valign="middle">
+   </a>
+
+   A secure, open source notes and file sharing service inspired by PrivNote written in Rust & Svelte.<br>
+
+   uses: [svelte-intl-precompile], [sanitize-html]
+
+1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com)** &emsp;
+   [[code](https://github.com/cibernox/svelte-intl-precompile)]&emsp;
+   <a href="https://github.com/cibernox/svelte-intl-precompile/stargazers">
+   <img src="https://img.shields.io/github/stars/cibernox/svelte-intl-precompile" alt="GitHub stars" valign="middle">
+   </a>
+
+   I18n library for Svelte that analyzes your keys at build time for maximum performance and minimal footprint. Built as a SvelteKit plugin so good to use as a reference if you want to build one yourself.<br>
+
+   uses: [JS-Yaml], [JSON5]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -596,7 +616,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [iconify]: https://iconify.design
 [iconoir]: https://iconoir.com
 [jest]: https://jestjs.io
+[js-yaml]: https://github.com/nodeca/js-yaml
 [jsdoc]: https://jsdoc.app
+[json5]: https://github.com/json5/json5
 [liveblocks]: https://liveblocks.io
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
@@ -617,6 +639,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [rehype]: https://github.com/rehypejs/rehype
 [remark]: https://github.com/remarkjs/remark
 [rollup]: https://rollupjs.org
+[sanitize-html]: https://github.com/apostrophecms/sanitize-html
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
 [scss]: https://sass-lang.com
@@ -627,6 +650,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [supabase]: https://supabase.com
 [surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
+[svelte-intl-precompile]: https://github.com/cibernox/svelte-intl-precompile
 [svelte-multiselect]: https://github.com/janosh/svelte-multiselect
 [sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
 [svicons]: https://github.com/janosh/svicons
