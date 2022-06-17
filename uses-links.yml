@@ -69,7 +69,9 @@ storybook: https://storybook.js.org
 supabase: https://supabase.com
 surge.sh: https://surge.sh
 svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
+svelte-highlight: https://github.com/metonym/svelte-highlight
 svelte-intl-precompile: https://github.com/cibernox/svelte-intl-precompile
+svelte-markdown: https://github.com/pablo-abc/svelte-markdown
 svelte-multiselect: https://github.com/janosh/svelte-multiselect
 sveltekit-i18n: https://github.com/sveltekit-i18n/lib
 svicons: https://github.com/janosh/svicons

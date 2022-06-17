@@ -134,7 +134,7 @@
       name: null
       location: null
       company: null
-- title: Geometric Bayes
+- title: Geometric Bayes Theorem
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: >-
@@ -151,7 +151,7 @@
   dateCreated: 2020-10-04T00:00:00.000Z
   dateAdded: 2021-05-25T00:00:00.000Z
   lastUpdated: 2021-05-25T00:00:00.000Z
-  slug: geometric-bayes
+  slug: geometric-bayes-theorem
   repoStars: 8
   contributors:
     - github: janosh
@@ -454,7 +454,7 @@
   description: This blog starter shows how to use SvelteKit with GraphCMS.
   uses:
     - Vercel
-    - TailWind
+    - Tailwind
     - SCSS
     - GraphCMS
   tags:
@@ -515,7 +515,7 @@
     - mobile
     - open source
   uses:
-    - TailWind
+    - Tailwind
     - Netlify
     - Chart.js
     - Plausible
@@ -1936,3 +1936,38 @@
       name: Miguel Camba
       location: Coruña, Spain
       company: null
+- title: Windmill
+  url: https://windmill.dev
+  repo: https://github.com/windmill-labs/windmill
+  siteSrc: https://github.com/windmill-labs/windmill/tree/main/frontend
+  description: >-
+    An OSS developer platform to build multi-step automations and internal apps
+    from minimal Python and Typescript scripts.
+  uses:
+    - TypeScript
+    - Tailwind
+    - cssnano
+    - Cypress
+    - PostCSS
+    - svelte-highlight
+    - svelte-markdown
+  tags:
+    - automation
+    - developer tools
+    - open source
+    - python
+    - scripting
+    - self-hostable
+  dateCreated: 2022-05-05T00:00:00.000Z
+  dateAdded: 2022-06-17T00:00:00.000Z
+  lastUpdated: 2022-06-17T00:00:00.000Z
+  slug: windmill
+  repoStars: 665
+  contributors:
+    - github: rubenfiszel
+      twitter: null
+      url: https://rubenfiszel.github.io
+      avatar: https://avatars.githubusercontent.com/u/275584?v=4
+      name: Ruben Fiszel
+      location: Paris, France
+      company: Windmill
