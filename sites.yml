@@ -44,7 +44,7 @@
   dateAdded: 2021-05-25
   lastUpdated: 2021-05-25
 
-- title: Geometric Bayes
+- title: Geometric Bayes Theorem
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
@@ -170,7 +170,7 @@
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
   description: This blog starter shows how to use SvelteKit with GraphCMS.
-  uses: [Vercel, TailWind, SCSS, GraphCMS]
+  uses: [Vercel, Tailwind, SCSS, GraphCMS]
   tags: [blog]
   dateCreated: 2021-05-16
   dateAdded: 2021-06-14
@@ -193,7 +193,7 @@
     A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
     fake stock.
   tags: [game, mobile]
-  uses: [TailWind, Netlify, Chart.js, Plausible]
+  uses: [Tailwind, Netlify, Chart.js, Plausible]
   dateCreated: 2021-07-25
   dateAdded: 2021-08-01
   lastUpdated: 2021-08-01
@@ -629,3 +629,23 @@
   dateCreated: 2021-04-15
   dateAdded: 2022-06-09
   lastUpdated: 2022-06-09
+
+- title: Windmill
+  url: https://windmill.dev
+  repo: https://github.com/windmill-labs/windmill
+  siteSrc: https://github.com/windmill-labs/windmill/tree/main/frontend
+  description:
+    An OSS developer platform to build multi-step automations and internal apps from minimal
+    Python and Typescript scripts.
+  uses:
+    - TypeScript
+    - Tailwind
+    - cssnano
+    - Cypress
+    - PostCSS
+    - svelte-highlight
+    - svelte-markdown
+  tags: [automation, developer tools, python, scripting, self-hostable]
+  dateCreated: 2022-05-05
+  dateAdded: 2022-06-17
+  lastUpdated: 2022-06-17

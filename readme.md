@@ -49,7 +49,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [Tailwind], [PNPM]
 
-1. **[Geometric Bayes](https://svelte-geometric-bayes.netlify.app)** &emsp;
+1. **[Geometric Bayes Theorem](https://svelte-geometric-bayes.netlify.app)** &emsp;
    [[code](https://github.com/janosh/svelte-geometric-bayes)]&emsp;
    <a href="https://github.com/janosh/svelte-geometric-bayes/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/svelte-geometric-bayes" alt="GitHub stars" valign="middle">
@@ -153,7 +153,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    This blog starter shows how to use SvelteKit with GraphCMS.<br>
 
-   uses: [Vercel], [TailWind], [SCSS], [GraphCMS]
+   uses: [Vercel], [Tailwind], [SCSS], [GraphCMS]
 
 1. **[Beatbump](https://beatbump.ml)** &emsp;
    [[code](https://github.com/snuffyDev/beatbump)]&emsp;
@@ -173,7 +173,7 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a fake stock.<br>
 
-   uses: [TailWind], [Netlify], [Chart.js], [Plausible]
+   uses: [Tailwind], [Netlify], [Chart.js], [Plausible]
 
 1. **[SveltePress](https://sveltepress.geopjr.dev)** &emsp;
    [[code](https://github.com/GeopJr/SveltePress)]&emsp;
@@ -579,6 +579,16 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [JS-Yaml], [JSON5]
 
+1. **[Windmill](https://windmill.dev)** &emsp;
+   [[code](https://github.com/windmill-labs/windmill/tree/main/frontend)]&emsp;
+   <a href="https://github.com/windmill-labs/windmill/stargazers">
+   <img src="https://img.shields.io/github/stars/windmill-labs/windmill" alt="GitHub stars" valign="middle">
+   </a>
+
+   An OSS developer platform to build multi-step automations and internal apps from minimal Python and Typescript scripts.<br>
+
+   uses: [TypeScript], [Tailwind], [cssnano], [Cypress], [PostCSS], [svelte-highlight], [svelte-markdown]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -650,7 +660,9 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 [supabase]: https://supabase.com
 [surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
+[svelte-highlight]: https://github.com/metonym/svelte-highlight
 [svelte-intl-precompile]: https://github.com/cibernox/svelte-intl-precompile
+[svelte-markdown]: https://github.com/pablo-abc/svelte-markdown
 [svelte-multiselect]: https://github.com/janosh/svelte-multiselect
 [sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
 [svicons]: https://github.com/janosh/svicons

@@ -47,7 +47,7 @@
     {#if contributors?.length > 0}
       <hr />
       <div class:flex={contributors.length === 1} style="margin: 1em 0;">
-        <Person style="margin-right: 1em;" /> &emsp; {contributors.length > 1
+        <Person style="margin-right: 1em;" />{contributors.length > 1
           ? `Contributors`
           : `Creator`}:
         {#if contributors.length > 1}
@@ -74,7 +74,7 @@
     {#if tags?.length > 0}
       <hr />
       <p class="tags flex">
-        <Tag />&emsp;Tags:&emsp;
+        <Tag />&ensp;Tags:&emsp;
         {#each tags as tag}
           <span>{tag}</span>
         {/each}
@@ -83,7 +83,7 @@
     {#if uses && uses?.length > 0}
       <hr />
       <p class="uses flex">
-        <Stack />&emsp;Uses:&emsp;
+        <Stack />&ensp;Uses:&emsp;
         {#each uses as tool}
           {@const href = uses_links[tool.toLowerCase()]}
           {#if href?.startsWith(`https://`)}
