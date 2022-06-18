@@ -24,8 +24,8 @@
         <span>
           {idx + 1}. <a href={site.url}>{site.title}</a>
         </span>
-        {#if site.repoStars}
-          <small class="flex"><Star />&nbsp;{site.repoStars}</small>
+        {#if site.repo_stars}
+          <small class="flex"><Star />&nbsp;{site.repo_stars}</small>
         {/if}
       </div>
       <p class="tags flex">

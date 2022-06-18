@@ -4,13 +4,13 @@ export type Site = {
   slug: string
   description?: string
   repo?: string
-  siteSrc?: string
-  repoStars?: number
+  site_src?: string
+  repo_stars?: number
   contributors: Contributor[]
   tags: string[]
   uses: string[]
-  dateCreated?: string
-  lastUpdated: string
+  date_created?: string
+  last_updated: string
 }
 
 export type Contributor = {

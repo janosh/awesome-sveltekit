@@ -12,7 +12,7 @@
 
   export let site: Site
 
-  $: ({ title, url, tags, uses, contributors, dateCreated, repoStars } = site)
+  $: ({ title, url, tags, uses, contributors, date_created, repo_stars } = site)
 
   const prettyDate = (date = ``): string =>
     new Date(date).toLocaleString(`en`, {
@@ -38,10 +38,10 @@
     {#if site.description}
       <p>{@html site.description}</p>
     {/if}
-    {#if repoStars}
+    {#if repo_stars}
       <hr />
       <p class="flex">
-        <Star />&emsp;Star count: <span style="flex: 1" />{repoStars}
+        <Star />&emsp;Star count: <span style="flex: 1" />{repo_stars}
       </p>
     {/if}
     {#if contributors?.length > 0}
@@ -64,11 +64,11 @@
         {/if}
       </div>
     {/if}
-    {#if dateCreated}
+    {#if date_created}
       <hr />
       <p class="flex">
         <Project width="12pt" />&emsp;Project started on:
-        <span style="flex: 1" />{prettyDate(dateCreated)}
+        <span style="flex: 1" />{prettyDate(date_created)}
       </p>
     {/if}
     {#if tags?.length > 0}
