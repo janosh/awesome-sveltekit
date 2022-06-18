@@ -2,7 +2,7 @@
 - title: Svelte.dev
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
-  siteSrc: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
+  site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
   description: Cybernetically enhanced web apps.
   uses:
     - CodeMirror
@@ -15,11 +15,11 @@
     - monorepo
     - open source
     - REPL
-  dateCreated: 2021-10-19T00:00:00.000Z
-  dateAdded: 2021-11-11T00:00:00.000Z
-  lastUpdated: 2021-11-11T00:00:00.000Z
+  date_created: 2021-10-19T00:00:00.000Z
+  date_added: 2021-11-11T00:00:00.000Z
+  last_updated: 2021-11-11T00:00:00.000Z
   slug: svelte.dev
-  repoStars: 58129
+  repo_stars: 58129
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -59,7 +59,7 @@
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
-  siteSrc: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
+  site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
   description: The fastest way to build Svelte apps.
   uses:
     - Netlify
@@ -68,11 +68,11 @@
     - docs
     - monorepo
     - open source
-  dateCreated: 2021-03-10T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  date_created: 2021-03-10T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2021-05-25T00:00:00.000Z
   slug: official-sveltekit-docs
-  repoStars: 8351
+  repo_stars: 8351
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -121,11 +121,11 @@
     - docs
     - open source
     - Vercel
-  dateCreated: 2021-02-15T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  date_created: 2021-02-15T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2021-05-25T00:00:00.000Z
   slug: sk-incognito
-  repoStars: 92
+  repo_stars: 92
   contributors:
     - github: GrygrFlzr
       twitter: null
@@ -148,11 +148,11 @@
     - interactive
     - math
     - open source
-  dateCreated: 2020-10-04T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  date_created: 2020-10-04T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2021-05-25T00:00:00.000Z
   slug: geometric-bayes-theorem
-  repoStars: 8
+  repo_stars: 8
   contributors:
     - github: janosh
       twitter: _jarib
@@ -180,11 +180,11 @@
     - Svicons
     - svelte-multiselect
     - pre-commit
-  dateCreated: 2020-08-09T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2022-05-10T00:00:00.000Z
+  date_created: 2020-08-09T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2022-05-10T00:00:00.000Z
   slug: tikz
-  repoStars: 69
+  repo_stars: 69
   contributors:
     - github: janosh
       twitter: _jarib
@@ -207,11 +207,11 @@
     - rss
     - sitemap
     - contact form
-  dateCreated: 2020-08-21T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  date_created: 2020-08-21T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2021-05-25T00:00:00.000Z
   slug: markushatvan.com
-  repoStars: 82
+  repo_stars: 82
   contributors:
     - github: mhatvan
       twitter: HatvanMarkus
@@ -242,11 +242,11 @@
     - non-profit
     - open source
     - volunteering
-  dateCreated: 2020-12-12T00:00:00.000Z
-  dateAdded: 2021-06-09T00:00:00.000Z
-  lastUpdated: 2022-05-19T00:00:00.000Z
+  date_created: 2020-12-12T00:00:00.000Z
+  date_added: 2021-06-09T00:00:00.000Z
+  last_updated: 2022-05-19T00:00:00.000Z
   slug: studenten-bilden-schüler
-  repoStars: 9
+  repo_stars: 9
   contributors:
     - github: janosh
       twitter: _jarib
@@ -273,11 +273,11 @@
     - non-profit
     - open source
     - volunteering
-  dateCreated: 2021-01-24T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  date_created: 2021-01-24T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2021-05-25T00:00:00.000Z
   slug: afara
-  repoStars: 2
+  repo_stars: 2
   contributors:
     - github: janosh
       twitter: _jarib
@@ -305,11 +305,11 @@
     - open source
     - research
     - science
-  dateCreated: 2021-01-31T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  date_created: 2021-01-31T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2021-05-25T00:00:00.000Z
   slug: ocean-artup
-  repoStars: 3
+  repo_stars: 3
   contributors:
     - github: janosh
       twitter: _jarib
@@ -331,11 +331,11 @@
   tags:
     - open source
     - webgame
-  dateCreated: 2021-05-09T00:00:00.000Z
-  dateAdded: 2021-05-25T00:00:00.000Z
-  lastUpdated: 2021-05-25T00:00:00.000Z
+  date_created: 2021-05-09T00:00:00.000Z
+  date_added: 2021-05-25T00:00:00.000Z
+  last_updated: 2021-05-25T00:00:00.000Z
   slug: guess-the-year
-  repoStars: 23
+  repo_stars: 23
   contributors: []
 - title: Gitpod
   url: https://gitpod.io
@@ -352,11 +352,11 @@
     - commercial
     - dev tools
     - open source
-  dateCreated: 2021-03-17T00:00:00.000Z
-  dateAdded: 2021-05-31T00:00:00.000Z
-  lastUpdated: 2021-05-31T00:00:00.000Z
+  date_created: 2021-03-17T00:00:00.000Z
+  date_added: 2021-05-31T00:00:00.000Z
+  last_updated: 2021-05-31T00:00:00.000Z
   slug: gitpod
-  repoStars: 220
+  repo_stars: 220
   contributors:
     - github: mikenikles
       twitter: mikenikles
@@ -410,11 +410,11 @@
     - cloud computing
     - open source
     - sample applications
-  dateCreated: 2021-05-27T00:00:00.000Z
-  dateAdded: 2021-06-09T00:00:00.000Z
-  lastUpdated: 2021-06-09T00:00:00.000Z
+  date_created: 2021-05-27T00:00:00.000Z
+  date_added: 2021-06-09T00:00:00.000Z
+  last_updated: 2021-06-09T00:00:00.000Z
   slug: sveltekit-experiments
-  repoStars: 42
+  repo_stars: 42
   contributors:
     - github: tsukhu
       twitter: TarunKumarSukhu
@@ -435,11 +435,11 @@
   tags:
     - blog
     - open source
-  dateCreated: 2021-05-06T00:00:00.000Z
-  dateAdded: 2021-06-11T00:00:00.000Z
-  lastUpdated: 2021-06-11T00:00:00.000Z
+  date_created: 2021-05-06T00:00:00.000Z
+  date_added: 2021-06-11T00:00:00.000Z
+  last_updated: 2021-06-11T00:00:00.000Z
   slug: puruvj.dev
-  repoStars: 9
+  repo_stars: 9
   contributors:
     - github: PuruVJ
       twitter: puruvjdev
@@ -460,11 +460,11 @@
   tags:
     - blog
     - open source
-  dateCreated: 2021-05-16T00:00:00.000Z
-  dateAdded: 2021-06-14T00:00:00.000Z
-  lastUpdated: 2021-06-14T00:00:00.000Z
+  date_created: 2021-05-16T00:00:00.000Z
+  date_added: 2021-06-14T00:00:00.000Z
+  last_updated: 2021-06-14T00:00:00.000Z
   slug: graphcms-starter-blog
-  repoStars: 6
+  repo_stars: 6
   contributors:
     - github: spences10
       twitter: spences10
@@ -491,11 +491,11 @@
   tags:
     - blog
     - open source
-  dateCreated: 2021-06-17T00:00:00.000Z
-  dateAdded: 2021-07-08T00:00:00.000Z
-  lastUpdated: 2021-07-08T00:00:00.000Z
+  date_created: 2021-06-17T00:00:00.000Z
+  date_added: 2021-07-08T00:00:00.000Z
+  last_updated: 2021-07-08T00:00:00.000Z
   slug: beatbump
-  repoStars: 200
+  repo_stars: 200
   contributors:
     - github: snuffyDev
       twitter: null
@@ -519,11 +519,11 @@
     - Netlify
     - Chart.js
     - Plausible
-  dateCreated: 2021-07-25T00:00:00.000Z
-  dateAdded: 2021-08-01T00:00:00.000Z
-  lastUpdated: 2021-08-01T00:00:00.000Z
+  date_created: 2021-07-25T00:00:00.000Z
+  date_added: 2021-08-01T00:00:00.000Z
+  last_updated: 2021-08-01T00:00:00.000Z
   slug: paper-trader-game
-  repoStars: 82
+  repo_stars: 82
   contributors:
     - github: davjhan
       twitter: davjhan
@@ -547,11 +547,11 @@
     - SCSS
     - Dart
     - Pandoc
-  dateCreated: 2021-07-09T00:00:00.000Z
-  dateAdded: 2021-08-10T00:00:00.000Z
-  lastUpdated: 2021-08-10T00:00:00.000Z
+  date_created: 2021-07-09T00:00:00.000Z
+  date_added: 2021-08-10T00:00:00.000Z
+  last_updated: 2021-08-10T00:00:00.000Z
   slug: sveltepress
-  repoStars: 209
+  repo_stars: 209
   contributors:
     - github: GeopJr
       twitter: GeopJr1312
@@ -571,11 +571,11 @@
   uses:
     - TypeScript
     - Husky
-  dateCreated: 2021-07-18T00:00:00.000Z
-  dateAdded: 2021-08-13T00:00:00.000Z
-  lastUpdated: 2021-08-13T00:00:00.000Z
+  date_created: 2021-07-18T00:00:00.000Z
+  date_added: 2021-08-13T00:00:00.000Z
+  last_updated: 2021-08-13T00:00:00.000Z
   slug: neovim-craft
-  repoStars: 110
+  repo_stars: 110
   contributors:
     - github: neurosnap
       twitter: null
@@ -598,11 +598,11 @@
   uses:
     - Tailwind
     - Netlify
-  dateCreated: 2020-09-11T00:00:00.000Z
-  dateAdded: 2021-09-01T00:00:00.000Z
-  lastUpdated: 2021-09-01T00:00:00.000Z
+  date_created: 2020-09-11T00:00:00.000Z
+  date_added: 2021-09-01T00:00:00.000Z
+  last_updated: 2021-09-01T00:00:00.000Z
   slug: swyxkit
-  repoStars: 287
+  repo_stars: 287
   contributors:
     - github: sw-yx
       twitter: swyx
@@ -624,11 +624,11 @@
   uses:
     - TypeScript
     - Gitpod
-  dateCreated: 2020-05-03T00:00:00.000Z
-  dateAdded: 2021-10-01T00:00:00.000Z
-  lastUpdated: 2020-10-01T00:00:00.000Z
+  date_created: 2020-05-03T00:00:00.000Z
+  date_added: 2021-10-01T00:00:00.000Z
+  last_updated: 2020-10-01T00:00:00.000Z
   slug: svelte-society
-  repoStars: 150
+  repo_stars: 150
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
@@ -680,9 +680,9 @@
     - TypeScript
     - SCSS
     - PostCSS
-  dateCreated: 2021-10-01T00:00:00.000Z
-  dateAdded: 2021-10-01T00:00:00.000Z
-  lastUpdated: 2021-10-01T00:00:00.000Z
+  date_created: 2021-10-01T00:00:00.000Z
+  date_added: 2021-10-01T00:00:00.000Z
+  last_updated: 2021-10-01T00:00:00.000Z
   slug: flayks
 - title: Matt Fantinel
   url: https://fantinel.dev
@@ -700,11 +700,11 @@
     - personal
     - portfolio
     - SCSS
-  dateCreated: 2021-09-07T00:00:00.000Z
-  dateAdded: 2021-10-01T00:00:00.000Z
-  lastUpdated: 2021-09-15T00:00:00.000Z
+  date_created: 2021-09-07T00:00:00.000Z
+  date_added: 2021-10-01T00:00:00.000Z
+  last_updated: 2021-09-15T00:00:00.000Z
   slug: matt-fantinel
-  repoStars: 122
+  repo_stars: 122
   contributors:
     - github: matfantinel
       twitter: Matt_fantinel
@@ -725,9 +725,9 @@
     - videos
     - web development
     - design
-  dateCreated: 2021-09-01T00:00:00.000Z
-  dateAdded: 2021-10-5
-  lastUpdated: 2021-10-05T00:00:00.000Z
+  date_created: 2021-09-01T00:00:00.000Z
+  date_added: 2021-10-5
+  last_updated: 2021-10-05T00:00:00.000Z
   slug: level-up-tutorials
 - title: JSchallenger
   url: https://jschallenger.com
@@ -742,9 +742,9 @@
     - education
     - coding challenges
     - JavaScript
-  dateCreated: 2021-10-09T00:00:00.000Z
-  dateAdded: 2021-10-9
-  lastUpdated: 2021-10-09T00:00:00.000Z
+  date_created: 2021-10-09T00:00:00.000Z
+  date_added: 2021-10-9
+  last_updated: 2021-10-09T00:00:00.000Z
   slug: jschallenger
 - title: Files
   url: https://files.community
@@ -760,11 +760,11 @@
     - education
     - JavaScript
     - open source
-  dateCreated: 2021-05-20T00:00:00.000Z
-  dateAdded: 2021-10-11T00:00:00.000Z
-  lastUpdated: 2021-10-11T00:00:00.000Z
+  date_created: 2021-05-20T00:00:00.000Z
+  date_added: 2021-10-11T00:00:00.000Z
+  last_updated: 2021-10-11T00:00:00.000Z
   slug: files
-  repoStars: 175
+  repo_stars: 175
   contributors:
     - github: Tropix126
       twitter: null
@@ -808,11 +808,11 @@
     - learning
     - news
     - open source
-  dateCreated: 2021-07-25T00:00:00.000Z
-  dateAdded: 2021-10-12T00:00:00.000Z
-  lastUpdated: 2021-10-12T00:00:00.000Z
+  date_created: 2021-07-25T00:00:00.000Z
+  date_added: 2021-10-12T00:00:00.000Z
+  last_updated: 2021-10-12T00:00:00.000Z
   slug: svelte-summit-fall-2021
-  repoStars: 8
+  repo_stars: 8
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
@@ -839,8 +839,8 @@
     - data viz
     - statistics
     - machine learning
-  dateAdded: 2021-10-19T00:00:00.000Z
-  lastUpdated: 2021-10-17T00:00:00.000Z
+  date_added: 2021-10-19T00:00:00.000Z
+  last_updated: 2021-10-17T00:00:00.000Z
   slug: cybernetic.dev
 - title: Kudadam.com
   url: https://kudadam.com
@@ -856,11 +856,11 @@
     - portfolio
     - rss
     - sitemap
-  dateCreated: 2021-05-15T00:00:00.000Z
-  dateAdded: 2021-10-26T00:00:00.000Z
-  lastUpdated: 2021-10-26T00:00:00.000Z
+  date_created: 2021-05-15T00:00:00.000Z
+  date_added: 2021-10-26T00:00:00.000Z
+  last_updated: 2021-10-26T00:00:00.000Z
   slug: kudadam.com
-  repoStars: 8
+  repo_stars: 8
   contributors:
     - github: kudadam
       twitter: kudadam_
@@ -883,11 +883,11 @@
     - education
     - learning
     - open source
-  dateCreated: 2021-07-06T00:00:00.000Z
-  dateAdded: 2021-10-28T00:00:00.000Z
-  lastUpdated: 2021-10-23T00:00:00.000Z
+  date_created: 2021-07-06T00:00:00.000Z
+  date_added: 2021-10-28T00:00:00.000Z
+  last_updated: 2021-10-23T00:00:00.000Z
   slug: digital-criticism
-  repoStars: 3
+  repo_stars: 3
   contributors:
     - github: maehr
       twitter: moritzmaehr
@@ -917,11 +917,11 @@
     - digital publishing
     - education
     - open source
-  dateCreated: 2021-09-03T00:00:00.000Z
-  dateAdded: 2021-11-01T00:00:00.000Z
-  lastUpdated: 2021-11-01T00:00:00.000Z
+  date_created: 2021-09-03T00:00:00.000Z
+  date_added: 2021-11-01T00:00:00.000Z
+  last_updated: 2021-11-01T00:00:00.000Z
   slug: the-pudding
-  repoStars: 32
+  repo_stars: 32
   contributors:
     - github: russellgoldenberg
       twitter: codenberg
@@ -949,11 +949,11 @@
     - open source
     - playful
     - portfolio
-  dateCreated: 2020-08-15T00:00:00.000Z
-  dateAdded: 2021-11-01T00:00:00.000Z
-  lastUpdated: 2021-08-15T00:00:00.000Z
+  date_created: 2020-08-15T00:00:00.000Z
+  date_added: 2021-11-01T00:00:00.000Z
+  last_updated: 2021-08-15T00:00:00.000Z
   slug: brittneypostma.com
-  repoStars: 1
+  repo_stars: 1
   contributors:
     - github: brittneypostma
       twitter: brittneypostma
@@ -977,11 +977,11 @@
     - blog
     - open source
     - template
-  dateCreated: 2021-11-01T00:00:00.000Z
-  dateAdded: 2021-11-05T00:00:00.000Z
-  lastUpdated: 2021-11-05T00:00:00.000Z
+  date_created: 2021-11-01T00:00:00.000Z
+  date_added: 2021-11-05T00:00:00.000Z
+  last_updated: 2021-11-05T00:00:00.000Z
   slug: urara
-  repoStars: 75
+  repo_stars: 75
   contributors:
     - github: kwaa
       twitter: null
@@ -1003,11 +1003,11 @@
     - blog
     - open source
     - portfolio
-  dateCreated: 2021-12-10T00:00:00.000Z
-  dateAdded: 2021-12-11T00:00:00.000Z
-  lastUpdated: 2021-12-10T00:00:00.000Z
+  date_created: 2021-12-10T00:00:00.000Z
+  date_added: 2021-12-11T00:00:00.000Z
+  last_updated: 2021-12-10T00:00:00.000Z
   slug: connorrothschild.com
-  repoStars: 32
+  repo_stars: 32
   contributors:
     - github: connorrothschild
       twitter: CL_Rothschild
@@ -1031,11 +1031,11 @@
     - interactive
     - library
     - open source
-  dateCreated: 2021-05-18T00:00:00.000Z
-  dateAdded: 2021-12-19T00:00:00.000Z
-  lastUpdated: 2021-12-19T00:00:00.000Z
+  date_created: 2021-05-18T00:00:00.000Z
+  date_added: 2021-12-19T00:00:00.000Z
+  last_updated: 2021-12-19T00:00:00.000Z
   slug: svelte-cubed
-  repoStars: 974
+  repo_stars: 974
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1058,11 +1058,11 @@
     - interactive
     - monitor
     - open source
-  dateCreated: 2018-06-08T00:00:00.000Z
-  dateAdded: 2022-01-01T00:00:00.000Z
-  lastUpdated: 2022-01-01T00:00:00.000Z
+  date_created: 2018-06-08T00:00:00.000Z
+  date_added: 2022-01-01T00:00:00.000Z
+  last_updated: 2022-01-01T00:00:00.000Z
   slug: multi-monitor-calculator
-  repoStars: 24
+  repo_stars: 24
   contributors:
     - github: KevinVandy
       twitter: ThomasVanCott
@@ -1088,11 +1088,11 @@
     - frontend
     - open source
     - typography
-  dateCreated: 2021-11-29T00:00:00.000Z
-  dateAdded: 2022-01-04T00:00:00.000Z
-  lastUpdated: 2022-01-04T00:00:00.000Z
+  date_created: 2021-11-29T00:00:00.000Z
+  date_added: 2022-01-04T00:00:00.000Z
+  last_updated: 2022-01-04T00:00:00.000Z
   slug: modern-fluid-typography-editor
-  repoStars: 223
+  repo_stars: 223
   contributors: []
 - title: mermaid-live-editor
   url: https://mermaid.live
@@ -1111,11 +1111,11 @@
     - diagrams
     - graphics
     - open source
-  dateCreated: 2019-11-13T00:00:00.000Z
-  dateAdded: 2022-02-05T00:00:00.000Z
-  lastUpdated: 2022-02-05T00:00:00.000Z
+  date_created: 2019-11-13T00:00:00.000Z
+  date_added: 2022-02-05T00:00:00.000Z
+  last_updated: 2022-02-05T00:00:00.000Z
   slug: mermaid-live-editor
-  repoStars: 1387
+  repo_stars: 1387
   contributors:
     - github: sidharthv96
       twitter: sidv42
@@ -1157,11 +1157,11 @@
     - demo
     - open source
     - performance
-  dateCreated: 2017-04-20T00:00:00.000Z
-  dateAdded: 2022-02-06T00:00:00.000Z
-  lastUpdated: 2022-02-06T00:00:00.000Z
+  date_created: 2017-04-20T00:00:00.000Z
+  date_added: 2022-02-06T00:00:00.000Z
+  last_updated: 2022-02-06T00:00:00.000Z
   slug: svelte-realworld
-  repoStars: 1478
+  repo_stars: 1478
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1206,11 +1206,11 @@
     - learning
     - open source
     - proof of concept
-  dateCreated: 2021-08-12T00:00:00.000Z
-  dateAdded: 2022-02-06T00:00:00.000Z
-  lastUpdated: 2022-02-06T00:00:00.000Z
+  date_created: 2021-08-12T00:00:00.000Z
+  date_added: 2022-02-06T00:00:00.000Z
+  last_updated: 2022-02-06T00:00:00.000Z
   slug: macos-web
-  repoStars: 1336
+  repo_stars: 1336
   contributors:
     - github: PuruVJ
       twitter: puruvjdev
@@ -1222,7 +1222,7 @@
 - title: inlang dashboard
   url: https://inlang.dev
   repo: https://github.com/inlang/inlang
-  siteSrc: https://github.com/inlang/inlang/tree/main/apps/dashboard
+  site_src: https://github.com/inlang/inlang/tree/main/apps/dashboard
   description: Translate software products 2x faster.
   uses:
     - TypeScript
@@ -1236,11 +1236,11 @@
     - i18n
     - localization
     - open source
-  dateCreated: 2021-08-04T00:00:00.000Z
-  dateAdded: 2022-02-23T00:00:00.000Z
-  lastUpdated: 2022-02-23T00:00:00.000Z
+  date_created: 2021-08-04T00:00:00.000Z
+  date_added: 2022-02-23T00:00:00.000Z
+  last_updated: 2022-02-23T00:00:00.000Z
   slug: inlang-dashboard
-  repoStars: 156
+  repo_stars: 156
   contributors:
     - github: samuelstroschein
       twitter: SamuelStros
@@ -1293,11 +1293,11 @@
     - graphql
     - minimal
     - open source
-  dateCreated: 2021-01-19T00:00:00.000Z
-  dateAdded: 2022-03-22T00:00:00.000Z
-  lastUpdated: 2022-03-22T00:00:00.000Z
+  date_created: 2021-01-19T00:00:00.000Z
+  date_added: 2022-03-22T00:00:00.000Z
+  last_updated: 2022-03-22T00:00:00.000Z
   slug: houdini-graphql
-  repoStars: 0
+  repo_stars: 0
   contributors:
     - github: AlecAivazis
       twitter: null
@@ -1323,11 +1323,11 @@
     - music
     - open source
     - playlist-generator
-  dateCreated: 2022-03-15T00:00:00.000Z
-  dateAdded: 2022-03-24T00:00:00.000Z
-  lastUpdated: 2022-03-24T00:00:00.000Z
+  date_created: 2022-03-15T00:00:00.000Z
+  date_added: 2022-03-24T00:00:00.000Z
+  last_updated: 2022-03-24T00:00:00.000Z
   slug: concertmash
-  repoStars: 3
+  repo_stars: 3
   contributors:
     - github: mcmxcdev
       twitter: null
@@ -1356,11 +1356,11 @@
     - layers
     - open source
     - WebGL
-  dateCreated: 2018-10-18T00:00:00.000Z
-  dateAdded: 2022-03-24T00:00:00.000Z
-  lastUpdated: 2022-03-24T00:00:00.000Z
+  date_created: 2018-10-18T00:00:00.000Z
+  date_added: 2022-03-24T00:00:00.000Z
+  last_updated: 2022-03-24T00:00:00.000Z
   slug: layer-cake
-  repoStars: 586
+  repo_stars: 586
   contributors:
     - github: mhkeller
       twitter: null
@@ -1395,11 +1395,11 @@
     - graphics
     - open source
     - WebGL
-  dateCreated: 2019-10-01T00:00:00.000Z
-  dateAdded: 2022-04-05T00:00:00.000Z
-  lastUpdated: 2022-04-05T00:00:00.000Z
+  date_created: 2019-10-01T00:00:00.000Z
+  date_added: 2022-04-05T00:00:00.000Z
+  last_updated: 2022-04-05T00:00:00.000Z
   slug: pancake
-  repoStars: 1004
+  repo_stars: 1004
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1424,11 +1424,11 @@
     - a11y
     - component library
     - open source
-  dateCreated: 2021-12-05T00:00:00.000Z
-  dateAdded: 2022-04-14T00:00:00.000Z
-  lastUpdated: 2022-04-14T00:00:00.000Z
+  date_created: 2021-12-05T00:00:00.000Z
+  date_added: 2022-04-14T00:00:00.000Z
+  last_updated: 2022-04-14T00:00:00.000Z
   slug: svelte-headless-ui
-  repoStars: 663
+  repo_stars: 663
   contributors:
     - github: rgossiaux
       twitter: null
@@ -1440,7 +1440,7 @@
 - title: Svelte Material UI
   url: https://sveltematerialui.com
   repo: https://github.com/hperrin/svelte-material-ui
-  siteSrc: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  site_src: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
   description: Svelte Material UI Components.
   uses:
     - MDsveX
@@ -1452,11 +1452,11 @@
     - component library
     - material design
     - open source
-  dateCreated: 2019-07-17T00:00:00.000Z
-  dateAdded: 2022-04-16T00:00:00.000Z
-  lastUpdated: 2022-04-16T00:00:00.000Z
+  date_created: 2019-07-17T00:00:00.000Z
+  date_added: 2022-04-16T00:00:00.000Z
+  last_updated: 2022-04-16T00:00:00.000Z
   slug: svelte-material-ui
-  repoStars: 2412
+  repo_stars: 2412
   contributors:
     - github: hperrin
       twitter: SciActive
@@ -1490,11 +1490,11 @@
     - design system
     - open source
     - windows ui
-  dateCreated: 2021-06-05T00:00:00.000Z
-  dateAdded: 2022-04-24T00:00:00.000Z
-  lastUpdated: 2022-04-24T00:00:00.000Z
+  date_created: 2021-06-05T00:00:00.000Z
+  date_added: 2022-04-24T00:00:00.000Z
+  last_updated: 2022-04-24T00:00:00.000Z
   slug: fluent-svelte
-  repoStars: 258
+  repo_stars: 258
   contributors:
     - github: Tropix126
       twitter: null
@@ -1524,11 +1524,11 @@
     - deployment
     - open source
     - speed
-  dateCreated: 2022-04-20T00:00:00.000Z
-  dateAdded: 2022-04-24T00:00:00.000Z
-  lastUpdated: 2022-04-24T00:00:00.000Z
+  date_created: 2022-04-20T00:00:00.000Z
+  date_added: 2022-04-24T00:00:00.000Z
+  last_updated: 2022-04-24T00:00:00.000Z
   slug: sveltekit-on-edge
-  repoStars: 89
+  repo_stars: 89
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1540,7 +1540,7 @@
 - title: evidence
   url: https://evidence.dev
   repo: https://github.com/evidence-dev/evidence
-  siteSrc: https://github.com/evidence-dev/evidence/tree/main/sites/example-project
+  site_src: https://github.com/evidence-dev/evidence/tree/main/sites/example-project
   description: >-
     Evidence enables analysts to deliver a polished business intelligence system
     using SQL and markdown.
@@ -1557,11 +1557,11 @@
     - markdown
     - open source
     - sql
-  dateCreated: 2021-05-27T00:00:00.000Z
-  dateAdded: 2022-05-01T00:00:00.000Z
-  lastUpdated: 2022-05-01T00:00:00.000Z
+  date_created: 2021-05-27T00:00:00.000Z
+  date_added: 2022-05-01T00:00:00.000Z
+  last_updated: 2022-05-01T00:00:00.000Z
   slug: evidence
-  repoStars: 666
+  repo_stars: 666
   contributors:
     - github: hughess
       twitter: null
@@ -1604,11 +1604,11 @@
     - redis
     - self-hosting
     - sql
-  dateCreated: 2021-03-24T00:00:00.000Z
-  dateAdded: 2022-05-10T00:00:00.000Z
-  lastUpdated: 2022-05-10T00:00:00.000Z
+  date_created: 2021-03-24T00:00:00.000Z
+  date_added: 2022-05-10T00:00:00.000Z
+  last_updated: 2022-05-10T00:00:00.000Z
   slug: coolify
-  repoStars: 3585
+  repo_stars: 3585
   contributors:
     - github: andrasbacsai
       twitter: andrasbacsai
@@ -1660,11 +1660,11 @@
     - open source
     - spinners
     - toast
-  dateCreated: 2022-01-24T00:00:00.000Z
-  dateAdded: 2022-05-19T00:00:00.000Z
-  lastUpdated: 2022-05-19T00:00:00.000Z
+  date_created: 2022-01-24T00:00:00.000Z
+  date_added: 2022-05-19T00:00:00.000Z
+  last_updated: 2022-05-19T00:00:00.000Z
   slug: flowbite
-  repoStars: 85
+  repo_stars: 85
   contributors:
     - github: shinokada
       twitter: shinokada
@@ -1697,11 +1697,11 @@
     - developer guide
     - open source
     - oss
-  dateCreated: 2022-01-20T00:00:00.000Z
-  dateAdded: 2022-05-19T00:00:00.000Z
-  lastUpdated: 2022-05-19T00:00:00.000Z
+  date_created: 2022-01-20T00:00:00.000Z
+  date_added: 2022-05-19T00:00:00.000Z
+  last_updated: 2022-05-19T00:00:00.000Z
   slug: good-first-issue-finder
-  repoStars: 38
+  repo_stars: 38
   contributors:
     - github: Cahllagerfeld
       twitter: CahlLagerfeld
@@ -1734,11 +1734,11 @@
     - open source
     - plotting
     - science
-  dateCreated: 2022-05-31T00:00:00.000Z
-  dateAdded: 2022-06-02T00:00:00.000Z
-  lastUpdated: 2022-06-02T00:00:00.000Z
+  date_created: 2022-05-31T00:00:00.000Z
+  date_added: 2022-06-02T00:00:00.000Z
+  last_updated: 2022-06-02T00:00:00.000Z
   slug: periodic-table
-  repoStars: 0
+  repo_stars: 0
   contributors:
     - github: janosh
       twitter: _jarib
@@ -1763,11 +1763,11 @@
     - drawing
     - multiplayer
     - open source
-  dateCreated: 2022-02-17T00:00:00.000Z
-  dateAdded: 2022-06-02T00:00:00.000Z
-  lastUpdated: 2022-06-02T00:00:00.000Z
+  date_created: 2022-02-17T00:00:00.000Z
+  date_added: 2022-06-02T00:00:00.000Z
+  last_updated: 2022-06-02T00:00:00.000Z
   slug: pixel-art-together
-  repoStars: 110
+  repo_stars: 110
   contributors:
     - github: CTNicholas
       twitter: ctnicholasdev
@@ -1790,11 +1790,11 @@
   tags:
     - component library
     - open source
-  dateCreated: 2017-03-19T00:00:00.000Z
-  dateAdded: 2022-06-02T00:00:00.000Z
-  lastUpdated: 2022-06-02T00:00:00.000Z
+  date_created: 2017-03-19T00:00:00.000Z
+  date_added: 2022-06-02T00:00:00.000Z
+  last_updated: 2022-06-02T00:00:00.000Z
   slug: sveltestrap
-  repoStars: 945
+  repo_stars: 945
   contributors:
     - github: bestguy
       twitter: null
@@ -1850,11 +1850,11 @@
     - flow diagrams
     - open source
     - visualization
-  dateCreated: 2022-05-06T00:00:00.000Z
-  dateAdded: 2022-06-02T00:00:00.000Z
-  lastUpdated: 2022-06-02T00:00:00.000Z
+  date_created: 2022-05-06T00:00:00.000Z
+  date_added: 2022-06-02T00:00:00.000Z
+  last_updated: 2022-06-02T00:00:00.000Z
   slug: svelvet
-  repoStars: 196
+  repo_stars: 196
   contributors:
     - github: andrew-widjaja
       twitter: null
@@ -1880,7 +1880,7 @@
 - title: Cryptgeon
   url: https://cryptgeon.nicco.io
   repo: https://github.com/cupcakearmy/cryptgeon
-  siteSrc: https://github.com/cupcakearmy/cryptgeon/tree/main/frontend
+  site_src: https://github.com/cupcakearmy/cryptgeon/tree/main/frontend
   description: >-
     A secure, open source notes and file sharing service inspired by PrivNote
     written in Rust & Svelte.
@@ -1894,11 +1894,11 @@
     - open source
     - privacy
     - secure notes
-  dateCreated: 2021-05-01T00:00:00.000Z
-  dateAdded: 2022-06-09T00:00:00.000Z
-  lastUpdated: 2022-06-09T00:00:00.000Z
+  date_created: 2021-05-01T00:00:00.000Z
+  date_added: 2022-06-09T00:00:00.000Z
+  last_updated: 2022-06-09T00:00:00.000Z
   slug: cryptgeon
-  repoStars: 286
+  repo_stars: 286
   contributors:
     - github: cupcakearmy
       twitter: null
@@ -1923,11 +1923,11 @@
     - localization
     - open source
     - translation
-  dateCreated: 2021-04-15T00:00:00.000Z
-  dateAdded: 2022-06-09T00:00:00.000Z
-  lastUpdated: 2022-06-09T00:00:00.000Z
+  date_created: 2021-04-15T00:00:00.000Z
+  date_added: 2022-06-09T00:00:00.000Z
+  last_updated: 2022-06-09T00:00:00.000Z
   slug: svelte-intl-precompile
-  repoStars: 216
+  repo_stars: 216
   contributors:
     - github: cibernox
       twitter: miguelcamba
@@ -1939,7 +1939,7 @@
 - title: Windmill
   url: https://windmill.dev
   repo: https://github.com/windmill-labs/windmill
-  siteSrc: https://github.com/windmill-labs/windmill/tree/main/frontend
+  site_src: https://github.com/windmill-labs/windmill/tree/main/frontend
   description: >-
     An OSS developer platform to build multi-step automations and internal apps
     from minimal Python and Typescript scripts.
@@ -1958,11 +1958,11 @@
     - python
     - scripting
     - self-hostable
-  dateCreated: 2022-05-05T00:00:00.000Z
-  dateAdded: 2022-06-17T00:00:00.000Z
-  lastUpdated: 2022-06-17T00:00:00.000Z
+  date_created: 2022-05-05T00:00:00.000Z
+  date_added: 2022-06-17T00:00:00.000Z
+  last_updated: 2022-06-17T00:00:00.000Z
   slug: windmill
-  repoStars: 665
+  repo_stars: 665
   contributors:
     - github: rubenfiszel
       twitter: null

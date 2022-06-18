@@ -11,7 +11,6 @@
     sort_by,
     tag_filter_mode,
   } from '../stores'
-  import { Site } from '../types'
 
   const tags = Object.entries(
     sites
@@ -65,17 +64,17 @@
   // arr.sort() sorts in-place but we need to reassign filteredSites so Svelte rerenders
   $: if ($sort_by[0] === `GitHub repo stars`) {
     sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => (siteB.repoStars ?? 0) - (siteA.repoStars ?? 0)
+      (siteA, siteB) => (siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)
     )
   } else if ($sort_by[0] === `Date created`) {
     sorted_sites = filtered_sites.sort(
       (siteA, siteB) =>
-        +new Date(siteB.dateCreated ?? 0) - +new Date(siteA.dateCreated ?? 0)
+        +new Date(siteB.date_created ?? 0) - +new Date(siteA.date_created ?? 0)
     )
   } else if ($sort_by[0] === `Date last updated`) {
     sorted_sites = filtered_sites.sort(
       (siteA, siteB) =>
-        +new Date(siteB.lastUpdated ?? 0) - +new Date(siteA.lastUpdated ?? 0)
+        +new Date(siteB.last_updated ?? 0) - +new Date(siteA.last_updated ?? 0)
     )
   }
 </script>

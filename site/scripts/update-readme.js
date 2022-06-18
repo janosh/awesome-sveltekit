@@ -16,7 +16,7 @@ const new_line = `\n   `
 
 const new_sites = sites
   .map((site) => {
-    const { title, repo, uses, description, url, siteSrc } = site
+    const { title, repo, uses, description, url, site_src } = site
 
     if ([title, uses, description, url].includes(undefined)) {
       throw new Error(`missing field(s) in site '${title}'`)
@@ -31,7 +31,7 @@ const new_sites = sites
         }
         const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}" alt="GitHub stars" valign="middle">`
         code_link =
-          ` &emsp;${new_line}[[code](${siteSrc ?? repo})]&emsp;${new_line}` +
+          ` &emsp;${new_line}[[code](${site_src ?? repo})]&emsp;${new_line}` +
           `<a href="${repo}/stargazers">${new_line}${star_badge}${new_line}</a>`
       }
 

@@ -86,7 +86,7 @@ for (const site of sites) {
   try {
     const url = `https://api.github.com/repos/${repoHandle}`
     const repo = await fetch_check(url)
-    site.repoStars = repo.stargazers_count
+    site.repo_stars = repo.stargazers_count
   } catch (error) {
     console.error(`Error fetching star count for ${site.title}:`, error)
   }
@@ -124,7 +124,7 @@ const new_sites = sites.map((site) => {
   const old_site = old_sites.find((old) => old.slug === site.slug) ?? {}
   // retain fetched GitHub data from old_sites in case we didn't refetch
   // but overwrite with new data if we did
-  for (const key of [`repoStars`, `contributors`]) {
+  for (const key of [`repo_stars`, `contributors`]) {
     if (site[key] === undefined) site[key] = old_site[key]
   }
   return site
