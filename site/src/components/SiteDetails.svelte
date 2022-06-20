@@ -24,7 +24,7 @@
 
 <main>
   <section style="flex: 2;">
-    <h1 class="flex" style="gap: 1em; justify-content: space-between;">
+    <h1>
       <a href={url}>{title}</a>
       {#if site.repo}
         <a href={site.repo}>
@@ -111,6 +111,13 @@
       flex-direction: column-reverse;
       gap: 1em;
     }
+  }
+  h1 {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    margin: 0 0 2rem;
+    font-size: 2rem;
   }
   h1 small {
     font-size: 14pt;
