@@ -7,7 +7,7 @@ default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v4.3.0
     hooks:
       - id: check-case-conflict
       - id: check-symlinks
@@ -20,7 +20,7 @@ repos:
         files: ^uses-links\.yml$
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.6.2
+    rev: v2.7.1
     hooks:
       - id: prettier
         args: [--config, site/.prettierrc.yml, --write] # edit files in-place
@@ -53,7 +53,7 @@ repos:
         exclude: yarn.lock
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.12.0
+    rev: v8.19.0
     hooks:
       - id: eslint
         types: [file]
