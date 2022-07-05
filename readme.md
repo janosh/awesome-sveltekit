@@ -19,8 +19,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
 ## Sites
 
-1. **[Svelte.dev](https://svelte.dev)** &emsp;
-   [[code](https://github.com/sveltejs/sites/tree/master/sites/svelte.dev)]&emsp;
+1. **[Svelte.dev](https://svelte.dev)**&ensp;
+   [[code](https://github.com/sveltejs/sites/tree/master/sites/svelte.dev)]&ensp;
    <a href="https://github.com/sveltejs/svelte/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/svelte" alt="GitHub stars" valign="middle">
    </a>
@@ -29,8 +29,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [CodeMirror], [Mapbox], [Docker]
 
-1. **[Official SvelteKit docs](https://kit.svelte.dev)** &emsp;
-   [[code](https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev)]&emsp;
+1. **[Official SvelteKit docs](https://kit.svelte.dev)**&ensp;
+   [[code](https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev)]&ensp;
    <a href="https://github.com/sveltejs/kit/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/kit" alt="GitHub stars" valign="middle">
    </a>
@@ -39,8 +39,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Netlify], [PNPM]
 
-1. **[SK Incognito](https://sk-incognito.vercel.app)** &emsp;
-   [[code](https://github.com/GrygrFlzr/kit-docs)]&emsp;
+1. **[SK Incognito](https://sk-incognito.vercel.app)**&ensp;
+   [[code](https://github.com/GrygrFlzr/kit-docs)]&ensp;
    <a href="https://github.com/GrygrFlzr/kit-docs/stargazers">
    <img src="https://img.shields.io/github/stars/GrygrFlzr/kit-docs" alt="GitHub stars" valign="middle">
    </a>
@@ -49,8 +49,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [Tailwind], [PNPM]
 
-1. **[Geometric Bayes Theorem](https://svelte-geometric-bayes.netlify.app)** &emsp;
-   [[code](https://github.com/janosh/svelte-geometric-bayes)]&emsp;
+1. **[Geometric Bayes Theorem](https://svelte-geometric-bayes.netlify.app)**&ensp;
+   [[code](https://github.com/janosh/svelte-geometric-bayes)]&ensp;
    <a href="https://github.com/janosh/svelte-geometric-bayes/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/svelte-geometric-bayes" alt="GitHub stars" valign="middle">
    </a>
@@ -59,8 +59,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [pre-commit]
 
-1. **[TikZ](https://tikz.netlify.app)** &emsp;
-   [[code](https://github.com/janosh/tikz)]&emsp;
+1. **[TikZ](https://tikz.netlify.app)**&ensp;
+   [[code](https://github.com/janosh/tikz)]&ensp;
    <a href="https://github.com/janosh/tikz/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/tikz" alt="GitHub stars" valign="middle">
    </a>
@@ -75,8 +75,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Tailwind], [MDsveX], [Svelte Forms Lib]
 
-1. **[Studenten bilden Schüler](https://studenten-bilden-schueler.de)** &emsp;
-   [[code](https://github.com/sbsev/svelte-site)]&emsp;
+1. **[Studenten bilden Schüler](https://studenten-bilden-schueler.de)**&ensp;
+   [[code](https://github.com/sbsev/svelte-site)]&ensp;
    <a href="https://github.com/sbsev/svelte-site/stargazers">
    <img src="https://img.shields.io/github/stars/sbsev/svelte-site" alt="GitHub stars" valign="middle">
    </a>
@@ -85,8 +85,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect], [Playwright], [Vitest]
 
-1. **[Afara](https://afara.foundation)** &emsp;
-   [[code](https://github.com/janosh/afara)]&emsp;
+1. **[Afara](https://afara.foundation)**&ensp;
+   [[code](https://github.com/janosh/afara)]&ensp;
    <a href="https://github.com/janosh/afara/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/afara" alt="GitHub stars" valign="middle">
    </a>
@@ -95,8 +95,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Contentful], [Algolia], [GraphQL], [Netlify], [pre-commit]
 
-1. **[Ocean artUp](https://ocean-artup.eu)** &emsp;
-   [[code](https://github.com/janosh/ocean-artup)]&emsp;
+1. **[Ocean artUp](https://ocean-artup.eu)**&ensp;
+   [[code](https://github.com/janosh/ocean-artup)]&ensp;
    <a href="https://github.com/janosh/ocean-artup/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/ocean-artup" alt="GitHub stars" valign="middle">
    </a>
@@ -105,8 +105,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Google Maps], [pre-commit]
 
-1. **[Guess The Year](https://guess-the-year.davjhan.com)** &emsp;
-   [[code](https://github.com/davjhan/guess-the-year-game)]&emsp;
+1. **[Guess The Year](https://guess-the-year.davjhan.com)**&ensp;
+   [[code](https://github.com/davjhan/guess-the-year-game)]&ensp;
    <a href="https://github.com/davjhan/guess-the-year-game/stargazers">
    <img src="https://img.shields.io/github/stars/davjhan/guess-the-year-game" alt="GitHub stars" valign="middle">
    </a>
@@ -115,8 +115,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Tailwind], [Netlify]
 
-1. **[Gitpod](https://gitpod.io)** &emsp;
-   [[code](https://github.com/gitpod-io/website)]&emsp;
+1. **[Gitpod](https://gitpod.io)**&ensp;
+   [[code](https://github.com/gitpod-io/website)]&ensp;
    <a href="https://github.com/gitpod-io/website/stargazers">
    <img src="https://img.shields.io/github/stars/gitpod-io/website" alt="GitHub stars" valign="middle">
    </a>
@@ -125,8 +125,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [Tailwind], [Netlify]
 
-1. **[SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app)** &emsp;
-   [[code](https://github.com/tsukhu/sveltekit-demo)]&emsp;
+1. **[SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app)**&ensp;
+   [[code](https://github.com/tsukhu/sveltekit-demo)]&ensp;
    <a href="https://github.com/tsukhu/sveltekit-demo/stargazers">
    <img src="https://img.shields.io/github/stars/tsukhu/sveltekit-demo" alt="GitHub stars" valign="middle">
    </a>
@@ -135,8 +135,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Tailwind], [Vercel], [GraphQL], [Firebase], [Typescript]
 
-1. **[puruvj.dev](https://puruvj.dev)** &emsp;
-   [[code](https://github.com/puruvj/puruvjdev3)]&emsp;
+1. **[puruvj.dev](https://puruvj.dev)**&ensp;
+   [[code](https://github.com/puruvj/puruvjdev3)]&ensp;
    <a href="https://github.com/puruvj/puruvjdev3/stargazers">
    <img src="https://img.shields.io/github/stars/puruvj/puruvjdev3" alt="GitHub stars" valign="middle">
    </a>
@@ -145,8 +145,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
 
-1. **[GraphCMS Starter Blog](https://scottspence.com/2021/05/06/graphcms-svelte-starter)** &emsp;
-   [[code](https://github.com/spences10/sveltekit-starter-blog)]&emsp;
+1. **[GraphCMS Starter Blog](https://scottspence.com/2021/05/06/graphcms-svelte-starter)**&ensp;
+   [[code](https://github.com/spences10/sveltekit-starter-blog)]&ensp;
    <a href="https://github.com/spences10/sveltekit-starter-blog/stargazers">
    <img src="https://img.shields.io/github/stars/spences10/sveltekit-starter-blog" alt="GitHub stars" valign="middle">
    </a>
@@ -155,8 +155,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Vercel], [Tailwind], [SCSS], [GraphCMS]
 
-1. **[Beatbump](https://beatbump.ml)** &emsp;
-   [[code](https://github.com/snuffyDev/beatbump)]&emsp;
+1. **[Beatbump](https://beatbump.ml)**&ensp;
+   [[code](https://github.com/snuffyDev/beatbump)]&ensp;
    <a href="https://github.com/snuffyDev/beatbump/stargazers">
    <img src="https://img.shields.io/github/stars/snuffyDev/beatbump" alt="GitHub stars" valign="middle">
    </a>
@@ -165,8 +165,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [PostCSS], [Sass]
 
-1. **[Paper Trader Game](https://paper-trader.davjhan.com)** &emsp;
-   [[code](https://github.com/davjhan/paper-trader-game)]&emsp;
+1. **[Paper Trader Game](https://paper-trader.davjhan.com)**&ensp;
+   [[code](https://github.com/davjhan/paper-trader-game)]&ensp;
    <a href="https://github.com/davjhan/paper-trader-game/stargazers">
    <img src="https://img.shields.io/github/stars/davjhan/paper-trader-game" alt="GitHub stars" valign="middle">
    </a>
@@ -175,8 +175,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Tailwind], [Netlify], [Chart.js], [Plausible]
 
-1. **[SveltePress](https://sveltepress.geopjr.dev)** &emsp;
-   [[code](https://github.com/GeopJr/SveltePress)]&emsp;
+1. **[SveltePress](https://sveltepress.geopjr.dev)**&ensp;
+   [[code](https://github.com/GeopJr/SveltePress)]&ensp;
    <a href="https://github.com/GeopJr/SveltePress/stargazers">
    <img src="https://img.shields.io/github/stars/GeopJr/SveltePress" alt="GitHub stars" valign="middle">
    </a>
@@ -185,8 +185,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Netlify], [MarkedJS], [PNPM], [SCSS], [Dart], [Pandoc]
 
-1. **[neovim craft](https://neovimcraft.com)** &emsp;
-   [[code](https://github.com/neurosnap/neovimcraft)]&emsp;
+1. **[neovim craft](https://neovimcraft.com)**&ensp;
+   [[code](https://github.com/neurosnap/neovimcraft)]&ensp;
    <a href="https://github.com/neurosnap/neovimcraft/stargazers">
    <img src="https://img.shields.io/github/stars/neurosnap/neovimcraft" alt="GitHub stars" valign="middle">
    </a>
@@ -195,8 +195,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Husky]
 
-1. **[swyxkit](https://swyxkit.netlify.app)** &emsp;
-   [[code](https://github.com/sw-yx/swyxkit)]&emsp;
+1. **[swyxkit](https://swyxkit.netlify.app)**&ensp;
+   [[code](https://github.com/sw-yx/swyxkit)]&ensp;
    <a href="https://github.com/sw-yx/swyxkit/stargazers">
    <img src="https://img.shields.io/github/stars/sw-yx/swyxkit" alt="GitHub stars" valign="middle">
    </a>
@@ -205,8 +205,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Tailwind], [Netlify]
 
-1. **[Svelte Society](https://sveltesociety.dev)** &emsp;
-   [[code](https://github.com/svelte-society/sveltesociety.dev)]&emsp;
+1. **[Svelte Society](https://sveltesociety.dev)**&ensp;
+   [[code](https://github.com/svelte-society/sveltesociety.dev)]&ensp;
    <a href="https://github.com/svelte-society/sveltesociety.dev/stargazers">
    <img src="https://img.shields.io/github/stars/svelte-society/sveltesociety.dev" alt="GitHub stars" valign="middle">
    </a>
@@ -221,8 +221,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Sanity], [anime.js], [Vercel], [TypeScript], [SCSS], [PostCSS]
 
-1. **[Matt Fantinel](https://fantinel.dev)** &emsp;
-   [[code](https://github.com/matfantinel/matfantinel.github.io)]&emsp;
+1. **[Matt Fantinel](https://fantinel.dev)**&ensp;
+   [[code](https://github.com/matfantinel/matfantinel.github.io)]&ensp;
    <a href="https://github.com/matfantinel/matfantinel.github.io/stargazers">
    <img src="https://img.shields.io/github/stars/matfantinel/matfantinel.github.io" alt="GitHub stars" valign="middle">
    </a>
@@ -243,8 +243,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Tailwind], [DynamoDB], [AWS]
 
-1. **[Files](https://files.community)** &emsp;
-   [[code](https://github.com/files-community/website)]&emsp;
+1. **[Files](https://files.community)**&ensp;
+   [[code](https://github.com/files-community/website)]&ensp;
    <a href="https://github.com/files-community/website/stargazers">
    <img src="https://img.shields.io/github/stars/files-community/website" alt="GitHub stars" valign="middle">
    </a>
@@ -253,8 +253,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [PNPM], [TypeScript], [SCSS], [Vercel]
 
-1. **[Svelte Summit Fall 2021](https://sveltesummit.com)** &emsp;
-   [[code](https://github.com/svelte-society/svelte-summit)]&emsp;
+1. **[Svelte Summit Fall 2021](https://sveltesummit.com)**&ensp;
+   [[code](https://github.com/svelte-society/svelte-summit)]&ensp;
    <a href="https://github.com/svelte-society/svelte-summit/stargazers">
    <img src="https://img.shields.io/github/stars/svelte-society/svelte-summit" alt="GitHub stars" valign="middle">
    </a>
@@ -269,8 +269,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Three.js], [Cytoscape.js], [Vercel]
 
-1. **[Kudadam.com](https://kudadam.com)** &emsp;
-   [[code](https://github.com/kudadam/kudadam.com)]&emsp;
+1. **[Kudadam.com](https://kudadam.com)**&ensp;
+   [[code](https://github.com/kudadam/kudadam.com)]&ensp;
    <a href="https://github.com/kudadam/kudadam.com/stargazers">
    <img src="https://img.shields.io/github/stars/kudadam/kudadam.com" alt="GitHub stars" valign="middle">
    </a>
@@ -279,8 +279,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [Tailwind]
 
-1. **[digital criticism](https://critique-digitale.ch)** &emsp;
-   [[code](https://github.com/critique-digitale/critique-digitale.ch)]&emsp;
+1. **[digital criticism](https://critique-digitale.ch)**&ensp;
+   [[code](https://github.com/critique-digitale/critique-digitale.ch)]&ensp;
    <a href="https://github.com/critique-digitale/critique-digitale.ch/stargazers">
    <img src="https://img.shields.io/github/stars/critique-digitale/critique-digitale.ch" alt="GitHub stars" valign="middle">
    </a>
@@ -289,8 +289,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [MVP.css], [Cloudflare]
 
-1. **[The Pudding](https://pudding.cool)** &emsp;
-   [[code](https://github.com/the-pudding/website)]&emsp;
+1. **[The Pudding](https://pudding.cool)**&ensp;
+   [[code](https://github.com/the-pudding/website)]&ensp;
    <a href="https://github.com/the-pudding/website/stargazers">
    <img src="https://img.shields.io/github/stars/the-pudding/website" alt="GitHub stars" valign="middle">
    </a>
@@ -299,8 +299,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [D3], [PostCSS], [Lodash], [PNPM]
 
-1. **[BrittneyPostma.com](https://brittneypostma.com)** &emsp;
-   [[code](https://github.com/brittneypostma/brittneypostma.com)]&emsp;
+1. **[BrittneyPostma.com](https://brittneypostma.com)**&ensp;
+   [[code](https://github.com/brittneypostma/brittneypostma.com)]&ensp;
    <a href="https://github.com/brittneypostma/brittneypostma.com/stargazers">
    <img src="https://img.shields.io/github/stars/brittneypostma/brittneypostma.com" alt="GitHub stars" valign="middle">
    </a>
@@ -309,8 +309,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Netlify], [service worker]
 
-1. **[Urara](https://urara-demo.netlify.app)** &emsp;
-   [[code](https://github.com/importantimport/urara)]&emsp;
+1. **[Urara](https://urara-demo.netlify.app)**&ensp;
+   [[code](https://github.com/importantimport/urara)]&ensp;
    <a href="https://github.com/importantimport/urara/stargazers">
    <img src="https://img.shields.io/github/stars/importantimport/urara" alt="GitHub stars" valign="middle">
    </a>
@@ -319,8 +319,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [PostCSS], [Tailwind], [DaisyUI], [TypeScript], [PNPM]
 
-1. **[connorrothschild.com](https://connorrothschild.com)** &emsp;
-   [[code](https://github.com/connorrothschild/.com)]&emsp;
+1. **[connorrothschild.com](https://connorrothschild.com)**&ensp;
+   [[code](https://github.com/connorrothschild/.com)]&ensp;
    <a href="https://github.com/connorrothschild/.com/stargazers">
    <img src="https://img.shields.io/github/stars/connorrothschild/.com" alt="GitHub stars" valign="middle">
    </a>
@@ -329,8 +329,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [GSAP], [Netlify]
 
-1. **[Svelte Cubed](https://svelte-cubed.vercel.app)** &emsp;
-   [[code](https://github.com/Rich-Harris/svelte-cubed)]&emsp;
+1. **[Svelte Cubed](https://svelte-cubed.vercel.app)**&ensp;
+   [[code](https://github.com/Rich-Harris/svelte-cubed)]&ensp;
    <a href="https://github.com/Rich-Harris/svelte-cubed/stargazers">
    <img src="https://img.shields.io/github/stars/Rich-Harris/svelte-cubed" alt="GitHub stars" valign="middle">
    </a>
@@ -339,8 +339,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [PNPM], [Vercel], [MDsveX]
 
-1. **[Multi-Monitor Calculator](https://multimonitorcalculator.com)** &emsp;
-   [[code](https://github.com/KevinVandy/multi-monitor_calculator)]&emsp;
+1. **[Multi-Monitor Calculator](https://multimonitorcalculator.com)**&ensp;
+   [[code](https://github.com/KevinVandy/multi-monitor_calculator)]&ensp;
    <a href="https://github.com/KevinVandy/multi-monitor_calculator/stargazers">
    <img src="https://img.shields.io/github/stars/KevinVandy/multi-monitor_calculator" alt="GitHub stars" valign="middle">
    </a>
@@ -349,8 +349,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [SMUI], [Sass]
 
-1. **[Modern Fluid Typography Editor](https://modern-fluid-typography.vercel.app)** &emsp;
-   [[code](https://github.com/codeAdrian/modern-fluid-typography-editor)]&emsp;
+1. **[Modern Fluid Typography Editor](https://modern-fluid-typography.vercel.app)**&ensp;
+   [[code](https://github.com/codeAdrian/modern-fluid-typography-editor)]&ensp;
    <a href="https://github.com/codeAdrian/modern-fluid-typography-editor/stargazers">
    <img src="https://img.shields.io/github/stars/codeAdrian/modern-fluid-typography-editor" alt="GitHub stars" valign="middle">
    </a>
@@ -359,8 +359,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [PostCSS], [Chart.js], [cssnano]
 
-1. **[mermaid-live-editor](https://mermaid.live)** &emsp;
-   [[code](https://github.com/mermaid-js/mermaid-live-editor)]&emsp;
+1. **[mermaid-live-editor](https://mermaid.live)**&ensp;
+   [[code](https://github.com/mermaid-js/mermaid-live-editor)]&ensp;
    <a href="https://github.com/mermaid-js/mermaid-live-editor/stargazers">
    <img src="https://img.shields.io/github/stars/mermaid-js/mermaid-live-editor" alt="GitHub stars" valign="middle">
    </a>
@@ -369,8 +369,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Docker], [Tailwind], [PostCSS], [Cypress], [Husky]
 
-1. **[svelte-realworld](https://realworld.svelte.dev)** &emsp;
-   [[code](https://github.com/sveltejs/realworld)]&emsp;
+1. **[svelte-realworld](https://realworld.svelte.dev)**&ensp;
+   [[code](https://github.com/sveltejs/realworld)]&ensp;
    <a href="https://github.com/sveltejs/realworld/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/realworld" alt="GitHub stars" valign="middle">
    </a>
@@ -379,8 +379,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Netlify], [MarkedJS]
 
-1. **[macos-web](https://macos-web.app)** &emsp;
-   [[code](https://github.com/PuruVJ/macos-web)]&emsp;
+1. **[macos-web](https://macos-web.app)**&ensp;
+   [[code](https://github.com/PuruVJ/macos-web)]&ensp;
    <a href="https://github.com/PuruVJ/macos-web/stargazers">
    <img src="https://img.shields.io/github/stars/PuruVJ/macos-web" alt="GitHub stars" valign="middle">
    </a>
@@ -389,8 +389,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
 
-1. **[inlang dashboard](https://inlang.dev)** &emsp;
-   [[code](https://github.com/inlang/inlang/tree/main/apps/dashboard)]&emsp;
+1. **[inlang dashboard](https://inlang.dev)**&ensp;
+   [[code](https://github.com/inlang/inlang/tree/main/apps/dashboard)]&ensp;
    <a href="https://github.com/inlang/inlang/stargazers">
    <img src="https://img.shields.io/github/stars/inlang/inlang" alt="GitHub stars" valign="middle">
    </a>
@@ -399,8 +399,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Vercel], [IBM Carbon], [Tailwind], [Supabase]
 
-1. **[Houdini GraphQL](https://houdinigraphql.com)** &emsp;
-   [[code](https://github.com/HoudiniGraphql/docs)]&emsp;
+1. **[Houdini GraphQL](https://houdinigraphql.com)**&ensp;
+   [[code](https://github.com/HoudiniGraphql/docs)]&ensp;
    <a href="https://github.com/HoudiniGraphql/docs/stargazers">
    <img src="https://img.shields.io/github/stars/HoudiniGraphql/docs" alt="GitHub stars" valign="middle">
    </a>
@@ -409,8 +409,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [PNPM], [MDsveX], [Husky], [highlight.js]
 
-1. **[ConcertMash](https://concertmash.com)** &emsp;
-   [[code](https://github.com/mcmxcdev/ConcertMash)]&emsp;
+1. **[ConcertMash](https://concertmash.com)**&ensp;
+   [[code](https://github.com/mcmxcdev/ConcertMash)]&ensp;
    <a href="https://github.com/mcmxcdev/ConcertMash/stargazers">
    <img src="https://img.shields.io/github/stars/mcmxcdev/ConcertMash" alt="GitHub stars" valign="middle">
    </a>
@@ -419,8 +419,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Tailwind], [Spotify Web API], [Filepond], [PNPM], [Netlify]
 
-1. **[Layer Cake](https://layercake.graphics)** &emsp;
-   [[code](https://github.com/mhkeller/layercake)]&emsp;
+1. **[Layer Cake](https://layercake.graphics)**&ensp;
+   [[code](https://github.com/mhkeller/layercake)]&ensp;
    <a href="https://github.com/mhkeller/layercake/stargazers">
    <img src="https://img.shields.io/github/stars/mhkeller/layercake" alt="GitHub stars" valign="middle">
    </a>
@@ -429,8 +429,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [D3], [GitHub Pages], [JSDoc], [Mocha], [Underscore]
 
-1. **[Pancake](https://pancake-charts.surge.sh)** &emsp;
-   [[code](https://github.com/Rich-Harris/pancake)]&emsp;
+1. **[Pancake](https://pancake-charts.surge.sh)**&ensp;
+   [[code](https://github.com/Rich-Harris/pancake)]&ensp;
    <a href="https://github.com/Rich-Harris/pancake/stargazers">
    <img src="https://img.shields.io/github/stars/Rich-Harris/pancake" alt="GitHub stars" valign="middle">
    </a>
@@ -439,8 +439,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [D3], [surge.sh], [TypeScript]
 
-1. **[Svelte Headless UI](https://svelte-headlessui.goss.io)** &emsp;
-   [[code](https://github.com/rgossiaux/svelte-headlessui)]&emsp;
+1. **[Svelte Headless UI](https://svelte-headlessui.goss.io)**&ensp;
+   [[code](https://github.com/rgossiaux/svelte-headlessui)]&ensp;
    <a href="https://github.com/rgossiaux/svelte-headlessui/stargazers">
    <img src="https://img.shields.io/github/stars/rgossiaux/svelte-headlessui" alt="GitHub stars" valign="middle">
    </a>
@@ -449,8 +449,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [TypeScript], [PostCSS], [Tailwind], [cssnano], [Jest], [rehype]
 
-1. **[Svelte Material UI](https://sveltematerialui.com)** &emsp;
-   [[code](https://github.com/hperrin/svelte-material-ui/tree/master/packages/site)]&emsp;
+1. **[Svelte Material UI](https://sveltematerialui.com)**&ensp;
+   [[code](https://github.com/hperrin/svelte-material-ui/tree/master/packages/site)]&ensp;
    <a href="https://github.com/hperrin/svelte-material-ui/stargazers">
    <img src="https://img.shields.io/github/stars/hperrin/svelte-material-ui" alt="GitHub stars" valign="middle">
    </a>
@@ -459,8 +459,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [TypeScript], [highlight.js], [remark], [Sass]
 
-1. **[Fluent Svelte](https://fluent-svelte.vercel.app)** &emsp;
-   [[code](https://github.com/Tropix126/fluent-svelte)]&emsp;
+1. **[Fluent Svelte](https://fluent-svelte.vercel.app)**&ensp;
+   [[code](https://github.com/Tropix126/fluent-svelte)]&ensp;
    <a href="https://github.com/Tropix126/fluent-svelte/stargazers">
    <img src="https://img.shields.io/github/stars/Tropix126/fluent-svelte" alt="GitHub stars" valign="middle">
    </a>
@@ -469,8 +469,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [MDsveX], [SCSS], [TypeScript], [remark], [rehype], [PNPM], [PostCSS], [Prism]
 
-1. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)** &emsp;
-   [[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&emsp;
+1. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)**&ensp;
+   [[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&ensp;
    <a href="https://github.com/Rich-Harris/sveltekit-on-the-edge/stargazers">
    <img src="https://img.shields.io/github/stars/Rich-Harris/sveltekit-on-the-edge" alt="GitHub stars" valign="middle">
    </a>
@@ -479,8 +479,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [PNPM], [Vercel]
 
-1. **[evidence](https://evidence.dev)** &emsp;
-   [[code](https://github.com/evidence-dev/evidence/tree/main/sites/example-project)]&emsp;
+1. **[evidence](https://evidence.dev)**&ensp;
+   [[code](https://github.com/evidence-dev/evidence/tree/main/sites/example-project)]&ensp;
    <a href="https://github.com/evidence-dev/evidence/stargazers">
    <img src="https://img.shields.io/github/stars/evidence-dev/evidence" alt="GitHub stars" valign="middle">
    </a>
@@ -489,8 +489,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [PNPM], [Changesets], [echarts], [uvu]
 
-1. **[Coolify](https://coolify.io)** &emsp;
-   [[code](https://github.com/coollabsio/coolify)]&emsp;
+1. **[Coolify](https://coolify.io)**&ensp;
+   [[code](https://github.com/coollabsio/coolify)]&ensp;
    <a href="https://github.com/coollabsio/coolify/stargazers">
    <img src="https://img.shields.io/github/stars/coollabsio/coolify" alt="GitHub stars" valign="middle">
    </a>
@@ -499,8 +499,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [PNPM], [TypeScript], [Tailwind], [sveltekit-i18n], [PostCSS], [Husky]
 
-1. **[Flowbite](https://flowbite-svelte.com)** &emsp;
-   [[code](https://github.com/themesberg/flowbite-svelte)]&emsp;
+1. **[Flowbite](https://flowbite-svelte.com)**&ensp;
+   [[code](https://github.com/themesberg/flowbite-svelte)]&ensp;
    <a href="https://github.com/themesberg/flowbite-svelte/stargazers">
    <img src="https://img.shields.io/github/stars/themesberg/flowbite-svelte" alt="GitHub stars" valign="middle">
    </a>
@@ -509,8 +509,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [PNPM], [TypeScript], [Tailwind], [MDsveX], [Prism], [PostCSS], [Playwright]
 
-1. **[Good First Issue Finder](https://finder.eddiehub.io)** &emsp;
-   [[code](https://github.com/EddieHubCommunity/good-first-issue-finder)]&emsp;
+1. **[Good First Issue Finder](https://finder.eddiehub.io)**&ensp;
+   [[code](https://github.com/EddieHubCommunity/good-first-issue-finder)]&ensp;
    <a href="https://github.com/EddieHubCommunity/good-first-issue-finder/stargazers">
    <img src="https://img.shields.io/github/stars/EddieHubCommunity/good-first-issue-finder" alt="GitHub stars" valign="middle">
    </a>
@@ -519,8 +519,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Tailwind], [Husky], [Octokit], [PostCSS]
 
-1. **[Periodic Table](https://ptable-elements.netlify.app)** &emsp;
-   [[code](https://github.com/janosh/periodic-table)]&emsp;
+1. **[Periodic Table](https://ptable-elements.netlify.app)**&ensp;
+   [[code](https://github.com/janosh/periodic-table)]&ensp;
    <a href="https://github.com/janosh/periodic-table/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/periodic-table" alt="GitHub stars" valign="middle">
    </a>
@@ -529,8 +529,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect]
 
-1. **[Pixel Art Together](https://pixelart.liveblocks.app)** &emsp;
-   [[code](https://github.com/liveblocks/pixel-art-together)]&emsp;
+1. **[Pixel Art Together](https://pixelart.liveblocks.app)**&ensp;
+   [[code](https://github.com/liveblocks/pixel-art-together)]&ensp;
    <a href="https://github.com/liveblocks/pixel-art-together/stargazers">
    <img src="https://img.shields.io/github/stars/liveblocks/pixel-art-together" alt="GitHub stars" valign="middle">
    </a>
@@ -539,8 +539,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [TypeScript], [Liveblocks], [Tailwind], [PostCSS], [panzoom]
 
-1. **[Sveltestrap](https://sveltestrap.js.org)** &emsp;
-   [[code](https://github.com/bestguy/sveltestrap)]&emsp;
+1. **[Sveltestrap](https://sveltestrap.js.org)**&ensp;
+   [[code](https://github.com/bestguy/sveltestrap)]&ensp;
    <a href="https://github.com/bestguy/sveltestrap/stargazers">
    <img src="https://img.shields.io/github/stars/bestguy/sveltestrap" alt="GitHub stars" valign="middle">
    </a>
@@ -549,8 +549,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Storybook], [Babel], [Testing Library], [Jest], [PostCSS], [Prism]
 
-1. **[Svelvet](https://svelvet.io)** &emsp;
-   [[code](https://github.com/oslabs-beta/Svelvet)]&emsp;
+1. **[Svelvet](https://svelvet.io)**&ensp;
+   [[code](https://github.com/oslabs-beta/Svelvet)]&ensp;
    <a href="https://github.com/oslabs-beta/Svelvet/stargazers">
    <img src="https://img.shields.io/github/stars/oslabs-beta/Svelvet" alt="GitHub stars" valign="middle">
    </a>
@@ -559,8 +559,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [Playwright], [D3], [Testing Library], [Tailwind], [PostCSS], [Vitest]
 
-1. **[Cryptgeon](https://cryptgeon.nicco.io)** &emsp;
-   [[code](https://github.com/cupcakearmy/cryptgeon/tree/main/frontend)]&emsp;
+1. **[Cryptgeon](https://cryptgeon.nicco.io)**&ensp;
+   [[code](https://github.com/cupcakearmy/cryptgeon/tree/main/frontend)]&ensp;
    <a href="https://github.com/cupcakearmy/cryptgeon/stargazers">
    <img src="https://img.shields.io/github/stars/cupcakearmy/cryptgeon" alt="GitHub stars" valign="middle">
    </a>
@@ -569,8 +569,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [svelte-intl-precompile], [sanitize-html]
 
-1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com)** &emsp;
-   [[code](https://github.com/cibernox/svelte-intl-precompile)]&emsp;
+1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com)**&ensp;
+   [[code](https://github.com/cibernox/svelte-intl-precompile)]&ensp;
    <a href="https://github.com/cibernox/svelte-intl-precompile/stargazers">
    <img src="https://img.shields.io/github/stars/cibernox/svelte-intl-precompile" alt="GitHub stars" valign="middle">
    </a>
@@ -579,8 +579,8 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
    uses: [JS-Yaml], [JSON5]
 
-1. **[Windmill](https://windmill.dev)** &emsp;
-   [[code](https://github.com/windmill-labs/windmill/tree/main/frontend)]&emsp;
+1. **[Windmill](https://windmill.dev)**&ensp;
+   [[code](https://github.com/windmill-labs/windmill/tree/main/frontend)]&ensp;
    <a href="https://github.com/windmill-labs/windmill/stargazers">
    <img src="https://img.shields.io/github/stars/windmill-labs/windmill" alt="GitHub stars" valign="middle">
    </a>
