@@ -28,7 +28,7 @@
       <a href={url}>{title}</a>
       {#if site.repo}
         <a href={site.repo}>
-          <small class="flex" style="gap: 6pt;">
+          <small style="display: flex; gap: 6pt;">
             <MarkGithub color="white" />Repo
           </small>
         </a>
@@ -116,6 +116,7 @@
     display: flex;
     gap: 1em;
     justify-content: space-between;
+    align-items: center;
     margin: 0 0 2rem;
     font-size: 2rem;
   }
