@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="site/static/svelte-kit.svg" alt="SvelteKit" width="500">
+  <img src="site/static/sveltekit.svg" alt="SvelteKit" width="500">
 </p>
 
 <h1 align="center">Awesome examples of SvelteKit in the wild</h1>
@@ -7,15 +7,15 @@
 <h4 align="center">
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-svelte-kit/pulls)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-svelte-kit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-svelte-kit/main)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-svelte-kit/deploys)
+[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-sveltekit/pulls)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-sveltekit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-sveltekit/main)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-sveltekit/deploys)
 
 </h4>
 
 <br>
 
-Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)** to view this list with screenshots plus search and sort functionality (e.g. based on GH stars).
+Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)** to view this list with screenshots plus search and sort functionality (e.g. based on GH stars).
 
 ## Sites
 
@@ -680,4 +680,4 @@ Visit **[awesome-svelte-kit.netlify.app](https://awesome-svelte-kit.netlify.app)
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-svelte-kit/edit/main/readme.md)! Remember to add new sites to [`sites.yml`](sites.yml), not [readme.md](readme.md) (auto-generated). If you're unsure if a site belongs here, [open an issue](https://github.com/janosh/awesome-svelte-kit/issues/new) to discuss. This repo is meant to be a community effort.
+See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/readme.md)! Remember to add new sites to [`sites.yml`](sites.yml), not [readme.md](readme.md) (auto-generated). If you're unsure if a site belongs here, [open an issue](https://github.com/janosh/awesome-sveltekit/issues/new) to discuss. This repo is meant to be a community effort.

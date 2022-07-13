@@ -1,13 +1,13 @@
 {
-  "name": "awesome-svelte-kit",
+  "name": "awesome-sveltekit",
   "description": "Awesome examples of SvelteKit in the wild",
   "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
-  "homepage": "https://awesome-svelte-kit.netlify.app",
-  "repository": "https://github.com/janosh/awesome-svelte-kit",
+  "homepage": "https://awesome-sveltekit.netlify.app",
+  "repository": "https://github.com/janosh/awesome-sveltekit",
   "license": "MIT",
   "version": "0.1.0",
   "type": "module",
-  "bugs": "https://github.com/janosh/awesome-svelte-kit/issues",
+  "bugs": "https://github.com/janosh/awesome-sveltekit/issues",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -46,7 +46,7 @@
     "vite": "^2.9.14"
   },
   "keywords": [
-    "svelte-kit",
+    "sveltekit",
     "awesome collection",
     "example sites",
     "learning resource"

@@ -5,7 +5,7 @@
 
 # date_created is usually the date of first commit on a project which can be found
 # by opening the 'Insights > Network' tab on a repo (e.g.
-# https://github.com/janosh/awesome-svelte-kit/network) and clicking
+# https://github.com/janosh/awesome-sveltekit/network) and clicking
 # cmd/ctrl + left arrow to jump to the very start of the commit history.
 # site_src is the link to a subfolder if e.g. the site is part of a monorepo.
 

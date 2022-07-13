@@ -79,15 +79,15 @@
   }
 </script>
 
-<GitHubCorner href="https://github.com/janosh/awesome-svelte-kit" />
+<GitHubCorner href="https://github.com/janosh/awesome-sveltekit" />
 
 <main>
-  <img src="/svelte-kit.svg" alt="Logo" />
+  <img src="/sveltekit.svg" alt="Logo" />
   <h1>{sites.length} Awesome Examples of SvelteKit in the Wild</h1>
 
   <p>
     Do you have something to add to this list?
-    <a href="https://github.com/janosh/awesome-svelte-kit#-open-to-suggestions">
+    <a href="https://github.com/janosh/awesome-sveltekit#-open-to-suggestions">
       We're open to suggestions.
     </a>
   </p>
