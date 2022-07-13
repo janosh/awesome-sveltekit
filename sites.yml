@@ -1,7 +1,7 @@
 # The description key supports full markdown syntax.
 
-# New tags should strike a balance between generality and specificity so they convey
-# useful information but are still applicable to at least a few other sites.
+# New tags should strike a generality balance so they convey
+# useful information but are still applicable to more than just 1 site.
 
 # date_created is usually the date of first commit on a project which can be found
 # by opening the 'Insights > Network' tab on a repo (e.g.

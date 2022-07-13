@@ -5,6 +5,7 @@ and star count for each site, then writes the results to site/src/sites.yml. */
 import dotenv from 'dotenv'
 import fs from 'fs'
 import yaml from 'js-yaml'
+import { marked } from 'marked'
 import { basename } from 'path'
 import { performance } from 'perf_hooks'
 import { root_dir, title_to_slug } from './index.js'
@@ -127,6 +128,9 @@ const new_sites = sites.map((site) => {
   for (const key of [`repo_stars`, `contributors`]) {
     if (site[key] === undefined) site[key] = old_site[key]
   }
+
+  site.description = marked.parseInline(site.description)
+
   return site
 })
 
