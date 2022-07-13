@@ -77,7 +77,16 @@
         +new Date(siteB.last_updated ?? 0) - +new Date(siteA.last_updated ?? 0)
     )
   }
+
+  const meta_description = `Awesome examples of SvelteKit sites in the wild`
 </script>
+
+<svelte:head>
+  <title>Awesome SvelteKit</title>
+  <meta name="description" content={meta_description} />
+  <meta name="og:description" content={meta_description} />
+  <meta name="twitter:creator" content="@jrib_" />
+</svelte:head>
 
 <GitHubCorner href="https://github.com/janosh/awesome-sveltekit" />
 
