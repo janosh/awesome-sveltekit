@@ -589,6 +589,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [TypeScript], [Tailwind], [cssnano], [Cypress], [PostCSS], [svelte-highlight], [svelte-markdown]
 
+1. **[Threlte](https://threlte.xyz)**&ensp;
+   [[code](https://github.com/threlte/threlte/tree/main/apps/docs)]&ensp;
+   <a href="https://github.com/threlte/threlte/stargazers">
+   <img src="https://img.shields.io/github/stars/threlte/threlte" alt="GitHub stars" valign="middle">
+   </a>
+
+   Threlte is a component library for Svelte to build and render three.js scenes declaratively and state-driven in Svelte apps.<br>
+
+   uses: [TypeScript], [Three.js], [Tailwind], [PostCSS], [Algolia], [Iconify]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
