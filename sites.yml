@@ -126,7 +126,7 @@
     Round-based browser game where you guess the year in which famous event happened.
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
   uses: [Tailwind, Netlify]
-  tags: [webgame]
+  tags: [game]
   date_created: 2021-05-09
   date_added: 2021-05-25
   last_updated: 2021-05-25
@@ -645,7 +645,20 @@
     - PostCSS
     - svelte-highlight
     - svelte-markdown
-  tags: [automation, developer tools, python, scripting, self-hostable]
+  tags: [automation, dev tools, python, scripting, self-hostable]
   date_created: 2022-05-05
   date_added: 2022-06-17
   last_updated: 2022-06-17
+
+- title: Threlte
+  url: https://threlte.xyz
+  repo: https://github.com/threlte/threlte
+  site_src: https://github.com/threlte/threlte/tree/main/apps/docs
+  description:
+    Threlte is a component library for Svelte to build and render three.js scenes declaratively
+    and state-driven in Svelte apps.
+  uses: [TypeScript, Three.js, Tailwind, PostCSS, Algolia, Iconify]
+  tags: [component library, data viz, docs, monorepo, interactive]
+  date_created: 2022-01-15
+  date_added: 2022-07-17
+  last_updated: 2022-07-17

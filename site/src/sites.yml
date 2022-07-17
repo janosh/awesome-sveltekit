@@ -330,8 +330,8 @@
     - Tailwind
     - Netlify
   tags:
+    - game
     - open source
-    - webgame
   date_created: 2021-05-09T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2021-05-25T00:00:00.000Z
@@ -1977,7 +1977,7 @@
     - svelte-markdown
   tags:
     - automation
-    - developer tools
+    - dev tools
     - open source
     - python
     - scripting
@@ -1995,3 +1995,37 @@
       name: Ruben Fiszel
       location: Paris, France
       company: Windmill
+- title: Threlte
+  url: https://threlte.xyz
+  repo: https://github.com/threlte/threlte
+  site_src: https://github.com/threlte/threlte/tree/main/apps/docs
+  description: >-
+    Threlte is a component library for Svelte to build and render three.js
+    scenes declaratively and state-driven in Svelte apps.
+  uses:
+    - TypeScript
+    - Three.js
+    - Tailwind
+    - PostCSS
+    - Algolia
+    - Iconify
+  tags:
+    - component library
+    - data viz
+    - docs
+    - interactive
+    - monorepo
+    - open source
+  date_created: 2022-01-15T00:00:00.000Z
+  date_added: 2022-07-17T00:00:00.000Z
+  last_updated: 2022-07-17T00:00:00.000Z
+  slug: threlte
+  repo_stars: 222
+  contributors:
+    - github: grischaerbe
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/46897060?v=4
+      name: Grischa Erbe
+      location: null
+      company: null
