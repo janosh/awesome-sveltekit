@@ -690,4 +690,4 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/readme.md)! Remember to add new sites to [`sites.yml`](sites.yml), not [readme.md](readme.md) (auto-generated). If you're unsure if a site belongs here, [open an issue](https://github.com/janosh/awesome-sveltekit/issues/new) to discuss. This repo is meant to be a community effort.
+See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)!
