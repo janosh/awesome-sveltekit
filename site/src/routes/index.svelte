@@ -95,9 +95,9 @@
   <h1>{sites.length} Awesome Examples of SvelteKit in the Wild</h1>
 
   <p>
-    Do you have something to add to this list?
-    <a href="https://github.com/janosh/awesome-sveltekit#-open-to-suggestions">
-      We're open to suggestions.
+    See something that's missing from this list?
+    <a href="https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml">
+      PRs welcome!
     </a>
   </p>
 
@@ -108,7 +108,9 @@
   />
 
   {#if filtered_sites.length < sites.length}
-    <p>{filtered_sites.length} match{filtered_sites.length !== 1 ? `es` : ``}</p>
+    <p>
+      <span>{filtered_sites.length}</span> match{filtered_sites.length !== 1 ? `es` : ``}
+    </p>
   {/if}
 
   <SiteList sites={sorted_sites} />
@@ -118,5 +120,10 @@
   h1,
   p {
     text-align: center;
+  }
+  p span {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 3pt;
+    border-radius: 2pt;
   }
 </style>
