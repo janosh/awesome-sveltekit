@@ -2029,3 +2029,33 @@
       name: Grischa Erbe
       location: null
       company: null
+- title: svelte-french-toast
+  url: https://svelte-french-toast.com
+  repo: https://github.com/kbrgl/svelte-french-toast
+  description: >-
+    Svelte port of Timo Lins&#39; react-hot-toast, a lightweight, customizable
+    toast notification library.
+  uses:
+    - TypeScript
+    - Prism
+    - Tailwind
+    - PostCSS
+    - PNPM
+  tags:
+    - notifications
+    - open source
+    - snackbar
+    - toast
+  date_created: 2022-06-04T00:00:00.000Z
+  date_added: 2022-07-24T00:00:00.000Z
+  last_updated: 2022-07-24T00:00:00.000Z
+  slug: svelte-french-toast
+  repo_stars: 97
+  contributors:
+    - github: kbrgl
+      twitter: kabirgoel
+      url: https://kabirgoel.com
+      avatar: https://avatars.githubusercontent.com/u/13417496?v=4
+      name: Kabir Goel
+      location: Berkeley, CA
+      company: '@calblueprint'

@@ -117,6 +117,11 @@
 </main>
 
 <style>
+  img {
+    max-width: 800px;
+    margin: auto;
+    display: block;
+  }
   h1,
   p {
     text-align: center;

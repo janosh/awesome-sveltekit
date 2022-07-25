@@ -662,3 +662,13 @@
   date_created: 2022-01-15
   date_added: 2022-07-17
   last_updated: 2022-07-17
+
+- title: svelte-french-toast
+  url: https://svelte-french-toast.com
+  repo: https://github.com/kbrgl/svelte-french-toast
+  description: Svelte port of Timo Lins' react-hot-toast, a lightweight, customizable toast notification library.
+  uses: [TypeScript, Prism, Tailwind, PostCSS, PNPM]
+  tags: [toast, notifications, snackbar]
+  date_created: 2022-06-04
+  date_added: 2022-07-24
+  last_updated: 2022-07-24
