@@ -599,6 +599,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [TypeScript], [Three.js], [Tailwind], [PostCSS], [Algolia], [Iconify]
 
+1. **[svelte-french-toast](https://svelte-french-toast.com)**&ensp;
+   [[code](https://github.com/kbrgl/svelte-french-toast)]&ensp;
+   <a href="https://github.com/kbrgl/svelte-french-toast/stargazers">
+   <img src="https://img.shields.io/github/stars/kbrgl/svelte-french-toast" alt="GitHub stars" valign="middle">
+   </a>
+
+   Svelte port of Timo Lins' react-hot-toast, a lightweight, customizable toast notification library.<br>
+
+   uses: [TypeScript], [Prism], [Tailwind], [PostCSS], [PNPM]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
