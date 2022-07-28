@@ -609,6 +609,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [TypeScript], [Prism], [Tailwind], [PostCSS], [PNPM]
 
+1. **[Hexapipes](https://hexapipes.vercel.app/hexagonal/5/1)**&ensp;
+   [[code](https://github.com/gereleth/hexapipes)]&ensp;
+   <a href="https://github.com/gereleth/hexapipes/stargazers">
+   <img src="https://img.shields.io/github/stars/gereleth/hexapipes" alt="GitHub stars" valign="middle">
+   </a>
+
+   Browser game where the goal is to correctly line up pipes placed on hexagonal puzzle pieces.<br>
+
+   uses: [Vercel]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com

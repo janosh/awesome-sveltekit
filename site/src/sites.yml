@@ -2059,3 +2059,27 @@
       name: Kabir Goel
       location: Berkeley, CA
       company: '@calblueprint'
+- title: Hexapipes
+  url: https://hexapipes.vercel.app/hexagonal/5/1
+  repo: https://github.com/gereleth/hexapipes
+  description: >-
+    Browser game where the goal is to correctly line up pipes placed on
+    hexagonal puzzle pieces.
+  uses:
+    - Vercel
+  tags:
+    - game
+    - open source
+  date_created: 2022-06-25T00:00:00.000Z
+  date_added: 2022-07-28T00:00:00.000Z
+  last_updated: 2022-07-28T00:00:00.000Z
+  slug: hexapipes
+  repo_stars: 116
+  contributors:
+    - github: gereleth
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/6080076?v=4
+      name: Daria Vasyukova
+      location: null
+      company: null
