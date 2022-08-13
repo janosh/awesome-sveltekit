@@ -682,3 +682,13 @@
   date_created: 2022-06-25
   date_added: 2022-07-28
   last_updated: 2022-07-28
+
+- title: QuantU
+  url: https://quantu.app
+  repo: https://github.com/quantu-app/quantu-app
+  description: An interactive learning platform for advanced mathematics.
+  uses: [TypeScript, Sass]
+  tags: [oss]
+  date_created: 2021-04-30
+  date_added: 2022-08-13
+  last_updated: 2022-08-13
