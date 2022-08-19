@@ -2060,7 +2060,7 @@
       location: Berkeley, CA
       company: '@calblueprint'
 - title: Hexapipes
-  url: https://hexapipes.vercel.app/hexagonal/5/1
+  url: https://hexapipes.vercel.app
   repo: https://github.com/gereleth/hexapipes
   description: >-
     Browser game where the goal is to correctly line up pipes placed on
