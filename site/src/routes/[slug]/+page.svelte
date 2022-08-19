@@ -1,8 +1,8 @@
 <script lang="ts">
-  import SiteDetails from '../components/SiteDetails.svelte'
-  import { Site } from '../types'
+  import SiteDetails from '../../components/SiteDetails.svelte'
 
-  export let site: Site
+  export let data
+  $: ({ site } = data)
 
   $: head_title = `${site.title} | Awesome SvelteKit`
   $: plain_description = site?.description?.replace(/<[^>]*>/g, ``)

@@ -1,33 +1,26 @@
-<script lang="ts" context="module">
-  import { dev } from '$app/env'
-  import type { ErrorLoad } from '@sveltejs/kit'
-
-  export const load: ErrorLoad = ({ error, status }) => ({ props: { error, status } })
-</script>
-
 <script lang="ts">
-  export let status: number
-  export let error: Error
+  import { dev } from '$app/env'
+  import { page } from '$app/stores'
 </script>
 
 <svelte:head>
-  <title>{status}</title>
+  <title>{$page.status}</title>
 </svelte:head>
 
 <div>
-  {#if status === 404}
-    <h1>⛔ {error.name} {status}: Page not found</h1>
+  {#if $page.status === 404}
+    <h1>⛔ {$page.error?.name} {$page.status}: Page not found</h1>
     <p>
       Return to the
       <a sveltekit:prefetch href="/">landing page</a>.
     </p>
   {:else}
-    <h1>⛔ {error.name} {status}</h1>
+    <h1>⛔ {$page.error?.name} {$page.status}</h1>
   {/if}
 
-  {#if dev && error?.stack}
+  {#if dev && $page.error?.stack}
     <h2>Stack Trace</h2>
-    <pre>{error.stack}</pre>
+    <pre>{$page.error.stack}</pre>
   {/if}
 </div>
 

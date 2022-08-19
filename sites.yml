@@ -674,7 +674,7 @@
   last_updated: 2022-07-24
 
 - title: Hexapipes
-  url: https://hexapipes.vercel.app/hexagonal/5/1
+  url: https://hexapipes.vercel.app
   repo: https://github.com/gereleth/hexapipes
   description: Browser game where the goal is to correctly line up pipes placed on hexagonal puzzle pieces.
   uses: [Vercel]

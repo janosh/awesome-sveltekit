@@ -609,7 +609,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [TypeScript], [Prism], [Tailwind], [PostCSS], [PNPM]
 
-1. **[Hexapipes](https://hexapipes.vercel.app/hexagonal/5/1)**&ensp;
+1. **[Hexapipes](https://hexapipes.vercel.app)**&ensp;
    [[code](https://github.com/gereleth/hexapipes)]&ensp;
    <a href="https://github.com/gereleth/hexapipes/stargazers">
    <img src="https://img.shields.io/github/stars/gereleth/hexapipes" alt="GitHub stars" valign="middle">
@@ -710,4 +710,4 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)!
+See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, do add it!
