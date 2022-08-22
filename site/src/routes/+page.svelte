@@ -91,7 +91,7 @@
 <GitHubCorner href="https://github.com/janosh/awesome-sveltekit" />
 
 <main>
-  <img src="/sveltekit.svg" alt="Logo" />
+  <img src="/sveltekit.svg" alt="Logo" style="max-height: 120px;" />
   <h1>{sites.length} Awesome Examples of SvelteKit in the Wild</h1>
 
   <p>
@@ -114,6 +114,16 @@
   {/if}
 
   <SiteList sites={sorted_sites} />
+
+  <h2>🎉 Open to Suggestions</h2>
+  <p style="max-width: 40em;">
+    See something that's missing from this list? <a
+      href="https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml"
+      >PRs welcome</a
+    >! A good place to discover Svelte projects (not necessarily SvelteKit) is
+    <a href="https://github.com/trending/svelte?since=monthly">GitHub Trending</a>. If
+    anything on that list stands out to you but is missing here, please add it!
+  </p>
 </main>
 
 <style>
@@ -122,9 +132,12 @@
     margin: auto;
     display: block;
   }
-  h1,
-  p {
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  :where(h1, h2, p) {
     text-align: center;
+    margin: 1em auto;
   }
   p span {
     background-color: rgba(255, 255, 255, 0.2);

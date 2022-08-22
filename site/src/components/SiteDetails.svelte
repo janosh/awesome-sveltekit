@@ -13,13 +13,6 @@
   export let site: Site
 
   $: ({ title, url, tags, uses, contributors, date_created, repo_stars } = site)
-
-  const prettyDate = (date = ``): string =>
-    new Date(date).toLocaleString(`en`, {
-      month: `short`,
-      year: `numeric`,
-      day: `numeric`,
-    })
 </script>
 
 <main>
@@ -68,7 +61,7 @@
       <hr />
       <p class="flex">
         <Project width="12pt" />&emsp;Project started on:
-        <span style="flex: 1" />{prettyDate(date_created)}
+        <span style="flex: 1" />{date_created}
       </p>
     {/if}
     {#if tags?.length > 0}
@@ -102,7 +95,7 @@
 <style>
   main {
     display: flex;
-    max-width: 1000px;
+    max-width: 1200px;
     gap: 2em;
     margin: 6em auto 2em;
   }
