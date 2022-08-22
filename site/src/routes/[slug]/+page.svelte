@@ -1,11 +1,11 @@
 <script lang="ts">
   import SiteDetails from '../../components/SiteDetails.svelte'
+  import type { PageData } from './$types'
 
-  export let data
-  $: ({ site } = data)
+  export let data: PageData
 
-  $: head_title = `${site.title} | Awesome SvelteKit`
-  $: plain_description = site?.description?.replace(/<[^>]*>/g, ``)
+  $: head_title = `${data.site.title} | Awesome SvelteKit`
+  $: plain_description = data.site?.description?.replace(/<[^>]*>/g, ``)
 </script>
 
 <svelte:head>
@@ -15,13 +15,13 @@
     <meta name="description" content={plain_description} />
     <meta property="og:description" content={plain_description} />
   {/if}
-  {#if site.contributors[0]?.twitter}
-    <meta name="twitter:creator" content={site.contributors[0].twitter} />
+  {#if data.site.contributors[0]?.twitter}
+    <meta name="twitter:creator" content={data.site.contributors[0].twitter} />
   {/if}
 </svelte:head>
 
 <a href="/" class="back" sveltekit:prefetch>&laquo; back</a>
-<SiteDetails {site} />
+<SiteDetails site={data.site} />
 
 <style>
   a.back {

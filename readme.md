@@ -710,4 +710,4 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, do add it!
+See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
