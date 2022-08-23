@@ -627,7 +627,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    Headless, Authentication, Cart & Checkout, TailwindCSS, Server Rendered, Proxy + API Integrated, Animations, Stores, Lazy Loading, Loading Indicators, Carousel, Instant Search, Faceted Filters, Typescript, Open Source, MIT license. 1 command deploy to your own server, 1 click deploy to Netlify/Vercel.<br>
 
-   uses: [Vercel], [Tailwind], [TypeScript], [svelte-toasts], [PostCSS], [cssnano], [Houdini]
+   uses: [Vercel], [Tailwind], [TypeScript], [svelte-toasts], [PostCSS], [cssnano]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
