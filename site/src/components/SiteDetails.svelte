@@ -82,6 +82,7 @@
           {#if href?.startsWith(`https://`)}
             <a {href}>{tool}</a>
           {:else}
+            {console.log({ href })}
             {href.trigger_error_in_else_case}
             <!-- all tools should have an https link -->
           {/if}

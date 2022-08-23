@@ -2083,3 +2083,46 @@
       name: Daria Vasyukova
       location: null
       company: null
+- title: KitCommerce
+  url: https://kitcommerce.tech
+  repo: https://github.com/itswadesh/svelte-commerce
+  description: >-
+    Headless, Authentication, Cart &amp; Checkout, TailwindCSS, Server Rendered,
+    Proxy + API Integrated, Animations, Stores, Lazy Loading, Loading
+    Indicators, Carousel, Instant Search, Faceted Filters, Typescript, Open
+    Source, MIT license. 1 command deploy to your own server, 1 click deploy to
+    Netlify/Vercel.
+  uses:
+    - Vercel
+    - Tailwind
+    - TypeScript
+    - svelte-toasts
+    - PostCSS
+    - cssnano
+    - Houdini
+  tags:
+    - commerce
+    - login
+    - open source
+    - shopping
+    - store
+  date_created: 2020-04-27T00:00:00.000Z
+  date_added: 2022-08-23T00:00:00.000Z
+  last_updated: 2022-08-23T00:00:00.000Z
+  slug: kitcommerce
+  repo_stars: 714
+  contributors:
+    - github: itswadesh
+      twitter: itswadesh
+      url: https://misiki.tech
+      avatar: https://avatars.githubusercontent.com/u/1191896?v=4
+      name: Swadesh Behera
+      location: India
+      company: Misiki
+    - github: pratapmaharana
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/73770990?v=4
+      name: PRATAP CHANDRA MAHARANA
+      location: semiliguda,odisha
+      company: null

@@ -682,3 +682,16 @@
   date_created: 2022-06-25
   date_added: 2022-07-28
   last_updated: 2022-07-28
+
+- title: KitCommerce
+  url: https://kitcommerce.tech
+  repo: https://github.com/itswadesh/svelte-commerce
+  description:
+    Headless, Authentication, Cart & Checkout, TailwindCSS, Server Rendered, Proxy + API Integrated, Animations, Stores,
+    Lazy Loading, Loading Indicators, Carousel, Instant Search, Faceted Filters, Typescript, Open Source, MIT license. 1
+    command deploy to your own server, 1 click deploy to Netlify/Vercel.
+  uses: [Vercel, Tailwind, TypeScript, svelte-toasts, PostCSS, cssnano]
+  tags: [commerce, shopping, login, store]
+  date_created: 2020-04-27
+  date_added: 2022-08-23
+  last_updated: 2022-08-23
