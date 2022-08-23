@@ -2099,7 +2099,6 @@
     - svelte-toasts
     - PostCSS
     - cssnano
-    - Houdini
   tags:
     - commerce
     - login

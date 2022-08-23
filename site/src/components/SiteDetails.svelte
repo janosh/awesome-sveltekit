@@ -13,6 +13,17 @@
   export let site: Site
 
   $: ({ title, url, tags, uses, contributors, date_created, repo_stars } = site)
+
+  $: tools = uses.map((tool) => {
+    const href = uses_links[tool.toLowerCase()]
+    if (!href) {
+      throw `Unknown tool: ${tool}`
+    } else if (!href.startsWith(`https`)) {
+      // all tools should have an https URL
+      throw `All tool URLs should use HTTPS: ${tool} has href: ${href}`
+    }
+    return [tool, href]
+  })
 </script>
 
 <main>
@@ -73,19 +84,12 @@
         {/each}
       </p>
     {/if}
-    {#if uses && uses?.length > 0}
+    {#if tools && tools?.length > 0}
       <hr />
       <p class="uses flex">
         <Stack />&ensp;Uses:&emsp;
-        {#each uses as tool}
-          {@const href = uses_links[tool.toLowerCase()]}
-          {#if href?.startsWith(`https://`)}
-            <a {href}>{tool}</a>
-          {:else}
-            {console.log({ href })}
-            {href.trigger_error_in_else_case}
-            <!-- all tools should have an https link -->
-          {/if}
+        {#each tools as [tool, href]}
+          <a {href}>{tool}</a>
         {/each}
       </p>
     {/if}
