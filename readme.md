@@ -619,6 +619,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Vercel]
 
+1. **[KitCommerce](https://kitcommerce.tech)**&ensp;
+   [[code](https://github.com/itswadesh/svelte-commerce)]&ensp;
+   <a href="https://github.com/itswadesh/svelte-commerce/stargazers">
+   <img src="https://img.shields.io/github/stars/itswadesh/svelte-commerce" alt="GitHub stars" valign="middle">
+   </a>
+
+   Headless, Authentication, Cart & Checkout, TailwindCSS, Server Rendered, Proxy + API Integrated, Animations, Stores, Lazy Loading, Loading Indicators, Carousel, Instant Search, Faceted Filters, Typescript, Open Source, MIT license. 1 command deploy to your own server, 1 click deploy to Netlify/Vercel.<br>
+
+   uses: [Vercel], [Tailwind], [TypeScript], [svelte-toasts], [PostCSS], [cssnano], [Houdini]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -694,6 +704,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [svelte-intl-precompile]: https://github.com/cibernox/svelte-intl-precompile
 [svelte-markdown]: https://github.com/pablo-abc/svelte-markdown
 [svelte-multiselect]: https://github.com/janosh/svelte-multiselect
+[svelte-toasts]: https://github.com/mzohaibqc/svelte-toasts
 [sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
 [svicons]: https://github.com/janosh/svicons
 [tabler icons]: https://tabler-icons.io
