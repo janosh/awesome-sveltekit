@@ -20,6 +20,7 @@ echarts: https://github.com/apache/echarts
 elder.js: https://github.com/Elderjs/elderjs
 filepond: https://pqina.nl/filepond
 firebase: https://firebase.google.com
+github api: https://docs.github.com/en/rest
 github pages: https://pages.github.com
 gitpod: https://gitpod.io
 google analytics: https://analytics.google.com
@@ -30,7 +31,6 @@ graphql: https://graphql.org
 gsap: https://greensock.com/gsap
 highlight.js: https://highlightjs.org
 husky: https://github.com/typicode/husky
-i18n: https://github.com/sveltejs/kit/issues/553
 ibm carbon: https://carbondesignsystem.com
 iconify: https://iconify.design
 iconoir: https://iconoir.com
@@ -44,6 +44,7 @@ mapbox: https://mapbox.com
 markedjs: https://marked.js.org
 mdsvex: https://github.com/pngwn/MDsveX
 mocha: https://mochajs.org
+monaco: https://microsoft.github.io/monaco-editor
 mvp.css: https://github.com/andybrewer/mvp
 netlify: https://netlify.com
 octokit: https://github.com/octokit/octokit.js
@@ -57,7 +58,6 @@ pre-commit: https://pre-commit.com
 prism: https://prismjs.com
 rehype: https://github.com/rehypejs/rehype
 remark: https://github.com/remarkjs/remark
-rollup: https://rollupjs.org
 sanitize-html: https://github.com/apostrophecms/sanitize-html
 sanity: https://sanity.io
 sass: https://sass-lang.com
@@ -76,7 +76,6 @@ svelte-multiselect: https://github.com/janosh/svelte-multiselect
 svelte-toasts: https://github.com/mzohaibqc/svelte-toasts
 sveltekit-i18n: https://github.com/sveltekit-i18n/lib
 svicons: https://github.com/janosh/svicons
-tabler icons: https://tabler-icons.io
 tailwind: https://tailwindcss.com
 testing library: https://testing-library.com
 three.js: https://threejs.org
@@ -85,5 +84,3 @@ underscore: https://underscorejs.org
 uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 vitest: https://vitest.dev
-weepeople: https://github.com/propublica/weepeople
-windi: https://windicss.org
