@@ -439,8 +439,8 @@
 
 - title: Houdini GraphQL
   url: https://houdinigraphql.com
-  repo: https://github.com/HoudiniGraphql/docs
-  description: Documentation site for houdini.
+  repo: https://github.com/HoudiniGraphQL/houdini
+  description: Documentation site for Houdini.
   uses: [PNPM, MDsveX, Husky, highlight.js]
   tags: [graphql, data fetching, front-end, developer tool, minimal]
   date_created: 2021-01-19
@@ -695,3 +695,24 @@
   date_created: 2020-04-27
   date_added: 2022-08-23
   last_updated: 2022-08-23
+
+- title: Joy of Code
+  url: https://joyofcode.xyz
+  repo: https://github.com/mattcroat/joy-of-code
+  description: 🌸 Joy of Code is a digital garden growing curious minds.
+  uses:
+    - GitHub API
+    - Monaco
+    - Playwright
+    - Google Analytics
+    - Supabase
+    - Vercel
+    - PNPM
+    - Sass
+    - TypeScript
+    - remark
+    - rehype
+  tags: [blog, community, cms]
+  date_created: 2020-10-19
+  date_added: 2022-08-31
+  last_updated: 2022-08-31

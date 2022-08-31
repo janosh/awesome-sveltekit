@@ -400,12 +400,12 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
    uses: [TypeScript], [Vercel], [IBM Carbon], [Tailwind], [Supabase]
 
 1. **[Houdini GraphQL](https://houdinigraphql.com)**&ensp;
-   [[code](https://github.com/HoudiniGraphql/docs)]&ensp;
-   <a href="https://github.com/HoudiniGraphql/docs/stargazers">
-   <img src="https://img.shields.io/github/stars/HoudiniGraphql/docs" alt="GitHub stars" valign="middle">
+   [[code](https://github.com/HoudiniGraphQL/houdini)]&ensp;
+   <a href="https://github.com/HoudiniGraphQL/houdini/stargazers">
+   <img src="https://img.shields.io/github/stars/HoudiniGraphQL/houdini" alt="GitHub stars" valign="middle">
    </a>
 
-   Documentation site for houdini.<br>
+   Documentation site for Houdini.<br>
 
    uses: [PNPM], [MDsveX], [Husky], [highlight.js]
 
@@ -629,6 +629,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Vercel], [Tailwind], [TypeScript], [svelte-toasts], [PostCSS], [cssnano]
 
+1. **[Joy of Code](https://joyofcode.xyz)**&ensp;
+   [[code](https://github.com/mattcroat/joy-of-code)]&ensp;
+   <a href="https://github.com/mattcroat/joy-of-code/stargazers">
+   <img src="https://img.shields.io/github/stars/mattcroat/joy-of-code" alt="GitHub stars" valign="middle">
+   </a>
+
+   🌸 Joy of Code is a digital garden growing curious minds.<br>
+
+   uses: [GitHub API], [Monaco], [Playwright], [Google Analytics], [Supabase], [Vercel], [PNPM], [Sass], [TypeScript], [remark], [rehype]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -651,6 +661,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [elder.js]: https://github.com/Elderjs/elderjs
 [filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
+[github api]: https://docs.github.com/en/rest
 [github pages]: https://pages.github.com
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
@@ -661,7 +672,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
 [husky]: https://github.com/typicode/husky
-[i18n]: https://github.com/sveltejs/kit/issues/553
 [ibm carbon]: https://carbondesignsystem.com
 [iconify]: https://iconify.design
 [iconoir]: https://iconoir.com
@@ -675,6 +685,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [markedjs]: https://marked.js.org
 [mdsvex]: https://github.com/pngwn/MDsveX
 [mocha]: https://mochajs.org
+[monaco]: https://microsoft.github.io/monaco-editor
 [mvp.css]: https://github.com/andybrewer/mvp
 [netlify]: https://netlify.com
 [octokit]: https://github.com/octokit/octokit.js
@@ -688,7 +699,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [prism]: https://prismjs.com
 [rehype]: https://github.com/rehypejs/rehype
 [remark]: https://github.com/remarkjs/remark
-[rollup]: https://rollupjs.org
 [sanitize-html]: https://github.com/apostrophecms/sanitize-html
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
@@ -707,7 +717,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [svelte-toasts]: https://github.com/mzohaibqc/svelte-toasts
 [sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
 [svicons]: https://github.com/janosh/svicons
-[tabler icons]: https://tabler-icons.io
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
@@ -716,8 +725,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
-[weepeople]: https://github.com/propublica/weepeople
-[windi]: https://windicss.org
 
 ## 🎉 Open to Suggestions
 
