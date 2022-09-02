@@ -20,7 +20,7 @@
   date_added: 2021-11-11T00:00:00.000Z
   last_updated: 2021-11-11T00:00:00.000Z
   slug: svelte.dev
-  repo_stars: 60600
+  repo_stars: 61817
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -56,7 +56,7 @@
       avatar: https://avatars.githubusercontent.com/u/5968653?v=4
       name: Simon H
       location: Germany
-      company: Accso
+      company: Vercel
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
@@ -73,7 +73,7 @@
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2021-05-25T00:00:00.000Z
   slug: official-sveltekit-docs
-  repo_stars: 9194
+  repo_stars: 10177
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -96,19 +96,19 @@
       name: Ignatius Bagus
       location: null
       company: null
-    - github: ehrencrona
-      twitter: null
-      url: https://www.linkedin.com/in/andreas-ehrencrona-a242717/
-      avatar: https://avatars.githubusercontent.com/u/1862212?v=4
-      name: Andreas Ehrencrona
-      location: null
-      company: Velik AB
-    - github: GrygrFlzr
-      twitter: null
+    - github: dummdidumm
+      twitter: dummdidumm_
       url: null
-      avatar: https://avatars.githubusercontent.com/u/1460917?v=4
+      avatar: https://avatars.githubusercontent.com/u/5968653?v=4
+      name: Simon H
+      location: Germany
+      company: Vercel
+    - github: Conduitry
+      twitter: null
+      url: https://conduitry.dev
+      avatar: https://avatars.githubusercontent.com/u/16696352?v=4
       name: null
-      location: null
+      location: Wakefield, RI, US
       company: null
 - title: SK Incognito
   url: https://sk-incognito.vercel.app
@@ -160,7 +160,7 @@
       url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
-      location: Currently @ UC Berkeley
+      location: Lawrence Berkeley Lab
       company: Cambridge University
 - title: TikZ
   url: https://tikz.netlify.app
@@ -185,14 +185,14 @@
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2022-05-10T00:00:00.000Z
   slug: tikz
-  repo_stars: 78
+  repo_stars: 81
   contributors:
     - github: janosh
       twitter: jrib_
       url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
-      location: Currently @ UC Berkeley
+      location: Lawrence Berkeley Lab
       company: Cambridge University
 - title: markushatvan.com
   url: https://markushatvan.com
@@ -254,7 +254,7 @@
       url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
-      location: Currently @ UC Berkeley
+      location: Lawrence Berkeley Lab
       company: Cambridge University
 - title: Afara
   url: https://afara.foundation
@@ -285,7 +285,7 @@
       url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
-      location: Currently @ UC Berkeley
+      location: Lawrence Berkeley Lab
       company: Cambridge University
 - title: Ocean artUp
   url: https://ocean-artup.eu
@@ -317,7 +317,7 @@
       url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
-      location: Currently @ UC Berkeley
+      location: Lawrence Berkeley Lab
       company: Cambridge University
 - title: Guess The Year
   url: https://guess-the-year.davjhan.com
@@ -336,7 +336,7 @@
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2021-05-25T00:00:00.000Z
   slug: guess-the-year
-  repo_stars: 23
+  repo_stars: 24
   contributors: []
 - title: Gitpod
   url: https://gitpod.io
@@ -357,21 +357,21 @@
   date_added: 2021-05-31T00:00:00.000Z
   last_updated: 2021-05-31T00:00:00.000Z
   slug: gitpod
-  repo_stars: 233
+  repo_stars: 246
   contributors:
-    - github: mikenikles
-      twitter: mikenikles
-      url: https://www.mikenikles.com
-      avatar: https://avatars.githubusercontent.com/u/788827?v=4
-      name: Mike Nikles
-      location: null
-      company: null
     - github: nisarhassan12
       twitter: nisarhassan12
       url: https://nisar.dev
       avatar: https://avatars.githubusercontent.com/u/46004116?v=4
       name: Nisar Hassan Naqvi
       location: Lahore, Pakistan
+      company: null
+    - github: mikenikles
+      twitter: mikenikles
+      url: https://www.mikenikles.com
+      avatar: https://avatars.githubusercontent.com/u/788827?v=4
+      name: Mike Nikles
+      location: null
       company: null
     - github: estelle
       twitter: null
@@ -389,11 +389,11 @@
       company: '@Gitpod-io'
     - github: ghuntley
       twitter: GeoffreyHuntley
-      url: https://www.ghuntley.com/now
+      url: https://www.ghuntley.com/linktree
       avatar: https://avatars.githubusercontent.com/u/127353?v=4
       name: Geoffrey Huntley
       location: Kangaroo Island, Australia
-      company: '@gitpod-io '
+      company: null
 - title: SvelteKit Experiments
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
@@ -440,7 +440,7 @@
   date_added: 2021-06-11T00:00:00.000Z
   last_updated: 2021-06-11T00:00:00.000Z
   slug: puruvj.dev
-  repo_stars: 10
+  repo_stars: 11
   contributors:
     - github: PuruVJ
       twitter: puruvjdev
@@ -448,7 +448,7 @@
       avatar: https://avatars.githubusercontent.com/u/47742487?v=4
       name: Puru Vijay
       location: Jaipur
-      company: '@stackblitz'
+      company: '@stackblitz '
 - title: GraphCMS Starter Blog
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
@@ -465,7 +465,7 @@
   date_added: 2021-06-14T00:00:00.000Z
   last_updated: 2021-06-14T00:00:00.000Z
   slug: graphcms-starter-blog
-  repo_stars: 7
+  repo_stars: 8
   contributors:
     - github: spences10
       twitter: spences10
@@ -473,7 +473,7 @@
       avatar: https://avatars.githubusercontent.com/u/234708?v=4
       name: Scott Spence
       location: London, United Kingdom
-      company: '@graphcms'
+      company: '@storyblok'
     - github: renovate-bot
       twitter: renovatebot
       url: https://renovate.whitesourcesoftware.com
@@ -496,7 +496,7 @@
   date_added: 2021-07-08T00:00:00.000Z
   last_updated: 2021-07-08T00:00:00.000Z
   slug: beatbump
-  repo_stars: 276
+  repo_stars: 352
   contributors:
     - github: snuffyDev
       twitter: null
@@ -552,7 +552,7 @@
   date_added: 2021-08-10T00:00:00.000Z
   last_updated: 2021-08-10T00:00:00.000Z
   slug: sveltepress
-  repo_stars: 210
+  repo_stars: 209
   contributors:
     - github: GeopJr
       twitter: GeopJr1312
@@ -576,7 +576,7 @@
   date_added: 2021-08-13T00:00:00.000Z
   last_updated: 2021-08-13T00:00:00.000Z
   slug: neovim-craft
-  repo_stars: 121
+  repo_stars: 133
   contributors:
     - github: neurosnap
       twitter: null
@@ -603,7 +603,7 @@
   date_added: 2021-09-01T00:00:00.000Z
   last_updated: 2021-09-01T00:00:00.000Z
   slug: swyxkit
-  repo_stars: 337
+  repo_stars: 367
   contributors:
     - github: sw-yx
       twitter: swyx
@@ -611,7 +611,7 @@
       avatar: https://avatars.githubusercontent.com/u/6764957?v=4
       name: swyx
       location: NYC
-      company: '@temporalio'
+      company: '@dxtipshq'
 - title: Svelte Society
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
@@ -629,7 +629,7 @@
   date_added: 2021-10-01T00:00:00.000Z
   last_updated: 2020-10-01T00:00:00.000Z
   slug: svelte-society
-  repo_stars: 168
+  repo_stars: 178
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
@@ -645,13 +645,6 @@
       name: null
       location: null
       company: null
-    - github: brittneypostma
-      twitter: brittneypostma
-      url: https://brittneypostma.com
-      avatar: https://avatars.githubusercontent.com/u/45889730?v=4
-      name: Brittney Postma
-      location: Holland, MI
-      company: bDesigned
     - github: benmccann
       twitter: null
       url: https://www.benmccann.com
@@ -659,7 +652,14 @@
       name: Ben McCann
       location: California
       company: null
-    - github: haudraufhaun
+    - github: brittneypostma
+      twitter: brittneypostma
+      url: https://brittneypostma.com
+      avatar: https://avatars.githubusercontent.com/u/45889730?v=4
+      name: Brittney Postma
+      location: Holland, MI
+      company: bDesigned
+    - github: diepoe
       twitter: haudraufhaun1
       url: https://haudraufhauns.vercel.app
       avatar: https://avatars.githubusercontent.com/u/47633893?v=4
@@ -705,7 +705,7 @@
   date_added: 2021-10-01T00:00:00.000Z
   last_updated: 2021-09-15T00:00:00.000Z
   slug: matt-fantinel
-  repo_stars: 152
+  repo_stars: 167
   contributors:
     - github: matfantinel
       twitter: Matt_fantinel
@@ -765,7 +765,7 @@
   date_added: 2021-10-11T00:00:00.000Z
   last_updated: 2021-10-11T00:00:00.000Z
   slug: files
-  repo_stars: 194
+  repo_stars: 208
   contributors:
     - github: Tropix126
       twitter: null
@@ -824,11 +824,11 @@
       company: Svelte Scshool AB
     - github: Wolfr
       twitter: wolfr_2
-      url: https://johanronsse.be/
+      url: https://obra.studio
       avatar: https://avatars.githubusercontent.com/u/12690?v=4
       name: Wolfr
       location: Belgium
-      company: Freelance
+      company: Obra Studio
 - title: cybernetic.dev
   url: https://cybernetic.dev
   description: Data-centric UI experiments
@@ -982,14 +982,14 @@
   date_added: 2021-11-05T00:00:00.000Z
   last_updated: 2021-11-05T00:00:00.000Z
   slug: urara
-  repo_stars: 135
+  repo_stars: 163
   contributors:
     - github: kwaa
       twitter: null
       url: https://kwaa.dev
       avatar: https://avatars.githubusercontent.com/u/50108258?v=4
       name: 藍+85CD
-      location: SolIII
+      location: (intermediate value)
       company: '@importantimport'
 - title: connorrothschild.com
   url: https://connorrothschild.com
@@ -1008,7 +1008,7 @@
   date_added: 2021-12-11T00:00:00.000Z
   last_updated: 2021-12-10T00:00:00.000Z
   slug: connorrothschild.com
-  repo_stars: 33
+  repo_stars: 34
   contributors:
     - github: connorrothschild
       twitter: CL_Rothschild
@@ -1036,7 +1036,7 @@
   date_added: 2021-12-19T00:00:00.000Z
   last_updated: 2021-12-19T00:00:00.000Z
   slug: svelte-cubed
-  repo_stars: 1018
+  repo_stars: 1040
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1063,7 +1063,7 @@
   date_added: 2022-01-01T00:00:00.000Z
   last_updated: 2022-01-01T00:00:00.000Z
   slug: multi-monitor-calculator
-  repo_stars: 24
+  repo_stars: 25
   contributors:
     - github: KevinVandy
       twitter: ThomasVanCott
@@ -1093,7 +1093,7 @@
   date_added: 2022-01-04T00:00:00.000Z
   last_updated: 2022-01-04T00:00:00.000Z
   slug: modern-fluid-typography-editor
-  repo_stars: 231
+  repo_stars: 240
   contributors: []
 - title: mermaid-live-editor
   url: https://mermaid.live
@@ -1116,7 +1116,7 @@
   date_added: 2022-02-05T00:00:00.000Z
   last_updated: 2022-02-05T00:00:00.000Z
   slug: mermaid-live-editor
-  repo_stars: 1554
+  repo_stars: 1681
   contributors:
     - github: sidharthv96
       twitter: sidv42
@@ -1162,7 +1162,7 @@
   date_added: 2022-02-06T00:00:00.000Z
   last_updated: 2022-02-06T00:00:00.000Z
   slug: svelte-realworld
-  repo_stars: 1561
+  repo_stars: 1616
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1211,7 +1211,7 @@
   date_added: 2022-02-06T00:00:00.000Z
   last_updated: 2022-02-06T00:00:00.000Z
   slug: macos-web
-  repo_stars: 1429
+  repo_stars: 1516
   contributors:
     - github: PuruVJ
       twitter: puruvjdev
@@ -1219,7 +1219,7 @@
       avatar: https://avatars.githubusercontent.com/u/47742487?v=4
       name: Puru Vijay
       location: Jaipur
-      company: '@stackblitz'
+      company: '@stackblitz '
 - title: inlang dashboard
   url: https://inlang.dev
   repo: https://github.com/inlang/inlang
@@ -1241,7 +1241,7 @@
   date_added: 2022-02-23T00:00:00.000Z
   last_updated: 2022-02-23T00:00:00.000Z
   slug: inlang-dashboard
-  repo_stars: 185
+  repo_stars: 199
   contributors:
     - github: samuelstroschein
       twitter: SamuelStroschei
@@ -1298,15 +1298,22 @@
   date_added: 2022-03-22T00:00:00.000Z
   last_updated: 2022-03-22T00:00:00.000Z
   slug: houdini-graphql
-  repo_stars: 0
+  repo_stars: 412
   contributors:
     - github: AlecAivazis
       twitter: null
       url: https://alec.aivazis.com
       avatar: https://avatars.githubusercontent.com/u/916317?v=4
       name: Alec Aivazis
-      location: Oakland, CA
+      location: null
       company: null
+    - github: jycouet
+      twitter: jycouet
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/5312607?v=4
+      name: JYC
+      location: Vienna, Austria
+      company: Dynamic Process
 - title: ConcertMash
   url: https://concertmash.com
   repo: https://github.com/mcmxcdev/ConcertMash
@@ -1328,7 +1335,7 @@
   date_added: 2022-03-24T00:00:00.000Z
   last_updated: 2022-03-24T00:00:00.000Z
   slug: concertmash
-  repo_stars: 4
+  repo_stars: 5
   contributors:
     - github: mcmxcdev
       twitter: null
@@ -1361,7 +1368,7 @@
   date_added: 2022-03-24T00:00:00.000Z
   last_updated: 2022-03-24T00:00:00.000Z
   slug: layer-cake
-  repo_stars: 613
+  repo_stars: 646
   contributors:
     - github: mhkeller
       twitter: null
@@ -1401,7 +1408,7 @@
   date_added: 2022-04-05T00:00:00.000Z
   last_updated: 2022-04-05T00:00:00.000Z
   slug: pancake
-  repo_stars: 1044
+  repo_stars: 1067
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1430,7 +1437,7 @@
   date_added: 2022-04-14T00:00:00.000Z
   last_updated: 2022-04-14T00:00:00.000Z
   slug: svelte-headless-ui
-  repo_stars: 830
+  repo_stars: 948
   contributors:
     - github: rgossiaux
       twitter: null
@@ -1458,7 +1465,7 @@
   date_added: 2022-04-16T00:00:00.000Z
   last_updated: 2022-04-16T00:00:00.000Z
   slug: svelte-material-ui
-  repo_stars: 2507
+  repo_stars: 2593
   contributors:
     - github: hperrin
       twitter: SciActive
@@ -1496,7 +1503,7 @@
   date_added: 2022-04-24T00:00:00.000Z
   last_updated: 2022-04-24T00:00:00.000Z
   slug: fluent-svelte
-  repo_stars: 296
+  repo_stars: 326
   contributors:
     - github: Tropix126
       twitter: null
@@ -1531,7 +1538,7 @@
   date_added: 2022-04-24T00:00:00.000Z
   last_updated: 2022-04-24T00:00:00.000Z
   slug: sveltekit-on-edge
-  repo_stars: 111
+  repo_stars: 131
   contributors:
     - github: Rich-Harris
       twitter: null
@@ -1564,7 +1571,7 @@
   date_added: 2022-05-01T00:00:00.000Z
   last_updated: 2022-05-01T00:00:00.000Z
   slug: evidence
-  repo_stars: 705
+  repo_stars: 743
   contributors:
     - github: hughess
       twitter: null
@@ -1582,10 +1589,10 @@
       company: null
     - github: archiewood
       twitter: null
-      url: null
+      url: https://evidence.dev
       avatar: https://avatars.githubusercontent.com/u/58074498?v=4
       name: Archie
-      location: null
+      location: Toronto, ON
       company: '@evidence-dev '
     - github: ud3sh
       twitter: null
@@ -1618,7 +1625,7 @@
   date_added: 2022-05-10T00:00:00.000Z
   last_updated: 2022-05-10T00:00:00.000Z
   slug: coolify
-  repo_stars: 4001
+  repo_stars: 4265
   contributors:
     - github: andrasbacsai
       twitter: andrasbacsai
@@ -1681,7 +1688,7 @@
   date_added: 2022-05-19T00:00:00.000Z
   last_updated: 2022-05-19T00:00:00.000Z
   slug: flowbite
-  repo_stars: 155
+  repo_stars: 221
   contributors:
     - github: shinokada
       twitter: shinokada
@@ -1690,13 +1697,6 @@
       name: Shinichi Okada
       location: Kobe, Japan
       company: null
-    - github: orefalo
-      twitter: null
-      url: https://www.snapcore.com
-      avatar: https://avatars.githubusercontent.com/u/52085?v=4
-      name: Olivier Refalo
-      location: Dubai, UAE
-      company: SnapCore
     - github: jjagielka
       twitter: null
       url: null
@@ -1704,6 +1704,13 @@
       name: null
       location: null
       company: null
+    - github: orefalo
+      twitter: null
+      url: https://www.snapcore.com
+      avatar: https://avatars.githubusercontent.com/u/52085?v=4
+      name: Olivier Refalo
+      location: Dubai, UAE
+      company: SnapCore
 - title: Good First Issue Finder
   url: https://finder.eddiehub.io
   repo: https://github.com/EddieHubCommunity/good-first-issue-finder
@@ -1725,7 +1732,7 @@
   date_added: 2022-05-19T00:00:00.000Z
   last_updated: 2022-05-19T00:00:00.000Z
   slug: good-first-issue-finder
-  repo_stars: 90
+  repo_stars: 130
   contributors:
     - github: Cahllagerfeld
       twitter: CahlLagerfeld
@@ -1762,14 +1769,14 @@
   date_added: 2022-06-02T00:00:00.000Z
   last_updated: 2022-06-02T00:00:00.000Z
   slug: periodic-table
-  repo_stars: 3
+  repo_stars: 28
   contributors:
     - github: janosh
       twitter: jrib_
       url: null
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
-      location: Currently @ UC Berkeley
+      location: Lawrence Berkeley Lab
       company: Cambridge University
 - title: Pixel Art Together
   url: https://pixelart.liveblocks.app
@@ -1791,7 +1798,7 @@
   date_added: 2022-06-02T00:00:00.000Z
   last_updated: 2022-06-02T00:00:00.000Z
   slug: pixel-art-together
-  repo_stars: 130
+  repo_stars: 145
   contributors:
     - github: CTNicholas
       twitter: ctnicholasdev
@@ -1818,7 +1825,7 @@
   date_added: 2022-06-02T00:00:00.000Z
   last_updated: 2022-06-02T00:00:00.000Z
   slug: sveltestrap
-  repo_stars: 974
+  repo_stars: 1013
   contributors:
     - github: bestguy
       twitter: null
@@ -1878,7 +1885,7 @@
   date_added: 2022-06-02T00:00:00.000Z
   last_updated: 2022-06-02T00:00:00.000Z
   slug: svelvet
-  repo_stars: 904
+  repo_stars: 4
   contributors:
     - github: andrew-widjaja
       twitter: null
@@ -1887,12 +1894,26 @@
       name: Andrew Widjaja
       location: San Francisco, CA
       company: null
+    - github: TensionCoding
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/103322358?v=4
+      name: Walter David DeVault
+      location: null
+      company: null
     - github: awillettnyc
       twitter: awillettnyc
       url: null
       avatar: https://avatars.githubusercontent.com/u/95263176?v=4
       name: Aaron
       location: null
+      company: null
+    - github: JustinWouters
+      twitter: null
+      url: https://linkedin.com/in/justinwouters/
+      avatar: https://avatars.githubusercontent.com/u/98878450?v=4
+      name: Justin Wouters
+      location: Los Angeles, CA
       company: null
     - github: anulepau
       twitter: null
@@ -1922,7 +1943,7 @@
   date_added: 2022-06-09T00:00:00.000Z
   last_updated: 2022-06-09T00:00:00.000Z
   slug: cryptgeon
-  repo_stars: 307
+  repo_stars: 337
   contributors:
     - github: cupcakearmy
       twitter: null
@@ -1951,7 +1972,7 @@
   date_added: 2022-06-09T00:00:00.000Z
   last_updated: 2022-06-09T00:00:00.000Z
   slug: svelte-intl-precompile
-  repo_stars: 223
+  repo_stars: 231
   contributors:
     - github: cibernox
       twitter: miguelcamba
@@ -1986,7 +2007,7 @@
   date_added: 2022-06-17T00:00:00.000Z
   last_updated: 2022-06-17T00:00:00.000Z
   slug: windmill
-  repo_stars: 686
+  repo_stars: 1086
   contributors:
     - github: rubenfiszel
       twitter: null
@@ -1995,6 +2016,20 @@
       name: Ruben Fiszel
       location: Paris, France
       company: Windmill
+    - github: fatonramadani
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/456655?v=4
+      name: Faton Ramadani
+      location: null
+      company: null
+    - github: sqwishy
+      twitter: null
+      url: https://froghat.ca/
+      avatar: https://avatars.githubusercontent.com/u/131432?v=4
+      name: null
+      location: Canada
+      company: null
 - title: Threlte
   url: https://threlte.xyz
   repo: https://github.com/threlte/threlte
@@ -2020,7 +2055,7 @@
   date_added: 2022-07-17T00:00:00.000Z
   last_updated: 2022-07-17T00:00:00.000Z
   slug: threlte
-  repo_stars: 222
+  repo_stars: 284
   contributors:
     - github: grischaerbe
       twitter: null
@@ -2029,6 +2064,13 @@
       name: Grischa Erbe
       location: null
       company: null
+    - github: amr3k
+      twitter: amr3k_
+      url: https://a3k.me
+      avatar: https://avatars.githubusercontent.com/u/12211826?v=4
+      name: مْڔﯡۥ؏
+      location: مِڝْڔُ
+      company: '@computly'
 - title: svelte-french-toast
   url: https://svelte-french-toast.com
   repo: https://github.com/kbrgl/svelte-french-toast
@@ -2050,7 +2092,7 @@
   date_added: 2022-07-24T00:00:00.000Z
   last_updated: 2022-07-24T00:00:00.000Z
   slug: svelte-french-toast
-  repo_stars: 97
+  repo_stars: 118
   contributors:
     - github: kbrgl
       twitter: kabirgoel
@@ -2074,7 +2116,7 @@
   date_added: 2022-07-28T00:00:00.000Z
   last_updated: 2022-07-28T00:00:00.000Z
   slug: hexapipes
-  repo_stars: 116
+  repo_stars: 143
   contributors:
     - github: gereleth
       twitter: null
@@ -2109,7 +2151,7 @@
   date_added: 2022-08-23T00:00:00.000Z
   last_updated: 2022-08-23T00:00:00.000Z
   slug: kitcommerce
-  repo_stars: 714
+  repo_stars: 719
   contributors:
     - github: itswadesh
       twitter: itswadesh
@@ -2150,7 +2192,7 @@
   date_added: 2022-08-31T00:00:00.000Z
   last_updated: 2022-08-31T00:00:00.000Z
   slug: joy-of-code
-  repo_stars: 94
+  repo_stars: 95
   contributors:
     - github: mattcroat
       twitter: joyofcodedev
