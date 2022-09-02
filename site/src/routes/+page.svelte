@@ -37,8 +37,8 @@
   ).sort((c1, c2) => c2[1] - c1[1])
 
   function arr_includes(arr: string[], values: string[], mode: 'all' | 'any'): boolean {
-    if (arr.length === 0) return false
     if (values.length === 0) return true
+    if (arr.length === 0) return false
     if (mode === `all`) return values.every((val) => arr.includes(val))
     if (mode === `any`) return values.some((val) => arr.includes(val))
     else throw `Unexpected filter mode=${mode}`
@@ -47,14 +47,15 @@
   $: filtered_sites = sites.filter((site) => {
     const query_match = $search?.length === 0 || JSON.stringify(site).includes($search)
 
-    const _tags = $filter_tags.map((t) => t.label)
-    const _contribs = $filter_contributors.map((c) => c.label)
-
-    const tag_match = arr_includes(site.tags ?? [], _tags, $tag_filter_mode)
+    const tag_match = arr_includes(
+      site.tags ?? [],
+      $filter_tags.map((t) => t.label), // tags the site should have
+      $tag_filter_mode // all or any
+    )
     const contrib_match = arr_includes(
       site.contributors?.map((c) => c.name) ?? [],
-      _contribs,
-      $contributor_filter_mode
+      $filter_contributors.map((c) => c.label), // contributors the site should have
+      $contributor_filter_mode // all or any
     )
 
     return query_match && tag_match && contrib_match
