@@ -639,16 +639,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [GitHub API], [Monaco], [Playwright], [Google Analytics], [Supabase], [Vercel], [PNPM], [Sass], [TypeScript], [remark], [rehype]
 
-1. **[Patra](http://patra.webjeda.com/)**&ensp;
-   [[code](https://github.com/sharu725/patra)]&ensp;
-   <a href="https://github.com/sharu725/patra/stargazers">
-   <img src="https://img.shields.io/github/stars/sharu725/patra" alt="GitHub stars" valign="middle">
-   </a>
-
-   Share short notes with just a link. No database. No storage!<br>
-
-   uses: [lz-string], [svelte-markdown], [Vercel]
-
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -691,7 +681,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [json5]: https://github.com/json5/json5
 [liveblocks]: https://liveblocks.io
 [lodash]: https://lodash.com
-[lz-string]: https://github.com/pieroxy/lz-string
 [mapbox]: https://mapbox.com
 [markedjs]: https://marked.js.org
 [mdsvex]: https://github.com/pngwn/MDsveX
