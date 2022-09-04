@@ -2201,3 +2201,27 @@
       name: Matia
       location: Zagreb, Croatia
       company: null
+- title: Patra
+  url: https://patra.webjeda.com
+  repo: https://github.com/sharu725/patra
+  description: Share short notes with just a link. No database. No storage!
+  uses:
+    - lz compression
+    - svelte-markdown
+    - Vercel
+  tags:
+    - web app
+    - open source
+  date_created: 2022-08-21T00:00:00.000Z
+  date_added: 2022-09-04T00:00:00.000Z
+  last_updated: 2022-09-03T00:00:00.000Z
+  slug: patra
+  repo_stars: 2
+  contributors:
+    - github: sharu725
+      twitter: webjeda
+      url: https://webjeda.com
+      avatar: https://avatars.githubusercontent.com/u/8033084?v=4
+      name: Sharath
+      location: Bengaluru, India
+      company: null
