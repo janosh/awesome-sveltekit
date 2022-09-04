@@ -17,7 +17,7 @@
       in:fade|local={{ delay: 100 }}
       out:fade|local={{ delay: 100 }}
     >
-      <a href="/{site.slug}" sveltekit:prefetch>
+      <a href="/{site.slug}" data-sveltekit-prefetch>
         <Screenshot title={site.title} resolution=".small" style="cursor: pointer;" />
       </a>
       <div class="flex">
@@ -25,7 +25,7 @@
           {idx + 1}. <a href={site.url}>{site.title}</a>
         </span>
         {#if site.repo_stars}
-          <small class="flex"><Star />&nbsp;{site.repo_stars}</small>
+          <small class="flex"><Star />&nbsp;{site.repo_stars.toLocaleString()}</small>
         {/if}
       </div>
       <p class="tags flex">
