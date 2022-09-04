@@ -639,6 +639,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [GitHub API], [Monaco], [Playwright], [Google Analytics], [Supabase], [Vercel], [PNPM], [Sass], [TypeScript], [remark], [rehype]
 
+1. **[QWER](https://svelte-qwer.vercel.app/)**&ensp;
+   [[code](https://github.com/kwchang0831/svelte-QWER)]&ensp;
+   <a href="https://github.com/kwchang0831/svelte-QWER/stargazers">
+   <img src="https://img.shields.io/github/stars/kwchang0831/svelte-QWER" alt="GitHub stars" valign="middle">
+   </a>
+
+   ✒︎ Simply Awesome Blog Starter built with SvelteKit and ❤<br>
+
+   uses: [UnoCSS], [TypeScript], [MarkedJS], [PNPM], [Vercel]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -725,7 +735,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
-
+[UnoCSS]: https://github.com/unocss/unocss
 ## 🎉 Open to Suggestions
 
 See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
