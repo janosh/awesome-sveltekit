@@ -15,12 +15,12 @@
     <meta name="description" content={plain_description} />
     <meta property="og:description" content={plain_description} />
   {/if}
-  {#if data.site.contributors[0]?.twitter}
+  {#if data.site.contributors?.[0]?.twitter}
     <meta name="twitter:creator" content={data.site.contributors[0].twitter} />
   {/if}
 </svelte:head>
 
-<a href="/" class="back" sveltekit:prefetch>&laquo; back</a>
+<a href="/" class="back" data-sveltekit-prefetch>&laquo; back</a>
 <SiteDetails site={data.site} />
 
 <style>

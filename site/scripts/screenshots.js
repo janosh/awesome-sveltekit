@@ -57,7 +57,7 @@ for (const [idx, site] of sites.entries()) {
     skipped.push(site.slug)
   }
 
-  await page.waitForTimeout(2000) // wait 1s for sites with landing animations to settle
+  await new Promise((r) => setTimeout(r, 2000)) // wait for sites with on-load animations to settle
   // e.g. https://flayks.com
   await page.setViewport({ width: 1200, height: 900 })
   await page.screenshot({ path: imgPath })

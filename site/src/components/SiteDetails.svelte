@@ -45,7 +45,7 @@
     {#if repo_stars}
       <hr />
       <p class="flex">
-        <Star />&emsp;Star count: <span style="flex: 1" />{repo_stars}
+        <Star />&emsp;Star count: <span style="flex: 1" />{repo_stars.toLocaleString()}
       </p>
     {/if}
     {#if contributors?.length > 0}
@@ -94,7 +94,9 @@
       </p>
     {/if}
   </section>
-  <aside style="flex: 3;"><Screenshot {title} /></aside>
+  <aside style="flex: 3;">
+    <Screenshot {title} />
+  </aside>
 </main>
 
 <style>
@@ -104,10 +106,14 @@
     gap: 2em;
     margin: 6em auto 2em;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 750px) {
     main {
       flex-direction: column-reverse;
       gap: 1em;
+    }
+    aside {
+      max-width: 500px;
+      margin: auto;
     }
   }
   h1 {
@@ -115,7 +121,6 @@
     gap: 1em;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 2rem;
     font-size: 2rem;
   }
   h1 small {
