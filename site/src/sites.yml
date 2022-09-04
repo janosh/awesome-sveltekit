@@ -2206,7 +2206,7 @@
   repo: https://github.com/sharu725/patra
   description: Share short notes with just a link. No database. No storage!
   uses:
-    - lz compression
+    - lz-string
     - svelte-markdown
     - Vercel
   tags:
