@@ -639,6 +639,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [GitHub API], [Monaco], [Playwright], [Google Analytics], [Supabase], [Vercel], [PNPM], [Sass], [TypeScript], [remark], [rehype]
 
+1. **[QWER](https://svelte-qwer.vercel.app)**&ensp;
+   [[code](https://github.com/kwchang0831/svelte-QWER)]&ensp;
+   <a href="https://github.com/kwchang0831/svelte-QWER/stargazers">
+   <img src="https://img.shields.io/github/stars/kwchang0831/svelte-QWER" alt="GitHub stars" valign="middle">
+   </a>
+
+   ✒︎ Simply Awesome Blog Starter built with SvelteKit and ❤<br>
+
+   uses: [UnoCSS], [TypeScript], [MarkedJS], [PNPM], [Vercel]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -722,6 +732,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [three.js]: https://threejs.org
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
+[unocss]: https://github.com/unocss/unocss
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev

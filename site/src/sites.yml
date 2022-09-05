@@ -2201,3 +2201,30 @@
       name: Matia
       location: Zagreb, Croatia
       company: null
+- title: QWER
+  url: https://svelte-qwer.vercel.app
+  repo: https://github.com/kwchang0831/svelte-QWER
+  description: ✒︎ Simply Awesome Blog Starter built with SvelteKit and ❤
+  uses:
+    - UnoCSS
+    - TypeScript
+    - MarkedJS
+    - PNPM
+    - Vercel
+  tags:
+    - blog
+    - open source
+    - template
+  date_created: 2022-06-28T00:00:00.000Z
+  date_added: 2022-09-04T00:00:00.000Z
+  last_updated: 2022-09-04T00:00:00.000Z
+  slug: qwer
+  repo_stars: 35
+  contributors:
+    - github: kwchang0831
+      twitter: kwchang0831
+      url: https://www.kwchang0831.dev
+      avatar: https://avatars.githubusercontent.com/u/88667293?v=4
+      name: AH WEI
+      location: undefined
+      company: null
