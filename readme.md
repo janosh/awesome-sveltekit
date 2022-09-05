@@ -732,10 +732,10 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [three.js]: https://threejs.org
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
+[unocss]: https://github.com/unocss/unocss
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
-[unocss]: https://github.com/unocss/unocss
 
 ## 🎉 Open to Suggestions
 
