@@ -716,3 +716,13 @@
   date_created: 2020-10-19
   date_added: 2022-08-31
   last_updated: 2022-08-31
+
+- title: QWER
+  url: https://svelte-qwer.vercel.app
+  repo: https://github.com/kwchang0831/svelte-QWER
+  description: ✒︎ Simply Awesome Blog Starter built with SvelteKit and ❤
+  uses: [UnoCSS, TypeScript, MarkedJS, PNPM, Vercel]
+  tags: [blog, template]
+  date_created: 2022-06-28
+  date_added: 2022-09-04
+  last_updated: 2022-09-04
