@@ -649,6 +649,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [UnoCSS], [TypeScript], [MarkedJS], [PNPM], [Vercel]
 
+1. **[StemRoller](https://stemroller.com)**&ensp;
+   [[code](https://github.com/stemrollerapp/stemroller)]&ensp;
+   <a href="https://github.com/stemrollerapp/stemroller/stargazers">
+   <img src="https://img.shields.io/github/stars/stemrollerapp/stemroller" alt="GitHub stars" valign="middle">
+   </a>
+
+   Isolate vocals, drums, bass, and other instrumental stems from any song<br>
+
+   uses: [Electron], [Tailwind], [Lodash], [PostCSS], [ytdl-core]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -669,6 +679,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [dynamodb]: https://aws.amazon.com/dynamodb
 [echarts]: https://github.com/apache/echarts
 [elder.js]: https://github.com/Elderjs/elderjs
+[electron]: https://electronjs.org
 [filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
 [github api]: https://docs.github.com/en/rest
@@ -736,6 +747,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
+[ytdl-core]: https://github.com/fent/node-ytdl-core
 
 ## 🎉 Open to Suggestions
 

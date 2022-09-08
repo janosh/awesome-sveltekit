@@ -18,6 +18,7 @@ docker: https://docker.com
 dynamodb: https://aws.amazon.com/dynamodb
 echarts: https://github.com/apache/echarts
 elder.js: https://github.com/Elderjs/elderjs
+electron: https://electronjs.org
 filepond: https://pqina.nl/filepond
 firebase: https://firebase.google.com
 github api: https://docs.github.com/en/rest
@@ -85,3 +86,4 @@ unocss: https://github.com/unocss/unocss
 uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 vitest: https://vitest.dev
+ytdl-core: https://github.com/fent/node-ytdl-core

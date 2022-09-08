@@ -726,3 +726,13 @@
   date_created: 2022-06-28
   date_added: 2022-09-04
   last_updated: 2022-09-04
+
+- title: StemRoller
+  url: https://stemroller.com
+  repo: https://github.com/stemrollerapp/stemroller
+  description: Isolate vocals, drums, bass, and other instrumental stems from any song
+  uses: [Electron, Tailwind, Lodash, PostCSS, ytdl-core]
+  tags: [desktop app, music, machine learning, deep learning]
+  date_created: 2022-07-10
+  date_added: 2022-09-07
+  last_updated: 2022-09-07
