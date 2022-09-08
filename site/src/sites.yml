@@ -2228,3 +2228,32 @@
       name: AH WEI
       location: undefined
       company: null
+- title: StemRoller
+  url: https://stemroller.com
+  repo: https://github.com/stemrollerapp/stemroller
+  description: Isolate vocals, drums, bass, and other instrumental stems from any song
+  uses:
+    - Electron
+    - Tailwind
+    - Lodash
+    - PostCSS
+    - ytdl-core
+  tags:
+    - deep learning
+    - desktop app
+    - machine learning
+    - music
+    - open source
+  date_created: 2022-07-10T00:00:00.000Z
+  date_added: 2022-09-07T00:00:00.000Z
+  last_updated: 2022-09-07T00:00:00.000Z
+  slug: stemroller
+  repo_stars: 1554
+  contributors:
+    - github: iffyloop
+      twitter: null
+      url: https://blitcrush.com
+      avatar: https://avatars.githubusercontent.com/u/35245220?v=4
+      name: iffyloop
+      location: null
+      company: '@blitcrush'
