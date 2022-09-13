@@ -72,6 +72,8 @@
     display: flex;
     align-items: center;
     gap: 1em;
+    flex-wrap: wrap;
+    place-content: center;
   }
   div.filters {
     place-content: center;
