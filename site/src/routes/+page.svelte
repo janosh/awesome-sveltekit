@@ -11,6 +11,9 @@
     sort_by,
     tag_filter_mode,
   } from '../stores'
+  import type { PageData } from './$types'
+
+  export let data: PageData
 
   const tags = Object.entries(
     sites
@@ -92,8 +95,15 @@
 <GitHubCorner href="https://github.com/janosh/awesome-sveltekit" />
 
 <main>
-  <img src="/sveltekit.svg" alt="Logo" style="max-height: 120px;" />
-  <h1>{sites.length} Awesome Examples of SvelteKit in the Wild</h1>
+  <h1>
+    <img
+      src="/awesome-sveltekit-banner.svg"
+      alt="Awesome SvelteKit"
+      style="max-height: 120px;"
+    />
+    <br />
+    {sites.length} Awesome Examples of SvelteKit in the Wild
+  </h1>
 
   <p>
     See something that's missing from this list?
@@ -125,6 +135,24 @@
     <a href="https://github.com/trending/svelte?since=monthly">GitHub Trending</a>. If
     anything on that list stands out to you but is missing here, please add it!
   </p>
+
+  <h2>
+    🙏 Big thanks to <a
+      href="https://github.com/janosh/awesome-sveltekit/graphs/contributors"
+      target="_blank"
+    >
+      all {data.contributors.length} contributors
+    </a>
+  </h2>
+  <ul class="contributors">
+    {#each data.contributors as { avatar_url, html_url, login }}
+      <li>
+        <a href={html_url}>
+          <img src={avatar_url} alt={login} />
+        </a>
+      </li>
+    {/each}
+  </ul>
 </main>
 
 <style>
@@ -133,16 +161,28 @@
     margin: auto;
     display: block;
   }
-  h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-  }
   :where(h1, h2, p) {
     text-align: center;
     margin: 1em auto;
+  }
+  h2 {
+    margin: 3em auto 2em;
   }
   p span {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 0 3pt;
     border-radius: 2pt;
+  }
+  ul.contributors {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  ul.contributors img {
+    width: 60px;
+    border-radius: 50%;
+    margin: 1ex;
   }
 </style>

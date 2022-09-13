@@ -1,8 +1,9 @@
-<p align="center">
-  <img src="site/static/sveltekit.svg" alt="SvelteKit" width="500">
-</p>
-
-<h1 align="center">Awesome examples of SvelteKit in the wild</h1>
+<h1 align="center">
+  <br>
+  <img src="site/static/awesome-sveltekit-banner.svg" alt="Awesome SvelteKit" width="500">
+  <br>
+  Awesome examples of SvelteKit in the wild
+</h1>
 
 <h4 align="center">
 
