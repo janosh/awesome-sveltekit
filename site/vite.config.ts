@@ -1,8 +1,9 @@
 import rollupYaml from '@rollup/plugin-yaml'
 import { sveltekit } from '@sveltejs/kit/vite'
 import Icons from 'unplugin-icons/vite'
+import { UserConfig } from 'vite'
 
-export default {
+const vite_config: UserConfig = {
   plugins: [
     sveltekit(),
     rollupYaml(),
@@ -10,6 +11,9 @@ export default {
   ],
 
   server: {
+    fs: {
+      allow: [`..`],
+    },
     port: 3000,
   },
 
@@ -17,3 +21,5 @@ export default {
     port: 3000,
   },
 }
+
+export default vite_config
