@@ -1,7 +1,7 @@
 <script lang="ts">
+  import Filters from '$lib/Filters.svelte'
+  import SiteList from '$lib/SiteList.svelte'
   import GitHubCorner from 'svelte-github-corner'
-  import Filters from '../components/Filters.svelte'
-  import SiteList from '../components/SiteList.svelte'
   import sites from '../sites.yml'
   import {
     contributor_filter_mode,
@@ -12,6 +12,7 @@
     tag_filter_mode,
   } from '../stores'
   import type { PageData } from './$types'
+  import { repo_url } from './+layout'
 
   export let data: PageData
 
@@ -92,7 +93,7 @@
   <meta name="twitter:creator" content="@jrib_" />
 </svelte:head>
 
-<GitHubCorner href="https://github.com/janosh/awesome-sveltekit" />
+<GitHubCorner href={repo_url} />
 
 <main>
   <h1>
@@ -107,9 +108,7 @@
 
   <p>
     See something that's missing from this list?
-    <a href="https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml">
-      PRs welcome!
-    </a>
+    <a href="{repo_url}/edit/main/sites.yml"> PRs welcome! </a>
   </p>
 
   <Filters
@@ -128,8 +127,7 @@
 
   <h2>🎉 Open to Suggestions</h2>
   <p style="max-width: 40em;">
-    See something that's missing from this list? <a
-      href="https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml"
+    See something that's missing from this list? <a href="{repo_url}/edit/main/sites.yml"
       >PRs welcome</a
     >! A good place to discover Svelte projects (not necessarily SvelteKit) is
     <a href="https://github.com/trending/svelte?since=monthly">GitHub Trending</a>. If
@@ -137,10 +135,7 @@
   </p>
 
   <h2>
-    🙏 Big thanks to <a
-      href="https://github.com/janosh/awesome-sveltekit/graphs/contributors"
-      target="_blank"
-    >
+    🙏 Big thanks to <a href="{repo_url}/graphs/contributors" target="_blank">
       all {data.contributors.length} contributors
     </a>
   </h2>

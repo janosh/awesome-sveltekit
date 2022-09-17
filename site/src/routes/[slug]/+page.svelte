@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SiteDetails from '../../components/SiteDetails.svelte'
+  import SiteDetails from '$lib/SiteDetails.svelte'
   import type { PageData } from './$types'
 
   export let data: PageData
