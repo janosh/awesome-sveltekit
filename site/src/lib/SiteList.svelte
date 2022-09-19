@@ -1,8 +1,7 @@
 <script lang="ts">
+  import Icon from '@iconify/svelte'
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
-  import Star from '~icons/octicon/star'
-  import Tag from '~icons/octicon/tag'
   import { filter_tags } from '../stores'
   import { Site } from '../types'
   import Screenshot from './Screenshot.svelte'
@@ -25,11 +24,14 @@
           {idx + 1}. <a href={site.url}>{site.title}</a>
         </span>
         {#if site.repo_stars}
-          <small class="flex"><Star />&nbsp;{site.repo_stars.toLocaleString()}</small>
+          <small class="flex">
+            <Icon icon="octicon:star" />
+            &nbsp;{site.repo_stars.toLocaleString()}</small
+          >
         {/if}
       </div>
       <p class="tags flex">
-        <Tag style="margin-right: 1ex;" />
+        <Icon icon="octicon:tag" style="margin: 0 1ex 0 0;" />
         {#each site.tags as tag}
           <small class:active={$filter_tags.find((t) => t.label === tag)}>
             {tag}

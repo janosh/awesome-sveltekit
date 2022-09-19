@@ -9,8 +9,6 @@
     // enable source maps by default.
     "sourceMap": true,
 
-    "forceConsistentCasingInFileNames": true,
-
-    "types": ["unplugin-icons/types/svelte"]
+    "forceConsistentCasingInFileNames": true
   }
 }

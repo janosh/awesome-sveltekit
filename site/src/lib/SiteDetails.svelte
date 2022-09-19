@@ -1,10 +1,5 @@
 <script lang="ts">
-  import MarkGithub from '~icons/octicon/mark-github'
-  import Person from '~icons/octicon/person'
-  import Project from '~icons/octicon/project'
-  import Stack from '~icons/octicon/stack-16'
-  import Star from '~icons/octicon/star'
-  import Tag from '~icons/octicon/tag'
+  import Icon from '@iconify/svelte'
   import uses_links from '../../../uses-links.yml'
   import { Site } from '../types'
   import Contributor from './Contributor.svelte'
@@ -33,7 +28,7 @@
       {#if site.repo}
         <a href={site.repo}>
           <small style="display: flex; gap: 6pt;">
-            <MarkGithub color="white" />Repo
+            <Icon icon="octicon:mark-github" color="white" />Repo
           </small>
         </a>
       {/if}
@@ -45,13 +40,14 @@
     {#if repo_stars}
       <hr />
       <p class="flex">
-        <Star />&emsp;Star count: <span style="flex: 1" />{repo_stars.toLocaleString()}
+        <Icon icon="octicon:star" />&emsp;Star count:
+        <span style="flex: 1" />{repo_stars.toLocaleString()}
       </p>
     {/if}
     {#if contributors?.length > 0}
       <hr />
       <div class:flex={contributors.length === 1} style="margin: 1em 0;">
-        <Person style="margin-right: 1em;" />{contributors.length > 1
+        <Icon icon="octicon:person" style="margin-right: 1em;" />{contributors.length > 1
           ? `Contributors`
           : `Creator`}:
         {#if contributors.length > 1}
@@ -71,14 +67,14 @@
     {#if date_created}
       <hr />
       <p class="flex">
-        <Project width="12pt" />&emsp;Project started on:
+        <Icon icon="octicon:project" />&emsp;Project started on:
         <span style="flex: 1" />{date_created}
       </p>
     {/if}
     {#if tags?.length > 0}
       <hr />
       <p class="tags flex">
-        <Tag />&ensp;Tags:&emsp;
+        <Icon icon="octicon:tag" />&ensp;Tags:&emsp;
         {#each tags as tag}
           <span>{tag}</span>
         {/each}
@@ -87,7 +83,7 @@
     {#if tools && tools?.length > 0}
       <hr />
       <p class="uses flex">
-        <Stack />&ensp;Uses:&emsp;
+        <Icon icon="octicon:stack-16" />&ensp;Uses:&emsp;
         {#each tools as [tool, href]}
           <a {href}>{tool}</a>
         {/each}

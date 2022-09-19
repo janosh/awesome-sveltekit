@@ -68,7 +68,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.<br>
 
-   uses: [TypeScript], [Netlify], [Svicons], [svelte-multiselect], [pre-commit]
+   uses: [TypeScript], [Netlify], [svelte-multiselect], [pre-commit]
 
 1. **[markushatvan.com](https://markushatvan.com)**
 
@@ -738,7 +738,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [svelte-multiselect]: https://github.com/janosh/svelte-multiselect
 [svelte-toasts]: https://github.com/mzohaibqc/svelte-toasts
 [sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
-[svicons]: https://github.com/janosh/svicons
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
