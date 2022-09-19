@@ -1,18 +1,13 @@
 import rollupYaml from '@rollup/plugin-yaml'
 import { sveltekit } from '@sveltejs/kit/vite'
-import Icons from 'unplugin-icons/vite'
 import { UserConfig } from 'vite'
 
 const vite_config: UserConfig = {
-  plugins: [
-    sveltekit(),
-    rollupYaml(),
-    Icons({ compiler: `svelte`, autoInstall: true }),
-  ],
+  plugins: [sveltekit(), rollupYaml()],
 
   server: {
     fs: {
-      allow: [`..`],
+      allow: [`..`], // needed to import package.json
     },
     port: 3000,
   },

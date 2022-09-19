@@ -178,7 +178,6 @@
   uses:
     - TypeScript
     - Netlify
-    - Svicons
     - svelte-multiselect
     - pre-commit
   date_created: 2020-08-09T00:00:00.000Z

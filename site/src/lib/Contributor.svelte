@@ -1,7 +1,5 @@
 <script lang="ts">
-  import Twitter from '~icons/fa-brands/twitter'
-  import LinkExternal from '~icons/octicon/link-external'
-  import MarkGithub from '~icons/octicon/mark-github'
+  import Icon from '@iconify/svelte'
   import { Contributor } from '../types'
 
   export let contributor: Contributor
@@ -13,17 +11,17 @@
   {name ?? github}
   {#if twitter}
     <a href="https://twitter.com/@{twitter}">
-      <Twitter />
+      <Icon icon="fa-brands:twitter" inline />
     </a>
   {/if}
   {#if github}
     <a href="https://github.com/{github}">
-      <MarkGithub />
+      <Icon icon="octicon:mark-github" inline />
     </a>
   {/if}
   {#if url}
     <a href={url}>
-      <LinkExternal />
+      <Icon icon="octicon:link-external" inline />
     </a>
   {/if}
 </span>
