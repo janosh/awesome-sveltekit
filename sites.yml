@@ -740,8 +740,28 @@
 - title: Houses Of
   url: https://housesof.world
   description: Houses Of is a travel, photography and design passion project showcasing charismatic houses around the world.
-  uses: [Typescript, SCSS, PostCSS, Motion One, OGL, WebGL, Directus, Swell Commerce, Vercel]
-  tags: [animations, transitions, photography, commerce, design, typography, graphic design]
+  uses:
+    [
+      Typescript,
+      SCSS,
+      PostCSS,
+      Motion One,
+      OGL,
+      WebGL,
+      Directus,
+      Swell Commerce,
+      Vercel,
+    ]
+  tags:
+    [
+      animations,
+      transitions,
+      photography,
+      commerce,
+      design,
+      typography,
+      graphic design,
+    ]
   date_created: 2022-09-27
   date_added: 2022-09-28
   last_updated: 2022-09-28
