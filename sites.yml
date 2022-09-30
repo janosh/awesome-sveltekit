@@ -736,3 +736,28 @@
   date_created: 2022-07-10
   date_added: 2022-09-07
   last_updated: 2022-09-07
+
+- title: Houses of World
+  url: https://housesof.world
+  description: A travel, photography and design project showcasing charismatic houses around the world.
+  uses:
+    - Typescript
+    - SCSS
+    - PostCSS
+    - Motion One
+    - OGL
+    - WebGL
+    - Directus
+    - Swell Commerce
+    - Vercel
+  tags:
+    - animations
+    - transitions
+    - photography
+    - commerce
+    - design
+    - typography
+    - graphic design
+  date_created: 2022-09-27
+  date_added: 2022-09-30
+  last_updated: 2022-09-30

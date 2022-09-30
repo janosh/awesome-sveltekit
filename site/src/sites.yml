@@ -2256,3 +2256,30 @@
       name: iffyloop
       location: null
       company: '@blitcrush'
+- title: Houses of World
+  url: https://housesof.world
+  description: >-
+    A travel, photography and design project showcasing charismatic houses
+    around the world.
+  uses:
+    - Typescript
+    - SCSS
+    - PostCSS
+    - Motion One
+    - OGL
+    - WebGL
+    - Directus
+    - Swell Commerce
+    - Vercel
+  tags:
+    - animations
+    - transitions
+    - photography
+    - commerce
+    - design
+    - typography
+    - graphic design
+  date_created: 2022-09-27T00:00:00.000Z
+  date_added: 2022-09-30T00:00:00.000Z
+  last_updated: 2022-09-30T00:00:00.000Z
+  slug: houses-of-world
