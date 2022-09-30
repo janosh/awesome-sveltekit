@@ -3,7 +3,7 @@
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
   import { filter_tags } from '../stores'
-  import { Site } from '../types'
+  import { type Site } from '../types'
   import Screenshot from './Screenshot.svelte'
 
   export let sites: Site[]
@@ -26,8 +26,8 @@
         {#if site.repo_stars}
           <small class="flex">
             <Icon icon="octicon:star" />
-            &nbsp;{site.repo_stars.toLocaleString()}</small
-          >
+            &nbsp;{site.repo_stars.toLocaleString()}
+          </small>
         {/if}
       </div>
       <p class="tags flex">

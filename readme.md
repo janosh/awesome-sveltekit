@@ -660,6 +660,12 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Electron], [Tailwind], [Lodash], [PostCSS], [ytdl-core]
 
+1. **[Houses of World](https://housesof.world)**
+
+   A travel, photography and design project showcasing charismatic houses around the world.<br>
+
+   uses: [Typescript], [SCSS], [PostCSS], [Motion One], [OGL], [WebGL], [Directus], [Swell Commerce], [Vercel]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -676,6 +682,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [d3]: https://d3js.org
 [daisyui]: https://daisyui.com
 [dart]: https://dart.dev
+[directus]: https://directus.io
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
 [echarts]: https://github.com/apache/echarts
@@ -708,9 +715,11 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [mdsvex]: https://github.com/pngwn/MDsveX
 [mocha]: https://mochajs.org
 [monaco]: https://microsoft.github.io/monaco-editor
+[motion one]: https://motion.dev
 [mvp.css]: https://github.com/andybrewer/mvp
 [netlify]: https://netlify.com
 [octokit]: https://github.com/octokit/octokit.js
+[ogl]: https://github.com/oframe/ogl
 [pandoc]: https://pandoc.org
 [panzoom]: https://github.com/timmywil/panzoom
 [plausible]: https://plausible.io
@@ -738,6 +747,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [svelte-multiselect]: https://github.com/janosh/svelte-multiselect
 [svelte-toasts]: https://github.com/mzohaibqc/svelte-toasts
 [sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
+[swell commerce]: https://swell.is
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
@@ -747,6 +757,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
+[webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
 
 ## 🎉 Open to Suggestions
