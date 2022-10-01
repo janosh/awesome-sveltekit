@@ -1,7 +1,9 @@
 <script lang="ts">
+  import ContributorList from '$lib/ContributorList.svelte'
   import Filters from '$lib/Filters.svelte'
   import SiteList from '$lib/SiteList.svelte'
   import GitHubCorner from 'svelte-github-corner'
+  import { repository } from '../../package.json'
   import sites from '../sites.yml'
   import {
     contributor_filter_mode,
@@ -12,7 +14,6 @@
     tag_filter_mode,
   } from '../stores'
   import type { PageData } from './$types'
-  import { repo_url } from './+layout'
 
   export let data: PageData
 
@@ -93,7 +94,7 @@
   <meta name="twitter:creator" content="@jrib_" />
 </svelte:head>
 
-<GitHubCorner href={repo_url} />
+<GitHubCorner href={repository} />
 
 <main>
   <h1>
@@ -108,7 +109,7 @@
 
   <p>
     See something that's missing from this list?
-    <a href="{repo_url}/edit/main/sites.yml"> PRs welcome! </a>
+    <a href="{repository}/edit/main/sites.yml"> PRs welcome! </a>
   </p>
 
   <Filters
@@ -120,6 +121,9 @@
   {#if filtered_sites.length < sites.length}
     <p>
       <span>{filtered_sites.length}</span> match{filtered_sites.length !== 1 ? `es` : ``}
+      {#if filtered_sites?.length === 0}
+        (try different filters)
+      {/if}
     </p>
   {/if}
 
@@ -127,27 +131,19 @@
 
   <h2>🎉 Open to Suggestions</h2>
   <p style="max-width: 40em;">
-    See something that's missing from this list? <a href="{repo_url}/edit/main/sites.yml"
-      >PRs welcome</a
+    See something that's missing from this list? <a
+      href="{repository}/edit/main/sites.yml">PRs welcome</a
     >! A good place to discover Svelte projects (not necessarily SvelteKit) is
     <a href="https://github.com/trending/svelte?since=monthly">GitHub Trending</a>. If
     anything on that list stands out to you but is missing here, please add it!
   </p>
 
   <h2>
-    🙏 Big thanks to <a href="{repo_url}/graphs/contributors" target="_blank">
-      all {data.contributors.length} contributors
+    🙏 Big thanks to <a href="{repository}/graphs/contributors" target="_blank">
+      all {data.repo_contributors.length} contributors
     </a>
   </h2>
-  <ul class="contributors">
-    {#each data.contributors as { avatar_url, html_url, login }}
-      <li>
-        <a href={html_url}>
-          <img src={avatar_url} alt={login} />
-        </a>
-      </li>
-    {/each}
-  </ul>
+  <ContributorList contributors={data.repo_contributors} />
 </main>
 
 <style>
@@ -167,17 +163,5 @@
     background-color: rgba(255, 255, 255, 0.2);
     padding: 0 3pt;
     border-radius: 2pt;
-  }
-  ul.contributors {
-    display: flex;
-    flex-wrap: wrap;
-    place-content: center;
-    list-style: none;
-    padding: 0;
-  }
-  ul.contributors img {
-    width: 60px;
-    border-radius: 50%;
-    margin: 1ex;
   }
 </style>

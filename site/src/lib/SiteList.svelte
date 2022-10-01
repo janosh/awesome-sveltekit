@@ -3,7 +3,7 @@
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
   import { filter_tags } from '../stores'
-  import { type Site } from '../types'
+  import type { Site } from '../types'
   import Screenshot from './Screenshot.svelte'
 
   export let sites: Site[]

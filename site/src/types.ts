@@ -23,3 +23,15 @@ export type Contributor = {
   location?: string
   company?: string
 }
+
+export type RepoContributor = {
+  login: string
+  id: number
+  avatar_url: string
+  gravatar_id: string
+  url: string
+  html_url: string
+  repos_url: string
+  type: 'User' | 'Bot'
+  contributions: number
+}

@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
   import uses_links from '../../../uses-links.yml'
-  import { type Site } from '../types'
+  import type { Site } from '../types'
   import Contributor from './Contributor.svelte'
   import Screenshot from './Screenshot.svelte'
 
