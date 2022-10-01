@@ -1,9 +1,6 @@
 name: Update readme + site screenshots on changed sites.yml
 
 on:
-  pull_request:
-    branches: [main]
-    paths: [sites.yml, site/scripts/*]
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 */3 *' # https://crontab.guru/every-quarter

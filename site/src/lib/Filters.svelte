@@ -81,10 +81,7 @@
     margin: 2em auto;
   }
   input[type='search']::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    height: 1em;
-    width: 1em;
-    background: url(/favicon.svg) no-repeat;
+    padding: 2pt;
     cursor: pointer;
   }
 </style>
