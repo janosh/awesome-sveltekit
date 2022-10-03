@@ -180,7 +180,7 @@
   url: https://beatbump.ml
   repo: https://github.com/snuffyDev/beatbump
   description: Alternative frontend for YouTube Music.
-  uses: [TypeScript, PostCSS, Sass]
+  uses: [TypeScript, PostCSS, SCSS]
   tags: [blog]
   date_created: 2021-06-17
   date_added: 2021-07-08

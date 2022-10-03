@@ -24,6 +24,8 @@ export type Contributor = {
   company?: string
 }
 
+// partial schema returned by
+// fetch('https://api.github.com/repos/janosh/awesome-sveltekit/contributors')
 export type RepoContributor = {
   login: string
   id: number
