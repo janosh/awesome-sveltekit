@@ -20,7 +20,7 @@ repos:
         files: ^uses-links\.yml$
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.7.1
+    rev: v3.0.0-alpha.0
     hooks:
       - id: prettier
         args: [--config, site/.prettierrc.yml, --write] # edit files in-place
@@ -30,13 +30,13 @@ repos:
           - svelte
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.26.3
+    rev: v1.28.0
     hooks:
       - id: yamllint
         args: [--config-file, utils/.yamllint.yml]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.31.1
+    rev: v0.32.2
     hooks:
       - id: markdownlint
         # MD013: line too long
@@ -45,7 +45,7 @@ repos:
         args: [--disable, MD013, MD033, MD041, '--']
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.1.0
+    rev: v2.2.1
     hooks:
       - id: codespell
         args: [--ignore-words-list, ons]
@@ -53,7 +53,7 @@ repos:
         exclude: yarn.lock
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.19.0
+    rev: v8.24.0
     hooks:
       - id: eslint
         types: [file]

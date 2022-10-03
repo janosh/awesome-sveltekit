@@ -8,7 +8,7 @@
 <h4 align="center">
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg)](https://github.com/janosh/awesome-sveltekit/pulls)
+[![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg?logo=github)](https://github.com/janosh/awesome-sveltekit/pulls)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-sveltekit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-sveltekit/main)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-sveltekit/deploys)
 
@@ -164,7 +164,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    Alternative frontend for YouTube Music.<br>
 
-   uses: [TypeScript], [PostCSS], [Sass]
+   uses: [TypeScript], [PostCSS], [SCSS]
 
 1. **[Paper Trader Game](https://paper-trader.davjhan.com)**&ensp;
    [[code](https://github.com/davjhan/paper-trader-game)]&ensp;
@@ -733,7 +733,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [sanitize-html]: https://github.com/apostrophecms/sanitize-html
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
-[scss]: https://sass-lang.com
+[scss]: https://sass-lang.com/documentation/syntax
 [service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
