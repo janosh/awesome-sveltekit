@@ -12,7 +12,7 @@
     <h1>⛔ {$page.error?.name} {$page.status}: Page not found</h1>
     <p>
       Return to the
-      <a data-sveltekit-prefetch href="/">landing page</a>.
+      <a href="/">landing page</a>.
     </p>
   {:else}
     <h1>⛔ {$page.error?.name} {$page.status}</h1>
