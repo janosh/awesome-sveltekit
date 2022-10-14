@@ -20,10 +20,6 @@ body {
   color: #eee;
   overflow-x: hidden;
 }
-/* outer div = hydration target */
-body > div {
-  display: flex;
-}
 main {
   max-width: 70em;
   margin: auto;

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import PrevNextSite from '$lib/PrevNextSite.svelte'
   import SiteDetails from '$lib/SiteDetails.svelte'
   import type { PageData } from './$types'
 
@@ -20,10 +21,29 @@
   {/if}
 </svelte:head>
 
-<a href="/" class="back" data-sveltekit-prefetch>&laquo; back</a>
-<SiteDetails site={data.site} />
+<a href="/" class="back">&laquo; back</a>
+
+<main>
+  <SiteDetails site={data.site} />
+</main>
+<PrevNextSite prev={data.prev_site} next={data.next_site} />
 
 <style>
+  main {
+    display: flex;
+    max-width: 1200px;
+    gap: 2em;
+    margin: 6em auto 2em;
+  }
+  :global(main > *) {
+    flex: 1;
+  }
+  @media (max-width: 750px) {
+    main {
+      flex-direction: column-reverse;
+      gap: 1em;
+    }
+  }
   a.back {
     background: rgba(255, 255, 255, 0.2);
     padding: 4pt 1ex;

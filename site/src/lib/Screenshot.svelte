@@ -8,10 +8,10 @@
 
   const titleToSlug = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
 
-  const src = `/screenshots/${titleToSlug(title)}${resolution}.webp`
+  $: src = `/screenshots/${titleToSlug(title)}${resolution}.webp`
 </script>
 
-<img {src} alt="Screenshot of {title}" {width} {height} on:click {style} />
+<img {src} alt="Screenshot of {title}" {width} {height} on:click on:keyup {style} />
 
 <style>
   img {

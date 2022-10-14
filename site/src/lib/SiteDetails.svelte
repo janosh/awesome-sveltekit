@@ -21,97 +21,79 @@
   })
 </script>
 
-<main>
-  <section style="flex: 2;">
-    <h1>
-      <a href={url}>{title}</a>
-      {#if site.repo}
-        <a href={site.repo}>
-          <small style="display: flex; gap: 6pt;">
-            <Icon icon="octicon:mark-github" color="white" />Repo
-          </small>
-        </a>
-      {/if}
-    </h1>
+<section>
+  <h1>
+    <a href={url}>{title}</a>
+    {#if site.repo}
+      <a href={site.repo}>
+        <small style="display: flex; gap: 6pt;">
+          <Icon icon="octicon:mark-github" color="white" />Repo
+        </small>
+      </a>
+    {/if}
+  </h1>
 
-    {#if site.description}
-      <p>{@html site.description}</p>
-    {/if}
-    {#if repo_stars}
-      <hr />
-      <p class="flex">
-        <Icon icon="octicon:star" />&emsp;Star count:
-        <span style="flex: 1" />{repo_stars.toLocaleString()}
-      </p>
-    {/if}
-    {#if contributors?.length > 0}
-      <hr />
-      <div class:flex={contributors.length === 1} style="margin: 1em 0;">
-        <Icon icon="octicon:person" style="margin-right: 1em;" />{contributors.length > 1
-          ? `Contributors`
-          : `Creator`}:
-        {#if contributors.length > 1}
-          <ol class="contributors">
-            {#each contributors as contributor}
-              <li>
-                <Contributor {contributor} />
-              </li>
-            {/each}
-          </ol>
-        {:else}
-          <span style="flex: 1" />
-          <Contributor contributor={contributors[0]} />
-        {/if}
-      </div>
-    {/if}
-    {#if date_created}
-      <hr />
-      <p class="flex">
-        <Icon icon="octicon:project" />&emsp;Project started on:
-        <span style="flex: 1" />{date_created}
-      </p>
-    {/if}
-    {#if tags?.length > 0}
-      <hr />
-      <p class="tags flex">
-        <Icon icon="octicon:tag" />&ensp;Tags:&emsp;
-        {#each tags as tag}
-          <span>{tag}</span>
-        {/each}
-      </p>
-    {/if}
-    {#if tools && tools?.length > 0}
-      <hr />
-      <p class="uses flex">
-        <Icon icon="octicon:stack-16" />&ensp;Uses:&emsp;
-        {#each tools as [tool, href]}
-          <a {href}>{tool}</a>
-        {/each}
-      </p>
-    {/if}
-  </section>
-  <aside style="flex: 3;">
-    <Screenshot {title} />
-  </aside>
-</main>
+  {#if site.description}
+    <p>{@html site.description}</p>
+  {/if}
+  {#if repo_stars}
+    <hr />
+    <p class="flex">
+      <Icon icon="octicon:star" />&emsp;Stars:
+      <span style="flex: 1" />{repo_stars.toLocaleString()}
+    </p>
+  {/if}
+  {#if contributors?.length > 0}
+    <hr />
+    <div class:flex={contributors.length === 1} style="margin: 1em 0;">
+      <Icon icon="octicon:person" style="margin-right: 1em;" />{contributors.length > 1
+        ? `Contributors`
+        : `Creator`}:
+      {#if contributors.length > 1}
+        <ol class="contributors">
+          {#each contributors as contributor}
+            <li>
+              <Contributor {contributor} />
+            </li>
+          {/each}
+        </ol>
+      {:else}
+        <span style="flex: 1" />
+        <Contributor contributor={contributors[0]} />
+      {/if}
+    </div>
+  {/if}
+  {#if date_created}
+    <hr />
+    <p class="flex">
+      <Icon icon="octicon:project" />&emsp;Project started on:
+      <span style="flex: 1" />{date_created}
+    </p>
+  {/if}
+  {#if tags?.length > 0}
+    <hr />
+    <p class="tags flex">
+      <Icon icon="octicon:tag" />&ensp;Tags:&emsp;
+      {#each tags as tag}
+        <span>{tag}</span>
+      {/each}
+    </p>
+  {/if}
+  {#if tools && tools?.length > 0}
+    <hr />
+    <p class="uses flex">
+      <Icon icon="octicon:stack-16" />&ensp;Uses:&emsp;
+      {#each tools as [tool, href]}
+        <a {href}>{tool}</a>
+      {/each}
+    </p>
+  {/if}
+</section>
+<aside>
+  <Screenshot {title} />
+</aside>
 
 <style>
-  main {
-    display: flex;
-    max-width: 1200px;
-    gap: 2em;
-    margin: 6em auto 2em;
-  }
-  @media (max-width: 750px) {
-    main {
-      flex-direction: column-reverse;
-      gap: 1em;
-    }
-    aside {
-      max-width: 500px;
-      margin: auto;
-    }
-  }
   h1 {
     display: flex;
     gap: 1em;
@@ -126,6 +108,12 @@
     height: 0.1px;
     background-color: lightblue;
     border: none;
+  }
+  @media (max-width: 750px) {
+    aside {
+      max-width: 500px;
+      margin: auto;
+    }
   }
   ol.contributors {
     line-height: 1.6em;

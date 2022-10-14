@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* This file parses sites.yml, fetches GH metadata like contributors
-and star count for each site, then writes the results to site/src/sites.yml. */
+and stars for each site, then writes the results to site/src/sites.yml. */
 
 import dotenv from 'dotenv'
 import fs from 'fs'
@@ -53,7 +53,7 @@ function normalizeUrl(url) {
 }
 
 // Only update site/src/sites.js if a new site was added to sites.yml
-// or repo star counts were last fetched more than a month ago.
+// or repo stars were last fetched more than a month ago.
 for (const site of sites) {
   const slug = title_to_slug(site.title)
 
@@ -83,13 +83,13 @@ for (const site of sites) {
     continue
   }
 
-  // fetch star count
+  // fetch stars
   try {
     const url = `https://api.github.com/repos/${repoHandle}`
     const repo = await fetch_check(url)
     site.repo_stars = repo.stargazers_count
   } catch (error) {
-    console.error(`Error fetching star count for ${site.title}:`, error)
+    console.error(`Error fetching stars for ${site.title}:`, error)
   }
 
   // fetch most active contributors
