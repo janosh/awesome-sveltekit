@@ -107,7 +107,9 @@
 
   <p>
     See something that's missing from this list?
-    <a href="{repository}/edit/main/sites.yml"> PRs welcome! </a>
+    <a href="{repository}/edit/main/sites.yml" target="_blank" rel="noreferrer">
+      PRs welcome!
+    </a>
   </p>
 
   <Filters
@@ -137,7 +139,11 @@
   </p>
 
   <h2>
-    🙏 Big thanks to <a href="{repository}/graphs/contributors" target="_blank">
+    🙏 Big thanks to <a
+      href="{repository}/graphs/contributors"
+      target="_blank"
+      rel="noreferrer"
+    >
       all {data.repo_contributors.length} contributors
     </a>
   </h2>
