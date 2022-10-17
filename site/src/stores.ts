@@ -1,4 +1,5 @@
 import { writable } from 'svelte/store'
+import type { Site } from './types'
 
 function session_store<T>(name: string, initialValue: T) {
   if (typeof sessionStorage !== `undefined` && sessionStorage[name]) {
@@ -46,3 +47,5 @@ export const filter_tags = session_store<
 export const filter_contributors = session_store<
   { label: string; value: string; count: number }[]
 >(`filter-contributors`, [])
+
+export const sorted_sites = writable<Site[]>([])

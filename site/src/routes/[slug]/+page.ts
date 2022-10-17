@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit'
-import sites from '../../sites.yml'
-import type { PageServerLoad } from './$types'
+import { get } from 'svelte/store'
+import { sorted_sites } from '../../stores'
+import type { PageLoad } from './$types'
 
 const pretty_date = (date = ``): string =>
   new Date(date).toLocaleString(`en`, {
@@ -9,8 +10,10 @@ const pretty_date = (date = ``): string =>
     day: `numeric`,
   })
 
-export const load: PageServerLoad = ({ params }) => {
+export const load: PageLoad = ({ params }) => {
   const { slug } = params
+
+  const sites = get(sorted_sites)
 
   const site_idx = sites.findIndex((site) => site.slug === slug)
   if (site_idx === -1) {

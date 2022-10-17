@@ -303,6 +303,7 @@
   description: Data-centric UI experiments
   uses: [Three.js, Cytoscape.js, Vercel]
   tags: [data viz, statistics, machine learning]
+  date_created: 2021-01-01
   date_added: 2021-10-19
   last_updated: 2021-10-17
 
@@ -761,3 +762,13 @@
   date_created: 2022-09-27
   date_added: 2022-09-30
   last_updated: 2022-09-30
+
+- title: omnia-editor
+  url: https://omnia-editor.vercel.app
+  repo: https://github.com/TorstenDittmann/omnia-editor
+  description: A lightweight open source block style editor built for the modern web.
+  uses: [Sass, TypeScript]
+  tags: [writing, editor, html, wysiwyg]
+  date_created: 2020-03-05
+  date_added: 2022-10-16
+  last_updated: 2022-10-16

@@ -666,6 +666,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Typescript], [SCSS], [PostCSS], [Motion One], [OGL], [WebGL], [Directus], [Swell Commerce], [Vercel]
 
+1. **[omnia-editor](https://omnia-editor.vercel.app)**&ensp;
+   [[code](https://github.com/TorstenDittmann/omnia-editor)]&ensp;
+   <a href="https://github.com/TorstenDittmann/omnia-editor/stargazers">
+   <img src="https://img.shields.io/github/stars/TorstenDittmann/omnia-editor" alt="GitHub stars" valign="middle">
+   </a>
+
+   A lightweight open source block style editor built for the modern web.<br>
+
+   uses: [Sass], [TypeScript]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
