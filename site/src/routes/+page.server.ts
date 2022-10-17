@@ -1,7 +1,7 @@
 import type { RepoContributor } from 'src/types'
 import type { PageServerLoad } from './$types'
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ fetch }) => {
   const contributors = (await fetch(
     `https://api.github.com/repos/janosh/awesome-sveltekit/contributors`,
     { cache: `force-cache` }
