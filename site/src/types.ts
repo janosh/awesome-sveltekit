@@ -9,7 +9,7 @@ export type Site = {
   contributors: Contributor[]
   tags: string[]
   uses: string[]
-  date_created?: string
+  date_created: string
   last_updated: string
 }
 

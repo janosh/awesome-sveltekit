@@ -10,6 +10,7 @@
     filter_contributors,
     filter_tags,
     search,
+    sorted_sites,
     sort_by,
     tag_filter_mode,
   } from '../stores'
@@ -65,22 +66,19 @@
 
     return query_match && tag_match && contrib_match
   })
-  $: sorted_sites = filtered_sites // copy array reference
 
-  // arr.sort() sorts in-place but we need to reassign filteredSites so Svelte rerenders
+  // arr.sort() sorts in-place but we need to reassign filtered_sites so Svelte rerenders
   $: if ($sort_by[0] === `GitHub repo stars`) {
-    sorted_sites = filtered_sites.sort(
+    $sorted_sites = filtered_sites.sort(
       (siteA, siteB) => (siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)
     )
   } else if ($sort_by[0] === `Date created`) {
-    sorted_sites = filtered_sites.sort(
-      (siteA, siteB) =>
-        +new Date(siteB.date_created ?? 0) - +new Date(siteA.date_created ?? 0)
+    $sorted_sites = filtered_sites.sort(
+      (siteA, siteB) => +new Date(siteB.date_created) - +new Date(siteA.date_created)
     )
   } else if ($sort_by[0] === `Date last updated`) {
-    sorted_sites = filtered_sites.sort(
-      (siteA, siteB) =>
-        +new Date(siteB.last_updated ?? 0) - +new Date(siteA.last_updated ?? 0)
+    $sorted_sites = filtered_sites.sort(
+      (siteA, siteB) => +new Date(siteB.last_updated) - +new Date(siteA.last_updated)
     )
   }
 
@@ -114,20 +112,20 @@
 
   <Filters
     {tags}
-    on:toggle-sort={() => (sorted_sites = sorted_sites.reverse())}
+    on:toggle-sort={() => ($sorted_sites = $sorted_sites.reverse())}
     {contributors}
   />
 
-  {#if filtered_sites.length < sites.length}
+  {#if $sorted_sites.length < sites.length}
     <p>
-      <span>{filtered_sites.length}</span> match{filtered_sites.length !== 1 ? `es` : ``}
-      {#if filtered_sites?.length === 0}
+      <span>{$sorted_sites.length}</span> match{$sorted_sites.length !== 1 ? `es` : ``}
+      {#if $sorted_sites?.length === 0}
         (try different filters)
       {/if}
     </p>
   {/if}
 
-  <SiteList sites={sorted_sites} />
+  <SiteList sites={$sorted_sites} />
 
   <h2>🎉 Open to Suggestions</h2>
   <p style="max-width: 40em;">
