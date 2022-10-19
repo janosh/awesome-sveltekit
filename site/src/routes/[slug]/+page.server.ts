@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit'
 import { get } from 'svelte/store'
 import { sorted_sites } from '../../stores'
-import type { PageLoad } from './$types'
+import type { PageServerLoad } from './$types'
 
 const pretty_date = (date = ``): string =>
   new Date(date).toLocaleString(`en`, {
@@ -10,12 +10,13 @@ const pretty_date = (date = ``): string =>
     day: `numeric`,
   })
 
-export const load: PageLoad = ({ params }) => {
+export const load: PageServerLoad = ({ params }) => {
   const { slug } = params
 
   const sites = get(sorted_sites)
 
   const site_idx = sites.findIndex((site) => site.slug === slug)
+
   if (site_idx === -1) {
     throw error(404, { message: `No site found for slug ${slug}` })
   }
