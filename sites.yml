@@ -94,31 +94,6 @@
   date_added: 2021-06-09
   last_updated: 2022-05-19
 
-- title: Afara
-  url: https://afara.foundation
-  repo: https://github.com/janosh/afara
-  description: >-
-    Homepage of the German student-run non-profit Afara e.V.
-    Supports educational and youth welfare projects in Africa.
-  uses: [Contentful, Algolia, GraphQL, Netlify, pre-commit]
-  tags: [non-profit, volunteering, education, health]
-  date_created: 2021-01-24
-  date_added: 2021-05-25
-  last_updated: 2021-05-25
-
-- title: Ocean artUp
-  url: https://ocean-artup.eu
-  repo: https://github.com/janosh/ocean-artup
-  description: >-
-    ERC Advanced Grant research project. Aims to study feasibility, effectiveness, associated risks
-    and side effects of artificial upwelling for increasing ocean productivity, raising fish production,
-    and enhancing oceanic CO2 sequestration.
-  uses: [Contentful, Algolia, GraphQL, Netlify, Google Maps, pre-commit]
-  tags: [research, science]
-  date_created: 2021-01-31
-  date_added: 2021-05-25
-  last_updated: 2021-05-25
-
 - title: Guess The Year
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game

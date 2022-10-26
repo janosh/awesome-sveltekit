@@ -86,26 +86,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect], [Playwright], [Vitest]
 
-1. **[Afara](https://afara.foundation)**&ensp;
-   [[code](https://github.com/janosh/afara)]&ensp;
-   <a href="https://github.com/janosh/afara/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/afara" alt="GitHub stars" valign="middle">
-   </a>
-
-   Homepage of the German student-run non-profit Afara e.V. Supports educational and youth welfare projects in Africa.<br>
-
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [pre-commit]
-
-1. **[Ocean artUp](https://ocean-artup.eu)**&ensp;
-   [[code](https://github.com/janosh/ocean-artup)]&ensp;
-   <a href="https://github.com/janosh/ocean-artup/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/ocean-artup" alt="GitHub stars" valign="middle">
-   </a>
-
-   ERC Advanced Grant research project. Aims to study feasibility, effectiveness, associated risks and side effects of artificial upwelling for increasing ocean productivity, raising fish production, and enhancing oceanic CO2 sequestration.<br>
-
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [Google Maps], [pre-commit]
-
 1. **[Guess The Year](https://guess-the-year.davjhan.com)**&ensp;
    [[code](https://github.com/davjhan/guess-the-year-game)]&ensp;
    <a href="https://github.com/davjhan/guess-the-year-game/stargazers">
@@ -704,7 +684,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [github pages]: https://pages.github.com
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
-[google maps]: https://developers.google.com/maps/documentation/javascript
 [google tag manager]: https://tagmanager.google.com
 [graphcms]: https://graphcms.com
 [graphql]: https://graphql.org

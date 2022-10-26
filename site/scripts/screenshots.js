@@ -12,18 +12,18 @@ import puppeteer from 'puppeteer'
 import { root_dir, title_to_slug } from './index.js'
 
 const start = performance.now()
-const outDir = `${root_dir}/site/static/screenshots`
+const screenshot_dir = `${root_dir}/site/static/screenshots`
 
 const sites = yaml.load(fs.readFileSync(`${root_dir}/sites.yml`))
 
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
 
-fs.mkdirSync(outDir, { recursive: true })
+fs.mkdirSync(screenshot_dir, { recursive: true })
 
-const updateExisting = process.argv[2] === `update-existing`
+const update_existing = process.argv[2] === `update-existing`
 
-if (updateExisting) console.log(`Updating all existing screenshots`)
+if (update_existing) console.log(`Updating all existing screenshots`)
 
 const [created, updated, skipped, existed] = [[], [], [], []]
 
@@ -31,10 +31,10 @@ for (const [idx, site] of sites.entries()) {
   site.slug = title_to_slug(site.title)
   const { slug } = site
 
-  const imgPath = `${outDir}/${slug}.webp`
-  const imgExists = fs.existsSync(imgPath)
+  const img_path = `${screenshot_dir}/${slug}.webp`
+  const img_exists = fs.existsSync(img_path)
 
-  if (!updateExisting && imgExists) {
+  if (!update_existing && img_exists) {
     existed.push(site.slug)
     continue
   }
@@ -45,7 +45,7 @@ for (const [idx, site] of sites.entries()) {
     try {
       await page.goto(site.url, { timeout: 5000, waitUntil: `networkidle2` })
     } catch (error) {
-      if (error instanceof puppeteer.errors.TimeoutError) {
+      if (error instanceof puppeteer.TimeoutError) {
         // retry page.goto(), this time waiting only for 'load' event
         await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
       } else {
@@ -60,11 +60,11 @@ for (const [idx, site] of sites.entries()) {
   await new Promise((r) => setTimeout(r, 2000)) // wait for sites with on-load animations to settle
   // e.g. https://flayks.com
   await page.setViewport({ width: 1200, height: 900 })
-  await page.screenshot({ path: imgPath })
+  await page.screenshot({ path: img_path })
   await page.setViewport({ width: 1200, height: 900, deviceScaleFactor: 0.5 })
-  await page.screenshot({ path: `${outDir}/${slug}.small.webp` })
+  await page.screenshot({ path: `${screenshot_dir}/${slug}.small.webp` })
 
-  if (imgExists) updated.push(site.slug)
+  if (img_exists) updated.push(site.slug)
   else created.push(site.slug)
 }
 
@@ -79,17 +79,29 @@ if (created.length > 0 || updated.length > 0) {
     `${this_file} took ${wall_time}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots\n`
   )
 
-  const toCompress = [...created, ...updated].flatMap((slug) => [
-    `${outDir}/${slug}.webp`,
-    `${outDir}/${slug}.small.webp`,
+  const to_compress = [...created, ...updated].flatMap((slug) => [
+    `${screenshot_dir}/${slug}.webp`,
+    `${screenshot_dir}/${slug}.small.webp`,
   ])
 
-  const compressedFiles = await imagemin(toCompress, {
-    destination: outDir,
+  const compressed_files = await imagemin(to_compress, {
+    destination: screenshot_dir,
     plugins: [imageminWebp({ quality: 50 })],
   })
 
-  console.log(`compressed ${compressedFiles.length} files`)
+  console.log(`compressed ${compressed_files.length} files`)
 } else {
   console.log(`No changes from ${this_file} in ${wall_time}s\n`)
+}
+
+// delete screenshots of removed site
+const existing_slugs = sites.map((site) => site.slug)
+
+for (const file of fs.readdirSync(screenshot_dir)) {
+  const slug = file.replace(`.small.webp`, ``).replace(`.webp`, ``)
+  if (!existing_slugs.includes(slug)) {
+    console.log(`deleting ${file}`)
+
+    fs.unlinkSync(`${screenshot_dir}/${file}`)
+  }
 }
