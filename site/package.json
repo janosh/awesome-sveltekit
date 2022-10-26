@@ -9,10 +9,8 @@
   "type": "module",
   "bugs": "https://github.com/janosh/awesome-sveltekit/issues",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "prebuild": "node scripts/index.js",
-    "predev": "node scripts/index.js",
+    "dev": "node scripts/index.js && vite dev",
+    "build": "node scripts/index.js && vite build",
     "preview": "vite preview",
     "serve": "pnpm build && pnpm preview",
     "check": "svelte-check"
