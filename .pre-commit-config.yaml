@@ -5,6 +5,8 @@ default_stages: [commit]
 
 default_install_hook_types: [pre-commit, commit-msg]
 
+exclude: pnpm-lock.yaml
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.3.0
@@ -50,7 +52,6 @@ repos:
       - id: codespell
         args: [--ignore-words-list, ons]
         stages: [commit, commit-msg]
-        exclude: yarn.lock
 
   - repo: https://github.com/pre-commit/mirrors-eslint
     rev: v8.24.0
