@@ -144,6 +144,8 @@
   uses:
     - MDsveX
     - pre-commit
+    - PNPM
+    - Netlify
   tags:
     - education
     - interactive
@@ -180,6 +182,7 @@
     - Netlify
     - svelte-multiselect
     - pre-commit
+    - PNPM
   date_created: 2020-08-09T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2022-05-10T00:00:00.000Z
@@ -206,7 +209,6 @@
     - blog
     - rss
     - sitemap
-    - contact form
   date_created: 2020-08-21T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2021-05-25T00:00:00.000Z
@@ -1696,6 +1698,11 @@
     - pre-commit
     - D3
     - svelte-multiselect
+    - Vitest
+    - Playwright
+    - PNPM
+    - jsdom
+    - Netlify
   tags:
     - chemistry
     - data viz
@@ -2247,3 +2254,92 @@
       name: Torsten Dittmann
       location: Freilassing, Germany
       company: Appwrite
+- title: Skeleton
+  url: https://skeleton.dev
+  repo: https://github.com/Brain-Bones/skeleton
+  description: >-
+    A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit,
+    Vite, and Astro.
+  uses:
+    - Vitest
+    - PostCSS
+    - highlight.js
+    - Tailwind
+    - Typescript
+    - jsdom
+  tags:
+    - component library
+    - open source
+  date_created: 2022-02-23T00:00:00.000Z
+  date_added: 2022-10-30T00:00:00.000Z
+  last_updated: 2022-10-30T00:00:00.000Z
+  slug: skeleton
+  repo_stars: 466
+  contributors:
+    - github: endigo9740
+      twitter: endigodesign
+      url: https://endigodesign.com
+      avatar: https://avatars.githubusercontent.com/u/1509726?v=4
+      name: Chris Simmons
+      location: Dallas, Texas
+      company: Endigo Design
+    - github: thomasbjespersen
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/52718757?v=4
+      name: Thomas Bunk Jespersen
+      location: Fort Collins, CO
+      company: null
+    - github: niktek
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/52020637?v=4
+      name: Nik
+      location: Sydney
+      company: null
+    - github: ryceg
+      twitter: rhyscgray
+      url: https://rhysgraymusic.com
+      avatar: https://avatars.githubusercontent.com/u/36913739?v=4
+      name: Rhys
+      location: Australia
+      company: null
+    - github: benzara-tahar
+      twitter: BenzaraTahar
+      url: https://benzara.me
+      avatar: https://avatars.githubusercontent.com/u/71077112?v=4
+      name: Benzara
+      location: Algiers, Algeria
+      company: Upwork
+- title: Svelte MultiSelect
+  url: https://svelte-multiselect.netlify.app
+  repo: https://github.com/janosh/svelte-multiselect
+  description: >-
+    Keyboard-friendly, accessible and highly customizable multi-select
+    component.
+  uses:
+    - Vitest
+    - Playwright
+    - Typescript
+    - PNPM
+    - pre-commit
+    - rehype
+    - jsdom
+    - Netlify
+  tags:
+    - forms
+    - open source
+    - select component
+  date_created: 2021-05-07T00:00:00.000Z
+  date_added: 2022-10-30T00:00:00.000Z
+  last_updated: 2022-10-30T00:00:00.000Z
+  slug: svelte-multiselect
+  repo_stars: 113
+  contributors:
+    - github: janosh
+      twitter: jrib_
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/30958850?v=4
+      name: Janosh Riebesell
+      location: Lawrence Berkeley Lab
+      company: Cambridge University

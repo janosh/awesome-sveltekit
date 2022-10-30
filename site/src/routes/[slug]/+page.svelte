@@ -1,6 +1,8 @@
 <script lang="ts">
   import PrevNextSite from '$lib/PrevNextSite.svelte'
   import SiteDetails from '$lib/SiteDetails.svelte'
+  import Icon from '@iconify/svelte'
+  import { repository } from '../../../package.json'
   import type { PageData } from './$types'
 
   export let data: PageData
@@ -27,6 +29,16 @@
   <SiteDetails site={data.site} />
 </main>
 <PrevNextSite prev={data.prev_site} next={data.next_site} />
+
+<footer>
+  Have a site you'd like to add to this
+  <Icon icon="mdi:sunglasses" inline style="margin: 0 2pt;" />
+  collection?
+  <a href="{repository}/edit/main/sites.yml">
+    <Icon icon="octicon:git-pull-request" inline style="margin: 0 2pt 0 4pt;" />
+    PRs welcome!
+  </a>
+</footer>
 
 <style>
   main {
@@ -57,5 +69,10 @@
   }
   a.back:hover {
     background: rgba(255, 255, 255, 0.4);
+  }
+  footer {
+    text-align: center;
+    margin: 6em 0 2em;
+    color: white;
   }
 </style>

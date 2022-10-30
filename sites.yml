@@ -48,7 +48,7 @@
   url: https://svelte-geometric-bayes.netlify.app
   repo: https://github.com/janosh/svelte-geometric-bayes
   description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
-  uses: [MDsveX, pre-commit]
+  uses: [MDsveX, pre-commit, PNPM, Netlify]
   tags: [math, education, interactive]
   date_created: 2020-10-04
   date_added: 2021-05-25
@@ -59,7 +59,7 @@
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
   tags: [research, science, diagrams, graphics, latex]
-  uses: [TypeScript, Netlify, svelte-multiselect, pre-commit]
+  uses: [TypeScript, Netlify, svelte-multiselect, pre-commit, PNPM]
   date_created: 2020-08-09
   date_added: 2021-05-25
   last_updated: 2022-05-10
@@ -68,7 +68,7 @@
   url: https://markushatvan.com
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.
   uses: [Tailwind, MDsveX, Svelte Forms Lib]
-  tags: [blog, rss, sitemap, contact form]
+  tags: [blog, rss, sitemap]
   date_created: 2020-08-21
   date_added: 2021-05-25
   last_updated: 2021-05-25
@@ -547,7 +547,16 @@
   url: https://ptable-elements.netlify.app
   repo: https://github.com/janosh/periodic-table
   description: Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
-  uses: [TypeScript, pre-commit, D3, svelte-multiselect]
+  uses:
+    - TypeScript
+    - pre-commit
+    - D3
+    - svelte-multiselect
+    - Vitest
+    - Playwright
+    - PNPM
+    - jsdom
+    - Netlify
   tags: [chemistry, science, data viz, plotting]
   date_created: 2022-05-31
   date_added: 2022-06-02
@@ -747,3 +756,24 @@
   date_created: 2020-03-05
   date_added: 2022-10-16
   last_updated: 2022-10-16
+
+- title: Skeleton
+  url: https://skeleton.dev
+  repo: https://github.com/Brain-Bones/skeleton
+  description: A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit, Vite, and Astro.
+  uses: [Vitest, PostCSS, highlight.js, Tailwind, Typescript, jsdom]
+  tags: [component library]
+  date_created: 2022-02-23
+  date_added: 2022-10-30
+  last_updated: 2022-10-30
+
+- title: Svelte MultiSelect
+  url: https://svelte-multiselect.netlify.app
+  repo: https://github.com/janosh/svelte-multiselect
+  description: Keyboard-friendly, accessible and highly customizable multi-select component.
+  uses:
+    [Vitest, Playwright, Typescript, PNPM, pre-commit, rehype, jsdom, Netlify]
+  tags: [forms, select component]
+  date_created: 2021-05-07
+  date_added: 2022-10-30
+  last_updated: 2022-10-30
