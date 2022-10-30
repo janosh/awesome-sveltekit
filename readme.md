@@ -58,7 +58,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.<br>
 
-   uses: [MDsveX], [pre-commit]
+   uses: [MDsveX], [pre-commit], [PNPM], [Netlify]
 
 1. **[TikZ](https://tikz.netlify.app)**&ensp;
    [[code](https://github.com/janosh/tikz)]&ensp;
@@ -68,7 +68,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.<br>
 
-   uses: [TypeScript], [Netlify], [svelte-multiselect], [pre-commit]
+   uses: [TypeScript], [Netlify], [svelte-multiselect], [pre-commit], [PNPM]
 
 1. **[markushatvan.com](https://markushatvan.com)**
 
@@ -508,7 +508,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
 
-   uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect]
+   uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect], [Vitest], [Playwright], [PNPM], [jsdom], [Netlify]
 
 1. **[Pixel Art Together](https://pixelart.liveblocks.app)**&ensp;
    [[code](https://github.com/liveblocks/pixel-art-together)]&ensp;
@@ -656,6 +656,26 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Sass], [TypeScript]
 
+1. **[Skeleton](https://skeleton.dev)**&ensp;
+   [[code](https://github.com/Brain-Bones/skeleton)]&ensp;
+   <a href="https://github.com/Brain-Bones/skeleton/stargazers">
+   <img src="https://img.shields.io/github/stars/Brain-Bones/skeleton" alt="GitHub stars" valign="middle">
+   </a>
+
+   A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit, Vite, and Astro.<br>
+
+   uses: [Vitest], [PostCSS], [highlight.js], [Tailwind], [Typescript], [jsdom]
+
+1. **[Svelte MultiSelect](https://svelte-multiselect.netlify.app)**&ensp;
+   [[code](https://github.com/janosh/svelte-multiselect)]&ensp;
+   <a href="https://github.com/janosh/svelte-multiselect/stargazers">
+   <img src="https://img.shields.io/github/stars/janosh/svelte-multiselect" alt="GitHub stars" valign="middle">
+   </a>
+
+   Keyboard-friendly, accessible and highly customizable multi-select component.<br>
+
+   uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [Netlify]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -748,6 +768,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [vitest]: https://vitest.dev
 [webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
+[jsdom]: https://github.com/jsdom/jsdom
 
 ## 🎉 Open to Suggestions
 

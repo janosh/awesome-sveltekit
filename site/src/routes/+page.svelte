@@ -2,6 +2,7 @@
   import ContributorList from '$lib/ContributorList.svelte'
   import Filters from '$lib/Filters.svelte'
   import SiteList from '$lib/SiteList.svelte'
+  import Icon from '@iconify/svelte'
   import GitHubCorner from 'svelte-github-corner'
   import { repository } from '../../package.json'
   import sites from '../sites.yml'
@@ -131,19 +132,22 @@
 
   <h2>🎉 Open to Suggestions</h2>
   <p style="max-width: 40em;">
-    See something that's missing from this list? <a
-      href="{repository}/edit/main/sites.yml">PRs welcome</a
+    See something that's missing from this
+    <Icon icon="mdi:sunglasses" inline style="margin: 0 2pt;" />
+    list?
+    <a href="{repository}/edit/main/sites.yml">
+      <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
+      PRs welcome</a
     >! A good place to discover Svelte projects (not necessarily SvelteKit) is
-    <a href="https://github.com/trending/svelte?since=monthly">GitHub Trending</a>. If
-    anything on that list stands out to you but is missing here, please add it!
+    <a href="https://github.com/trending/svelte?since=monthly">
+      <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt;" />
+      GitHub Trending
+    </a>. If anything on that list stands out to you but is missing here, please add it!
   </p>
 
   <h2>
-    🙏 Big thanks to <a
-      href="{repository}/graphs/contributors"
-      target="_blank"
-      rel="noreferrer"
-    >
+    🙏 Big thanks to
+    <a href="{repository}/graphs/contributors" target="_blank" rel="noreferrer">
       all {data.repo_contributors.length} contributors
     </a>
   </h2>

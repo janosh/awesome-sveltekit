@@ -1,9 +1,9 @@
-import rollupYaml from '@rollup/plugin-yaml'
+import yaml from '@rollup/plugin-yaml'
 import { sveltekit } from '@sveltejs/kit/vite'
-import { UserConfig } from 'vite'
+import type { UserConfig } from 'vite'
 
 const vite_config: UserConfig = {
-  plugins: [sveltekit(), rollupYaml()],
+  plugins: [sveltekit(), yaml()],
 
   server: {
     fs: {
