@@ -144,6 +144,8 @@
   uses:
     - MDsveX
     - pre-commit
+    - PNPM
+    - Netlify
   tags:
     - education
     - interactive
@@ -180,6 +182,7 @@
     - Netlify
     - svelte-multiselect
     - pre-commit
+    - PNPM
   date_created: 2020-08-09T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2022-05-10T00:00:00.000Z
@@ -206,7 +209,6 @@
     - blog
     - rss
     - sitemap
-    - contact form
   date_created: 2020-08-21T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2021-05-25T00:00:00.000Z
@@ -1698,6 +1700,9 @@
     - svelte-multiselect
     - Vitest
     - Playwright
+    - PNPM
+    - jsdom
+    - Netlify
   tags:
     - chemistry
     - data viz
@@ -2260,6 +2265,8 @@
     - PostCSS
     - highlight.js
     - Tailwind
+    - Typescript
+    - jsdom
   tags:
     - component library
     - open source
@@ -2304,3 +2311,35 @@
       name: Benzara
       location: Algiers, Algeria
       company: Upwork
+- title: Svelte MultiSelect
+  url: https://svelte-multiselect.netlify.app
+  repo: https://github.com/janosh/svelte-multiselect
+  description: >-
+    Keyboard-friendly, accessible and highly customizable multi-select
+    component.
+  uses:
+    - Vitest
+    - Playwright
+    - Typescript
+    - PNPM
+    - pre-commit
+    - rehype
+    - jsdom
+    - Netlify
+  tags:
+    - forms
+    - open source
+    - select component
+  date_created: 2021-05-07T00:00:00.000Z
+  date_added: 2022-10-30T00:00:00.000Z
+  last_updated: 2022-10-30T00:00:00.000Z
+  slug: svelte-multiselect
+  repo_stars: 113
+  contributors:
+    - github: janosh
+      twitter: jrib_
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/30958850?v=4
+      name: Janosh Riebesell
+      location: Lawrence Berkeley Lab
+      company: Cambridge University
