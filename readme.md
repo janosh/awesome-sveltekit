@@ -508,7 +508,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
 
-   uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect]
+   uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect], [Vitest], [Playwright]
 
 1. **[Pixel Art Together](https://pixelart.liveblocks.app)**&ensp;
    [[code](https://github.com/liveblocks/pixel-art-together)]&ensp;
@@ -655,6 +655,16 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
    A lightweight open source block style editor built for the modern web.<br>
 
    uses: [Sass], [TypeScript]
+
+1. **[Skeleton](https://skeleton.dev)**&ensp;
+   [[code](https://github.com/Brain-Bones/skeleton)]&ensp;
+   <a href="https://github.com/Brain-Bones/skeleton/stargazers">
+   <img src="https://img.shields.io/github/stars/Brain-Bones/skeleton" alt="GitHub stars" valign="middle">
+   </a>
+
+   A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit, Vite, and Astro.<br>
+
+   uses: [Vitest], [PostCSS], [highlight.js], [Tailwind]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com

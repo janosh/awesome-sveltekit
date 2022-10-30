@@ -1696,6 +1696,8 @@
     - pre-commit
     - D3
     - svelte-multiselect
+    - Vitest
+    - Playwright
   tags:
     - chemistry
     - data viz
@@ -2247,3 +2249,58 @@
       name: Torsten Dittmann
       location: Freilassing, Germany
       company: Appwrite
+- title: Skeleton
+  url: https://skeleton.dev
+  repo: https://github.com/Brain-Bones/skeleton
+  description: >-
+    A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit,
+    Vite, and Astro.
+  uses:
+    - Vitest
+    - PostCSS
+    - highlight.js
+    - Tailwind
+  tags:
+    - component library
+    - open source
+  date_created: 2022-02-23T00:00:00.000Z
+  date_added: 2022-10-30T00:00:00.000Z
+  last_updated: 2022-10-30T00:00:00.000Z
+  slug: skeleton
+  repo_stars: 466
+  contributors:
+    - github: endigo9740
+      twitter: endigodesign
+      url: https://endigodesign.com
+      avatar: https://avatars.githubusercontent.com/u/1509726?v=4
+      name: Chris Simmons
+      location: Dallas, Texas
+      company: Endigo Design
+    - github: thomasbjespersen
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/52718757?v=4
+      name: Thomas Bunk Jespersen
+      location: Fort Collins, CO
+      company: null
+    - github: niktek
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/52020637?v=4
+      name: Nik
+      location: Sydney
+      company: null
+    - github: ryceg
+      twitter: rhyscgray
+      url: https://rhysgraymusic.com
+      avatar: https://avatars.githubusercontent.com/u/36913739?v=4
+      name: Rhys
+      location: Australia
+      company: null
+    - github: benzara-tahar
+      twitter: BenzaraTahar
+      url: https://benzara.me
+      avatar: https://avatars.githubusercontent.com/u/71077112?v=4
+      name: Benzara
+      location: Algiers, Algeria
+      company: Upwork

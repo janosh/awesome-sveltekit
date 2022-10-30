@@ -547,7 +547,7 @@
   url: https://ptable-elements.netlify.app
   repo: https://github.com/janosh/periodic-table
   description: Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
-  uses: [TypeScript, pre-commit, D3, svelte-multiselect]
+  uses: [TypeScript, pre-commit, D3, svelte-multiselect, Vitest, Playwright]
   tags: [chemistry, science, data viz, plotting]
   date_created: 2022-05-31
   date_added: 2022-06-02
@@ -747,3 +747,13 @@
   date_created: 2020-03-05
   date_added: 2022-10-16
   last_updated: 2022-10-16
+
+- title: Skeleton
+  url: https://skeleton.dev
+  repo: https://github.com/Brain-Bones/skeleton
+  description: A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit, Vite, and Astro.
+  uses: [Vitest, PostCSS, highlight.js, Tailwind]
+  tags: [component library]
+  date_created: 2022-02-23
+  date_added: 2022-10-30
+  last_updated: 2022-10-30
