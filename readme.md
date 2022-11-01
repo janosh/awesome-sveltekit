@@ -371,7 +371,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
    uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
 
 1. **[inlang dashboard](https://inlang.dev)**&ensp;
-   [[code](https://github.com/inlang/inlang/tree/main/apps/dashboard)]&ensp;
+   [[code](https://github.com/inlang/inlang/tree/main/source-code/website)]&ensp;
    <a href="https://github.com/inlang/inlang/stargazers">
    <img src="https://img.shields.io/github/stars/inlang/inlang" alt="GitHub stars" valign="middle">
    </a>
@@ -541,7 +541,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
    uses: [Playwright], [D3], [Testing Library], [Tailwind], [PostCSS], [Vitest]
 
 1. **[Cryptgeon](https://cryptgeon.nicco.io)**&ensp;
-   [[code](https://github.com/cupcakearmy/cryptgeon/tree/main/frontend)]&ensp;
+   [[code](https://github.com/cupcakearmy/cryptgeon/tree/main/packages/frontend)]&ensp;
    <a href="https://github.com/cupcakearmy/cryptgeon/stargazers">
    <img src="https://img.shields.io/github/stars/cupcakearmy/cryptgeon" alt="GitHub stars" valign="middle">
    </a>
@@ -550,7 +550,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [svelte-intl-precompile], [sanitize-html]
 
-1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com)**&ensp;
+1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com/en/docs/configuration)**&ensp;
    [[code](https://github.com/cibernox/svelte-intl-precompile)]&ensp;
    <a href="https://github.com/cibernox/svelte-intl-precompile/stargazers">
    <img src="https://img.shields.io/github/stars/cibernox/svelte-intl-precompile" alt="GitHub stars" valign="middle">
@@ -700,7 +700,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [electron]: https://electronjs.org
 [filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
-[github api]: https://docs.github.com/en/rest
+[github api]: https://docs.github.com/rest
 [github pages]: https://pages.github.com
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
@@ -716,6 +716,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [jest]: https://jestjs.io
 [js-yaml]: https://github.com/nodeca/js-yaml
 [jsdoc]: https://jsdoc.app
+[jsdom]: https://github.com/jsdom/jsdom
 [json5]: https://github.com/json5/json5
 [liveblocks]: https://liveblocks.io
 [lodash]: https://lodash.com
@@ -768,7 +769,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [vitest]: https://vitest.dev
 [webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
-[jsdom]: https://github.com/jsdom/jsdom
 
 ## 🎉 Open to Suggestions
 

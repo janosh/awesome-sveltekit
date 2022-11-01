@@ -55,7 +55,6 @@
       placeholder="Sort by..."
       maxSelect={1}
       bind:selected={$sort_by}
-      --sms-max-width="14em"
     />
     {#if $sort_by?.length > 0}
       <RadioButtons
