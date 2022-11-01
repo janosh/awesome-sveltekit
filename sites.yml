@@ -405,7 +405,7 @@
 - title: inlang dashboard
   url: https://inlang.dev
   repo: https://github.com/inlang/inlang
-  site_src: https://github.com/inlang/inlang/tree/main/apps/dashboard
+  site_src: https://github.com/inlang/inlang/tree/main/source-code/website
   description: Translate software products 2x faster.
   uses: [TypeScript, Vercel, IBM Carbon, Tailwind, Supabase]
   tags: [front-end, developer tool, localization, i18n]
@@ -595,7 +595,7 @@
 - title: Cryptgeon
   url: https://cryptgeon.nicco.io
   repo: https://github.com/cupcakearmy/cryptgeon
-  site_src: https://github.com/cupcakearmy/cryptgeon/tree/main/frontend
+  site_src: https://github.com/cupcakearmy/cryptgeon/tree/main/packages/frontend
   description: A secure, open source notes and file sharing service inspired by PrivNote written in Rust & Svelte.
   uses: [svelte-intl-precompile, sanitize-html]
   tags: [file sharing, note sharing, secure notes, privacy, data protection]
@@ -604,7 +604,8 @@
   last_updated: 2022-06-09
 
 - title: Svelte Intl Precompile
-  url: https://svelte-intl-precompile.com
+  # weird url as temp fix for https://github.com/cibernox/svelte-intl-precompile/issues/58
+  url: https://svelte-intl-precompile.com/en/docs/configuration
   repo: https://github.com/cibernox/svelte-intl-precompile
   description:
     I18n library for Svelte that analyzes your keys at build time for maximum performance and

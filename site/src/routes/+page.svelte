@@ -106,13 +106,6 @@
     {sites.length} Awesome Examples of SvelteKit in the Wild
   </h1>
 
-  <p>
-    See something that's missing from this list?
-    <a href="{repository}/edit/main/sites.yml" target="_blank" rel="noreferrer">
-      PRs welcome!
-    </a>
-  </p>
-
   <Filters
     {tags}
     on:toggle-sort={() => ($sorted_sites = $sorted_sites.reverse())}
