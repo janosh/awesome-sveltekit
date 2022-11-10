@@ -772,4 +772,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
 ## 🎉 Open to Suggestions
 
-See something that's missing from this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
+Want to add an open source project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! Note that any addition should be open source. This collection is meant as a learning resource for Svelte devs. While a closed-source site might give some inspiration, there's little educational value if you can't inspect how it was made.
+
+A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
