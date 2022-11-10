@@ -125,13 +125,21 @@
 
   <h2>🎉 Open to Suggestions</h2>
   <p style="max-width: 40em;">
-    See something that's missing from this
-    <Icon icon="mdi:sunglasses" inline style="margin: 0 2pt;" />
-    list?
+    Want to add an open source project to <Icon
+      icon="mdi:sunglasses"
+      inline
+      style="margin: 0 2pt;"
+    /> this list?
     <a href="{repository}/edit/main/sites.yml">
       <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
       PRs welcome</a
-    >! A good place to discover Svelte projects (not necessarily SvelteKit) is
+    >! Note that any addition should be open source. This collection is meant as a
+    learning resource for Svelte devs. While a closed-source site might give some
+    inspiration, there's little educational value if you can't inspect how it was made.
+  </p>
+
+  <p style="max-width: 40em;">
+    A good place to discover Svelte projects (not necessarily SvelteKit) is
     <a href="https://github.com/trending/svelte?since=monthly">
       <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt;" />
       GitHub Trending
