@@ -778,3 +778,47 @@
   date_created: 2021-05-07
   date_added: 2022-10-30
   last_updated: 2022-10-30
+
+- title: Mission Patch
+  url: https://mission-patch.com/design
+  description: Custom laptop stickers. Print or download.
+  uses:
+    [
+      typescript,
+      emoji-datasource,
+      stripe,
+      aws,
+      aws-cdk,
+      googleapis,
+      puppeteer,
+      mustache,
+      luxon,
+      uuid,
+      netlify,
+      playwright,
+      jest,
+      jsdom,
+      eslint,
+      prettier,
+      dotenv,
+      rollbar,
+      minio,
+    ]
+  tags:
+    [
+      sticker,
+      design,
+      emoji,
+      svg,
+      sticker,
+      badge,
+      celebration,
+      success,
+      team,
+      recognition,
+      reward,
+      space,
+    ]
+  date_created: 2022-01-20
+  date_added: 2022-11-10
+  last_updated: 2022-11-10

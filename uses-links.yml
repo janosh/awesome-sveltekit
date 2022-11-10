@@ -1,5 +1,6 @@
 algolia: https://algolia.com
 anime.js: https://animejs.com
+aws-cdk: https://aws.amazon.com/cdk/
 aws: https://aws.amazon.com
 babel: https://babeljs.io
 changesets: https://github.com/changesets/changesets
@@ -16,10 +17,13 @@ daisyui: https://daisyui.com
 dart: https://dart.dev
 directus: https://directus.io
 docker: https://docker.com
+dotenv: https://www.npmjs.com/package/dotenv
 dynamodb: https://aws.amazon.com/dynamodb
 echarts: https://github.com/apache/echarts
 elder.js: https://github.com/Elderjs/elderjs
 electron: https://electronjs.org
+emoji-datasource: https://www.npmjs.com/package/emoji-datasource
+eslint: https://eslint.org/
 filepond: https://pqina.nl/filepond
 firebase: https://firebase.google.com
 github api: https://docs.github.com/rest
@@ -27,6 +31,7 @@ github pages: https://pages.github.com
 gitpod: https://gitpod.io
 google analytics: https://analytics.google.com
 google tag manager: https://tagmanager.google.com
+googleapis: https://www.npmjs.com/package/googleapis
 graphcms: https://graphcms.com
 graphql: https://graphql.org
 gsap: https://greensock.com/gsap
@@ -42,12 +47,15 @@ jsdom: https://github.com/jsdom/jsdom
 json5: https://github.com/json5/json5
 liveblocks: https://liveblocks.io
 lodash: https://lodash.com
+luxon: https://moment.github.io/luxon/
 mapbox: https://mapbox.com
 markedjs: https://marked.js.org
 mdsvex: https://github.com/pngwn/MDsveX
+minio: https://min.io/
 mocha: https://mochajs.org
 monaco: https://microsoft.github.io/monaco-editor
 motion one: https://motion.dev
+mustache: https://www.npmjs.com/package/mustache
 mvp.css: https://github.com/andybrewer/mvp
 netlify: https://netlify.com
 octokit: https://github.com/octokit/octokit.js
@@ -59,9 +67,12 @@ playwright: https://playwright.dev
 pnpm: https://pnpm.io
 postcss: https://postcss.org
 pre-commit: https://pre-commit.com
+prettier: https://prettier.io/
 prism: https://prismjs.com
+puppeteer: https://pptr.dev/
 rehype: https://github.com/rehypejs/rehype
 remark: https://github.com/remarkjs/remark
+rollbar: https://rollbar.com/
 sanitize-html: https://github.com/apostrophecms/sanitize-html
 sanity: https://sanity.io
 sass: https://sass-lang.com
@@ -70,6 +81,7 @@ service worker: https://kit.svelte.dev/docs#service-workers
 smui: https://sveltematerialui.com
 spotify web api: https://github.com/JMPerez/spotify-web-api-js
 storybook: https://storybook.js.org
+stripe: https://www.npmjs.com/package/stripe
 supabase: https://supabase.com
 surge.sh: https://surge.sh
 svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
@@ -86,6 +98,7 @@ three.js: https://threejs.org
 typescript: https://typescriptlang.org
 underscore: https://underscorejs.org
 unocss: https://github.com/unocss/unocss
+uuid: https://www.npmjs.com/package/uuid
 uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 vitest: https://vitest.dev
