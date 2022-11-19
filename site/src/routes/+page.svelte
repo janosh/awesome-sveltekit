@@ -125,7 +125,7 @@
 
   <h2>🎉 Open to Suggestions</h2>
   <p style="max-width: 40em;">
-    Want to add an open source project to <Icon
+    Want to add an <em>open source</em> project to <Icon
       icon="mdi:sunglasses"
       inline
       style="margin: 0 2pt;"
@@ -133,9 +133,9 @@
     <a href="{repository}/edit/main/sites.yml">
       <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
       PRs welcome</a
-    >! Note that any addition should be open source. This collection is meant as a
-    learning resource for Svelte devs. While a closed-source site might give some
-    inspiration, there's little educational value if you can't inspect how it was made.
+    >! This collection is meant as a learning resource for Svelte devs. While a site with
+    private code can give inspiration, there's little educational value if you can't
+    inspect how it was made.
   </p>
 
   <p style="max-width: 40em;">

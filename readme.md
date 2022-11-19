@@ -676,6 +676,18 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [Netlify]
 
+1. **[Fireship](https://fireship.io)**&ensp;
+   [[code](https://github.com/fireship-io/fireship.io)]&ensp;
+   <a href="https://github.com/fireship-io/fireship.io/stargazers">
+   <img src="https://img.shields.io/github/stars/fireship-io/fireship.io?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
+   (for static content management), Firebase for Auth and DB, Flamethrower for routing.
+   <br>
+
+   uses: [Tailwind], [Hugo], [Firebase], [Flamethrower], [Sass], [PostCSS], [Algolia]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -700,6 +712,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [electron]: https://electronjs.org
 [filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
+[flamethrower]: https://github.com/fireship-io/flamethrower
 [github api]: https://docs.github.com/rest
 [github pages]: https://pages.github.com
 [gitpod]: https://gitpod.io
@@ -709,6 +722,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 [graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
+[hugo]: https://gohugo.io
 [husky]: https://github.com/typicode/husky
 [ibm carbon]: https://carbondesignsystem.com
 [iconify]: https://iconify.design
@@ -772,6 +786,6 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
 ## 🎉 Open to Suggestions
 
-Want to add an open source project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! Note that any addition should be open source. This collection is meant as a learning resource for Svelte devs. While a closed-source site might give some inspiration, there's little educational value if you can't inspect how it was made.
+Want to add an _open source_ project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is meant as a learning resource for Svelte devs. While a site with private code can give inspiration, there's little educational value if you can't inspect how it was made.
 
 A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
