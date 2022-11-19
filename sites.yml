@@ -778,3 +778,15 @@
   date_created: 2021-05-07
   date_added: 2022-10-30
   last_updated: 2022-10-30
+
+- title: Fireship
+  url: https://fireship.io
+  repo: https://github.com/fireship-io/fireship.io
+  description: |
+    The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
+    (for static content management), Firebase for Auth and DB, Flamethrower for routing.
+  uses: [Tailwind, Hugo, Firebase, Flamethrower, Sass, PostCSS, Algolia]
+  tags: [education, tutorials, web dev]
+  date_created: 2019-01-07
+  date_added: 2022-11-19
+  last_updated: 2022-11-19
