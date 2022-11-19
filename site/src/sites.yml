@@ -2343,3 +2343,52 @@
       name: Janosh Riebesell
       location: Lawrence Berkeley Lab
       company: Cambridge University
+- title: Fireship
+  url: https://fireship.io
+  repo: https://github.com/fireship-io/fireship.io
+  description: >
+    The Fireship PRO course platform frontend built with Svelte, Tailwind CSS,
+    Hugo
+
+    (for static content management), Firebase for Auth and DB, Flamethrower for
+    routing.
+  uses:
+    - Tailwind
+    - Hugo
+    - Firebase
+    - Flamethrower
+    - Sass
+    - PostCSS
+    - Algolia
+  tags:
+    - education
+    - open source
+    - tutorials
+    - web dev
+  date_created: 2019-01-07T00:00:00.000Z
+  date_added: 2022-11-19T00:00:00.000Z
+  last_updated: 2022-11-19T00:00:00.000Z
+  slug: fireship
+  repo_stars: 2422
+  contributors:
+    - github: codediodeio
+      twitter: jeffdelaney23
+      url: https://fireship.io
+      avatar: https://avatars.githubusercontent.com/u/10172199?v=4
+      name: Jeff Delaney
+      location: Phoenix, AZ
+      company: Fireship LLC
+    - github: daspartho
+      twitter: null
+      url: https://daspartho.github.io/
+      avatar: https://avatars.githubusercontent.com/u/59410571?v=4
+      name: Partho
+      location: null
+      company: null
+    - github: ryzizub
+      twitter: ryzizub
+      url: https://ryzizub.cz
+      avatar: https://avatars.githubusercontent.com/u/32575328?v=4
+      name: Dominik Šimoník
+      location: Ostrava
+      company: Tweetoshi
