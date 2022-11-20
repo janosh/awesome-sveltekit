@@ -10,13 +10,13 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg?logo=github)](https://github.com/janosh/awesome-sveltekit/pulls)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-sveltekit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-sveltekit/main)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-sveltekit/deploys)
+[![GH Pages](https://github.com/janosh/awesome-sveltekit/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/janosh/awesome-sveltekit/actions/workflows/gh-pages.yml)
 
 </h4>
 
 <br>
 
-Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)** to view this list with screenshots plus search and sort functionality (e.g. based on GH stars).
+Visit **[janosh.github.io/awesome-sveltekit](https://janosh.github.io/awesome-sveltekit)** to view this list with screenshots plus search and sort functionality (e.g. based on GH stars).
 
 ## Sites
 
