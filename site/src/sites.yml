@@ -2312,7 +2312,7 @@
       location: Algiers, Algeria
       company: Upwork
 - title: Svelte MultiSelect
-  url: https://svelte-multiselect.netlify.app
+  url: https://janosh.github.io/svelte-multiselect
   repo: https://github.com/janosh/svelte-multiselect
   description: >-
     Keyboard-friendly, accessible and highly customizable multi-select
@@ -2325,7 +2325,7 @@
     - pre-commit
     - rehype
     - jsdom
-    - Netlify
+    - GitHub Pages
   tags:
     - forms
     - open source
@@ -2346,12 +2346,10 @@
 - title: Fireship
   url: https://fireship.io
   repo: https://github.com/fireship-io/fireship.io
-  description: >
+  description: >-
     The Fireship PRO course platform frontend built with Svelte, Tailwind CSS,
-    Hugo
-
-    (for static content management), Firebase for Auth and DB, Flamethrower for
-    routing.
+    Hugo (for static content management), Firebase for Auth and DB, Flamethrower
+    for routing.
   uses:
     - Tailwind
     - Hugo

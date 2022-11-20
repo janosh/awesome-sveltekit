@@ -666,7 +666,7 @@ Visit **[janosh.github.io/awesome-sveltekit](https://janosh.github.io/awesome-sv
 
    uses: [Vitest], [PostCSS], [highlight.js], [Tailwind], [Typescript], [jsdom]
 
-1. **[Svelte MultiSelect](https://svelte-multiselect.netlify.app)**&ensp;
+1. **[Svelte MultiSelect](https://janosh.github.io/svelte-multiselect)**&ensp;
    [[code](https://github.com/janosh/svelte-multiselect)]&ensp;
    <a href="https://github.com/janosh/svelte-multiselect/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/svelte-multiselect?logo=github" alt="GitHub stars" valign="middle">
@@ -674,7 +674,7 @@ Visit **[janosh.github.io/awesome-sveltekit](https://janosh.github.io/awesome-sv
 
    Keyboard-friendly, accessible and highly customizable multi-select component.<br>
 
-   uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [Netlify]
+   uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [GitHub Pages]
 
 1. **[Fireship](https://fireship.io)**&ensp;
    [[code](https://github.com/fireship-io/fireship.io)]&ensp;
@@ -682,9 +682,7 @@ Visit **[janosh.github.io/awesome-sveltekit](https://janosh.github.io/awesome-sv
    <img src="https://img.shields.io/github/stars/fireship-io/fireship.io?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
-   (for static content management), Firebase for Auth and DB, Flamethrower for routing.
-   <br>
+   The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo (for static content management), Firebase for Auth and DB, Flamethrower for routing.<br>
 
    uses: [Tailwind], [Hugo], [Firebase], [Flamethrower], [Sass], [PostCSS], [Algolia]
 
