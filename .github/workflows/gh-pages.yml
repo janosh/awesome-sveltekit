@@ -17,6 +17,10 @@ concurrency:
   group: pages
   cancel-in-progress: true # allow one concurrent deployment
 
+defaults:
+  run:
+    working-directory: site
+
 jobs:
   build:
     name: Build
@@ -35,7 +39,6 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
-          cache-dependency-path: site/pnpm-lock.yaml
 
       - name: Install dependencies
         run: |
