@@ -3,8 +3,6 @@
   import Filters from '$lib/Filters.svelte'
   import SiteList from '$lib/SiteList.svelte'
   import Icon from '@iconify/svelte'
-  import GitHubCorner from 'svelte-github-corner'
-  import { repository } from '../../package.json'
   import sites from '../sites.yml'
   import {
     contributor_filter_mode,
@@ -16,6 +14,7 @@
     tag_filter_mode,
   } from '../stores'
   import type { PageData } from './$types'
+  import { repository } from '../../package.json'
 
   export let data: PageData
 
@@ -93,12 +92,10 @@
   <meta name="twitter:creator" content="@jrib_" />
 </svelte:head>
 
-<GitHubCorner href={repository} />
-
 <main>
   <h1>
     <img
-      src="/awesome-sveltekit-banner.svg"
+      src="awesome-sveltekit-banner.svg"
       alt="Awesome SvelteKit"
       style="max-height: 120px;"
     />

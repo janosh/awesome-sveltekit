@@ -8,7 +8,7 @@
   export let idx = 0
 </script>
 
-<a href="/{site.slug}">
+<a href={site.slug}>
   <Screenshot title={site.title} resolution=".small" style="cursor: pointer;" />
 </a>
 <div class="flex">
