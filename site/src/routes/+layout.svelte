@@ -1,4 +1,6 @@
 <script lang="ts">
+  import GitHubCorner from 'svelte-github-corner'
+  import { repository } from '../../package.json'
   import '../app.css'
 
   let innerWidth: number
@@ -6,10 +8,10 @@
 
 <svelte:window bind:innerWidth />
 
+<GitHubCorner href={repository} />
+
 <svelte:head>
-  {#if innerWidth > 600}
-    <base target="_blank" />
-  {/if}
+  <base target="_{innerWidth > 600 ? 'blank' : 'self'}" />
 </svelte:head>
 
 <slot />

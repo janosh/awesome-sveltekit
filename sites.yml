@@ -769,11 +769,18 @@
   last_updated: 2022-10-30
 
 - title: Svelte MultiSelect
-  url: https://svelte-multiselect.netlify.app
+  url: https://janosh.github.io/svelte-multiselect
   repo: https://github.com/janosh/svelte-multiselect
   description: Keyboard-friendly, accessible and highly customizable multi-select component.
   uses:
-    [Vitest, Playwright, Typescript, PNPM, pre-commit, rehype, jsdom, Netlify]
+    - Vitest
+    - Playwright
+    - Typescript
+    - PNPM
+    - pre-commit
+    - rehype
+    - jsdom
+    - GitHub Pages
   tags: [forms, select component]
   date_created: 2021-05-07
   date_added: 2022-10-30
@@ -782,7 +789,7 @@
 - title: Fireship
   url: https://fireship.io
   repo: https://github.com/fireship-io/fireship.io
-  description: |
+  description:
     The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
     (for static content management), Firebase for Auth and DB, Flamethrower for routing.
   uses: [Tailwind, Hugo, Firebase, Flamethrower, Sass, PostCSS, Algolia]

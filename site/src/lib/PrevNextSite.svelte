@@ -10,7 +10,7 @@
 <ul data-sveltekit-noscroll>
   <li>
     <h3>
-      <a href="/{prev.slug}">
+      <a href={prev.slug}>
         <Icon icon="carbon:previous-filled" inline />
         Previous
       </a>
@@ -19,7 +19,7 @@
   </li>
   <li style="text-align: right;">
     <h3>
-      <a href="/{next.slug}">
+      <a href={next.slug}>
         Next
         <Icon icon="carbon:next-filled" inline />
       </a>
