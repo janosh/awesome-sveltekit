@@ -1,7 +1,7 @@
 <script lang="ts">
-  import '../app.css'
-  import { name, repository } from '../../package.json'
   import GitHubCorner from 'svelte-github-corner'
+  import { repository } from '../../package.json'
+  import '../app.css'
 
   let innerWidth: number
 </script>
@@ -11,10 +11,7 @@
 <GitHubCorner href={repository} />
 
 <svelte:head>
-  <base
-    href={import.meta.env.CI ? `/${name}/` : ``}
-    target="_{innerWidth > 600 ? 'blank' : 'self'}"
-  />
+  <base target="_{innerWidth > 600 ? 'blank' : 'self'}" />
 </svelte:head>
 
 <slot />
