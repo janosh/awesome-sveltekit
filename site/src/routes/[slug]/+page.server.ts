@@ -18,7 +18,7 @@ export const load: PageServerLoad = ({ params }) => {
   const site_idx = sites.findIndex((site) => site.slug === slug)
 
   if (site_idx === -1) {
-    throw error(404, { message: `No site found for slug ${slug}` })
+    throw error(404, `Page '${slug}' not found`)
   }
   // wrap around start/end of array
   const prev_idx = (site_idx - 1 + sites.length) % sites.length

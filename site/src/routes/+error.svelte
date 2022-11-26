@@ -1,27 +1,38 @@
 <script lang="ts">
-  import { dev } from '$app/environment'
   import { page } from '$app/stores'
+  import Icon from '@iconify/svelte'
+  import { homepage, name } from '../../package.json'
+
+  let online: boolean
 </script>
 
 <svelte:head>
-  <title>{$page.status}</title>
+  <title>Error {$page.status} &bull; {name}</title>
 </svelte:head>
 
+<svelte:window bind:online />
+
 <div>
-  {#if $page.status === 404}
-    <h1>⛔ {$page.error?.name} {$page.status}: Page not found</h1>
+  <h1>Error {String($page.status).replace(`0`, `😵`)}: {$page.error?.message}</h1>
+  {#if $page.status >= 500}
     <p>
-      Return to the
-      <a href="/">landing page</a>.
+      If page reloading doesn't help, please raise an issue on
+      <a href="{homepage}/issues" target="_blank" rel="noreferrer">GitHub</a>. Thanks! 🙏
     </p>
-  {:else}
-    <h1>⛔ {$page.error?.name} {$page.status}</h1>
+  {/if}
+  {#if online === false}
+    Looks like you're offline. If you think your connection is fine, check the
+    <a href="https://githubstatus.com">GitHub status page</a>
+    as this site is hosted by &thinsp;<Icon icon="octicon:mark-github" inline />&thinsp;
+    GitHub Pages.
   {/if}
 
-  {#if dev && $page.error?.stack}
-    <h2>Stack Trace</h2>
-    <pre>{$page.error.stack}</pre>
-  {/if}
+  <p>
+    Back to <a href=".">
+      <img src="favicon.svg" alt={name} height="30" />
+      landing page
+    </a>.
+  </p>
 </div>
 
 <style>
@@ -32,17 +43,8 @@
     margin: auto;
     text-align: center;
   }
-  p {
-    text-align: center;
-    max-width: 35em;
-    margin: auto;
-  }
-  pre {
-    overflow: scroll;
-    font-size: 0.9em;
-    white-space: pre-wrap;
-    background: var(--accentBg);
-    padding: 5pt 1em;
-    border-radius: 3pt;
+  p img {
+    vertical-align: middle;
+    margin: 0 1pt 0 3pt;
   }
 </style>

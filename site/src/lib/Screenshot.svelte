@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { dev } from '$app/environment'
+
   export let title: string
   // width/height used only for aspect ratio to avoid content shift on img load
   export let width = 800
@@ -8,7 +10,8 @@
 
   const titleToSlug = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
 
-  $: src = `/screenshots/${titleToSlug(title)}${resolution}.webp`
+  const base = `https://raw.githubusercontent.com/janosh/awesome-sveltekit/main/site/static`
+  $: src = `${dev ? `` : base}/screenshots/${titleToSlug(title)}${resolution}.webp`
 </script>
 
 <img {src} alt="Screenshot of {title}" {width} {height} on:click on:keyup {style} />

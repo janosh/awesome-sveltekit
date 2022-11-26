@@ -1,8 +1,5 @@
 <h1 align="center">
-  <br>
   <img src="site/static/awesome-sveltekit-banner.svg" alt="Awesome SvelteKit" width="500">
-  <br>
-  Awesome examples of SvelteKit in the wild
 </h1>
 
 <h4 align="center">
@@ -10,13 +7,13 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg?logo=github)](https://github.com/janosh/awesome-sveltekit/pulls)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-sveltekit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-sveltekit/main)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c23cb42d-d682-4c01-abf2-b9fd34d77793/deploy-status)](https://app.netlify.com/sites/awesome-sveltekit/deploys)
+[![GH Pages](https://github.com/janosh/awesome-sveltekit/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/janosh/awesome-sveltekit/actions/workflows/gh-pages.yml)
 
 </h4>
 
 <br>
 
-Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)** to view this list with screenshots plus search and sort functionality (e.g. based on GH stars).
+Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sveltekit](https://janosh.github.io/awesome-sveltekit)** to view this list with screenshots plus search and sort functionality (e.g. based on GH stars).
 
 ## Sites
 
@@ -666,7 +663,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    uses: [Vitest], [PostCSS], [highlight.js], [Tailwind], [Typescript], [jsdom]
 
-1. **[Svelte MultiSelect](https://svelte-multiselect.netlify.app)**&ensp;
+1. **[Svelte MultiSelect](https://janosh.github.io/svelte-multiselect)**&ensp;
    [[code](https://github.com/janosh/svelte-multiselect)]&ensp;
    <a href="https://github.com/janosh/svelte-multiselect/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/svelte-multiselect?logo=github" alt="GitHub stars" valign="middle">
@@ -674,7 +671,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
 
    Keyboard-friendly, accessible and highly customizable multi-select component.<br>
 
-   uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [Netlify]
+   uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [GitHub Pages]
 
 1. **[Fireship](https://fireship.io)**&ensp;
    [[code](https://github.com/fireship-io/fireship.io)]&ensp;
@@ -682,9 +679,7 @@ Visit **[awesome-sveltekit.netlify.app](https://awesome-sveltekit.netlify.app)**
    <img src="https://img.shields.io/github/stars/fireship-io/fireship.io?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
-   (for static content management), Firebase for Auth and DB, Flamethrower for routing.
-   <br>
+   The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo (for static content management), Firebase for Auth and DB, Flamethrower for routing.<br>
 
    uses: [Tailwind], [Hugo], [Firebase], [Flamethrower], [Sass], [PostCSS], [Algolia]
 

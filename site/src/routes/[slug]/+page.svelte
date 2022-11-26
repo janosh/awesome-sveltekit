@@ -23,7 +23,7 @@
   {/if}
 </svelte:head>
 
-<a href="/" class="back">&laquo; back</a>
+<a href="." class="back">&laquo; back</a>
 
 <main>
   <SiteDetails site={data.site} />
