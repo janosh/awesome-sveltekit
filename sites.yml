@@ -44,22 +44,12 @@
   date_added: 2021-05-25
   last_updated: 2021-05-25
 
-- title: Geometric Bayes Theorem
-  url: https://svelte-geometric-bayes.netlify.app
-  repo: https://github.com/janosh/svelte-geometric-bayes
-  description: 3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.
-  uses: [MDsveX, pre-commit, PNPM, Netlify]
-  tags: [math, education, interactive]
-  date_created: 2020-10-04
-  date_added: 2021-05-25
-  last_updated: 2021-05-25
-
 - title: TikZ
-  url: https://tikz.netlify.app
+  url: https://janosh.github.io/tikz
   repo: https://github.com/janosh/tikz
   description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
   tags: [research, science, diagrams, graphics, latex]
-  uses: [TypeScript, Netlify, svelte-multiselect, pre-commit, PNPM]
+  uses: [TypeScript, svelte-multiselect, pre-commit, PNPM, GitHub Pages]
   date_created: 2020-08-09
   date_added: 2021-05-25
   last_updated: 2022-05-10
@@ -75,7 +65,7 @@
 
 - title: Studenten bilden Schüler
   url: https://studenten-bilden-schueler.de
-  repo: https://github.com/sbsev/svelte-site
+  repo: https://github.com/sbsev/site
   description: >-
     Student-run nonprofit initiative with chapters located in university towns all across Germany.
     Mission is to contribute towards educational equality by providing free tutoring to children
@@ -544,7 +534,7 @@
   last_updated: 2022-05-19
 
 - title: Periodic Table
-  url: https://ptable-elements.netlify.app
+  url: https://janosh.github.io/periodic-table
   repo: https://github.com/janosh/periodic-table
   description: Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
   uses:
@@ -556,7 +546,7 @@
     - Playwright
     - PNPM
     - jsdom
-    - Netlify
+    - GitHub Pages
   tags: [chemistry, science, data viz, plotting]
   date_created: 2022-05-31
   date_added: 2022-06-02
@@ -797,3 +787,14 @@
   date_created: 2019-01-07
   date_added: 2022-11-19
   last_updated: 2022-11-19
+
+- title: Intl Explorer
+  url: https://intl-explorer.com
+  repo: https://github.com/jesperorb/intl-explorer
+  description: A tool for experimenting and trying out the ECMAScript Internationalization API.
+  uses:
+    [TypeScript, PNPM, Playwright, Vercel, svelte-highlight, Husky, commitlint]
+  tags: [education, tutorials, web dev, interactive, playground]
+  date_created: 2021-12-02
+  date_added: 2022-11-27
+  last_updated: 2022-11-27

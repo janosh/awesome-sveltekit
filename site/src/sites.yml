@@ -135,37 +135,8 @@
       name: null
       location: null
       company: null
-- title: Geometric Bayes Theorem
-  url: https://svelte-geometric-bayes.netlify.app
-  repo: https://github.com/janosh/svelte-geometric-bayes
-  description: >-
-    3blue1brown-inspired interactive visualization of Bayes theorem interpreted
-    geometrically.
-  uses:
-    - MDsveX
-    - pre-commit
-    - PNPM
-    - Netlify
-  tags:
-    - education
-    - interactive
-    - math
-    - open source
-  date_created: 2020-10-04T00:00:00.000Z
-  date_added: 2021-05-25T00:00:00.000Z
-  last_updated: 2021-05-25T00:00:00.000Z
-  slug: geometric-bayes-theorem
-  repo_stars: 8
-  contributors:
-    - github: janosh
-      twitter: jrib_
-      url: null
-      avatar: https://avatars.githubusercontent.com/u/30958850?v=4
-      name: Janosh Riebesell
-      location: Lawrence Berkeley Lab
-      company: Cambridge University
 - title: TikZ
-  url: https://tikz.netlify.app
+  url: https://janosh.github.io/tikz
   repo: https://github.com/janosh/tikz
   description: >-
     Random collection of MIT-licensed standalone TikZ images, mostly about
@@ -179,10 +150,10 @@
     - science
   uses:
     - TypeScript
-    - Netlify
     - svelte-multiselect
     - pre-commit
     - PNPM
+    - GitHub Pages
   date_created: 2020-08-09T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
   last_updated: 2022-05-10T00:00:00.000Z
@@ -224,7 +195,7 @@
       company: null
 - title: Studenten bilden Schüler
   url: https://studenten-bilden-schueler.de
-  repo: https://github.com/sbsev/svelte-site
+  repo: https://github.com/sbsev/site
   description: >-
     Student-run nonprofit initiative with chapters located in university towns
     all across Germany. Mission is to contribute towards educational equality by
@@ -1688,7 +1659,7 @@
       location: London | Portugal | Bali | Thailand
       company: Open Source Engineer
 - title: Periodic Table
-  url: https://ptable-elements.netlify.app
+  url: https://janosh.github.io/periodic-table
   repo: https://github.com/janosh/periodic-table
   description: >-
     Dynamic periodic table of elements written in Svelte. Supports plotting heat
@@ -1702,7 +1673,7 @@
     - Playwright
     - PNPM
     - jsdom
-    - Netlify
+    - GitHub Pages
   tags:
     - chemistry
     - data viz
@@ -2390,3 +2361,37 @@
       name: Dominik Šimoník
       location: Ostrava
       company: Tweetoshi
+- title: Intl Explorer
+  url: https://intl-explorer.com
+  repo: https://github.com/jesperorb/intl-explorer
+  description: >-
+    A tool for experimenting and trying out the ECMAScript Internationalization
+    API.
+  uses:
+    - TypeScript
+    - PNPM
+    - Playwright
+    - Vercel
+    - svelte-highlight
+    - Husky
+    - commitlint
+  tags:
+    - education
+    - interactive
+    - open source
+    - playground
+    - tutorials
+    - web dev
+  date_created: 2021-12-02T00:00:00.000Z
+  date_added: 2022-11-27T00:00:00.000Z
+  last_updated: 2022-11-27T00:00:00.000Z
+  slug: intl-explorer
+  repo_stars: 105
+  contributors:
+    - github: jesperorb
+      twitter: null
+      url: https://jesperorb.com
+      avatar: https://avatars.githubusercontent.com/u/21122051?v=4
+      name: Jesper Orb
+      location: null
+      company: '@ffcg'
