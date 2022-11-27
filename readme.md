@@ -683,6 +683,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Tailwind], [Hugo], [Firebase], [Flamethrower], [Sass], [PostCSS], [Algolia]
 
+1. **[Intl Explorer](https://intl-explorer.com)**&ensp;
+   [[code](https://github.com/jesperorb/intl-explorer)]&ensp;
+   <a href="https://github.com/jesperorb/intl-explorer/stargazers">
+   <img src="https://img.shields.io/github/stars/jesperorb/intl-explorer?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A tool for experimenting and trying out the ECMAScript Internationalization API.<br>
+
+   uses: [TypeScript], [PNPM], [Playwright], [Vercel], [svelte-highlight], [Husky], [commitlint]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -692,6 +702,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [cloudflare]: https://cloudflare.com
 [cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net
+[commitlint]: https://github.com/conventional-changelog/commitlint
 [contentful]: https://contentful.com
 [cssnano]: https://cssnano.co
 [cypress]: https://cypress.io

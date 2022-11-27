@@ -797,3 +797,14 @@
   date_created: 2019-01-07
   date_added: 2022-11-19
   last_updated: 2022-11-19
+
+- title: Intl Explorer
+  url: https://intl-explorer.com
+  repo: https://github.com/jesperorb/intl-explorer
+  description: A tool for experimenting and trying out the ECMAScript Internationalization API.
+  uses:
+    [TypeScript, PNPM, Playwright, Vercel, svelte-highlight, Husky, commitlint]
+  tags: [education, tutorials, web dev, interactive, playground]
+  date_created: 2021-12-02
+  date_added: 2022-11-27
+  last_updated: 2022-11-27

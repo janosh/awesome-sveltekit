@@ -2390,3 +2390,37 @@
       name: Dominik Šimoník
       location: Ostrava
       company: Tweetoshi
+- title: Intl Explorer
+  url: https://intl-explorer.com
+  repo: https://github.com/jesperorb/intl-explorer
+  description: >-
+    A tool for experimenting and trying out the ECMAScript Internationalization
+    API.
+  uses:
+    - TypeScript
+    - PNPM
+    - Playwright
+    - Vercel
+    - svelte-highlight
+    - Husky
+    - commitlint
+  tags:
+    - education
+    - interactive
+    - open source
+    - playground
+    - tutorials
+    - web dev
+  date_created: 2021-12-02T00:00:00.000Z
+  date_added: 2022-11-27T00:00:00.000Z
+  last_updated: 2022-11-27T00:00:00.000Z
+  slug: intl-explorer
+  repo_stars: 105
+  contributors:
+    - github: jesperorb
+      twitter: null
+      url: https://jesperorb.com
+      avatar: https://avatars.githubusercontent.com/u/21122051?v=4
+      name: Jesper Orb
+      location: null
+      company: '@ffcg'
