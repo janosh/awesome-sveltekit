@@ -47,17 +47,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [MDsveX], [Tailwind], [PNPM]
 
-1. **[Geometric Bayes Theorem](https://svelte-geometric-bayes.netlify.app)**&ensp;
-   [[code](https://github.com/janosh/svelte-geometric-bayes)]&ensp;
-   <a href="https://github.com/janosh/svelte-geometric-bayes/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/svelte-geometric-bayes?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   3blue1brown-inspired interactive visualization of Bayes theorem interpreted geometrically.<br>
-
-   uses: [MDsveX], [pre-commit], [PNPM], [Netlify]
-
-1. **[TikZ](https://tikz.netlify.app)**&ensp;
+1. **[TikZ](https://janosh.github.io/tikz)**&ensp;
    [[code](https://github.com/janosh/tikz)]&ensp;
    <a href="https://github.com/janosh/tikz/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/tikz?logo=github" alt="GitHub stars" valign="middle">
@@ -65,7 +55,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.<br>
 
-   uses: [TypeScript], [Netlify], [svelte-multiselect], [pre-commit], [PNPM]
+   uses: [TypeScript], [svelte-multiselect], [pre-commit], [PNPM], [GitHub Pages]
 
 1. **[markushatvan.com](https://markushatvan.com)**
 
@@ -74,9 +64,9 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [Tailwind], [MDsveX], [Svelte Forms Lib]
 
 1. **[Studenten bilden Schüler](https://studenten-bilden-schueler.de)**&ensp;
-   [[code](https://github.com/sbsev/svelte-site)]&ensp;
-   <a href="https://github.com/sbsev/svelte-site/stargazers">
-   <img src="https://img.shields.io/github/stars/sbsev/svelte-site?logo=github" alt="GitHub stars" valign="middle">
+   [[code](https://github.com/sbsev/site)]&ensp;
+   <a href="https://github.com/sbsev/site/stargazers">
+   <img src="https://img.shields.io/github/stars/sbsev/site?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    Student-run nonprofit initiative with chapters located in university towns all across Germany. Mission is to contribute towards educational equality by providing free tutoring to children from underprivileged families.<br>
@@ -497,7 +487,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Tailwind], [Husky], [Octokit], [PostCSS]
 
-1. **[Periodic Table](https://ptable-elements.netlify.app)**&ensp;
+1. **[Periodic Table](https://janosh.github.io/periodic-table)**&ensp;
    [[code](https://github.com/janosh/periodic-table)]&ensp;
    <a href="https://github.com/janosh/periodic-table/stargazers">
    <img src="https://img.shields.io/github/stars/janosh/periodic-table?logo=github" alt="GitHub stars" valign="middle">
@@ -505,7 +495,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
 
-   uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect], [Vitest], [Playwright], [PNPM], [jsdom], [Netlify]
+   uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect], [Vitest], [Playwright], [PNPM], [jsdom], [GitHub Pages]
 
 1. **[Pixel Art Together](https://pixelart.liveblocks.app)**&ensp;
    [[code](https://github.com/liveblocks/pixel-art-together)]&ensp;
@@ -683,6 +673,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Tailwind], [Hugo], [Firebase], [Flamethrower], [Sass], [PostCSS], [Algolia]
 
+1. **[Intl Explorer](https://intl-explorer.com)**&ensp;
+   [[code](https://github.com/jesperorb/intl-explorer)]&ensp;
+   <a href="https://github.com/jesperorb/intl-explorer/stargazers">
+   <img src="https://img.shields.io/github/stars/jesperorb/intl-explorer?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A tool for experimenting and trying out the ECMAScript Internationalization API.<br>
+
+   uses: [TypeScript], [PNPM], [Playwright], [Vercel], [svelte-highlight], [Husky], [commitlint]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -692,6 +692,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [cloudflare]: https://cloudflare.com
 [cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net
+[commitlint]: https://github.com/conventional-changelog/commitlint
 [contentful]: https://contentful.com
 [cssnano]: https://cssnano.co
 [cypress]: https://cypress.io
