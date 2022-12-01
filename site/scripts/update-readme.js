@@ -48,7 +48,7 @@ const new_sites = sites
   .join(`\n`)
 
 const uses_links = Object.entries(
-  yaml.load(fs.readFileSync(`${root_dir}/uses-links.yml`))
+  yaml.load(fs.readFileSync(`${root_dir}/tools.yml`))
 )
   .map(([name, url]) => `[${name}]: ${url}`)
   .join(`\n`)

@@ -5,7 +5,7 @@ declare module '*sites.yml' {
   export default sites
 }
 
-declare module '*uses-links.yml' {
+declare module '*tools.yml' {
   const links: Record<string, string>
   export default links
 }
