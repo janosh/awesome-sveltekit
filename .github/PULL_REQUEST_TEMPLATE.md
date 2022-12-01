@@ -4,4 +4,4 @@ If you're unsure if a site belongs here, [open an issue](https://github.com/jano
 This repo is meant to be a community effort.
 
 If your new site includes a tool/language/package in its `uses: [...]` field that's
-not already used by another site, make sure you add a link to that tool in uses-links.yml. -->
+not already used by another site, make sure you add a link to that tool in tools.yml. -->
