@@ -2397,3 +2397,42 @@
       name: Jesper Orb
       location: null
       company: '@ffcg'
+- title: SvelteKit Embed
+  url: https://sveltekit-embed.vercel.app
+  repo: https://github.com/spences10/sveltekit-embed
+  description: >-
+    SvelteKit embed components for YouTube, Vimeo, Twitter, Spotify, SoundCloud,
+    StackBlitz, CodePen, AnchorFM, Simple Cast and more.
+  uses:
+    - TypeScript
+    - PNPM
+    - Vercel
+    - MDsveX
+    - Tailwind
+    - PostCSS
+    - Husky
+    - Playwright
+    - DaisyUI
+  tags:
+    - component library
+    - open source
+  date_created: 2021-07-17T00:00:00.000Z
+  date_added: 2022-12-09T00:00:00.000Z
+  last_updated: 2022-12-09T00:00:00.000Z
+  slug: sveltekit-embed
+  repo_stars: 84
+  contributors:
+    - github: spences10
+      twitter: spences10
+      url: https://scottspence.com
+      avatar: https://avatars.githubusercontent.com/u/234708?v=4
+      name: Scott Spence
+      location: London, United Kingdom
+      company: '@storyblok'
+    - github: renovate-bot
+      twitter: renovatebot
+      url: https://www.mend.io/free-developer-tools/renovate/
+      avatar: https://avatars.githubusercontent.com/u/25180681?v=4
+      name: Mend Renovate
+      location: null
+      company: '@mend'

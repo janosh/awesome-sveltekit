@@ -66,7 +66,7 @@
 - title: Studenten bilden Schüler
   url: https://studenten-bilden-schueler.de
   repo: https://github.com/sbsev/site
-  description: >-
+  description:
     Student-run nonprofit initiative with chapters located in university towns all across Germany.
     Mission is to contribute towards educational equality by providing free tutoring to children
     from underprivileged families.
@@ -87,7 +87,7 @@
 - title: Guess The Year
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
-  description: >-
+  description:
     Round-based browser game where you guess the year in which famous event happened.
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
   uses: [Tailwind, Netlify]
@@ -99,7 +99,7 @@
 - title: Gitpod
   url: https://gitpod.io
   repo: https://github.com/gitpod-io/website
-  description: >-
+  description:
     Gitpod streamlines developer workflows by providing prebuilt, collaborative
     development environments in your browser - powered by VS Code.
   uses: [MDsveX, Tailwind, Netlify]
@@ -111,7 +111,7 @@
 - title: SvelteKit Experiments
   url: https://sveltekit-demo-psi.vercel.app
   repo: https://github.com/tsukhu/sveltekit-demo
-  description: >-
+  description:
     A set of example apps built with SvelteKit and deployed on Vercel. As an ongoing project,
     this will continue to be enhanced with more examples to showcase the power of SvelteKit.
   uses: [Tailwind, Vercel, GraphQL, Firebase, Typescript]
@@ -123,8 +123,7 @@
 - title: puruvj.dev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
-  description: >-
-    Puru Vijay's blog site.
+  description: Puru Vijay's blog site.
   uses: [Vercel, TypeScript, SCSS, Cloudinary]
   tags: [blog]
   date_created: 2021-05-06
@@ -154,7 +153,7 @@
 - title: Paper Trader Game
   url: https://paper-trader.davjhan.com
   repo: https://github.com/davjhan/paper-trader-game
-  description: >-
+  description:
     A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a
     fake stock.
   tags: [game, mobile]
@@ -205,8 +204,7 @@
 
 - title: Flayks
   url: https://flayks.com
-  description: >-
-    Portfolio of Félix Péault, Digital Designer and Art Director.
+  description: Portfolio of Félix Péault, Digital Designer and Art Director.
     Sanity.io [[interview](https://sanity.io/blog/felix-peault-community-interview)],
     [feature](https://sanity.io/projects/flayks-portfolio-2021).
   tags: [portfolio]
@@ -426,7 +424,7 @@
 - title: Layer Cake
   url: https://layercake.graphics
   repo: https://github.com/mhkeller/layercake
-  description: >-
+  description:
     Graphics framework for Svelte with colorful demo page. Can generate responsive
     graphics server-side that work without JavaScript.
   uses: [D3, GitHub Pages, JSDoc, Mocha, Underscore]
@@ -438,7 +436,7 @@
 - title: Pancake
   url: https://pancake-charts.surge.sh
   repo: https://github.com/Rich-Harris/pancake
-  description: >-
+  description:
     Experimental Svelte charting library. Visualize data with a combination of HTML,
     SVG and canvas/WebGL. Designed with server-side rendering in mind, so graphs potentially work without JavaScript.
     [Blog post](https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp).
@@ -451,8 +449,7 @@
 - title: Svelte Headless UI
   url: https://svelte-headlessui.goss.io
   repo: https://github.com/rgossiaux/svelte-headlessui
-  description: >-
-    Unofficial Svelte port of Headless UI components.
+  description: Unofficial Svelte port of Headless UI components.
   uses: [MDsveX, TypeScript, PostCSS, Tailwind, cssnano, Jest, rehype]
   tags: [component library, a11y]
   date_created: 2021-12-05
@@ -799,3 +796,24 @@
   date_created: 2021-12-02
   date_added: 2022-11-27
   last_updated: 2022-11-27
+
+- title: SvelteKit Embed
+  url: https://sveltekit-embed.vercel.app
+  repo: https://github.com/spences10/sveltekit-embed
+  description:
+    SvelteKit embed components for YouTube, Vimeo, Twitter, Spotify, SoundCloud, StackBlitz,
+    CodePen, AnchorFM, Simple Cast and more.
+  uses:
+    - TypeScript
+    - PNPM
+    - Vercel
+    - MDsveX
+    - Tailwind
+    - PostCSS
+    - Husky
+    - Playwright
+    - DaisyUI
+  tags: [component library]
+  date_created: 2021-07-17
+  date_added: 2022-12-09
+  last_updated: 2022-12-09
