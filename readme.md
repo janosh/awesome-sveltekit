@@ -661,7 +661,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    Keyboard-friendly, accessible and highly customizable multi-select component.<br>
 
-   uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [GitHub Pages]
+   uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [GitHub Pages], [mdsvexamples]
 
 1. **[Fireship](https://fireship.io)**&ensp;
    [[code](https://github.com/fireship-io/fireship.io)]&ensp;
@@ -733,6 +733,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [mapbox]: https://mapbox.com
 [markedjs]: https://marked.js.org
 [mdsvex]: https://github.com/pngwn/MDsveX
+[mdsvexamples]: https://github.com/mattjennings/mdsvexamples
 [mocha]: https://mochajs.org
 [monaco]: https://microsoft.github.io/monaco-editor
 [motion one]: https://motion.dev
