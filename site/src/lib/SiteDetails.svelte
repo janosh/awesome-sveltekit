@@ -36,19 +36,25 @@
   {#if site.description}
     <p>{@html site.description}</p>
   {/if}
-  {#if repo_stars}
+  {#if site.repo && repo_stars}
     <hr />
     <p class="flex">
-      <Icon icon="octicon:star" />&emsp;Stars:
-      <span style="flex: 1" />{repo_stars.toLocaleString()}
+      <Icon icon="octicon:star" />&emsp;Stars
+      <span style="flex: 1" />
+      <a href="{site.repo}/stargazers">{repo_stars.toLocaleString()}</a>
     </p>
   {/if}
   {#if contributors?.length > 0}
     <hr />
     <div class:flex={contributors.length === 1} style="margin: 1em 0;">
-      <Icon icon="octicon:person" style="margin-right: 1em;" />{contributors.length > 1
-        ? `Contributors`
-        : `Creator`}:
+      <Icon icon="octicon:person" style="margin-right: 1em;" />
+      {#if site.repo}
+        <a href="{site.repo}/contributors">
+          {contributors.length > 1 ? `Contributors` : `Creator`}
+        </a>
+      {:else}
+        {contributors.length > 1 ? `Contributors` : `Creator`}
+      {/if}
       {#if contributors.length > 1}
         <ol class="contributors">
           {#each contributors as contributor}
@@ -66,14 +72,19 @@
   {#if date_created}
     <hr />
     <p class="flex">
-      <Icon icon="octicon:project" />&emsp;Project started on:
-      <span style="flex: 1" />{date_created}
+      <Icon icon="octicon:project" />&emsp;Project started on
+      <span style="flex: 1" />
+      {#if site.repo}
+        <a href="{site.repo}/network">{date_created}</a>
+      {:else}
+        {date_created}
+      {/if}
     </p>
   {/if}
   {#if tags?.length > 0}
     <hr />
     <p class="tags flex">
-      <Icon icon="octicon:tag" />&ensp;Tags:&emsp;
+      <Icon icon="octicon:tag" />&ensp;Tags&emsp;
       {#each tags as tag}
         <span>{tag}</span>
       {/each}
@@ -82,7 +93,7 @@
   {#if tools && tools?.length > 0}
     <hr />
     <p class="uses flex">
-      <Icon icon="octicon:stack-16" />&ensp;Uses:&emsp;
+      <Icon icon="octicon:stack-16" />&ensp;Uses&emsp;
       {#each tools as [tool, href]}
         <a {href}>{tool}</a>
       {/each}

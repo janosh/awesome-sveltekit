@@ -771,7 +771,8 @@
     - rehype
     - jsdom
     - GitHub Pages
-  tags: [forms, select component]
+    - mdsvexamples
+  tags: [forms, select component, interactive]
   date_created: 2021-05-07
   date_added: 2022-10-30
   last_updated: 2022-10-30
