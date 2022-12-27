@@ -817,3 +817,17 @@
   date_created: 2021-07-17
   date_added: 2022-12-09
   last_updated: 2022-12-09
+  
+- title: DontBore
+  url: https://dontbo.re/
+  repo: https://github.com/midzer/dontbore
+  description:
+    Find and share logins provided by the community.
+  uses:
+    - MVP.css
+    - PWA
+    - Netlify
+  tags: [community, login]
+  date_created: 2022-11-17
+  date_added: 2022-12-27
+  last_updated: 2022-12-27
