@@ -185,7 +185,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Flayks](https://flayks.com)**
 
-   Portfolio of Félix Péault, Digital Designer and Art Director. Sanity.io [[interview](https://sanity.io/blog/felix-peault-community-interview)], [feature](https://sanity.io/projects/flayks-portfolio-2021).<br>
+   Portfolio of Félix Péault, Digital Designer and Art Director. Sanity.io [[interview](https://sanity.io/blog/felix-peault-community-interview)], [[feature](https://sanity.io/projects/flayks-portfolio-2021)].<br>
 
    uses: [Sanity], [anime.js], [Vercel], [TypeScript], [SCSS], [PostCSS]
 
@@ -487,13 +487,13 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Tailwind], [Husky], [Octokit], [PostCSS]
 
-1. **[Periodic Table](https://janosh.github.io/periodic-table)**&ensp;
-   [[code](https://github.com/janosh/periodic-table)]&ensp;
-   <a href="https://github.com/janosh/periodic-table/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/periodic-table?logo=github" alt="GitHub stars" valign="middle">
+1. **[Sveriodic Table](https://janosh.github.io/sveriodic-table)**&ensp;
+   [[code](https://github.com/janosh/sveriodic-table)]&ensp;
+   <a href="https://github.com/janosh/sveriodic-table/stargazers">
+   <img src="https://img.shields.io/github/stars/janosh/sveriodic-table?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
+   Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
 
    uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect], [Vitest], [Playwright], [PNPM], [jsdom], [GitHub Pages]
 
@@ -692,6 +692,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    SvelteKit embed components for YouTube, Vimeo, Twitter, Spotify, SoundCloud, StackBlitz, CodePen, AnchorFM, Simple Cast and more.<br>
 
    uses: [TypeScript], [PNPM], [Vercel], [MDsveX], [Tailwind], [PostCSS], [Husky], [Playwright], [DaisyUI]
+
+1. **[SvelteKit static blog starter](https://sveltekit-static-starter.netlify.app)**&ensp;
+   [[code](https://github.com/josh-collinsworth/sveltekit-blog-starter)]&ensp;
+   <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter/stargazers">
+   <img src="https://img.shields.io/github/stars/josh-collinsworth/sveltekit-blog-starter?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDSvex, Rehype and background preloading.<br>
+
+   uses: [Netlify], [MDsveX], [Sass], [Husky]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com

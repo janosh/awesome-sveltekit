@@ -11,7 +11,7 @@ export function title_to_slug(title) {
 // https://stackoverflow.com/a/68848622
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   // module was not imported but called directly
-  // process.argv.slice(2) passes on CLI args to child process
+  // process.argv.slice(2) forwards CLI args to child process
   const argv = process.argv.slice(2)
   fork(`${this_dir}/fetch-github-metadata.js`, argv)
   fork(`${this_dir}/screenshots.js`, argv)

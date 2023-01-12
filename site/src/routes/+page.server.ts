@@ -2,10 +2,11 @@ import type { RepoContributor } from 'src/types'
 import type { PageServerLoad } from './$types'
 
 export const load: PageServerLoad = async ({ fetch }) => {
-  const contributors = (await fetch(
+  const contributors: RepoContributor[] = await fetch(
     `https://api.github.com/repos/janosh/awesome-sveltekit/contributors`,
     { cache: `force-cache` }
-  ).then((res) => res.json())) as RepoContributor[]
+  ).then((res) => res.json())
 
-  return { repo_contributors: contributors.filter((itm) => itm.type !== `Bot`) }
+  const repo_contributors = contributors?.filter((itm) => itm.type !== `Bot`)
+  return { repo_contributors }
 }
