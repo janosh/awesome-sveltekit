@@ -18,7 +18,7 @@
   site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
-  tags: [docs, monorepo, dev tools, blog, REPL]
+  tags: [docs, monorepo, dev tools, blog, REPL, NPM package]
   date_created: 2021-10-19 # https://git.io/JXShN
   date_added: 2021-11-11
   last_updated: 2021-11-11
@@ -29,7 +29,7 @@
   site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
   description: The fastest way to build Svelte apps.
   uses: [Netlify, PNPM]
-  tags: [docs, monorepo]
+  tags: [docs, monorepo, NPM package]
   date_created: 2021-03-10 # https://git.io/JcQYo
   date_added: 2021-05-25
   last_updated: 2021-05-25
@@ -166,7 +166,7 @@
   url: https://sveltepress.geopjr.dev
   repo: https://github.com/GeopJr/SveltePress
   description: SvelteKit-powered doc site generator. Made for humans.
-  tags: [documentation, markdown]
+  tags: [documentation, markdown, NPM package]
   uses: [Netlify, MarkedJS, PNPM, SCSS, Dart, Pandoc]
   date_created: 2021-07-09
   date_added: 2021-08-10
@@ -206,7 +206,7 @@
   url: https://flayks.com
   description: Portfolio of Félix Péault, Digital Designer and Art Director.
     Sanity.io [[interview](https://sanity.io/blog/felix-peault-community-interview)],
-    [feature](https://sanity.io/projects/flayks-portfolio-2021).
+    [[feature](https://sanity.io/projects/flayks-portfolio-2021)].
   tags: [portfolio]
   uses: [Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
   date_created: 2021-10-01
@@ -530,10 +530,10 @@
   date_added: 2022-05-19
   last_updated: 2022-05-19
 
-- title: Periodic Table
-  url: https://janosh.github.io/periodic-table
-  repo: https://github.com/janosh/periodic-table
-  description: Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
+- title: Sveriodic Table
+  url: https://janosh.github.io/sveriodic-table
+  repo: https://github.com/janosh/sveriodic-table
+  description: Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
   uses:
     - TypeScript
     - pre-commit
@@ -544,7 +544,7 @@
     - PNPM
     - jsdom
     - GitHub Pages
-  tags: [chemistry, science, data viz, plotting]
+  tags: [chemistry, science, data viz, plotting, NPM package]
   date_created: 2022-05-31
   date_added: 2022-06-02
   last_updated: 2022-06-02
@@ -769,7 +769,7 @@
     - jsdom
     - GitHub Pages
     - mdsvexamples
-  tags: [forms, select component, interactive]
+  tags: [forms, select component, interactive, NPM package]
   date_created: 2021-05-07
   date_added: 2022-10-30
   last_updated: 2022-10-30
@@ -817,3 +817,15 @@
   date_created: 2021-07-17
   date_added: 2022-12-09
   last_updated: 2022-12-09
+
+- title: SvelteKit static blog starter
+  url: https://sveltekit-static-starter.netlify.app
+  repo: https://github.com/josh-collinsworth/sveltekit-blog-starter
+  description:
+    A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDSvex, Rehype
+    and background preloading.
+  uses: [Netlify, MDsveX, Sass, Husky]
+  tags: [blog starter, sass, markdown, mdsvex, page transitions, seo, rss]
+  date_created: 2021-11-02
+  date_added: 2023-01-11
+  last_updated: 2023-01-11

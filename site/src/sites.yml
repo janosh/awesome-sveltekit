@@ -14,6 +14,7 @@
     - dev tools
     - docs
     - monorepo
+    - NPM package
     - open source
     - REPL
   date_created: 2021-10-19T00:00:00.000Z
@@ -68,6 +69,7 @@
   tags:
     - docs
     - monorepo
+    - NPM package
     - open source
   date_created: 2021-03-10T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
@@ -449,6 +451,7 @@
   tags:
     - documentation
     - markdown
+    - NPM package
     - open source
   uses:
     - Netlify
@@ -580,7 +583,7 @@
   description: >-
     Portfolio of Félix Péault, Digital Designer and Art Director. Sanity.io [<a
     href="https://sanity.io/blog/felix-peault-community-interview">interview</a>],
-    <a href="https://sanity.io/projects/flayks-portfolio-2021">feature</a>.
+    [<a href="https://sanity.io/projects/flayks-portfolio-2021">feature</a>].
   tags:
     - portfolio
   uses:
@@ -1658,12 +1661,12 @@
       name: Eddie Jaoude
       location: London | Portugal | Bali | Thailand
       company: Open Source Engineer
-- title: Periodic Table
-  url: https://janosh.github.io/periodic-table
-  repo: https://github.com/janosh/periodic-table
+- title: Sveriodic Table
+  url: https://janosh.github.io/sveriodic-table
+  repo: https://github.com/janosh/sveriodic-table
   description: >-
-    Dynamic periodic table of elements written in Svelte. Supports plotting heat
-    maps and hover data.
+    Interactive periodic table of elements written in Svelte. Supports plotting
+    heat maps and hover data.
   uses:
     - TypeScript
     - pre-commit
@@ -1677,14 +1680,15 @@
   tags:
     - chemistry
     - data viz
+    - NPM package
     - open source
     - plotting
     - science
   date_created: 2022-05-31T00:00:00.000Z
   date_added: 2022-06-02T00:00:00.000Z
   last_updated: 2022-06-02T00:00:00.000Z
-  slug: periodic-table
-  repo_stars: 28
+  slug: sveriodic-table
+  repo_stars: 44
   contributors:
     - github: janosh
       twitter: jrib_
@@ -2301,6 +2305,7 @@
   tags:
     - forms
     - interactive
+    - NPM package
     - open source
     - select component
   date_created: 2021-05-07T00:00:00.000Z
@@ -2436,3 +2441,36 @@
       name: Mend Renovate
       location: null
       company: '@mend'
+- title: SvelteKit static blog starter
+  url: https://sveltekit-static-starter.netlify.app
+  repo: https://github.com/josh-collinsworth/sveltekit-blog-starter
+  description: >-
+    A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDSvex,
+    Rehype and background preloading.
+  uses:
+    - Netlify
+    - MDsveX
+    - Sass
+    - Husky
+  tags:
+    - blog starter
+    - markdown
+    - mdsvex
+    - open source
+    - page transitions
+    - rss
+    - sass
+    - seo
+  date_created: 2021-11-02T00:00:00.000Z
+  date_added: 2023-01-11T00:00:00.000Z
+  last_updated: 2023-01-11T00:00:00.000Z
+  slug: sveltekit-static-blog-starter
+  repo_stars: 158
+  contributors:
+    - github: josh-collinsworth
+      twitter: jjcollinsworth
+      url: https://joshcollinsworth.com/
+      avatar: https://avatars.githubusercontent.com/u/22334764?v=4
+      name: Josh Collinsworth
+      location: Omaha, Nebraska
+      company: null

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import GitHubCorner from 'svelte-github-corner'
+  import { GitHubCorner } from 'svelte-zoo'
   import { repository } from '../../package.json'
   import '../app.css'
 
