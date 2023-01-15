@@ -2474,3 +2474,30 @@
       name: Josh Collinsworth
       location: Omaha, Nebraska
       company: null
+- title: svelte-put
+  url: https://svelte-put.vnphanquang.com
+  repo: https://github.com/vnphanquang/svelte-put
+  description: Useful svelte stuff to put in your projects.
+  uses:
+    - Changesets
+    - MDsveX
+    - PostCSS
+    - PNPM
+    - Turbo
+  tags:
+    - actions
+    - open source
+    - preprocessor
+  date_created: 2022-05-12T00:00:00.000Z
+  date_added: 2023-01-14T00:00:00.000Z
+  last_updated: 2023-01-14T00:00:00.000Z
+  slug: svelte-put
+  repo_stars: 166
+  contributors:
+    - github: vnphanquang
+      twitter: vnphanquang
+      url: https://vnphanquang.com?utm_source=github&utm_medium=profile
+      avatar: https://avatars.githubusercontent.com/u/25895844?v=4
+      name: Quang Phan
+      location: Vietnam
+      company: '@fourdigit'

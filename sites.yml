@@ -829,3 +829,13 @@
   date_created: 2021-11-02
   date_added: 2023-01-11
   last_updated: 2023-01-11
+
+- title: svelte-put
+  url: https://svelte-put.vnphanquang.com
+  repo: https://github.com/vnphanquang/svelte-put
+  description: Useful svelte stuff to put in your projects.
+  uses: [Changesets, MDsveX, PostCSS, PNPM, Turbo]
+  tags: [preprocessor, actions]
+  date_created: 2022-05-12
+  date_added: 2023-01-14
+  last_updated: 2023-01-14
