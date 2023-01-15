@@ -46,7 +46,7 @@ async function fetch_check(url) {
   return response
 }
 
-function normalizeUrl(url) {
+function https_url(url) {
   if (!url) return null
   if (url.startsWith(`http`)) return url.replace(`http://`, `https://`)
   return `https://${url}`
@@ -111,7 +111,7 @@ for (const site of sites) {
   site.contributors = contributors.map(({ name, location, company, ...c }) => ({
     github: c.login,
     twitter: c.twitter_username,
-    url: normalizeUrl(c.blog),
+    url: https_url(c.blog),
     avatar: c.avatar_url,
     name,
     location,

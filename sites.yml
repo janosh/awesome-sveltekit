@@ -835,7 +835,17 @@
   repo: https://github.com/vnphanquang/svelte-put
   description: Useful svelte stuff to put in your projects.
   uses: [Changesets, MDsveX, PostCSS, PNPM, Turbo]
-  tags: [preprocessor, actions]
+  tags: [preprocessor, actions, component library]
   date_created: 2022-05-12
   date_added: 2023-01-14
   last_updated: 2023-01-14
+
+- title: sveltekit-mdsvex-blog
+  url: https://sveltekit-mdsvex-blog.netlify.app
+  repo: https://github.com/mvasigh/sveltekit-mdsvex-blog
+  description: A minimalist blog template built with SvelteKit and MDsveX.
+  uses: [TypeScript, MDsveX, Rehype, Remark, PNPM, Vitest, Playwright]
+  tags: [blog, markdown, template, starter]
+  date_created: 2021-05-08
+  date_added: 2023-01-15
+  last_updated: 2023-01-15

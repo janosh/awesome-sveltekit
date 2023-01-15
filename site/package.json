@@ -12,7 +12,7 @@
     "dev": "node scripts/index.js && vite dev",
     "build": "node scripts/index.js && vite build",
     "preview": "vite preview",
-    "serve": "vite build && vite preview",
+    "serve": "node scripts/index.js && vite build && vite preview",
     "check": "svelte-check"
   },
   "devDependencies": {

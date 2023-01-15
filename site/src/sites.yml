@@ -2486,6 +2486,7 @@
     - Turbo
   tags:
     - actions
+    - component library
     - open source
     - preprocessor
   date_created: 2022-05-12T00:00:00.000Z
@@ -2501,3 +2502,34 @@
       name: Quang Phan
       location: Vietnam
       company: '@fourdigit'
+- title: sveltekit-mdsvex-blog
+  url: https://sveltekit-mdsvex-blog.netlify.app
+  repo: https://github.com/mvasigh/sveltekit-mdsvex-blog
+  description: A minimalist blog template built with SvelteKit and MDsveX.
+  uses:
+    - TypeScript
+    - MDsveX
+    - Rehype
+    - Remark
+    - PNPM
+    - Vitest
+    - Playwright
+  tags:
+    - blog
+    - markdown
+    - open source
+    - starter
+    - template
+  date_created: 2021-05-08T00:00:00.000Z
+  date_added: 2023-01-15T00:00:00.000Z
+  last_updated: 2023-01-15T00:00:00.000Z
+  slug: sveltekit-mdsvex-blog
+  repo_stars: 107
+  contributors:
+    - github: mvasigh
+      twitter: mehdi_vasigh
+      url: https://mvasigh.dev/
+      avatar: https://avatars.githubusercontent.com/u/13258203?v=4
+      name: Mehdi Vasigh
+      location: Atlanta, GA
+      company: null
