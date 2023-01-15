@@ -713,6 +713,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Changesets], [MDsveX], [PostCSS], [PNPM], [Turbo]
 
+1. **[sveltekit-mdsvex-blog](https://sveltekit-mdsvex-blog.netlify.app)**&ensp;
+   [[code](https://github.com/mvasigh/sveltekit-mdsvex-blog)]&ensp;
+   <a href="https://github.com/mvasigh/sveltekit-mdsvex-blog/stargazers">
+   <img src="https://img.shields.io/github/stars/mvasigh/sveltekit-mdsvex-blog?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A minimalist blog template built with SvelteKit and MDsveX.<br>
+
+   uses: [TypeScript], [MDsveX], [Rehype], [Remark], [PNPM], [Vitest], [Playwright]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -814,6 +824,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 ## 🎉 Open to Suggestions
 
-Want to add an _open source_ project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is meant as a learning resource for Svelte devs. While a site with private code can give inspiration, there's little educational value if you can't inspect how it was made.
+Want to add an open-source project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is meant as a learning resource for Svelte devs. While a site with private code can give inspiration, there's little educational value if you can't inspect how it was made.
 
 A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
