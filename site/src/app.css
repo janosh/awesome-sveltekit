@@ -1,8 +1,8 @@
 :root {
   --bg: #061e25;
 
-  --ghc-color: var(--bg);
-  --ghc-bg: white;
+  --zoo-github-corner-color: var(--bg);
+  --zoo-github-corner-bg: white;
 
   --sms-bg: black;
   --sms-max-width: 22em;

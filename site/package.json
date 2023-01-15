@@ -18,8 +18,8 @@
   "devDependencies": {
     "@iconify/svelte": "^3.0.1",
     "@rollup/plugin-yaml": "^4.0.1",
-    "@sveltejs/adapter-static": "1.0.1",
-    "@sveltejs/kit": "1.0.11",
+    "@sveltejs/adapter-static": "^1.0.1",
+    "@sveltejs/kit": "^1.0.11",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
     "dotenv": "^16.0.3",

@@ -703,6 +703,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Netlify], [MDsveX], [Sass], [Husky]
 
+1. **[svelte-put](https://svelte-put.vnphanquang.com)**&ensp;
+   [[code](https://github.com/vnphanquang/svelte-put)]&ensp;
+   <a href="https://github.com/vnphanquang/svelte-put/stargazers">
+   <img src="https://img.shields.io/github/stars/vnphanquang/svelte-put?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Useful svelte stuff to put in your projects.<br>
+
+   uses: [Changesets], [MDsveX], [PostCSS], [PNPM], [Turbo]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -792,6 +802,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
+[turbo]: https://github.com/vercel/turbo
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
 [unocss]: https://github.com/unocss/unocss
