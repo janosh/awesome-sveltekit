@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores'
+  import { homepage, name } from '$site/package.json'
   import Icon from '@iconify/svelte'
-  import { homepage, name } from '../../package.json'
 
   let online: boolean
 </script>

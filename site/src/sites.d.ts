@@ -1,4 +1,4 @@
-import { Site } from './types'
+import type { Site } from '$lib/types'
 
 declare let _default: Site[]
 export default _default

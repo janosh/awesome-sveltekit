@@ -1,9 +1,5 @@
 <script lang="ts">
-  import ContributorList from '$lib/ContributorList.svelte'
-  import Filters from '$lib/Filters.svelte'
-  import SiteList from '$lib/SiteList.svelte'
-  import Icon from '@iconify/svelte'
-  import sites from '../sites.yml'
+  import { ContributorList, Filters, SiteList } from '$lib'
   import {
     contributor_filter_mode,
     filter_contributors,
@@ -12,9 +8,11 @@
     sorted_sites,
     sort_by,
     tag_filter_mode,
-  } from '../stores'
+  } from '$lib/stores'
+  import { repository } from '$site/package.json'
+  import Icon from '@iconify/svelte'
+  import sites from '../sites.yml'
   import type { PageData } from './$types'
-  import { repository } from '../../package.json'
 
   export let data: PageData
 

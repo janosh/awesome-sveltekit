@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
-  import type { Site } from '../types'
-  import SitePreview from './SitePreview.svelte'
+  import { SitePreview } from '.'
+  import type { Site } from './types'
 
   export let prev: Site
   export let next: Site

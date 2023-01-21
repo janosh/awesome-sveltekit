@@ -1,11 +1,12 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
-  import { filter_tags } from '../stores'
-  import type { Site } from '../types'
-  import Screenshot from './Screenshot.svelte'
+  import { Screenshot } from '.'
+  import { filter_tags } from './stores'
+  import type { Site } from './types'
 
   export let site: Site
   export let idx = 0
+  export let tags = false
 </script>
 
 <a href={site.slug}>
@@ -22,14 +23,16 @@
     </small>
   {/if}
 </div>
-<p class="tags flex">
-  <Icon icon="octicon:tag" style="margin: 0 1ex 0 0;" />
-  {#each site.tags as tag}
-    <small class:active={$filter_tags.find((t) => t.label === tag)}>
-      {tag}
-    </small>
-  {/each}
-</p>
+{#if tags}
+  <p class="tags flex">
+    <Icon icon="octicon:tag" style="margin: 0 1ex 0 0;" />
+    {#each site.tags as tag}
+      <small class:active={$filter_tags.find((t) => t.label === tag)}>
+        {tag}
+      </small>
+    {/each}
+  </p>
+{/if}
 
 <style>
   div.flex {
@@ -42,6 +45,7 @@
     padding: 1pt 3pt;
     margin: 3pt 0;
     border-radius: 3pt;
+    font-size: 9pt;
   }
   p.tags small:not(:last-child) {
     margin-right: 1ex;
