@@ -1,8 +1,7 @@
 <script lang="ts">
-  import PrevNextSite from '$lib/PrevNextSite.svelte'
-  import SiteDetails from '$lib/SiteDetails.svelte'
+  import { PrevNextSite, SiteDetails } from '$lib'
+  import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
-  import { repository } from '../../../package.json'
   import type { PageData } from './$types'
 
   export let data: PageData
@@ -28,7 +27,7 @@
 <main>
   <SiteDetails site={data.site} />
 </main>
-<PrevNextSite prev={data.prev_site} next={data.next_site} />
+<PrevNextSite prev={data.prev} next={data.next} />
 
 <footer>
   Have a site you'd like to add to this

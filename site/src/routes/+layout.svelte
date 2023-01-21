@@ -1,6 +1,6 @@
 <script lang="ts">
+  import { repository } from '$site/package.json'
   import { GitHubCorner } from 'svelte-zoo'
-  import { repository } from '../../package.json'
   import '../app.css'
 
   let innerWidth: number

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
-  import type { Site } from '../types'
-  import SitePreview from './SitePreview.svelte'
+  import { SitePreview } from '.'
+  import type { Site } from './types'
 
   export let sites: Site[]
 </script>
@@ -14,7 +14,7 @@
       in:fade|local={{ delay: 100 }}
       out:fade|local={{ delay: 100 }}
     >
-      <SitePreview {site} idx={idx + 1} />
+      <SitePreview {site} idx={idx + 1} tags />
     </li>
   {/each}
 </ol>

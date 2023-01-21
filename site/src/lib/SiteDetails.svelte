@@ -1,9 +1,8 @@
 <script lang="ts">
+  import uses_links from '$root/tools.yml'
   import Icon from '@iconify/svelte'
-  import uses_links from '../../../tools.yml'
-  import type { Site } from '../types'
-  import Contributor from './Contributor.svelte'
-  import Screenshot from './Screenshot.svelte'
+  import { Contributor, Screenshot } from '.'
+  import type { Site } from './types'
 
   export let site: Site
 

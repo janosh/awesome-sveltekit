@@ -1,7 +1,7 @@
 /// <reference types="@sveltejs/kit" />
 
 declare module '*sites.yml' {
-  const sites: import('./types').Site[]
+  const sites: import('./lib/types').Site[]
   export default sites
 }
 
