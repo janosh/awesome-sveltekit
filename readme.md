@@ -57,7 +57,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [svelte-multiselect], [pre-commit], [PNPM], [GitHub Pages]
 
-1. **[Wahid Ali](https://www.wahidali.dev/)**&ensp;
+1. **[Wahid Ali](https://wahidali.dev)**&ensp;
    [[code](https://github.com/Aliwahid17/portfolio)]&ensp;
    <a href="https://github.com/aliwahid17/portfolio/stargazers">
    <img src="https://img.shields.io/github/stars/aliwahid17/portfolio?logo=github" alt="GitHub stars" valign="middle">
@@ -734,7 +734,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [TypeScript], [MDsveX], [Rehype], [Remark], [PNPM], [Vitest], [Playwright]
 
 [algolia]: https://algolia.com
-[sveltekit]: https://kit.svelte.dev/
+[sveltekit]: https://kit.svelte.dev
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
 [babel]: https://babeljs.io

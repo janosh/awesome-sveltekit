@@ -55,10 +55,10 @@
   last_updated: 2022-05-10
 
 - title: Wahid Ali
-  url: https://www.wahidali.dev
+  url: https://wahidali.dev
   repo: https://github.com/Aliwahid17/portfolio
   description: It is portfolio + blogging website made in sveltekit with tailwindcss and using markdown for blogpost.
-  tags: [blog,markdown,sveltekit]
+  tags: [blog, markdown, sveltekit]
   uses: [TypeScript, Tailwind, Sveltekit, PNPM, MDsveX, Vercel]
   date_created: 2022-11-28
   date_added: 2022-11-28
