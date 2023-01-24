@@ -849,3 +849,25 @@
   date_created: 2021-05-08
   date_added: 2023-01-15
   last_updated: 2023-01-15
+  
+- title: nocode.gallery
+  url: https://nocode.gallery
+  description: A collection of stunning websites made with no code
+  uses:
+    - Typescript
+    - Vercel
+    - Sanity
+    - ScreenshotOne
+  tags:
+    - animations
+    - transitions
+    - photography
+    - modals
+    - infinite-loading
+    - grid
+    - design
+    - typography
+    - graphic design
+  date_created: 2023-01-03
+  date_added: 2023-24-01
+  last_updated: 2023-24-01
