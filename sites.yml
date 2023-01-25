@@ -849,3 +849,12 @@
   date_created: 2021-05-08
   date_added: 2023-01-15
   last_updated: 2023-01-15
+  
+- title: Duplicate Word Finder
+  url: https://duplicateword.com
+  description: Find duplicate words and eliminate them from your writings.
+  uses: [TypeScript, Vercel]
+  tags: [app, text editor, writing, material design]
+  date_created: 2023-01-21
+  date_added: 2023-01-25
+  last_updated: 2023-01-25
