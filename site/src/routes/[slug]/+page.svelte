@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from '$app/navigation'
   import { PrevNextSite, SiteDetails } from '$lib'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
@@ -8,6 +9,18 @@
 
   $: head_title = `${data.site.title} | Awesome SvelteKit`
   $: plain_description = data.site?.description?.replace(/<[^>]*>/g, ``)
+
+  const goto_options = { replaceState: true, noScroll: true }
+
+  function handle_keyup(event: KeyboardEvent) {
+    if (event.key === `ArrowLeft`) {
+      goto(data.prev?.slug ?? ``, goto_options)
+    } else if (event.key === `ArrowRight`) {
+      goto(data.next?.slug ?? ``, goto_options)
+    } else if (event.key === `Escape`) {
+      goto(`/`, goto_options)
+    }
+  }
 </script>
 
 <svelte:head>
@@ -21,6 +34,8 @@
     <meta name="twitter:creator" content={data.site.contributors[0].twitter} />
   {/if}
 </svelte:head>
+
+<svelte:window on:keyup={handle_keyup} />
 
 <a href="." class="back">&laquo; home</a>
 
@@ -37,6 +52,12 @@
     <Icon icon="octicon:git-pull-request" inline style="margin: 0 2pt 0 4pt;" />
     PRs welcome!
   </a>
+
+  <p>
+    <small>
+      Pro tip: Use arrow keys &thinsp;&larr; &rarr;&thinsp; to navigate between sites.
+    </small>
+  </p>
 </footer>
 
 <style>
