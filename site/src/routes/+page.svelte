@@ -65,18 +65,22 @@
     return query_match && tag_match && contrib_match
   })
 
+  let sort_order: 'asc' | 'desc' = `desc`
+  $: sort_factor = sort_order == `asc` ? -1 : 1
   // arr.sort() sorts in-place but we need to reassign filtered_sites so Svelte rerenders
   $: if ($sort_by[0] === `GitHub repo stars`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => (siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)
+      (siteA, siteB) => sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0))
     )
   } else if ($sort_by[0] === `Date created`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => +new Date(siteB.date_created) - +new Date(siteA.date_created)
+      (siteA, siteB) =>
+        sort_factor * (+new Date(siteB.date_created) - +new Date(siteA.date_created))
     )
   } else if ($sort_by[0] === `Date last updated`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => +new Date(siteB.last_updated) - +new Date(siteA.last_updated)
+      (siteA, siteB) =>
+        sort_factor * (+new Date(siteB.last_updated) - +new Date(siteA.last_updated))
     )
   }
 
@@ -101,11 +105,7 @@
     {sites.length} Awesome Examples of SvelteKit in the Wild
   </h1>
 
-  <Filters
-    {tags}
-    on:toggle-sort={() => ($sorted_sites = $sorted_sites.reverse())}
-    {contributors}
-  />
+  <Filters {tags} bind:sort_order {contributors} />
 
   {#if $sorted_sites.length < sites.length}
     <p>
