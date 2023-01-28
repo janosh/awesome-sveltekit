@@ -118,29 +118,6 @@
 
   <SiteList sites={$sorted_sites} />
 
-  <h2>🎉 Open to Suggestions</h2>
-  <p style="max-width: 40em;">
-    Want to add an <em>open source</em> project to <Icon
-      icon="mdi:sunglasses"
-      inline
-      style="margin: 0 2pt;"
-    /> this list?
-    <a href="{repository}/edit/main/sites.yml">
-      <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
-      PRs welcome</a
-    >! This collection is meant as a learning resource for Svelte devs. While a site with
-    private code can give inspiration, there's little educational value if you can't
-    inspect how it was made.
-  </p>
-
-  <p style="max-width: 40em;">
-    A good place to discover Svelte projects (not necessarily SvelteKit) is
-    <a href="https://github.com/trending/svelte?since=monthly">
-      <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt;" />
-      GitHub Trending
-    </a>. If anything on that list stands out to you but is missing here, please add it!
-  </p>
-
   <h2>
     🙏 Big thanks to
     <a href="{repository}/graphs/contributors" target="_blank" rel="noreferrer">
@@ -149,6 +126,29 @@
   </h2>
   <ContributorList contributors={data.repo_contributors} />
 </main>
+
+<h2>🎉 Open to Suggestions</h2>
+<p style="max-width: 40em;">
+  Want to add an <em>open source</em> project to <Icon
+    icon="mdi:sunglasses"
+    inline
+    style="margin: 0 2pt;"
+  /> this list?
+  <a href="{repository}/edit/main/sites.yml">
+    <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
+    PRs welcome</a
+  >! This collection is meant as a learning resource for Svelte devs. While a site with
+  private code can give inspiration, there's little educational value if you can't inspect
+  how it was made.
+</p>
+
+<p style="max-width: 40em;">
+  A good place to discover Svelte projects (not necessarily SvelteKit) is
+  <a href="https://github.com/trending/svelte?since=monthly">
+    <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt;" />
+    GitHub Trending
+  </a>. If anything on that list stands out to you but is missing here, please add it!
+</p>
 
 <style>
   img {
