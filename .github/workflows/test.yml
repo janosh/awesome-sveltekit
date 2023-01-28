@@ -22,8 +22,11 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd site
           npm install
           npx playwright install chromium
 
       - name: Run tests
-        run: npm run test
+        run: |
+          cd site
+          npm run test
