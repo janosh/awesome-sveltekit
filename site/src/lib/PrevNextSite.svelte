@@ -1,11 +1,25 @@
 <script lang="ts">
+  import { goto } from '$app/navigation'
   import Icon from '@iconify/svelte'
   import { SitePreview } from '.'
   import type { Site } from './types'
 
   export let prev: Site
   export let next: Site
+
+  const goto_options = { replaceState: true, noScroll: true }
+
+  function handle_keyup(event: KeyboardEvent) {
+    const to = {
+      ArrowLeft: prev?.slug,
+      ArrowRight: next?.slug,
+      Escape: `/`,
+    }[event.key]
+    if (to) goto(to, goto_options)
+  }
 </script>
+
+<svelte:window on:keyup={handle_keyup} />
 
 <ul data-sveltekit-noscroll>
   <li>
