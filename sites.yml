@@ -9,8 +9,6 @@
 # cmd/ctrl + left arrow to jump to the very start of the commit history.
 # site_src is the link to a subfolder if e.g. the site is part of a monorepo.
 
-# If you introduce a new field, please mention in the PR and add it to site/src/types.ts.
-
 - title: Svelte.dev
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { RepoContributor } from '$lib/types'
+  import type { RepoContributor } from '$lib'
 
   export let contributors: RepoContributor[]
 </script>

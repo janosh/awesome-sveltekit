@@ -1,4 +1,4 @@
-import type { RepoContributor } from '$lib/types'
+import type { RepoContributor } from '$lib'
 import type { PageServerLoad } from './$types'
 
 export const load: PageServerLoad = async ({ fetch }) => {

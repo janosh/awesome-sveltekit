@@ -2,8 +2,8 @@
   import { goto } from '$app/navigation'
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
+  import type { Site } from '.'
   import { SitePreview } from '.'
-  import type { Site } from './types'
 
   export let sites: Site[]
 
