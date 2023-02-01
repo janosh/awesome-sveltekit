@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
-  import type { Contributor } from './types'
+  import type { Contributor } from '.'
 
   export let contributor: Contributor
 

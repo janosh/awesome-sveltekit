@@ -1,8 +1,8 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
   import Icon from '@iconify/svelte'
+  import type { Site } from '.'
   import { SitePreview } from '.'
-  import type { Site } from './types'
 
   export let prev: Site
   export let next: Site

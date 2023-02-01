@@ -1,8 +1,8 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
+  import type { Site } from '.'
   import { Screenshot } from '.'
   import { filter_tags } from './stores'
-  import type { Site } from './types'
 
   export let site: Site
   export let idx = 0

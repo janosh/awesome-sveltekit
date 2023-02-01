@@ -1,23 +1,6 @@
 import { writable } from 'svelte/store'
-import type { Site } from './types'
-
-function session_store<T>(name: string, initialValue: T) {
-  if (typeof sessionStorage !== `undefined` && sessionStorage[name]) {
-    initialValue = JSON.parse(sessionStorage[name])
-  }
-
-  const { subscribe, set } = writable(initialValue)
-
-  return {
-    subscribe,
-    set: (val: T) => {
-      if (val !== undefined && typeof sessionStorage !== `undefined`) {
-        sessionStorage[name] = JSON.stringify(val)
-      }
-      set(val)
-    },
-  }
-}
+import { session_store } from 'svelte-zoo'
+import type { Site } from '.'
 
 export const sort_by = session_store<string[]>(`sort_by`, [`GitHub repo stars`])
 
