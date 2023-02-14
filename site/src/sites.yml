@@ -1704,9 +1704,9 @@
       name: Eddie Jaoude
       location: London, UK
       company: Open Source Engineer
-- title: Sveriodic Table
-  url: https://janosh.github.io/sveriodic-table
-  repo: https://github.com/janosh/sveriodic-table
+- title: Elementari
+  url: https://janosh.github.io/elementari
+  repo: https://github.com/janosh/elementari
   description: >-
     Interactive periodic table of elements written in Svelte. Supports plotting
     heat maps and hover data.
@@ -1730,7 +1730,7 @@
   date_created: 2022-05-31T00:00:00.000Z
   date_added: 2022-06-02T00:00:00.000Z
   last_updated: 2022-06-02T00:00:00.000Z
-  slug: sveriodic-table
+  slug: elementari
   repo_stars: 46
   contributors:
     - github: janosh

@@ -528,9 +528,9 @@
   date_added: 2022-05-19
   last_updated: 2022-05-19
 
-- title: Sveriodic Table
-  url: https://janosh.github.io/sveriodic-table
-  repo: https://github.com/janosh/sveriodic-table
+- title: Elementari
+  url: https://janosh.github.io/elementari
+  repo: https://github.com/janosh/elementari
   description: Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
   uses:
     - TypeScript

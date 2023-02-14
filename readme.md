@@ -488,10 +488,10 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Tailwind], [Husky], [Octokit], [PostCSS]
 
-1. **[Sveriodic Table](https://janosh.github.io/sveriodic-table)**&ensp;
-   [[code](https://github.com/janosh/sveriodic-table)]&ensp;
-   <a href="https://github.com/janosh/sveriodic-table/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/sveriodic-table?logo=github" alt="GitHub stars" valign="middle">
+1. **[Elementari](https://janosh.github.io/elementari)**&ensp;
+   [[code](https://github.com/janosh/elementari)]&ensp;
+   <a href="https://github.com/janosh/elementari/stargazers">
+   <img src="https://img.shields.io/github/stars/janosh/elementari?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
