@@ -40,7 +40,7 @@
 
   <p>
     <small>
-      Pro tip: Use arrow keys &thinsp;&larr; &rarr;&thinsp; to navigate between sites.
+      Use arrow keys &thinsp;&larr; &rarr;&thinsp; to navigate between sites.
     </small>
   </p>
 </footer>

@@ -1,12 +1,16 @@
 <script lang="ts">
   import uses_links from '$root/tools.yml'
   import Icon from '@iconify/svelte'
-  import type { Site } from '.'
-  import { Contributor, Screenshot } from '.'
+  import { Tooltip } from 'svelte-zoo'
+  import { Contributor, Screenshot, type Site } from '.'
 
   export let site: Site
 
   $: ({ title, url, tags, uses, contributors, date_created, repo_stars } = site)
+
+  $: days_since_created = Math.floor(
+    (Date.now() - new Date(date_created).getTime()) / (1000 * 60 * 60 * 24)
+  )
 
   $: tools = uses.map((tool) => {
     const href = uses_links[tool.toLowerCase()]
@@ -73,11 +77,17 @@
     <p class="flex">
       <Icon icon="octicon:project" />&emsp;Project started on
       <span style="flex: 1" />
-      {#if site.repo}
-        <a href="{site.repo}/network">{date_created}</a>
-      {:else}
-        {date_created}
-      {/if}
+      <Tooltip
+        text="{days_since_created} days ago"
+        min_width="max-content"
+        style="--zoo-tooltip-bg: var(--sms-options-bg)"
+      >
+        {#if site.repo}
+          <a href="{site.repo}/network">{date_created}</a>
+        {:else}
+          {date_created}
+        {/if}
+      </Tooltip>
     </p>
   {/if}
   {#if tags?.length > 0}
