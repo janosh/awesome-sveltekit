@@ -58,6 +58,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [svelte-multiselect], [pre-commit], [PNPM], [GitHub Pages]
 
+1. **[Wahid Ali](https://wahidali.dev)**&ensp;
+   [[code](https://github.com/Aliwahid17/portfolio)]&ensp;
+   <a href="https://github.com/aliwahid17/portfolio/stargazers">
+   <img src="https://img.shields.io/github/stars/aliwahid17/portfolio?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   It is portfolio + blogging website made in sveltekit with typescript,tailwindcss and using markdown for blogpost.<br>
+
+   uses: [TypeScript], [Tailwind], [Sveltekit], [PNPM], [MDsveX], [Vercel]
+
 1. **[markushatvan.com](https://markushatvan.com)**
 
    Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.<br>
@@ -725,6 +735,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [TypeScript], [MDsveX], [Rehype], [Remark], [PNPM], [Vitest], [Playwright]
 
 [algolia]: https://algolia.com
+[sveltekit]: https://kit.svelte.dev
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
 [babel]: https://babeljs.io

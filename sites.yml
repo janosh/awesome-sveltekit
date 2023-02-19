@@ -52,6 +52,16 @@
   date_added: 2021-05-25
   last_updated: 2022-05-10
 
+- title: Wahid Ali
+  url: https://wahidali.dev
+  repo: https://github.com/Aliwahid17/portfolio
+  description: It is portfolio + blogging website made in sveltekit with tailwindcss and using markdown for blogpost.
+  tags: [blog, markdown, sveltekit]
+  uses: [TypeScript, Tailwind, Sveltekit, PNPM, MDsveX, Vercel]
+  date_created: 2022-11-28
+  date_added: 2022-11-28
+  last_updated: 2023-01-21
+
 - title: markushatvan.com
   url: https://markushatvan.com
   description: Blog posts with code snippets, contact form with Svelte Forms Lib, RSS and sitemap.
