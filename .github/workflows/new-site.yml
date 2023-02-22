@@ -19,11 +19,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
-          cache-dependency-path: site/pnpm-lock.yaml
+          cache: npm
+          cache-dependency-path: site/package.json
 
       - name: Install dependencies
-        run: pnpm add puppeteer js-yaml imagemin imagemin-webp
+        run: npm install puppeteer js-yaml imagemin imagemin-webp
 
       - name: Update existing site screenshots and repo contributors on scheduled runs
         if: github.event_name == 'schedule'

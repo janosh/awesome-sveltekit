@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte'
   import MultiSelect from 'svelte-multiselect'
+  import { RadioButtons } from 'svelte-zoo'
   import {
     contributor_filter_mode,
     filter_contributors,
@@ -8,13 +8,11 @@
     search,
     sort_by,
     tag_filter_mode,
-  } from '../stores'
-  import RadioButtons from './RadioButtons.svelte'
+  } from './stores'
 
   export let tags: [string, number][]
   export let contributors: [string, number][]
-
-  const dispatch = createEventDispatcher()
+  export let sort_order: 'asc' | 'desc' = `desc`
 </script>
 
 <div class="filters">
@@ -57,11 +55,7 @@
       bind:selected={$sort_by}
     />
     {#if $sort_by?.length > 0}
-      <RadioButtons
-        selected="desc"
-        on:change={() => dispatch(`toggle-sort`)}
-        options={[`asc`, `desc`]}
-      />
+      <RadioButtons bind:selected={sort_order} options={[`asc`, `desc`]} />
     {/if}
   </div>
 </div>

@@ -6,8 +6,9 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Pull Requests Welcome](https://img.shields.io/badge/Pull%20Requests-welcome-brightgreen.svg?logo=github)](https://github.com/janosh/awesome-sveltekit/pulls)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-sveltekit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-sveltekit/main)
+[![Tests](https://github.com/janosh/awesome-sveltekit/actions/workflows/test.yml/badge.svg)](https://github.com/janosh/awesome-sveltekit/actions/workflows/test.yml)
 [![GH Pages](https://github.com/janosh/awesome-sveltekit/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/janosh/awesome-sveltekit/actions/workflows/gh-pages.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/awesome-sveltekit/main.svg)](https://results.pre-commit.ci/latest/github/janosh/awesome-sveltekit/main)
 
 </h4>
 
@@ -185,7 +186,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Flayks](https://flayks.com)**
 
-   Portfolio of Félix Péault, Digital Designer and Art Director. Sanity.io [[interview](https://sanity.io/blog/felix-peault-community-interview)], [feature](https://sanity.io/projects/flayks-portfolio-2021).<br>
+   Portfolio of Félix Péault, Digital Designer and Art Director. Sanity.io [[interview](https://sanity.io/blog/felix-peault-community-interview)], [[feature](https://sanity.io/projects/flayks-portfolio-2021)].<br>
 
    uses: [Sanity], [anime.js], [Vercel], [TypeScript], [SCSS], [PostCSS]
 
@@ -487,13 +488,13 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Tailwind], [Husky], [Octokit], [PostCSS]
 
-1. **[Periodic Table](https://janosh.github.io/periodic-table)**&ensp;
-   [[code](https://github.com/janosh/periodic-table)]&ensp;
-   <a href="https://github.com/janosh/periodic-table/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/periodic-table?logo=github" alt="GitHub stars" valign="middle">
+1. **[Elementari](https://janosh.github.io/elementari)**&ensp;
+   [[code](https://github.com/janosh/elementari)]&ensp;
+   <a href="https://github.com/janosh/elementari/stargazers">
+   <img src="https://img.shields.io/github/stars/janosh/elementari?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   Dynamic periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
+   Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
 
    uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect], [Vitest], [Playwright], [PNPM], [jsdom], [GitHub Pages]
 
@@ -693,6 +694,36 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [PNPM], [Vercel], [MDsveX], [Tailwind], [PostCSS], [Husky], [Playwright], [DaisyUI]
 
+1. **[SvelteKit static blog starter](https://sveltekit-static-starter.netlify.app)**&ensp;
+   [[code](https://github.com/josh-collinsworth/sveltekit-blog-starter)]&ensp;
+   <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter/stargazers">
+   <img src="https://img.shields.io/github/stars/josh-collinsworth/sveltekit-blog-starter?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDSvex, Rehype and background preloading.<br>
+
+   uses: [Netlify], [MDsveX], [Sass], [Husky]
+
+1. **[svelte-put](https://svelte-put.vnphanquang.com)**&ensp;
+   [[code](https://github.com/vnphanquang/svelte-put)]&ensp;
+   <a href="https://github.com/vnphanquang/svelte-put/stargazers">
+   <img src="https://img.shields.io/github/stars/vnphanquang/svelte-put?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Useful svelte stuff to put in your projects.<br>
+
+   uses: [Changesets], [MDsveX], [PostCSS], [PNPM], [Turbo]
+
+1. **[sveltekit-mdsvex-blog](https://sveltekit-mdsvex-blog.netlify.app)**&ensp;
+   [[code](https://github.com/mvasigh/sveltekit-mdsvex-blog)]&ensp;
+   <a href="https://github.com/mvasigh/sveltekit-mdsvex-blog/stargazers">
+   <img src="https://img.shields.io/github/stars/mvasigh/sveltekit-mdsvex-blog?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A minimalist blog template built with SvelteKit and MDsveX.<br>
+
+   uses: [TypeScript], [MDsveX], [Rehype], [Remark], [PNPM], [Vitest], [Playwright]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -782,6 +813,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
+[turbo]: https://github.com/vercel/turbo
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
 [unocss]: https://github.com/unocss/unocss
@@ -793,6 +825,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 ## 🎉 Open to Suggestions
 
-Want to add an _open source_ project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is meant as a learning resource for Svelte devs. While a site with private code can give inspiration, there's little educational value if you can't inspect how it was made.
+Want to add an open-source project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is meant as a learning resource for Svelte devs. While a site with private code can give inspiration, there's little educational value if you can't inspect how it was made.
 
 A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!

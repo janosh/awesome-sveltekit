@@ -1,9 +1,5 @@
 <script lang="ts">
-  import ContributorList from '$lib/ContributorList.svelte'
-  import Filters from '$lib/Filters.svelte'
-  import SiteList from '$lib/SiteList.svelte'
-  import Icon from '@iconify/svelte'
-  import sites from '../sites.yml'
+  import { ContributorList, Filters, SiteList } from '$lib'
   import {
     contributor_filter_mode,
     filter_contributors,
@@ -12,9 +8,11 @@
     sorted_sites,
     sort_by,
     tag_filter_mode,
-  } from '../stores'
+  } from '$lib/stores'
+  import { repository } from '$site/package.json'
+  import Icon from '@iconify/svelte'
+  import sites from '../sites.yml'
   import type { PageData } from './$types'
-  import { repository } from '../../package.json'
 
   export let data: PageData
 
@@ -67,18 +65,22 @@
     return query_match && tag_match && contrib_match
   })
 
+  let sort_order: 'asc' | 'desc' = `desc`
+  $: sort_factor = sort_order == `asc` ? -1 : 1
   // arr.sort() sorts in-place but we need to reassign filtered_sites so Svelte rerenders
   $: if ($sort_by[0] === `GitHub repo stars`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => (siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)
+      (siteA, siteB) => sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0))
     )
   } else if ($sort_by[0] === `Date created`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => +new Date(siteB.date_created) - +new Date(siteA.date_created)
+      (siteA, siteB) =>
+        sort_factor * (+new Date(siteB.date_created) - +new Date(siteA.date_created))
     )
   } else if ($sort_by[0] === `Date last updated`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => +new Date(siteB.last_updated) - +new Date(siteA.last_updated)
+      (siteA, siteB) =>
+        sort_factor * (+new Date(siteB.last_updated) - +new Date(siteA.last_updated))
     )
   }
 
@@ -103,11 +105,7 @@
     {sites.length} Awesome Examples of SvelteKit in the Wild
   </h1>
 
-  <Filters
-    {tags}
-    on:toggle-sort={() => ($sorted_sites = $sorted_sites.reverse())}
-    {contributors}
-  />
+  <Filters {tags} bind:sort_order {contributors} />
 
   {#if $sorted_sites.length < sites.length}
     <p>
@@ -120,29 +118,6 @@
 
   <SiteList sites={$sorted_sites} />
 
-  <h2>🎉 Open to Suggestions</h2>
-  <p style="max-width: 40em;">
-    Want to add an <em>open source</em> project to <Icon
-      icon="mdi:sunglasses"
-      inline
-      style="margin: 0 2pt;"
-    /> this list?
-    <a href="{repository}/edit/main/sites.yml">
-      <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
-      PRs welcome</a
-    >! This collection is meant as a learning resource for Svelte devs. While a site with
-    private code can give inspiration, there's little educational value if you can't
-    inspect how it was made.
-  </p>
-
-  <p style="max-width: 40em;">
-    A good place to discover Svelte projects (not necessarily SvelteKit) is
-    <a href="https://github.com/trending/svelte?since=monthly">
-      <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt;" />
-      GitHub Trending
-    </a>. If anything on that list stands out to you but is missing here, please add it!
-  </p>
-
   <h2>
     🙏 Big thanks to
     <a href="{repository}/graphs/contributors" target="_blank" rel="noreferrer">
@@ -151,6 +126,29 @@
   </h2>
   <ContributorList contributors={data.repo_contributors} />
 </main>
+
+<h2>🎉 Open to Suggestions</h2>
+<p style="max-width: 40em;">
+  Want to add an <em>open source</em> project to <Icon
+    icon="mdi:sunglasses"
+    inline
+    style="margin: 0 2pt;"
+  /> this list?
+  <a href="{repository}/edit/main/sites.yml">
+    <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
+    PRs welcome</a
+  >! This collection is meant as a learning resource for Svelte devs. While a site with
+  private code can give inspiration, there's little educational value if you can't inspect
+  how it was made.
+</p>
+
+<p style="max-width: 40em;">
+  A good place to discover Svelte projects (not necessarily SvelteKit) is
+  <a href="https://github.com/trending/svelte?since=monthly">
+    <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt;" />
+    GitHub Trending
+  </a>. If anything on that list stands out to you but is missing here, please add it!
+</p>
 
 <style>
   img {
