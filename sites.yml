@@ -847,3 +847,13 @@
   date_created: 2021-05-08
   date_added: 2023-01-15
   last_updated: 2023-01-15
+
+- title: sveltekit-typescript-showcase
+  url: https://github.com/ivanhofer/sveltekit-typescript-showcase
+  repo: https://github.com/ivanhofer/sveltekit-typescript-showcase
+  description: This repository shows how Svelte and SvelteKit work together with TypeScript.
+  uses: [TypeScript]
+  tags: [showcase, tutorial, learning]
+  date_created: 2022-03-07
+  date_added: 2023-02-24
+  last_updated: 2023-02-24

@@ -2604,3 +2604,29 @@
       name: Mehdi Vasigh
       location: Atlanta, GA
       company: null
+- title: sveltekit-typescript-showcase
+  url: https://github.com/ivanhofer/sveltekit-typescript-showcase
+  repo: https://github.com/ivanhofer/sveltekit-typescript-showcase
+  description: >-
+    This repository shows how Svelte and SvelteKit work together with
+    TypeScript.
+  uses:
+    - TypeScript
+  tags:
+    - learning
+    - open source
+    - showcase
+    - tutorial
+  date_created: 2022-03-07T00:00:00.000Z
+  date_added: 2023-02-24T00:00:00.000Z
+  last_updated: 2023-02-24T00:00:00.000Z
+  slug: sveltekit-typescript-showcase
+  repo_stars: 485
+  contributors:
+    - github: ivanhofer
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/21335119?v=4
+      name: Hofer Ivan
+      location: Italy
+      company: null
