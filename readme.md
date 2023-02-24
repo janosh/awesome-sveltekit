@@ -724,6 +724,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [MDsveX], [Rehype], [Remark], [PNPM], [Vitest], [Playwright]
 
+1. **[sveltekit-typescript-showcase](https://github.com/ivanhofer/sveltekit-typescript-showcase)**&ensp;
+   [[code](https://github.com/ivanhofer/sveltekit-typescript-showcase)]&ensp;
+   <a href="https://github.com/ivanhofer/sveltekit-typescript-showcase/stargazers">
+   <img src="https://img.shields.io/github/stars/ivanhofer/sveltekit-typescript-showcase?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   This repository shows how Svelte and SvelteKit work together with TypeScript.<br>
+
+   uses: [TypeScript]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
