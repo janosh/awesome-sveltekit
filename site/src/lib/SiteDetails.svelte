@@ -2,7 +2,7 @@
   import uses_links from '$root/tools.yml'
   import Icon from '@iconify/svelte'
   import { Tooltip } from 'svelte-zoo'
-  import { Contributor, Screenshot, type Site } from '.'
+  import { Person, Screenshot, type Site } from '.'
 
   export let site: Site
 
@@ -27,13 +27,18 @@
 <section>
   <h1>
     <a href={url}>{title}</a>
-    {#if site.repo}
-      <a href={site.repo}>
-        <small style="display: flex; gap: 6pt;">
-          <Icon icon="octicon:mark-github" color="white" />Repo
-        </small>
-      </a>
-    {/if}
+    <small style="display: flex; gap: 10pt; place-items: center;">
+      {#if site.repo}
+        <a href={site.repo}>
+          <Icon icon="octicon:mark-github" color="white" />
+        </a>
+      {/if}
+      {#if site.npm}
+        <a href={site.npm}>
+          <Icon icon="teenyicons:npm-solid" color="white" height="2.5ex" />
+        </a>
+      {/if}
+    </small>
   </h1>
 
   {#if site.description}
@@ -60,15 +65,15 @@
       {/if}
       {#if contributors.length > 1}
         <ol class="contributors">
-          {#each contributors as contributor}
+          {#each contributors as person}
             <li>
-              <Contributor {contributor} />
+              <Person {person} />
             </li>
           {/each}
         </ol>
       {:else}
         <span style="flex: 1" />
-        <Contributor contributor={contributors[0]} />
+        <Person person={contributors[0]} />
       {/if}
     </div>
   {/if}

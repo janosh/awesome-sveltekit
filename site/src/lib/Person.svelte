@@ -2,9 +2,9 @@
   import Icon from '@iconify/svelte'
   import type { Contributor } from '.'
 
-  export let contributor: Contributor
+  export let person: Contributor
 
-  $: ({ name, twitter, github, url, avatar } = contributor)
+  $: ({ name, twitter, github, url, avatar } = person)
 </script>
 
 <span>
