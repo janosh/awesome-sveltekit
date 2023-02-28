@@ -65,6 +65,7 @@ postcss: https://postcss.org
 pre-commit: https://pre-commit.com
 prism: https://prismjs.com
 rehype: https://github.com/rehypejs/rehype
+release it: https://github.com/release-it/release-it
 remark: https://github.com/remarkjs/remark
 sanitize-html: https://github.com/apostrophecms/sanitize-html
 sanity: https://sanity.io

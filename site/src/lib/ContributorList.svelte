@@ -49,4 +49,7 @@
     visibility: visible;
     opacity: 1;
   }
+  img:not(:hover) {
+    filter: grayscale(100%);
+  }
 </style>
