@@ -14,23 +14,23 @@
   repo: https://github.com/sveltejs/svelte
   # Sapper to SvelteKit migration in https://git.io/JXSh1
   site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
+  npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
   tags: [docs, monorepo, dev tools, blog, REPL, NPM package]
   date_created: 2021-10-19 # https://git.io/JXShN
   date_added: 2021-11-11
-  last_updated: 2021-11-11
 
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
   site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
+  npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses: [Netlify, PNPM]
   tags: [docs, monorepo, NPM package]
   date_created: 2021-03-10 # https://git.io/JcQYo
   date_added: 2021-05-25
-  last_updated: 2021-05-25
 
 - title: SK Incognito
   url: https://sk-incognito.vercel.app
@@ -40,7 +40,6 @@
   tags: [docs, Vercel]
   date_created: 2021-02-15
   date_added: 2021-05-25
-  last_updated: 2021-05-25
 
 - title: TikZ
   url: https://janosh.github.io/tikz
@@ -50,7 +49,6 @@
   uses: [TypeScript, svelte-multiselect, pre-commit, PNPM, GitHub Pages]
   date_created: 2020-08-09
   date_added: 2021-05-25
-  last_updated: 2022-05-10
 
 - title: markushatvan.com
   url: https://markushatvan.com
@@ -59,7 +57,6 @@
   tags: [blog, rss, sitemap]
   date_created: 2020-08-21
   date_added: 2021-05-25
-  last_updated: 2021-05-25
 
 - title: Studenten bilden Schüler
   url: https://studenten-bilden-schueler.de
@@ -80,7 +77,6 @@
   tags: [non-profit, volunteering, education, equality]
   date_created: 2020-12-12
   date_added: 2021-06-09
-  last_updated: 2022-05-19
 
 - title: Guess The Year
   url: https://guess-the-year.davjhan.com
@@ -92,7 +88,6 @@
   tags: [game]
   date_created: 2021-05-09
   date_added: 2021-05-25
-  last_updated: 2021-05-25
 
 - title: Gitpod
   url: https://gitpod.io
@@ -104,7 +99,6 @@
   tags: [commercial, dev tools, cloud computing]
   date_created: 2021-03-17
   date_added: 2021-05-31
-  last_updated: 2021-05-31
 
 - title: SvelteKit Experiments
   url: https://sveltekit-demo-psi.vercel.app
@@ -116,7 +110,6 @@
   tags: [sample applications, cloud computing]
   date_created: 2021-05-27
   date_added: 2021-06-09
-  last_updated: 2021-06-09
 
 - title: puruvj.dev
   url: https://puruvj.dev
@@ -126,7 +119,6 @@
   tags: [blog]
   date_created: 2021-05-06
   date_added: 2021-06-11
-  last_updated: 2021-06-11
 
 - title: GraphCMS Starter Blog
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
@@ -136,7 +128,6 @@
   tags: [blog]
   date_created: 2021-05-16
   date_added: 2021-06-14
-  last_updated: 2021-06-14
 
 - title: Beatbump
   url: https://beatbump.ml
@@ -146,7 +137,6 @@
   tags: [blog]
   date_created: 2021-06-17
   date_added: 2021-07-08
-  last_updated: 2021-07-08
 
 - title: Paper Trader Game
   url: https://paper-trader.davjhan.com
@@ -158,17 +148,6 @@
   uses: [Tailwind, Netlify, Chart.js, Plausible]
   date_created: 2021-07-25
   date_added: 2021-08-01
-  last_updated: 2021-08-01
-
-- title: SveltePress
-  url: https://sveltepress.geopjr.dev
-  repo: https://github.com/GeopJr/SveltePress
-  description: SvelteKit-powered doc site generator. Made for humans.
-  tags: [documentation, markdown, NPM package]
-  uses: [Netlify, MarkedJS, PNPM, SCSS, Dart, Pandoc]
-  date_created: 2021-07-09
-  date_added: 2021-08-10
-  last_updated: 2021-08-10
 
 - title: neovim craft
   url: https://neovimcraft.com
@@ -178,7 +157,6 @@
   uses: [TypeScript, Husky]
   date_created: 2021-07-18
   date_added: 2021-08-13
-  last_updated: 2021-08-13
 
 - title: swyxkit
   url: https://swyxkit.netlify.app
@@ -188,7 +166,6 @@
   uses: [Tailwind, Netlify]
   date_created: 2020-09-11
   date_added: 2021-09-01
-  last_updated: 2021-09-01
 
 - title: Svelte Society
   url: https://sveltesociety.dev
@@ -198,7 +175,6 @@
   uses: [TypeScript, Gitpod]
   date_created: 2020-05-03
   date_added: 2021-10-01
-  last_updated: 2020-10-01
 
 - title: Flayks
   url: https://flayks.com
@@ -209,7 +185,6 @@
   uses: [Sanity, anime.js, Vercel, TypeScript, SCSS, PostCSS]
   date_created: 2021-10-01
   date_added: 2021-10-01
-  last_updated: 2021-10-01
 
 - title: Matt Fantinel
   url: https://fantinel.dev
@@ -219,7 +194,6 @@
   tags: [personal, blog, portfolio, SCSS, MDsveX]
   date_created: 2021-09-07
   date_added: 2021-10-01
-  last_updated: 2021-09-15
 
 - title: Level Up Tutorials
   url: https://leveluptutorials.com
@@ -228,7 +202,6 @@
   tags: [tutorials, education, videos, web development, design]
   date_created: 2021-09-01
   date_added: 2021-10-5
-  last_updated: 2021-10-05
 
 - title: JSchallenger
   url: https://jschallenger.com
@@ -237,7 +210,6 @@
   tags: [education, coding challenges, JavaScript]
   date_created: 2021-10-09
   date_added: 2021-10-9
-  last_updated: 2021-10-09
 
 - title: Files
   url: https://files.community
@@ -247,7 +219,6 @@
   tags: [education, coding challenges, JavaScript]
   date_created: 2021-05-20
   date_added: 2021-10-11
-  last_updated: 2021-10-11
 
 - title: Svelte Summit Fall 2021
   url: https://sveltesummit.com
@@ -257,7 +228,6 @@
   tags: [conference, community event, learning, news]
   date_created: 2021-07-25
   date_added: 2021-10-12
-  last_updated: 2021-10-12
 
 - title: cybernetic.dev
   url: https://cybernetic.dev
@@ -266,7 +236,6 @@
   tags: [data viz, statistics, machine learning]
   date_created: 2021-01-01
   date_added: 2021-10-19
-  last_updated: 2021-10-17
 
 - title: Kudadam.com
   url: https://kudadam.com
@@ -276,7 +245,6 @@
   tags: [blog, rss, personal, portfolio, sitemap]
   date_created: 2021-05-15
   date_added: 2021-10-26
-  last_updated: 2021-10-26
 
 - title: digital criticism
   url: https://critique-digitale.ch
@@ -286,7 +254,6 @@
   tags: [education, conference, community event, learning]
   date_created: 2021-07-06
   date_added: 2021-10-28
-  last_updated: 2021-10-23
 
 - title: The Pudding
   url: https://pudding.cool
@@ -296,7 +263,6 @@
   tags: [digital publishing, data viz, education]
   date_created: 2021-09-03
   date_added: 2021-11-01
-  last_updated: 2021-11-01
 
 - title: BrittneyPostma.com
   url: https://brittneypostma.com
@@ -306,7 +272,6 @@
   tags: [portfolio, playful, animations]
   date_created: 2020-08-15
   date_added: 2021-11-01
-  last_updated: 2021-08-15
 
 - title: Urara
   url: https://urara-demo.netlify.app
@@ -316,7 +281,6 @@
   tags: [blog, template]
   date_created: 2021-11-01
   date_added: 2021-11-05
-  last_updated: 2021-11-05
 
 - title: connorrothschild.com
   url: https://connorrothschild.com
@@ -326,7 +290,6 @@
   tags: [blog, portfolio, animations]
   date_created: 2021-12-10
   date_added: 2021-12-11
-  last_updated: 2021-12-10
 
 - title: Svelte Cubed
   url: https://svelte-cubed.vercel.app
@@ -336,7 +299,6 @@
   tags: [components, library, animations, interactive]
   date_created: 2021-05-18
   date_added: 2021-12-19
-  last_updated: 2021-12-19
 
 - title: Multi-Monitor Calculator
   url: https://multimonitorcalculator.com
@@ -346,7 +308,6 @@
   tags: [interactive, 3d, calculator, monitor]
   date_created: 2018-06-08
   date_added: 2022-01-01
-  last_updated: 2022-01-01
 
 - title: Modern Fluid Typography Editor
   url: https://modern-fluid-typography.vercel.app
@@ -356,7 +317,6 @@
   tags: [developer tool, design, frontend, typography]
   date_created: 2021-11-29
   date_added: 2022-01-04
-  last_updated: 2022-01-04
 
 - title: mermaid-live-editor
   url: https://mermaid.live
@@ -366,7 +326,6 @@
   tags: [developer tool, diagrams, charts, graphics]
   date_created: 2019-11-13
   date_added: 2022-02-05
-  last_updated: 2022-02-05
 
 - title: svelte-realworld
   url: https://realworld.svelte.dev
@@ -376,7 +335,6 @@
   tags: [demo, performance, benchmark]
   date_created: 2017-04-20
   date_added: 2022-02-06
-  last_updated: 2022-02-06
 
 - title: macos-web
   url: https://macos-web.app
@@ -386,7 +344,6 @@
   tags: [demo, proof of concept, learning]
   date_created: 2021-08-12
   date_added: 2022-02-06
-  last_updated: 2022-02-06
 
 - title: inlang dashboard
   url: https://inlang.dev
@@ -397,7 +354,6 @@
   tags: [front-end, developer tool, localization, i18n]
   date_created: 2021-08-04
   date_added: 2022-02-23
-  last_updated: 2022-02-23
 
 - title: Houdini GraphQL
   url: https://houdinigraphql.com
@@ -407,7 +363,6 @@
   tags: [graphql, data fetching, front-end, developer tool, minimal]
   date_created: 2021-01-19
   date_added: 2022-03-22
-  last_updated: 2022-03-22
 
 - title: ConcertMash
   url: https://concertmash.com
@@ -417,7 +372,6 @@
   tags: [music, playlist-generator]
   date_created: 2022-03-15
   date_added: 2022-03-24
-  last_updated: 2022-03-24
 
 - title: Layer Cake
   url: https://layercake.graphics
@@ -429,7 +383,6 @@
   tags: [charts, dataviz, graphics, layers, canvas, WebGL]
   date_created: 2018-10-18
   date_added: 2022-03-24
-  last_updated: 2022-03-24
 
 - title: Pancake
   url: https://pancake-charts.surge.sh
@@ -442,7 +395,6 @@
   tags: [charts, dataviz, graphics, canvas, WebGL]
   date_created: 2019-10-01
   date_added: 2022-04-05
-  last_updated: 2022-04-05
 
 - title: Svelte Headless UI
   url: https://svelte-headlessui.goss.io
@@ -452,18 +404,17 @@
   tags: [component library, a11y]
   date_created: 2021-12-05
   date_added: 2022-04-14
-  last_updated: 2022-04-14
 
 - title: Svelte Material UI
   url: https://sveltematerialui.com
   repo: https://github.com/hperrin/svelte-material-ui
   site_src: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  npm: https://npmjs.com/package/svelte-material-ui
   description: Svelte Material UI Components.
   uses: [MDsveX, TypeScript, highlight.js, remark, Sass]
-  tags: [material design, component library]
+  tags: [material design, component library, NPM package]
   date_created: 2019-07-17
   date_added: 2022-04-16
-  last_updated: 2022-04-16
 
 - title: Fluent Svelte
   url: https://fluent-svelte.vercel.app
@@ -473,7 +424,6 @@
   tags: [windows ui, component library, design system]
   date_created: 2021-06-05
   date_added: 2022-04-24
-  last_updated: 2022-04-24
 
 - title: SvelteKit on Edge
   url: https://sveltekit-on-the-edge.vercel.app
@@ -485,7 +435,6 @@
   tags: [speed, caching, deployment]
   date_created: 2022-04-20
   date_added: 2022-04-24
-  last_updated: 2022-04-24
 
 - title: evidence
   url: https://evidence.dev
@@ -496,7 +445,6 @@
   tags: [analytics, business-intelligence, sql, markdown, data viz, charts]
   date_created: 2021-05-27
   date_added: 2022-05-01
-  last_updated: 2022-05-01
 
 - title: Coolify
   url: https://coolify.io
@@ -506,7 +454,6 @@
   tags: [self-hosting, deployment, sql, docker, redis, mongodb, databases]
   date_created: 2021-03-24
   date_added: 2022-05-10
-  last_updated: 2022-05-10
 
 - title: Flowbite
   url: https://flowbite-svelte.com
@@ -516,7 +463,6 @@
   tags: [component library, forms, modals, spinners, dark-mode, toast]
   date_created: 2022-01-24
   date_added: 2022-05-19
-  last_updated: 2022-05-19
 
 - title: Good First Issue Finder
   url: https://finder.eddiehub.io
@@ -526,11 +472,11 @@
   tags: [oss, community, developer guide]
   date_created: 2022-01-20
   date_added: 2022-05-19
-  last_updated: 2022-05-19
 
 - title: Elementari
   url: https://janosh.github.io/elementari
   repo: https://github.com/janosh/elementari
+  npm: https://npmjs.com/package/elementari
   description: Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
   uses:
     - TypeScript
@@ -545,7 +491,6 @@
   tags: [chemistry, science, data viz, plotting, NPM package]
   date_created: 2022-05-31
   date_added: 2022-06-02
-  last_updated: 2022-06-02
 
 - title: Pixel Art Together
   url: https://pixelart.liveblocks.app
@@ -555,7 +500,6 @@
   tags: [art, drawing, multiplayer, collaboration]
   date_created: 2022-02-17
   date_added: 2022-06-02
-  last_updated: 2022-06-02
 
 - title: Sveltestrap
   url: https://sveltestrap.js.org
@@ -565,7 +509,6 @@
   tags: [component library]
   date_created: 2017-03-19
   date_added: 2022-06-02
-  last_updated: 2022-06-02
 
 - title: Svelvet
   url: https://svelvet.io
@@ -575,7 +518,6 @@
   tags: [flow diagrams, dev tool, component library, visualization]
   date_created: 2022-05-06
   date_added: 2022-06-02
-  last_updated: 2022-06-02
 
 - title: Cryptgeon
   url: https://cryptgeon.nicco.io
@@ -586,7 +528,6 @@
   tags: [file sharing, note sharing, secure notes, privacy, data protection]
   date_created: 2021-05-01
   date_added: 2022-06-09
-  last_updated: 2022-06-09
 
 - title: Svelte Intl Precompile
   # weird url as temp fix for https://github.com/cibernox/svelte-intl-precompile/issues/58
@@ -599,7 +540,6 @@
   tags: [i18n, translation, internationalization, localization]
   date_created: 2021-04-15
   date_added: 2022-06-09
-  last_updated: 2022-06-09
 
 - title: Windmill
   url: https://windmill.dev
@@ -619,7 +559,6 @@
   tags: [automation, dev tools, python, scripting, self-hostable]
   date_created: 2022-05-05
   date_added: 2022-06-17
-  last_updated: 2022-06-17
 
 - title: Threlte
   url: https://threlte.xyz
@@ -632,7 +571,6 @@
   tags: [component library, data viz, docs, monorepo, interactive]
   date_created: 2022-01-15
   date_added: 2022-07-17
-  last_updated: 2022-07-17
 
 - title: svelte-french-toast
   url: https://svelte-french-toast.com
@@ -642,7 +580,6 @@
   tags: [toast, notifications, snackbar]
   date_created: 2022-06-04
   date_added: 2022-07-24
-  last_updated: 2022-07-24
 
 - title: Hexapipes
   url: https://hexapipes.vercel.app
@@ -652,7 +589,6 @@
   tags: [game]
   date_created: 2022-06-25
   date_added: 2022-07-28
-  last_updated: 2022-07-28
 
 - title: KitCommerce
   url: https://kitcommerce.tech
@@ -665,7 +601,6 @@
   tags: [commerce, shopping, login, store]
   date_created: 2020-04-27
   date_added: 2022-08-23
-  last_updated: 2022-08-23
 
 - title: Joy of Code
   url: https://joyofcode.xyz
@@ -686,7 +621,6 @@
   tags: [blog, community, cms]
   date_created: 2020-10-19
   date_added: 2022-08-31
-  last_updated: 2022-08-31
 
 - title: QWER
   url: https://svelte-qwer.vercel.app
@@ -696,7 +630,6 @@
   tags: [blog, template]
   date_created: 2022-06-28
   date_added: 2022-09-04
-  last_updated: 2022-09-04
 
 - title: StemRoller
   url: https://stemroller.com
@@ -706,7 +639,6 @@
   tags: [desktop app, music, machine learning, deep learning]
   date_created: 2022-07-10
   date_added: 2022-09-07
-  last_updated: 2022-09-07
 
 - title: Houses of World
   url: https://housesof.world
@@ -731,7 +663,6 @@
     - graphic design
   date_created: 2022-09-27
   date_added: 2022-09-30
-  last_updated: 2022-09-30
 
 - title: omnia-editor
   url: https://omnia-editor.vercel.app
@@ -741,7 +672,6 @@
   tags: [writing, editor, html, wysiwyg]
   date_created: 2020-03-05
   date_added: 2022-10-16
-  last_updated: 2022-10-16
 
 - title: Skeleton
   url: https://skeleton.dev
@@ -751,12 +681,12 @@
   tags: [component library]
   date_created: 2022-02-23
   date_added: 2022-10-30
-  last_updated: 2022-10-30
 
 - title: Svelte MultiSelect
   url: https://janosh.github.io/svelte-multiselect
   repo: https://github.com/janosh/svelte-multiselect
   description: Keyboard-friendly, accessible and highly customizable multi-select component.
+  npm: https://npmjs.com/package/svelte-multiselect
   uses:
     - Vitest
     - Playwright
@@ -770,7 +700,6 @@
   tags: [forms, select component, interactive, NPM package]
   date_created: 2021-05-07
   date_added: 2022-10-30
-  last_updated: 2022-10-30
 
 - title: Fireship
   url: https://fireship.io
@@ -782,7 +711,6 @@
   tags: [education, tutorials, web dev]
   date_created: 2019-01-07
   date_added: 2022-11-19
-  last_updated: 2022-11-19
 
 - title: Intl Explorer
   url: https://intl-explorer.com
@@ -793,7 +721,6 @@
   tags: [education, tutorials, web dev, interactive, playground]
   date_created: 2021-12-02
   date_added: 2022-11-27
-  last_updated: 2022-11-27
 
 - title: SvelteKit Embed
   url: https://sveltekit-embed.vercel.app
@@ -814,7 +741,6 @@
   tags: [component library]
   date_created: 2021-07-17
   date_added: 2022-12-09
-  last_updated: 2022-12-09
 
 - title: SvelteKit static blog starter
   url: https://sveltekit-static-starter.netlify.app
@@ -826,7 +752,6 @@
   tags: [blog starter, sass, markdown, mdsvex, page transitions, seo, rss]
   date_created: 2021-11-02
   date_added: 2023-01-11
-  last_updated: 2023-01-11
 
 - title: svelte-put
   url: https://svelte-put.vnphanquang.com
@@ -836,7 +761,6 @@
   tags: [preprocessor, actions, component library]
   date_created: 2022-05-12
   date_added: 2023-01-14
-  last_updated: 2023-01-14
 
 - title: sveltekit-mdsvex-blog
   url: https://sveltekit-mdsvex-blog.netlify.app
@@ -846,7 +770,6 @@
   tags: [blog, markdown, template, starter]
   date_created: 2021-05-08
   date_added: 2023-01-15
-  last_updated: 2023-01-15
 
 - title: sveltekit-typescript-showcase
   url: https://github.com/ivanhofer/sveltekit-typescript-showcase
@@ -856,14 +779,13 @@
   tags: [showcase, tutorial, learning]
   date_created: 2022-03-07
   date_added: 2023-02-24
-  last_updated: 2023-02-24
 
 - title: svelte-command-palette
   url: https://svelte-command-palette.vercel.app
   repo: https://github.com/rohitpotato/svelte-command-palette
+  npm: https://npmjs.com/package/svelte-command-palette
   description: Dead simple command palette with fuzzy search.
   uses: [TypeScript, Playwright, PostCSS, Tailwind, Release It, Vercel]
-  tags: [cmd-palette, package]
+  tags: [cmd-palette, NPM package]
   date_created: 2022-06-17
   date_added: 2023-02-27
-  last_updated: 2023-02-27

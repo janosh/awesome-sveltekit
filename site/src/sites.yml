@@ -4,6 +4,7 @@
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
   site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
+  npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses:
     - CodeMirror
@@ -19,7 +20,6 @@
     - REPL
   date_created: 2021-10-19T00:00:00.000Z
   date_added: 2021-11-11T00:00:00.000Z
-  last_updated: 2021-11-11T00:00:00.000Z
   slug: svelte.dev
   repo_stars: 65951
   contributors:
@@ -62,6 +62,7 @@
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
   site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
+  npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses:
     - Netlify
@@ -73,7 +74,6 @@
     - open source
   date_created: 2021-03-10T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
-  last_updated: 2021-05-25T00:00:00.000Z
   slug: official-sveltekit-docs
   repo_stars: 13641
   contributors:
@@ -126,7 +126,6 @@
     - Vercel
   date_created: 2021-02-15T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
-  last_updated: 2021-05-25T00:00:00.000Z
   slug: sk-incognito
   repo_stars: 92
   contributors:
@@ -158,7 +157,6 @@
     - GitHub Pages
   date_created: 2020-08-09T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
-  last_updated: 2022-05-10T00:00:00.000Z
   slug: tikz
   repo_stars: 112
   contributors:
@@ -184,7 +182,6 @@
     - sitemap
   date_created: 2020-08-21T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
-  last_updated: 2021-05-25T00:00:00.000Z
   slug: markushatvan.com
   repo_stars: 82
   contributors:
@@ -219,7 +216,6 @@
     - volunteering
   date_created: 2020-12-12T00:00:00.000Z
   date_added: 2021-06-09T00:00:00.000Z
-  last_updated: 2022-05-19T00:00:00.000Z
   slug: studenten-bilden-schüler
   repo_stars: 11
   contributors:
@@ -245,7 +241,6 @@
     - open source
   date_created: 2021-05-09T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
-  last_updated: 2021-05-25T00:00:00.000Z
   slug: guess-the-year
   repo_stars: 29
   contributors: []
@@ -266,7 +261,6 @@
     - open source
   date_created: 2021-03-17T00:00:00.000Z
   date_added: 2021-05-31T00:00:00.000Z
-  last_updated: 2021-05-31T00:00:00.000Z
   slug: gitpod
   repo_stars: 289
   contributors:
@@ -324,7 +318,6 @@
     - sample applications
   date_created: 2021-05-27T00:00:00.000Z
   date_added: 2021-06-09T00:00:00.000Z
-  last_updated: 2021-06-09T00:00:00.000Z
   slug: sveltekit-experiments
   repo_stars: 71
   contributors:
@@ -349,7 +342,6 @@
     - open source
   date_created: 2021-05-06T00:00:00.000Z
   date_added: 2021-06-11T00:00:00.000Z
-  last_updated: 2021-06-11T00:00:00.000Z
   slug: puruvj.dev
   repo_stars: 14
   contributors:
@@ -374,7 +366,6 @@
     - open source
   date_created: 2021-05-16T00:00:00.000Z
   date_added: 2021-06-14T00:00:00.000Z
-  last_updated: 2021-06-14T00:00:00.000Z
   slug: graphcms-starter-blog
   repo_stars: 8
   contributors:
@@ -405,7 +396,6 @@
     - open source
   date_created: 2021-06-17T00:00:00.000Z
   date_added: 2021-07-08T00:00:00.000Z
-  last_updated: 2021-07-08T00:00:00.000Z
   slug: beatbump
   repo_stars: 617
   contributors:
@@ -433,7 +423,6 @@
     - Plausible
   date_created: 2021-07-25T00:00:00.000Z
   date_added: 2021-08-01T00:00:00.000Z
-  last_updated: 2021-08-01T00:00:00.000Z
   slug: paper-trader-game
   repo_stars: 90
   contributors:
@@ -444,35 +433,6 @@
       name: David Han
       location: Seattle
       company: Doordash
-- title: SveltePress
-  url: https://sveltepress.geopjr.dev
-  repo: https://github.com/GeopJr/SveltePress
-  description: SvelteKit-powered doc site generator. Made for humans.
-  tags:
-    - documentation
-    - markdown
-    - NPM package
-    - open source
-  uses:
-    - Netlify
-    - MarkedJS
-    - PNPM
-    - SCSS
-    - Dart
-    - Pandoc
-  date_created: 2021-07-09T00:00:00.000Z
-  date_added: 2021-08-10T00:00:00.000Z
-  last_updated: 2021-08-10T00:00:00.000Z
-  slug: sveltepress
-  repo_stars: 209
-  contributors:
-    - github: GeopJr
-      twitter: null
-      url: https://geopjr.dev
-      avatar: https://avatars.githubusercontent.com/u/18014039?v=4
-      name: null
-      location: Greece
-      company: null
 - title: neovim craft
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
@@ -486,7 +446,6 @@
     - Husky
   date_created: 2021-07-18T00:00:00.000Z
   date_added: 2021-08-13T00:00:00.000Z
-  last_updated: 2021-08-13T00:00:00.000Z
   slug: neovim-craft
   repo_stars: 188
   contributors:
@@ -513,7 +472,6 @@
     - Netlify
   date_created: 2020-09-11T00:00:00.000Z
   date_added: 2021-09-01T00:00:00.000Z
-  last_updated: 2021-09-01T00:00:00.000Z
   slug: swyxkit
   repo_stars: 538
   contributors:
@@ -539,7 +497,6 @@
     - Gitpod
   date_created: 2020-05-03T00:00:00.000Z
   date_added: 2021-10-01T00:00:00.000Z
-  last_updated: 2020-10-01T00:00:00.000Z
   slug: svelte-society
   repo_stars: 220
   contributors:
@@ -595,7 +552,6 @@
     - PostCSS
   date_created: 2021-10-01T00:00:00.000Z
   date_added: 2021-10-01T00:00:00.000Z
-  last_updated: 2021-10-01T00:00:00.000Z
   slug: flayks
 - title: Matt Fantinel
   url: https://fantinel.dev
@@ -615,7 +571,6 @@
     - SCSS
   date_created: 2021-09-07T00:00:00.000Z
   date_added: 2021-10-01T00:00:00.000Z
-  last_updated: 2021-09-15T00:00:00.000Z
   slug: matt-fantinel
   repo_stars: 219
   contributors:
@@ -640,7 +595,6 @@
     - design
   date_created: 2021-09-01T00:00:00.000Z
   date_added: 2021-10-5
-  last_updated: 2021-10-05T00:00:00.000Z
   slug: level-up-tutorials
 - title: JSchallenger
   url: https://jschallenger.com
@@ -657,7 +611,6 @@
     - JavaScript
   date_created: 2021-10-09T00:00:00.000Z
   date_added: 2021-10-9
-  last_updated: 2021-10-09T00:00:00.000Z
   slug: jschallenger
 - title: Files
   url: https://files.community
@@ -675,7 +628,6 @@
     - open source
   date_created: 2021-05-20T00:00:00.000Z
   date_added: 2021-10-11T00:00:00.000Z
-  last_updated: 2021-10-11T00:00:00.000Z
   slug: files
   repo_stars: 259
   contributors:
@@ -730,7 +682,6 @@
     - open source
   date_created: 2021-07-25T00:00:00.000Z
   date_added: 2021-10-12T00:00:00.000Z
-  last_updated: 2021-10-12T00:00:00.000Z
   slug: svelte-summit-fall-2021
   repo_stars: 8
   contributors:
@@ -761,7 +712,6 @@
     - machine learning
   date_created: 2021-01-01T00:00:00.000Z
   date_added: 2021-10-19T00:00:00.000Z
-  last_updated: 2021-10-17T00:00:00.000Z
   slug: cybernetic.dev
 - title: Kudadam.com
   url: https://kudadam.com
@@ -779,7 +729,6 @@
     - sitemap
   date_created: 2021-05-15T00:00:00.000Z
   date_added: 2021-10-26T00:00:00.000Z
-  last_updated: 2021-10-26T00:00:00.000Z
   slug: kudadam.com
   repo_stars: 10
   contributors:
@@ -806,7 +755,6 @@
     - open source
   date_created: 2021-07-06T00:00:00.000Z
   date_added: 2021-10-28T00:00:00.000Z
-  last_updated: 2021-10-23T00:00:00.000Z
   slug: digital-criticism
   repo_stars: 3
   contributors:
@@ -840,7 +788,6 @@
     - open source
   date_created: 2021-09-03T00:00:00.000Z
   date_added: 2021-11-01T00:00:00.000Z
-  last_updated: 2021-11-01T00:00:00.000Z
   slug: the-pudding
   repo_stars: 46
   contributors:
@@ -887,7 +834,6 @@
     - portfolio
   date_created: 2020-08-15T00:00:00.000Z
   date_added: 2021-11-01T00:00:00.000Z
-  last_updated: 2021-08-15T00:00:00.000Z
   slug: brittneypostma.com
   repo_stars: 1
   contributors:
@@ -915,7 +861,6 @@
     - template
   date_created: 2021-11-01T00:00:00.000Z
   date_added: 2021-11-05T00:00:00.000Z
-  last_updated: 2021-11-05T00:00:00.000Z
   slug: urara
   repo_stars: 327
   contributors:
@@ -941,7 +886,6 @@
     - portfolio
   date_created: 2021-12-10T00:00:00.000Z
   date_added: 2021-12-11T00:00:00.000Z
-  last_updated: 2021-12-10T00:00:00.000Z
   slug: connorrothschild.com
   repo_stars: 49
   contributors:
@@ -969,7 +913,6 @@
     - open source
   date_created: 2021-05-18T00:00:00.000Z
   date_added: 2021-12-19T00:00:00.000Z
-  last_updated: 2021-12-19T00:00:00.000Z
   slug: svelte-cubed
   repo_stars: 1127
   contributors:
@@ -996,7 +939,6 @@
     - open source
   date_created: 2018-06-08T00:00:00.000Z
   date_added: 2022-01-01T00:00:00.000Z
-  last_updated: 2022-01-01T00:00:00.000Z
   slug: multi-monitor-calculator
   repo_stars: 29
   contributors:
@@ -1026,7 +968,6 @@
     - typography
   date_created: 2021-11-29T00:00:00.000Z
   date_added: 2022-01-04T00:00:00.000Z
-  last_updated: 2022-01-04T00:00:00.000Z
   slug: modern-fluid-typography-editor
   repo_stars: 268
   contributors: []
@@ -1049,7 +990,6 @@
     - open source
   date_created: 2019-11-13T00:00:00.000Z
   date_added: 2022-02-05T00:00:00.000Z
-  last_updated: 2022-02-05T00:00:00.000Z
   slug: mermaid-live-editor
   repo_stars: 2124
   contributors:
@@ -1095,7 +1035,6 @@
     - performance
   date_created: 2017-04-20T00:00:00.000Z
   date_added: 2022-02-06T00:00:00.000Z
-  last_updated: 2022-02-06T00:00:00.000Z
   slug: svelte-realworld
   repo_stars: 1865
   contributors:
@@ -1144,7 +1083,6 @@
     - proof of concept
   date_created: 2021-08-12T00:00:00.000Z
   date_added: 2022-02-06T00:00:00.000Z
-  last_updated: 2022-02-06T00:00:00.000Z
   slug: macos-web
   repo_stars: 1723
   contributors:
@@ -1174,7 +1112,6 @@
     - open source
   date_created: 2021-08-04T00:00:00.000Z
   date_added: 2022-02-23T00:00:00.000Z
-  last_updated: 2022-02-23T00:00:00.000Z
   slug: inlang-dashboard
   repo_stars: 341
   contributors:
@@ -1231,7 +1168,6 @@
     - open source
   date_created: 2021-01-19T00:00:00.000Z
   date_added: 2022-03-22T00:00:00.000Z
-  last_updated: 2022-03-22T00:00:00.000Z
   slug: houdini-graphql
   repo_stars: 589
   contributors:
@@ -1275,7 +1211,6 @@
     - playlist-generator
   date_created: 2022-03-15T00:00:00.000Z
   date_added: 2022-03-24T00:00:00.000Z
-  last_updated: 2022-03-24T00:00:00.000Z
   slug: concertmash
   repo_stars: 7
   contributors:
@@ -1308,7 +1243,6 @@
     - WebGL
   date_created: 2018-10-18T00:00:00.000Z
   date_added: 2022-03-24T00:00:00.000Z
-  last_updated: 2022-03-24T00:00:00.000Z
   slug: layer-cake
   repo_stars: 785
   contributors:
@@ -1348,7 +1282,6 @@
     - WebGL
   date_created: 2019-10-01T00:00:00.000Z
   date_added: 2022-04-05T00:00:00.000Z
-  last_updated: 2022-04-05T00:00:00.000Z
   slug: pancake
   repo_stars: 1145
   contributors:
@@ -1377,7 +1310,6 @@
     - open source
   date_created: 2021-12-05T00:00:00.000Z
   date_added: 2022-04-14T00:00:00.000Z
-  last_updated: 2022-04-14T00:00:00.000Z
   slug: svelte-headless-ui
   repo_stars: 1327
   contributors:
@@ -1392,6 +1324,7 @@
   url: https://sveltematerialui.com
   repo: https://github.com/hperrin/svelte-material-ui
   site_src: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  npm: https://npmjs.com/package/svelte-material-ui
   description: Svelte Material UI Components.
   uses:
     - MDsveX
@@ -1402,10 +1335,10 @@
   tags:
     - component library
     - material design
+    - NPM package
     - open source
   date_created: 2019-07-17T00:00:00.000Z
   date_added: 2022-04-16T00:00:00.000Z
-  last_updated: 2022-04-16T00:00:00.000Z
   slug: svelte-material-ui
   repo_stars: 2870
   contributors:
@@ -1443,7 +1376,6 @@
     - windows ui
   date_created: 2021-06-05T00:00:00.000Z
   date_added: 2022-04-24T00:00:00.000Z
-  last_updated: 2022-04-24T00:00:00.000Z
   slug: fluent-svelte
   repo_stars: 437
   contributors:
@@ -1478,7 +1410,6 @@
     - speed
   date_created: 2022-04-20T00:00:00.000Z
   date_added: 2022-04-24T00:00:00.000Z
-  last_updated: 2022-04-24T00:00:00.000Z
   slug: sveltekit-on-edge
   repo_stars: 171
   contributors:
@@ -1511,7 +1442,6 @@
     - sql
   date_created: 2021-05-27T00:00:00.000Z
   date_added: 2022-05-01T00:00:00.000Z
-  last_updated: 2022-05-01T00:00:00.000Z
   slug: evidence
   repo_stars: 1011
   contributors:
@@ -1572,7 +1502,6 @@
     - sql
   date_created: 2021-03-24T00:00:00.000Z
   date_added: 2022-05-10T00:00:00.000Z
-  last_updated: 2022-05-10T00:00:00.000Z
   slug: coolify
   repo_stars: 6504
   contributors:
@@ -1635,7 +1564,6 @@
     - toast
   date_created: 2022-01-24T00:00:00.000Z
   date_added: 2022-05-19T00:00:00.000Z
-  last_updated: 2022-05-19T00:00:00.000Z
   slug: flowbite
   repo_stars: 638
   contributors:
@@ -1686,7 +1614,6 @@
     - oss
   date_created: 2022-01-20T00:00:00.000Z
   date_added: 2022-05-19T00:00:00.000Z
-  last_updated: 2022-05-19T00:00:00.000Z
   slug: good-first-issue-finder
   repo_stars: 292
   contributors:
@@ -1707,6 +1634,7 @@
 - title: Elementari
   url: https://janosh.github.io/elementari
   repo: https://github.com/janosh/elementari
+  npm: https://npmjs.com/package/elementari
   description: >-
     Interactive periodic table of elements written in Svelte. Supports plotting
     heat maps and hover data.
@@ -1729,7 +1657,6 @@
     - science
   date_created: 2022-05-31T00:00:00.000Z
   date_added: 2022-06-02T00:00:00.000Z
-  last_updated: 2022-06-02T00:00:00.000Z
   slug: elementari
   repo_stars: 54
   contributors:
@@ -1758,7 +1685,6 @@
     - open source
   date_created: 2022-02-17T00:00:00.000Z
   date_added: 2022-06-02T00:00:00.000Z
-  last_updated: 2022-06-02T00:00:00.000Z
   slug: pixel-art-together
   repo_stars: 170
   contributors:
@@ -1785,7 +1711,6 @@
     - open source
   date_created: 2017-03-19T00:00:00.000Z
   date_added: 2022-06-02T00:00:00.000Z
-  last_updated: 2022-06-02T00:00:00.000Z
   slug: sveltestrap
   repo_stars: 1154
   contributors:
@@ -1845,7 +1770,6 @@
     - visualization
   date_created: 2022-05-06T00:00:00.000Z
   date_added: 2022-06-02T00:00:00.000Z
-  last_updated: 2022-06-02T00:00:00.000Z
   slug: svelvet
   repo_stars: 1652
   contributors:
@@ -1903,7 +1827,6 @@
     - secure notes
   date_created: 2021-05-01T00:00:00.000Z
   date_added: 2022-06-09T00:00:00.000Z
-  last_updated: 2022-06-09T00:00:00.000Z
   slug: cryptgeon
   repo_stars: 475
   contributors:
@@ -1932,7 +1855,6 @@
     - translation
   date_created: 2021-04-15T00:00:00.000Z
   date_added: 2022-06-09T00:00:00.000Z
-  last_updated: 2022-06-09T00:00:00.000Z
   slug: svelte-intl-precompile
   repo_stars: 256
   contributors:
@@ -1967,7 +1889,6 @@
     - self-hostable
   date_created: 2022-05-05T00:00:00.000Z
   date_added: 2022-06-17T00:00:00.000Z
-  last_updated: 2022-06-17T00:00:00.000Z
   slug: windmill
   repo_stars: 1923
   contributors:
@@ -2029,7 +1950,6 @@
     - open source
   date_created: 2022-01-15T00:00:00.000Z
   date_added: 2022-07-17T00:00:00.000Z
-  last_updated: 2022-07-17T00:00:00.000Z
   slug: threlte
   repo_stars: 720
   contributors:
@@ -2080,7 +2000,6 @@
     - toast
   date_created: 2022-06-04T00:00:00.000Z
   date_added: 2022-07-24T00:00:00.000Z
-  last_updated: 2022-07-24T00:00:00.000Z
   slug: svelte-french-toast
   repo_stars: 309
   contributors:
@@ -2104,7 +2023,6 @@
     - open source
   date_created: 2022-06-25T00:00:00.000Z
   date_added: 2022-07-28T00:00:00.000Z
-  last_updated: 2022-07-28T00:00:00.000Z
   slug: hexapipes
   repo_stars: 159
   contributors:
@@ -2139,7 +2057,6 @@
     - store
   date_created: 2020-04-27T00:00:00.000Z
   date_added: 2022-08-23T00:00:00.000Z
-  last_updated: 2022-08-23T00:00:00.000Z
   slug: kitcommerce
   repo_stars: 922
   contributors:
@@ -2180,7 +2097,6 @@
     - open source
   date_created: 2020-10-19T00:00:00.000Z
   date_added: 2022-08-31T00:00:00.000Z
-  last_updated: 2022-08-31T00:00:00.000Z
   slug: joy-of-code
   repo_stars: 185
   contributors:
@@ -2207,7 +2123,6 @@
     - template
   date_created: 2022-06-28T00:00:00.000Z
   date_added: 2022-09-04T00:00:00.000Z
-  last_updated: 2022-09-04T00:00:00.000Z
   slug: qwer
   repo_stars: 276
   contributors:
@@ -2236,7 +2151,6 @@
     - open source
   date_created: 2022-07-10T00:00:00.000Z
   date_added: 2022-09-07T00:00:00.000Z
-  last_updated: 2022-09-07T00:00:00.000Z
   slug: stemroller
   repo_stars: 1844
   contributors:
@@ -2272,7 +2186,6 @@
     - graphic design
   date_created: 2022-09-27T00:00:00.000Z
   date_added: 2022-09-30T00:00:00.000Z
-  last_updated: 2022-09-30T00:00:00.000Z
   slug: houses-of-world
 - title: omnia-editor
   url: https://omnia-editor.vercel.app
@@ -2289,7 +2202,6 @@
     - wysiwyg
   date_created: 2020-03-05T00:00:00.000Z
   date_added: 2022-10-16T00:00:00.000Z
-  last_updated: 2022-10-16T00:00:00.000Z
   slug: omnia-editor
   repo_stars: 18
   contributors:
@@ -2318,7 +2230,6 @@
     - open source
   date_created: 2022-02-23T00:00:00.000Z
   date_added: 2022-10-30T00:00:00.000Z
-  last_updated: 2022-10-30T00:00:00.000Z
   slug: skeleton
   repo_stars: 1317
   contributors:
@@ -2363,6 +2274,7 @@
   description: >-
     Keyboard-friendly, accessible and highly customizable multi-select
     component.
+  npm: https://npmjs.com/package/svelte-multiselect
   uses:
     - Vitest
     - Playwright
@@ -2381,7 +2293,6 @@
     - select component
   date_created: 2021-05-07T00:00:00.000Z
   date_added: 2022-10-30T00:00:00.000Z
-  last_updated: 2022-10-30T00:00:00.000Z
   slug: svelte-multiselect
   repo_stars: 148
   contributors:
@@ -2414,7 +2325,6 @@
     - web dev
   date_created: 2019-01-07T00:00:00.000Z
   date_added: 2022-11-19T00:00:00.000Z
-  last_updated: 2022-11-19T00:00:00.000Z
   slug: fireship
   repo_stars: 2636
   contributors:
@@ -2462,7 +2372,6 @@
     - web dev
   date_created: 2021-12-02T00:00:00.000Z
   date_added: 2022-11-27T00:00:00.000Z
-  last_updated: 2022-11-27T00:00:00.000Z
   slug: intl-explorer
   repo_stars: 116
   contributors:
@@ -2494,7 +2403,6 @@
     - open source
   date_created: 2021-07-17T00:00:00.000Z
   date_added: 2022-12-09T00:00:00.000Z
-  last_updated: 2022-12-09T00:00:00.000Z
   slug: sveltekit-embed
   repo_stars: 125
   contributors:
@@ -2534,7 +2442,6 @@
     - seo
   date_created: 2021-11-02T00:00:00.000Z
   date_added: 2023-01-11T00:00:00.000Z
-  last_updated: 2023-01-11T00:00:00.000Z
   slug: sveltekit-static-blog-starter
   repo_stars: 192
   contributors:
@@ -2562,7 +2469,6 @@
     - preprocessor
   date_created: 2022-05-12T00:00:00.000Z
   date_added: 2023-01-14T00:00:00.000Z
-  last_updated: 2023-01-14T00:00:00.000Z
   slug: svelte-put
   repo_stars: 250
   contributors:
@@ -2593,7 +2499,6 @@
     - template
   date_created: 2021-05-08T00:00:00.000Z
   date_added: 2023-01-15T00:00:00.000Z
-  last_updated: 2023-01-15T00:00:00.000Z
   slug: sveltekit-mdsvex-blog
   repo_stars: 119
   contributors:
@@ -2619,7 +2524,6 @@
     - tutorial
   date_created: 2022-03-07T00:00:00.000Z
   date_added: 2023-02-24T00:00:00.000Z
-  last_updated: 2023-02-24T00:00:00.000Z
   slug: sveltekit-typescript-showcase
   repo_stars: 490
   contributors:
@@ -2633,6 +2537,7 @@
 - title: svelte-command-palette
   url: https://svelte-command-palette.vercel.app
   repo: https://github.com/rohitpotato/svelte-command-palette
+  npm: https://npmjs.com/package/svelte-command-palette
   description: Dead simple command palette with fuzzy search.
   uses:
     - TypeScript
@@ -2643,11 +2548,10 @@
     - Vercel
   tags:
     - cmd-palette
+    - NPM package
     - open source
-    - package
   date_created: 2022-06-17T00:00:00.000Z
   date_added: 2023-02-27T00:00:00.000Z
-  last_updated: 2023-02-27T00:00:00.000Z
   slug: svelte-command-palette
   repo_stars: 140
   contributors:

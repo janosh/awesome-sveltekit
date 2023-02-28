@@ -14,7 +14,6 @@ cypress: https://cypress.io
 cytoscape.js: https://js.cytoscape.org
 d3: https://d3js.org
 daisyui: https://daisyui.com
-dart: https://dart.dev
 directus: https://directus.io
 docker: https://docker.com
 dynamodb: https://aws.amazon.com/dynamodb
@@ -56,7 +55,6 @@ mvp.css: https://github.com/andybrewer/mvp
 netlify: https://netlify.com
 octokit: https://github.com/octokit/octokit.js
 ogl: https://github.com/oframe/ogl
-pandoc: https://pandoc.org
 panzoom: https://github.com/timmywil/panzoom
 plausible: https://plausible.io
 playwright: https://playwright.dev

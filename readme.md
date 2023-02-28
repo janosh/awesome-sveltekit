@@ -144,16 +144,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Tailwind], [Netlify], [Chart.js], [Plausible]
 
-1. **[SveltePress](https://sveltepress.geopjr.dev)**&ensp;
-   [[code](https://github.com/GeopJr/SveltePress)]&ensp;
-   <a href="https://github.com/GeopJr/SveltePress/stargazers">
-   <img src="https://img.shields.io/github/stars/GeopJr/SveltePress?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   SvelteKit-powered doc site generator. Made for humans.<br>
-
-   uses: [Netlify], [MarkedJS], [PNPM], [SCSS], [Dart], [Pandoc]
-
 1. **[neovim craft](https://neovimcraft.com)**&ensp;
    [[code](https://github.com/neurosnap/neovimcraft)]&ensp;
    <a href="https://github.com/neurosnap/neovimcraft/stargazers">
@@ -760,7 +750,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [cytoscape.js]: https://js.cytoscape.org
 [d3]: https://d3js.org
 [daisyui]: https://daisyui.com
-[dart]: https://dart.dev
 [directus]: https://directus.io
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
@@ -802,7 +791,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [netlify]: https://netlify.com
 [octokit]: https://github.com/octokit/octokit.js
 [ogl]: https://github.com/oframe/ogl
-[pandoc]: https://pandoc.org
 [panzoom]: https://github.com/timmywil/panzoom
 [plausible]: https://plausible.io
 [playwright]: https://playwright.dev
