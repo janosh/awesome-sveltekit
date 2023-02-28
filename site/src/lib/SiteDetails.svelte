@@ -2,7 +2,7 @@
   import uses_links from '$root/tools.yml'
   import Icon from '@iconify/svelte'
   import { Tooltip } from 'svelte-zoo'
-  import { Contributor, Screenshot, type Site } from '.'
+  import { Person, Screenshot, type Site } from '.'
 
   export let site: Site
 
@@ -60,15 +60,15 @@
       {/if}
       {#if contributors.length > 1}
         <ol class="contributors">
-          {#each contributors as contributor}
+          {#each contributors as person}
             <li>
-              <Contributor {contributor} />
+              <Person {person} />
             </li>
           {/each}
         </ol>
       {:else}
         <span style="flex: 1" />
-        <Contributor contributor={contributors[0]} />
+        <Person person={contributors[0]} />
       {/if}
     </div>
   {/if}
