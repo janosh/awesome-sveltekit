@@ -27,7 +27,9 @@ if (update_existing) console.log(`Updating all existing screenshots`)
 
 const [created, updated, skipped, existed] = [[], [], [], []]
 
-for (const [idx, site] of sites.entries()) {
+for (const [idx, site] of sites
+  .sort((s1, s2) => s1.title.localeCompare(s2.title))
+  .entries()) {
   site.slug = title_to_slug(site.title)
   const { slug } = site
 
