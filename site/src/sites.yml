@@ -444,35 +444,6 @@
       name: David Han
       location: Seattle
       company: Doordash
-- title: SveltePress
-  url: https://sveltepress.geopjr.dev
-  repo: https://github.com/GeopJr/SveltePress
-  description: SvelteKit-powered doc site generator. Made for humans.
-  tags:
-    - documentation
-    - markdown
-    - NPM package
-    - open source
-  uses:
-    - Netlify
-    - MarkedJS
-    - PNPM
-    - SCSS
-    - Dart
-    - Pandoc
-  date_created: 2021-07-09T00:00:00.000Z
-  date_added: 2021-08-10T00:00:00.000Z
-  last_updated: 2021-08-10T00:00:00.000Z
-  slug: sveltepress
-  repo_stars: 209
-  contributors:
-    - github: GeopJr
-      twitter: null
-      url: https://geopjr.dev
-      avatar: https://avatars.githubusercontent.com/u/18014039?v=4
-      name: null
-      location: Greece
-      company: null
 - title: neovim craft
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft

@@ -160,16 +160,6 @@
   date_added: 2021-08-01
   last_updated: 2021-08-01
 
-- title: SveltePress
-  url: https://sveltepress.geopjr.dev
-  repo: https://github.com/GeopJr/SveltePress
-  description: SvelteKit-powered doc site generator. Made for humans.
-  tags: [documentation, markdown, NPM package]
-  uses: [Netlify, MarkedJS, PNPM, SCSS, Dart, Pandoc]
-  date_created: 2021-07-09
-  date_added: 2021-08-10
-  last_updated: 2021-08-10
-
 - title: neovim craft
   url: https://neovimcraft.com
   repo: https://github.com/neurosnap/neovimcraft
