@@ -4,6 +4,7 @@
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
   site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
+  npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses:
     - CodeMirror
@@ -62,6 +63,7 @@
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
   site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
+  npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses:
     - Netlify
@@ -1363,6 +1365,7 @@
   url: https://sveltematerialui.com
   repo: https://github.com/hperrin/svelte-material-ui
   site_src: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  npm: https://npmjs.com/package/svelte-material-ui
   description: Svelte Material UI Components.
   uses:
     - MDsveX
@@ -1373,6 +1376,7 @@
   tags:
     - component library
     - material design
+    - NPM package
     - open source
   date_created: 2019-07-17T00:00:00.000Z
   date_added: 2022-04-16T00:00:00.000Z
@@ -1678,6 +1682,7 @@
 - title: Elementari
   url: https://janosh.github.io/elementari
   repo: https://github.com/janosh/elementari
+  npm: https://npmjs.com/package/elementari
   description: >-
     Interactive periodic table of elements written in Svelte. Supports plotting
     heat maps and hover data.
@@ -2334,6 +2339,7 @@
   description: >-
     Keyboard-friendly, accessible and highly customizable multi-select
     component.
+  npm: https://npmjs.com/package/svelte-multiselect
   uses:
     - Vitest
     - Playwright
@@ -2604,6 +2610,7 @@
 - title: svelte-command-palette
   url: https://svelte-command-palette.vercel.app
   repo: https://github.com/rohitpotato/svelte-command-palette
+  npm: https://npmjs.com/package/svelte-command-palette
   description: Dead simple command palette with fuzzy search.
   uses:
     - TypeScript
@@ -2614,8 +2621,8 @@
     - Vercel
   tags:
     - cmd-palette
+    - NPM package
     - open source
-    - package
   date_created: 2022-06-17T00:00:00.000Z
   date_added: 2023-02-27T00:00:00.000Z
   last_updated: 2023-02-27T00:00:00.000Z

@@ -27,13 +27,18 @@
 <section>
   <h1>
     <a href={url}>{title}</a>
-    {#if site.repo}
-      <a href={site.repo}>
-        <small style="display: flex; gap: 6pt;">
-          <Icon icon="octicon:mark-github" color="white" />Repo
-        </small>
-      </a>
-    {/if}
+    <small style="display: flex; gap: 10pt; place-items: center;">
+      {#if site.repo}
+        <a href={site.repo}>
+          <Icon icon="octicon:mark-github" color="white" />
+        </a>
+      {/if}
+      {#if site.npm}
+        <a href={site.npm}>
+          <Icon icon="teenyicons:npm-solid" color="white" height="2.5ex" />
+        </a>
+      {/if}
+    </small>
   </h1>
 
   {#if site.description}

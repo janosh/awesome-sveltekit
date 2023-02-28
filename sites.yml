@@ -14,6 +14,7 @@
   repo: https://github.com/sveltejs/svelte
   # Sapper to SvelteKit migration in https://git.io/JXSh1
   site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
+  npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
   tags: [docs, monorepo, dev tools, blog, REPL, NPM package]
@@ -25,6 +26,7 @@
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
   site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
+  npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses: [Netlify, PNPM]
   tags: [docs, monorepo, NPM package]
@@ -448,9 +450,10 @@
   url: https://sveltematerialui.com
   repo: https://github.com/hperrin/svelte-material-ui
   site_src: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  npm: https://npmjs.com/package/svelte-material-ui
   description: Svelte Material UI Components.
   uses: [MDsveX, TypeScript, highlight.js, remark, Sass]
-  tags: [material design, component library]
+  tags: [material design, component library, NPM package]
   date_created: 2019-07-17
   date_added: 2022-04-16
   last_updated: 2022-04-16
@@ -521,6 +524,7 @@
 - title: Elementari
   url: https://janosh.github.io/elementari
   repo: https://github.com/janosh/elementari
+  npm: https://npmjs.com/package/elementari
   description: Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
   uses:
     - TypeScript
@@ -747,6 +751,7 @@
   url: https://janosh.github.io/svelte-multiselect
   repo: https://github.com/janosh/svelte-multiselect
   description: Keyboard-friendly, accessible and highly customizable multi-select component.
+  npm: https://npmjs.com/package/svelte-multiselect
   uses:
     - Vitest
     - Playwright
@@ -851,9 +856,10 @@
 - title: svelte-command-palette
   url: https://svelte-command-palette.vercel.app
   repo: https://github.com/rohitpotato/svelte-command-palette
+  npm: https://npmjs.com/package/svelte-command-palette
   description: Dead simple command palette with fuzzy search.
   uses: [TypeScript, Playwright, PostCSS, Tailwind, Release It, Vercel]
-  tags: [cmd-palette, package]
+  tags: [cmd-palette, NPM package]
   date_created: 2022-06-17
   date_added: 2023-02-27
   last_updated: 2023-02-27

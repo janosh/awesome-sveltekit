@@ -13,6 +13,7 @@ export type Site = {
   slug: string
   description?: string
   repo?: string
+  npm?: string
   site_src?: string
   repo_stars?: number
   contributors: Contributor[]
