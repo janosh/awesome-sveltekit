@@ -734,6 +734,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript]
 
+1. **[svelte-command-palette](https://svelte-command-palette.vercel.app)**&ensp;
+   [[code](https://github.com/rohitpotato/svelte-command-palette)]&ensp;
+   <a href="https://github.com/rohitpotato/svelte-command-palette/stargazers">
+   <img src="https://img.shields.io/github/stars/rohitpotato/svelte-command-palette?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Dead simple command palette with fuzzy search.<br>
+
+   uses: [TypeScript], [Playwright], [PostCSS], [Tailwind], [Release It], [Vercel]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -801,6 +811,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [pre-commit]: https://pre-commit.com
 [prism]: https://prismjs.com
 [rehype]: https://github.com/rehypejs/rehype
+[release it]: https://github.com/release-it/release-it
 [remark]: https://github.com/remarkjs/remark
 [sanitize-html]: https://github.com/apostrophecms/sanitize-html
 [sanity]: https://sanity.io

@@ -857,3 +857,13 @@
   date_created: 2022-03-07
   date_added: 2023-02-24
   last_updated: 2023-02-24
+
+- title: svelte-command-palette
+  url: https://svelte-command-palette.vercel.app
+  repo: https://github.com/rohitpotato/svelte-command-palette
+  description: Dead simple command palette with fuzzy search.
+  uses: [TypeScript, Playwright, PostCSS, Tailwind, Release It, Vercel]
+  tags: [cmd-palette, package]
+  date_created: 2022-06-17
+  date_added: 2023-02-27
+  last_updated: 2023-02-27
