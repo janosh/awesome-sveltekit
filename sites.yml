@@ -789,3 +789,13 @@
   tags: [cmd-palette, NPM package]
   date_created: 2022-06-17
   date_added: 2023-02-27
+
+- title: svelte-legos
+  url: https://svelte-legos.singhalankur.com
+  repo: https://github.com/ankurrsinghal/svelte-legos
+  npm: https://npmjs.com/package/svelte-legos
+  description: A library of Svelte actions.
+  uses: [TypeScript, vitest, Tailwind, PostCSS, Prism]
+  tags: [component library, NPM package, actions]
+  date_created: 2023-02-21
+  date_added: 2023-03-06
