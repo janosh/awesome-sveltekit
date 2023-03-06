@@ -2562,3 +2562,31 @@
       name: Rohit Kashyap
       location: Bengaluru, India
       company: '@PlumHQ '
+- title: svelte-legos
+  url: https://svelte-legos.singhalankur.com
+  repo: https://github.com/ankurrsinghal/svelte-legos
+  npm: https://npmjs.com/package/svelte-legos
+  description: A library of Svelte actions.
+  uses:
+    - TypeScript
+    - vitest
+    - Tailwind
+    - PostCSS
+    - Prism
+  tags:
+    - actions
+    - component library
+    - NPM package
+    - open source
+  date_created: 2023-02-21T00:00:00.000Z
+  date_added: 2023-03-06T00:00:00.000Z
+  slug: svelte-legos
+  repo_stars: 28
+  contributors:
+    - github: ankurrsinghal
+      twitter: ankurpsinghal
+      url: https://singhalankur.com
+      avatar: https://avatars.githubusercontent.com/u/17961105?v=4
+      name: Ankur Singhal
+      location: null
+      company: null

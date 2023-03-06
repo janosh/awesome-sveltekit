@@ -734,6 +734,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Playwright], [PostCSS], [Tailwind], [Release It], [Vercel]
 
+1. **[svelte-legos](https://svelte-legos.singhalankur.com)**&ensp;
+   [[code](https://github.com/ankurrsinghal/svelte-legos)]&ensp;
+   <a href="https://github.com/ankurrsinghal/svelte-legos/stargazers">
+   <img src="https://img.shields.io/github/stars/ankurrsinghal/svelte-legos?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A library of Svelte actions.<br>
+
+   uses: [TypeScript], [vitest], [Tailwind], [PostCSS], [Prism]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
