@@ -13,7 +13,7 @@
   })
 </script>
 
-<CmdPalette {actions} />
+<CmdPalette {actions} placeholder="Go to..." />
 
 <svelte:window bind:innerWidth />
 

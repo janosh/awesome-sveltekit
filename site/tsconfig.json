@@ -4,7 +4,7 @@
     "strict": true,
     "module": "esnext",
     "target": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
 
     // To have warnings/errors of the Svelte compiler at the correct position,
     // enable source maps by default.

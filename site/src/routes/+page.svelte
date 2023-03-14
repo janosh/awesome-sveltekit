@@ -12,9 +12,8 @@
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import sites from '../sites.yml'
-  import type { PageData } from './$types'
 
-  export let data: PageData
+  export let data
 
   const tags = Object.entries(
     sites
