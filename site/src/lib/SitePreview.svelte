@@ -5,11 +5,12 @@
   import { filter_tags } from './stores'
 
   export let site: Site
-  export let idx = 0
-  export let tags = false
+  export let idx: number = 0
+  export let tags: boolean = false
+  export let style: string | null = null
 </script>
 
-<a href={site.slug}>
+<a href={site.slug} {style}>
   <Screenshot title={site.title} resolution=".small" style="cursor: pointer;" />
 </a>
 <div class="flex">

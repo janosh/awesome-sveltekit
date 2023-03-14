@@ -1,7 +1,6 @@
 export { default as ContributorList } from './ContributorList.svelte'
 export { default as Filters } from './Filters.svelte'
 export { default as Person } from './Person.svelte'
-export { default as PrevNextSite } from './PrevNextSite.svelte'
 export { default as Screenshot } from './Screenshot.svelte'
 export { default as SiteDetails } from './SiteDetails.svelte'
 export { default as SiteList } from './SiteList.svelte'

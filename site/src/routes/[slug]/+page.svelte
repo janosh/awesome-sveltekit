@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { PrevNextSite, SiteDetails } from '$lib'
+  import { SiteDetails, SitePreview } from '$lib'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
-  import type { PageData } from './$types'
+  import { PrevNext } from 'svelte-zoo'
 
-  export let data: PageData
+  export let data
 
   $: head_title = `${data.site.title} | Awesome SvelteKit`
   $: plain_description = data.site?.description?.replace(/<[^>]*>/g, ``)
@@ -27,7 +27,18 @@
 <main>
   <SiteDetails site={data.site} />
 </main>
-<PrevNextSite prev={data.prev} next={data.next} />
+<PrevNext items={data.sites?.map((site) => [site.slug, site])} current={data.slug}>
+  <svelte:fragment let:item let:kind>
+    <h3>
+      <a href={item.slug}>
+        {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
+      </a>
+    </h3>
+    <div style="max-width: 250px;">
+      <SitePreview site={item} />
+    </div>
+  </svelte:fragment>
+</PrevNext>
 
 <footer>
   Have a site you'd like to add to this
