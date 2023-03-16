@@ -11,7 +11,7 @@
   const titleToSlug = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
 
   const base = `https://raw.githubusercontent.com/janosh/awesome-sveltekit/main/site/static`
-  $: src = `${dev ? `` : base}/screenshots/${titleToSlug(title)}${resolution}.webp`
+  $: src = `${dev ? `` : base}/screenshots/${titleToSlug(title)}${resolution}.avif`
 </script>
 
 <img {src} alt="Screenshot of {title}" {width} {height} on:click on:keyup {style} />

@@ -28,7 +28,7 @@ jobs:
           cache-dependency-path: site/package.json
 
       - name: Install dependencies
-        run: cd site && npm install --force
+        run: cd site && npm install
 
       - name: Build site
         run: cd site && npm run build

@@ -67,11 +67,11 @@ repos:
 
   - repo: local
     hooks:
-      - id: webp-screenshots
-        name: Screenshots must use WebP format
-        entry: screenshot filenames must end in .webp
+      - id: avif-screenshots
+        name: Screenshots must use AVIF format
+        entry: screenshot filenames must end in .avif
         language: fail
-        files: '^site/static/screenshots/.*(?<!\.webp)$'
+        files: '^site/static/screenshots/.*(?<!\.avif)$'
 
       - id: no-bracket-links
         name: 'Brackets should not be inside links [[link]](url) -> [[link](url)]'
@@ -91,7 +91,7 @@ repos:
         entry: '\S+\s{2,}'
         language: pygrep
         types: [text]
-        exclude_types: [javascript]
+        exclude_types: [javascript, ts]
 
       - id: format-urls
         name: Format URLs
