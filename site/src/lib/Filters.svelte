@@ -49,7 +49,7 @@
   </div>
   <div>
     <MultiSelect
-      options={[`Date created`, `Date last updated`, `GitHub repo stars`]}
+      options={[`Date created`, `GitHub repo stars`]}
       placeholder="Sort by..."
       maxSelect={1}
       bind:selected={$sort_by}

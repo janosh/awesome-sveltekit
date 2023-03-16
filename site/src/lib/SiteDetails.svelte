@@ -9,7 +9,7 @@
   $: ({ title, url, tags, uses, contributors, date_created, repo_stars } = site)
 
   $: days_since_created = Math.floor(
-    (Date.now() - new Date(date_created).getTime()) / (1000 * 60 * 60 * 24)
+    (Date.now() - date_created.getTime()) / (1000 * 60 * 60 * 24)
   )
 
   $: tools = uses.map((tool) => {
@@ -88,9 +88,9 @@
         style="--zoo-tooltip-bg: var(--sms-options-bg)"
       >
         {#if site.repo}
-          <a href="{site.repo}/network">{date_created}</a>
+          <a href="{site.repo}/network">{date_created.toISOString().split(`T`)[0]}</a>
         {:else}
-          {date_created}
+          {date_created.toISOString().split(`T`)[0]}
         {/if}
       </Tooltip>
     </p>
