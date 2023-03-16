@@ -4,7 +4,7 @@ import { pathToFileURL, URL } from 'url'
 export const root_dir = new URL(`../..`, import.meta.url).pathname
 const this_dir = new URL(`.`, import.meta.url).pathname
 
-export function title_to_slug(title) {
+export function title_to_slug(title: string): string {
   return title.toLowerCase().replaceAll(` `, `-`)
 }
 

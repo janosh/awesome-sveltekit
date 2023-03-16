@@ -2,18 +2,21 @@
 /* This file parses sites.yml, generates low+hi-res screenshots for each site,
 saves them as WebP to site/static/screenshots/ and compresses them. */
 
+import type { Site } from '$lib'
 import fs from 'fs'
 import yaml from 'js-yaml'
 import { basename } from 'path'
 import { performance } from 'perf_hooks'
 import puppeteer from 'puppeteer'
 import sharp from 'sharp'
-import { root_dir, title_to_slug } from './index.js'
+import { root_dir } from './index.ts'
 
 const start = performance.now()
 const screenshot_dir = `${root_dir}/site/static/screenshots`
 
-const sites = yaml.load(fs.readFileSync(`${root_dir}/sites.yml`))
+const sites = yaml
+  .load(fs.readFileSync(`${root_dir}site/src/sites.yml`))
+  .sort((s1, s2) => s1.title.localeCompare(s2.title)) as Site[]
 
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
@@ -37,10 +40,7 @@ console.log(
 
 const [created, updated, skipped, existed] = [[], [], [], []]
 
-for (const [idx, site] of sites
-  .sort((s1, s2) => s1.title.localeCompare(s2.title))
-  .entries()) {
-  site.slug = title_to_slug(site.title)
+for (const [idx, site] of sites.entries()) {
   const { slug } = site
 
   const img_path = `${screenshot_dir}/${slug}.avif`

@@ -2,6 +2,7 @@
 /* This file parses sites.yml, fetches GH metadata like contributors
 and stars for each site, then writes the results to site/src/sites.yml. */
 
+import type { Site } from '$lib'
 import dotenv from 'dotenv'
 import fs from 'fs'
 import yaml from 'js-yaml'
@@ -16,7 +17,7 @@ const in_path = `${root_dir}/sites.yml`
 const out_path = `${root_dir}/site/src/sites.yml`
 const update_existing = process.argv[2] === `update-existing`
 
-const sites = yaml.load(fs.readFileSync(in_path))
+const sites = yaml.load(fs.readFileSync(in_path)) as Site[]
 
 const old_sites = fs.existsSync(out_path)
   ? yaml.load(fs.readFileSync(out_path))
@@ -40,13 +41,13 @@ const headers = {
   authorization: `token ${process.env.GH_TOKEN}`,
 }
 
-async function fetch_check(url) {
+async function fetch_check(url: string) {
   const response = await fetch(url, { headers }).then((res) => res.json())
   if (response.message) throw new Error(response.message)
   return response
 }
 
-function https_url(url) {
+function https_url(url: string) {
   if (!url) return null
   if (url.startsWith(`http`)) return url.replace(`http://`, `https://`)
   return `https://${url}`

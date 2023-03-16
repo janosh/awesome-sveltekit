@@ -91,7 +91,7 @@ repos:
         entry: '\S+\s{2,}'
         language: pygrep
         types: [text]
-        exclude_types: [javascript]
+        exclude_types: [javascript, ts]
 
       - id: format-urls
         name: Format URLs

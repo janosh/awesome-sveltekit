@@ -2,10 +2,7 @@ import yaml from '@rollup/plugin-yaml'
 import { sveltekit } from '@sveltejs/kit/vite'
 import type { UserConfig } from 'vite'
 
-const run_script = process.argv.some((arg) => arg.startsWith(`screenshots:`))
-if (run_script) {
-  await import(`./scripts/screenshots.ts`)
-}
+await import(`./src/scripts/index.ts`)
 
 export default {
   plugins: [sveltekit(), yaml()],
