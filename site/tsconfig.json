@@ -10,7 +10,6 @@
     // enable source maps by default.
     "sourceMap": true,
 
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "forceConsistentCasingInFileNames": true
   }
 }

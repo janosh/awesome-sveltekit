@@ -2,6 +2,8 @@ import yaml from '@rollup/plugin-yaml'
 import { sveltekit } from '@sveltejs/kit/vite'
 import type { UserConfig } from 'vite'
 
+await import(`./src/scripts/index.ts`)
+
 export default {
   plugins: [sveltekit(), yaml()],
 
