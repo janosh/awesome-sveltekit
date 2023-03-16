@@ -73,13 +73,11 @@
     )
   } else if ($sort_by[0] === `Date created`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) =>
-        sort_factor * (+new Date(siteB.date_created) - +new Date(siteA.date_created))
+      (siteA, siteB) => sort_factor * (+siteB.date_created - +siteA.date_created)
     )
   } else if ($sort_by[0] === `Date last updated`) {
     $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) =>
-        sort_factor * (+new Date(siteB.last_updated) - +new Date(siteA.last_updated))
+      (siteA, siteB) => sort_factor * (+siteB.last_updated - +siteA.last_updated)
     )
   }
 
