@@ -799,10 +799,10 @@
   tags: [component library, NPM package, actions]
   date_created: 2023-02-21
   date_added: 2023-03-06
-  
+
 - title: PokeBook
-  url: https://book.pokeghost.org/
-  repo: https://github.com/pokegh0st/pokebook/
+  url: https://book.pokeghost.org
+  repo: https://github.com/pokegh0st/pokebook
   description: The ultimate digital notebook for writing poetry.
   uses: [Tailwind, Vercel]
   tags: [poetry, writing, editor, web dev, interactive]
