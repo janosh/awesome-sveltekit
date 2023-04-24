@@ -803,7 +803,7 @@
 - title: watch-this
   url: https://what-to-watch-roan.vercel.app
   repo: https://github.com/StephDietz/watch-this
-  description: |
+  description:
     Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
     recommendations based on user input.
   uses: [TypeScript, Vercel, Tailwind]
