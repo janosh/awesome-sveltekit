@@ -744,6 +744,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [vitest], [Tailwind], [PostCSS], [Prism]
 
+1. **[watch-this](https://what-to-watch-roan.vercel.app)**&ensp;
+   [[code](https://github.com/StephDietz/watch-this)]&ensp;
+   <a href="https://github.com/StephDietz/watch-this/stargazers">
+   <img src="https://img.shields.io/github/stars/StephDietz/watch-this?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema recommendations based on user input.<br>
+
+   uses: [TypeScript], [Vercel], [Tailwind]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com

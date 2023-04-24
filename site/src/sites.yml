@@ -2590,3 +2590,30 @@
       name: Ankur Singhal
       location: null
       company: null
+- title: watch-this
+  url: https://what-to-watch-roan.vercel.app
+  repo: https://github.com/StephDietz/watch-this
+  description: >-
+    Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
+    recommendations based on user input.
+  uses:
+    - TypeScript
+    - Vercel
+    - Tailwind
+  tags:
+    - content recommendation
+    - edge functions
+    - machine learning
+    - open source
+  date_created: 2023-01-26T00:00:00.000Z
+  date_added: 2023-03-25T00:00:00.000Z
+  slug: watch-this
+  repo_stars: 221
+  contributors:
+    - github: StephDietz
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/49788645?v=4
+      name: Stephanie Dietz
+      location: null
+      company: null
