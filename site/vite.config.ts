@@ -1,8 +1,26 @@
 import yaml from '@rollup/plugin-yaml'
 import { sveltekit } from '@sveltejs/kit/vite'
 import type { UserConfig } from 'vite'
+import {
+  action_types,
+  fetch_github_metadata,
+  make_screenshots,
+  update_readme,
+  type Action,
+} from './src/tasks'
 
-await import(`./src/scripts/index.ts`)
+const action = (process.env?.ACTION ?? `add-missing`) as Action
+if (!action_types.includes(action)) {
+  throw new Error(
+    `Correct usage: ACTION=${action_types.join(
+      `|`
+    )} vite dev, got ACTION=${action}\n`
+  )
+}
+
+update_readme()
+make_screenshots({ action })
+fetch_github_metadata({ action })
 
 export default {
   plugins: [sveltekit(), yaml()],

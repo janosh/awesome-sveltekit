@@ -294,7 +294,7 @@
 - title: Svelte Cubed
   url: https://svelte-cubed.vercel.app
   repo: https://github.com/Rich-Harris/svelte-cubed
-  description: Three.js component library for Svelte.
+  description: Three.js component library for Svelte. Abandoned. Check out [threlte](https://threlte.xyz) instead.
   uses: [TypeScript, PNPM, Vercel, MDsveX]
   tags: [components, library, animations, interactive]
   date_created: 2021-05-18
@@ -799,3 +799,14 @@
   tags: [component library, NPM package, actions]
   date_created: 2023-02-21
   date_added: 2023-03-06
+
+- title: watch-this
+  url: https://what-to-watch-roan.vercel.app
+  repo: https://github.com/StephDietz/watch-this
+  description:
+    Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
+    recommendations based on user input.
+  uses: [TypeScript, Vercel, Tailwind]
+  tags: [content recommendation, edge functions, machine learning]
+  date_created: 2023-01-26
+  date_added: 2023-03-25

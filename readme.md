@@ -294,7 +294,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    <img src="https://img.shields.io/github/stars/Rich-Harris/svelte-cubed?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   Three.js component library for Svelte.<br>
+   Three.js component library for Svelte. Abandoned. Check out [threlte](https://threlte.xyz) instead.<br>
 
    uses: [TypeScript], [PNPM], [Vercel], [MDsveX]
 
@@ -743,6 +743,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    A library of Svelte actions.<br>
 
    uses: [TypeScript], [vitest], [Tailwind], [PostCSS], [Prism]
+
+1. **[watch-this](https://what-to-watch-roan.vercel.app)**&ensp;
+   [[code](https://github.com/StephDietz/watch-this)]&ensp;
+   <a href="https://github.com/StephDietz/watch-this/stargazers">
+   <img src="https://img.shields.io/github/stars/StephDietz/watch-this?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema recommendations based on user input.<br>
+
+   uses: [TypeScript], [Vercel], [Tailwind]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
