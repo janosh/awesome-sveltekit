@@ -294,7 +294,7 @@
 - title: Svelte Cubed
   url: https://svelte-cubed.vercel.app
   repo: https://github.com/Rich-Harris/svelte-cubed
-  description: Three.js component library for Svelte.
+  description: Three.js component library for Svelte. Abandoned. Check out [threlte](https://threlte.xyz) instead.
   uses: [TypeScript, PNPM, Vercel, MDsveX]
   tags: [components, library, animations, interactive]
   date_created: 2021-05-18

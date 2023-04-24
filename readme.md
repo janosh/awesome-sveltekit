@@ -294,7 +294,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    <img src="https://img.shields.io/github/stars/Rich-Harris/svelte-cubed?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   Three.js component library for Svelte.<br>
+   Three.js component library for Svelte. Abandoned. Check out [threlte](https://threlte.xyz) instead.<br>
 
    uses: [TypeScript], [PNPM], [Vercel], [MDsveX]
 
