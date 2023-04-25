@@ -20,7 +20,7 @@ if (!action_types.includes(action)) {
 
 update_readme()
 make_screenshots({ action })
-fetch_github_metadata({ action })
+if (!process.env.CI) fetch_github_metadata({ action })
 
 export default {
   plugins: [sveltekit(), yaml()],

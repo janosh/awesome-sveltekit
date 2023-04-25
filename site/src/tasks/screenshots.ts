@@ -5,7 +5,6 @@ saves them as WebP to site/static/screenshots/ and compresses them. */
 import type { Site } from '$lib'
 import fs from 'fs'
 import yaml from 'js-yaml'
-import { basename } from 'path'
 import { performance } from 'perf_hooks'
 import puppeteer from 'puppeteer'
 import sharp from 'sharp'
@@ -86,7 +85,7 @@ export async function make_screenshots(options: { action?: Action } = {}) {
 
   const wall_time = ((performance.now() - start) / 1000).toFixed(2)
 
-  const this_file = basename(process.argv[1])
+  const this_file = import.meta.url.split(`/`).pop()
 
   if (created.length > 0 || updated.length > 0) {
     console.log(

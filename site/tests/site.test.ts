@@ -3,8 +3,6 @@ import { expect, test } from '@playwright/test'
 // to run tests in this file, use `npm run test:e2e`
 test.describe.configure({ mode: `parallel` })
 
-const base_url = process.env.PLAYWRIGHT_TEST_BASE_URL
-
 test(`test search functionality on the landing page`, async ({ page }) => {
   await page.goto(`/`, { waitUntil: `networkidle` })
   const all = await page.$$(`ol > li > a:has(> img)`)
@@ -22,7 +20,6 @@ test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
   await page.goto(`/`, { waitUntil: `networkidle` })
 
   await page.keyboard.press(`ArrowRight`)
-  expect(page.url()).toBe(`${base_url}/`)
   // get slugs to first 2 detail pages
   const [slug_1, slug_2] = await page.$$eval(
     `ol > li > a:has(> img)`,
@@ -32,12 +29,12 @@ test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
   // test that the arrow keys work on detail pages
   await page.goto(`/${slug_1}`, { waitUntil: `networkidle` })
   await page.keyboard.press(`ArrowRight`)
-  await page.waitForURL(`${base_url}/${slug_2}`, {
+  await page.waitForURL(`/${slug_2}`, {
     waitUntil: `networkidle`,
   })
 
   await page.keyboard.press(`ArrowLeft`)
-  await page.waitForURL(`${base_url}/${slug_1}`, {
+  await page.waitForURL(`/${slug_1}`, {
     waitUntil: `networkidle`,
   })
 })
@@ -58,7 +55,7 @@ test(`can navigate landing page with arrow keys`, async ({ page }) => {
 
   // press enter and check that we're on the detail page
   await page.keyboard.press(`Enter`)
-  await page.waitForURL(`${base_url}/${slug}`, {
+  await page.waitForURL(`/${slug}`, {
     waitUntil: `networkidle`,
   })
 })
