@@ -3,7 +3,6 @@
 
 import fs from 'fs'
 import yaml from 'js-yaml'
-import { basename } from 'path'
 
 export function update_readme() {
   const readme_path = `../readme.md`
@@ -59,6 +58,6 @@ export function update_readme() {
 
   fs.writeFileSync(readme_path, new_readme)
 
-  const this_file = basename(process.argv[1])
+  const this_file = import.meta.url.split(`/`).pop()
   console.log(`${this_file} updated readme\n`)
 }
