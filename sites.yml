@@ -237,15 +237,6 @@
   date_created: 2021-01-01
   date_added: 2021-10-19
 
-- title: Kudadam.com
-  url: https://kudadam.com
-  repo: https://github.com/kudadam/kudadam.com
-  description: Personal website and blog.
-  uses: [MDsveX, Tailwind]
-  tags: [blog, rss, personal, portfolio, sitemap]
-  date_created: 2021-05-15
-  date_added: 2021-10-26
-
 - title: digital criticism
   url: https://critique-digitale.ch
   repo: https://github.com/critique-digitale/critique-digitale.ch
@@ -262,15 +253,6 @@
   uses: [D3, PostCSS, Lodash, PNPM]
   tags: [digital publishing, data viz, education]
   date_created: 2021-09-03
-  date_added: 2021-11-01
-
-- title: BrittneyPostma.com
-  url: https://brittneypostma.com
-  repo: https://github.com/brittneypostma/brittneypostma.com
-  description: Landing page.
-  uses: [Netlify, service worker]
-  tags: [portfolio, playful, animations]
-  date_created: 2020-08-15
   date_added: 2021-11-01
 
 - title: Urara
@@ -345,8 +327,8 @@
   date_created: 2021-08-12
   date_added: 2022-02-06
 
-- title: inlang dashboard
-  url: https://inlang.dev
+- title: inlang
+  url: https://inlang.com
   repo: https://github.com/inlang/inlang
   site_src: https://github.com/inlang/inlang/tree/main/source-code/website
   description: Translate software products 2x faster.
@@ -590,8 +572,8 @@
   date_created: 2022-06-25
   date_added: 2022-07-28
 
-- title: KitCommerce
-  url: https://kitcommerce.tech
+- title: Svelte Commerce
+  url: https://demo.litekart.in
   repo: https://github.com/itswadesh/svelte-commerce
   description:
     Headless, Authentication, Cart & Checkout, TailwindCSS, Server Rendered, Proxy + API Integrated, Animations, Stores,
@@ -663,15 +645,6 @@
     - graphic design
   date_created: 2022-09-27
   date_added: 2022-09-30
-
-- title: omnia-editor
-  url: https://omnia-editor.vercel.app
-  repo: https://github.com/TorstenDittmann/omnia-editor
-  description: A lightweight open source block style editor built for the modern web.
-  uses: [Sass, TypeScript]
-  tags: [writing, editor, html, wysiwyg]
-  date_created: 2020-03-05
-  date_added: 2022-10-16
 
 - title: Skeleton
   url: https://skeleton.dev
