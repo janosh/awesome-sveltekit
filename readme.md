@@ -228,16 +228,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Three.js], [Cytoscape.js], [Vercel]
 
-1. **[Kudadam.com](https://kudadam.com)**&ensp;
-   [[code](https://github.com/kudadam/kudadam.com)]&ensp;
-   <a href="https://github.com/kudadam/kudadam.com/stargazers">
-   <img src="https://img.shields.io/github/stars/kudadam/kudadam.com?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Personal website and blog.<br>
-
-   uses: [MDsveX], [Tailwind]
-
 1. **[digital criticism](https://critique-digitale.ch)**&ensp;
    [[code](https://github.com/critique-digitale/critique-digitale.ch)]&ensp;
    <a href="https://github.com/critique-digitale/critique-digitale.ch/stargazers">
@@ -257,16 +247,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    Digital publication with emphasis on data viz.<br>
 
    uses: [D3], [PostCSS], [Lodash], [PNPM]
-
-1. **[BrittneyPostma.com](https://brittneypostma.com)**&ensp;
-   [[code](https://github.com/brittneypostma/brittneypostma.com)]&ensp;
-   <a href="https://github.com/brittneypostma/brittneypostma.com/stargazers">
-   <img src="https://img.shields.io/github/stars/brittneypostma/brittneypostma.com?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Landing page.<br>
-
-   uses: [Netlify], [service worker]
 
 1. **[Urara](https://urara-demo.netlify.app)**&ensp;
    [[code](https://github.com/importantimport/urara)]&ensp;
@@ -348,7 +328,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
 
-1. **[inlang dashboard](https://inlang.dev)**&ensp;
+1. **[inlang](https://inlang.com)**&ensp;
    [[code](https://github.com/inlang/inlang/tree/main/source-code/website)]&ensp;
    <a href="https://github.com/inlang/inlang/stargazers">
    <img src="https://img.shields.io/github/stars/inlang/inlang?logo=github" alt="GitHub stars" valign="middle">
@@ -578,7 +558,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Vercel]
 
-1. **[KitCommerce](https://kitcommerce.tech)**&ensp;
+1. **[Svelte Commerce](https://demo.litekart.in)**&ensp;
    [[code](https://github.com/itswadesh/svelte-commerce)]&ensp;
    <a href="https://github.com/itswadesh/svelte-commerce/stargazers">
    <img src="https://img.shields.io/github/stars/itswadesh/svelte-commerce?logo=github" alt="GitHub stars" valign="middle">
@@ -623,16 +603,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    A travel, photography and design project showcasing charismatic houses around the world.<br>
 
    uses: [Typescript], [SCSS], [PostCSS], [Motion One], [OGL], [WebGL], [Directus], [Swell Commerce], [Vercel]
-
-1. **[omnia-editor](https://omnia-editor.vercel.app)**&ensp;
-   [[code](https://github.com/TorstenDittmann/omnia-editor)]&ensp;
-   <a href="https://github.com/TorstenDittmann/omnia-editor/stargazers">
-   <img src="https://img.shields.io/github/stars/TorstenDittmann/omnia-editor?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   A lightweight open source block style editor built for the modern web.<br>
-
-   uses: [Sass], [TypeScript]
 
 1. **[Skeleton](https://skeleton.dev)**&ensp;
    [[code](https://github.com/Brain-Bones/skeleton)]&ensp;
@@ -825,7 +795,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
 [scss]: https://sass-lang.com/documentation/syntax
-[service worker]: https://kit.svelte.dev/docs#service-workers
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
 [storybook]: https://storybook.js.org

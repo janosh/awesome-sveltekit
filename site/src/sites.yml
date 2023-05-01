@@ -713,32 +713,6 @@
   date_created: 2021-01-01T00:00:00.000Z
   date_added: 2021-10-19T00:00:00.000Z
   slug: cybernetic.dev
-- title: Kudadam.com
-  url: https://kudadam.com
-  repo: https://github.com/kudadam/kudadam.com
-  description: Personal website and blog.
-  uses:
-    - MDsveX
-    - Tailwind
-  tags:
-    - blog
-    - open source
-    - personal
-    - portfolio
-    - rss
-    - sitemap
-  date_created: 2021-05-15T00:00:00.000Z
-  date_added: 2021-10-26T00:00:00.000Z
-  slug: kudadam.com
-  repo_stars: 0
-  contributors:
-    - github: kudadam
-      twitter: kudadam_
-      url: https://www.kudadam.com
-      avatar: https://avatars.githubusercontent.com/u/63173187?v=4
-      name: Lucretius Biah
-      location: Ghana
-      company: null
 - title: digital criticism
   url: https://critique-digitale.ch
   repo: https://github.com/critique-digitale/critique-digitale.ch
@@ -820,30 +794,6 @@
       name: Michelle McGhee
       location: null
       company: The Pudding
-- title: BrittneyPostma.com
-  url: https://brittneypostma.com
-  repo: https://github.com/brittneypostma/brittneypostma.com
-  description: Landing page.
-  uses:
-    - Netlify
-    - service worker
-  tags:
-    - animations
-    - open source
-    - playful
-    - portfolio
-  date_created: 2020-08-15T00:00:00.000Z
-  date_added: 2021-11-01T00:00:00.000Z
-  slug: brittneypostma.com
-  repo_stars: 2
-  contributors:
-    - github: brittneypostma
-      twitter: brittneypostma
-      url: https://brittneypostma.com
-      avatar: https://avatars.githubusercontent.com/u/45889730?v=4
-      name: Brittney Postma
-      location: Holland, MI
-      company: null
 - title: Urara
   url: https://urara-demo.netlify.app
   repo: https://github.com/importantimport/urara
@@ -1095,8 +1045,8 @@
       name: Puru Vijay
       location: Jaipur
       company: '@stackblitz '
-- title: inlang dashboard
-  url: https://inlang.dev
+- title: inlang
+  url: https://inlang.com
   repo: https://github.com/inlang/inlang
   site_src: https://github.com/inlang/inlang/tree/main/source-code/website
   description: Translate software products 2x faster.
@@ -1114,8 +1064,8 @@
     - open source
   date_created: 2021-08-04T00:00:00.000Z
   date_added: 2022-02-23T00:00:00.000Z
-  slug: inlang-dashboard
-  repo_stars: 451
+  slug: inlang
+  repo_stars: 459
   contributors:
     - github: samuelstroschein
       twitter: samuelstroschei
@@ -2007,8 +1957,8 @@
       name: Daria Vasyukova
       location: null
       company: null
-- title: KitCommerce
-  url: https://kitcommerce.tech
+- title: Svelte Commerce
+  url: https://demo.litekart.in
   repo: https://github.com/itswadesh/svelte-commerce
   description: >-
     Headless, Authentication, Cart &amp; Checkout, TailwindCSS, Server Rendered,
@@ -2031,8 +1981,8 @@
     - store
   date_created: 2020-04-27T00:00:00.000Z
   date_added: 2022-08-23T00:00:00.000Z
-  slug: kitcommerce
-  repo_stars: 963
+  slug: svelte-commerce
+  repo_stars: 1024
   contributors:
     - github: itswadesh
       twitter: itswadesh
@@ -2055,6 +2005,13 @@
       name: Deepjyoti Barman
       location: India
       company: '@appbaseio'
+    - github: ashok-cse
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/52234287?v=4
+      name: Ashok
+      location: Bengaluru, Karnataka, India
+      company: null
 - title: Joy of Code
   url: https://joyofcode.xyz
   repo: https://github.com/mattcroat/joy-of-code
@@ -2168,31 +2125,6 @@
   date_created: 2022-09-27T00:00:00.000Z
   date_added: 2022-09-30T00:00:00.000Z
   slug: houses-of-world
-- title: omnia-editor
-  url: https://omnia-editor.vercel.app
-  repo: https://github.com/TorstenDittmann/omnia-editor
-  description: A lightweight open source block style editor built for the modern web.
-  uses:
-    - Sass
-    - TypeScript
-  tags:
-    - editor
-    - html
-    - open source
-    - writing
-    - wysiwyg
-  date_created: 2020-03-05T00:00:00.000Z
-  date_added: 2022-10-16T00:00:00.000Z
-  slug: omnia-editor
-  repo_stars: 19
-  contributors:
-    - github: TorstenDittmann
-      twitter: DittmannTorsten
-      url: https://appwrite.io
-      avatar: https://avatars.githubusercontent.com/u/1759475?v=4
-      name: Torsten Dittmann
-      location: Schramberg, Germany
-      company: Appwrite
 - title: Skeleton
   url: https://skeleton.dev
   repo: https://github.com/Brain-Bones/skeleton

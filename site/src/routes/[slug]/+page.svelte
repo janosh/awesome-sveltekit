@@ -27,17 +27,20 @@
 <main>
   <SiteDetails site={data.site} />
 </main>
-<PrevNext items={data.sites?.map((site) => [site.slug, site])} current={data.slug}>
-  <svelte:fragment let:item let:kind>
-    <h3>
+<PrevNext
+  items={data.sites?.map((site) => [site.slug, site])}
+  current={data.slug}
+  let:item
+  let:kind
+>
+  <div style="max-width: 250px;">
+    <h3 style="text-align: {kind == `next` && 'right'}">
       <a href={item.slug}>
         {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
       </a>
     </h3>
-    <div style="max-width: 250px;">
-      <SitePreview site={item} />
-    </div>
-  </svelte:fragment>
+    <SitePreview site={item} />
+  </div>
 </PrevNext>
 
 <footer>

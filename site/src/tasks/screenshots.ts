@@ -31,12 +31,11 @@ export async function make_screenshots(options: { action?: Action } = {}) {
     )
   }
 
-  console.log(
-    {
-      'add-missing': `Adding screenshots for sites without them`,
-      'update-existing': `Updating all existing screenshots`,
-    }[action]
-  )
+  const msg = {
+    'add-missing': `Adding screenshots for sites without them`,
+    'update-existing': `Updating all existing screenshots`,
+  }[action]
+  console.log(msg)
 
   const [created, updated, skipped, existed] = [[], [], [], []]
 
