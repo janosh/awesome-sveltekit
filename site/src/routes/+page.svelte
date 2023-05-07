@@ -5,8 +5,8 @@
     filter_contributors,
     filter_tags,
     search,
-    sorted_sites,
     sort_by,
+    sorted_sites,
     tag_filter_mode,
   } from '$lib/stores'
   import { repository } from '$site/package.json'
@@ -124,7 +124,7 @@
   <ContributorList contributors={data.repo_contributors} />
 </main>
 
-<h2>🎉 Open to Suggestions</h2>
+<h2>🎉 Suggestions Welcome</h2>
 <p style="max-width: 40em;">
   Want to add an <em>open source</em> project to <Icon
     icon="mdi:sunglasses"
