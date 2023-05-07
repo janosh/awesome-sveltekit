@@ -724,6 +724,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Vercel], [Tailwind]
 
+1. **[editable-website](https://editable.website)**&ensp;
+   [[code](https://github.com/michael/editable-website)]&ensp;
+   <a href="https://github.com/michael/editable-website/stargazers">
+   <img src="https://img.shields.io/github/stars/michael/editable-website?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A SvelteKit template for building CMS-free editable websites.<br>
+
+   uses: [Tailwind], [ProseMirror], [AWS]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -788,6 +798,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [postcss]: https://postcss.org
 [pre-commit]: https://pre-commit.com
 [prism]: https://prismjs.com
+[prosemirror]: https://prosemirror.net
 [rehype]: https://github.com/rehypejs/rehype
 [release it]: https://github.com/release-it/release-it
 [remark]: https://github.com/remarkjs/remark
@@ -821,7 +832,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
 
-## 🎉 Open to Suggestions
+## 🎉 Suggestions Welcome
 
 Want to add an open-source project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is meant as a learning resource for Svelte devs. While a site with private code can give inspiration, there's little educational value if you can't inspect how it was made.
 

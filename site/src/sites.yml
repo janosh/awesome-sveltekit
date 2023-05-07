@@ -2530,3 +2530,30 @@
       name: Stephanie Dietz
       location: null
       company: null
+- title: editable-website
+  url: https://editable.website
+  repo: https://github.com/michael/editable-website
+  description: A SvelteKit template for building CMS-free editable websites.
+  uses:
+    - Tailwind
+    - ProseMirror
+    - AWS
+  tags:
+    - cms-free
+    - editable
+    - open source
+    - postgres
+    - richtext
+    - template
+  date_created: 2023-04-04T00:00:00.000Z
+  date_added: 2023-05-07T00:00:00.000Z
+  slug: editable-website
+  repo_stars: 741
+  contributors:
+    - github: michael
+      twitter: _mql
+      url: https://letsken.com
+      avatar: https://avatars.githubusercontent.com/u/2931?v=4
+      name: Michael Aufreiter
+      location: Linz, Austria
+      company: Ken

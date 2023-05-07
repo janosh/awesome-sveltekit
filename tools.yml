@@ -62,6 +62,7 @@ pnpm: https://pnpm.io
 postcss: https://postcss.org
 pre-commit: https://pre-commit.com
 prism: https://prismjs.com
+prosemirror: https://prosemirror.net
 rehype: https://github.com/rehypejs/rehype
 release it: https://github.com/release-it/release-it
 remark: https://github.com/remarkjs/remark

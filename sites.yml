@@ -783,3 +783,12 @@
   tags: [content recommendation, edge functions, machine learning]
   date_created: 2023-01-26
   date_added: 2023-03-25
+
+- title: editable-website
+  url: https://editable.website
+  repo: https://github.com/michael/editable-website
+  description: A SvelteKit template for building CMS-free editable websites.
+  uses: [Tailwind, ProseMirror, AWS]
+  tags: [postgres, richtext, editable, cms-free, template]
+  date_created: 2023-04-04
+  date_added: 2023-05-07
