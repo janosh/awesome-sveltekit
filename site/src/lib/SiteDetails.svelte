@@ -15,7 +15,7 @@
   $: tools = uses.map((tool) => {
     const href = uses_links[tool.toLowerCase()]
     if (!href) {
-      throw `Unknown tool: ${tool}`
+      console.error(`Unknown tool: ${tool}`)
     } else if (!href.startsWith(`https`)) {
       // all tools should have an https URL
       throw `All tool URLs should use HTTPS: ${tool} has href: ${href}`

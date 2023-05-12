@@ -714,7 +714,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [vitest], [Tailwind], [PostCSS], [Prism]
 
-1. **[watch-this](https://what-to-watch-roan.vercel.app)**&ensp;
+1. **[Watch This](https://what-to-watch-roan.vercel.app)**&ensp;
    [[code](https://github.com/StephDietz/watch-this)]&ensp;
    <a href="https://github.com/StephDietz/watch-this/stargazers">
    <img src="https://img.shields.io/github/stars/StephDietz/watch-this?logo=github" alt="GitHub stars" valign="middle">
@@ -733,6 +733,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    A SvelteKit template for building CMS-free editable websites.<br>
 
    uses: [Tailwind], [ProseMirror], [AWS]
+
+1. **[Chat UI](https://huggingface.co/chat)**&ensp;
+   [[code](https://github.com/huggingface/chat-ui)]&ensp;
+   <a href="https://github.com/huggingface/chat-ui/stargazers">
+   <img src="https://img.shields.io/github/stars/huggingface/chat-ui?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Powers the HuggingChat app. Making the community's best AI chat models available to everyone.<br>
+
+   uses: [@huggingface/inference], [@huggingface/hub], [Tailwind]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com

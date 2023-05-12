@@ -32,6 +32,8 @@ graphcms: https://graphcms.com
 graphql: https://graphql.org
 gsap: https://greensock.com/gsap
 highlight.js: https://highlightjs.org
+huggingface hub: https://github.com/huggingface/huggingface_hub
+huggingface inference: https://github.com/huggingface/text-generation-inference
 hugo: https://gohugo.io
 husky: https://github.com/typicode/husky
 ibm carbon: https://carbondesignsystem.com
