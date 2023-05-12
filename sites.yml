@@ -773,7 +773,7 @@
   date_created: 2023-02-21
   date_added: 2023-03-06
 
-- title: watch-this
+- title: Watch This
   url: https://what-to-watch-roan.vercel.app
   repo: https://github.com/StephDietz/watch-this
   description:
@@ -792,3 +792,12 @@
   tags: [postgres, richtext, editable, cms-free, template]
   date_created: 2023-04-04
   date_added: 2023-05-07
+
+- title: Chat UI
+  url: https://huggingface.co/chat
+  repo: https://github.com/huggingface/chat-ui
+  description: Powers the HuggingChat app. Making the community's best AI chat models available to everyone.
+  uses: [Huggingface Inference, Huggingface Hub, Tailwind]
+  tags: [gpt, ai, nlp, chat, large language models]
+  date_created: 2023-04-04
+  date_added: 2023-05-11

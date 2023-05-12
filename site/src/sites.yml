@@ -2503,7 +2503,7 @@
       name: Ankur Singhal
       location: null
       company: null
-- title: watch-this
+- title: Watch This
   url: https://what-to-watch-roan.vercel.app
   repo: https://github.com/StephDietz/watch-this
   description: >-
@@ -2557,3 +2557,53 @@
       name: Michael Aufreiter
       location: Linz, Austria
       company: Ken
+- title: Chat UI
+  url: https://huggingface.co/chat
+  repo: https://github.com/huggingface/chat-ui
+  description: >-
+    Powers the HuggingChat app. Making the community&#39;s best AI chat models
+    available to everyone.
+  uses:
+    - '@huggingface/inference'
+    - '@huggingface/hub'
+    - Tailwind
+  tags:
+    - ai
+    - chat
+    - gpt
+    - large language models
+    - nlp
+    - open source
+  date_created: 2023-04-04T00:00:00.000Z
+  date_added: 2023-05-11T00:00:00.000Z
+  slug: chat-ui
+  repo_stars: 593
+  contributors:
+    - github: coyotte508
+      twitter: null
+      url: https://coyo.dev
+      avatar: https://avatars.githubusercontent.com/u/342922?v=4
+      name: Eliott C.
+      location: null
+      company: null
+    - github: Grsmto
+      twitter: adriendenat
+      url: https://adriendenat.com
+      avatar: https://avatars.githubusercontent.com/u/527559?v=4
+      name: Adrien Denat
+      location: London, UK
+      company: null
+    - github: gary149
+      twitter: null
+      url: https://twitter.com/victormustar
+      avatar: https://avatars.githubusercontent.com/u/3841370?v=4
+      name: Victor Muštar
+      location: Paris
+      company: '@huggingface'
+    - github: julien-c
+      twitter: null
+      url: https://twitter.com/julien_c
+      avatar: https://avatars.githubusercontent.com/u/326577?v=4
+      name: Julien Chaumond
+      location: Brooklyn, NY
+      company: '@huggingface '
