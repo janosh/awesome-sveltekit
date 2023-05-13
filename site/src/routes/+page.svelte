@@ -12,6 +12,7 @@
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import sites from '../sites.yml'
+  import type { Snapshot } from './$types'
 
   export let data
 
@@ -82,6 +83,11 @@
   }
 
   const meta_description = `Awesome examples of SvelteKit sites in the wild`
+
+  export const snapshot: Snapshot = {
+    capture: () => ({ sort_order, sort_factor }),
+    restore: (values) => ({ sort_order, sort_factor } = values),
+  }
 </script>
 
 <svelte:head>
