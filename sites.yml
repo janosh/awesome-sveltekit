@@ -801,3 +801,21 @@
   tags: [gpt, ai, nlp, chat, large language models]
   date_created: 2023-04-04
   date_added: 2023-05-11
+
+- title: Team Health Check
+  url: https://team-health-check-coral.vercel.app
+  repo: https://github.com/codehub-kirans/team-health-check
+  description: A tool for quick assessment and visualization of how Agile teams perform using a set of behaviour anchors in three aspects - tech health, team health, and product health.
+  uses: [Svelte, SvelteKit, PicoCSS, Pocketbase, Vercel]
+  tags: [agile-team-health, agile-spotify]
+  date_created: 2023-05-05
+  date_added: 2023-05-12
+
+- title: kirans.in
+  url: https://www.kirans.in
+  repo: https://github.com/codehub-kirans/sveltekit-kirans
+  description: Kiran S' Engineering Management Artistry Blog.
+  uses: [Svelte, SvelteKit, SCSS, PostCSS, mdsvex, Javascript, Vercel]
+  tags: [blog, engineering-management]
+  date_created: 2022-12-09
+  date_added: 2023-05-12
