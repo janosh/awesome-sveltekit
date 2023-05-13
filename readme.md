@@ -742,7 +742,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    Powers the HuggingChat app. Making the community's best AI chat models available to everyone.<br>
 
-   uses: [@huggingface/inference], [@huggingface/hub], [Tailwind]
+   uses: [Huggingface Inference], [Huggingface Hub], [Tailwind]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
@@ -778,6 +778,8 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
+[huggingface hub]: https://github.com/huggingface/huggingface_hub
+[huggingface inference]: https://github.com/huggingface/text-generation-inference
 [hugo]: https://gohugo.io
 [husky]: https://github.com/typicode/husky
 [ibm carbon]: https://carbondesignsystem.com
@@ -844,6 +846,12 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 ## 🎉 Suggestions Welcome
 
-Want to add an open-source project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is meant as a learning resource for Svelte devs. While a site with private code can give inspiration, there's little educational value if you can't inspect how it was made.
+Want to add an open-source project to this list? [PRs welcome](https://github.com/janosh/awesome-sveltekit/edit/main/sites.yml)! This collection is a community effort intended as a learning resource for Svelte devs. Entry requirements:
+
+1. **open source**: While a site with private code can give design and feature ideas, there's little educational value if you can't inspect how it was made.
+1. **novel**: Not just another blog or todo app. Ideally, some application or technology not already covered in this collection.
+1. **popular**: At least 50 stars on GitHub or reasonable expectation to reach that number soon.
+
+These requirements arose over time so not all existing entries't satisfy them. There can also be tradeoffs. For example, if novelty is very high, popularity can be lower. If you're unsure, please [open a discussion](https://github.com/janosh/awesome-sveltekit/discussions) first.
 
 A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
