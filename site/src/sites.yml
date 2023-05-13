@@ -2607,3 +2607,30 @@
       name: Julien Chaumond
       location: Brooklyn, NY
       company: '@huggingface '
+- title: Team Health Check
+  url: https://team-health-check-coral.vercel.app
+  repo: https://github.com/codehub-kirans/team-health-check
+  description: >-
+    A tool to visualize historical agile scrum team performance based on
+    behavior anchors.
+  uses:
+    - PicoCSS
+    - Pocketbase
+    - Vercel
+  tags:
+    - agile spotify
+    - agile team health
+    - open source
+    - team health check
+  date_created: 2023-05-05T00:00:00.000Z
+  date_added: 2023-05-14T00:00:00.000Z
+  slug: team-health-check
+  repo_stars: 1
+  contributors:
+    - github: codehub-kirans
+      twitter: null
+      url: https://www.kirans.in
+      avatar: https://avatars.githubusercontent.com/u/72293681?v=4
+      name: Kiran S
+      location: null
+      company: Nokia
