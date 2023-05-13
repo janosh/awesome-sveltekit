@@ -812,7 +812,7 @@
   date_added: 2023-05-12
 
 - title: kirans.in
-  url: https://www.kirans.in
+  url: https://kirans.in
   repo: https://github.com/codehub-kirans/sveltekit-kirans
   description: Kiran S' Engineering Management Artistry Blog.
   uses: [Svelte, SvelteKit, SCSS, PostCSS, mdsvex, Javascript, Vercel]
