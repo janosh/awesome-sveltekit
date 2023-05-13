@@ -742,7 +742,17 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    Powers the HuggingChat app. Making the community's best AI chat models available to everyone.<br>
 
-   uses: [@huggingface/inference], [@huggingface/hub], [Tailwind]
+   uses: [Huggingface Inference], [Huggingface Hub], [Tailwind]
+
+1. **[Team Health Check](https://team-health-check-coral.vercel.app)**&ensp;
+   [[code](https://github.com/codehub-kirans/team-health-check)]&ensp;
+   <a href="https://github.com/codehub-kirans/team-health-check/stargazers">
+   <img src="https://img.shields.io/github/stars/codehub-kirans/team-health-check?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A tool to visualize historical agile scrum team performance based on behavior anchors.<br>
+
+   uses: [PicoCSS], [Pocketbase], [Vercel]
 
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
@@ -778,6 +788,8 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
+[huggingface hub]: https://github.com/huggingface/huggingface_hub
+[huggingface inference]: https://github.com/huggingface/text-generation-inference
 [hugo]: https://gohugo.io
 [husky]: https://github.com/typicode/husky
 [ibm carbon]: https://carbondesignsystem.com
@@ -802,9 +814,11 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [octokit]: https://github.com/octokit/octokit.js
 [ogl]: https://github.com/oframe/ogl
 [panzoom]: https://github.com/timmywil/panzoom
+[picocss]: https://picocss.com
 [plausible]: https://plausible.io
 [playwright]: https://playwright.dev
 [pnpm]: https://pnpm.io
+[pocketbase]: https://pocketbase.io
 [postcss]: https://postcss.org
 [pre-commit]: https://pre-commit.com
 [prism]: https://prismjs.com

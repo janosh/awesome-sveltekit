@@ -58,9 +58,11 @@ netlify: https://netlify.com
 octokit: https://github.com/octokit/octokit.js
 ogl: https://github.com/oframe/ogl
 panzoom: https://github.com/timmywil/panzoom
+picocss: https://picocss.com
 plausible: https://plausible.io
 playwright: https://playwright.dev
 pnpm: https://pnpm.io
+pocketbase: https://pocketbase.io
 postcss: https://postcss.org
 pre-commit: https://pre-commit.com
 prism: https://prismjs.com

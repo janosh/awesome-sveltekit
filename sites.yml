@@ -805,8 +805,8 @@
 - title: Team Health Check
   url: https://team-health-check-coral.vercel.app
   repo: https://github.com/codehub-kirans/team-health-check
-  description: A tool to assess and visualize historical agile scrum team performance using a set of behaviour anchors.
-  uses: [Svelte, SvelteKit, PicoCSS, Pocketbase, Vercel]
-  tags: [agile-team-health, agile-spotify, team-health-check]
+  description: A tool to visualize historical agile scrum team performance based on behavior anchors.
+  uses: [PicoCSS, Pocketbase, Vercel]
+  tags: [agile team health, agile spotify, team health check]
   date_created: 2023-05-05
   date_added: 2023-05-14
