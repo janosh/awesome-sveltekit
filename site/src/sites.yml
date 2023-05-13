@@ -2564,8 +2564,8 @@
     Powers the HuggingChat app. Making the community&#39;s best AI chat models
     available to everyone.
   uses:
-    - '@huggingface/inference'
-    - '@huggingface/hub'
+    - Huggingface Inference
+    - Huggingface Hub
     - Tailwind
   tags:
     - ai
