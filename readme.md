@@ -754,6 +754,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [PicoCSS], [Pocketbase], [Vercel]
 
+1. **[SvelteLab](https://sveltelab.dev)**&ensp;
+   [[code](https://github.com/sveltelab/sveltelab)]&ensp;
+   <a href="https://github.com/sveltelab/sveltelab/stargazers">
+   <img src="https://img.shields.io/github/stars/sveltelab/sveltelab?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Supercharged REPL for Svelte (think StackBlitz specialized for Svelte)<br>
+
+   uses: [Playwright], [vitest], [Iconify], [Marked], [TypeScript], [PNPM], [Pocketbase], [Vercel], [Tailwind]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
