@@ -2634,3 +2634,40 @@
       name: Kiran S
       location: null
       company: Nokia
+- title: SvelteLab
+  url: https://sveltelab.dev
+  repo: https://github.com/sveltelab/sveltelab
+  description: Supercharged REPL for Svelte (think StackBlitz specialized for Svelte)
+  uses:
+    - Playwright
+    - vitest
+    - Iconify
+    - Marked
+    - TypeScript
+    - PNPM
+    - Pocketbase
+    - Vercel
+    - Tailwind
+  tags:
+    - open source
+    - playground
+    - repl
+  date_created: 2023-02-23T00:00:00.000Z
+  date_added: 2023-05-21T00:00:00.000Z
+  slug: sveltelab
+  repo_stars: 146
+  contributors:
+    - github: paoloricciuti
+      twitter: paoloricciuti
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/26281609?v=4
+      name: Paolo Ricciuti
+      location: 'Campobasso '
+      company: null
+    - github: SarcevicAntonio
+      twitter: sarcevicantonio
+      url: https://www.sarcevic.dev/
+      avatar: https://avatars.githubusercontent.com/u/6685200?v=4
+      name: Antonio Sarcevic
+      location: Münster
+      company: null
