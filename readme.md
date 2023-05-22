@@ -764,6 +764,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Playwright], [vitest], [Iconify], [Marked], [TypeScript], [PNPM], [Pocketbase], [Vercel], [Tailwind]
 
+1. **[Significa.co](https://significa.co)**&ensp;
+   [[code](https://github.com/significa/significa.co)]&ensp;
+   <a href="https://github.com/significa/significa.co/stargazers">
+   <img src="https://img.shields.io/github/stars/significa/significa.co?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Product Design and Development agency website, built with Sveltekit.<br>
+
+   uses: [TypeScript], [Vercel], [Tailwind], [AWS], [Dynamodb], [Notion], [Storyblock], [Matter.js], [Plausible]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -814,6 +824,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
 [markedjs]: https://marked.js.org
+[matter.js]: https://brm.io/matter-js
 [mdsvex]: https://github.com/pngwn/MDsveX
 [mdsvexamples]: https://github.com/mattjennings/mdsvexamples
 [mocha]: https://mochajs.org
@@ -821,6 +832,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [motion one]: https://motion.dev
 [mvp.css]: https://github.com/andybrewer/mvp
 [netlify]: https://netlify.com
+[notion]: https://notion.so
 [octokit]: https://github.com/octokit/octokit.js
 [ogl]: https://github.com/oframe/ogl
 [panzoom]: https://github.com/timmywil/panzoom
@@ -842,6 +854,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [scss]: https://sass-lang.com/documentation/syntax
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
+[storyblock]: https://storyblok.com
 [storybook]: https://storybook.js.org
 [supabase]: https://supabase.com
 [surge.sh]: https://surge.sh
@@ -874,6 +887,6 @@ Want to add an open-source project to this list? [PRs welcome](https://github.co
 1. **novel**: Not just another blog or todo app. Ideally, some application or technology not already covered in this collection.
 1. **popular**: At least 50 stars on GitHub or reasonable expectation to reach that number soon.
 
-These requirements arose over time so not all existing entries't satisfy them. There can also be tradeoffs. For example, if novelty is very high, popularity can be lower. If you're unsure, please [open a discussion](https://github.com/janosh/awesome-sveltekit/discussions) first.
+These requirements arose over time so not all existing entries satisfy them. There can also be tradeoffs. For example, if novelty is very high, popularity can be lower. If you're unsure, please [open a discussion](https://github.com/janosh/awesome-sveltekit/discussions) first.
 
 A good place to discover influential Svelte projects (not necessarily SvelteKit) is [GitHub Trending](https://github.com/trending/svelte?since=monthly). If anything on that list stands out to you but is missing here, please add it!
