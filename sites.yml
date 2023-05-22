@@ -828,3 +828,21 @@
   tags: [repl, playground]
   date_created: 2023-02-23
   date_added: 2023-05-21
+
+- title: Significa.co
+  url: https://significa.co
+  repo: https://github.com/significa/significa.co
+  description: Product Design and Development agency website, built with Sveltekit.
+  uses:
+    - TypeScript
+    - Vercel
+    - Tailwind
+    - AWS
+    - Dynamodb
+    - Notion
+    - Storyblock
+    - Matter.js
+    - Plausible
+  tags: [company, agency]
+  date_created: 2023-05-13
+  date_added: 2023-05-22

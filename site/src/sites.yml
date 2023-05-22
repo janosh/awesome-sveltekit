@@ -2671,3 +2671,61 @@
       name: Antonio Sarcevic
       location: Münster
       company: null
+- title: Significa.co
+  url: https://significa.co
+  repo: https://github.com/significa/significa.co
+  description: Product Design and Development agency website, built with Sveltekit.
+  uses:
+    - TypeScript
+    - Vercel
+    - Tailwind
+    - AWS
+    - Dynamodb
+    - Notion
+    - Storyblock
+    - Matter.js
+    - Plausible
+  tags:
+    - agency
+    - company
+    - open source
+  date_created: 2023-05-13T00:00:00.000Z
+  date_added: 2023-05-22T00:00:00.000Z
+  slug: significa.co
+  repo_stars: 90
+  contributors:
+    - github: pdrbrnd
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/5202712?v=4
+      name: Pedro Brandão
+      location: null
+      company: '@Significa '
+    - github: filipeff95
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/98809371?v=4
+      name: Filipe Ferreira
+      location: Porto, Portugal
+      company: '@significa'
+    - github: danilowoz
+      twitter: danilowoz
+      url: https://danilowoz.com
+      avatar: https://avatars.githubusercontent.com/u/4838076?v=4
+      name: Danilo Woznica
+      location: null
+      company: '@codesandbox'
+    - github: kaaps
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/6265625?v=4
+      name: null
+      location: null
+      company: null
+    - github: tofran
+      twitter: tofran_
+      url: https://tofran.com
+      avatar: https://avatars.githubusercontent.com/u/5692603?v=4
+      name: Francisco Marques
+      location: Portugal
+      company: null
