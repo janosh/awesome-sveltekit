@@ -774,7 +774,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Vercel], [Tailwind], [AWS], [Dynamodb], [Notion], [Storyblock], [Matter.js], [Plausible]
 
-1. **[Vontigo](https://www.vontigo.org)**&ensp;
+1. **[Vontigo](https://vontigo.org)**&ensp;
    [[code](https://github.com/Vontigo/Vontigo)]&ensp;
    <a href="https://github.com/Vontigo/Vontigo/stargazers">
    <img src="https://img.shields.io/github/stars/Vontigo/Vontigo?logo=github" alt="GitHub stars" valign="middle">
