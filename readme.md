@@ -774,6 +774,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Vercel], [Tailwind], [AWS], [Dynamodb], [Notion], [Storyblock], [Matter.js], [Plausible]
 
+1. **[Vontigo](https://www.vontigo.org)**&ensp;
+   [[code](https://github.com/Vontigo/Vontigo)]&ensp;
+   <a href="https://github.com/Vontigo/Vontigo/stargazers">
+   <img src="https://img.shields.io/github/stars/Vontigo/Vontigo?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   🚀 Vontigo is an open-source CMS built with SvelteKit, featuring 🤖 AI-powered (ChatGPT) content generation. With fast page loads and seamless routing, Vontigo offers a user-friendly interface with customizable themes and templates.<br>
+
+   uses: [TypeScript], [Vercel], [Tailwind], [Skeleton], [turbo], [Capacitor], [ChatGPT], [BrainiacMinds]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
