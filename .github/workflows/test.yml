@@ -9,24 +9,7 @@ on:
 
 jobs:
   tests:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out repo
-        uses: actions/checkout@v3
-
-      - name: Set up node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 19
-
-      - name: Install dependencies
-        run: |
-          cd site
-          npm install
-          npx playwright install chromium
-
-      - name: Run tests
-        run: |
-          cd site
-          npm run test
+    uses: janosh/workflows/.github/workflows/npm-test-release.yml@main
+    with:
+      install-cmd: npm install --force
+      working-directory: site
