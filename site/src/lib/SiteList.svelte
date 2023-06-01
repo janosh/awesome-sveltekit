@@ -47,7 +47,7 @@
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   }
   ol li {
     transition: 0.3s;

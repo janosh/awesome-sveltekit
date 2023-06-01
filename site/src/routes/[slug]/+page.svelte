@@ -30,6 +30,7 @@
 <PrevNext
   items={data.sites?.map((site) => [site.slug, site])}
   current={data.slug}
+  style="max-width: var(--main-max-width);"
   let:item
   let:kind
 >
@@ -62,9 +63,9 @@
 <style>
   main {
     display: flex;
-    max-width: 1200px;
     gap: 2em;
     margin: 6em auto 2em;
+    min-height: 40vh;
   }
   :global(main > *) {
     flex: 1;
