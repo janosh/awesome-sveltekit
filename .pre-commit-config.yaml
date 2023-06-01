@@ -52,14 +52,14 @@ repos:
         stages: [commit, commit-msg]
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v8.39.0
+    rev: v8.41.0
     hooks:
       - id: eslint
         types: [file]
-        files: \.(svelte|js|ts)$
+        args: [--fix, --resolve-plugins-relative-to, ~/.cache/pre-commit]
+        files: \.(js|ts|svelte)$
         additional_dependencies:
           - eslint
-          - svelte
           - typescript
           - eslint-plugin-svelte3
           - '@typescript-eslint/eslint-plugin'

@@ -7,40 +7,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# set permissions of GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repo
-        uses: actions/checkout@v3
-
-      - name: Set up node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 19
-          cache: npm
-          cache-dependency-path: site/package.json
-
-      - name: Install dependencies
-        run: cd site && npm install
-
-      - name: Build site
-        run: cd site && npm run build
-
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: site/build
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+    uses: janosh/workflows/.github/workflows/nodejs-gh-pages.yml@main
+    with:
+      working-directory: site
+      install-cmd: npm install -f
