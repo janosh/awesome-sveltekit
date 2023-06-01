@@ -384,7 +384,7 @@
       location: null
       company: '@mend'
 - title: Beatbump
-  url: https://beatbump.ml
+  url: https://beatbump.io
   repo: https://github.com/snuffyDev/beatbump
   description: Alternative frontend for YouTube Music.
   uses:

@@ -130,7 +130,7 @@
   date_added: 2021-06-14
 
 - title: Beatbump
-  url: https://beatbump.ml
+  url: https://beatbump.io
   repo: https://github.com/snuffyDev/beatbump
   description: Alternative frontend for YouTube Music.
   uses: [TypeScript, PostCSS, SCSS]

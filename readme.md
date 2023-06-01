@@ -124,7 +124,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Vercel], [Tailwind], [SCSS], [GraphCMS]
 
-1. **[Beatbump](https://beatbump.ml)**&ensp;
+1. **[Beatbump](https://beatbump.io)**&ensp;
    [[code](https://github.com/snuffyDev/beatbump)]&ensp;
    <a href="https://github.com/snuffyDev/beatbump/stargazers">
    <img src="https://img.shields.io/github/stars/snuffyDev/beatbump?logo=github" alt="GitHub stars" valign="middle">

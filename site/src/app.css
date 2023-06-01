@@ -1,5 +1,6 @@
 :root {
   --bg: #061e25;
+  --main-max-width: 1300px;
 
   --zoo-github-corner-color: var(--bg);
   --zoo-github-corner-bg: white;
@@ -21,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 main {
-  max-width: 70em;
+  max-width: var(--main-max-width);
   margin: auto;
   margin-bottom: 3em;
   width: 100%;
