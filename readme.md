@@ -773,8 +773,8 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    Product Design and Development agency website, built with Sveltekit.<br>
 
    uses: [TypeScript], [Vercel], [Tailwind], [AWS], [Dynamodb], [Notion], [Storyblock], [Matter.js], [Plausible]
-   
-1. **[Tailwind-Elements.com](https://tailwind-elements.com/docs/standard/integrations/svelte-integration/)**&ensp;
+
+1. **[Tailwind-Elements.com](https://tailwind-elements.com/docs/standard/integrations/svelte-integration)**&ensp;
    [[code](https://github.com/mdbootstrap/Tailwind-Elements)]&ensp;
    <a href="https://github.com/mdbootstrap/Tailwind-Elements/stargazers">
    <img src="https://img.shields.io/github/stars/mdbootstrap/Tailwind-Elements?logo=github" alt="GitHub stars" valign="middle">
