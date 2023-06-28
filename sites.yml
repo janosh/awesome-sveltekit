@@ -848,12 +848,11 @@
   date_added: 2023-05-22
 
 - title: Tailwind Elements
-  url: https://tailwind-elements.com/docs/standard/integrations/svelte-integration/
+  url: https://tailwind-elements.com/docs/standard/integrations/svelte-integration
   repo: https://github.com/mdbootstrap/Tailwind-Elements
-  npm: https://www.npmjs.com/package/tw-elements
+  npm: https://npmjs.com/package/tw-elements
   description: Integrate Svelte application with Tailwind Elements. Free download, open source license.
   uses: [Tailwind, PostCSS]
   tags: [component library, NPM package]
   date_created: 2023-06-28
   date_added: 2023-06-28
-
