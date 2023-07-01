@@ -33,8 +33,8 @@
   {#each sites as site, idx (site.url)}
     <li
       animate:flip={{ duration: 400 }}
-      in:fade|local={{ delay: 100 }}
-      out:fade|local={{ delay: 100 }}
+      in:fade={{ delay: 100 }}
+      out:fade={{ delay: 100 }}
       class:active={idx === active_idx}
     >
       <SitePreview {site} idx={idx + 1} tags />

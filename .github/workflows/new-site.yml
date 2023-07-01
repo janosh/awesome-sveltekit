@@ -27,11 +27,11 @@ jobs:
 
       - name: Update existing site screenshots and repo contributors on scheduled runs
         if: github.event_name == 'schedule'
-        run: node site/scripts/index.js update-existing
+        run: npm run dev update-existing
 
       - name: Add screenshots for new sites and update readme
         if: github.event_name != 'schedule'
-        run: node site/scripts/index.js
+        run: npm run dev
 
       - name: Push changes if any
         run: |
