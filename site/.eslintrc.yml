@@ -16,8 +16,6 @@ rules:
   linebreak-style: [error, unix]
   no-console: [error, allow: [warn, error]]
   no-var: error
-  # allow triple slash for typescript file referencing https://git.io/JCeqO
-  spaced-comment: [error, always, { markers: [/] }]
   '@typescript-eslint/no-inferrable-types': off
   '@typescript-eslint/no-unused-vars': [error, { argsIgnorePattern: ^_ }]
   svelte/no-at-html-tags: off
