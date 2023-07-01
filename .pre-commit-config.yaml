@@ -58,6 +58,12 @@ repos:
         types: [file]
         args: [--fix]
         files: \.(js|ts|svelte)$
+        additional_dependencies:
+          - eslint
+          - typescript
+          - eslint-plugin-svelte
+          - '@typescript-eslint/eslint-plugin'
+          - '@typescript-eslint/parser'
 
   - repo: local
     hooks:
