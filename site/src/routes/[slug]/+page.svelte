@@ -35,7 +35,7 @@
   let:kind
 >
   <div style="max-width: 250px;">
-    <h3 style="text-align: {kind == `next` && 'right'}">
+    <h3 style="text-align: {kind == `next` && `right`}">
       <a href={item.slug}>
         {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
       </a>

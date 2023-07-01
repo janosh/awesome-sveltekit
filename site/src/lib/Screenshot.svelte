@@ -14,7 +14,7 @@
   $: src = `${dev ? `` : base}/screenshots/${titleToSlug(title)}${resolution}.avif`
 </script>
 
-<img {src} alt="Screenshot of {title}" {width} {height} on:click on:keyup {style} />
+<img {src} alt="Screenshot of {title}" {width} {height} {style} />
 
 <style>
   img {
