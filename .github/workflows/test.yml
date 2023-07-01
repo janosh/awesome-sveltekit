@@ -11,5 +11,4 @@ jobs:
   tests:
     uses: janosh/workflows/.github/workflows/npm-test-release.yml@main
     with:
-      install-cmd: npm install --force
       working-directory: site

@@ -20,7 +20,7 @@
 <GitHubCorner href={repository} />
 
 <svelte:head>
-  <base target="_{innerWidth > 600 ? 'blank' : 'self'}" />
+  <base target="_{innerWidth > 600 ? `blank` : `self`}" />
 </svelte:head>
 
 <slot />
