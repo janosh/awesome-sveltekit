@@ -35,7 +35,6 @@
     "sharp": "^0.32.1",
     "svelte": "4.0.1",
     "svelte-check": "^3.4.4",
-    "svelte-eslint-parser": "^0.32.0",
     "svelte-multiselect": "^9.0.0",
     "svelte-preprocess": "^5.0.4",
     "svelte-zoo": "^0.4.8",

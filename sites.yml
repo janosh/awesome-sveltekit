@@ -459,7 +459,9 @@
   url: https://janosh.github.io/elementari
   repo: https://github.com/janosh/elementari
   npm: https://npmjs.com/package/elementari
-  description: Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.
+  description:
+    'Interactive visualizations for materials science: periodic tables, 3d crystal
+    structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps, scatter plots.'
   uses:
     - TypeScript
     - pre-commit

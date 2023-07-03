@@ -1,5 +1,6 @@
 env:
   browser: true
+  node: true
 extends:
   - plugin:svelte/recommended
   - eslint:recommended
@@ -17,7 +18,8 @@ rules:
   no-console: [error, allow: [warn, error]]
   no-var: error
   '@typescript-eslint/no-inferrable-types': off
-  '@typescript-eslint/no-unused-vars': [error, { argsIgnorePattern: ^_ }]
+  '@typescript-eslint/no-unused-vars':
+    [error, { argsIgnorePattern: ^_, varsIgnorePattern: ^_ }]
   svelte/no-at-html-tags: off
   no-inner-declarations: off
-ignorePatterns: [build/]
+ignorePatterns: [build/, dist/]

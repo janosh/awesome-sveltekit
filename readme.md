@@ -464,7 +464,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    <img src="https://img.shields.io/github/stars/janosh/elementari?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   Interactive periodic table of elements written in Svelte. Supports plotting heat maps and hover data.<br>
+   Interactive visualizations for materials science: periodic tables, 3d crystal structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps, scatter plots.<br>
 
    uses: [TypeScript], [pre-commit], [D3], [svelte-multiselect], [Vitest], [Playwright], [PNPM], [jsdom], [GitHub Pages]
 
