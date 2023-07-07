@@ -103,7 +103,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
     // fetch most active contributors
     let contributors = await fetch_check(
-      `https://api.github.com/repos/${repoHandle}/contributors`
+      `https://api.github.com/repos/${repoHandle}/contributors`,
     )
 
     // show at most 5 contributors and only those with more than 10 commits
@@ -115,8 +115,8 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
     contributors = await Promise.all(
       contributors.map(({ url }) =>
-        fetch(url, { headers }).then((r) => r.json())
-      )
+        fetch(url, { headers }).then((r) => r.json()),
+      ),
     )
 
     site.contributors = contributors.map(
@@ -128,7 +128,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
         name,
         location,
         company,
-      })
+      }),
     )
 
     updated_sites.push(slug)
@@ -154,6 +154,6 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
   console.log(
     `${this_file} took ${wall_time}s, updated ${updated_sites.length}, ` +
-      `skipped ${skipped_sites.length}\n`
+      `skipped ${skipped_sites.length}\n`,
   )
 }
