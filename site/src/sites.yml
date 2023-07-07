@@ -3,7 +3,7 @@
 - title: Svelte.dev
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
-  site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
+  site_src: https://github.com/sveltejs/sites/blob/-/sites/svelte.dev
   npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses:
@@ -61,7 +61,7 @@
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
-  site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
+  site_src: https://github.com/sveltejs/kit/blob/-/sites/kit.svelte.dev
   npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses:
@@ -1048,7 +1048,7 @@
 - title: inlang
   url: https://inlang.com
   repo: https://github.com/inlang/inlang
-  site_src: https://github.com/inlang/inlang/tree/main/source-code/website
+  site_src: https://github.com/inlang/inlang/blob/-/source-code/website
   description: Translate software products 2x faster.
   uses:
     - TypeScript
@@ -1275,7 +1275,7 @@
 - title: Svelte Material UI
   url: https://sveltematerialui.com
   repo: https://github.com/hperrin/svelte-material-ui
-  site_src: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  site_src: https://github.com/hperrin/svelte-material-ui/blob/-/packages/site
   npm: https://npmjs.com/package/svelte-material-ui
   description: Svelte Material UI Components.
   uses:
@@ -1375,7 +1375,7 @@
 - title: evidence
   url: https://evidence.dev
   repo: https://github.com/evidence-dev/evidence
-  site_src: https://github.com/evidence-dev/evidence/tree/main/sites/example-project
+  site_src: https://github.com/evidence-dev/evidence/blob/-/sites/example-project
   description: >-
     Evidence enables analysts to deliver a polished business intelligence system
     using SQL and markdown.
@@ -1736,7 +1736,7 @@
 - title: Cryptgeon
   url: https://cryptgeon.nicco.io
   repo: https://github.com/cupcakearmy/cryptgeon
-  site_src: https://github.com/cupcakearmy/cryptgeon/tree/main/packages/frontend
+  site_src: https://github.com/cupcakearmy/cryptgeon/blob/-/packages/frontend
   description: >-
     A secure, open source notes and file sharing service inspired by PrivNote
     written in Rust &amp; Svelte.
@@ -1793,7 +1793,7 @@
 - title: Windmill
   url: https://windmill.dev
   repo: https://github.com/windmill-labs/windmill
-  site_src: https://github.com/windmill-labs/windmill/tree/main/frontend
+  site_src: https://github.com/windmill-labs/windmill/blob/-/frontend
   description: >-
     An OSS developer platform to build multi-step automations and internal apps
     from minimal Python and Typescript scripts.
@@ -1855,7 +1855,7 @@
 - title: Threlte
   url: https://threlte.xyz
   repo: https://github.com/threlte/threlte
-  site_src: https://github.com/threlte/threlte/tree/main/apps/docs
+  site_src: https://github.com/threlte/threlte/blob/-/apps/docs
   description: >-
     Threlte is a component library for Svelte to build and render three.js
     scenes declaratively and state-driven in Svelte apps.
@@ -2729,4 +2729,41 @@
       avatar: https://avatars.githubusercontent.com/u/5692603?v=4
       name: Francisco Marques
       location: Portugal
+      company: null
+- title: shadcn-svelte
+  url: https://shadcn-svelte.com
+  site_src: https://github.com/huntabyte/shadcn-svelte/blob/-/apps/www
+  repo: https://github.com/huntabyte/shadcn-svelte
+  description: shadcn/ui, but for Svelte.
+  uses:
+    - TypeScript
+    - Vercel
+    - Tailwind
+    - PNPM
+    - Changesets
+    - vitest
+    - Prism
+    - Marked
+  tags:
+    - community
+    - component library
+    - open source
+  date_created: 2023-05-15T00:00:00.000Z
+  date_added: 2023-07-06T00:00:00.000Z
+  slug: shadcn-svelte
+  repo_stars: 957
+  contributors:
+    - github: huntabyte
+      twitter: huntabyte
+      url: https://huntabyte.com
+      avatar: https://avatars.githubusercontent.com/u/64506580?v=4
+      name: Hunter Johnston
+      location: null
+      company: null
+    - github: AdrianGonz97
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/31664583?v=4
+      name: CokaKoala
+      location: null
       company: null
