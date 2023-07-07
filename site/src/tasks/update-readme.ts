@@ -53,7 +53,7 @@ export function update_readme() {
   // replace old sites
   const new_readme = readme.replace(
     /## Sites\n\n[\s\S]+\n\n## /, // match everything up to next heading
-    `## Sites\n\n${new_sites}\n${uses_links}\n\n## `
+    `## Sites\n\n${new_sites}\n${uses_links}\n\n## `,
   )
 
   fs.writeFileSync(readme_path, new_readme)
