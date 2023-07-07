@@ -8,11 +8,11 @@ export const search = session_store<string>(`search`, ``)
 
 export const tag_filter_mode = session_store<`all` | `any`>(
   `tag-filter-mode`,
-  `any`
+  `any`,
 )
 export const contributor_filter_mode = session_store<`all` | `any`>(
   `contributor-filter-mode`,
-  `any`
+  `any`,
 )
 
 tag_filter_mode.subscribe((mode) => {

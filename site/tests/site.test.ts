@@ -23,7 +23,7 @@ test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
   // get slugs to first 2 detail pages
   const [slug_1, slug_2] = await page.$$eval(
     `ol > li > a:has(> img)`,
-    (cards) => cards.map((card) => card.getAttribute(`href`))
+    (cards) => cards.map((card) => card.getAttribute(`href`)),
   )
 
   // test that the arrow keys work on detail pages
@@ -50,7 +50,7 @@ test(`can navigate landing page with arrow keys`, async ({ page }) => {
 
   // get slug of active site
   const slug = await page.$eval(`ol > li.active > a:has(> img)`, (card) =>
-    card.getAttribute(`href`)
+    card.getAttribute(`href`),
   )
 
   // press enter and check that we're on the detail page

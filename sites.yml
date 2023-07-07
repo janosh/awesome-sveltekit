@@ -13,7 +13,7 @@
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
   # Sapper to SvelteKit migration in https://git.io/JXSh1
-  site_src: https://github.com/sveltejs/sites/tree/master/sites/svelte.dev
+  site_src: https://github.com/sveltejs/sites/blob/-/sites/svelte.dev
   npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
@@ -24,7 +24,7 @@
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
-  site_src: https://github.com/sveltejs/kit/tree/master/sites/kit.svelte.dev
+  site_src: https://github.com/sveltejs/kit/blob/-/sites/kit.svelte.dev
   npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses: [Netlify, PNPM]
@@ -330,7 +330,7 @@
 - title: inlang
   url: https://inlang.com
   repo: https://github.com/inlang/inlang
-  site_src: https://github.com/inlang/inlang/tree/main/source-code/website
+  site_src: https://github.com/inlang/inlang/blob/-/source-code/website
   description: Translate software products 2x faster.
   uses: [TypeScript, Vercel, IBM Carbon, Tailwind, Supabase]
   tags: [front-end, developer tool, localization, i18n]
@@ -390,7 +390,7 @@
 - title: Svelte Material UI
   url: https://sveltematerialui.com
   repo: https://github.com/hperrin/svelte-material-ui
-  site_src: https://github.com/hperrin/svelte-material-ui/tree/master/packages/site
+  site_src: https://github.com/hperrin/svelte-material-ui/blob/-/packages/site
   npm: https://npmjs.com/package/svelte-material-ui
   description: Svelte Material UI Components.
   uses: [MDsveX, TypeScript, highlight.js, remark, Sass]
@@ -421,7 +421,7 @@
 - title: evidence
   url: https://evidence.dev
   repo: https://github.com/evidence-dev/evidence
-  site_src: https://github.com/evidence-dev/evidence/tree/main/sites/example-project
+  site_src: https://github.com/evidence-dev/evidence/blob/-/sites/example-project
   description: Evidence enables analysts to deliver a polished business intelligence system using SQL and markdown.
   uses: [PNPM, Changesets, echarts, uvu]
   tags: [analytics, business-intelligence, sql, markdown, data viz, charts]
@@ -506,7 +506,7 @@
 - title: Cryptgeon
   url: https://cryptgeon.nicco.io
   repo: https://github.com/cupcakearmy/cryptgeon
-  site_src: https://github.com/cupcakearmy/cryptgeon/tree/main/packages/frontend
+  site_src: https://github.com/cupcakearmy/cryptgeon/blob/-/packages/frontend
   description: A secure, open source notes and file sharing service inspired by PrivNote written in Rust & Svelte.
   uses: [svelte-intl-precompile, sanitize-html]
   tags: [file sharing, note sharing, secure notes, privacy, data protection]
@@ -528,7 +528,7 @@
 - title: Windmill
   url: https://windmill.dev
   repo: https://github.com/windmill-labs/windmill
-  site_src: https://github.com/windmill-labs/windmill/tree/main/frontend
+  site_src: https://github.com/windmill-labs/windmill/blob/-/frontend
   description:
     An OSS developer platform to build multi-step automations and internal apps from minimal
     Python and Typescript scripts.
@@ -547,7 +547,7 @@
 - title: Threlte
   url: https://threlte.xyz
   repo: https://github.com/threlte/threlte
-  site_src: https://github.com/threlte/threlte/tree/main/apps/docs
+  site_src: https://github.com/threlte/threlte/blob/-/apps/docs
   description:
     Threlte is a component library for Svelte to build and render three.js scenes declaratively
     and state-driven in Svelte apps.
@@ -848,3 +848,13 @@
   tags: [company, agency]
   date_created: 2023-05-13
   date_added: 2023-05-22
+
+- title: shadcn-svelte
+  url: https://shadcn-svelte.com
+  site_src: https://github.com/huntabyte/shadcn-svelte/blob/-/apps/www
+  repo: https://github.com/huntabyte/shadcn-svelte
+  description: shadcn/ui, but for Svelte.
+  uses: [TypeScript, Vercel, Tailwind, PNPM, Changesets, vitest, Prism, Marked]
+  tags: [component library, community]
+  date_created: 2023-05-15
+  date_added: 2023-07-06

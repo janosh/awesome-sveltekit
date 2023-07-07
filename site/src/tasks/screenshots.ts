@@ -27,7 +27,7 @@ export async function make_screenshots(options: { action?: Action } = {}) {
   const arg = process.argv.find((arg) => arg.startsWith(`screenshots:`))
   if (action && ![`add-missing`, `update-existing`].includes(action)) {
     throw new Error(
-      `Correct usage: vite [dev] screenshots:[report|download|re-download], got ${arg}\n`
+      `Correct usage: vite [dev] screenshots:[report|download|re-download], got ${arg}\n`,
     )
   }
 
@@ -88,7 +88,7 @@ export async function make_screenshots(options: { action?: Action } = {}) {
 
   if (created.length > 0 || updated.length > 0) {
     console.log(
-      `${this_file} took ${wall_time}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots\n`
+      `${this_file} took ${wall_time}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots\n`,
     )
   } else {
     console.log(`No changes from ${this_file} in ${wall_time}s\n`)

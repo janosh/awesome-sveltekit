@@ -11,10 +11,9 @@ import {
 
 const action = (process.env?.ACTION ?? `add-missing`) as Action
 if (!action_types.includes(action)) {
+  const types_str = action_types.join(`|`)
   throw new Error(
-    `Correct usage: ACTION=${action_types.join(
-      `|`
-    )} vite dev, got ACTION=${action}\n`
+    `Correct usage: ACTION=${types_str} vite dev, got ACTION=${action}\n`,
   )
 }
 
