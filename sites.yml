@@ -858,3 +858,12 @@
   tags: [component library, community]
   date_created: 2023-05-15
   date_added: 2023-07-06
+
+- title: learn.svelte.dev
+  url: https://learn.svelte.dev
+  repo: https://github.com/sveltejs/learn.svelte.dev
+  description: A soup-to-nuts interactive tutorial on how to build apps with Svelte.
+  uses: [Vercel, PNPM, Prism, Marked, CodeMirror]
+  tags: [docs, tutorial, education, community]
+  date_created: 2023-05-15
+  date_added: 2023-07-27
