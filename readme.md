@@ -784,6 +784,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Vercel], [Tailwind], [PNPM], [Changesets], [vitest], [Prism], [Marked]
 
+1. **[learn.svelte.dev](https://learn.svelte.dev)**&ensp;
+   [[code](https://github.com/sveltejs/learn.svelte.dev)]&ensp;
+   <a href="https://github.com/sveltejs/learn.svelte.dev/stargazers">
+   <img src="https://img.shields.io/github/stars/sveltejs/learn.svelte.dev?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A soup-to-nuts interactive tutorial on how to build apps with Svelte.<br>
+
+   uses: [Vercel], [PNPM], [Prism], [Marked], [CodeMirror]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com

@@ -2767,3 +2767,45 @@
       name: CokaKoala
       location: null
       company: null
+- title: learn.svelte.dev
+  url: https://learn.svelte.dev
+  repo: https://github.com/sveltejs/learn.svelte.dev
+  description: A soup-to-nuts interactive tutorial on how to build apps with Svelte.
+  uses:
+    - Vercel
+    - PNPM
+    - Prism
+    - Marked
+    - CodeMirror
+  tags:
+    - community
+    - docs
+    - education
+    - open source
+    - tutorial
+  date_created: 2023-05-15T00:00:00.000Z
+  date_added: 2023-07-27T00:00:00.000Z
+  slug: learn.svelte.dev
+  repo_stars: 260
+  contributors:
+    - github: Rich-Harris
+      twitter: null
+      url: https://twitter.com/rich_harris
+      avatar: https://avatars.githubusercontent.com/u/1162160?v=4
+      name: Rich Harris
+      location: NYC
+      company: null
+    - github: dummdidumm
+      twitter: dummdidumm_
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/5968653?v=4
+      name: Simon H
+      location: Germany
+      company: Vercel
+    - github: tomoam
+      twitter: tomoam_mat
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/29677552?v=4
+      name: null
+      location: Tokyo, Japan
+      company: null
