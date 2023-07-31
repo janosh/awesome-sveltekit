@@ -3,17 +3,27 @@
 
 import fs from 'fs'
 import yaml from 'js-yaml'
+import type { RawSite, Site } from '../lib'
 
 export function update_readme() {
   const readme_path = `../readme.md`
-  const sites_yaml_path = `../sites.yml`
+  const raw_sites_path = `../sites.yml`
+  const sites_path = `src/sites.yml`
 
   const readme = fs.readFileSync(readme_path, `utf8`)
-  const sites = yaml.load(fs.readFileSync(sites_yaml_path))
+  const raw_sites = yaml.load(fs.readFileSync(raw_sites_path)) as RawSite[]
+  const sites = yaml.load(fs.readFileSync(sites_path)) as Site[]
 
   const new_line = `\n   `
 
-  const new_sites = sites
+  const new_sites = raw_sites
+    .sort((site_1, site_2) => {
+      const stars1 = sites.find((site) => site.title === site_2.title)
+        ?.repo_stars
+      const stars2 = sites.find((site) => site.title === site_1.title)
+        ?.repo_stars
+      return (stars2 ?? 0) - (stars1 ?? 0)
+    })
     .map((site) => {
       const { title, repo, uses, description, url, site_src } = site
 

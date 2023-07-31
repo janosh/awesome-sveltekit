@@ -192,40 +192,6 @@
       name: Markus Hatvan
       location: Vienna, Austria
       company: null
-- title: Studenten bilden Schüler
-  url: https://studenten-bilden-schueler.de
-  repo: https://github.com/sbsev/site
-  description: >-
-    Student-run nonprofit initiative with chapters located in university towns
-    all across Germany. Mission is to contribute towards educational equality by
-    providing free tutoring to children from underprivileged families.
-  uses:
-    - Contentful
-    - Algolia
-    - GraphQL
-    - Netlify
-    - MapBox
-    - svelte-multiselect
-    - Playwright
-    - Vitest
-  tags:
-    - education
-    - equality
-    - non-profit
-    - open source
-    - volunteering
-  date_created: 2020-12-12T00:00:00.000Z
-  date_added: 2021-06-09T00:00:00.000Z
-  slug: studenten-bilden-schüler
-  repo_stars: 11
-  contributors:
-    - github: janosh
-      twitter: jrib_
-      url: https://janosh.dev
-      avatar: https://avatars.githubusercontent.com/u/30958850?v=4
-      name: Janosh Riebesell
-      location: Materials Project
-      company: Cambridge University
 - title: Guess The Year
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
