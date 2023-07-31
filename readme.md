@@ -664,16 +664,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
 
-1. **[Studenten bilden Schüler](https://studenten-bilden-schueler.de)**&ensp;
-   [[code](https://github.com/sbsev/site)]&ensp;
-   <a href="https://github.com/sbsev/site/stargazers">
-   <img src="https://img.shields.io/github/stars/sbsev/site?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Student-run nonprofit initiative with chapters located in university towns all across Germany. Mission is to contribute towards educational equality by providing free tutoring to children from underprivileged families.<br>
-
-   uses: [Contentful], [Algolia], [GraphQL], [Netlify], [MapBox], [svelte-multiselect], [Playwright], [Vitest]
-
 1. **[GraphCMS Starter Blog](https://scottspence.com/2021/05/06/graphcms-svelte-starter)**&ensp;
    [[code](https://github.com/spences10/sveltekit-starter-blog)]&ensp;
    <a href="https://github.com/spences10/sveltekit-starter-blog/stargazers">
@@ -804,7 +794,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net
 [commitlint]: https://github.com/conventional-changelog/commitlint
-[contentful]: https://contentful.com
 [cssnano]: https://cssnano.co
 [cypress]: https://cypress.io
 [cytoscape.js]: https://js.cytoscape.org
