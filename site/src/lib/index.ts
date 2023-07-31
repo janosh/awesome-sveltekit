@@ -6,20 +6,23 @@ export { default as SiteDetails } from './SiteDetails.svelte'
 export { default as SiteList } from './SiteList.svelte'
 export { default as SitePreview } from './SitePreview.svelte'
 
-export type Site = {
+export type RawSite = {
   title: string
   url: string
-  slug: string
   description?: string
   repo?: string
   npm?: string
   site_src?: string
-  repo_stars?: number
-  contributors: Contributor[]
   tags: string[]
   uses: string[]
+  date_added: Date
   date_created: Date
-  last_updated: string
+}
+
+export type Site = RawSite & {
+  slug: string
+  repo_stars?: number
+  contributors: Contributor[]
 }
 
 export type Contributor = {

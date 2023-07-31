@@ -58,26 +58,6 @@
   date_created: 2020-08-21
   date_added: 2021-05-25
 
-- title: Studenten bilden Schüler
-  url: https://studenten-bilden-schueler.de
-  repo: https://github.com/sbsev/site
-  description:
-    Student-run nonprofit initiative with chapters located in university towns all across Germany.
-    Mission is to contribute towards educational equality by providing free tutoring to children
-    from underprivileged families.
-  uses:
-    - Contentful
-    - Algolia
-    - GraphQL
-    - Netlify
-    - MapBox
-    - svelte-multiselect
-    - Playwright
-    - Vitest
-  tags: [non-profit, volunteering, education, equality]
-  date_created: 2020-12-12
-  date_added: 2021-06-09
-
 - title: Guess The Year
   url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
