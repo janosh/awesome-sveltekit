@@ -3,7 +3,7 @@
 
 import fs from 'fs'
 import yaml from 'js-yaml'
-import type { Site } from '../lib'
+import type { RawSite, Site } from '../lib'
 
 export function update_readme() {
   const readme_path = `../readme.md`
@@ -11,10 +11,8 @@ export function update_readme() {
   const sites_path = `src/sites.yml`
 
   const readme = fs.readFileSync(readme_path, `utf8`)
-  const raw_sites = yaml.load(fs.readFileSync(raw_sites_path))
-  const sites = yaml.load(
-    fs.readFileSync(sites_path),
-  ) as Site[]
+  const raw_sites = yaml.load(fs.readFileSync(raw_sites_path)) as RawSite[]
+  const sites = yaml.load(fs.readFileSync(sites_path)) as Site[]
 
   const new_line = `\n   `
 
