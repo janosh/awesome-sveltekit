@@ -3,7 +3,7 @@
 - title: Svelte.dev
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
-  site_src: https://github.com/sveltejs/sites/blob/-/sites/svelte.dev
+  site_src: https://github.com/sveltejs/svelte/tree/-/sites/svelte.dev
   npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses:
@@ -2774,4 +2774,32 @@
       avatar: https://avatars.githubusercontent.com/u/29677552?v=4
       name: null
       location: Tokyo, Japan
+      company: null
+- title: Dotfyle
+  url: https://dotfyle.com
+  repo: https://github.com/codicocodes/dotfyle
+  description: Discover and share Neovim configurations and plugins.
+  uses:
+    - TypeScript
+    - PNPM
+    - tRPC-SvelteKit
+    - Prisma
+    - Tailwind
+    - Octokit
+  tags:
+    - community
+    - dotfiles
+    - neovim
+    - open source
+  date_created: 2023-03-11T00:00:00.000Z
+  date_added: 2023-08-01T00:00:00.000Z
+  slug: dotfyle
+  repo_stars: 219
+  contributors:
+    - github: codicocodes
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/76068197?v=4
+      name: null
+      location: null
       company: null
