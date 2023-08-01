@@ -13,7 +13,7 @@
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
   # Sapper to SvelteKit migration in https://git.io/JXSh1
-  site_src: https://github.com/sveltejs/sites/blob/-/sites/svelte.dev
+  site_src: https://github.com/sveltejs/svelte/tree/-/sites/svelte.dev
   npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
