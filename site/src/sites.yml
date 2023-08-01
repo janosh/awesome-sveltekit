@@ -2775,3 +2775,31 @@
       name: null
       location: Tokyo, Japan
       company: null
+- title: Dotfyle
+  url: https://dotfyle.com
+  repo: https://github.com/codicocodes/dotfyle
+  description: Discover and share Neovim configurations and plugins.
+  uses:
+    - TypeScript
+    - PNPM
+    - tRPC-SvelteKit
+    - Prisma
+    - Tailwind
+    - Octokit
+  tags:
+    - community
+    - dotfiles
+    - neovim
+    - open source
+  date_created: 2023-03-11T00:00:00.000Z
+  date_added: 2023-08-01T00:00:00.000Z
+  slug: dotfyle
+  repo_stars: 219
+  contributors:
+    - github: codicocodes
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/76068197?v=4
+      name: null
+      location: null
+      company: null

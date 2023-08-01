@@ -468,6 +468,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Vercel], [Tailwind]
 
+1. **[Dotfyle](https://dotfyle.com)**&ensp;
+   [[code](https://github.com/codicocodes/dotfyle)]&ensp;
+   <a href="https://github.com/codicocodes/dotfyle/stargazers">
+   <img src="https://img.shields.io/github/stars/codicocodes/dotfyle?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Discover and share Neovim configurations and plugins.<br>
+
+   uses: [TypeScript], [PNPM], [tRPC-SvelteKit], [Prisma], [Tailwind], [Octokit]
+
 1. **[neovim craft](https://neovimcraft.com)**&ensp;
    [[code](https://github.com/neurosnap/neovimcraft)]&ensp;
    <a href="https://github.com/neurosnap/neovimcraft/stargazers">
@@ -853,6 +863,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [postcss]: https://postcss.org
 [pre-commit]: https://pre-commit.com
 [prism]: https://prismjs.com
+[prisma]: https://prisma.io
 [prosemirror]: https://prosemirror.net
 [rehype]: https://github.com/rehypejs/rehype
 [release it]: https://github.com/release-it/release-it
@@ -878,6 +889,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
+[trpc-sveltekit]: https://github.com/icflorescu/trpc-sveltekit
 [turbo]: https://github.com/vercel/turbo
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
