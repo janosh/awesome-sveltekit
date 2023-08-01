@@ -847,3 +847,12 @@
   tags: [docs, tutorial, education, community]
   date_created: 2023-05-15
   date_added: 2023-07-27
+
+- title: Dotfyle
+  url: https://dotfyle.com
+  repo: https://github.com/codicocodes/dotfyle
+  description: Discover and share Neovim configurations and plugins.
+  uses: [TypeScript, PNPM, tRPC-SvelteKit, Prisma, Tailwind, Octokit]
+  tags: [neovim, dotfiles, community]
+  date_created: 2023-03-11
+  date_added: 2023-08-01
