@@ -19,7 +19,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 ## Sites
 
 1. **[Svelte.dev](https://svelte.dev)**&ensp;
-   [[code](https://github.com/sveltejs/sites/blob/-/sites/svelte.dev)]&ensp;
+   [[code](https://github.com/sveltejs/svelte/tree/-/sites/svelte.dev)]&ensp;
    <a href="https://github.com/sveltejs/svelte/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
