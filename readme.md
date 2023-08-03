@@ -268,6 +268,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [PNPM], [MDsveX], [Husky], [highlight.js]
 
+1. **[tRPC-SvelteKit](https://icflorescu.github.io/trpc-sveltekit)**&ensp;
+   [[code](https://github.com/icflorescu/trpc-sveltekit)]&ensp;
+   <a href="https://github.com/icflorescu/trpc-sveltekit/stargazers">
+   <img src="https://img.shields.io/github/stars/icflorescu/trpc-sveltekit?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   End-to-end typesafe APIs for your SvelteKit applications.<br>
+
+   uses: [TypeScript], [tRPC]
+
 1. **[Chat UI](https://huggingface.co/chat)**&ensp;
    [[code](https://github.com/huggingface/chat-ui)]&ensp;
    <a href="https://github.com/huggingface/chat-ui/stargazers">

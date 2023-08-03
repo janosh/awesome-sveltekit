@@ -856,3 +856,12 @@
   tags: [neovim, dotfiles, community]
   date_created: 2023-03-11
   date_added: 2023-08-01
+
+- title: tRPC-SvelteKit
+  url: https://icflorescu.github.io/trpc-sveltekit
+  repo: https://github.com/icflorescu/trpc-sveltekit
+  description: End-to-end typesafe APIs for your SvelteKit applications.
+  uses: [TypeScript, tRPC]
+  tags: [community, open source, NPM package, docs, dev tools]
+  date_created: 2022-02-10
+  date_added: 2023-08-03

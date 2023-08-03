@@ -2803,3 +2803,28 @@
       name: null
       location: null
       company: null
+- title: tRPC-SvelteKit
+  url: https://icflorescu.github.io/trpc-sveltekit
+  repo: https://github.com/icflorescu/trpc-sveltekit
+  description: End-to-end typesafe APIs for your SvelteKit applications.
+  uses:
+    - TypeScript
+    - tRPC
+  tags:
+    - community
+    - open source
+    - NPM package
+    - docs
+    - dev tools
+  date_created: 2022-02-10T00:00:00.000Z
+  date_added: 2023-08-03T00:00:00.000Z
+  slug: trpc-sveltekit
+  repo_stars: 598
+  contributors:
+    - github: icflorescu
+      twitter: icflorescu
+      url: https://www.linkedin.com/in/icflorescu
+      avatar: https://avatars.githubusercontent.com/u/581999?v=4
+      name: Ionut-Cristian Florescu
+      location: Bucharest, Romania
+      company: React/Svelte/Node.js Developer
