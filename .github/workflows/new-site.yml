@@ -27,7 +27,7 @@ jobs:
 
       - name: Update existing site screenshots and repo contributors on scheduled runs
         if: github.event_name == 'schedule'
-        run: npm run dev update-existing
+        run: ACTION=update-existing npm run dev
 
       - name: Add screenshots for new sites and update readme
         if: github.event_name != 'schedule'
