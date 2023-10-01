@@ -19,7 +19,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 ## Sites
 
 1. **[Svelte.dev](https://svelte.dev)**&ensp;
-   [[code](https://github.com/sveltejs/svelte/tree/-/sites/svelte.dev)]&ensp;
+   [[code](https://github.com/sveltejs/svelte/tree/master/sites/svelte.dev)]&ensp;
    <a href="https://github.com/sveltejs/svelte/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -304,7 +304,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    <img src="https://img.shields.io/github/stars/icflorescu/trpc-sveltekit?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   End-to-end typesafe APIs for your SvelteKit applications.<br>
+   End-to-end type-safe APIs for your SvelteKit applications.<br>
 
    uses: [TypeScript], [tRPC]
 
