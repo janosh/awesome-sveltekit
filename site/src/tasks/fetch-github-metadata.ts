@@ -86,7 +86,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
     // also skip site if repo key cannot be parsed into a user login and a repo name
     const repoHandle = site.repo.split(`github.com/`)[1]
-    if (repoHandle.split(`/`).length !== 2) {
+    if (!repoHandle || repoHandle.split(`/`).length !== 2) {
       console.error(`bad repo handle ${repoHandle}`)
       skipped_sites.push(slug)
       continue

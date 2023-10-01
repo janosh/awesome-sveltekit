@@ -2891,3 +2891,31 @@
       name: Ionut-Cristian Florescu
       location: Bucharest, Romania
       company: React/Svelte/Node.js Developer
+- title: ASM Editor
+  url: https://asm-editor.specy.app
+  repo: https://github.com/Specy/asm-editor
+  description: A modern webapp to write, run and learn M68K assembly code.
+  uses:
+    - TypeScript
+    - Sass
+    - Monaco
+    - WASM
+  tags:
+    - assembly
+    - emulator
+    - interpreter
+    - Javascript
+    - M68K
+    - open source
+  date_created: 2022-04-22T00:00:00.000Z
+  date_added: 2023-09-30T00:00:00.000Z
+  slug: asm-editor
+  repo_stars: 88
+  contributors:
+    - github: Specy
+      twitter: null
+      url: https://specy.app
+      avatar: https://avatars.githubusercontent.com/u/59029985?v=4
+      name: Specy
+      location: Italy
+      company: null

@@ -440,8 +440,8 @@
   repo: https://github.com/janosh/elementari
   npm: https://npmjs.com/package/elementari
   description:
-    "Interactive visualizations for materials science: periodic tables, 3d crystal
-    structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps, scatter plots."
+    'Interactive visualizations for materials science: periodic tables, 3d crystal
+    structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps, scatter plots.'
   uses:
     - TypeScript
     - pre-commit
@@ -865,3 +865,12 @@
   tags: [community, open source, NPM package, docs, dev tools]
   date_created: 2022-02-10
   date_added: 2023-08-03
+
+- title: ASM Editor
+  url: https://asm-editor.specy.app
+  repo: https://github.com/Specy/asm-editor
+  description: A modern webapp to write, run and learn M68K assembly code.
+  uses: [TypeScript, Sass, Monaco, WASM]
+  tags: [Javascript, interpreter, emulator, assembly, M68K]
+  date_created: 2022-04-22
+  date_added: 2023-09-30

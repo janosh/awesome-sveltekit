@@ -62,7 +62,6 @@ panzoom: https://github.com/timmywil/panzoom
 picocss: https://picocss.com
 plausible: https://plausible.io
 playwright: https://playwright.dev
-plotly: https://github.com/plotly/plotly.js
 pnpm: https://pnpm.io
 pocketbase: https://pocketbase.io
 postcss: https://postcss.org
@@ -102,5 +101,6 @@ unocss: https://github.com/unocss/unocss
 uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 vitest: https://vitest.dev
+wasm: https://webassembly.org
 webgl: https://developer.mozilla.org/docs/Web/API/WebGL_API
 ytdl-core: https://github.com/fent/node-ytdl-core
