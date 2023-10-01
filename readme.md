@@ -19,7 +19,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 ## Sites
 
 1. **[Svelte.dev](https://svelte.dev)**&ensp;
-   [[code](https://github.com/sveltejs/svelte/tree/-/sites/svelte.dev)]&ensp;
+   [[code](https://github.com/sveltejs/svelte/tree/master/sites/svelte.dev)]&ensp;
    <a href="https://github.com/sveltejs/svelte/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -304,7 +304,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    <img src="https://img.shields.io/github/stars/icflorescu/trpc-sveltekit?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   End-to-end typesafe APIs for your SvelteKit applications.<br>
+   End-to-end type-safe APIs for your SvelteKit applications.<br>
 
    uses: [TypeScript], [tRPC]
 
@@ -648,6 +648,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [MDsveX], [Tailwind], [PNPM]
 
+1. **[ASM Editor](https://asm-editor.specy.app)**&ensp;
+   [[code](https://github.com/Specy/asm-editor)]&ensp;
+   <a href="https://github.com/Specy/asm-editor/stargazers">
+   <img src="https://img.shields.io/github/stars/Specy/asm-editor?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A modern webapp to write, run and learn M68K assembly code.<br>
+
+   uses: [TypeScript], [Sass], [Monaco], [WASM]
+
 1. **[SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app)**&ensp;
    [[code](https://github.com/tsukhu/sveltekit-demo)]&ensp;
    <a href="https://github.com/tsukhu/sveltekit-demo/stargazers">
@@ -907,6 +917,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [uvu]: https://github.com/lukeed/uvu
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
+[wasm]: https://webassembly.org
 [webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
 

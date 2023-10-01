@@ -13,7 +13,7 @@
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
   # Sapper to SvelteKit migration in https://git.io/JXSh1
-  site_src: https://github.com/sveltejs/svelte/tree/-/sites/svelte.dev
+  site_src: https://github.com/sveltejs/svelte/tree/master/sites/svelte.dev
   npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
@@ -860,8 +860,17 @@
 - title: tRPC-SvelteKit
   url: https://icflorescu.github.io/trpc-sveltekit
   repo: https://github.com/icflorescu/trpc-sveltekit
-  description: End-to-end typesafe APIs for your SvelteKit applications.
+  description: End-to-end type-safe APIs for your SvelteKit applications.
   uses: [TypeScript, tRPC]
   tags: [community, open source, NPM package, docs, dev tools]
   date_created: 2022-02-10
   date_added: 2023-08-03
+
+- title: ASM Editor
+  url: https://asm-editor.specy.app
+  repo: https://github.com/Specy/asm-editor
+  description: A modern webapp to write, run and learn M68K assembly code.
+  uses: [TypeScript, Sass, Monaco, WASM]
+  tags: [Javascript, interpreter, emulator, assembly, M68K]
+  date_created: 2022-04-22
+  date_added: 2023-09-30

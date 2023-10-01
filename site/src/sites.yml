@@ -3,7 +3,7 @@
 - title: Svelte.dev
   url: https://svelte.dev
   repo: https://github.com/sveltejs/svelte
-  site_src: https://github.com/sveltejs/svelte/tree/-/sites/svelte.dev
+  site_src: https://github.com/sveltejs/svelte/tree/master/sites/svelte.dev
   npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses:
@@ -2869,7 +2869,7 @@
 - title: tRPC-SvelteKit
   url: https://icflorescu.github.io/trpc-sveltekit
   repo: https://github.com/icflorescu/trpc-sveltekit
-  description: End-to-end typesafe APIs for your SvelteKit applications.
+  description: End-to-end type-safe APIs for your SvelteKit applications.
   uses:
     - TypeScript
     - tRPC
@@ -2891,3 +2891,31 @@
       name: Ionut-Cristian Florescu
       location: Bucharest, Romania
       company: React/Svelte/Node.js Developer
+- title: ASM Editor
+  url: https://asm-editor.specy.app
+  repo: https://github.com/Specy/asm-editor
+  description: A modern webapp to write, run and learn M68K assembly code.
+  uses:
+    - TypeScript
+    - Sass
+    - Monaco
+    - WASM
+  tags:
+    - assembly
+    - emulator
+    - interpreter
+    - Javascript
+    - M68K
+    - open source
+  date_created: 2022-04-22T00:00:00.000Z
+  date_added: 2023-09-30T00:00:00.000Z
+  slug: asm-editor
+  repo_stars: 88
+  contributors:
+    - github: Specy
+      twitter: null
+      url: https://specy.app
+      avatar: https://avatars.githubusercontent.com/u/59029985?v=4
+      name: Specy
+      location: Italy
+      company: null
