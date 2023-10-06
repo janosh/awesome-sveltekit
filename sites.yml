@@ -874,3 +874,12 @@
   tags: [Javascript, interpreter, emulator, assembly, M68K]
   date_created: 2022-04-22
   date_added: 2023-09-30
+
+- title: Tiny Little Paws Dog Grooming
+  url: https://tinylittlepaws.com
+  repo: https://github.com/dvliman/paws
+  description: Dog Grooming Salon website, built with SvelteKit
+  uses: [Svelte, Javascript, Cloudflare, Google Analytics]
+  tags: [community, marketing, small business, portfolio]
+  date_added: 2023-10-06
+  date_created: 2023-10-06

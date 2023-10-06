@@ -2919,3 +2919,37 @@
       name: Specy
       location: Italy
       company: null
+- title: Tiny Little Paws Dog Grooming
+  url: https://tinylittlepaws.com
+  repo: https://github.com/dvliman/paws
+  description: Dog Grooming Salon website, built with SvelteKit
+  uses:
+    - Svelte
+    - Javascript
+    - Cloudflare
+    - Google Analytics
+  tags:
+    - community
+    - marketing
+    - open source
+    - portfolio
+    - small business
+  date_added: 2023-10-06T00:00:00.000Z
+  date_created: 2023-10-06T00:00:00.000Z
+  slug: tiny-little-paws-dog-grooming
+  repo_stars: 0
+  contributors:
+    - github: dvliman
+      twitter: null
+      url: https://dvliman.com
+      avatar: https://avatars.githubusercontent.com/u/161295?v=4
+      name: David Liman
+      location: Los Angeles, CA
+      company: null
+    - github: artcoholic
+      twitter: agwibawa
+      url: https://www.arturowibawa.com
+      avatar: https://avatars.githubusercontent.com/u/6734458?v=4
+      name: Art
+      location: Los Angeles
+      company: null
