@@ -1020,8 +1020,7 @@
       company: null
 - title: inlang
   url: https://inlang.com
-  repo: https://github.com/inlang/inlang
-  site_src: https://github.com/inlang/inlang/blob/-/source-code/website
+  repo: https://github.com/inlang/monorepo
   description: Translate software products 2x faster.
   uses:
     - TypeScript
