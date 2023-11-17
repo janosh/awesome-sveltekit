@@ -814,6 +814,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Typescript], [SCSS], [PostCSS], [Motion One], [OGL], [WebGL], [Directus], [Swell Commerce], [Vercel]
 
+1. **[Tiny Little Paws Dog Grooming](https://tinylittlepaws.com)**&ensp;
+   [[code](https://github.com/dvliman/paws)]&ensp;
+   <a href="https://github.com/dvliman/paws/stargazers">
+   <img src="https://img.shields.io/github/stars/dvliman/paws?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Dog Grooming Salon website, built with SvelteKit<br>
+
+   uses: [Javascript], [Cloudflare], [Google Analytics]
+
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
