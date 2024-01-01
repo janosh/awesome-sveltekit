@@ -289,9 +289,9 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [TypeScript]
 
 1. **[inlang](https://inlang.com)**&ensp;
-   [[code](https://github.com/inlang/inlang/blob/-/source-code/website)]&ensp;
-   <a href="https://github.com/inlang/inlang/stargazers">
-   <img src="https://img.shields.io/github/stars/inlang/inlang?logo=github" alt="GitHub stars" valign="middle">
+   [[code](https://github.com/inlang/monorepo)]&ensp;
+   <a href="https://github.com/inlang/monorepo/stargazers">
+   <img src="https://img.shields.io/github/stars/inlang/monorepo?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    Translate software products 2x faster.<br>
