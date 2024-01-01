@@ -43,6 +43,7 @@ js-yaml: https://github.com/nodeca/js-yaml
 jsdoc: https://jsdoc.app
 jsdom: https://github.com/jsdom/jsdom
 json5: https://github.com/json5/json5
+katex: https://github.com/KaTeX/KaTeX
 liveblocks: https://liveblocks.io
 lodash: https://lodash.com
 mapbox: https://mapbox.com

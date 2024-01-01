@@ -2918,3 +2918,33 @@
       name: Specy
       location: Italy
       company: null
+- title: Ollama Web UI
+  url: https://ollamahub.com
+  repo: https://github.com/ollama-webui/ollama-webui
+  description: ChatGPT-Style Web UI Client for Ollama 🦙.
+  uses:
+    - highlight.js
+    - MarkedJS
+    - KaTeX
+    - TypeScript
+    - Tailwind
+  tags:
+    - AI
+    - chatbot
+    - GPT
+    - large language models
+    - NLP
+    - open source
+    - UI
+  date_created: 2023-10-07T00:00:00.000Z
+  date_added: 2024-01-01T00:00:00.000Z
+  slug: ollama-web-ui
+  repo_stars: 2837
+  contributors:
+    - github: tjbck
+      twitter: timothyjbaek
+      url: https://jryng.com
+      avatar: https://avatars.githubusercontent.com/u/25473318?v=4
+      name: Timothy Jaeryang Baek
+      location: Vancouver, BC
+      company: null

@@ -98,6 +98,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Tailwind], [Hugo], [Firebase], [Flamethrower], [Sass], [PostCSS], [Algolia]
 
+1. **[Ollama Web UI](https://ollamahub.com)**&ensp;
+   [[code](https://github.com/ollama-webui/ollama-webui)]&ensp;
+   <a href="https://github.com/ollama-webui/ollama-webui/stargazers">
+   <img src="https://img.shields.io/github/stars/ollama-webui/ollama-webui?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   ChatGPT-Style Web UI Client for Ollama 🦙.<br>
+
+   uses: [highlight.js], [MarkedJS], [KaTeX], [TypeScript], [Tailwind]
+
 1. **[mermaid-live-editor](https://mermaid.live)**&ensp;
    [[code](https://github.com/mermaid-js/mermaid-live-editor)]&ensp;
    <a href="https://github.com/mermaid-js/mermaid-live-editor/stargazers">
@@ -859,6 +869,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [jsdoc]: https://jsdoc.app
 [jsdom]: https://github.com/jsdom/jsdom
 [json5]: https://github.com/json5/json5
+[katex]: https://github.com/KaTeX/KaTeX
 [liveblocks]: https://liveblocks.io
 [lodash]: https://lodash.com
 [mapbox]: https://mapbox.com
