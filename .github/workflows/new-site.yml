@@ -11,12 +11,12 @@ jobs:
     if: github.repository_owner == 'janosh'
     steps:
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
 
       - name: Set up node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 19
           cache: npm
@@ -27,11 +27,11 @@ jobs:
 
       - name: Update existing site screenshots and repo contributors on scheduled runs
         if: github.event_name == 'schedule'
-        run: ACTION=update-existing npm run dev
+        run: ACTION=update-existing cd site && npm run dev
 
       - name: Add screenshots for new sites and update readme
         if: github.event_name != 'schedule'
-        run: npm run dev
+        run: cd site && npm run dev
 
       - name: Push changes if any
         run: |

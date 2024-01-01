@@ -71,7 +71,7 @@
 
 - title: Gitpod
   url: https://gitpod.io
-  repo: https://github.com/gitpod-io/website
+  repo: https://github.com/gitpod-io/gitpod
   description:
     Gitpod streamlines developer workflows by providing prebuilt, collaborative
     development environments in your browser - powered by VS Code.
@@ -873,3 +873,12 @@
   tags: [Javascript, interpreter, emulator, assembly, M68K]
   date_created: 2022-04-22
   date_added: 2023-09-30
+
+- title: Ollama Web UI
+  url: https://ollamahub.com
+  repo: https://github.com/ollama-webui/ollama-webui
+  description: ChatGPT-Style Web UI Client for Ollama 🦙.
+  uses: [highlight.js, MarkedJS, KaTeX, TypeScript, Tailwind]
+  tags: [chatbot, AI, NLP, GPT, large language models, UI]
+  date_created: 2023-10-07
+  date_added: 2024-01-01
