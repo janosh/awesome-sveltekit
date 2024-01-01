@@ -71,7 +71,7 @@
 
 - title: Gitpod
   url: https://gitpod.io
-  repo: https://github.com/gitpod-io/website
+  repo: https://github.com/gitpod-io/gitpod
   description:
     Gitpod streamlines developer workflows by providing prebuilt, collaborative
     development environments in your browser - powered by VS Code.
