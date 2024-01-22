@@ -2955,3 +2955,60 @@
       name: Timothy Jaeryang Baek
       location: Vancouver, BC
       company: null
+- title: Immich
+  url: https://immich.app
+  repo: https://github.com/immich-app/immich
+  description: Self-hosted photo and video backup solution directly from your mobile phone.
+  uses:
+    - NestJS
+    - TypeScript
+    - Tailwind
+    - Flutter
+    - Python
+  tags:
+    - backup-tool
+    - media
+    - open source
+    - photo-gallery
+    - photos
+    - self-hosted
+  date_created: 2022-02-03T00:00:00.000Z
+  date_added: 2024-01-22T00:00:00.000Z
+  slug: immich
+  repo_stars: 24840
+  contributors:
+    - github: alextran1502
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/27055614?v=4
+      name: Alex
+      location: United States
+      company: null
+    - github: jrasm91
+      twitter: null
+      url: https://jrasm.com
+      avatar: https://avatars.githubusercontent.com/u/4334196?v=4
+      name: Jason Rasmussen
+      location: null
+      company: null
+    - github: michelheusschen
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/59014050?v=4
+      name: Michel Heusschen
+      location: null
+      company: null
+    - github: mertalev
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/101130780?v=4
+      name: Mert
+      location: New York, NY
+      company: null
+    - github: martabal
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/74269598?v=4
+      name: martin
+      location: France
+      company: null

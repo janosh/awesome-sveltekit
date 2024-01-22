@@ -28,6 +28,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [CodeMirror], [Mapbox], [Docker]
 
+1. **[Immich](https://immich.app)**&ensp;
+   [[code](https://github.com/immich-app/immich)]&ensp;
+   <a href="https://github.com/immich-app/immich/stargazers">
+   <img src="https://img.shields.io/github/stars/immich-app/immich?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Self-hosted photo and video backup solution directly from your mobile phone.<br>
+
+   uses: [NestJS], [TypeScript], [Tailwind], [Flutter], [Python]
+
 1. **[Official SvelteKit docs](https://kit.svelte.dev)**&ensp;
    [[code](https://github.com/sveltejs/kit/blob/-/sites/kit.svelte.dev)]&ensp;
    <a href="https://github.com/sveltejs/kit/stargazers">
@@ -929,8 +939,11 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
 [wasm]: https://webassembly.org
+[flutter]: https://flutter.dev
 [webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
+[nestjs]: https://nestjs.com
+[python]: https://python.org
 
 ## 🎉 Suggestions Welcome
 
