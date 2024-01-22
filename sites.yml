@@ -882,3 +882,12 @@
   tags: [chatbot, AI, NLP, GPT, large language models, UI]
   date_created: 2023-10-07
   date_added: 2024-01-01
+
+- title: Immich
+  url: https://immich.app
+  repo: https://github.com/immich-app/immich
+  description: Self-hosted photo and video backup solution directly from your mobile phone.
+  uses: [NestJS, TypeScript, Tailwind, Flutter, Python]
+  tags: [photos, photo-gallery, self-hosted, backup-tool, media]
+  date_created: 2022-02-03
+  date_added: 2024-01-22
