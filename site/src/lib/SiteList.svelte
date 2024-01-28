@@ -1,5 +1,7 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
+  import { search } from '$lib/stores'
+  import { highlight_matches } from 'svelte-zoo'
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
   import type { Site } from '.'
@@ -29,7 +31,7 @@
 
 <svelte:window on:keyup={handle_keyup} />
 
-<ol>
+<ol use:highlight_matches={{ query: $search, css_class: `highlight-match` }}>
   {#each sites as site, idx (site.url)}
     <li
       animate:flip={{ duration: 400 }}
