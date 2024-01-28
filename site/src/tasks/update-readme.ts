@@ -34,7 +34,7 @@ export function update_readme() {
           }
           const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
           code_link =
-            `&ensp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
+            `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
             `<a href="${repo}/stargazers">${new_line}${star_badge}${new_line}</a>`
         }
 
