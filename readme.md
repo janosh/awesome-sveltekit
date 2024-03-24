@@ -156,7 +156,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    shadcn/ui, but for Svelte.<br>
 
-   uses: [TypeScript], [Vercel], [Tailwind], [PNPM], [Changesets], [vitest], [Prism], [Marked]
+   uses: [TypeScript], [Vercel], [Tailwind], [PNPM], [Changesets], [vitest], [Prism], [MarkedJS]
 
 1. **[Svelvet](https://svelvet.io)**&nbsp;
    [[code](https://github.com/oslabs-beta/Svelvet)]&ensp;
@@ -446,7 +446,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    A soup-to-nuts interactive tutorial on how to build apps with Svelte.<br>
 
-   uses: [Vercel], [PNPM], [Prism], [Marked], [CodeMirror]
+   uses: [Vercel], [PNPM], [Prism], [MarkedJS], [CodeMirror]
 
 1. **[Watch This](https://what-to-watch-roan.vercel.app)**&nbsp;
    [[code](https://github.com/StephDietz/watch-this)]&ensp;
@@ -506,7 +506,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    Supercharged REPL for Svelte (think StackBlitz specialized for Svelte)<br>
 
-   uses: [Playwright], [vitest], [Iconify], [Marked], [TypeScript], [PNPM], [Pocketbase], [Vercel], [Tailwind]
+   uses: [Playwright], [vitest], [Iconify], [MarkedJS], [TypeScript], [PNPM], [Pocketbase], [Vercel], [Tailwind]
 
 1. **[Dotfyle](https://dotfyle.com)**&nbsp;
    [[code](https://github.com/codicocodes/dotfyle)]&ensp;
@@ -933,6 +933,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
+[trpc]: https://trpc.io
 [trpc-sveltekit]: https://github.com/icflorescu/trpc-sveltekit
 [turbo]: https://github.com/vercel/turbo
 [typescript]: https://typescriptlang.org

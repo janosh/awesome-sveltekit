@@ -109,13 +109,13 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
     // show at most 5 contributors and only those with more than 10 commits
     // and of type 'User' (to filter out bots) sorted by number of contributions
     contributors = contributors
-      .filter((c) => c.contributions > 10 && c.type === `User`)
+      .filter((itm) => itm.contributions > 10 && itm.type === `User`)
       .sort((c1, c2) => c2.contributions - c1.contributions)
       .slice(0, 5)
 
     contributors = await Promise.all(
-      contributors.map(({ url }) =>
-        fetch(url, { headers }).then((r) => r.json()),
+      contributors.map((person) =>
+        fetch(person.url, { headers }).then((res) => res.json()),
       ),
     )
 

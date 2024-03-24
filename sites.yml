@@ -800,7 +800,7 @@
     - Playwright
     - vitest
     - Iconify
-    - Marked
+    - MarkedJS
     - TypeScript
     - PNPM
     - Pocketbase
@@ -833,7 +833,8 @@
   site_src: https://github.com/huntabyte/shadcn-svelte/blob/-/apps/www
   repo: https://github.com/huntabyte/shadcn-svelte
   description: shadcn/ui, but for Svelte.
-  uses: [TypeScript, Vercel, Tailwind, PNPM, Changesets, vitest, Prism, Marked]
+  uses:
+    [TypeScript, Vercel, Tailwind, PNPM, Changesets, vitest, Prism, MarkedJS]
   tags: [component library, community]
   date_created: 2023-05-15
   date_added: 2023-07-06
@@ -842,7 +843,7 @@
   url: https://learn.svelte.dev
   repo: https://github.com/sveltejs/learn.svelte.dev
   description: A soup-to-nuts interactive tutorial on how to build apps with Svelte.
-  uses: [Vercel, PNPM, Prism, Marked, CodeMirror]
+  uses: [Vercel, PNPM, Prism, MarkedJS, CodeMirror]
   tags: [docs, tutorial, education, community]
   date_created: 2023-05-15
   date_added: 2023-07-27
