@@ -2678,7 +2678,7 @@
     - Playwright
     - vitest
     - Iconify
-    - Marked
+    - MarkedJS
     - TypeScript
     - PNPM
     - Pocketbase
@@ -2778,7 +2778,7 @@
     - Changesets
     - vitest
     - Prism
-    - Marked
+    - MarkedJS
   tags:
     - community
     - component library
@@ -2810,7 +2810,7 @@
     - Vercel
     - PNPM
     - Prism
-    - Marked
+    - MarkedJS
     - CodeMirror
   tags:
     - community
