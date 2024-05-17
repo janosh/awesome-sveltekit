@@ -892,3 +892,12 @@
   tags: [photos, photo-gallery, self-hosted, backup-tool, media]
   date_created: 2022-02-03
   date_added: 2024-01-22
+
+- title: Passkey authentication starter
+  url: https://d1rl0ue18b0151.cloudfront.net
+  repo: https://github.com/passlock-dev/svelte-passkeys
+  description: SvelteKit template featuring Passkeys, Social Sign in and more.
+  uses: [SvelteKit, TypeScript, Tailwind, Lucia, Passlock]
+  tags: [photos, photo-gallery, self-hosted, backup-tool, media]
+  date_created: 2024-04-22
+  date_added: 2024-05-17  
