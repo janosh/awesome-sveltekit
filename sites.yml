@@ -892,3 +892,21 @@
   tags: [photos, photo-gallery, self-hosted, backup-tool, media]
   date_created: 2022-02-03
   date_added: 2024-01-22
+
+- title: Svead
+  url: https://svead.pages.dev
+  repo: https://github.com/spences10/svead
+  description:
+    Svead 🍺, a component that allows you to set head meta information, canonical, title,
+    Twitter and Facebook Open Graph tags, and schema.org data.
+  uses:
+    - TypeScript
+    - PNPM
+    - Cloudflare Pages
+    - MDsveX
+    - Tailwind
+    - PostCSS
+    - DaisyUI
+  tags: [component library]
+  date_created: 2022-05-15
+  date_added: 2024-05-31
