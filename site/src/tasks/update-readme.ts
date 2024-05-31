@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 /* This file parses sites.yml, then updates the list of sites in the readme. */
 
 import fs from 'fs'

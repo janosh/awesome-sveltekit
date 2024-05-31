@@ -714,6 +714,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [MDsveX], [GSAP], [Netlify]
 
+1. **[Svead](https://svead.pages.dev)**&nbsp;
+   [[code](https://github.com/spences10/svead)]&ensp;
+   <a href="https://github.com/spences10/svead/stargazers">
+   <img src="https://img.shields.io/github/stars/spences10/svead?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Svead 🍺, a component that allows you to set head meta information, canonical, title, Twitter and Facebook Open Graph tags, and schema.org data.<br>
+
+   uses: [TypeScript], [PNPM], [Cloudflare Pages], [MDsveX], [Tailwind], [PostCSS], [DaisyUI]
+
 1. **[The Pudding](https://pudding.cool)**&nbsp;
    [[code](https://github.com/the-pudding/website)]&ensp;
    <a href="https://github.com/the-pudding/website/stargazers">
@@ -933,8 +943,8 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [tailwind]: https://tailwindcss.com
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
-[trpc]: https://trpc.io
 [trpc-sveltekit]: https://github.com/icflorescu/trpc-sveltekit
+[trpc]: https://trpc.io
 [turbo]: https://github.com/vercel/turbo
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
@@ -945,6 +955,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [wasm]: https://webassembly.org
 [webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
+[cloudflare pages]: https://pages.cloudflare.com
 
 ## 🎉 Suggestions Welcome
 

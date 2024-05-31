@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 /* This file parses sites.yml, generates low+hi-res screenshots for each site,
 saves them as WebP to site/static/screenshots/ and compresses them. */
 
