@@ -3012,3 +3012,39 @@
       name: martin
       location: France
       company: null
+- title: Svead
+  url: https://svead.pages.dev
+  repo: https://github.com/spences10/svead
+  description: >-
+    Svead 🍺, a component that allows you to set head meta information,
+    canonical, title, Twitter and Facebook Open Graph tags, and schema.org data.
+  uses:
+    - TypeScript
+    - PNPM
+    - Cloudflare Pages
+    - MDsveX
+    - Tailwind
+    - PostCSS
+    - DaisyUI
+  tags:
+    - component library
+    - open source
+  date_created: 2022-05-15T00:00:00.000Z
+  date_added: 2024-05-31T00:00:00.000Z
+  slug: svead
+  repo_stars: 59
+  contributors:
+    - github: spences10
+      twitter: spences10
+      url: https://scottspence.com
+      avatar: https://avatars.githubusercontent.com/u/234708?v=4
+      name: Scott Spence
+      location: London, United Kingdom
+      company: '@XtendOps-developers'
+    - github: renovate-bot
+      twitter: renovatebot
+      url: https://www.mend.io/free-developer-tools/renovate/
+      avatar: https://avatars.githubusercontent.com/u/25180681?v=4
+      name: Mend Renovate
+      location: null
+      company: '@mend'
