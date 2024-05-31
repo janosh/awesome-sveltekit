@@ -1,5 +1,6 @@
 ci:
   autoupdate_schedule: quarterly
+  skip: [eslint]
 
 default_stages: [commit]
 
