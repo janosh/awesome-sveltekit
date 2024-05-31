@@ -897,7 +897,7 @@
   url: https://svead.pages.dev
   repo: https://github.com/spences10/svead
   description:
-    Svead 🍺, a component that allows you to set head meta information, canonical, title, 
+    Svead 🍺, a component that allows you to set head meta information, canonical, title,
     Twitter and Facebook Open Graph tags, and schema.org data.
   uses:
     - TypeScript
