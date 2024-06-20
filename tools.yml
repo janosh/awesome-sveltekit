@@ -48,6 +48,7 @@ json5: https://github.com/json5/json5
 katex: https://github.com/KaTeX/KaTeX
 liveblocks: https://liveblocks.io
 lodash: https://lodash.com
+lucia: https://github.com/lucia-auth/lucia
 mapbox: https://mapbox.com
 markedjs: https://marked.js.org
 matter.js: https://brm.io/matter-js
@@ -63,6 +64,7 @@ notion: https://notion.so
 octokit: https://github.com/octokit/octokit.js
 ogl: https://github.com/oframe/ogl
 panzoom: https://github.com/timmywil/panzoom
+passlock: https://github.com/passlock-dev/passkeys
 picocss: https://picocss.com
 plausible: https://plausible.io
 playwright: https://playwright.dev
@@ -86,6 +88,7 @@ spotify web api: https://github.com/JMPerez/spotify-web-api-js
 storyblock: https://storyblok.com
 storybook: https://storybook.js.org
 supabase: https://supabase.com
+superforms: https://github.com/ciscoheat/sveltekit-superforms
 surge.sh: https://surge.sh
 svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
 svelte-highlight: https://github.com/metonym/svelte-highlight

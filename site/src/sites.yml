@@ -3012,6 +3012,33 @@
       name: martin
       location: France
       company: null
+- title: Passkey authentication starter
+  url: https://d1rl0ue18b0151.cloudfront.net
+  repo: https://github.com/passlock-dev/svelte-passkeys
+  description: SvelteKit template featuring Passkeys, Social Sign in and more.
+  uses:
+    - passlock
+    - tailwind
+    - superforms
+    - lucia
+  tags:
+    - authentication
+    - open source
+    - passkeys
+    - security
+    - template
+  date_created: 2024-04-22T00:00:00.000Z
+  date_added: 2024-05-17T00:00:00.000Z
+  slug: passkey-authentication-starter
+  repo_stars: 44
+  contributors:
+    - github: thobson
+      twitter: TobyHobsonUK
+      url: https://tobyhobson.com
+      avatar: https://avatars.githubusercontent.com/u/208345?v=4
+      name: Toby Hobson
+      location: London, United Kingdom
+      company: Passlock
 - title: Svead
   url: https://svead.pages.dev
   repo: https://github.com/spences10/svead

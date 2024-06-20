@@ -734,6 +734,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [D3], [PostCSS], [Lodash], [PNPM]
 
+1. **[Passkey authentication starter](https://d1rl0ue18b0151.cloudfront.net)**&nbsp;
+   [[code](https://github.com/passlock-dev/svelte-passkeys)]&ensp;
+   <a href="https://github.com/passlock-dev/svelte-passkeys/stargazers">
+   <img src="https://img.shields.io/github/stars/passlock-dev/svelte-passkeys?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   SvelteKit template featuring Passkeys, Social Sign in and more.<br>
+
+   uses: [passlock], [tailwind], [superforms], [lucia]
+
 1. **[Guess The Year](https://guess-the-year.davjhan.com)**&nbsp;
    [[code](https://github.com/davjhan/guess-the-year-game)]&ensp;
    <a href="https://github.com/davjhan/guess-the-year-game/stargazers">
@@ -850,6 +860,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [babel]: https://babeljs.io
 [changesets]: https://github.com/changesets/changesets
 [chart.js]: https://chartjs.org
+[cloudflare pages]: https://pages.cloudflare.com
 [cloudflare]: https://cloudflare.com
 [cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net
@@ -893,6 +904,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [katex]: https://github.com/KaTeX/KaTeX
 [liveblocks]: https://liveblocks.io
 [lodash]: https://lodash.com
+[lucia]: https://github.com/lucia-auth/lucia
 [mapbox]: https://mapbox.com
 [markedjs]: https://marked.js.org
 [matter.js]: https://brm.io/matter-js
@@ -908,6 +920,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [octokit]: https://github.com/octokit/octokit.js
 [ogl]: https://github.com/oframe/ogl
 [panzoom]: https://github.com/timmywil/panzoom
+[passlock]: https://github.com/passlock-dev/passkeys
 [picocss]: https://picocss.com
 [plausible]: https://plausible.io
 [playwright]: https://playwright.dev
@@ -931,6 +944,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [storyblock]: https://storyblok.com
 [storybook]: https://storybook.js.org
 [supabase]: https://supabase.com
+[superforms]: https://github.com/ciscoheat/sveltekit-superforms
 [surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svelte-highlight]: https://github.com/metonym/svelte-highlight
@@ -955,7 +969,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [wasm]: https://webassembly.org
 [webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
-[cloudflare pages]: https://pages.cloudflare.com
 
 ## 🎉 Suggestions Welcome
 
