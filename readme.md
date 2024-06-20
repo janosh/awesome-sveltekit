@@ -714,6 +714,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [MDsveX], [GSAP], [Netlify]
 
+1. **[Svead](https://svead.pages.dev)**&nbsp;
+   [[code](https://github.com/spences10/svead)]&ensp;
+   <a href="https://github.com/spences10/svead/stargazers">
+   <img src="https://img.shields.io/github/stars/spences10/svead?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Svead 🍺, a component that allows you to set head meta information, canonical, title, Twitter and Facebook Open Graph tags, and schema.org data.<br>
+
+   uses: [TypeScript], [PNPM], [Cloudflare Pages], [MDsveX], [Tailwind], [PostCSS], [DaisyUI]
+
 1. **[The Pudding](https://pudding.cool)**&nbsp;
    [[code](https://github.com/the-pudding/website)]&ensp;
    <a href="https://github.com/the-pudding/website/stargazers">
@@ -850,6 +860,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [babel]: https://babeljs.io
 [changesets]: https://github.com/changesets/changesets
 [chart.js]: https://chartjs.org
+[cloudflare pages]: https://pages.cloudflare.com
 [cloudflare]: https://cloudflare.com
 [cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net

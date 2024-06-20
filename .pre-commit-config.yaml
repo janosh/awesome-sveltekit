@@ -1,5 +1,6 @@
 ci:
   autoupdate_schedule: quarterly
+  skip: [eslint]
 
 default_stages: [commit]
 
@@ -53,20 +54,18 @@ repos:
         stages: [commit, commit-msg]
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.0.0-rc.0
+    rev: v9.3.0
     hooks:
       - id: eslint
         types: [file]
-        args: [--fix]
+        args: [--fix, --config, site/eslint.config.js]
         files: \.(js|ts|svelte)$
         additional_dependencies:
           - eslint
+          - eslint-plugin-svelte
           - svelte
           - typescript
-          - eslint-plugin-svelte
-          - '@typescript-eslint/eslint-plugin'
-          - '@typescript-eslint/parser'
-          - svelte-eslint-parser
+          - typescript-eslint
 
   - repo: local
     hooks:

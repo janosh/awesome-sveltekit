@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 /* This file parses sites.yml, fetches GH metadata like contributors
 and stars for each site, then writes the results to site/src/sites.yml. */
 
