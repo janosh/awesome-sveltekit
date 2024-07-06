@@ -745,7 +745,7 @@
   date_added: 2023-02-27
 
 - title: svelte-legos
-  url: https://svelte-legos.singhalankur.com
+  url: https://svelte-legos.surge.sh
   repo: https://github.com/ankurrsinghal/svelte-legos
   npm: https://npmjs.com/package/svelte-legos
   description: A library of Svelte actions.
