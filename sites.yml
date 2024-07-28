@@ -919,3 +919,18 @@
   tags: [component library]
   date_created: 2022-05-15
   date_added: 2024-05-31
+
+- title: barnsworthburning
+  url: https://barnsworthburning.net
+  repo: https://github.com/Aias/barnsworthburning
+  description: An experimental commonplace book / digital garden with a richly
+    interconnected set of links, notes, and ideas.
+  uses:
+    - TypeScript
+    - Airtable
+    - Radix
+    - MarkedJS
+    - Cloudflare Pages
+  tags: [digital garden, commonplace, notes, networks, themes]
+  date_created: 2019-07-09
+  date_added: 2024-07-28

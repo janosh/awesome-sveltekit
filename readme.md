@@ -754,6 +754,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [SMUI], [Sass]
 
+1. **[barnsworthburning](https://barnsworthburning.net)**&nbsp;
+   [[code](https://github.com/Aias/barnsworthburning)]&ensp;
+   <a href="https://github.com/Aias/barnsworthburning/stargazers">
+   <img src="https://img.shields.io/github/stars/Aias/barnsworthburning?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   An experimental commonplace book / digital garden with a richly interconnected set of links, notes, and ideas.<br>
+
+   uses: [TypeScript], [Airtable], [Radix], [MarkedJS], [Cloudflare Pages]
+
 1. **[puruvj.dev](https://puruvj.dev)**&nbsp;
    [[code](https://github.com/puruvj/puruvjdev3)]&ensp;
    <a href="https://github.com/puruvj/puruvjdev3/stargazers">
@@ -854,6 +864,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Typescript], [SCSS], [PostCSS], [Motion One], [OGL], [WebGL], [Directus], [Swell Commerce], [Vercel]
 
+[airtable]: https://airtable.com
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
@@ -932,6 +943,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [prisma]: https://prisma.io
 [prosemirror]: https://prosemirror.net
 [python]: https://python.org
+[radix]: https://radix-ui.com
 [rehype]: https://github.com/rehypejs/rehype
 [release it]: https://github.com/release-it/release-it
 [remark]: https://github.com/remarkjs/remark

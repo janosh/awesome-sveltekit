@@ -3117,3 +3117,34 @@
       name: Mend Renovate
       location: null
       company: '@mend'
+- title: barnsworthburning
+  url: https://barnsworthburning.net
+  repo: https://github.com/Aias/barnsworthburning
+  description: >-
+    An experimental commonplace book / digital garden with a richly
+    interconnected set of links, notes, and ideas.
+  uses:
+    - TypeScript
+    - Airtable
+    - Radix
+    - MarkedJS
+    - Cloudflare Pages
+  tags:
+    - commonplace
+    - digital garden
+    - networks
+    - notes
+    - open source
+    - themes
+  date_created: 2019-07-09T00:00:00.000Z
+  date_added: 2024-07-28T00:00:00.000Z
+  slug: barnsworthburning
+  repo_stars: 24
+  contributors:
+    - github: Aias
+      twitter: null
+      url: https://barnsworthburning.net
+      avatar: https://avatars.githubusercontent.com/u/6697904?v=4
+      name: Nick Trombley
+      location: Boston
+      company: '@logrhythm '

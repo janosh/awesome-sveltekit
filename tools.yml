@@ -1,3 +1,4 @@
+airtable: https://airtable.com
 algolia: https://algolia.com
 anime.js: https://animejs.com
 aws: https://aws.amazon.com
@@ -76,6 +77,7 @@ prism: https://prismjs.com
 prisma: https://prisma.io
 prosemirror: https://prosemirror.net
 python: https://python.org
+radix: https://radix-ui.com
 rehype: https://github.com/rehypejs/rehype
 release it: https://github.com/release-it/release-it
 remark: https://github.com/remarkjs/remark
