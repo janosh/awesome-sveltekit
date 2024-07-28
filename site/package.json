@@ -24,7 +24,7 @@
     "@sveltejs/kit": "^2.5.18",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
     "dotenv": "^16.4.5",
-    "eslint": "^9.6.0",
+    "eslint": "8",
     "eslint-plugin-svelte": "^2.41.0",
     "js-yaml": "^4.1.0",
     "marked": "^13.0.2",

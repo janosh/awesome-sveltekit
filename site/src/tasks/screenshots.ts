@@ -1,5 +1,5 @@
-/* This file parses sites.yml, generates low+hi-res screenshots for each site,
-saves them as WebP to site/static/screenshots/ and compresses them. */
+/* This file parses sites.yml, generates low+hi-res screenshots for each site and
+saves them as AVIF to site/static/screenshots. */
 
 import type { Site } from '$lib'
 import fs from 'fs'
