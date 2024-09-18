@@ -894,7 +894,8 @@
   date_added: 2024-01-22
 
 - title: Auth starter app
-  url: https://github.com/passlock-dev/passlock/tree/master/packages/create-sveltekit/docs
+  url: https://passlock.dev
+  site_src: https://github.com/passlock-dev/passlock/tree/master/packages/create-sveltekit/docs
   repo: https://github.com/passlock-dev/passlock
   description: SvelteKit template featuring Passkeys, Social Sign in and more.
   uses: [passlock, tailwind, superforms, lucia]
