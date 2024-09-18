@@ -3054,9 +3054,11 @@
       name: martin
       location: France
       company: null
-- title: Passkey authentication starter
-  url: https://d1rl0ue18b0151.cloudfront.net
-  repo: https://github.com/passlock-dev/svelte-passkeys
+- title: Auth starter app
+  url: https://passlock.dev
+  site_src: >-
+    https://github.com/passlock-dev/passlock/tree/master/packages/create-sveltekit/docs
+  repo: https://github.com/passlock-dev/passlock
   description: SvelteKit template featuring Passkeys, Social Sign in and more.
   uses:
     - passlock
@@ -3071,8 +3073,8 @@
     - template
   date_created: 2024-04-22T00:00:00.000Z
   date_added: 2024-05-17T00:00:00.000Z
-  slug: passkey-authentication-starter
-  repo_stars: 60
+  slug: auth-starter-app
+  repo_stars: 114
   contributors:
     - github: thobson
       twitter: TobyHobsonUK

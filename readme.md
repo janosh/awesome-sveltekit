@@ -668,6 +668,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Sass], [Monaco], [WASM]
 
+1. **[Auth starter app](https://passlock.dev)**&nbsp;
+   [[code](https://github.com/passlock-dev/passlock/tree/master/packages/create-sveltekit/docs)]&ensp;
+   <a href="https://github.com/passlock-dev/passlock/stargazers">
+   <img src="https://img.shields.io/github/stars/passlock-dev/passlock?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   SvelteKit template featuring Passkeys, Social Sign in and more.<br>
+
+   uses: [passlock], [tailwind], [superforms], [lucia]
+
 1. **[Paper Trader Game](https://paper-trader.davjhan.com)**&nbsp;
    [[code](https://github.com/davjhan/paper-trader-game)]&ensp;
    <a href="https://github.com/davjhan/paper-trader-game/stargazers">
@@ -713,16 +723,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    Svead 🍺, a component that allows you to set head meta information, canonical, title, Twitter and Facebook Open Graph tags, and schema.org data.<br>
 
    uses: [TypeScript], [PNPM], [Cloudflare Pages], [MDsveX], [Tailwind], [PostCSS], [DaisyUI]
-
-1. **[Passkey authentication starter](https://d1rl0ue18b0151.cloudfront.net)**&nbsp;
-   [[code](https://github.com/passlock-dev/svelte-passkeys)]&ensp;
-   <a href="https://github.com/passlock-dev/svelte-passkeys/stargazers">
-   <img src="https://img.shields.io/github/stars/passlock-dev/svelte-passkeys?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   SvelteKit template featuring Passkeys, Social Sign in and more.<br>
-
-   uses: [passlock], [tailwind], [superforms], [lucia]
 
 1. **[The Pudding](https://pudding.cool)**&nbsp;
    [[code](https://github.com/the-pudding/website)]&ensp;
