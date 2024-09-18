@@ -893,9 +893,9 @@
   date_created: 2022-02-03
   date_added: 2024-01-22
 
-- title: Passkey authentication starter
-  url: https://d1rl0ue18b0151.cloudfront.net
-  repo: https://github.com/passlock-dev/svelte-passkeys
+- title: Auth starter app
+  url: https://github.com/passlock-dev/passlock/tree/master/packages/create-sveltekit/docs
+  repo: https://github.com/passlock-dev/passlock
   description: SvelteKit template featuring Passkeys, Social Sign in and more.
   uses: [passlock, tailwind, superforms, lucia]
   tags: [security, authentication, passkeys, template]
