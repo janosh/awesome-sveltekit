@@ -940,8 +940,7 @@
   url: https://macosportfolio.netlify.app
   repo: https://github.com/ansxuman/macOS-Themed-Portfolio
   description: An interactive portfolio website inspired by the macOS interface.
-  uses:
-    [TypeScript, Tailwind, PM2, Cloudflare, Netlify, Nginx]
+  uses: [TypeScript, Tailwind, PM2, Cloudflare, Netlify, Nginx]
   tags: [portfolio, macos, theme, interactive, blogs, projects]
   date_created: 2024-10-13
   date_added: 2024-11-19
