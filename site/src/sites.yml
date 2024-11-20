@@ -3150,3 +3150,34 @@
       name: Nick Trombley
       location: Boston
       company: '@logrhythm '
+- title: macOS-Themed Portfolio
+  url: https://macosportfolio.netlify.app
+  repo: https://github.com/ansxuman/macOS-Themed-Portfolio
+  description: An interactive portfolio website inspired by the macOS interface.
+  uses:
+    - TypeScript
+    - Tailwind
+    - PM2
+    - Cloudflare
+    - Netlify
+    - Nginx
+  tags:
+    - blogs
+    - interactive
+    - macos
+    - open source
+    - portfolio
+    - projects
+    - theme
+  date_created: 2024-10-13T00:00:00.000Z
+  date_added: 2024-11-19T00:00:00.000Z
+  slug: macos-themed-portfolio
+  repo_stars: 43
+  contributors:
+    - github: ansxuman
+      twitter: null
+      url: https://ssh-i.in
+      avatar: https://avatars.githubusercontent.com/u/43794060?v=4
+      name: Anshuman
+      location: 0.0.0.0
+      company: InstaSafe

@@ -61,6 +61,7 @@ motion one: https://motion.dev
 mvp.css: https://github.com/andybrewer/mvp
 nestjs: https://nestjs.com
 netlify: https://netlify.com
+nginx: https://nginx.org
 notion: https://notion.so
 octokit: https://github.com/octokit/octokit.js
 ogl: https://github.com/oframe/ogl
@@ -69,6 +70,7 @@ passlock: https://github.com/passlock-dev/passkeys
 picocss: https://picocss.com
 plausible: https://plausible.io
 playwright: https://playwright.dev
+pm2: https://pm2.io
 pnpm: https://pnpm.io
 pocketbase: https://pocketbase.io
 postcss: https://postcss.org
