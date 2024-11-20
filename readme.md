@@ -734,6 +734,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [D3], [PostCSS], [Lodash], [PNPM]
 
+1. **[macOS-Themed Portfolio](https://macosportfolio.netlify.app)**&nbsp;
+   [[code](https://github.com/ansxuman/macOS-Themed-Portfolio)]&ensp;
+   <a href="https://github.com/ansxuman/macOS-Themed-Portfolio/stargazers">
+   <img src="https://img.shields.io/github/stars/ansxuman/macOS-Themed-Portfolio?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   An interactive portfolio website inspired by the macOS interface.<br>
+
+   uses: [TypeScript], [Tailwind], [PM2], [Cloudflare], [Netlify], [Nginx]
+
 1. **[Guess The Year](https://guess-the-year.davjhan.com)**&nbsp;
    [[code](https://github.com/davjhan/guess-the-year-game)]&ensp;
    <a href="https://github.com/davjhan/guess-the-year-game/stargazers">
@@ -927,6 +937,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [mvp.css]: https://github.com/andybrewer/mvp
 [nestjs]: https://nestjs.com
 [netlify]: https://netlify.com
+[nginx]: https://nginx.org
 [notion]: https://notion.so
 [octokit]: https://github.com/octokit/octokit.js
 [ogl]: https://github.com/oframe/ogl
@@ -935,6 +946,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [picocss]: https://picocss.com
 [plausible]: https://plausible.io
 [playwright]: https://playwright.dev
+[pm2]: https://pm2.io
 [pnpm]: https://pnpm.io
 [pocketbase]: https://pocketbase.io
 [postcss]: https://postcss.org

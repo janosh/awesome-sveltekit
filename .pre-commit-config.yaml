@@ -8,7 +8,7 @@ default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: check-case-conflict
       - id: check-symlinks
@@ -37,7 +37,7 @@ repos:
         args: [--config-file, .github/yamllint.yml]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.41.0
+    rev: v0.42.0
     hooks:
       - id: markdownlint
         # MD013: line too long
@@ -54,7 +54,7 @@ repos:
         stages: [commit, commit-msg]
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.10.0
+    rev: v9.15.0
     hooks:
       - id: eslint
         types: [file]
