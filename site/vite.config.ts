@@ -17,9 +17,11 @@ if (!action_types.includes(action)) {
   )
 }
 
-update_readme()
-if (!process.env.CI) fetch_github_metadata({ action })
-setTimeout(() => make_screenshots({ action }), 1000)
+if (!process.env.CI) {
+  update_readme()
+  fetch_github_metadata({ action })
+  setTimeout(() => make_screenshots({ action }), 1000)
+}
 
 export default {
   plugins: [sveltekit(), yaml()],

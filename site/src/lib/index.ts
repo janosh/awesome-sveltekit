@@ -46,6 +46,6 @@ export type RepoContributor = {
   url: string
   html_url: string
   repos_url: string
-  type: 'User' | 'Bot'
+  type: `User` | `Bot`
   contributions: number
 }

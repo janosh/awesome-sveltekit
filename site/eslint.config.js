@@ -1,17 +1,19 @@
+import stylistic from '@stylistic/eslint-plugin'
 import svelte from 'eslint-plugin-svelte'
 import tslint from 'typescript-eslint'
 
-/** @type { import("eslint").Linter.FlatConfig[] } */
+/** @type { import("eslint").Linter.Config[] } */
 export default [
   ...tslint.configs.recommended,
   ...svelte.configs[`flat/recommended`],
+  { plugins: { '@stylistic': stylistic } },
   {
     rules: {
       '@typescript-eslint/no-unused-vars': [
         `error`,
         { argsIgnorePattern: `^_`, varsIgnorePattern: `^_` },
       ],
-      '@typescript-eslint/quotes': [`error`, `backtick`, { avoidEscape: true }],
+      '@stylistic/quotes': [`error`, `backtick`, { avoidEscape: true }],
       'svelte/no-at-html-tags': `off`,
     },
   },
@@ -27,6 +29,6 @@ export default [
     },
   },
   {
-    ignores: [`build/`],
+    ignores: [`build/`, `.svelte-kit/`, `package/`],
   },
 ]

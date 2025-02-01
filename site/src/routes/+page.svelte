@@ -40,7 +40,7 @@
       }, {} as Record<string, number>)
   ).sort((c1, c2) => c2[1] - c1[1])
 
-  function arr_includes(arr: string[], values: string[], mode: 'all' | 'any'): boolean {
+  function arr_includes(arr: string[], values: string[], mode: `all` | `any`): boolean {
     if (values.length === 0) return true
     if (arr.length === 0) return false
     if (mode === `all`) return values.every((val) => arr.includes(val))
@@ -65,7 +65,7 @@
     return query_match && tag_match && contrib_match
   })
 
-  let sort_order: 'asc' | 'desc' = `desc`
+  let sort_order: `asc` | `desc` = `desc`
   $: sort_factor = sort_order == `asc` ? -1 : 1
   // arr.sort() sorts in-place but we need to reassign filtered_sites so Svelte rerenders
   $: if ($sort_by[0] === `GitHub repo stars`) {

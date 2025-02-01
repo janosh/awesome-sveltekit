@@ -24,7 +24,7 @@
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
-  site_src: https://github.com/sveltejs/kit/blob/-/sites/kit.svelte.dev
+  site_src: https://github.com/sveltejs/kit/tree/main/documentation/docs
   npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses: [Netlify, PNPM]
@@ -41,12 +41,15 @@
   date_created: 2021-02-15
   date_added: 2021-05-25
 
-- title: TikZ
-  url: https://janosh.github.io/tikz
-  repo: https://github.com/janosh/tikz
-  description: Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.
+- title: Scientific Diagrams
+  url: https://janosh.github.io/diagrams
+  repo: https://github.com/janosh/diagrams
+  description: >-
+    100+ MIT-licensed scientific diagrams created with CeTZ (Typst) and/or TikZ
+    (LaTeX).
+    Mostly about physics, chemistry, and machine learning.
   tags: [research, science, diagrams, graphics, latex]
-  uses: [TypeScript, svelte-multiselect, pre-commit, PNPM, GitHub Pages]
+  uses: [TypeScript, svelte-multiselect, pre-commit, PNPM, svelte-enhanced-img]
   date_created: 2020-08-09
   date_added: 2021-05-25
 
@@ -290,7 +293,7 @@
   date_added: 2022-02-05
 
 - title: svelte-realworld
-  url: https://realworld.svelte.dev
+  url: https://github.com/gothinkster/realworld
   repo: https://github.com/sveltejs/realworld
   description: SvelteKit implementation of the RealWorld app.
   uses: [Netlify, MarkedJS]
@@ -483,7 +486,7 @@
   date_added: 2022-06-02
 
 - title: Cryptgeon
-  url: https://cryptgeon.nicco.io
+  url: https://cryptgeon.org
   repo: https://github.com/cupcakearmy/cryptgeon
   site_src: https://github.com/cupcakearmy/cryptgeon/blob/-/packages/frontend
   description: A secure, open source notes and file sharing service inspired by PrivNote written in Rust & Svelte.
@@ -538,7 +541,7 @@
 - title: svelte-french-toast
   url: https://svelte-french-toast.com
   repo: https://github.com/kbrgl/svelte-french-toast
-  description: Svelte port of Timo Lins' react-hot-toast, a lightweight, customizable toast notification library.
+  description: Svelte port of react-hot-toast, a lightweight, customizable toast notification library.
   uses: [TypeScript, Prism, Tailwind, PostCSS, PNPM]
   tags: [toast, notifications, snackbar]
   date_created: 2022-06-04
@@ -755,7 +758,7 @@
   date_added: 2023-03-06
 
 - title: Watch This
-  url: https://what-to-watch-roan.vercel.app
+  url: https://github.com/StephDietz/watch-this/issues/28
   repo: https://github.com/StephDietz/watch-this
   description:
     Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
@@ -830,7 +833,7 @@
 
 - title: shadcn-svelte
   url: https://shadcn-svelte.com
-  site_src: https://github.com/huntabyte/shadcn-svelte/blob/-/apps/www
+  site_src: https://github.com/huntabyte/shadcn-svelte/tree/main/sites/docs
   repo: https://github.com/huntabyte/shadcn-svelte
   description: shadcn/ui, but for Svelte.
   uses:

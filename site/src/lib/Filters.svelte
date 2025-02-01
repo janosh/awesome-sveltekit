@@ -12,7 +12,7 @@
 
   export let tags: [string, number][]
   export let contributors: [string, number][]
-  export let sort_order: 'asc' | 'desc' = `desc`
+  export let sort_order: `asc` | `desc` = `desc`
 </script>
 
 <div class="filters">
@@ -24,7 +24,7 @@
       bind:selected={$filter_tags}
     >
       <span slot="option" let:option style="display: flex;">
-        {option.label} <span style="flex: 1;" />
+        {option.label} <span style="flex: 1;"></span>
         {option.count}
       </span>
     </MultiSelect>
@@ -39,7 +39,7 @@
       bind:selected={$filter_contributors}
     >
       <span slot="option" let:option style="display: flex;">
-        {option.label} <span style="flex: 1;" />
+        {option.label} <span style="flex: 1;"></span>
         {option.count}
       </span>
     </MultiSelect>
