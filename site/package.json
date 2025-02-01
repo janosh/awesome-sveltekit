@@ -20,6 +20,7 @@
     "@iconify/svelte": "^4.0.2",
     "@playwright/test": "^1.47.1",
     "@rollup/plugin-yaml": "^4.1.2",
+    "@stylistic/eslint-plugin": "^3.0.1",
     "@sveltejs/adapter-static": "^3.0.5",
     "@sveltejs/kit": "^2.5.28",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",

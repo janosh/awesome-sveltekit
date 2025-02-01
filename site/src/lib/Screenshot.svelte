@@ -6,7 +6,7 @@
   export let width = 800
   export let height = 600
   export let style = ``
-  export let resolution: '.small' | '' = ``
+  export let resolution: `.small` | `` = ``
 
   const titleToSlug = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
 

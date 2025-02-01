@@ -59,7 +59,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [PNPM], [TypeScript], [Tailwind], [sveltekit-i18n], [PostCSS], [Husky]
 
 1. **[Official SvelteKit docs](https://kit.svelte.dev)**&nbsp;
-   [[code](https://github.com/sveltejs/kit/blob/-/sites/kit.svelte.dev)]&ensp;
+   [[code](https://github.com/sveltejs/kit/tree/main/documentation/docs)]&ensp;
    <a href="https://github.com/sveltejs/kit/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/kit?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -109,7 +109,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [Vitest], [PostCSS], [highlight.js], [Tailwind], [Typescript], [jsdom]
 
 1. **[shadcn-svelte](https://shadcn-svelte.com)**&nbsp;
-   [[code](https://github.com/huntabyte/shadcn-svelte/blob/-/apps/www)]&ensp;
+   [[code](https://github.com/huntabyte/shadcn-svelte/tree/main/sites/docs)]&ensp;
    <a href="https://github.com/huntabyte/shadcn-svelte/stargazers">
    <img src="https://img.shields.io/github/stars/huntabyte/shadcn-svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -188,7 +188,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Three.js], [Tailwind], [PostCSS], [Algolia], [Iconify]
 
-1. **[svelte-realworld](https://realworld.svelte.dev)**&nbsp;
+1. **[svelte-realworld](https://github.com/gothinkster/realworld)**&nbsp;
    [[code](https://github.com/sveltejs/realworld)]&ensp;
    <a href="https://github.com/sveltejs/realworld/stargazers">
    <img src="https://img.shields.io/github/stars/sveltejs/realworld?logo=github" alt="GitHub stars" valign="middle">
@@ -324,7 +324,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    <img src="https://img.shields.io/github/stars/kbrgl/svelte-french-toast?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   Svelte port of Timo Lins&#39; react-hot-toast, a lightweight, customizable toast notification library.<br>
+   Svelte port of react-hot-toast, a lightweight, customizable toast notification library.<br>
 
    uses: [TypeScript], [Prism], [Tailwind], [PostCSS], [PNPM]
 
@@ -348,7 +348,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [tRPC]
 
-1. **[Cryptgeon](https://cryptgeon.nicco.io)**&nbsp;
+1. **[Cryptgeon](https://cryptgeon.org)**&nbsp;
    [[code](https://github.com/cupcakearmy/cryptgeon/blob/-/packages/frontend)]&ensp;
    <a href="https://github.com/cupcakearmy/cryptgeon/stargazers">
    <img src="https://img.shields.io/github/stars/cupcakearmy/cryptgeon?logo=github" alt="GitHub stars" valign="middle">
@@ -468,7 +468,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [GitHub API], [Monaco], [Playwright], [Google Analytics], [Supabase], [Vercel], [PNPM], [Sass], [TypeScript], [remark], [rehype]
 
-1. **[Watch This](https://what-to-watch-roan.vercel.app)**&nbsp;
+1. **[Watch This](https://github.com/StephDietz/watch-this/issues/28)**&nbsp;
    [[code](https://github.com/StephDietz/watch-this)]&ensp;
    <a href="https://github.com/StephDietz/watch-this/stargazers">
    <img src="https://img.shields.io/github/stars/StephDietz/watch-this?logo=github" alt="GitHub stars" valign="middle">
@@ -558,6 +558,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Vitest], [Playwright], [Typescript], [PNPM], [pre-commit], [rehype], [jsdom], [GitHub Pages], [mdsvexamples]
 
+1. **[Scientific Diagrams](https://janosh.github.io/diagrams)**&nbsp;
+   [[code](https://github.com/janosh/diagrams)]&ensp;
+   <a href="https://github.com/janosh/diagrams/stargazers">
+   <img src="https://img.shields.io/github/stars/janosh/diagrams?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   100+ MIT-licensed scientific diagrams created with CeTZ (Typst) and/or TikZ (LaTeX). Mostly about physics, chemistry, and machine learning.<br>
+
+   uses: [TypeScript], [svelte-multiselect], [pre-commit], [PNPM], [svelte-enhanced-img]
+
 1. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)**&nbsp;
    [[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&ensp;
    <a href="https://github.com/Rich-Harris/sveltekit-on-the-edge/stargazers">
@@ -597,16 +607,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    SvelteKit embed components for YouTube, Vimeo, Twitter, Spotify, SoundCloud, StackBlitz, CodePen, AnchorFM, Simple Cast and more.<br>
 
    uses: [TypeScript], [PNPM], [Vercel], [MDsveX], [Tailwind], [PostCSS], [Husky], [Playwright], [DaisyUI]
-
-1. **[TikZ](https://janosh.github.io/tikz)**&nbsp;
-   [[code](https://github.com/janosh/tikz)]&ensp;
-   <a href="https://github.com/janosh/tikz/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/tikz?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Random collection of MIT-licensed standalone TikZ images, mostly about physics and machine learning.<br>
-
-   uses: [TypeScript], [svelte-multiselect], [pre-commit], [PNPM], [GitHub Pages]
 
 1. **[Hexapipes](https://hexapipes.vercel.app)**&nbsp;
    [[code](https://github.com/gereleth/hexapipes)]&ensp;
@@ -971,6 +971,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [superforms]: https://github.com/ciscoheat/sveltekit-superforms
 [surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
+[svelte-enhanced-img]: https://svelte.dev/docs/kit/images#sveltejs-enhanced-img
 [svelte-highlight]: https://github.com/metonym/svelte-highlight
 [svelte-intl-precompile]: https://github.com/cibernox/svelte-intl-precompile
 [svelte-markdown]: https://github.com/pablo-abc/svelte-markdown

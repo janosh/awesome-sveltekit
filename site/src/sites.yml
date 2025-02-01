@@ -61,7 +61,7 @@
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
-  site_src: https://github.com/sveltejs/kit/blob/-/sites/kit.svelte.dev
+  site_src: https://github.com/sveltejs/kit/tree/main/documentation/docs
   npm: https://npmjs.com/package/@sveltejs/kit
   description: The fastest way to build Svelte apps.
   uses:
@@ -136,12 +136,12 @@
       name: Martin Krisnanto Putra
       location: Tokyo, Japan
       company: null
-- title: TikZ
-  url: https://janosh.github.io/tikz
-  repo: https://github.com/janosh/tikz
+- title: Scientific Diagrams
+  url: https://janosh.github.io/diagrams
+  repo: https://github.com/janosh/diagrams
   description: >-
-    Random collection of MIT-licensed standalone TikZ images, mostly about
-    physics and machine learning.
+    100+ MIT-licensed scientific diagrams created with CeTZ (Typst) and/or TikZ
+    (LaTeX). Mostly about physics, chemistry, and machine learning.
   tags:
     - diagrams
     - graphics
@@ -154,14 +154,14 @@
     - svelte-multiselect
     - pre-commit
     - PNPM
-    - GitHub Pages
+    - svelte-enhanced-img
   date_created: 2020-08-09T00:00:00.000Z
   date_added: 2021-05-25T00:00:00.000Z
-  slug: tikz
-  repo_stars: 189
+  slug: scientific-diagrams
+  repo_stars: 225
   contributors:
     - github: janosh
-      twitter: jrib_
+      twitter: null
       url: https://janosh.dev
       avatar: https://avatars.githubusercontent.com/u/30958850?v=4
       name: Janosh Riebesell
@@ -940,7 +940,7 @@
       location: France
       company: null
 - title: svelte-realworld
-  url: https://realworld.svelte.dev
+  url: https://github.com/gothinkster/realworld
   repo: https://github.com/sveltejs/realworld
   description: SvelteKit implementation of the RealWorld app.
   uses:
@@ -1748,7 +1748,7 @@
       location: Irvine, CA
       company: Latitude
 - title: Cryptgeon
-  url: https://cryptgeon.nicco.io
+  url: https://cryptgeon.org
   repo: https://github.com/cupcakearmy/cryptgeon
   site_src: https://github.com/cupcakearmy/cryptgeon/blob/-/packages/frontend
   description: >-
@@ -1931,8 +1931,8 @@
   url: https://svelte-french-toast.com
   repo: https://github.com/kbrgl/svelte-french-toast
   description: >-
-    Svelte port of Timo Lins&#39; react-hot-toast, a lightweight, customizable
-    toast notification library.
+    Svelte port of react-hot-toast, a lightweight, customizable toast
+    notification library.
   uses:
     - TypeScript
     - Prism
@@ -2533,7 +2533,7 @@
       location: null
       company: null
 - title: Watch This
-  url: https://what-to-watch-roan.vercel.app
+  url: https://github.com/StephDietz/watch-this/issues/28
   repo: https://github.com/StephDietz/watch-this
   description: >-
     Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
@@ -2767,7 +2767,7 @@
       company: null
 - title: shadcn-svelte
   url: https://shadcn-svelte.com
-  site_src: https://github.com/huntabyte/shadcn-svelte/blob/-/apps/www
+  site_src: https://github.com/huntabyte/shadcn-svelte/tree/main/sites/docs
   repo: https://github.com/huntabyte/shadcn-svelte
   description: shadcn/ui, but for Svelte.
   uses:
