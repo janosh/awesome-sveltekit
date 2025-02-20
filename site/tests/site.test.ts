@@ -5,12 +5,12 @@ test.describe.configure({ mode: `parallel` })
 
 test(`test search functionality on the landing page`, async ({ page }) => {
   await page.goto(`/`, { waitUntil: `networkidle` })
-  const all = await page.$$(`ol > li > a:has(> img)`)
+  const all_sites = await page.$$(`ol > li > a:has(> img)`)
   await page.fill(`[placeholder='Search...']`, `test`)
   await page.waitForTimeout(1_000)
 
-  const filtered = await page.$$(`ol > li > a:has(> img)`)
-  expect(all.length > filtered.length).toBe(true)
+  const filtered_sites = await page.$$(`ol > li > a:has(> img)`)
+  expect(all_sites.length > filtered_sites.length).toBe(true)
 
   // TODO also test sort functionality
 })
@@ -24,12 +24,12 @@ test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
   await page.goto(`/svelte.dev`, { waitUntil: `networkidle` })
 
   // Get the next URL from the "Next" link
-  const nextUrl = await page.$eval(`a:has-text("Next")`, (el) =>
+  const next_url = await page.$eval(`a:has-text("Next")`, (el) =>
     el.closest(`a`)?.getAttribute(`href`),
   )
 
   await page.keyboard.press(`ArrowRight`)
-  await page.waitForURL(`/${nextUrl}`)
+  await page.waitForURL(`/${next_url}`)
 })
 
 test(`can navigate landing page with arrow keys`, async ({ page }) => {
@@ -51,4 +51,36 @@ test(`can navigate landing page with arrow keys`, async ({ page }) => {
   await page.waitForURL(`/${slug}`, {
     waitUntil: `networkidle`,
   })
+})
+
+// Test 404 page
+test(`shows 404 page for invalid slugs`, async ({ page }) => {
+  const response = await page.goto(`/not-a-real-site`, {
+    waitUntil: `networkidle`,
+  })
+
+  expect(response?.status()).toBe(404)
+  await expect(
+    page.locator(`text=Page 'not-a-real-site' not found`),
+  ).toBeVisible()
+})
+
+// Test metadata
+test(`page has correct meta tags`, async ({ page }) => {
+  await page.goto(`/svelte.dev`, { waitUntil: `networkidle` })
+
+  // Check title
+  await expect(page).toHaveTitle(`Svelte.dev | Awesome SvelteKit`)
+
+  // Check meta description
+  const description = await page.$eval(`meta[name="description"]`, (el) =>
+    el.getAttribute(`content`),
+  )
+  expect(description).toBe(`Cybernetically enhanced web apps.`)
+
+  // Check OG tags
+  const og_title = await page.$eval(`meta[property="og:title"]`, (el) =>
+    el.getAttribute(`content`),
+  )
+  expect(og_title).toBe(`Svelte.dev | Awesome SvelteKit`)
 })
