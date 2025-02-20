@@ -947,3 +947,12 @@
   tags: [portfolio, macos, theme, interactive, blogs, projects]
   date_created: 2024-10-13
   date_added: 2024-11-19
+
+- title: VERT
+  url: https://vert.sh
+  repo: https://github.com/VERT-sh/VERT
+  description: A file converter that converts files client-side while being completely ad-free.
+  uses: [TypeScript, Tailwind, Coolify, WebAssembly, FFmpeg, libvips]
+  tags: [ffmpeg, conversion, wasm, svelte, vips, sveltekit]
+  date_created: 2024-11-12
+  date_added: 2025-02-20
