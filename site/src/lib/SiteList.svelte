@@ -7,9 +7,13 @@
   import type { Site } from '.'
   import { SitePreview } from '.'
 
-  export let sites: Site[]
+  interface Props {
+    sites: Site[]
+  }
 
-  let active_idx = -1
+  let { sites }: Props = $props()
+
+  let active_idx = $state(-1)
 
   function handle_keyup(event: KeyboardEvent) {
     if (event.key === `Enter` && active_idx >= 0) {
@@ -29,7 +33,7 @@
   }
 </script>
 
-<svelte:window on:keyup={handle_keyup} />
+<svelte:window onkeyup={handle_keyup} />
 
 <ol use:highlight_matches={{ query: $search, css_class: `highlight-match` }}>
   {#each sites as site, idx (site.url)}
@@ -56,7 +60,7 @@
     border-radius: 1ex;
     padding: 10pt;
   }
-  ol > :is(li:hover, li.active) {
+  ol > :is(:global(li:hover, li.active)) {
     transform: scale(1.01);
     background-color: rgba(255, 255, 255, 0.05);
   }

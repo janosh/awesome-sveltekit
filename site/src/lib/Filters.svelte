@@ -10,9 +10,13 @@
     tag_filter_mode,
   } from './stores'
 
-  export let tags: [string, number][]
-  export let contributors: [string, number][]
-  export let sort_order: `asc` | `desc` = `desc`
+  interface Props {
+    tags: [string, number][]
+    contributors: [string, number][]
+    sort_order?: `asc` | `desc`
+  }
+
+  let { tags, contributors, sort_order = $bindable(`desc`) }: Props = $props()
 </script>
 
 <div class="filters">
@@ -23,10 +27,12 @@
       placeholder="Filter by tag..."
       bind:selected={$filter_tags}
     >
-      <span slot="option" let:option style="display: flex;">
-        {option.label} <span style="flex: 1;"></span>
-        {option.count}
-      </span>
+      {#snippet option({ option })}
+        <span style="display: flex;">
+          {option.label} <span style="flex: 1;"></span>
+          {option.count}
+        </span>
+      {/snippet}
     </MultiSelect>
     {#if $filter_tags.length > 1}
       <RadioButtons bind:selected={$tag_filter_mode} options={[`all`, `any`]} />
@@ -38,10 +44,12 @@
       placeholder="Filter by contributor..."
       bind:selected={$filter_contributors}
     >
-      <span slot="option" let:option style="display: flex;">
-        {option.label} <span style="flex: 1;"></span>
-        {option.count}
-      </span>
+      {#snippet option({ option })}
+        <span style="display: flex;">
+          {option.label} <span style="flex: 1;"></span>
+          {option.count}
+        </span>
+      {/snippet}
     </MultiSelect>
     {#if $filter_contributors.length > 1}
       <RadioButtons bind:selected={$contributor_filter_mode} options={[`all`, `any`]} />

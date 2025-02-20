@@ -14,17 +14,20 @@
   import sites from '../sites.yml'
   import type { Snapshot } from './$types'
 
-  export let data
+  let { data } = $props()
 
   const tags = Object.entries(
     sites
       .flatMap((site) => site.tags)
-      .reduce((acc, el) => {
-        acc[el] = (acc[el] ?? 0) + 1
-        return acc
-      }, {} as Record<string, number>)
+      .reduce(
+        (acc, el) => {
+          acc[el] = (acc[el] ?? 0) + 1
+          return acc
+        },
+        {} as Record<string, number>,
+      ),
   ).filter(([, count]) => count > 2)
-  tags.sort(([a], [b]) => a.localeCompare(b))
+  tags.sort(([t1], [t2]) => t1.localeCompare(t2))
 
   const contributors = Object.entries(
     sites
@@ -32,13 +35,16 @@
         (site) =>
           site.contributors
             ?.map((c) => c.name)
-            .filter((name) => ![null, `Janosh Riebesell`].includes(name)) ?? []
+            .filter((name) => ![null, `Janosh Riebesell`].includes(name)) ?? [],
       )
-      .reduce((acc, el) => {
-        acc[el] = (acc[el] ?? 0) + 1
-        return acc
-      }, {} as Record<string, number>)
-  ).sort((c1, c2) => c2[1] - c1[1])
+      .reduce(
+        (acc, el) => {
+          acc[el] = (acc[el] ?? 0) + 1
+          return acc
+        },
+        {} as Record<string, number>,
+      ),
+  ).sort((contrib1, contrib2) => contrib2[1] - contrib1[1])
 
   function arr_includes(arr: string[], values: string[], mode: `all` | `any`): boolean {
     if (values.length === 0) return true
@@ -48,45 +54,50 @@
     else throw `Unexpected filter mode=${mode}`
   }
 
-  $: filtered_sites = sites.filter((site) => {
-    const query_match = $search?.length === 0 || JSON.stringify(site).includes($search)
+  let filtered_sites = $derived(
+    sites.filter((site) => {
+      const query_match = $search?.length === 0 || JSON.stringify(site).includes($search)
 
-    const tag_match = arr_includes(
-      site.tags ?? [],
-      $filter_tags.map((t) => t.label), // tags the site should have
-      $tag_filter_mode // all or any
-    )
-    const contrib_match = arr_includes(
-      site.contributors?.map((c) => c.name) ?? [],
-      $filter_contributors.map((c) => c.label), // contributors the site should have
-      $contributor_filter_mode // all or any
-    )
+      const tag_match = arr_includes(
+        site.tags ?? [],
+        $filter_tags.map((t) => t.label), // tags the site should have
+        $tag_filter_mode, // all or any
+      )
+      const contrib_match = arr_includes(
+        site.contributors?.map((c) => c.name) ?? [],
+        $filter_contributors.map((c) => c.label), // contributors the site should have
+        $contributor_filter_mode, // all or any
+      )
 
-    return query_match && tag_match && contrib_match
-  })
+      return query_match && tag_match && contrib_match
+    }),
+  )
 
-  let sort_order: `asc` | `desc` = `desc`
-  $: sort_factor = sort_order == `asc` ? -1 : 1
+  let sort_order: `asc` | `desc` = $state(`desc`)
+  let sort_factor = $derived(sort_order == `desc` ? 1 : -1)
   // arr.sort() sorts in-place but we need to reassign filtered_sites so Svelte rerenders
-  $: if ($sort_by[0] === `GitHub repo stars`) {
-    $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0))
-    )
-  } else if ($sort_by[0] === `Date created`) {
-    $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => sort_factor * (+siteB.date_created - +siteA.date_created)
-    )
-  } else if ($sort_by[0] === `Date last updated`) {
-    $sorted_sites = filtered_sites.sort(
-      (siteA, siteB) => sort_factor * (+siteB.last_updated - +siteA.last_updated)
-    )
-  }
+  $effect(() => {
+    if ($sort_by[0] === `GitHub repo stars`) {
+      $sorted_sites = filtered_sites.sort(
+        (siteA, siteB) =>
+          sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)),
+      )
+    } else if ($sort_by[0] === `Date created`) {
+      $sorted_sites = filtered_sites.sort(
+        (siteA, siteB) => sort_factor * (+siteB.date_created - +siteA.date_created),
+      )
+    } else if ($sort_by[0] === `Date last updated`) {
+      $sorted_sites = filtered_sites.sort(
+        (siteA, siteB) => sort_factor * (+siteB.last_updated - +siteA.last_updated),
+      )
+    }
+  })
 
   const meta_description = `Awesome examples of SvelteKit sites in the wild`
 
   export const snapshot: Snapshot = {
-    capture: () => ({ sort_order, sort_factor }),
-    restore: (values) => ({ sort_order, sort_factor } = values),
+    capture: () => ({ sort_order }),
+    restore: (values) => ({ sort_order } = values),
   }
 </script>
 
@@ -159,7 +170,7 @@
     margin: auto;
     display: block;
   }
-  :where(h1, h2, p) {
+  :where(:global(h1, h2, p)) {
     text-align: center;
     margin: 1em auto;
   }

@@ -1,7 +1,11 @@
 <script lang="ts">
   import type { RepoContributor } from '$lib'
 
-  export let contributors: RepoContributor[]
+  interface Props {
+    contributors: RepoContributor[]
+  }
+
+  let { contributors }: Props = $props()
 </script>
 
 <ul class="contributors">
