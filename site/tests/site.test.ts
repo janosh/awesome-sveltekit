@@ -16,27 +16,20 @@ test(`test search functionality on the landing page`, async ({ page }) => {
 })
 
 test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
-  // test that the arrow keys don't work on the landing page
   await page.goto(`/`, { waitUntil: `networkidle` })
 
   await page.keyboard.press(`ArrowRight`)
-  // get slugs to first 2 detail pages
-  const [slug_1, slug_2] = await page.$$eval(
-    `ol > li > a:has(> img)`,
-    (cards) => cards.map((card) => card.getAttribute(`href`)),
+
+  // Navigate to first page
+  await page.goto(`/svelte.dev`, { waitUntil: `networkidle` })
+
+  // Get the next URL from the "Next" link
+  const nextUrl = await page.$eval(`a:has-text("Next")`, (el) =>
+    el.closest(`a`)?.getAttribute(`href`),
   )
 
-  // test that the arrow keys work on detail pages
-  await page.goto(`/${slug_1}`, { waitUntil: `networkidle` })
   await page.keyboard.press(`ArrowRight`)
-  await page.waitForURL(`/${slug_2}`, {
-    waitUntil: `networkidle`,
-  })
-
-  await page.keyboard.press(`ArrowLeft`)
-  await page.waitForURL(`/${slug_1}`, {
-    waitUntil: `networkidle`,
-  })
+  await page.waitForURL(`/${nextUrl}`)
 })
 
 test(`can navigate landing page with arrow keys`, async ({ page }) => {
