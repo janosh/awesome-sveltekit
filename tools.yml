@@ -10,6 +10,7 @@ cloudflare: https://cloudflare.com
 cloudinary: https://cloudinary.com
 codemirror: https://codemirror.net
 commitlint: https://github.com/conventional-changelog/commitlint
+coolify: https://www.coolify.io
 cssnano: https://cssnano.co
 cypress: https://cypress.io
 cytoscape.js: https://js.cytoscape.org
@@ -21,6 +22,7 @@ dynamodb: https://aws.amazon.com/dynamodb
 echarts: https://github.com/apache/echarts
 elder.js: https://github.com/Elderjs/elderjs
 electron: https://electronjs.org
+ffmpeg: https://ffmpeg.org
 filepond: https://pqina.nl/filepond
 firebase: https://firebase.google.com
 flamethrower: https://github.com/fireship-io/flamethrower
@@ -47,6 +49,7 @@ jsdoc: https://jsdoc.app
 jsdom: https://github.com/jsdom/jsdom
 json5: https://github.com/json5/json5
 katex: https://github.com/KaTeX/KaTeX
+libvips: https://www.libvips.org
 liveblocks: https://liveblocks.io
 lodash: https://lodash.com
 lucia: https://github.com/lucia-auth/lucia
