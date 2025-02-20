@@ -4,24 +4,30 @@
   import { Tooltip } from 'svelte-zoo'
   import { Person, Screenshot, type Site } from '.'
 
-  export let site: Site
+  interface Props {
+    site: Site
+  }
 
-  $: ({ title, url, tags, uses, contributors, date_created, repo_stars } = site)
+  let { site }: Props = $props()
 
-  $: days_since_created = Math.floor(
-    (Date.now() - date_created.getTime()) / (1000 * 60 * 60 * 24)
+  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(site)
+
+  let days_since_created = $derived(
+    Math.floor((Date.now() - date_created.getTime()) / (1000 * 60 * 60 * 24)),
   )
 
-  $: tools = uses.map((tool) => {
-    const href = uses_links[tool.toLowerCase()]
-    if (!href) {
-      console.error(`Unknown tool: ${tool}`)
-    } else if (!href.startsWith(`https`)) {
-      // all tools should have an https URL
-      throw `All tool URLs should use HTTPS: ${tool} has href: ${href}`
-    }
-    return [tool, href]
-  })
+  let tools = $derived(
+    uses.map((tool) => {
+      const href = uses_links[tool.toLowerCase()]
+      if (!href) {
+        console.error(`Unknown tool: ${tool}`)
+      } else if (!href.startsWith(`https`)) {
+        // all tools should have an https URL
+        throw `All tool URLs should use HTTPS: ${tool} has href: ${href}`
+      }
+      return [tool, href]
+    }),
+  )
 </script>
 
 <section>
@@ -48,7 +54,7 @@
     <hr />
     <p class="flex">
       <Icon icon="octicon:star" />&emsp;Stars
-      <span style="flex: 1" />
+      <span style="flex: 1"></span>
       <a href="{site.repo}/stargazers">{repo_stars.toLocaleString()}</a>
     </p>
   {/if}
@@ -72,7 +78,7 @@
           {/each}
         </ol>
       {:else}
-        <span style="flex: 1" />
+        <span style="flex: 1"></span>
         <Person person={contributors[0]} />
       {/if}
     </div>
@@ -81,7 +87,7 @@
     <hr />
     <p class="flex">
       <Icon icon="octicon:project" />&emsp;Project started on
-      <span style="flex: 1" />
+      <span style="flex: 1"></span>
       <Tooltip
         text="{days_since_created} days ago"
         min_width="max-content"

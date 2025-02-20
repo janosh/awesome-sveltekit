@@ -4,10 +4,13 @@
   import { Screenshot } from '.'
   import { filter_tags } from './stores'
 
-  export let site: Site
-  export let idx: number = 0
-  export let tags: boolean = false
-  export let style: string | null = null
+  interface Props {
+    site: Site
+    idx?: number
+    tags?: boolean
+    style?: string | null
+  }
+  let { site, idx = 0, tags = false, style = null }: Props = $props()
 </script>
 
 <a href={site.slug} {style}>

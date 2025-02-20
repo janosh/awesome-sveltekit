@@ -4,10 +4,10 @@
   import Icon from '@iconify/svelte'
   import { PrevNext } from 'svelte-zoo'
 
-  export let data
+  let { data } = $props()
 
-  $: head_title = `${data.site.title} | Awesome SvelteKit`
-  $: plain_description = data.site?.description?.replace(/<[^>]*>/g, ``)
+  let head_title = $derived(`${data.site.title} | Awesome SvelteKit`)
+  let plain_description = $derived(data.site?.description?.replace(/<[^>]*>/g, ``))
 </script>
 
 <svelte:head>
@@ -31,17 +31,17 @@
   items={data.sites?.map((site) => [site.slug, site])}
   current={data.slug}
   style="max-width: var(--main-max-width);"
-  let:item
-  let:kind
 >
-  <div style="max-width: 250px;">
-    <h3 style="text-align: {kind == `next` && `right`}">
-      <a href={item.slug}>
-        {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
-      </a>
-    </h3>
-    <SitePreview site={item} />
-  </div>
+  {#snippet children({ item, kind })}
+    <div style="max-width: 250px;">
+      <h3 style="text-align: {kind == `next` && `right`}">
+        <a href={item.slug}>
+          {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
+        </a>
+      </h3>
+      <SitePreview site={item} />
+    </div>
+  {/snippet}
 </PrevNext>
 
 <footer>
