@@ -3181,3 +3181,53 @@
       name: Anshuman
       location: 0.0.0.0
       company: InstaSafe
+- title: VERT
+  url: https://vert.sh
+  repo: https://github.com/VERT-sh/VERT
+  description: >-
+    A file converter that converts files client-side while being completely
+    ad-free.
+  uses:
+    - TypeScript
+    - Tailwind
+    - Coolify
+    - WASM
+    - FFmpeg
+    - libvips
+    - Plausible
+  tags:
+    - ffmpeg
+    - conversion
+    - wasm
+    - vips
+    - open source
+    - graphics
+    - video
+    - audio
+    - files
+  date_created: 2024-11-12T00:00:00.000Z
+  date_added: 2025-02-20T00:00:00.000Z
+  repo_stars: 221
+  slug: vert
+  contributors:
+    - github: JovannMC
+      twitter: JovannMC
+      url: https://jovann.me
+      avatar: https://avatars.githubusercontent.com/u/45893380?v=4
+      name: null
+      location: null
+      company: 'SCC Group @scc-org '
+    - github: not-nullptr
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/62841684?v=4
+      name: nullptr
+      location: right behind you
+      company: null
+    - github: RealmyTheMan
+      twitter: null
+      url: null
+      avatar: https://avatars.githubusercontent.com/u/163438634?v=4
+      name: null
+      location: null
+      company: null
