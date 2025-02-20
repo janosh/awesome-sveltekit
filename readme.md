@@ -568,6 +568,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [svelte-multiselect], [pre-commit], [PNPM], [svelte-enhanced-img]
 
+1. **[VERT](https://vert.sh)**&nbsp;
+   [[code](https://github.com/VERT-sh/VERT)]&ensp;
+   <a href="https://github.com/VERT-sh/VERT/stargazers">
+   <img src="https://img.shields.io/github/stars/VERT-sh/VERT?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A file converter that converts files client-side while being completely ad-free.<br>
+
+   uses: [TypeScript], [Tailwind], [Coolify], [WASM], [FFmpeg], [libvips], [Plausible]
+
 1. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)**&nbsp;
    [[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&ensp;
    <a href="https://github.com/Rich-Harris/sveltekit-on-the-edge/stargazers">
@@ -886,6 +896,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net
 [commitlint]: https://github.com/conventional-changelog/commitlint
+[coolify]: https://coolify.io
 [cssnano]: https://cssnano.co
 [cypress]: https://cypress.io
 [cytoscape.js]: https://js.cytoscape.org
@@ -897,6 +908,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [echarts]: https://github.com/apache/echarts
 [elder.js]: https://github.com/Elderjs/elderjs
 [electron]: https://electronjs.org
+[ffmpeg]: https://ffmpeg.org
 [filepond]: https://pqina.nl/filepond
 [firebase]: https://firebase.google.com
 [flamethrower]: https://github.com/fireship-io/flamethrower
@@ -923,6 +935,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [jsdom]: https://github.com/jsdom/jsdom
 [json5]: https://github.com/json5/json5
 [katex]: https://github.com/KaTeX/KaTeX
+[libvips]: https://libvips.org
 [liveblocks]: https://liveblocks.io
 [lodash]: https://lodash.com
 [lucia]: https://github.com/lucia-auth/lucia
