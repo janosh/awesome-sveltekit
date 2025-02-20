@@ -1,11 +1,13 @@
-import { sorted_sites } from '$lib/stores'
+import sites from '$site/src/sites.yml'
 import { error } from '@sveltejs/kit'
-import { get } from 'svelte/store'
+
+export const entries = () => {
+  // Return an array of all possible slug values
+  return sites.map((site) => ({ slug: site.slug }))
+}
 
 export const load = ({ params }) => {
   const { slug } = params
-
-  const sites = get(sorted_sites)
 
   const site = sites.find((site) => site.slug === slug)
 
