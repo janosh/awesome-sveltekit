@@ -2,9 +2,13 @@
   import Icon from '@iconify/svelte'
   import type { Contributor } from '.'
 
-  export let person: Contributor
+  interface Props {
+    person: Contributor
+  }
 
-  $: ({ name, twitter, github, url, avatar } = person)
+  let { person }: Props = $props()
+
+  let { name, twitter, github, url, avatar } = $derived(person)
 </script>
 
 <span>

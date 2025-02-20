@@ -5,8 +5,12 @@
   import { GitHubCorner } from 'svelte-zoo'
   import '../app.css'
   import sites from '../sites.yml'
+  interface Props {
+    children?: import('svelte').Snippet
+  }
 
-  let innerWidth: number
+  let { children }: Props = $props()
+  let innerWidth: number = $state(0)
 
   const actions = sites.map(({ title, slug }) => {
     return { label: title, action: () => goto(slug) }
@@ -23,4 +27,4 @@
   <base target="_{innerWidth > 600 ? `blank` : `self`}" />
 </svelte:head>
 
-<slot />
+{@render children?.()}
