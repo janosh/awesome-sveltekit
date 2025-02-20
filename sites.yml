@@ -952,7 +952,8 @@
   url: https://vert.sh
   repo: https://github.com/VERT-sh/VERT
   description: A file converter that converts files client-side while being completely ad-free.
-  uses: [TypeScript, Tailwind, Coolify, WASM, FFmpeg, libvips]
-  tags: [ffmpeg, conversion, wasm, svelte, vips, sveltekit]
+  uses: [TypeScript, Tailwind, Coolify, WASM, FFmpeg, libvips, Plausible]
+  tags: [ffmpeg, conversion, wasm, vips, open source, graphics, video, audio, files]
   date_created: 2024-11-12
   date_added: 2025-02-20
+  repo_stars: 221
