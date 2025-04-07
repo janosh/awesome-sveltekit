@@ -31,7 +31,7 @@ repos:
           - svelte
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.35.1
+    rev: v1.37.0
     hooks:
       - id: yamllint
         args: [--config-file, .github/yamllint.yml]
@@ -54,7 +54,7 @@ repos:
         stages: [pre-commit, commit-msg]
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.20.1
+    rev: v9.24.0
     hooks:
       - id: eslint
         types: [file]
