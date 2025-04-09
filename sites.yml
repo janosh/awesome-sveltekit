@@ -963,9 +963,7 @@
   url: https://pixelui.dev
   repo: https://github.com/pixeluidev/pixelui-kits
   description: Ready-to-use components built with TailwindCSS and Svelte. Just copy and paste into your project.
-  uses: [TypeScript, Tailwind,superforms,lucide-svelte]
-  tags:
-    [component library, a11y]
+  uses: [TypeScript, Tailwind, superforms, lucide-svelte]
+  tags: [component library, a11y]
   date_created: 2025-04-09
   date_added: 2025-04-09
-  
