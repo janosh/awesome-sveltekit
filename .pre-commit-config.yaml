@@ -31,7 +31,7 @@ repos:
           - svelte
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.35.1
+    rev: v1.37.1
     hooks:
       - id: yamllint
         args: [--config-file, .github/yamllint.yml]
@@ -53,8 +53,16 @@ repos:
         args: [--ignore-words-list, 'ons,linz', --check-filenames]
         stages: [pre-commit, commit-msg]
 
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.32.0
+    hooks:
+      - id: typos
+        types: [text]
+        args: []
+        exclude: ^site/src/sites.yml|.pre-commit-config.yaml$
+
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.20.1
+    rev: v9.27.0
     hooks:
       - id: eslint
         types: [file]

@@ -8,12 +8,12 @@
     site: Site
     idx?: number
     tags?: boolean
-    style?: string | null
+    [key: string]: unknown
   }
-  let { site, idx = 0, tags = false, style = null }: Props = $props()
+  let { site, idx = 0, tags = false, ...rest }: Props = $props()
 </script>
 
-<a href={site.slug} {style}>
+<a href={site.slug} {...rest}>
   <Screenshot title={site.title} resolution=".small" style="cursor: pointer;" />
 </a>
 <div class="flex">
@@ -30,7 +30,7 @@
 {#if tags}
   <p class="tags flex">
     <Icon icon="octicon:tag" style="margin: 0 1ex 0 0;" />
-    {#each site.tags as tag}
+    {#each site.tags as tag (tag)}
       <small class:active={$filter_tags.find((t) => t.label === tag)}>
         {tag}
       </small>
