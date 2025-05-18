@@ -249,7 +249,7 @@
 
 - title: connorrothschild.com
   url: https://connorrothschild.com
-  repo: https://github.com/connorrothschild/.com
+  repo: https://github.com/connorrothschild/v4
   description: Creative, content-based portfolio site of Connor Rothschild.
   uses: [MDsveX, GSAP, Netlify]
   tags: [blog, portfolio, animations]
@@ -426,15 +426,6 @@
   uses: [PNPM, TypeScript, Tailwind, MDsveX, Prism, PostCSS, Playwright]
   tags: [component library, forms, modals, spinners, dark-mode, toast]
   date_created: 2022-01-24
-  date_added: 2022-05-19
-
-- title: Good First Issue Finder
-  url: https://finder.eddiehub.io
-  repo: https://github.com/EddieHubCommunity/good-first-issue-finder
-  description: Good First Issue Finder helps new contributors pave their path into the world of OSS.
-  uses: [TypeScript, Tailwind, Husky, Octokit, PostCSS]
-  tags: [oss, community, developer guide]
-  date_created: 2022-01-20
   date_added: 2022-05-19
 
 - title: Elementari
@@ -957,4 +948,4 @@
     [ffmpeg, conversion, wasm, vips, open source, graphics, video, audio, files]
   date_created: 2024-11-12
   date_added: 2025-02-20
-  repo_stars: 221
+  repo_stars: 3328

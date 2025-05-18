@@ -71,7 +71,7 @@
       {/if}
       {#if contributors.length > 1}
         <ol class="contributors">
-          {#each contributors as person}
+          {#each contributors as person (person.name)}
             <li>
               <Person {person} />
             </li>
@@ -105,7 +105,7 @@
     <hr />
     <p class="tags flex">
       <Icon icon="octicon:tag" />&ensp;Tags&emsp;
-      {#each tags as tag}
+      {#each tags as tag (tag)}
         <span>{tag}</span>
       {/each}
     </p>
@@ -114,7 +114,7 @@
     <hr />
     <p class="uses flex">
       <Icon icon="octicon:stack-16" />&ensp;Uses&emsp;
-      {#each tools as [tool, href]}
+      {#each tools as [tool, href] (tool)}
         <a {href}>{tool}</a>
       {/each}
     </p>

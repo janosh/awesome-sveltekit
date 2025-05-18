@@ -4,12 +4,11 @@
   interface Props {
     contributors: RepoContributor[]
   }
-
   let { contributors }: Props = $props()
 </script>
 
 <ul class="contributors">
-  {#each contributors as { avatar_url, html_url, login }}
+  {#each contributors as { avatar_url, html_url, login } (JSON.stringify(login))}
     <li>
       <a href={html_url}>
         <img src={avatar_url} alt={login} />

@@ -4,18 +4,21 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 * *' # monthly
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  markdown-link-check:
+  link-check:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'janosh'
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
 
-      - name: Run markdown link check
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
-        # docs at https://git.io/JBaKu
+      - name: Discover broken links
+        uses: lycheeverse/lychee-action@v2
         with:
-          # sets status code 500 (Internal Server Error) and 503 (Service Unavailable) as alive
-          config-file: .github/workflows/link-check-config.json
+          args: --exclude '%7B' --exclude-path ./site/src/sites.yml -- ./**/*.{md,svelte,ts,yml}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

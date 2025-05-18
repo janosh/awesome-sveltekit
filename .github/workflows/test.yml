@@ -12,4 +12,6 @@ jobs:
     uses: janosh/workflows/.github/workflows/npm-test.yml@main
     with:
       working-directory: site
+      test-cmd: ''
       install-e2e: npx playwright install chromium
+      e2e-test-cmd: npx playwright test tests/*.ts

@@ -14,8 +14,10 @@
 
   const slugify = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
 
-  const base = `https://raw.githubusercontent.com/janosh/awesome-sveltekit/main/site/static`
-  let src = $derived(`${dev ? `` : base}/screenshots/${slugify(title)}${resolution}.avif`)
+  const base_url = `https://github.com/janosh/awesome-sveltekit/raw/main/site/static`
+  let src = $derived(
+    `${dev ? `` : base_url}/screenshots/${slugify(title)}${resolution}.avif`,
+  )
 </script>
 
 <img {src} alt="Screenshot of {title}" {width} {height} {style} />
