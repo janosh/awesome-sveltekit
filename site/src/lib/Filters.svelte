@@ -1,14 +1,7 @@
 <script lang="ts">
   import MultiSelect from 'svelte-multiselect'
   import { RadioButtons } from 'svelte-zoo'
-  import {
-    contributor_filter_mode,
-    filter_contributors,
-    filter_tags,
-    search,
-    sort_by,
-    tag_filter_mode,
-  } from './stores'
+  import { filters, sorted } from './state.svelte'
 
   interface Props {
     tags: [string, number][]
@@ -20,39 +13,37 @@
 </script>
 
 <div class="filters">
-  <input type="search" bind:value={$search} placeholder="Search..." />
+  <input type="search" bind:value={filters.search} placeholder="Search..." />
   <div>
     <MultiSelect
       options={tags.map(([label, count]) => ({ label, count }))}
       placeholder="Filter by tag..."
-      bind:selected={$filter_tags}
+      bind:selected={filters.tags}
     >
       {#snippet option({ option })}
-        <span style="display: flex;">
-          {option.label} <span style="flex: 1;"></span>
-          {option.count}
+        <span style="display: flex">
+          {option.label} <span style="flex: 1"></span> {option.count}
         </span>
       {/snippet}
     </MultiSelect>
-    {#if $filter_tags.length > 1}
-      <RadioButtons bind:selected={$tag_filter_mode} options={[`all`, `any`]} />
+    {#if filters.tags.length > 1}
+      <RadioButtons bind:selected={filters.tags_mode} options={[`all`, `any`]} />
     {/if}
   </div>
   <div>
     <MultiSelect
       options={contributors.map(([label, count]) => ({ label, count }))}
       placeholder="Filter by contributor..."
-      bind:selected={$filter_contributors}
+      bind:selected={filters.contributors}
     >
       {#snippet option({ option })}
-        <span style="display: flex;">
-          {option.label} <span style="flex: 1;"></span>
-          {option.count}
+        <span style="display: flex">
+          {option.label} <span style="flex: 1"></span> {option.count}
         </span>
       {/snippet}
     </MultiSelect>
-    {#if $filter_contributors.length > 1}
-      <RadioButtons bind:selected={$contributor_filter_mode} options={[`all`, `any`]} />
+    {#if filters.contributors.length > 1}
+      <RadioButtons bind:selected={filters.contributors_mode} options={[`all`, `any`]} />
     {/if}
   </div>
   <div>
@@ -60,9 +51,9 @@
       options={[`Date created`, `GitHub repo stars`]}
       placeholder="Sort by..."
       maxSelect={1}
-      bind:selected={$sort_by}
+      bind:selected={sorted.by}
     />
-    {#if $sort_by?.length > 0}
+    {#if sorted.by?.length > 0}
       <RadioButtons bind:selected={sort_order} options={[`asc`, `desc`]} />
     {/if}
   </div>

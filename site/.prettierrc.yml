@@ -1,6 +1,0 @@
-semi: false
-singleQuote: true
-overrides:
-  - files: '*.svelte'
-    options:
-      printWidth: 90

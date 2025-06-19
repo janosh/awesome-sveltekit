@@ -31,9 +31,9 @@ export function update_readme() {
           if (repo_handle.split(`/`).length !== 2) {
             throw `bad repo handle ${repo_handle}`
           }
-          const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
-          code_link =
-            `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
+          const star_badge =
+            `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
+          code_link = `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
             `<a href="${repo}/stargazers">${new_line}${star_badge}${new_line}</a>`
         }
 

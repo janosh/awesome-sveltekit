@@ -10,7 +10,9 @@
 
   let { site }: Props = $props()
 
-  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(site)
+  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(
+    site,
+  )
 
   let days_since_created = $derived(
     Math.floor((Date.now() - date_created.getTime()) / (1000 * 60 * 60 * 24)),
@@ -33,7 +35,7 @@
 <section>
   <h1>
     <a href={url}>{title}</a>
-    <small style="display: flex; gap: 10pt; place-items: center;">
+    <small style="display: flex; gap: 10pt; place-items: center">
       {#if site.repo}
         <a href={site.repo}>
           <Icon icon="octicon:mark-github" color="white" />
@@ -60,8 +62,8 @@
   {/if}
   {#if contributors?.length > 0}
     <hr />
-    <div class:flex={contributors.length === 1} style="margin: 1em 0;">
-      <Icon icon="octicon:person" style="margin-right: 1em;" />
+    <div class:flex={contributors.length === 1} style="margin: 1em 0">
+      <Icon icon="octicon:person" style="margin-right: 1em" />
       {#if site.repo}
         <a href="{site.repo}/contributors">
           {contributors.length > 1 ? `Contributors` : `Creator`}

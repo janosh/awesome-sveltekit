@@ -10,7 +10,8 @@
     resolution?: `.small` | ``
   }
 
-  let { title, width = 800, height = 600, style = ``, resolution = `` }: Props = $props()
+  let { title, width = 800, height = 600, style = ``, resolution = `` }: Props =
+    $props()
 
   const slugify = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
 

@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test'
+import process from 'node:process'
 
 // to run tests in this file, use `npm run test:e2e`
 test.describe.configure({ mode: `parallel` })
@@ -38,8 +39,9 @@ test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
   await page.goto(`/svelte.dev`, { waitUntil: `networkidle` })
 
   // Get the next URL from the "Next" link
-  const next_url = await page.$eval(`a:has-text("Next")`, (el) =>
-    el.closest(`a`)?.getAttribute(`href`),
+  const next_url = await page.$eval(
+    `a:has-text("Next")`,
+    (el) => el.closest(`a`)?.getAttribute(`href`),
   )
 
   await page.keyboard.press(`ArrowRight`)
@@ -56,8 +58,9 @@ test(`can navigate landing page with arrow keys`, async ({ page }) => {
   await page.keyboard.press(`ArrowRight`)
 
   // get slug of active site
-  const slug = await page.$eval(`ol > li.active > a:has(> img)`, (card) =>
-    card.getAttribute(`href`),
+  const slug = await page.$eval(
+    `ol > li.active > a:has(> img)`,
+    (card) => card.getAttribute(`href`),
   )
 
   // press enter and check that we're on the detail page
@@ -87,14 +90,16 @@ test(`page has correct meta tags`, async ({ page }) => {
   await expect(page).toHaveTitle(`Svelte.dev | Awesome SvelteKit`)
 
   // Check meta description
-  const description = await page.$eval(`meta[name="description"]`, (el) =>
-    el.getAttribute(`content`),
+  const description = await page.$eval(
+    `meta[name="description"]`,
+    (el) => el.getAttribute(`content`),
   )
   expect(description).toBe(`Cybernetically enhanced web apps.`)
 
   // Check OG tags
-  const og_title = await page.$eval(`meta[property="og:title"]`, (el) =>
-    el.getAttribute(`content`),
+  const og_title = await page.$eval(
+    `meta[property="og:title"]`,
+    (el) => el.getAttribute(`content`),
   )
   expect(og_title).toBe(`Svelte.dev | Awesome SvelteKit`)
 })

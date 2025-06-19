@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-await-in-loop
 /* This file parses sites.yml, fetches GH metadata like contributors
 and stars for each site, then writes the results to site/src/sites.yml. */
 
@@ -6,8 +7,9 @@ import dotenv from 'dotenv'
 import fs from 'fs'
 import yaml from 'js-yaml'
 import { marked } from 'marked'
+import process from 'node:process'
 import { performance } from 'perf_hooks'
-import type { Action } from '.'
+import type { Action } from './'
 
 export function title_to_slug(title: string): string {
   return title.toLowerCase().replaceAll(` `, `-`)
@@ -22,9 +24,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
   const sites = yaml.load(fs.readFileSync(in_path)) as Site[]
 
-  const old_sites = fs.existsSync(out_path)
-    ? yaml.load(fs.readFileSync(out_path))
-    : []
+  const old_sites = fs.existsSync(out_path) ? yaml.load(fs.readFileSync(out_path)) : []
 
   const this_file = import.meta.url.split(`/`).pop()
 
@@ -34,7 +34,9 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
   const old_slugs = old_sites.map((site) => site.slug)
 
-  const [seen_sites, skipped_sites, updated_sites] = [[], [], []]
+  const seen_sites: string[] = []
+  const skipped_sites: string[] = []
+  const updated_sites: string[] = []
 
   if (!process.env.GH_TOKEN) {
     console.error(`GH_TOKEN environment variable is not set.`)
@@ -114,7 +116,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
     contributors = await Promise.all(
       contributors.map((person) =>
-        fetch(person.url, { headers }).then((res) => res.json()),
+        fetch(person.url, { headers }).then((res) => res.json())
       ),
     )
 
