@@ -1,6 +1,6 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
-  import type { Contributor } from '.'
+  import type { Contributor } from './index'
 
   interface Props {
     person: Contributor

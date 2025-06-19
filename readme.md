@@ -99,7 +99,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [Huggingface Inference], [Huggingface Hub], [Tailwind]
 
 1. **[shadcn-svelte](https://shadcn-svelte.com)**&nbsp;
-   [[code](https://github.com/huntabyte/shadcn-svelte/tree/main/sites/docs)]&ensp;
+   [[code](https://github.com/huntabyte/shadcn-svelte/tree/96e8866/docs)]&ensp;
    <a href="https://github.com/huntabyte/shadcn-svelte/stargazers">
    <img src="https://img.shields.io/github/stars/huntabyte/shadcn-svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -228,7 +228,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [MDsveX], [TypeScript], [PostCSS], [Tailwind], [cssnano], [Jest], [rehype]
 
-1. **[Svelte Commerce](https://demo.litekart.in)**&nbsp;
+1. **[Svelte Commerce](https://arialshop.com)**&nbsp;
    [[code](https://github.com/itswadesh/svelte-commerce)]&ensp;
    <a href="https://github.com/itswadesh/svelte-commerce/stargazers">
    <img src="https://img.shields.io/github/stars/itswadesh/svelte-commerce?logo=github" alt="GitHub stars" valign="middle">

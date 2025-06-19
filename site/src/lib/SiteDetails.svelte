@@ -1,8 +1,8 @@
 <script lang="ts">
   import uses_links from '$root/tools.yml'
   import Icon from '@iconify/svelte'
-  import { Tooltip } from 'svelte-zoo'
-  import { Person, Screenshot, type Site } from '.'
+  import { tooltip } from 'svelte-multiselect/attachments'
+  import { Person, Screenshot, type Site } from './index'
 
   interface Props {
     site: Site
@@ -10,7 +10,9 @@
 
   let { site }: Props = $props()
 
-  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(site)
+  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(
+    site,
+  )
 
   let days_since_created = $derived(
     Math.floor((Date.now() - date_created.getTime()) / (1000 * 60 * 60 * 24)),
@@ -33,7 +35,7 @@
 <section>
   <h1>
     <a href={url}>{title}</a>
-    <small style="display: flex; gap: 10pt; place-items: center;">
+    <small style="display: flex; gap: 10pt; place-items: center">
       {#if site.repo}
         <a href={site.repo}>
           <Icon icon="octicon:mark-github" color="white" />
@@ -60,8 +62,8 @@
   {/if}
   {#if contributors?.length > 0}
     <hr />
-    <div class:flex={contributors.length === 1} style="margin: 1em 0;">
-      <Icon icon="octicon:person" style="margin-right: 1em;" />
+    <div class:flex={contributors.length === 1} style="margin: 1em 0">
+      <Icon icon="octicon:person" style="margin-right: 1em" />
       {#if site.repo}
         <a href="{site.repo}/contributors">
           {contributors.length > 1 ? `Contributors` : `Creator`}
@@ -88,17 +90,14 @@
     <p class="flex">
       <Icon icon="octicon:project" />&emsp;Project started on
       <span style="flex: 1"></span>
-      <Tooltip
-        text="{days_since_created} days ago"
-        min_width="max-content"
-        style="--zoo-tooltip-bg: var(--sms-options-bg)"
+      <svelte:element
+        this={site.repo ? `a` : `span`}
+        href={site.repo ?? null}
+        title="{days_since_created} days ago"
+        {@attach tooltip()}
       >
-        {#if site.repo}
-          <a href="{site.repo}/network">{date_created.toISOString().split(`T`)[0]}</a>
-        {:else}
-          {date_created.toISOString().split(`T`)[0]}
-        {/if}
-      </Tooltip>
+        {date_created.toISOString().split(`T`)[0]}
+      </svelte:element>
     </p>
   {/if}
   {#if tags?.length > 0}

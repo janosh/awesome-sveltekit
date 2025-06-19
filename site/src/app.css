@@ -2,9 +2,6 @@
   --bg: #061e25;
   --main-max-width: 1300px;
 
-  --zoo-github-corner-color: var(--bg);
-  --zoo-github-corner-bg: white;
-
   --sms-bg: black;
   --sms-max-width: 22em;
   --sms-selected-bg: rgba(255, 255, 255, 0.15);
@@ -12,6 +9,10 @@
   --sms-border: 1px solid #333;
   --sms-li-active-bg: rgba(255, 255, 255, 0.15);
   --sms-placeholder-color: gray;
+
+  --github-corner-color: var(--bg);
+  --github-corner-bg: white;
+  --tooltip-bg: var(--sms-options-bg);
 }
 body {
   background: var(--bg);

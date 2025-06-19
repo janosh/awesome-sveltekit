@@ -1,6 +1,6 @@
 ci:
   autoupdate_schedule: quarterly
-  skip: [eslint]
+  skip: [eslint, deno-lint, deno-fmt]
 
 default_stages: [pre-commit]
 
@@ -19,16 +19,6 @@ repos:
       - id: trailing-whitespace
       - id: file-contents-sorter
         files: ^tools\.yml$
-
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
-    hooks:
-      - id: prettier
-        args: [--config, site/.prettierrc.yml, --write] # edit files in-place
-        additional_dependencies:
-          - prettier
-          - prettier-plugin-svelte
-          - svelte
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
@@ -110,3 +100,18 @@ repos:
         entry: .github/format_urls.py
         language: python
         files: ^(sites.yml|readme.md|.github/format_urls.py)$
+
+  - repo: local
+    hooks:
+      - id: deno-fmt
+        name: Deno format
+        entry: deno fmt
+        types_or: [file]
+        language: system
+        args: [--config, site/deno.jsonc]
+      - id: deno-lint
+        name: Deno lint
+        entry: deno lint
+        types_or: [file]
+        args: [--config, site/deno.jsonc, --permit-no-files, --fix]
+        language: system

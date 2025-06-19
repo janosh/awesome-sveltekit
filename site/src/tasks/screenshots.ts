@@ -1,22 +1,24 @@
+// deno-lint-ignore-file no-await-in-loop
 /* This file parses sites.yml, generates low+hi-res screenshots for each site and
 saves them as AVIF to site/static/screenshots. */
 
 import type { Site } from '$lib'
-import fs from 'fs'
 import yaml from 'js-yaml'
-import { performance } from 'perf_hooks'
+import fs from 'node:fs'
+import { performance } from 'node:perf_hooks'
+import process from 'node:process'
 import puppeteer from 'puppeteer'
 import sharp from 'sharp'
-import type { Action } from '.'
+import type { Action } from './'
 
 export async function make_screenshots(options: { action?: Action } = {}) {
   const { action = `add-missing` } = options
   const start = performance.now()
   const screenshot_dir = `../site/static/screenshots`
 
-  const sites = yaml
-    .load(fs.readFileSync(`../site/src/sites.yml`))
-    .sort((s1, s2) => s1.title.localeCompare(s2.title)) as Site[]
+  const sites = (yaml
+    .load(fs.readFileSync(`../site/src/sites.yml`)) as Site[])
+    .sort((s1, s2) => s1.title.localeCompare(s2.title))
 
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
@@ -36,7 +38,10 @@ export async function make_screenshots(options: { action?: Action } = {}) {
   }[action]
   console.log(msg)
 
-  const [created, updated, skipped, existed] = [[], [], [], []]
+  const created: string[] = []
+  const updated: string[] = []
+  const skipped: string[] = []
+  const existed: string[] = []
 
   for (const [idx, site] of sites.entries()) {
     const { slug } = site
@@ -44,7 +49,7 @@ export async function make_screenshots(options: { action?: Action } = {}) {
     const img_path = `${screenshot_dir}/${slug}.avif`
     const img_exists = fs.existsSync(img_path)
 
-    if (action != `update-existing` && img_exists) {
+    if (action !== `update-existing` && img_exists) {
       existed.push(site.slug)
       continue
     }
@@ -104,4 +109,8 @@ export async function make_screenshots(options: { action?: Action } = {}) {
       fs.unlinkSync(`${screenshot_dir}/${file}`)
     }
   }
+}
+
+if (import.meta.main) {
+  await make_screenshots()
 }

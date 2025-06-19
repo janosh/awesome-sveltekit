@@ -1958,7 +1958,7 @@
       location: null
       company: null
 - title: Svelte Commerce
-  url: https://demo.litekart.in
+  url: https://arialshop.com
   repo: https://github.com/itswadesh/svelte-commerce
   description: >-
     Headless, Authentication, Cart &amp; Checkout, TailwindCSS, Server Rendered,
@@ -2759,7 +2759,7 @@
       company: '@significa'
 - title: shadcn-svelte
   url: https://shadcn-svelte.com
-  site_src: https://github.com/huntabyte/shadcn-svelte/tree/main/sites/docs
+  site_src: https://github.com/huntabyte/shadcn-svelte/tree/96e8866/docs
   repo: https://github.com/huntabyte/shadcn-svelte
   description: shadcn/ui, but for Svelte.
   uses:
