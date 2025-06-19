@@ -1,19 +1,19 @@
+// deno-lint-ignore-file no-await-in-loop
 /* This file parses sites.yml, fetches GH metadata like contributors
 and stars for each site, then writes the results to site/src/sites.yml. */
 
 import type { Site } from '$lib'
-import dotenv from 'dotenv'
-import fs from 'fs'
 import yaml from 'js-yaml'
+import 'jsr:@std/dotenv/load'
 import { marked } from 'marked'
-import { performance } from 'perf_hooks'
-import type { Action } from '.'
+import fs from 'node:fs'
+import { performance } from 'node:perf_hooks'
+import process from 'node:process'
+import type { Action } from './'
 
 export function title_to_slug(title: string): string {
   return title.toLowerCase().replaceAll(` `, `-`)
 }
-
-dotenv.config({ path: `../site/.env` })
 
 export async function fetch_github_metadata(options: { action?: Action } = {}) {
   const { action = `add-missing` } = options
@@ -22,9 +22,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
   const sites = yaml.load(fs.readFileSync(in_path)) as Site[]
 
-  const old_sites = fs.existsSync(out_path)
-    ? yaml.load(fs.readFileSync(out_path))
-    : []
+  const old_sites = fs.existsSync(out_path) ? yaml.load(fs.readFileSync(out_path)) : []
 
   const this_file = import.meta.url.split(`/`).pop()
 
@@ -34,7 +32,9 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
   const old_slugs = old_sites.map((site) => site.slug)
 
-  const [seen_sites, skipped_sites, updated_sites] = [[], [], []]
+  const seen_sites: string[] = []
+  const skipped_sites: string[] = []
+  const updated_sites: string[] = []
 
   if (!process.env.GH_TOKEN) {
     console.error(`GH_TOKEN environment variable is not set.`)
@@ -114,7 +114,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
     contributors = await Promise.all(
       contributors.map((person) =>
-        fetch(person.url, { headers }).then((res) => res.json()),
+        fetch(person.url, { headers }).then((res) => res.json())
       ),
     )
 
@@ -155,4 +155,8 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
     `${this_file} took ${wall_time}s, updated ${updated_sites.length}, ` +
       `skipped ${skipped_sites.length}\n`,
   )
+}
+
+if (import.meta.main) {
+  await fetch_github_metadata()
 }

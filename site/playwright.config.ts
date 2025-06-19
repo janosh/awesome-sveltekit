@@ -5,4 +5,5 @@ export default {
     command: `vite dev --port 3005`,
     port: 3005,
   },
+  testDir: `tests`,
 } satisfies PlaywrightTestConfig

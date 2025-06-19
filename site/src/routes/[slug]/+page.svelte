@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { SiteDetails, SitePreview } from '$lib'
+  import { type Site, SiteDetails, SitePreview } from '$lib'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import { PrevNext } from 'svelte-zoo'
@@ -30,26 +30,27 @@
 <PrevNext
   items={data.sites?.map((site) => [site.slug, site])}
   current={data.slug}
-  style="max-width: var(--main-max-width);"
+  style="max-width: var(--main-max-width)"
 >
   {#snippet children({ item, kind })}
-    <div style="max-width: 250px;">
-      <h3 style="text-align: {kind == `next` && `right`}">
-        <a href={item.slug}>
+    {@const [slug, site] = item as [string, Site]}
+    <div style="max-width: 250px">
+      <h3 style:text-align={kind == `next` ? `right` : `left`}>
+        <a href={slug}>
           {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
         </a>
       </h3>
-      <SitePreview site={item} />
+      <SitePreview {site} />
     </div>
   {/snippet}
 </PrevNext>
 
 <footer>
   Have a site you'd like to add to this
-  <Icon icon="mdi:sunglasses" inline style="margin: 0 2pt;" />
+  <Icon icon="mdi:sunglasses" inline style="margin: 0 2pt" />
   collection?
   <a href="{repository}/edit/main/sites.yml">
-    <Icon icon="octicon:git-pull-request" inline style="margin: 0 2pt 0 4pt;" />
+    <Icon icon="octicon:git-pull-request" inline style="margin: 0 2pt 0 4pt" />
     PRs welcome!
   </a>
 

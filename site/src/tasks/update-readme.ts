@@ -1,7 +1,7 @@
 /* This file parses sites.yml, then updates the list of sites in the readme. */
 
-import fs from 'fs'
 import yaml from 'js-yaml'
+import fs from 'node:fs'
 import type { Site } from '../lib'
 
 export function update_readme() {
@@ -31,9 +31,9 @@ export function update_readme() {
           if (repo_handle.split(`/`).length !== 2) {
             throw `bad repo handle ${repo_handle}`
           }
-          const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
-          code_link =
-            `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
+          const star_badge =
+            `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
+          code_link = `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
             `<a href="${repo}/stargazers">${new_line}${star_badge}${new_line}</a>`
         }
 
@@ -63,4 +63,8 @@ export function update_readme() {
 
   const this_file = import.meta.url.split(`/`).pop()
   console.log(`${this_file} updated readme\n`)
+}
+
+if (import.meta.main) {
+  update_readme()
 }
