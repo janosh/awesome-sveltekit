@@ -318,21 +318,21 @@
       name: Puru Vijay
       location: Jaipur
       company: null
-- title: GraphCMS Starter Blog
+- title: Hygraph Starter Blog
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
-  description: This blog starter shows how to use SvelteKit with GraphCMS.
+  description: This blog starter shows how to use SvelteKit with Hygraph.
   uses:
     - Vercel
     - Tailwind
     - SCSS
-    - GraphCMS
+    - Hygraph
   tags:
     - blog
     - open source
   date_created: 2021-05-16T00:00:00.000Z
   date_added: 2021-06-14T00:00:00.000Z
-  slug: graphcms-starter-blog
+  slug: hygraph-starter-blog
   repo_stars: 10
   contributors:
     - github: spences10
@@ -1547,10 +1547,10 @@
       name: Zhi Nie
       location: Beijing, China
       company: null
-- title: Elementari
-  url: https://janosh.github.io/elementari
-  repo: https://github.com/janosh/elementari
-  npm: https://npmjs.com/package/elementari
+- title: MatterViz
+  url: https://janosh.github.io/matterviz
+  repo: https://github.com/janosh/matterviz
+  npm: https://npmjs.com/package/matterviz
   description: >-
     Interactive visualizations for materials science: periodic tables, 3d
     crystal structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps,
@@ -1574,7 +1574,7 @@
     - science
   date_created: 2022-05-31T00:00:00.000Z
   date_added: 2022-06-02T00:00:00.000Z
-  slug: elementari
+  slug: matterviz
   repo_stars: 152
   contributors:
     - github: janosh
