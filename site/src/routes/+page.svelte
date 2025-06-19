@@ -1,14 +1,6 @@
 <script lang="ts">
   import { ContributorList, Filters, SiteList } from '$lib'
-  import {
-    contributor_filter_mode,
-    filter_contributors,
-    filter_tags,
-    search,
-    sort_by,
-    sorted_sites,
-    tag_filter_mode,
-  } from '$lib/stores'
+  import { filters, sorted } from '$lib/state.svelte'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import sites from '../sites.yml'
@@ -46,7 +38,11 @@
       ),
   ).sort((contrib1, contrib2) => contrib2[1] - contrib1[1])
 
-  function arr_includes(arr: string[], values: string[], mode: `all` | `any`): boolean {
+  function arr_includes(
+    arr: string[],
+    values: string[],
+    mode: `all` | `any`,
+  ): boolean {
     if (values.length === 0) return true
     if (arr.length === 0) return false
     if (mode === `all`) return values.every((val) => arr.includes(val))
@@ -54,40 +50,41 @@
     else throw `Unexpected filter mode=${mode}`
   }
 
-  let filtered_sites = $derived(
-    sites.filter((site) => {
-      const query_match = $search?.length === 0 || JSON.stringify(site).includes($search)
-
-      const tag_match = arr_includes(
-        site.tags ?? [],
-        $filter_tags.map((t) => t.label), // tags the site should have
-        $tag_filter_mode, // all or any
-      )
-      const contrib_match = arr_includes(
-        site.contributors?.map((c) => c.name) ?? [],
-        $filter_contributors.map((c) => c.label), // contributors the site should have
-        $contributor_filter_mode, // all or any
-      )
-
-      return query_match && tag_match && contrib_match
-    }),
-  )
-
   let sort_order: `asc` | `desc` = $state(`desc`)
   let sort_factor = $derived(sort_order == `desc` ? 1 : -1)
   // arr.sort() sorts in-place but we need to reassign filtered_sites so Svelte rerenders
   $effect(() => {
-    if ($sort_by[0] === `GitHub repo stars`) {
-      $sorted_sites = filtered_sites.sort(
+    const filtered_sites = sites.filter((site) => {
+      const query_match = filters.search?.length === 0 ||
+        JSON.stringify(site).includes(filters.search)
+
+      const tag_match = arr_includes(
+        site.tags ?? [],
+        filters.tags.map((t) => t.label), // tags the site should have
+        filters.tags_mode, // all or any
+      )
+      const contrib_match = arr_includes(
+        site.contributors?.map((c) => c.name) ?? [],
+        filters.contributors.map((c) => c.label), // contributors the site should have
+        filters.contributors_mode, // all or any
+      )
+
+      return query_match && tag_match && contrib_match
+    })
+
+    console.log(`filtered_sites`, filtered_sites)
+
+    if (sorted.by[0] === `GitHub repo stars`) {
+      sorted.sites = filtered_sites.sort(
         (siteA, siteB) =>
           sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)),
       )
-    } else if ($sort_by[0] === `Date created`) {
-      $sorted_sites = filtered_sites.sort(
+    } else if (sorted.by[0] === `Date created`) {
+      sorted.sites = filtered_sites.sort(
         (siteA, siteB) => sort_factor * (+siteB.date_created - +siteA.date_created),
       )
-    } else if ($sort_by[0] === `Date last updated`) {
-      $sorted_sites = filtered_sites.sort(
+    } else if (sorted.by[0] === `Date last updated`) {
+      sorted.sites = filtered_sites.sort(
         (siteA, siteB) => sort_factor * (+siteB.last_updated - +siteA.last_updated),
       )
     }
@@ -113,7 +110,7 @@
     <img
       src="awesome-sveltekit-banner.svg"
       alt="Awesome SvelteKit"
-      style="max-height: 120px;"
+      style="max-height: 120px"
     />
     <br />
     {sites.length} Awesome Examples of SvelteKit in the Wild
@@ -121,16 +118,16 @@
 
   <Filters {tags} bind:sort_order {contributors} />
 
-  {#if $sorted_sites.length < sites.length}
+  {#if sorted.sites.length < sites.length}
     <p>
-      <span>{$sorted_sites.length}</span> match{$sorted_sites.length !== 1 ? `es` : ``}
-      {#if $sorted_sites?.length === 0}
+      <span>{sorted.sites.length}</span> match{sorted.sites.length !== 1 ? `es` : ``}
+      {#if sorted.sites?.length === 0}
         (try different filters)
       {/if}
     </p>
   {/if}
 
-  <SiteList sites={$sorted_sites} />
+  <SiteList sites={sorted.sites} />
 
   <h2>
     🙏 Big thanks to
@@ -142,24 +139,23 @@
 </main>
 
 <h2>🎉 Suggestions Welcome</h2>
-<p style="max-width: 40em;">
+<p style="max-width: 40em">
   Want to add an <em>open source</em> project to <Icon
     icon="mdi:sunglasses"
     inline
-    style="margin: 0 2pt;"
+    style="margin: 0 2pt"
   /> this list?
   <a href="{repository}/edit/main/sites.yml">
-    <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt;" />
-    PRs welcome</a
-  >! This collection is meant as a learning resource for Svelte devs. While a site with
-  private code can give inspiration, there's little educational value if you can't inspect
-  how it was made.
+    <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt" />
+    PRs welcome</a>! This collection is meant as a learning resource for Svelte devs.
+  While a site with private code can give inspiration, there's little educational value if
+  you can't inspect how it was made.
 </p>
 
-<p style="max-width: 40em;">
+<p style="max-width: 40em">
   A good place to discover Svelte projects (not necessarily SvelteKit) is
   <a href="https://github.com/trending/svelte?since=monthly">
-    <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt;" />
+    <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt" />
     GitHub Trending
   </a>. If anything on that list stands out to you but is missing here, please add it!
 </p>

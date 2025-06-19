@@ -1,6 +1,6 @@
 ci:
   autoupdate_schedule: quarterly
-  skip: [eslint]
+  skip: [eslint, deno-lint, deno-fmt]
 
 default_stages: [pre-commit]
 
@@ -20,16 +20,6 @@ repos:
       - id: file-contents-sorter
         files: ^tools\.yml$
 
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
-    hooks:
-      - id: prettier
-        args: [--config, site/.prettierrc.yml, --write] # edit files in-place
-        additional_dependencies:
-          - prettier
-          - prettier-plugin-svelte
-          - svelte
-
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.1
     hooks:
@@ -43,14 +33,14 @@ repos:
         # MD013: line too long
         # MD033: no inline HTML
         # MD041: first line in a file should be a top-level heading
-        args: [--disable, MD013, MD033, MD041, '--']
+        args: [--disable, MD013, MD033, MD041, "--"]
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
       - id: codespell
         exclude: ^site/src/sites.yml$
-        args: [--ignore-words-list, 'ons,linz', --check-filenames]
+        args: [--ignore-words-list, "ons,linz", --check-filenames]
         stages: [pre-commit, commit-msg]
 
   - repo: https://github.com/crate-ci/typos
@@ -69,13 +59,13 @@ repos:
         args: [--fix, --config, site/eslint.config.js]
         files: \.(js|ts|svelte)$
         additional_dependencies:
-          - 'typescript-eslint'
+          - "typescript-eslint"
           - eslint
           - eslint-plugin-svelte
           - globals
           - svelte
           - typescript
-          - '@stylistic/eslint-plugin'
+          - "@stylistic/eslint-plugin"
 
   - repo: local
     hooks:
@@ -86,14 +76,14 @@ repos:
         files: '^site/static/screenshots/.*(?<!\.avif)$'
 
       - id: no-bracket-links
-        name: 'Brackets should not be inside links [[link]](url) -> [[link](url)]'
+        name: "Brackets should not be inside links [[link]](url) -> [[link](url)]"
         entry: '\]\]\('
         language: pygrep
         types: [markdown]
 
       - id: no-http
         name: URLs must use HTTPS
-        entry: 'http:'
+        entry: "http:"
         language: pygrep
         types_or: [markdown, yaml]
         exclude: .pre-commit-config.yaml
@@ -110,3 +100,18 @@ repos:
         entry: .github/format_urls.py
         language: python
         files: ^(sites.yml|readme.md|.github/format_urls.py)$
+
+  - repo: local
+    hooks:
+      - id: deno-fmt
+        name: Deno format
+        entry: deno fmt
+        types_or: [svelte, javascript, ts]
+        language: system
+        args: [--config, site/deno.jsonc]
+      - id: deno-lint
+        name: Deno lint
+        entry: deno lint
+        types_or: [svelte, javascript, ts]
+        args: [--config, site/deno.jsonc]
+        language: system

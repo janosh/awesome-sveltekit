@@ -2,7 +2,7 @@
   import Icon from '@iconify/svelte'
   import type { Site } from '.'
   import { Screenshot } from '.'
-  import { filter_tags } from './stores'
+  import { filters } from './state.svelte'
 
   interface Props {
     site: Site
@@ -14,7 +14,7 @@
 </script>
 
 <a href={site.slug} {...rest}>
-  <Screenshot title={site.title} resolution=".small" style="cursor: pointer;" />
+  <Screenshot title={site.title} resolution=".small" style="cursor: pointer" />
 </a>
 <div class="flex">
   <span>
@@ -29,9 +29,9 @@
 </div>
 {#if tags}
   <p class="tags flex">
-    <Icon icon="octicon:tag" style="margin: 0 1ex 0 0;" />
+    <Icon icon="octicon:tag" style="margin: 0 1ex 0 0" />
     {#each site.tags as tag (tag)}
-      <small class:active={$filter_tags.find((t) => t.label === tag)}>
+      <small class:active={filters.tags.find((t) => t.label === tag)}>
         {tag}
       </small>
     {/each}

@@ -1,0 +1,69 @@
+{
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir npm:vite dev",
+    "build": "deno run -A --node-modules-dir npm:vite build",
+    "preview": "deno run -A --node-modules-dir npm:vite preview",
+    "serve": "deno task build && deno task preview",
+    "test": "deno task unit && deno task e2e",
+    "unit": "deno run -A --node-modules-dir npm:vitest run tests/unit/**/*.ts",
+    "e2e": "npx playwright test",
+    "test:install": "npx playwright install chromium",
+    "lint": "deno lint",
+    "fmt": "deno fmt",
+    "package": "svelte-package"
+  },
+  "lock": false,
+  "imports": {
+    "$lib": "./src/lib/index.ts",
+    "$lib/": "./src/lib/"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "include": [
+        "ban-unused-ignore",
+        "default-param-last",
+        "eqeqeq",
+        "guard-for-in",
+        "jsx-key",
+        "jsx-no-duplicate-props",
+        "jsx-no-useless-fragment",
+        "no-async-promise-executor",
+        "no-await-in-loop",
+        // "no-boolean-literal-for-arguments", // TODO only disable this in test files or even just for .toBe(true)
+        "no-const-assign",
+        "no-eval",
+        "no-explicit-any",
+        "no-non-null-asserted-optional-chain",
+        "no-non-null-assertion",
+        "no-self-compare",
+        "no-sparse-arrays",
+        "no-sync-fn-in-async-fn",
+        "no-throw-literal",
+        "no-unused-vars",
+        "no-useless-rename",
+        "prefer-const",
+        "require-await",
+        "single-var-declarator"
+      ],
+      "exclude": ["no-sloppy-imports"]
+    }
+  },
+  "fmt": {
+    "exclude": [
+      "src/site/structures/*",
+      "src/site/molecules/*",
+      "src/site/trajectories/*"
+    ],
+    "indentWidth": 2,
+    "lineWidth": 90,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  },
+  "unstable": ["fmt-component", "sloppy-imports"],
+  "compilerOptions": {
+    "lib": ["dom", "esnext"]
+  },
+  "nodeModulesDir": "auto"
+}
