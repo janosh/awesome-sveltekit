@@ -648,10 +648,10 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [MDsveX], [Rehype], [Remark], [PNPM], [Vitest], [Playwright]
 
-1. **[Elementari](https://janosh.github.io/elementari)**&nbsp;
-   [[code](https://github.com/janosh/elementari)]&ensp;
-   <a href="https://github.com/janosh/elementari/stargazers">
-   <img src="https://img.shields.io/github/stars/janosh/elementari?logo=github" alt="GitHub stars" valign="middle">
+1. **[MatterViz](https://janosh.github.io/matterviz)**&nbsp;
+   [[code](https://github.com/janosh/matterviz)]&ensp;
+   <a href="https://github.com/janosh/matterviz/stargazers">
+   <img src="https://img.shields.io/github/stars/janosh/matterviz?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    Interactive visualizations for materials science: periodic tables, 3d crystal structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps, scatter plots.<br>
@@ -794,15 +794,15 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Tailwind], [Spotify Web API], [Filepond], [PNPM], [Netlify]
 
-1. **[GraphCMS Starter Blog](https://scottspence.com/2021/05/06/graphcms-svelte-starter)**&nbsp;
+1. **[Hygraph Starter Blog](https://scottspence.com/2021/05/06/graphcms-svelte-starter)**&nbsp;
    [[code](https://github.com/spences10/sveltekit-starter-blog)]&ensp;
    <a href="https://github.com/spences10/sveltekit-starter-blog/stargazers">
    <img src="https://img.shields.io/github/stars/spences10/sveltekit-starter-blog?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
-   This blog starter shows how to use SvelteKit with GraphCMS.<br>
+   This blog starter shows how to use SvelteKit with Hygraph.<br>
 
-   uses: [Vercel], [Tailwind], [SCSS], [GraphCMS]
+   uses: [Vercel], [Tailwind], [SCSS], [Hygraph]
 
 1. **[Svelte Summit Fall 2021](https://sveltesummit.com)**&nbsp;
    [[code](https://github.com/svelte-society/svelte-summit)]&ensp;
@@ -908,7 +908,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
 [google tag manager]: https://tagmanager.google.com
-[graphcms]: https://graphcms.com
 [graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
@@ -916,6 +915,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [huggingface inference]: https://github.com/huggingface/text-generation-inference
 [hugo]: https://gohugo.io
 [husky]: https://github.com/typicode/husky
+[hygraph]: https://hygraph.com
 [ibm carbon]: https://carbondesignsystem.com
 [iconify]: https://iconify.design
 [iconoir]: https://iconoir.com

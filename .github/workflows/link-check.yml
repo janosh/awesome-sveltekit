@@ -20,5 +20,3 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           args: --exclude '%7B' --exclude-path ./site/src/sites.yml -- ./**/*.{md,svelte,ts,yml}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
