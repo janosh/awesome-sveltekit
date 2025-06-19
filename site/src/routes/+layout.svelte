@@ -1,8 +1,7 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
   import { repository } from '$site/package.json'
-  import { CmdPalette } from 'svelte-multiselect'
-  import { GitHubCorner } from 'svelte-zoo'
+  import { CmdPalette, GitHubCorner } from 'svelte-multiselect'
   import '../app.css'
   import sites from '../sites.yml'
   interface Props {

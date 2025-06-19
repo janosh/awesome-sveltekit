@@ -1,16 +1,15 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
-  import { search } from '$lib/stores'
-  import { highlight_matches } from 'svelte-zoo'
+  import { filters } from '$lib/state.svelte'
+  import { highlight_matches } from 'svelte-multiselect/attachments'
   import { flip } from 'svelte/animate'
   import { fade } from 'svelte/transition'
-  import type { Site } from '.'
-  import { SitePreview } from '.'
+  import type { Site } from './index'
+  import { SitePreview } from './index'
 
   interface Props {
     sites: Site[]
   }
-
   let { sites }: Props = $props()
 
   let active_idx = $state(-1)
@@ -35,7 +34,7 @@
 
 <svelte:window onkeyup={handle_keyup} />
 
-<ol use:highlight_matches={{ query: $search, css_class: `highlight-match` }}>
+<ol {@attach highlight_matches({ query: filters.search, css_class: `highlight-match` })}>
   {#each sites as site, idx (site.url)}
     <li
       animate:flip={{ duration: 400 }}
