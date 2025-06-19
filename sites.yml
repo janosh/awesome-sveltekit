@@ -103,11 +103,11 @@
   date_created: 2021-05-06
   date_added: 2021-06-11
 
-- title: GraphCMS Starter Blog
+- title: Hygraph Starter Blog
   url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
   repo: https://github.com/spences10/sveltekit-starter-blog
-  description: This blog starter shows how to use SvelteKit with GraphCMS.
-  uses: [Vercel, Tailwind, SCSS, GraphCMS]
+  description: This blog starter shows how to use SvelteKit with Hygraph.
+  uses: [Vercel, Tailwind, SCSS, Hygraph]
   tags: [blog]
   date_created: 2021-05-16
   date_added: 2021-06-14
