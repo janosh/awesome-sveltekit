@@ -44,7 +44,7 @@ repos:
         stages: [pre-commit, commit-msg]
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.32.0
+    rev: v1
     hooks:
       - id: typos
         types: [text]
@@ -52,7 +52,7 @@ repos:
         exclude: ^site/src/sites.yml|.pre-commit-config.yaml$
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.29.0
+    rev: v9.30.1
     hooks:
       - id: eslint
         types: [file]
