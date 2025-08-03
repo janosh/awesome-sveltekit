@@ -949,3 +949,12 @@
   date_created: 2024-11-12
   date_added: 2025-02-20
   repo_stars: 3328
+
+- title: sveltekit-shadcn-generic-template
+  url: https://ssv5.templates.guylahav.com
+  repo: https://github.com/GantonL/templates/tree/main/sveltekit-shadcn-v5
+  description: Simple, Powerful & Clean SvelteKit generic application starter template.
+  uses: [Typescript, Tailwind, shadcn-svelte, sveltekit-i18n, mdsvex, Cloudflare]
+  tags: [template, saas, blog, store, website, i18n, a11y]
+  date_created: 2025-07-13
+  date_added: 2025-08-03
