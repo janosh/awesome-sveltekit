@@ -1,15 +1,14 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
+  import type { HTMLAttributes } from 'svelte/elements'
   import { Screenshot, type Site } from './index'
   import { filters } from './state.svelte'
 
-  interface Props {
+  let { site, idx = 0, tags = false, ...rest }: HTMLAttributes<HTMLAnchorElement> & {
     site: Site
     idx?: number
     tags?: boolean
-    [key: string]: unknown
-  }
-  let { site, idx = 0, tags = false, ...rest }: Props = $props()
+  } = $props()
 </script>
 
 <a href={site.slug} {...rest}>

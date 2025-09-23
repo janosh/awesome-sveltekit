@@ -5,6 +5,7 @@
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "bundler",
+    "skipLibCheck": true,
 
     // To have warnings/errors of the Svelte compiler at the correct position,
     // enable source maps by default.

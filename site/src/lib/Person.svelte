@@ -1,17 +1,16 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
+  import type { HTMLAttributes } from 'svelte/elements'
   import type { Contributor } from './index'
 
-  interface Props {
+  let { person, ...rest }: HTMLAttributes<HTMLSpanElement> & {
     person: Contributor
-  }
-
-  let { person }: Props = $props()
+  } = $props()
 
   let { name, twitter, github, url, avatar } = $derived(person)
 </script>
 
-<span>
+<span {...rest}>
   <!-- show github profile photo -->
   {#if avatar}
     <img src="{avatar}&size=100" alt={name} />

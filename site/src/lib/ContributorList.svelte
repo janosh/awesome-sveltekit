@@ -1,10 +1,7 @@
 <script lang="ts">
   import type { RepoContributor } from '$lib'
 
-  interface Props {
-    contributors: RepoContributor[]
-  }
-  let { contributors }: Props = $props()
+  let { contributors }: { contributors: RepoContributor[] } = $props()
 </script>
 
 <ul class="contributors">

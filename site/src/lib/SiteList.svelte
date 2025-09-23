@@ -3,15 +3,13 @@
   import { filters } from '$lib/state.svelte'
   import { highlight_matches } from 'svelte-multiselect/attachments'
   import { flip } from 'svelte/animate'
+  import type { HTMLAttributes } from 'svelte/elements'
   import { fade } from 'svelte/transition'
   import type { Site } from './index'
   import { SitePreview } from './index'
 
-  interface Props {
-    sites: Site[]
-  }
-  let { sites }: Props = $props()
-
+  let { sites, ...rest }: { sites: Site[] } & HTMLAttributes<HTMLOListElement> =
+    $props()
   let active_idx = $state(-1)
 
   function handle_keyup(event: KeyboardEvent) {
@@ -34,7 +32,10 @@
 
 <svelte:window onkeyup={handle_keyup} />
 
-<ol {@attach highlight_matches({ query: filters.search, css_class: `highlight-match` })}>
+<ol
+  {@attach highlight_matches({ query: filters.search, css_class: `highlight-match` })}
+  {...rest}
+>
   {#each sites as site, idx (site.url)}
     <li
       animate:flip={{ duration: 400 }}

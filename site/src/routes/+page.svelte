@@ -81,10 +81,6 @@
       sorted.sites = filtered_sites.sort(
         (siteA, siteB) => sort_factor * (+siteB.date_created - +siteA.date_created),
       )
-    } else if (sorted.by[0] === `Date last updated`) {
-      sorted.sites = filtered_sites.sort(
-        (siteA, siteB) => sort_factor * (+siteB.last_updated - +siteA.last_updated),
-      )
     }
   })
 

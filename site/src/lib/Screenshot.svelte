@@ -1,17 +1,15 @@
 <script lang="ts">
   import { dev } from '$app/environment'
+  import type { HTMLAttributes } from 'svelte/elements'
 
-  interface Props {
+  let { title, width = 800, height = 600, resolution = ``, ...rest }: {
     title: string
     // width/height used only for aspect ratio to avoid content shift on img load
     width?: number
     height?: number
     style?: string
     resolution?: `.small` | ``
-  }
-
-  let { title, width = 800, height = 600, style = ``, resolution = `` }: Props =
-    $props()
+  } & HTMLAttributes<HTMLImageElement> = $props()
 
   const slugify = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
 
@@ -21,7 +19,7 @@
   )
 </script>
 
-<img {src} alt="Screenshot of {title}" {width} {height} {style} />
+<img {src} alt="Screenshot of {title}" {width} {height} {...rest} />
 
 <style>
   img {

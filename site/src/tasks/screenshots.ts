@@ -17,7 +17,7 @@ export async function make_screenshots(options: { action?: Action } = {}) {
   const screenshot_dir = `../site/static/screenshots`
 
   const sites = (yaml
-    .load(fs.readFileSync(`../site/src/sites.yml`)) as Site[])
+    .load(fs.readFileSync(`../site/src/sites.yml`, `utf8`)) as Site[])
     .sort((s1, s2) => s1.title.localeCompare(s2.title))
 
   const browser = await puppeteer.launch()
@@ -35,7 +35,7 @@ export async function make_screenshots(options: { action?: Action } = {}) {
   const msg = {
     'add-missing': `Adding screenshots for sites without them`,
     'update-existing': `Updating all existing screenshots`,
-  }[action]
+  }[action as string]
   console.log(msg)
 
   const created: string[] = []

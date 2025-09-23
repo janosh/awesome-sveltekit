@@ -1,14 +1,8 @@
-ci:
-  autoupdate_schedule: quarterly
-  skip: [eslint, deno-lint, deno-fmt]
-
-default_stages: [pre-commit]
-
 default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-case-conflict
       - id: check-symlinks
@@ -44,7 +38,7 @@ repos:
         stages: [pre-commit, commit-msg]
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.32.0
+    rev: v1.39.0
     hooks:
       - id: typos
         types: [text]
@@ -52,7 +46,7 @@ repos:
         exclude: ^site/src/sites.yml|.pre-commit-config.yaml$
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.29.0
+    rev: v9.39.1
     hooks:
       - id: eslint
         types: [file]
@@ -108,7 +102,7 @@ repos:
         entry: deno fmt
         types_or: [file]
         language: system
-        args: [--config, site/deno.jsonc]
+        args: [--config, site/deno.jsonc, --permit-no-files]
       - id: deno-lint
         name: Deno lint
         entry: deno lint

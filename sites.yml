@@ -869,10 +869,10 @@
   date_created: 2022-04-22
   date_added: 2023-09-30
 
-- title: Ollama Web UI
-  url: https://ollamahub.com
-  repo: https://github.com/ollama-webui/ollama-webui
-  description: ChatGPT-Style Web UI Client for Ollama 🦙.
+- title: Open WebUI
+  url: https://docs.openwebui.com
+  repo: https://github.com/open-webui/open-webui
+  description: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)
   uses: [highlight.js, MarkedJS, KaTeX, TypeScript, Tailwind]
   tags: [chatbot, AI, NLP, GPT, large language models, UI]
   date_created: 2023-10-07
