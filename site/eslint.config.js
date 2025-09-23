@@ -15,13 +15,14 @@ export default [
       ],
       '@stylistic/quotes': [`error`, `backtick`, { avoidEscape: true }],
       'svelte/no-at-html-tags': `off`,
+      'svelte/no-navigation-without-resolve': `off`,
     },
   },
   {
     languageOptions: { ecmaVersion: 2020 },
   },
   {
-    files: [`**/*.svelte`],
+    files: [`**/*.svelte`, `**/*.svelte.ts`],
     languageOptions: {
       parserOptions: {
         parser: tslint.parser,

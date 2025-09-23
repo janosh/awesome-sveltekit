@@ -4,12 +4,12 @@ import yaml from 'js-yaml'
 import fs from 'node:fs'
 import type { Site } from '../lib'
 
-export function update_readme() {
-  const readme_path = `../readme.md`
+export function update_readme(options: { readme_path?: string } = {}) {
+  const { readme_path = `../readme.md` } = options
   const sites_path = `src/sites.yml`
 
   const readme = fs.readFileSync(readme_path, `utf8`)
-  const sites = yaml.load(fs.readFileSync(sites_path)) as Site[]
+  const sites = yaml.load(fs.readFileSync(sites_path, `utf8`)) as Site[]
 
   const new_line = `\n   `
 

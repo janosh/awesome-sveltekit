@@ -2,7 +2,7 @@
 /* This file parses sites.yml, fetches GH metadata like contributors
 and stars for each site, then writes the results to site/src/sites.yml. */
 
-import type { Site } from '$lib'
+import type { RepoContributor, Site } from '$lib'
 import yaml from 'js-yaml'
 import 'jsr:@std/dotenv/load'
 import { marked } from 'marked'
@@ -10,6 +10,14 @@ import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
 import process from 'node:process'
 import type { Action } from './'
+
+type GitHubUser = RepoContributor & {
+  name: string | null
+  location: string | null
+  company: string | null
+  blog: string | null
+  twitter_username: string | null
+}
 
 export function title_to_slug(title: string): string {
   return title.toLowerCase().replaceAll(` `, `-`)
@@ -20,9 +28,12 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
   const in_path = `../sites.yml`
   const out_path = `../site/src/sites.yml`
 
-  const sites = yaml.load(fs.readFileSync(in_path)) as Site[]
+  const sites = yaml.load(fs.readFileSync(in_path, `utf8`)) as Site[]
 
-  const old_sites = fs.existsSync(out_path) ? yaml.load(fs.readFileSync(out_path)) : []
+  const old_sites =
+    (fs.existsSync(out_path)
+      ? yaml.load(fs.readFileSync(out_path, `utf8`))
+      : []) as Site[]
 
   const this_file = import.meta.url.split(`/`).pop()
 
@@ -101,9 +112,9 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
     }
 
     // fetch most active contributors
-    let contributors = await fetch_check(
+    let contributors = (await fetch_check(
       `https://api.github.com/repos/${repoHandle}/contributors`,
-    )
+    )) as RepoContributor[]
 
     // show at most 5 contributors and only those with more than 10 commits
     // and of type 'User' (to filter out bots) sorted by number of contributions
@@ -112,21 +123,21 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
       .sort((c1, c2) => c2.contributions - c1.contributions)
       .slice(0, 5)
 
-    contributors = await Promise.all(
+    const full_contributors = (await Promise.all(
       contributors.map((person) =>
         fetch(person.url, { headers }).then((res) => res.json())
       ),
-    )
+    )) as GitHubUser[]
 
-    site.contributors = contributors.map(
-      ({ name, location, company, ...c }) => ({
-        github: c.login,
-        twitter: c.twitter_username,
-        url: https_url(c.blog),
-        avatar: c.avatar_url,
-        name,
-        location,
-        company,
+    site.contributors = full_contributors.map(
+      ({ name, location, company, ...contributor }) => ({
+        github: contributor.login,
+        twitter: contributor.twitter_username ?? undefined,
+        url: https_url(contributor.blog ?? ``) ?? undefined,
+        avatar: contributor.avatar_url,
+        name: name ?? contributor.login,
+        location: location ?? undefined,
+        company: company ?? undefined,
       }),
     )
 
@@ -134,14 +145,17 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
   }
 
   const new_sites = sites.map((site) => {
-    const old_site = old_sites.find((old) => old.slug === site.slug) ?? {}
+    const old_site = old_sites.find((old: Site) => old.slug === site.slug)
     // retain fetched GitHub data from old_sites in case we didn't refetch
-    // but overwrite with new data if we did
-    for (const key of [`repo_stars`, `contributors`]) {
-      if (site[key] === undefined) site[key] = old_site[key]
+    if (site.repo_stars === undefined && old_site?.repo_stars) {
+      site.repo_stars = old_site.repo_stars
     }
-
-    site.description = marked.parseInline(site.description)
+    if (!site.contributors && old_site?.contributors) {
+      site.contributors = old_site.contributors
+    }
+    if (site.description) {
+      site.description = marked.parseInline(site.description) as string
+    }
 
     return site
   })

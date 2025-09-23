@@ -2,14 +2,12 @@
   import uses_links from '$root/tools.yml'
   import Icon from '@iconify/svelte'
   import { tooltip } from 'svelte-multiselect/attachments'
+  import type { HTMLAttributes } from 'svelte/elements'
   import { Person, Screenshot, type Site } from './index'
 
-  interface Props {
+  let { site, ...rest }: HTMLAttributes<HTMLElementTagNameMap[`section`]> & {
     site: Site
-  }
-
-  let { site }: Props = $props()
-
+  } = $props()
   let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(
     site,
   )
@@ -32,7 +30,7 @@
   )
 </script>
 
-<section>
+<section {...rest}>
   <h1>
     <a href={url}>{title}</a>
     <small style="display: flex; gap: 10pt; place-items: center">
