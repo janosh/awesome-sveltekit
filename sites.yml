@@ -949,3 +949,15 @@
   date_created: 2024-11-12
   date_added: 2025-02-20
   repo_stars: 3328
+
+  - title: SvelteKit Auto OpenAPI
+  url: https://github.com/mahmoodkhalil57/sveltekit-auto-openapi
+  repo: https://github.com/mahmoodkhalil57/sveltekit-auto-openapi
+  description: >-
+    Type-safe OpenAPI generation and runtime validation for SvelteKit.
+    Automatically infers schemas from TypeScript AST or Zod definitions and
+    generates interactive API documentation with Scalar.
+  tags: [sveltekit, openapi, validation, zod, documentation, typescript]
+  uses: [TypeScript, Zod, Scalar, Vite, Bun, ts-morph]
+  date_created: 2025-12-16 # Estimated based on version 0.0.1
+  date_added: 2025-12-16
