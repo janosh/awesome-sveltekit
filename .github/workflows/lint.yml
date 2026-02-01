@@ -1,0 +1,24 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  prek:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Set up deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: 2.3.7
+
+      - name: Run prek
+        uses: j178/prek-action@v1
+        env:
+          SKIP: eslint # skip eslint because it's additional deps are not installed correctly
