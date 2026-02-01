@@ -3147,7 +3147,7 @@
     - files
   date_created: 2024-11-12T00:00:00.000Z
   date_added: 2025-02-20T00:00:00.000Z
-  repo_stars: 5398
+  repo_stars: 3328
   slug: vert
   contributors:
     - github: JovannMC
@@ -3178,3 +3178,42 @@
       name: azure
       location: United States
       company: Aperture Science
+- title: Statue
+  url: https://statue.dev
+  repo: https://github.com/accretional/statue
+  description: A Svelte-based static site generator with built in component library.
+  uses:
+    - GitHub Pages
+    - CloudFlare Pages
+    - Netlify
+  tags:
+    - blogs
+    - docs
+    - open source
+    - static site generator
+  date_created: 2025-03-24T00:00:00.000Z
+  date_added: 2025-12-04T00:00:00.000Z
+  slug: statue
+  repo_stars: 156
+  contributors:
+    - github: semihpolat
+      url: https://semihpolat.xyz
+      avatar: https://avatars.githubusercontent.com/u/62581780?v=4
+      name: Semih
+      location: San Francisco
+    - github: ben-fultz
+      avatar: https://avatars.githubusercontent.com/u/174065962?v=4
+      name: ben-fultz
+    - github: brantfeick
+      avatar: https://avatars.githubusercontent.com/u/180705480?v=4
+      name: brantfeick
+    - github: fredxfred
+      url: https://accretional.com
+      avatar: https://avatars.githubusercontent.com/u/37577626?v=4
+      name: Fred Weitendorf
+      location: San Francisco
+      company: accretional.com
+    - github: jellydeck
+      url: https://jaydip.me
+      avatar: https://avatars.githubusercontent.com/u/91427591?v=4
+      name: Jaydip Sanghani

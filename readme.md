@@ -137,16 +137,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [PNPM], [Changesets], [echarts], [uvu]
 
-1. **[VERT](https://vert.sh)**&nbsp;
-   [[code](https://github.com/VERT-sh/VERT)]&ensp;
-   <a href="https://github.com/VERT-sh/VERT/stargazers">
-   <img src="https://img.shields.io/github/stars/VERT-sh/VERT?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   A file converter that converts files client-side while being completely ad-free.<br>
-
-   uses: [TypeScript], [Tailwind], [Coolify], [WASM], [FFmpeg], [libvips], [Plausible]
-
 1. **[Fireship](https://fireship.io)**&nbsp;
    [[code](https://github.com/fireship-io/fireship.io)]&ensp;
    <a href="https://github.com/fireship-io/fireship.io/stargazers">
@@ -166,6 +156,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    Svelte Material UI Components.<br>
 
    uses: [MDsveX], [TypeScript], [highlight.js], [remark], [Sass]
+
+1. **[VERT](https://vert.sh)**&nbsp;
+   [[code](https://github.com/VERT-sh/VERT)]&ensp;
+   <a href="https://github.com/VERT-sh/VERT/stargazers">
+   <img src="https://img.shields.io/github/stars/VERT-sh/VERT?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A file converter that converts files client-side while being completely ad-free.<br>
+
+   uses: [TypeScript], [Tailwind], [Coolify], [WASM], [FFmpeg], [libvips], [Plausible]
 
 1. **[Threlte](https://threlte.xyz)**&nbsp;
    [[code](https://github.com/threlte/threlte/blob/-/apps/docs)]&ensp;
@@ -657,6 +657,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [MDsveX], [Rehype], [Remark], [PNPM], [Vitest], [Playwright]
 
+1. **[Statue](https://statue.dev)**&nbsp;
+   [[code](https://github.com/accretional/statue)]&ensp;
+   <a href="https://github.com/accretional/statue/stargazers">
+   <img src="https://img.shields.io/github/stars/accretional/statue?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A Svelte-based static site generator with built in component library.<br>
+
+   uses: [GitHub Pages], [CloudFlare Pages], [Netlify]
+
 1. **[Intl Explorer](https://intl-explorer.com)**&nbsp;
    [[code](https://github.com/jesperorb/intl-explorer)]&ensp;
    <a href="https://github.com/jesperorb/intl-explorer/stargazers">
@@ -897,6 +907,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
 [google tag manager]: https://tagmanager.google.com
+[graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
 [huggingface hub]: https://github.com/huggingface/huggingface_hub
