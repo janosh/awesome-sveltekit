@@ -547,8 +547,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [MDsveX], [SCSS], [Iconoir], [Plausible]
 
-1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com)**&nbsp;
-   [[code](https://github.com/cibernox/svelte-intl-precompile)]&ensp;
+1. **[Svelte Intl Precompile](https://github.com/cibernox/svelte-intl-precompile)**&nbsp;
    <a href="https://github.com/cibernox/svelte-intl-precompile/stargazers">
    <img src="https://img.shields.io/github/stars/cibernox/svelte-intl-precompile?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -907,7 +906,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
 [google tag manager]: https://tagmanager.google.com
-[graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
 [huggingface hub]: https://github.com/huggingface/huggingface_hub

@@ -1698,7 +1698,7 @@
       location: Germany
       company: '@ordio '
 - title: Svelte Intl Precompile
-  url: https://svelte-intl-precompile.com
+  url: https://github.com/cibernox/svelte-intl-precompile
   repo: https://github.com/cibernox/svelte-intl-precompile
   description: >-
     I18n library for Svelte that analyzes your keys at build time for maximum

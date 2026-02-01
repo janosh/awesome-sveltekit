@@ -476,7 +476,7 @@
   date_added: 2022-06-09
 
 - title: Svelte Intl Precompile
-  url: https://svelte-intl-precompile.com
+  url: https://github.com/cibernox/svelte-intl-precompile
   repo: https://github.com/cibernox/svelte-intl-precompile
   description:
     I18n library for Svelte that analyzes your keys at build time for maximum performance and
@@ -935,7 +935,6 @@
     [ffmpeg, conversion, wasm, vips, open source, graphics, video, audio, files]
   date_created: 2024-11-12
   date_added: 2025-02-20
-  repo_stars: 3328
 
 - title: Statue
   url: https://statue.dev
