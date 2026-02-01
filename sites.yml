@@ -945,3 +945,14 @@
     [static site generator, blogs, docs]
   date_created: 2025-03-24
   date_added: 2025-12-04
+
+- title: Saga Reader
+  url: https://aiqino.netlify.app
+  repo: https://github.com/sopaco/saga-reader
+  description:
+    Blazing-fast and extremely lightweight AI-powered internet reader.
+    Your AI-driven think tank assistant built with Rust, Tauri and Svelte.
+  uses: [Skeleton, Rust, Tauri, Netlify]
+  tags: [AI, reader, desktop app, open source]
+  date_created: 2025-05-06
+  date_added: 2026-01-31

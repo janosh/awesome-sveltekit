@@ -405,7 +405,7 @@
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
-      url: https://kevinak.se
+      url: https://github.com/kevmodrome
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
@@ -554,7 +554,7 @@
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
-      url: https://kevinak.se
+      url: https://github.com/kevmodrome
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
@@ -2875,3 +2875,30 @@
       url: https://jaydip.me
       avatar: https://avatars.githubusercontent.com/u/91427591?v=4
       name: Jaydip Sanghani
+- title: Saga Reader
+  url: https://aiqino.netlify.app
+  repo: https://github.com/sopaco/saga-reader
+  description: >-
+    Blazing-fast and extremely lightweight AI-powered internet reader. Your
+    AI-driven think tank assistant built with Rust, Tauri and Svelte.
+  uses:
+    - Skeleton
+    - Rust
+    - Tauri
+    - Netlify
+  tags:
+    - AI
+    - reader
+    - desktop app
+    - open source
+  date_created: 2025-05-06T00:00:00.000Z
+  date_added: 2026-01-31T00:00:00.000Z
+  slug: saga-reader
+  repo_stars: 451
+  contributors:
+    - github: sopaco
+      url: https://deepwiki.netlify.app/
+      avatar: https://avatars.githubusercontent.com/u/15891288?v=4
+      name: Sopaco
+      location: BeiJing
+      company: Sopaco
