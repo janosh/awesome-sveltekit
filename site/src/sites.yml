@@ -265,35 +265,6 @@
       name: Christian Weichel
       location: Kiel, Germany
       company: '@gitpod-io '
-- title: SvelteKit Experiments
-  url: https://sveltekit-demo-psi.vercel.app
-  repo: https://github.com/tsukhu/sveltekit-demo
-  description: >-
-    A set of example apps built with SvelteKit and deployed on Vercel. As an
-    ongoing project, this will continue to be enhanced with more examples to
-    showcase the power of SvelteKit.
-  uses:
-    - Tailwind
-    - Vercel
-    - GraphQL
-    - Firebase
-    - Typescript
-  tags:
-    - cloud computing
-    - open source
-    - sample applications
-  date_created: 2021-05-27T00:00:00.000Z
-  date_added: 2021-06-09T00:00:00.000Z
-  slug: sveltekit-experiments
-  repo_stars: 105
-  contributors:
-    - github: tsukhu
-      twitter: TarunKumarSukhu
-      url: https://in.linkedin.com/in/tsukhu/
-      avatar: https://avatars.githubusercontent.com/u/846306?v=4
-      name: Tarun Kumar Sukhu
-      location: Pune
-      company: HCL Technologies Ltd., Engineering and R&D Services
 - title: puruvj.dev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
@@ -468,7 +439,7 @@
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
-      url: https://kevinak.se
+      url: https://github.com/kevmodrome
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
@@ -632,7 +603,7 @@
   contributors:
     - github: kevmodrome
       twitter: kevmodrome
-      url: https://kevinak.se
+      url: https://github.com/kevmodrome
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
@@ -1020,7 +991,7 @@
   contributors:
     - github: samuelstroschein
       twitter: samuelstroschei
-      url: https://proxy@stroschein.me
+      url: https://github.com/samuelstroschein
       avatar: https://avatars.githubusercontent.com/u/35429197?v=4
       name: Samuel Stroschein
       location: NYC
@@ -1445,7 +1416,7 @@
       company: null
     - github: sawa-ko
       twitter: null
-      url: https://sawako.dev
+      url: https://github.com/sawa-ko
       avatar: https://avatars.githubusercontent.com/u/56084970?v=4
       name: Sawako
       location: I am
@@ -1727,7 +1698,7 @@
       location: Germany
       company: '@ordio '
 - title: Svelte Intl Precompile
-  url: https://svelte-intl-precompile.com/en/docs/configuration
+  url: https://svelte-intl-precompile.com
   repo: https://github.com/cibernox/svelte-intl-precompile
   description: >-
     I18n library for Svelte that analyzes your keys at build time for maximum
@@ -3027,8 +2998,6 @@
       company: null
 - title: Auth starter app
   url: https://passlock.dev
-  site_src: >-
-    https://github.com/passlock-dev/passlock/tree/master/packages/create-sveltekit/docs
   repo: https://github.com/passlock-dev/passlock
   description: SvelteKit template featuring Passkeys, Social Sign in and more.
   uses:
