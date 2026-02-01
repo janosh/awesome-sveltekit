@@ -28,4 +28,10 @@ jobs:
             --exclude 'mend.io'
             --exclude 'learninpublic.org'
             --exclude 'nicktrombley.design'
+            --exclude 'github.com/janosh/awesome-sveltekit/network'
+            --exclude 'lodash.com'
+            --exclude 'sass-lang.com'
+            --exclude 'multimonitorcalculator.com'
+            --exclude 'gohugo.io'
+            --exclude 'concertmash.com'
             -- ./**/*.{md,svelte,ts,yml}

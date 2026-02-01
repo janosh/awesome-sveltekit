@@ -467,6 +467,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [PNPM], [TypeScript], [SCSS], [Vercel]
 
+1. **[Saga Reader](https://aiqino.netlify.app)**&nbsp;
+   [[code](https://github.com/sopaco/saga-reader)]&ensp;
+   <a href="https://github.com/sopaco/saga-reader/stargazers">
+   <img src="https://img.shields.io/github/stars/sopaco/saga-reader?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Blazing-fast and extremely lightweight AI-powered internet reader. Your AI-driven think tank assistant built with Rust, Tauri and Svelte.<br>
+
+   uses: [Skeleton], [Rust], [Tauri], [Netlify]
+
 1. **[Svelte Society](https://sveltesociety.dev)**&nbsp;
    [[code](https://github.com/svelte-society/sveltesociety.dev)]&ensp;
    <a href="https://github.com/svelte-society/sveltesociety.dev/stargazers">
@@ -960,10 +970,12 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [rehype]: https://github.com/rehypejs/rehype
 [release it]: https://github.com/release-it/release-it
 [remark]: https://github.com/remarkjs/remark
+[rust]: https://rust-lang.org
 [sanitize-html]: https://github.com/apostrophecms/sanitize-html
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
 [scss]: https://sass-lang.com/documentation/syntax
+[skeleton]: https://skeleton.dev
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
 [storyblock]: https://storyblok.com
@@ -981,6 +993,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
 [swell commerce]: https://swell.is
 [tailwind]: https://tailwindcss.com
+[tauri]: https://tauri.app
 [testing library]: https://testing-library.com
 [three.js]: https://threejs.org
 [trpc-sveltekit]: https://github.com/icflorescu/trpc-sveltekit
