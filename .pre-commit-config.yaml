@@ -15,13 +15,13 @@ repos:
         files: ^tools\.yml$
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
         args: [--config-file, .github/yamllint.yml]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.47.0
     hooks:
       - id: markdownlint
         # MD013: line too long
@@ -38,7 +38,7 @@ repos:
         stages: [pre-commit, commit-msg]
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.39.0
+    rev: v1.42.3
     hooks:
       - id: typos
         types: [text]
@@ -46,7 +46,7 @@ repos:
         exclude: ^site/src/sites.yml|.pre-commit-config.yaml$
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v9.39.1
+    rev: v10.0.0-rc.2
     hooks:
       - id: eslint
         types: [file]

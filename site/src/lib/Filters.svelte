@@ -1,6 +1,6 @@
 <script lang="ts">
   import MultiSelect from 'svelte-multiselect'
-  import { filters, sorted } from './state.svelte'
+  import { filters, sort_by, sorted } from './state.svelte'
   import ToggleGroup from './ToggleGroup.svelte'
 
   let { tags, contributors, sort_order = $bindable(`desc`) }: {
@@ -45,15 +45,8 @@
     {/if}
   </div>
   <div class="filter-group">
-    <MultiSelect
-      options={[`Date created`, `GitHub repo stars`]}
-      placeholder="Sort by..."
-      maxSelect={1}
-      bind:selected={sorted.by}
-    />
-    {#if sorted.by?.length > 0}
-      <ToggleGroup bind:value={sort_order} options={[`asc`, `desc`]} />
-    {/if}
+    <ToggleGroup bind:value={sorted.by} options={Object.values(sort_by)} />
+    <ToggleGroup bind:value={sort_order} options={[`asc`, `desc`]} />
   </div>
 </div>
 

@@ -547,7 +547,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [MDsveX], [SCSS], [Iconoir], [Plausible]
 
-1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com/en/docs/configuration)**&nbsp;
+1. **[Svelte Intl Precompile](https://svelte-intl-precompile.com)**&nbsp;
    [[code](https://github.com/cibernox/svelte-intl-precompile)]&ensp;
    <a href="https://github.com/cibernox/svelte-intl-precompile/stargazers">
    <img src="https://img.shields.io/github/stars/cibernox/svelte-intl-precompile?logo=github" alt="GitHub stars" valign="middle">
@@ -638,7 +638,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    uses: [TypeScript], [Playwright], [PostCSS], [Tailwind], [Release It], [Vercel]
 
 1. **[Auth starter app](https://passlock.dev)**&nbsp;
-   [[code](https://github.com/passlock-dev/passlock/tree/master/packages/create-sveltekit/docs)]&ensp;
+   [[code](https://github.com/passlock-dev/passlock)]&ensp;
    <a href="https://github.com/passlock-dev/passlock/stargazers">
    <img src="https://img.shields.io/github/stars/passlock-dev/passlock?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -676,16 +676,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a fake stock.<br>
 
    uses: [Tailwind], [Netlify], [Chart.js], [Plausible]
-
-1. **[SvelteKit Experiments](https://sveltekit-demo-psi.vercel.app)**&nbsp;
-   [[code](https://github.com/tsukhu/sveltekit-demo)]&ensp;
-   <a href="https://github.com/tsukhu/sveltekit-demo/stargazers">
-   <img src="https://img.shields.io/github/stars/tsukhu/sveltekit-demo?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   A set of example apps built with SvelteKit and deployed on Vercel. As an ongoing project, this will continue to be enhanced with more examples to showcase the power of SvelteKit.<br>
-
-   uses: [Tailwind], [Vercel], [GraphQL], [Firebase], [Typescript]
 
 1. **[Svead](https://svead.pages.dev)**&nbsp;
    [[code](https://github.com/spences10/svead)]&ensp;
@@ -907,7 +897,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [gitpod]: https://gitpod.io
 [google analytics]: https://analytics.google.com
 [google tag manager]: https://tagmanager.google.com
-[graphql]: https://graphql.org
 [gsap]: https://greensock.com/gsap
 [highlight.js]: https://highlightjs.org
 [huggingface hub]: https://github.com/huggingface/huggingface_hub

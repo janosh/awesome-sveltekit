@@ -14,8 +14,8 @@ export const filters = $state<{
   tags_mode: `any`,
 })
 
-export const sorted = $state<{
-  by: string[]
-  order: `asc` | `desc`
-  sites: Site[]
-}>({ by: [`GitHub repo stars`], order: `desc`, sites: [] })
+export const sort_by = { date: `Date Created`, stars: `GitHub Stars` } as const
+export type SortBy = keyof typeof sort_by
+export const sorted = $state<
+  { by: SortBy; order: `asc` | `desc`; sites: Site[] }
+>({ by: `GitHub Stars`, order: `desc`, sites: [] })
