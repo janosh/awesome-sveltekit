@@ -19,4 +19,13 @@ jobs:
       - name: Discover broken links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --exclude '%7B' --exclude-path ./site/src/sites.yml -- ./**/*.{md,svelte,ts,yml}
+          # exclude sites that block automated requests (false positives)
+          args: >-
+            --exclude '%7B'
+            --exclude 'npmjs.com'
+            --exclude 'linkedin.com'
+            --exclude 'blog.jpat.dev'
+            --exclude 'mend.io'
+            --exclude 'learninpublic.org'
+            --exclude 'nicktrombley.design'
+            -- ./**/*.{md,svelte,ts,yml}
