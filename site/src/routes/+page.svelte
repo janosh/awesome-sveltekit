@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ContributorList, Filters, SiteList } from '$lib'
-  import { filters, sorted } from '$lib/state.svelte'
+  import { filters, sort_by, sorted } from '$lib/state.svelte'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import sites from '../sites.yml'
@@ -72,12 +72,12 @@
       return query_match && tag_match && contrib_match
     })
 
-    if (sorted.by[0] === `GitHub repo stars`) {
+    if (sorted.by === sort_by.stars) {
       sorted.sites = filtered_sites.sort(
         (siteA, siteB) =>
           sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)),
       )
-    } else if (sorted.by[0] === `Date created`) {
+    } else if (sorted.by === sort_by.date) {
       sorted.sites = filtered_sites.sort(
         (siteA, siteB) => sort_factor * (+siteB.date_created - +siteA.date_created),
       )
