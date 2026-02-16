@@ -956,3 +956,13 @@
   tags: [AI, reader, desktop app, open source]
   date_created: 2025-05-06
   date_added: 2026-01-31
+
+- title: SvelteShip
+  url: https://ship.shanecode.org
+  description:
+    Production-ready SaaS starter template with SvelteKit 2, Svelte 5, Auth.js, Stripe billing, and
+    PostgreSQL. Includes auth flows, dashboard, pricing page, and landing page.
+  uses: [Tailwind, TypeScript, Auth.js, Stripe, PostgreSQL, Cloudflare Pages]
+  tags: [SaaS, template, starter, authentication, payments, dashboard]
+  date_created: 2026-01-15
+  date_added: 2026-02-16
