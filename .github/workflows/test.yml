@@ -9,10 +9,9 @@ on:
 
 jobs:
   tests:
-    uses: janosh/workflows/.github/workflows/deno-test.yml@main
+    uses: janosh/workflows/.github/workflows/npm-test.yml@main
     with:
-      deno-version: 2.3.7
+      working-directory: site
       test-cmd: ''
       e2e-test-cmd: npx playwright test
-      e2e-install-cmd: npx playwright install chromium
-      working-directory: site
+      install-e2e: npx playwright install chromium

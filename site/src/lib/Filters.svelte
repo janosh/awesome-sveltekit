@@ -25,7 +25,7 @@
       {/snippet}
     </MultiSelect>
     {#if filters.tags.length > 1}
-      <ToggleGroup bind:value={filters.tags_mode} options={[`all`, `any`]} />
+      <ToggleGroup bind:value={filters.tags_mode} options={{ all: `all`, any: `any` }} />
     {/if}
   </div>
   <div class="filter-group">
@@ -41,12 +41,12 @@
       {/snippet}
     </MultiSelect>
     {#if filters.contributors.length > 1}
-      <ToggleGroup bind:value={filters.contributors_mode} options={[`all`, `any`]} />
+      <ToggleGroup bind:value={filters.contributors_mode} options={{ all: `all`, any: `any` }} />
     {/if}
   </div>
   <div class="filter-group">
-    <ToggleGroup bind:value={sorted.by} options={Object.values(sort_by)} />
-    <ToggleGroup bind:value={sort_order} options={[`asc`, `desc`]} />
+    <ToggleGroup bind:value={sorted.by} options={sort_by} />
+    <ToggleGroup bind:value={sort_order} options={{ asc: `asc`, desc: `desc` }} />
   </div>
 </div>
 

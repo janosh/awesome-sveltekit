@@ -6,7 +6,7 @@ export { default as SiteDetails } from './SiteDetails.svelte'
 export { default as SiteList } from './SiteList.svelte'
 export { default as SitePreview } from './SitePreview.svelte'
 
-export type RawSite = {
+export interface Site {
   title: string
   url: string
   description?: string
@@ -17,15 +17,12 @@ export type RawSite = {
   uses: string[]
   date_added: Date
   date_created: Date
-}
-
-export type Site = RawSite & {
   slug: string
   repo_stars?: number
   contributors: Contributor[]
 }
 
-export type Contributor = {
+export interface Contributor {
   name: string
   url?: string
   twitter?: string
@@ -36,16 +33,12 @@ export type Contributor = {
   company?: string
 }
 
-// partial schema returned by
-// fetch('https://api.github.com/repos/janosh/awesome-sveltekit/contributors')
-export type RepoContributor = {
+export interface RepoContributor {
   login: string
   id: number
   avatar_url: string
-  gravatar_id: string
   url: string
   html_url: string
-  repos_url: string
   type: `User` | `Bot`
   contributions: number
 }

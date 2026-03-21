@@ -21,7 +21,7 @@ repos:
         args: [--config-file, .github/yamllint.yml]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.47.0
+    rev: v0.48.0
     hooks:
       - id: markdownlint
         # MD013: line too long
@@ -30,7 +30,7 @@ repos:
         args: [--disable, MD013, MD033, MD041, '--']
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.2
     hooks:
       - id: codespell
         exclude: ^site/src/sites.yml$
@@ -38,28 +38,12 @@ repos:
         stages: [pre-commit, commit-msg]
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.42.3
+    rev: v1.44.0
     hooks:
       - id: typos
         types: [text]
         args: []
         exclude: ^site/src/sites.yml|.pre-commit-config.yaml$
-
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: v10.0.0-rc.2
-    hooks:
-      - id: eslint
-        types: [file]
-        args: [--fix, --config, site/eslint.config.js]
-        files: \.(js|ts|svelte)$
-        additional_dependencies:
-          - 'typescript-eslint'
-          - eslint
-          - eslint-plugin-svelte
-          - globals
-          - svelte
-          - typescript
-          - '@stylistic/eslint-plugin'
 
   - repo: local
     hooks:
@@ -97,15 +81,15 @@ repos:
 
   - repo: local
     hooks:
-      - id: deno-fmt
-        name: Deno format
-        entry: deno fmt
-        types_or: [file]
+      - id: vp-fmt
+        name: Format (oxfmt)
+        entry: bash -c 'cd site && node_modules/.bin/vp fmt --write'
+        types_or: [ts, javascript, json, css, html, svelte]
         language: system
-        args: [--config, site/deno.jsonc, --permit-no-files]
-      - id: deno-lint
-        name: Deno lint
-        entry: deno lint
-        types_or: [file]
-        args: [--config, site/deno.jsonc, --permit-no-files, --fix]
+        pass_filenames: false
+      - id: vp-lint
+        name: Lint (oxlint)
+        entry: bash -c 'cd site && node_modules/.bin/vp lint --fix'
+        types_or: [ts, javascript, json, css, html, svelte]
         language: system
+        pass_filenames: false

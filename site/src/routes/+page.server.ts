@@ -15,8 +15,9 @@ export const load: ServerLoad = async () => {
       { cache: `force-cache`, headers },
     )
 
-    const repo_contributors = (await response.json() as RepoContributor[])
-      .filter((itm) => itm.type !== `Bot`)
+    const repo_contributors = ((await response.json()) as RepoContributor[]).filter(
+      (itm) => itm.type !== `Bot`,
+    )
     return { repo_contributors }
   } catch (error) {
     console.error(`Failed to fetch contributors:`, error)

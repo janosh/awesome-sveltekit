@@ -1,10 +1,8 @@
-// deno-lint-ignore-file no-await-in-loop
 /* This file parses sites.yml, fetches GH metadata like contributors
 and stars for each site, then writes the results to site/src/sites.yml. */
 
 import type { RepoContributor, Site } from '$lib'
 import yaml from 'js-yaml'
-import 'jsr:@std/dotenv/load'
 import { marked } from 'marked'
 import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
@@ -30,20 +28,19 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
   const sites = yaml.load(fs.readFileSync(in_path, `utf8`)) as Site[]
 
-  const old_sites =
-    (fs.existsSync(out_path)
-      ? yaml.load(fs.readFileSync(out_path, `utf8`))
-      : []) as Site[]
+  const old_sites = (
+    fs.existsSync(out_path) ? yaml.load(fs.readFileSync(out_path, `utf8`)) : []
+  ) as Site[]
 
   const this_file = import.meta.url.split(`/`).pop()
 
-  console.log(`Running ${this_file}...`)
+  console.warn(`Running ${this_file}...`)
 
   const start = performance.now()
 
-  const old_slugs = old_sites.map((site) => site.slug)
+  const old_slugs = new Set(old_sites.map((site) => site.slug))
 
-  const seen_sites: string[] = []
+  const seen_sites = new Set<string>()
   const skipped_sites: string[] = []
   const updated_sites: string[] = []
 
@@ -69,32 +66,29 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
   }
 
   // Only update site/src/sites.js if a new site was added to sites.yml
-  // or repo stars were last fetched more than a month ago.
+  // Or repo stars were last fetched more than a month ago.
   for (const site of sites) {
     const slug = title_to_slug(site.title)
 
-    if (seen_sites.includes(slug)) throw new Error(`Duplicate slug ${slug}`)
-    else seen_sites.push(slug)
+    if (seen_sites.has(slug)) throw new Error(`Duplicate slug ${slug}`)
+    seen_sites.add(slug)
 
     site.slug = slug
 
-    // add open-source tag for all sites with repo key
+    // Add open-source tag for all sites with repo key
     if (site.repo && !site.tags.includes(`open source`)) {
       site.tags.push(`open source`)
-      site.tags.sort((a, b) => a.localeCompare(b)) // sort tags alphabetically in place
+      site.tags.sort((a, b) => a.localeCompare(b)) // Sort tags alphabetically in place
     }
 
-    // skip site if it doesn't have a repo key or if data was fetched for it before
-    // and update_existing is false
-    if (
-      !site.repo ||
-      (old_slugs.includes(slug) && action !== `update-existing`)
-    ) {
+    // Skip site if it doesn't have a repo key or if data was fetched for it before
+    // And update_existing is false
+    if (!site.repo || (old_slugs.has(slug) && action !== `update-existing`)) {
       skipped_sites.push(slug)
       continue
     }
 
-    // also skip site if repo key cannot be parsed into a user login and a repo name
+    // Also skip site if repo key cannot be parsed into a user login and a repo name
     const repoHandle = site.repo.split(`github.com/`)[1]
     if (!repoHandle || repoHandle.split(`/`).length !== 2) {
       console.error(`bad repo handle ${repoHandle}`)
@@ -102,7 +96,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
       continue
     }
 
-    // fetch stars
+    // Fetch stars
     try {
       const url = `https://api.github.com/repos/${repoHandle}`
       const repo = await fetch_check(url)
@@ -111,33 +105,33 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
       console.error(`Error fetching stars for ${site.title}:`, error)
     }
 
-    // fetch most active contributors
+    // Fetch most active contributors
     let contributors = (await fetch_check(
       `https://api.github.com/repos/${repoHandle}/contributors`,
     )) as RepoContributor[]
 
-    // show at most 5 contributors and only those with more than 10 commits
-    // and of type 'User' (to filter out bots) sorted by number of contributions
+    // Show at most 5 contributors and only those with more than 10 commits
+    // And of type 'User' (to filter out bots) sorted by number of contributions
     contributors = contributors
       .filter((itm) => itm.contributions > 10 && itm.type === `User`)
-      .sort((c1, c2) => c2.contributions - c1.contributions)
+      .toSorted((c1, c2) => c2.contributions - c1.contributions)
       .slice(0, 5)
 
     const full_contributors = (await Promise.all(
       contributors.map((person) =>
-        fetch(person.url, { headers }).then((res) => res.json())
+        fetch(person.url, { headers }).then((res) => res.json()),
       ),
     )) as GitHubUser[]
 
     site.contributors = full_contributors.map(
       ({ name, location, company, ...contributor }) => ({
+        avatar: contributor.avatar_url,
+        company: company ?? undefined,
         github: contributor.login,
+        location: location ?? undefined,
+        name: name ?? contributor.login,
         twitter: contributor.twitter_username ?? undefined,
         url: https_url(contributor.blog ?? ``) ?? undefined,
-        avatar: contributor.avatar_url,
-        name: name ?? contributor.login,
-        location: location ?? undefined,
-        company: company ?? undefined,
       }),
     )
 
@@ -146,7 +140,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
 
   const new_sites = sites.map((site) => {
     const old_site = old_sites.find((old: Site) => old.slug === site.slug)
-    // retain fetched GitHub data from old_sites in case we didn't refetch
+    // Retain fetched GitHub data from old_sites in case we didn't refetch
     if (site.repo_stars === undefined && old_site?.repo_stars) {
       site.repo_stars = old_site.repo_stars
     }
@@ -165,7 +159,7 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
   const comment = `# auto-generated by ${this_file}\n\n`
   fs.writeFileSync(out_path, comment + yaml.dump(new_sites))
 
-  console.log(
+  console.warn(
     `${this_file} took ${wall_time}s, updated ${updated_sites.length}, ` +
       `skipped ${skipped_sites.length}\n`,
   )

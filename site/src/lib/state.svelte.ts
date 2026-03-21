@@ -7,15 +7,16 @@ export const filters = $state<{
   contributors_mode: `all` | `any`
   tags_mode: `all` | `any`
 }>({
-  search: ``,
-  tags: [],
   contributors: [],
   contributors_mode: `any`,
+  search: ``,
+  tags: [],
   tags_mode: `any`,
 })
 
 export const sort_by = { date: `Date Created`, stars: `GitHub Stars` } as const
 export type SortBy = keyof typeof sort_by
-export const sorted = $state<
-  { by: SortBy; order: `asc` | `desc`; sites: Site[] }
->({ by: `GitHub Stars`, order: `desc`, sites: [] })
+export const sorted = $state<{ by: SortBy; sites: Site[] }>({
+  by: `stars`,
+  sites: [],
+})

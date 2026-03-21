@@ -9,9 +9,7 @@
   let { children }: { children: Snippet<[]> } = $props()
   let innerWidth: number = $state(0)
 
-  const actions = sites.map(({ title, slug }) => {
-    return { label: title, action: () => goto(slug) }
-  })
+  const actions = sites.map(({ title, slug }) => ({ action: () => goto(slug), label: title }))
 </script>
 
 <CmdPalette {actions} placeholder="Go to..." />

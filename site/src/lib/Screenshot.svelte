@@ -4,7 +4,7 @@
 
   let { title, width = 800, height = 600, resolution = ``, ...rest }: {
     title: string
-    // width/height used only for aspect ratio to avoid content shift on img load
+    // Width/height used only for aspect ratio to avoid content shift on img load
     width?: number
     height?: number
     style?: string
