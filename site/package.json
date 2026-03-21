@@ -14,6 +14,9 @@
   "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
   "repository": "https://github.com/janosh/awesome-sveltekit",
   "type": "module",
+  "scripts": {
+    "build": "vp build"
+  },
   "devDependencies": {
     "@iconify/svelte": "^5.2.1",
     "@playwright/test": "^1.58.2",
