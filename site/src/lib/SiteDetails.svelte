@@ -3,7 +3,9 @@
   import Icon from '@iconify/svelte'
   import { tooltip } from 'svelte-multiselect/attachments'
   import type { HTMLAttributes } from 'svelte/elements'
-  import { Person, Screenshot, type Site } from './index'
+  import type { Site } from './index'
+  import Person from './Person.svelte'
+  import Screenshot from './Screenshot.svelte'
 
   let { site, ...rest }: HTMLAttributes<HTMLElementTagNameMap[`section`]> & {
     site: Site
@@ -22,8 +24,8 @@
       if (!href) {
         console.error(`Unknown tool: ${tool}`)
       } else if (!href.startsWith(`https`)) {
-        // all tools should have an https URL
-        throw `All tool URLs should use HTTPS: ${tool} has href: ${href}`
+        // All tools should have an https URL
+        throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
       }
       return [tool, href]
     }),

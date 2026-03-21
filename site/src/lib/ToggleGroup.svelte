@@ -3,14 +3,14 @@
 
   let { value = $bindable(), options, ...rest }: HTMLAttributes<HTMLDivElement> & {
     value: string
-    options: string[]
+    options: Record<string, string>
   } = $props()
 </script>
 
 <div {...rest}>
-  {#each options as opt (opt)}
-    <button type="button" class:active={value === opt} onclick={() => (value = opt)}>
-      {opt}
+  {#each Object.entries(options) as [key, label] (key)}
+    <button type="button" class:active={value === key} onclick={() => (value = key)}>
+      {label}
     </button>
   {/each}
 </div>

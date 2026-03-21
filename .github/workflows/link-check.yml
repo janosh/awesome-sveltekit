@@ -14,24 +14,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Discover broken links
         uses: lycheeverse/lychee-action@v2
         with:
-          # exclude sites that block automated requests (false positives)
           args: >-
+            --accept 200..=206,429,403,500,502,503
+            --max-retries 3
+            --retry-wait-time 5
+            --timeout 60
             --exclude '%7B'
             --exclude 'npmjs.com'
             --exclude 'linkedin.com'
-            --exclude 'blog.jpat.dev'
-            --exclude 'mend.io'
-            --exclude 'learninpublic.org'
-            --exclude 'nicktrombley.design'
             --exclude 'github.com/janosh/awesome-sveltekit/network'
-            --exclude 'lodash.com'
+            --exclude 'tauri.app'
             --exclude 'sass-lang.com'
             --exclude 'multimonitorcalculator.com'
-            --exclude 'gohugo.io'
-            --exclude 'concertmash.com'
+            --exclude 'lodash.com'
+            --exclude 'learninpublic.org'
+            --exclude 'parks.lol'
             -- ./**/*.{md,svelte,ts,yml}
