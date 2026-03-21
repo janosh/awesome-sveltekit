@@ -1,16 +1,100 @@
 import yaml from '@rollup/plugin-yaml'
 import { sveltekit } from '@sveltejs/kit/vite'
-import type { UserConfig } from 'vite'
+import { defineConfig } from 'vite-plus'
 
-export default {
-  plugins: [sveltekit(), yaml()],
-
-  server: {
-    fs: { allow: [`../..`] }, // needed to import from $root
-    port: 3000,
+export default defineConfig({
+  fmt: {
+    printWidth: 90,
+    semi: false,
+    singleQuote: true,
   },
-
+  lint: {
+    categories: {
+      correctness: `error`,
+      suspicious: `error`,
+      pedantic: `error`,
+      perf: `error`,
+      restriction: `error`,
+      style: `error`,
+    },
+    ignorePatterns: [`build/`, `.svelte-kit/`, `dist/`],
+    options: {
+      typeAware: true,
+      typeCheck: true,
+    },
+    plugins: [`oxc`, `typescript`, `unicorn`, `import`, `jest`],
+    rules: {
+      // Custom options — categories can't express these
+      'no-console': [`error`, { allow: [`warn`, `error`] }],
+      'no-unused-vars': `off`,
+      '@typescript-eslint/no-unused-vars': [
+        `error`,
+        { argsIgnorePattern: `^_`, varsIgnorePattern: `^_` },
+      ],
+      // Incompatible with SvelteKit conventions
+      'eslint-plugin-jest/require-hook': `off`,
+      'eslint-plugin-import/no-named-export': `off`,
+      'eslint-plugin-import/group-exports': `off`,
+      'eslint-plugin-import/exports-last': `off`,
+      'eslint-plugin-import/prefer-default-export': `off`,
+      'eslint-plugin-import/no-default-export': `off`,
+      'eslint-plugin-import/no-nodejs-modules': `off`,
+      'eslint-plugin-import/no-relative-parent-imports': `off`,
+      'eslint-plugin-import/no-anonymous-default-export': `off`,
+      'eslint-plugin-import/no-named-as-default-member': `off`,
+      'eslint-plugin-import/no-unassigned-import': `off`,
+      'eslint-plugin-import/consistent-type-specifier-style': `off`,
+      'eslint-plugin-import/unambiguous': `off`,
+      'eslint-plugin-unicorn/filename-case': `off`,
+      'oxc/no-rest-spread-properties': `off`,
+      'oxc/no-optional-chaining': `off`,
+      'oxc/no-async-await': `off`,
+      '@typescript-eslint/promise-function-async': `off`,
+      '@typescript-eslint/consistent-type-imports': `off`,
+      curly: `off`,
+      // Too noisy or opinionated
+      'no-magic-numbers': `off`,
+      'no-ternary': `off`,
+      'no-continue': `off`,
+      'no-undefined': `off`,
+      'no-inline-comments': `off`,
+      'no-warning-comments': `off`,
+      'no-await-in-loop': `off`,
+      'no-shadow': `off`,
+      'no-promise-executor-return': `off`,
+      'prefer-const': `off`,
+      'func-style': `off`,
+      'id-length': `off`,
+      'sort-imports': `off`,
+      'sort-keys': `off`,
+      'max-statements': `off`,
+      'max-lines-per-function': `off`,
+      'strict-boolean-expressions': `off`,
+      '@typescript-eslint/explicit-function-return-type': `off`,
+      '@typescript-eslint/explicit-module-boundary-types': `off`,
+      '@typescript-eslint/no-unsafe-type-assertion': `off`,
+      '@typescript-eslint/no-unsafe-assignment': `off`,
+      '@typescript-eslint/no-unsafe-return': `off`,
+      '@typescript-eslint/no-unsafe-member-access': `off`,
+      '@typescript-eslint/only-throw-error': `off`,
+      'eslint-plugin-unicorn/no-array-reduce': `off`,
+      'eslint-plugin-unicorn/no-null': `off`,
+      'eslint-plugin-unicorn/no-process-exit': `off`,
+      'eslint-plugin-unicorn/consistent-function-scoping': `off`,
+      'eslint-plugin-jest/no-conditional-in-test': `off`,
+      'prefer-destructuring': `off`,
+      'no-confusing-void-expression': `off`,
+      '@typescript-eslint/no-unsafe-argument': `off`,
+      '@typescript-eslint/await-thenable': `off`,
+    },
+  },
+  plugins: [sveltekit(), yaml()],
   preview: {
     port: 3000,
   },
-} satisfies UserConfig
+
+  server: {
+    fs: { allow: [`../..`] }, // Needed to import from $root
+    port: 3000,
+  },
+})

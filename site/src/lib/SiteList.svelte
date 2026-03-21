@@ -6,7 +6,7 @@
   import type { HTMLAttributes } from 'svelte/elements'
   import { fade } from 'svelte/transition'
   import type { Site } from './index'
-  import { SitePreview } from './index'
+  import SitePreview from './SitePreview.svelte'
 
   let { sites, ...rest }: { sites: Site[] } & HTMLAttributes<HTMLOListElement> =
     $props()
@@ -18,13 +18,13 @@
       goto(site.slug)
     }
     const to = {
-      // wrap around
+      // Wrap around
       ArrowLeft: (active_idx - 1 + sites.length) % sites.length,
       ArrowRight: (active_idx + 1) % sites.length,
       Escape: -1,
     }[event.key]
     if (to !== undefined && to >= 0) active_idx = to
-    // keep active_idx in viewport
+    // Keep active_idx in viewport
     const active = document.querySelector(`ol > li.active`)
     if (active) active.scrollIntoViewIfNeeded()
   }

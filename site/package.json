@@ -1,41 +1,43 @@
 {
   "name": "awesome-sveltekit",
-  "description": "Awesome examples of SvelteKit in the wild",
-  "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
-  "homepage": "https://janosh.github.io/awesome-sveltekit",
-  "repository": "https://github.com/janosh/awesome-sveltekit",
-  "license": "MIT",
   "version": "0.1.0",
-  "type": "module",
-  "bugs": "https://github.com/janosh/awesome-sveltekit/issues",
-  "devDependencies": {
-    "@iconify/svelte": "^5.2.1",
-    "@playwright/test": "^1.58.1",
-    "@rollup/plugin-yaml": "^4.1.2",
-    "@stylistic/eslint-plugin": "^5.7.1",
-    "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.50.1",
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
-    "@types/js-yaml": "^4.0.9",
-    "eslint": "^9.39.2",
-    "eslint-plugin-svelte": "^3.14.0",
-    "js-yaml": "^4.1.1",
-    "marked": "^17.0.1",
-    "puppeteer": "^24.36.1",
-    "sharp": "^0.34.5",
-    "svelte": "^5.49.1",
-    "svelte-check": "^4.3.6",
-    "svelte-multiselect": "11.6.0",
-    "svelte-preprocess": "^6.0.3",
-    "svelte2tsx": "^0.7.47",
-    "typescript": "5.9.3",
-    "typescript-eslint": "^8.54.0",
-    "vite": "^7.3.1"
-  },
+  "description": "Awesome examples of SvelteKit in the wild",
   "keywords": [
-    "sveltekit",
     "awesome collection",
     "example sites",
-    "learning resource"
-  ]
+    "learning resource",
+    "sveltekit"
+  ],
+  "homepage": "https://janosh.github.io/awesome-sveltekit",
+  "bugs": "https://github.com/janosh/awesome-sveltekit/issues",
+  "license": "MIT",
+  "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
+  "repository": "https://github.com/janosh/awesome-sveltekit",
+  "type": "module",
+  "devDependencies": {
+    "@iconify/svelte": "^5.2.1",
+    "@playwright/test": "^1.58.2",
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.55.0",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^4.1.1",
+    "marked": "^17.0.5",
+    "puppeteer": "^24.40.0",
+    "sharp": "^0.34.5",
+    "svelte": "^5.54.0",
+    "svelte-check-rs": "^0.9.5",
+    "svelte-multiselect": "11.6.4",
+    "svelte-preprocess": "^6.0.3",
+    "typescript": "5.9.3",
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vite-plus": "latest"
+  },
+  "pnpm": {
+    "overrides": {
+      "svelte": "$svelte",
+      "vite": "npm:@voidzero-dev/vite-plus-core@latest"
+    }
+  }
 }

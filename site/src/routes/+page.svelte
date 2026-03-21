@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ContributorList, Filters, SiteList } from '$lib'
-  import { filters, sort_by, sorted } from '$lib/state.svelte'
+  import { filters, sorted } from '$lib/state.svelte'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import sites from '../sites.yml'
@@ -36,7 +36,7 @@
         },
         {} as Record<string, number>,
       ),
-  ).sort((contrib1, contrib2) => contrib2[1] - contrib1[1])
+  ).toSorted((contrib1, contrib2) => contrib2[1] - contrib1[1])
 
   function arr_includes(
     arr: string[],
@@ -47,12 +47,11 @@
     if (arr.length === 0) return false
     if (mode === `all`) return values.every((val) => arr.includes(val))
     if (mode === `any`) return values.some((val) => arr.includes(val))
-    else throw `Unexpected filter mode=${mode}`
+    throw new Error(`Unexpected filter mode=${mode}`)
   }
 
   let sort_order: `asc` | `desc` = $state(`desc`)
-  let sort_factor = $derived(sort_order == `desc` ? 1 : -1)
-  // arr.sort() sorts in-place but we need to reassign filtered_sites so Svelte rerenders
+  let sort_factor = $derived(sort_order === `desc` ? 1 : -1)
   $effect(() => {
     const filtered_sites = sites.filter((site) => {
       const query_match = filters.search?.length === 0 ||
@@ -60,26 +59,26 @@
 
       const tag_match = arr_includes(
         site.tags ?? [],
-        filters.tags.map((t) => t.label), // tags the site should have
-        filters.tags_mode, // all or any
+        filters.tags.map((t) => t.label), // Tags the site should have
+        filters.tags_mode, // All or any
       )
       const contrib_match = arr_includes(
         site.contributors?.map((c) => c.name) ?? [],
-        filters.contributors.map((c) => c.label), // contributors the site should have
-        filters.contributors_mode, // all or any
+        filters.contributors.map((c) => c.label), // Contributors the site should have
+        filters.contributors_mode, // All or any
       )
 
       return query_match && tag_match && contrib_match
     })
 
-    if (sorted.by === sort_by.stars) {
-      sorted.sites = filtered_sites.sort(
+    if (sorted.by === `stars`) {
+      sorted.sites = filtered_sites.toSorted(
         (siteA, siteB) =>
           sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)),
       )
-    } else if (sorted.by === sort_by.date) {
-      sorted.sites = filtered_sites.sort(
-        (siteA, siteB) => sort_factor * (+siteB.date_created - +siteA.date_created),
+    } else if (sorted.by === `date`) {
+      sorted.sites = filtered_sites.toSorted(
+        (siteA, siteB) => sort_factor * (Number(siteB.date_created) - Number(siteA.date_created)),
       )
     }
   })

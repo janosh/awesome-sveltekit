@@ -1,7 +1,8 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
   import type { HTMLAttributes } from 'svelte/elements'
-  import { Screenshot, type Site } from './index'
+  import type { Site } from './index'
+  import Screenshot from './Screenshot.svelte'
   import { filters } from './state.svelte'
 
   let { site, idx = 0, tags = false, ...rest }: HTMLAttributes<HTMLAnchorElement> & {

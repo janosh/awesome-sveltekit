@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { type Site, SiteDetails, SitePreview } from '$lib'
+  import { SiteDetails, SitePreview, type Site } from '$lib'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import { PrevNext } from 'svelte-multiselect'
@@ -7,7 +7,7 @@
   let { data } = $props()
 
   let head_title = $derived(`${data.site.title} | Awesome SvelteKit`)
-  let plain_description = $derived(data.site?.description?.replace(/<[^>]*>/g, ``))
+  let plain_description = $derived(data.site?.description?.replaceAll(/<[^>]*>/g, ``))
 </script>
 
 <svelte:head>

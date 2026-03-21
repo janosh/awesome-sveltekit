@@ -14,9 +14,7 @@ export function update_readme(options: { readme_path?: string } = {}) {
   const new_line = `\n   `
 
   const new_sites = sites
-    .sort((site_1, site_2) => {
-      return (site_2.repo_stars ?? 0) - (site_1.repo_stars ?? 0)
-    })
+    .toSorted((site_1, site_2) => (site_2.repo_stars ?? 0) - (site_1.repo_stars ?? 0))
     .map((site) => {
       const { title, repo, uses, description, url, site_src } = site
 
@@ -29,11 +27,11 @@ export function update_readme(options: { readme_path?: string } = {}) {
         if (repo) {
           const repo_handle = repo.split(`github.com/`)[1]
           if (repo_handle.split(`/`).length !== 2) {
-            throw `bad repo handle ${repo_handle}`
+            throw new Error(`bad repo handle ${repo_handle}`)
           }
-          const star_badge =
-            `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
-          code_link = `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
+          const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
+          code_link =
+            `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
             `<a href="${repo}/stargazers">${new_line}${star_badge}${new_line}</a>`
         }
 
@@ -43,26 +41,28 @@ export function update_readme(options: { readme_path?: string } = {}) {
         }
 
         return `1. **[${title}](${url})**${code_link}\n${new_line}${metadata}\n`
-      } catch (err) {
-        throw `${err} for site '${title}'`
+      } catch (error) {
+        throw new Error(`${String(error)} for site '${title}'`, { cause: error })
       }
     })
     .join(`\n`)
 
-  const uses_links = Object.entries(yaml.load(fs.readFileSync(`../tools.yml`)))
+  const uses_links = Object.entries(
+    yaml.load(fs.readFileSync(`../tools.yml`, `utf8`)) as Record<string, string>,
+  )
     .map(([name, url]) => `[${name}]: ${url}`)
     .join(`\n`)
 
-  // replace old sites
+  // Replace old sites
   const new_readme = readme.replace(
-    /## Sites\n\n[\s\S]+\n\n## /, // match everything up to next heading
+    /## Sites\n\n[\s\S]+\n\n## /, // Match everything up to next heading
     `## Sites\n\n${new_sites}\n${uses_links}\n\n## `,
   )
 
   fs.writeFileSync(readme_path, new_readme)
 
   const this_file = import.meta.url.split(`/`).pop()
-  console.log(`${this_file} updated readme\n`)
+  console.warn(`${this_file} updated readme\n`)
 }
 
 if (import.meta.main) {
