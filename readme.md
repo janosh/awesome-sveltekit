@@ -883,6 +883,10 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Typescript], [SCSS], [PostCSS], [Motion One], [OGL], [WebGL], [Directus], [Swell Commerce], [Vercel]
 
+1. **[RemoteOpenClaw](https://remoteopenclaw.com)**
+
+   Open marketplace for AI skills and personas built on OpenClaw.<br>
+
 [airtable]: https://airtable.com
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
