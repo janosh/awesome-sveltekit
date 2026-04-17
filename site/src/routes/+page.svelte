@@ -2,41 +2,33 @@
   import { ContributorList, Filters, SiteList } from '$lib'
   import { filters, sorted } from '$lib/state.svelte'
   import { repository } from '$site/package.json'
+  import sites from '$site/src/sites.yml'
   import Icon from '@iconify/svelte'
-  import sites from '../sites.yml'
   import type { Snapshot } from './$types'
 
   let { data } = $props()
 
-  const tags = Object.entries(
-    sites
-      .flatMap((site) => site.tags)
-      .reduce(
-        (acc, el) => {
-          acc[el] = (acc[el] ?? 0) + 1
-          return acc
-        },
-        {} as Record<string, number>,
-      ),
-  ).filter(([, count]) => count > 2)
+  const tag_counts: Record<string, number> = {}
+  for (const tag of sites.flatMap((site) => site.tags)) {
+    tag_counts[tag] = (tag_counts[tag] ?? 0) + 1
+  }
+
+  const tags = Object.entries(tag_counts).filter(([, count]) => count > 2)
   tags.sort(([t1], [t2]) => t1.localeCompare(t2))
 
-  const contributors = Object.entries(
-    sites
-      .flatMap(
-        (site) =>
-          site.contributors
-            ?.map((c) => c.name)
-            .filter((name) => ![null, `Janosh Riebesell`].includes(name)) ?? [],
-      )
-      .reduce(
-        (acc, el) => {
-          acc[el] = (acc[el] ?? 0) + 1
-          return acc
-        },
-        {} as Record<string, number>,
-      ),
-  ).toSorted((contrib1, contrib2) => contrib2[1] - contrib1[1])
+  const contributor_counts: Record<string, number> = {}
+  for (const site of sites) {
+    for (const contributor of site.contributors ?? []) {
+      const { name } = contributor
+      if (name && name !== `Janosh Riebesell`) {
+        contributor_counts[name] = (contributor_counts[name] ?? 0) + 1
+      }
+    }
+  }
+
+  const contributors = Object.entries(contributor_counts).toSorted(
+    (contrib1, contrib2) => contrib2[1] - contrib1[1],
+  )
 
   function arr_includes(
     arr: string[],
@@ -51,7 +43,10 @@
   }
 
   let sort_order: `asc` | `desc` = $state(`desc`)
-  let sort_factor = $derived(sort_order === `desc` ? 1 : -1)
+  let sort_factor = $derived.by(() => {
+    if (sort_order === `desc`) return 1
+    return -1
+  })
   $effect(() => {
     const filtered_sites = sites.filter((site) => {
       const query_match = filters.search?.length === 0 ||

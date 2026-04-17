@@ -13,18 +13,17 @@
   let active_idx = $state(-1)
 
   function handle_keyup(event: KeyboardEvent) {
+    if (sites.length === 0) return
     if (event.key === `Enter` && active_idx >= 0) {
       const site = sites[active_idx]
       goto(site.slug)
     }
     const to = {
-      // Wrap around
       ArrowLeft: (active_idx - 1 + sites.length) % sites.length,
       ArrowRight: (active_idx + 1) % sites.length,
       Escape: -1,
     }[event.key]
     if (to !== undefined && to >= 0) active_idx = to
-    // Keep active_idx in viewport
     const active = document.querySelector(`ol > li.active`)
     if (active) active.scrollIntoViewIfNeeded()
   }

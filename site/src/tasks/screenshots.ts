@@ -10,7 +10,22 @@ import puppeteer from 'puppeteer'
 import sharp from 'sharp'
 import type { Action } from './'
 
-export async function make_screenshots(options: { action?: Action } = {}) {
+type Browser = Awaited<ReturnType<typeof puppeteer.launch>>
+type Page = Awaited<ReturnType<Browser[`newPage`]>>
+
+async function goto_site(page: Page, url: string): Promise<void> {
+  try {
+    await page.goto(url, { timeout: 5000, waitUntil: `networkidle2` })
+  } catch (error) {
+    if (!(error instanceof Error) || error.name !== `TimeoutError`) {
+      throw error // Rethrow if not a TimeoutError
+    }
+    // Retry page.goto(), this time waiting only for 'load' event
+    await page.goto(url, { timeout: 5000, waitUntil: `load` })
+  }
+}
+
+export async function make_screenshots(options: { action?: Action } = {}): Promise<void> {
   const { action = `add-missing` } = options
   const start = performance.now()
   const screenshot_dir = `../site/static/screenshots`
@@ -24,10 +39,10 @@ export async function make_screenshots(options: { action?: Action } = {}) {
 
   fs.mkdirSync(screenshot_dir, { recursive: true })
 
-  const arg = process.argv.find((arg) => arg.startsWith(`screenshots:`))
+  const screenshots_arg = process.argv.find((arg) => arg.startsWith(`screenshots:`))
   if (action && ![`add-missing`, `update-existing`].includes(action)) {
     throw new Error(
-      `Correct usage: vite [dev] screenshots:[report|download|re-download], got ${arg}\n`,
+      `Correct usage: vite [dev] screenshots:[report|download|re-download], got ${screenshots_arg}\n`,
     )
   }
 
@@ -48,40 +63,37 @@ export async function make_screenshots(options: { action?: Action } = {}) {
     const img_path = `${screenshot_dir}/${slug}.avif`
     const img_exists = fs.existsSync(img_path)
 
-    if (action !== `update-existing` && img_exists) {
+    const should_skip_existing = action !== `update-existing` && img_exists
+    if (should_skip_existing) {
       existed.push(site.slug)
-      continue
-    }
+    } else {
+      console.warn(`${idx + 1}/${sites.length}: ${slug}`)
 
-    console.warn(`${idx + 1}/${sites.length}: ${slug}`)
-
-    try {
+      let should_skip = false
       try {
-        await page.goto(site.url, { timeout: 5000, waitUntil: `networkidle2` })
+        await goto_site(page, site.url)
       } catch (error) {
-        if (error instanceof Error && error.name === `TimeoutError`) {
-          // Retry page.goto(), this time waiting only for 'load' event
-          await page.goto(site.url, { timeout: 5000, waitUntil: `load` })
-        } else {
-          throw error // Rethrow if not a TimeoutError
-        }
+        console.warn(`skipping ${slug} due to ${String(error)}`)
+        skipped.push(site.slug)
+        should_skip = true
       }
-    } catch (error) {
-      console.warn(`skipping ${slug} due to ${String(error)}`)
-      skipped.push(site.slug)
-      continue
+
+      if (!should_skip) {
+        // Wait for sites with on-load animations to settle
+        await new Promise<void>((resolve) => {
+          setTimeout(resolve, 2000)
+        })
+        await page.setViewport({ height: 900, width: 1200 })
+        const hires = await page.screenshot()
+        await page.setViewport({ deviceScaleFactor: 0.5, height: 900, width: 1200 })
+        const lores = await page.screenshot()
+        await sharp(hires).toFile(img_path)
+        await sharp(lores).toFile(`${screenshot_dir}/${slug}.small.avif`)
+
+        if (img_exists) updated.push(site.slug)
+        else created.push(site.slug)
+      }
     }
-
-    await new Promise((r) => setTimeout(r, 2000)) // Wait for sites with on-load animations to settle
-    await page.setViewport({ height: 900, width: 1200 })
-    const hires = await page.screenshot()
-    await page.setViewport({ deviceScaleFactor: 0.5, height: 900, width: 1200 })
-    const lores = await page.screenshot()
-    await sharp(hires).toFile(img_path)
-    await sharp(lores).toFile(`${screenshot_dir}/${slug}.small.avif`)
-
-    if (img_exists) updated.push(site.slug)
-    else created.push(site.slug)
   }
 
   await browser.close()

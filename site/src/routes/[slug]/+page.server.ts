@@ -7,9 +7,11 @@ export const entries: EntryGenerator = () => sites.map((site) => ({ slug: site.s
 export const load: PageServerLoad = ({ params }) => {
   const { slug } = params
 
-  // TODO revert back to sorted.sites such that PrevNext doesn't navigate to pages the user excluded
-  const site = sites.find((site) => site.slug === slug)
+  // Currently uses all sites so PrevNext can navigate beyond filtered landing-page results.
+  const site = sites.find((candidate_site) => candidate_site.slug === slug)
 
+  // SvelteKit expects throwing its error() helper
+  // oxlint-disable-next-line only-throw-error
   if (!site) throw error(404, `Page '${slug}' not found`)
 
   return { site, sites, slug }

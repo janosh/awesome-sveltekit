@@ -47,16 +47,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [CodeMirror], [Mapbox], [Docker]
 
-1. **[Coolify](https://coolify.io)**&nbsp;
-   [[code](https://github.com/coollabsio/coolify)]&ensp;
-   <a href="https://github.com/coollabsio/coolify/stargazers">
-   <img src="https://img.shields.io/github/stars/coollabsio/coolify?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   An open-source &amp; self-hostable Heroku / Netlify alternative.<br>
-
-   uses: [PNPM], [TypeScript], [Tailwind], [sveltekit-i18n], [PostCSS], [Husky]
-
 1. **[Official SvelteKit docs](https://kit.svelte.dev)**&nbsp;
    [[code](https://github.com/sveltejs/kit/tree/main/documentation/docs)]&ensp;
    <a href="https://github.com/sveltejs/kit/stargazers">
@@ -86,16 +76,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    A file converter that converts files client-side while being completely ad-free.<br>
 
    uses: [TypeScript], [Tailwind], [Coolify], [WASM], [FFmpeg], [libvips], [Plausible]
-
-1. **[Gitpod](https://gitpod.io)**&nbsp;
-   [[code](https://github.com/gitpod-io/gitpod)]&ensp;
-   <a href="https://github.com/gitpod-io/gitpod/stargazers">
-   <img src="https://img.shields.io/github/stars/gitpod-io/gitpod?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Gitpod streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code.<br>
-
-   uses: [MDsveX], [Tailwind], [Netlify]
 
 1. **[Chat UI](https://huggingface.co/chat)**&nbsp;
    [[code](https://github.com/huggingface/chat-ui)]&ensp;
@@ -277,36 +257,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [svelte-intl-precompile], [sanitize-html]
 
-1. **[Pancake](https://pancake-charts.surge.sh)**&nbsp;
-   [[code](https://github.com/Rich-Harris/pancake)]&ensp;
-   <a href="https://github.com/Rich-Harris/pancake/stargazers">
-   <img src="https://img.shields.io/github/stars/Rich-Harris/pancake?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Experimental Svelte charting library. Visualize data with a combination of HTML, SVG and canvas/WebGL. Designed with server-side rendering in mind, so graphs potentially work without JavaScript. <a href="https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp">Blog post</a>.<br>
-
-   uses: [D3], [surge.sh], [TypeScript]
-
-1. **[Sveltestrap](https://sveltestrap.js.org)**&nbsp;
-   [[code](https://github.com/bestguy/sveltestrap)]&ensp;
-   <a href="https://github.com/bestguy/sveltestrap/stargazers">
-   <img src="https://img.shields.io/github/stars/bestguy/sveltestrap?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Bootstrap 4 &amp; 5 components for Svelte.<br>
-
-   uses: [Storybook], [Babel], [Testing Library], [Jest], [PostCSS], [Prism]
-
-1. **[Svelte Cubed](https://svelte-cubed.vercel.app)**&nbsp;
-   [[code](https://github.com/Rich-Harris/svelte-cubed)]&ensp;
-   <a href="https://github.com/Rich-Harris/svelte-cubed/stargazers">
-   <img src="https://img.shields.io/github/stars/Rich-Harris/svelte-cubed?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Three.js component library for Svelte. Abandoned. Check out <a href="https://threlte.xyz">threlte</a> instead.<br>
-
-   uses: [TypeScript], [PNPM], [Vercel], [MDsveX]
-
 1. **[Dotfyle](https://dotfyle.com)**&nbsp;
    [[code](https://github.com/codicocodes/dotfyle)]&ensp;
    <a href="https://github.com/codicocodes/dotfyle/stargazers">
@@ -316,16 +266,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    Discover and share Neovim configurations and plugins.<br>
 
    uses: [TypeScript], [PNPM], [tRPC-SvelteKit], [Prisma], [Tailwind], [Octokit]
-
-1. **[Beatbump](https://beatbump.io)**&nbsp;
-   [[code](https://github.com/snuffyDev/beatbump)]&ensp;
-   <a href="https://github.com/snuffyDev/beatbump/stargazers">
-   <img src="https://img.shields.io/github/stars/snuffyDev/beatbump?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Alternative frontend for YouTube Music.<br>
-
-   uses: [TypeScript], [PostCSS], [SCSS]
 
 1. **[svelte-french-toast](https://svelte-french-toast.com)**&nbsp;
    [[code](https://github.com/kbrgl/svelte-french-toast)]&ensp;
@@ -367,26 +307,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [tRPC]
 
-1. **[svelte-legos](https://svelte-legos.surge.sh)**&nbsp;
-   [[code](https://github.com/ankurrsinghal/svelte-legos)]&ensp;
-   <a href="https://github.com/ankurrsinghal/svelte-legos/stargazers">
-   <img src="https://img.shields.io/github/stars/ankurrsinghal/svelte-legos?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   A library of Svelte actions.<br>
-
-   uses: [TypeScript], [vitest], [Tailwind], [PostCSS], [Prism]
-
-1. **[sveltekit-typescript-showcase](https://github.com/ivanhofer/sveltekit-typescript-showcase)**&nbsp;
-   [[code](https://github.com/ivanhofer/sveltekit-typescript-showcase)]&ensp;
-   <a href="https://github.com/ivanhofer/sveltekit-typescript-showcase/stargazers">
-   <img src="https://img.shields.io/github/stars/ivanhofer/sveltekit-typescript-showcase?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   This repository shows how Svelte and SvelteKit work together with TypeScript.<br>
-
-   uses: [TypeScript]
-
 1. **[swyxkit](https://swyxkit.netlify.app)**&nbsp;
    [[code](https://github.com/sw-yx/swyxkit)]&ensp;
    <a href="https://github.com/sw-yx/swyxkit/stargazers">
@@ -397,16 +317,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [Tailwind], [Netlify]
 
-1. **[Fluent Svelte](https://fluent-svelte.vercel.app)**&nbsp;
-   [[code](https://github.com/Tropix126/fluent-svelte)]&ensp;
-   <a href="https://github.com/Tropix126/fluent-svelte/stargazers">
-   <img src="https://img.shields.io/github/stars/Tropix126/fluent-svelte?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   A faithful implementation of Microsoft&#39;s Fluent design system in Svelte.<br>
-
-   uses: [MDsveX], [SCSS], [TypeScript], [remark], [rehype], [PNPM], [PostCSS], [Prism]
-
 1. **[Urara](https://urara-demo.netlify.app)**&nbsp;
    [[code](https://github.com/importantimport/urara)]&ensp;
    <a href="https://github.com/importantimport/urara/stargazers">
@@ -416,16 +326,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    Sweet &amp; Powerful SvelteKit Blog Template.<br>
 
    uses: [MDsveX], [PostCSS], [Tailwind], [DaisyUI], [TypeScript], [PNPM]
-
-1. **[learn.svelte.dev](https://learn.svelte.dev)**&nbsp;
-   [[code](https://github.com/sveltejs/learn.svelte.dev)]&ensp;
-   <a href="https://github.com/sveltejs/learn.svelte.dev/stargazers">
-   <img src="https://img.shields.io/github/stars/sveltejs/learn.svelte.dev?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   A soup-to-nuts interactive tutorial on how to build apps with Svelte.<br>
-
-   uses: [Vercel], [PNPM], [Prism], [MarkedJS], [CodeMirror]
 
 1. **[SvelteKit static blog starter](https://sveltekit-static-starter.netlify.app)**&nbsp;
    [[code](https://github.com/josh-collinsworth/sveltekit-blog-starter)]&ensp;
@@ -647,16 +547,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Playwright], [PostCSS], [Tailwind], [Release It], [Vercel]
 
-1. **[Auth starter app](https://passlock.dev)**&nbsp;
-   [[code](https://github.com/passlock-dev/passlock)]&ensp;
-   <a href="https://github.com/passlock-dev/passlock/stargazers">
-   <img src="https://img.shields.io/github/stars/passlock-dev/passlock?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   SvelteKit template featuring Passkeys, Social Sign in and more.<br>
-
-   uses: [passlock], [tailwind], [superforms], [lucia]
-
 1. **[sveltekit-mdsvex-blog](https://sveltekit-mdsvex-blog.netlify.app)**&nbsp;
    [[code](https://github.com/mvasigh/sveltekit-mdsvex-blog)]&ensp;
    <a href="https://github.com/mvasigh/sveltekit-mdsvex-blog/stargazers">
@@ -687,6 +577,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [PNPM], [Playwright], [Vercel], [svelte-highlight], [Husky], [commitlint]
 
+1. **[Auth starter app](https://passlock.dev)**&nbsp;
+   [[code](https://github.com/passlock-dev/passlock)]&ensp;
+   <a href="https://github.com/passlock-dev/passlock/stargazers">
+   <img src="https://img.shields.io/github/stars/passlock-dev/passlock?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   SvelteKit template featuring Passkeys, Social Sign in and more.<br>
+
+   uses: [passlock], [tailwind], [superforms], [lucia]
+
 1. **[Svead](https://svead.pages.dev)**&nbsp;
    [[code](https://github.com/spences10/svead)]&ensp;
    <a href="https://github.com/spences10/svead/stargazers">
@@ -706,16 +606,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    A simple web game where you are given 45 seconds and $100 to make as much money as you can trading a fake stock.<br>
 
    uses: [Tailwind], [Netlify], [Chart.js], [Plausible]
-
-1. **[SK Incognito](https://sk-incognito.vercel.app)**&nbsp;
-   [[code](https://github.com/GrygrFlzr/kit-docs)]&ensp;
-   <a href="https://github.com/GrygrFlzr/kit-docs/stargazers">
-   <img src="https://img.shields.io/github/stars/GrygrFlzr/kit-docs?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   The unofficial SvelteKit docs.<br>
-
-   uses: [MDsveX], [Tailwind], [PNPM]
 
 1. **[markushatvan.com](https://markushatvan.com)**
 
@@ -783,16 +673,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Airtable], [Radix], [MarkedJS], [Cloudflare Pages]
 
-1. **[puruvj.dev](https://puruvj.dev)**&nbsp;
-   [[code](https://github.com/puruvj/puruvjdev3)]&ensp;
-   <a href="https://github.com/puruvj/puruvjdev3/stargazers">
-   <img src="https://img.shields.io/github/stars/puruvj/puruvjdev3?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Puru Vijay&#39;s blog site.<br>
-
-   uses: [Vercel], [TypeScript], [SCSS], [Cloudinary]
-
 1. **[ConcertMash](https://concertmash.com)**&nbsp;
    [[code](https://github.com/mcmxcdev/ConcertMash)]&ensp;
    <a href="https://github.com/mcmxcdev/ConcertMash/stargazers">
@@ -802,26 +682,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    Easily generate a playlist for your upcoming concerts based on selected artists!<br>
 
    uses: [TypeScript], [Tailwind], [Spotify Web API], [Filepond], [PNPM], [Netlify]
-
-1. **[Hygraph Starter Blog](https://scottspence.com/2021/05/06/graphcms-svelte-starter)**&nbsp;
-   [[code](https://github.com/spences10/sveltekit-starter-blog)]&ensp;
-   <a href="https://github.com/spences10/sveltekit-starter-blog/stargazers">
-   <img src="https://img.shields.io/github/stars/spences10/sveltekit-starter-blog?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   This blog starter shows how to use SvelteKit with Hygraph.<br>
-
-   uses: [Vercel], [Tailwind], [SCSS], [Hygraph]
-
-1. **[Svelte Summit Fall 2021](https://sveltesummit.com)**&nbsp;
-   [[code](https://github.com/svelte-society/svelte-summit)]&ensp;
-   <a href="https://github.com/svelte-society/svelte-summit/stargazers">
-   <img src="https://img.shields.io/github/stars/svelte-society/svelte-summit?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   The 4th virtual conference about Svelte<br>
-
-   uses: [Elder.js], [PostCSS], [Cloudflare]
 
 1. **[Team Health Check](https://team-health-check-coral.vercel.app)**&nbsp;
    [[code](https://github.com/codehub-kirans/team-health-check)]&ensp;
@@ -887,12 +747,10 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
 [aws]: https://aws.amazon.com
-[babel]: https://babeljs.io
 [changesets]: https://github.com/changesets/changesets
 [chart.js]: https://chartjs.org
 [cloudflare pages]: https://pages.cloudflare.com
 [cloudflare]: https://cloudflare.com
-[cloudinary]: https://cloudinary.com
 [codemirror]: https://codemirror.net
 [commitlint]: https://github.com/conventional-changelog/commitlint
 [coolify]: https://coolify.io
@@ -905,7 +763,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
 [echarts]: https://github.com/apache/echarts
-[elder.js]: https://github.com/Elderjs/elderjs
 [electron]: https://electronjs.org
 [ffmpeg]: https://ffmpeg.org
 [filepond]: https://pqina.nl/filepond
@@ -923,7 +780,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [huggingface inference]: https://github.com/huggingface/text-generation-inference
 [hugo]: https://gohugo.io
 [husky]: https://github.com/typicode/husky
-[hygraph]: https://hygraph.com
 [ibm carbon]: https://carbondesignsystem.com
 [iconify]: https://iconify.design
 [iconoir]: https://iconoir.com
@@ -979,10 +835,8 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
 [storyblock]: https://storyblok.com
-[storybook]: https://storybook.js.org
 [supabase]: https://supabase.com
 [superforms]: https://github.com/ciscoheat/sveltekit-superforms
-[surge.sh]: https://surge.sh
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svelte-enhanced-img]: https://svelte.dev/docs/kit/images#sveltejs-enhanced-img
 [svelte-highlight]: https://github.com/metonym/svelte-highlight
@@ -990,7 +844,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [svelte-markdown]: https://github.com/pablo-abc/svelte-markdown
 [svelte-multiselect]: https://github.com/janosh/svelte-multiselect
 [svelte-toasts]: https://github.com/mzohaibqc/svelte-toasts
-[sveltekit-i18n]: https://github.com/sveltekit-i18n/lib
 [swell commerce]: https://swell.is
 [tailwind]: https://tailwindcss.com
 [tauri]: https://tauri.app

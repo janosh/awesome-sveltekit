@@ -11,12 +11,13 @@
     resolution?: `.small` | ``
   } & HTMLAttributes<HTMLImageElement> = $props()
 
-  const slugify = (title: string) => title.toLowerCase().replaceAll(` `, `-`)
+  const slugify = (site_title: string) => site_title.toLowerCase().replaceAll(` `, `-`)
 
   const base_url = `https://github.com/janosh/awesome-sveltekit/raw/main/site/static`
-  let src = $derived(
-    `${dev ? `` : base_url}/screenshots/${slugify(title)}${resolution}.avif`,
-  )
+  let src = $derived.by(() => {
+    if (dev) return `/screenshots/${slugify(title)}${resolution}.avif`
+    return `${base_url}/screenshots/${slugify(title)}${resolution}.avif`
+  })
 </script>
 
 <img {src} alt="Screenshot of {title}" {width} {height} {...rest} />

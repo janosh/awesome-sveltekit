@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { SiteDetails, SitePreview, type Site } from '$lib'
+  import { SiteDetails, SitePreview } from '$lib'
+  import type { Site } from '$lib/index'
   import { repository } from '$site/package.json'
   import Icon from '@iconify/svelte'
   import { PrevNext } from 'svelte-multiselect'
@@ -7,7 +8,7 @@
   let { data } = $props()
 
   let head_title = $derived(`${data.site.title} | Awesome SvelteKit`)
-  let plain_description = $derived(data.site?.description?.replaceAll(/<[^>]*>/g, ``))
+  let plain_description = $derived(data.site?.description?.replaceAll(/<[^>]*>/gu, ``))
 </script>
 
 <svelte:head>
@@ -35,9 +36,9 @@
   {#snippet children({ item, kind })}
     {@const [slug, site] = item as [string, Site]}
     <div style="max-width: 250px">
-      <h3 style:text-align={kind == `next` ? `right` : `left`}>
+      <h3 style:text-align={kind === `next` ? `right` : `left`}>
         <a href={slug}>
-          {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
+          {@html kind === `next` ? `Next &rarr;` : `&larr; Previous`}
         </a>
       </h3>
       <SitePreview {site} />

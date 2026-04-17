@@ -1,6 +1,5 @@
 import adapter from '@sveltejs/adapter-static'
 import type { Config } from '@sveltejs/kit'
-import { sveltePreprocess } from 'svelte-preprocess'
 
 export default {
   kit: {
@@ -8,6 +7,4 @@ export default {
 
     alias: { $root: `..`, $site: `.` },
   },
-
-  preprocess: [sveltePreprocess()],
 } satisfies Config

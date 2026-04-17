@@ -2,9 +2,9 @@
 
 import yaml from 'js-yaml'
 import fs from 'node:fs'
-import type { Site } from '../lib'
+import type { Site } from '$lib'
 
-export function update_readme(options: { readme_path?: string } = {}) {
+export function update_readme(options: { readme_path?: string } = {}): void {
   const { readme_path = `../readme.md` } = options
   const sites_path = `src/sites.yml`
 
@@ -24,9 +24,9 @@ export function update_readme(options: { readme_path?: string } = {}) {
 
       try {
         let code_link = ``
-        if (repo) {
-          const repo_handle = repo.split(`github.com/`)[1]
-          if (repo_handle.split(`/`).length !== 2) {
+        if (repo !== undefined && repo !== ``) {
+          const [, repo_handle] = repo.split(`github.com/`)
+          if (repo_handle === undefined || repo_handle.split(`/`).length !== 2) {
             throw new Error(`bad repo handle ${repo_handle}`)
           }
           const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
@@ -55,7 +55,7 @@ export function update_readme(options: { readme_path?: string } = {}) {
 
   // Replace old sites
   const new_readme = readme.replace(
-    /## Sites\n\n[\s\S]+\n\n## /, // Match everything up to next heading
+    /## Sites\n\n[\s\S]+?\n\n## /u, // Match everything up to next heading
     `## Sites\n\n${new_sites}\n${uses_links}\n\n## `,
   )
 
