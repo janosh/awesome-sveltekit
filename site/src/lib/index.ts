@@ -19,7 +19,7 @@ export interface Site {
   date_created: Date
   slug: string
   repo_stars?: number
-  contributors: Contributor[]
+  contributors?: Contributor[]
 }
 
 export interface Contributor {

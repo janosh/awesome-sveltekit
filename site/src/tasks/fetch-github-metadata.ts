@@ -17,20 +17,31 @@ type GitHubUser = RepoContributor & {
   twitter_username: string | null
 }
 
-export function title_to_slug(title: string): string {
-  return title.toLowerCase().replaceAll(` `, `-`)
+export const title_to_slug = (title: string): string =>
+  title.toLowerCase().replaceAll(` `, `-`)
+
+function https_url(url: string): string | undefined {
+  if (!url) return undefined
+  if (url.startsWith(`http`)) return url.replace(`http://`, `https://`)
+  return `https://${url}`
 }
 
-export async function fetch_github_metadata(options: { action?: Action } = {}) {
+const has_text = (value: string | undefined): value is string =>
+  value !== undefined && value !== ``
+
+export async function fetch_github_metadata(
+  options: { action?: Action } = {},
+): Promise<void> {
   const { action = `add-missing` } = options
   const in_path = `../sites.yml`
   const out_path = `../site/src/sites.yml`
 
   const sites = yaml.load(fs.readFileSync(in_path, `utf8`)) as Site[]
 
-  const old_sites = (
-    fs.existsSync(out_path) ? yaml.load(fs.readFileSync(out_path, `utf8`)) : []
-  ) as Site[]
+  let old_sites: Site[] = []
+  if (fs.existsSync(out_path)) {
+    old_sites = yaml.load(fs.readFileSync(out_path, `utf8`)) as Site[]
+  }
 
   const this_file = import.meta.url.split(`/`).pop()
 
@@ -44,25 +55,73 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
   const skipped_sites: string[] = []
   const updated_sites: string[] = []
 
-  if (!process.env.GH_TOKEN) {
-    console.error(`GH_TOKEN environment variable is not set.`)
-    process.exit(1)
+  const github_token = process.env.GH_TOKEN
+  if (!has_text(github_token)) {
+    throw new Error(`GH_TOKEN environment variable is not set.`)
   }
 
   const headers = {
-    authorization: `token ${process.env.GH_TOKEN}`,
+    authorization: `token ${github_token}`,
   }
 
-  async function fetch_check(url: string) {
-    const response = await fetch(url, { headers }).then((res) => res.json())
-    if (response.message) throw new Error(response.message)
-    return response
+  async function fetch_check<T>(url: string): Promise<T> {
+    const response = await fetch(url, { headers })
+    const body = (await response.json()) as T & { message?: unknown }
+    if (typeof body.message === `string`) throw new Error(body.message)
+    return body as T
   }
 
-  function https_url(url: string) {
-    if (!url) return null
-    if (url.startsWith(`http`)) return url.replace(`http://`, `https://`)
-    return `https://${url}`
+  async function update_site_from_github(site: Site, slug: string): Promise<boolean> {
+    const repo_url = site.repo
+    if (!has_text(repo_url) || (old_slugs.has(slug) && action !== `update-existing`)) {
+      return false
+    }
+
+    // Also skip site if repo key cannot be parsed into a user login and a repo name
+    const [, repo_handle] = repo_url.split(`github.com/`)
+    if (!repo_handle || repo_handle.split(`/`).length !== 2) {
+      console.error(`bad repo handle ${repo_handle}`)
+      return false
+    }
+
+    // Fetch stars
+    try {
+      const url = `https://api.github.com/repos/${repo_handle}`
+      const repo = await fetch_check<{ stargazers_count: number }>(url)
+      site.repo_stars = repo.stargazers_count
+    } catch (error) {
+      console.error(`Error fetching stars for ${site.title}:`, error)
+    }
+
+    // Fetch most active contributors
+    const raw_contributors = await fetch_check<RepoContributor[]>(
+      `https://api.github.com/repos/${repo_handle}/contributors`,
+    )
+    const contributors = raw_contributors
+      .filter((itm) => itm.contributions > 10 && itm.type === `User`)
+      .toSorted((c1, c2) => c2.contributions - c1.contributions)
+      .slice(0, 5)
+
+    const full_contributors = await Promise.all(
+      contributors.map(async (person) => {
+        const contributor = await fetch_check<GitHubUser>(person.url)
+        return contributor
+      }),
+    )
+
+    site.contributors = full_contributors.map(
+      ({ name, location, company, ...contributor }) => ({
+        avatar: contributor.avatar_url,
+        company: company ?? undefined,
+        github: contributor.login,
+        location: location ?? undefined,
+        name: name ?? contributor.login,
+        twitter: contributor.twitter_username ?? undefined,
+        url: https_url(contributor.blog ?? ``),
+      }),
+    )
+
+    return true
   }
 
   // Only update site/src/sites.js if a new site was added to sites.yml
@@ -76,78 +135,26 @@ export async function fetch_github_metadata(options: { action?: Action } = {}) {
     site.slug = slug
 
     // Add open-source tag for all sites with repo key
-    if (site.repo && !site.tags.includes(`open source`)) {
+    if (has_text(site.repo) && !site.tags.includes(`open source`)) {
       site.tags.push(`open source`)
       site.tags.sort((a, b) => a.localeCompare(b)) // Sort tags alphabetically in place
     }
 
-    // Skip site if it doesn't have a repo key or if data was fetched for it before
-    // And update_existing is false
-    if (!site.repo || (old_slugs.has(slug) && action !== `update-existing`)) {
-      skipped_sites.push(slug)
-      continue
-    }
-
-    // Also skip site if repo key cannot be parsed into a user login and a repo name
-    const repoHandle = site.repo.split(`github.com/`)[1]
-    if (!repoHandle || repoHandle.split(`/`).length !== 2) {
-      console.error(`bad repo handle ${repoHandle}`)
-      skipped_sites.push(slug)
-      continue
-    }
-
-    // Fetch stars
-    try {
-      const url = `https://api.github.com/repos/${repoHandle}`
-      const repo = await fetch_check(url)
-      site.repo_stars = repo.stargazers_count
-    } catch (error) {
-      console.error(`Error fetching stars for ${site.title}:`, error)
-    }
-
-    // Fetch most active contributors
-    let contributors = (await fetch_check(
-      `https://api.github.com/repos/${repoHandle}/contributors`,
-    )) as RepoContributor[]
-
-    // Show at most 5 contributors and only those with more than 10 commits
-    // And of type 'User' (to filter out bots) sorted by number of contributions
-    contributors = contributors
-      .filter((itm) => itm.contributions > 10 && itm.type === `User`)
-      .toSorted((c1, c2) => c2.contributions - c1.contributions)
-      .slice(0, 5)
-
-    const full_contributors = (await Promise.all(
-      contributors.map((person) =>
-        fetch(person.url, { headers }).then((res) => res.json()),
-      ),
-    )) as GitHubUser[]
-
-    site.contributors = full_contributors.map(
-      ({ name, location, company, ...contributor }) => ({
-        avatar: contributor.avatar_url,
-        company: company ?? undefined,
-        github: contributor.login,
-        location: location ?? undefined,
-        name: name ?? contributor.login,
-        twitter: contributor.twitter_username ?? undefined,
-        url: https_url(contributor.blog ?? ``) ?? undefined,
-      }),
-    )
-
-    updated_sites.push(slug)
+    const updated = await update_site_from_github(site, slug)
+    if (updated) updated_sites.push(slug)
+    else skipped_sites.push(slug)
   }
 
   const new_sites = sites.map((site) => {
     const old_site = old_sites.find((old: Site) => old.slug === site.slug)
     // Retain fetched GitHub data from old_sites in case we didn't refetch
-    if (site.repo_stars === undefined && old_site?.repo_stars) {
+    if (site.repo_stars === undefined && old_site?.repo_stars !== undefined) {
       site.repo_stars = old_site.repo_stars
     }
-    if (!site.contributors && old_site?.contributors) {
+    if (site.contributors === undefined && old_site?.contributors !== undefined) {
       site.contributors = old_site.contributors
     }
-    if (site.description) {
+    if (has_text(site.description)) {
       site.description = marked.parseInline(site.description) as string
     }
 

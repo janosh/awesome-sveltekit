@@ -15,32 +15,26 @@
   "repository": "https://github.com/janosh/awesome-sveltekit",
   "type": "module",
   "scripts": {
-    "build": "vp build"
+    "build": "vite build"
   },
   "devDependencies": {
     "@iconify/svelte": "^5.2.1",
-    "@playwright/test": "^1.58.2",
+    "@playwright/test": "^1.60.0",
     "@rollup/plugin-yaml": "^4.1.2",
     "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.55.0",
-    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@sveltejs/kit": "^2.60.1",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.9.0",
     "js-yaml": "^4.1.1",
-    "marked": "^17.0.5",
-    "puppeteer": "^24.40.0",
+    "marked": "^18.0.4",
+    "puppeteer": "^25.0.4",
     "sharp": "^0.34.5",
-    "svelte": "^5.54.0",
-    "svelte-check-rs": "^0.9.5",
-    "svelte-multiselect": "11.6.4",
-    "svelte-preprocess": "^6.0.3",
-    "typescript": "5.9.3",
-    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "svelte": "^5.55.8",
+    "svelte-check-rs": "^0.9.13",
+    "svelte-multiselect": "11.7.1",
+    "typescript": "6.0.3",
+    "vite": "^8.0.13",
     "vite-plus": "latest"
-  },
-  "pnpm": {
-    "overrides": {
-      "svelte": "$svelte",
-      "vite": "npm:@voidzero-dev/vite-plus-core@latest"
-    }
   }
 }

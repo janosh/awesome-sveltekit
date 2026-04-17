@@ -5,7 +5,7 @@
 </script>
 
 <ul class="contributors">
-  {#each contributors as { avatar_url, html_url, login } (JSON.stringify(login))}
+  {#each contributors as { avatar_url, html_url, login } (login)}
     <li>
       <a href={html_url}>
         <img src={avatar_url} alt={login} />

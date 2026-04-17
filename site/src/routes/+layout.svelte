@@ -1,10 +1,10 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
   import { repository } from '$site/package.json'
+  import '$site/src/app.css'
+  import sites from '$site/src/sites.yml'
   import type { Snippet } from 'svelte'
   import { CmdPalette, GitHubCorner } from 'svelte-multiselect'
-  import '../app.css'
-  import sites from '../sites.yml'
 
   let { children }: { children: Snippet<[]> } = $props()
   let innerWidth: number = $state(0)

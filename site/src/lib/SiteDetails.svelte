@@ -19,16 +19,18 @@
   )
 
   let tools = $derived(
-    uses.map((tool) => {
-      const href = uses_links[tool.toLowerCase()]
-      if (!href) {
-        console.error(`Unknown tool: ${tool}`)
-      } else if (!href.startsWith(`https`)) {
-        // All tools should have an https URL
-        throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
-      }
-      return [tool, href]
-    }),
+    uses
+      .flatMap((tool) => {
+        const href = uses_links[tool.toLowerCase()]
+        if (!href) {
+          console.error(`Unknown tool: ${tool}`)
+          return []
+        }
+        if (!href.startsWith(`https`)) {
+          throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
+        }
+        return [[tool, href]]
+      }),
   )
 </script>
 
@@ -92,7 +94,7 @@
       <span style="flex: 1"></span>
       <svelte:element
         this={site.repo ? `a` : `span`}
-        href={site.repo ?? null}
+        {...(site.repo ? { href: site.repo } : {})}
         title="{days_since_created} days ago"
         {@attach tooltip()}
       >

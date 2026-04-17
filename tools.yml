@@ -2,12 +2,10 @@ airtable: https://airtable.com
 algolia: https://algolia.com
 anime.js: https://animejs.com
 aws: https://aws.amazon.com
-babel: https://babeljs.io
 changesets: https://github.com/changesets/changesets
 chart.js: https://chartjs.org
 cloudflare pages: https://pages.cloudflare.com
 cloudflare: https://cloudflare.com
-cloudinary: https://cloudinary.com
 codemirror: https://codemirror.net
 commitlint: https://github.com/conventional-changelog/commitlint
 coolify: https://coolify.io
@@ -20,7 +18,6 @@ directus: https://directus.io
 docker: https://docker.com
 dynamodb: https://aws.amazon.com/dynamodb
 echarts: https://github.com/apache/echarts
-elder.js: https://github.com/Elderjs/elderjs
 electron: https://electronjs.org
 ffmpeg: https://ffmpeg.org
 filepond: https://pqina.nl/filepond
@@ -38,7 +35,6 @@ huggingface hub: https://github.com/huggingface/huggingface_hub
 huggingface inference: https://github.com/huggingface/text-generation-inference
 hugo: https://gohugo.io
 husky: https://github.com/typicode/husky
-hygraph: https://hygraph.com
 ibm carbon: https://carbondesignsystem.com
 iconify: https://iconify.design
 iconoir: https://iconoir.com
@@ -94,10 +90,8 @@ skeleton: https://skeleton.dev
 smui: https://sveltematerialui.com
 spotify web api: https://github.com/JMPerez/spotify-web-api-js
 storyblock: https://storyblok.com
-storybook: https://storybook.js.org
 supabase: https://supabase.com
 superforms: https://github.com/ciscoheat/sveltekit-superforms
-surge.sh: https://surge.sh
 svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
 svelte-enhanced-img: https://svelte.dev/docs/kit/images#sveltejs-enhanced-img
 svelte-highlight: https://github.com/metonym/svelte-highlight
@@ -105,7 +99,6 @@ svelte-intl-precompile: https://github.com/cibernox/svelte-intl-precompile
 svelte-markdown: https://github.com/pablo-abc/svelte-markdown
 svelte-multiselect: https://github.com/janosh/svelte-multiselect
 svelte-toasts: https://github.com/mzohaibqc/svelte-toasts
-sveltekit-i18n: https://github.com/sveltekit-i18n/lib
 swell commerce: https://swell.is
 tailwind: https://tailwindcss.com
 tauri: https://tauri.app

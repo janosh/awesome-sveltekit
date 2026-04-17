@@ -6,7 +6,7 @@ test.describe.configure({ mode: `parallel` })
 
 test(`test search functionality on the landing page`, async ({ page }) => {
   // Failing in CI for unknown reason
-  if (process.env.CI) test.skip()
+  if (process.env.CI !== undefined && process.env.CI !== ``) test.skip()
 
   await page.goto(`/`, { waitUntil: `networkidle` })
 
@@ -27,7 +27,7 @@ test(`test search functionality on the landing page`, async ({ page }) => {
   await page.fill(`[placeholder='Search...']`, ``) // Clear the search
   await expect(site_locator).toHaveCount(initial_site_count, { timeout: 5000 })
 
-  // TODO also test sort functionality
+  // Sort behavior still needs browser coverage.
 })
 
 test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
@@ -51,7 +51,7 @@ test(`can navigate landing page with arrow keys`, async ({ page }) => {
   await page.goto(`/`, { waitUntil: `networkidle` })
 
   // Expect no matches for ol > li.active
-  expect(await page.$(`ol > li.active`)).toBe(null)
+  expect(await page.$(`ol > li.active`)).toBeNull()
 
   // Get active card after
   await page.keyboard.press(`ArrowRight`)

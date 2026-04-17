@@ -34,4 +34,6 @@ jobs:
             --exclude 'lodash.com'
             --exclude 'learninpublic.org'
             --exclude 'parks.lol'
+            --exclude 'aiqino.netlify.app'
+            --exclude 'highlightjs.org'
             -- ./**/*.{md,svelte,ts,yml}
