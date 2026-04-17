@@ -80,15 +80,9 @@ repos:
 
   - repo: local
     hooks:
-      - id: vp-fmt
-        name: Format (oxfmt)
-        entry: bash -c 'cd site && node_modules/.bin/vp fmt --write'
-        types_or: [ts, javascript, json, css, html, svelte]
-        language: system
-        pass_filenames: false
-      - id: vp-lint
-        name: Lint (oxlint)
-        entry: bash -c 'cd site && node_modules/.bin/vp lint --fix'
+      - id: vp-check
+        name: Format + Lint (vite-plus)
+        entry: bash -c 'cd site && node_modules/.bin/vp check --fix'
         types_or: [ts, javascript, json, css, html, svelte]
         language: system
         pass_filenames: false
