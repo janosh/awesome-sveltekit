@@ -43,13 +43,13 @@
       avatar: https://avatars.githubusercontent.com/u/1519870?v=4
       name: Dominic Gannaway
       location: London, United Kingdom
-      company: "@attio"
+      company: '@attio'
     - github: tanhauhau
       url: https://twitter.com/lihautan
       avatar: https://avatars.githubusercontent.com/u/2338632?v=4
       name: Tan Li Hau
       location: Singapore
-      company: "@Shopee"
+      company: '@Shopee'
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
@@ -95,28 +95,6 @@
       avatar: https://avatars.githubusercontent.com/u/8156777?v=4
       name: Ignatius Bagus
       location: Southeast Asia
-- title: SK Incognito
-  url: https://sk-incognito.vercel.app
-  repo: https://github.com/GrygrFlzr/kit-docs
-  description: The unofficial SvelteKit docs.
-  uses:
-    - MDsveX
-    - Tailwind
-    - PNPM
-  tags:
-    - docs
-    - open source
-    - Vercel
-  date_created: 2021-02-15T00:00:00.000Z
-  date_added: 2021-05-25T00:00:00.000Z
-  slug: sk-incognito
-  repo_stars: 88
-  contributors:
-    - github: GrygrFlzr
-      twitter: GrygrFlzr
-      avatar: https://avatars.githubusercontent.com/u/1460917?v=4
-      name: Martin Krisnanto Putra
-      location: Jakarta
 - title: Scientific Diagrams
   url: https://janosh.github.io/diagrams
   repo: https://github.com/janosh/diagrams
@@ -190,127 +168,6 @@
   slug: guess-the-year
   repo_stars: 46
   contributors: []
-- title: Gitpod
-  url: https://gitpod.io
-  repo: https://github.com/gitpod-io/gitpod
-  description: >-
-    Gitpod streamlines developer workflows by providing prebuilt, collaborative
-    development environments in your browser - powered by VS Code.
-  uses:
-    - MDsveX
-    - Tailwind
-    - Netlify
-  tags:
-    - cloud computing
-    - commercial
-    - dev tools
-    - open source
-  date_created: 2021-03-17T00:00:00.000Z
-  date_added: 2021-05-31T00:00:00.000Z
-  slug: gitpod
-  repo_stars: 13603
-  contributors:
-    - github: easyCZ
-      avatar: https://avatars.githubusercontent.com/u/1419286?v=4
-      name: Milan Pavlik
-      location: Prague, CZE
-      company: "@gitpod-io"
-    - github: geropl
-      avatar: https://avatars.githubusercontent.com/u/32448529?v=4
-      name: Gero Posmyk-Leinemann
-      location: Germany
-      company: "@gitpod-io "
-    - github: aledbf
-      twitter: aledbf
-      url: https://www.linkedin.com/in/aledbf/
-      avatar: https://avatars.githubusercontent.com/u/161571?v=4
-      name: Manuel Alejandro de Brito Fontes
-      location: Santiago, Chile
-    - github: roboquat
-      avatar: https://avatars.githubusercontent.com/u/87151047?v=4
-      name: Robo Quat
-      company: "@gitpod"
-    - github: csweichel
-      twitter: csweichel
-      url: https://csweichel.de
-      avatar: https://avatars.githubusercontent.com/u/3210701?v=4
-      name: Christian Weichel
-      location: Kiel, Germany
-      company: "@gitpod-io "
-- title: puruvj.dev
-  url: https://puruvj.dev
-  repo: https://github.com/puruvj/puruvjdev3
-  description: Puru Vijay&#39;s blog site.
-  uses:
-    - Vercel
-    - TypeScript
-    - SCSS
-    - Cloudinary
-  tags:
-    - blog
-    - open source
-  date_created: 2021-05-06T00:00:00.000Z
-  date_added: 2021-06-11T00:00:00.000Z
-  slug: puruvj.dev
-  repo_stars: 13
-  contributors:
-    - github: PuruVJ
-      twitter: puruvjdev
-      url: https://puruvj.dev
-      avatar: https://avatars.githubusercontent.com/u/47742487?v=4
-      name: Puru Vijay
-      location: Jaipur
-- title: Hygraph Starter Blog
-  url: https://scottspence.com/2021/05/06/graphcms-svelte-starter
-  repo: https://github.com/spences10/sveltekit-starter-blog
-  description: This blog starter shows how to use SvelteKit with Hygraph.
-  uses:
-    - Vercel
-    - Tailwind
-    - SCSS
-    - Hygraph
-  tags:
-    - blog
-    - open source
-  date_created: 2021-05-16T00:00:00.000Z
-  date_added: 2021-06-14T00:00:00.000Z
-  slug: hygraph-starter-blog
-  repo_stars: 10
-  contributors:
-    - github: spences10
-      url: https://scottspence.com
-      avatar: https://avatars.githubusercontent.com/u/234708?v=4
-      name: Scott Spence
-      location: London, United Kingdom
-      company: "@XtendOps-developers"
-    - github: renovate-bot
-      twitter: renovatebot
-      url: https://mend.io/renovate/
-      avatar: https://avatars.githubusercontent.com/u/25180681?v=4
-      name: Mend Renovate
-      company: "@mend"
-- title: Beatbump
-  url: https://beatbump.io
-  repo: https://github.com/snuffyDev/beatbump
-  description: Alternative frontend for YouTube Music.
-  uses:
-    - TypeScript
-    - PostCSS
-    - SCSS
-  tags:
-    - blog
-    - open source
-  date_created: 2021-06-17T00:00:00.000Z
-  date_added: 2021-07-08T00:00:00.000Z
-  slug: beatbump
-  repo_stars: 1130
-  contributors:
-    - github: snuffyDev
-      twitter: snuffyDev
-      url: https://snuffy.dev
-      avatar: https://avatars.githubusercontent.com/u/72365477?v=4
-      name: snuffy
-      location: In the Clouds
 - title: Paper Trader Game
   url: https://paper-trader.davjhan.com
   repo: https://github.com/davjhan/paper-trader-game
@@ -409,7 +266,7 @@
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
-      company: "@svelte-society "
+      company: '@svelte-society '
 - title: Flayks
   url: https://flayks.com
   description: >-
@@ -458,7 +315,7 @@
       url: https://github.com/actions
       avatar: https://avatars.githubusercontent.com/u/65916846?v=4
       name: actions-user
-      company: "@actions"
+      company: '@actions'
 - title: Level Up Tutorials
   url: https://leveluptutorials.com
   description: Video tutorials for web developers and designers.
@@ -527,45 +384,12 @@
       avatar: https://avatars.githubusercontent.com/u/19785650?v=4
       name: Michael West
       location: United Kingdom
-      company: "@microsoft"
+      company: '@microsoft'
     - github: marcelwgn
       twitter: marcelwgndev
       avatar: https://avatars.githubusercontent.com/u/16122379?v=4
       name: Marcel W.
-      company: "@microsoft"
-- title: Svelte Summit Fall 2021
-  url: https://sveltesummit.com
-  repo: https://github.com/svelte-society/svelte-summit
-  description: The 4th virtual conference about Svelte
-  uses:
-    - Elder.js
-    - PostCSS
-    - Cloudflare
-  tags:
-    - community event
-    - conference
-    - learning
-    - news
-    - open source
-  date_created: 2021-07-25T00:00:00.000Z
-  date_added: 2021-10-12T00:00:00.000Z
-  slug: svelte-summit-fall-2021
-  repo_stars: 9
-  contributors:
-    - github: kevmodrome
-      twitter: kevmodrome
-      url: https://github.com/kevmodrome
-      avatar: https://avatars.githubusercontent.com/u/534488?v=4
-      name: Kevin Åberg Kultalahti
-      location: Sweden
-      company: "@svelte-society "
-    - github: Wolfr
-      twitter: wolfr_2
-      url: https://obra.studio
-      avatar: https://avatars.githubusercontent.com/u/12690?v=4
-      name: Wolfr
-      location: Mexico/Belgium
-      company: Obra Studio
+      company: '@microsoft'
 - title: cybernetic.dev
   url: https://cybernetic.dev
   description: Data-centric UI experiments
@@ -604,7 +428,7 @@
       avatar: https://avatars.githubusercontent.com/u/14755525?v=4
       name: Moritz Mähr
       location: Bern & Zurich
-      company: "@DHBern & @eth-library"
+      company: '@DHBern & @eth-library'
     - github: thodel
       url: https://dh.unibe.ch
       avatar: https://avatars.githubusercontent.com/u/18015683?v=4
@@ -634,13 +458,13 @@
       url: https://russellsamora.github.io
       avatar: https://avatars.githubusercontent.com/u/324631?v=4
       name: Russell Samora
-      company: "@the-pudding"
+      company: '@the-pudding'
     - github: jadiehm
       twitter: jadiehm
       avatar: https://avatars.githubusercontent.com/u/10521931?v=4
       name: Jan Diehm
       location: San Antonio
-      company: "@the-pudding "
+      company: '@the-pudding '
     - github: mmcghee18
       twitter: mich_mcghee
       url: >-
@@ -676,7 +500,7 @@
       avatar: https://avatars.githubusercontent.com/u/50108258?v=4
       name: 藍+85CD
       location: (intermediate value)
-      company: "@moeru-ai"
+      company: '@moeru-ai'
 - title: connorrothschild.com
   url: https://connorrothschild.com
   repo: https://github.com/connorrothschild/v4
@@ -701,32 +525,6 @@
       avatar: https://avatars.githubusercontent.com/u/13339581?v=4
       name: Connor Rothschild
       location: The Web
-- title: Svelte Cubed
-  url: https://svelte-cubed.vercel.app
-  repo: https://github.com/Rich-Harris/svelte-cubed
-  description: >-
-    Three.js component library for Svelte. Abandoned. Check out <a
-    href="https://threlte.xyz">threlte</a> instead.
-  uses:
-    - TypeScript
-    - PNPM
-    - Vercel
-    - MDsveX
-  tags:
-    - animations
-    - components
-    - interactive
-    - library
-    - open source
-  date_created: 2021-05-18T00:00:00.000Z
-  date_added: 2021-12-19T00:00:00.000Z
-  slug: svelte-cubed
-  repo_stars: 1190
-  contributors:
-    - github: Rich-Harris
-      avatar: https://avatars.githubusercontent.com/u/1162160?v=4
-      name: Rich Harris
-      location: NYC
 - title: Multi-Monitor Calculator
   url: https://multimonitorcalculator.com
   repo: https://github.com/KevinVandy/multi-monitor_calculator
@@ -802,7 +600,7 @@
       url: https://sidharth.dev
       avatar: https://avatars.githubusercontent.com/u/10703445?v=4
       name: Sidharth Vinod
-      company: "@Mermaid-Chart"
+      company: '@Mermaid-Chart'
     - github: knsv
       avatar: https://avatars.githubusercontent.com/u/5837277?v=4
       name: Knut Sveidqvist
@@ -816,7 +614,7 @@
       url: https://github.com/actions
       avatar: https://avatars.githubusercontent.com/u/65916846?v=4
       name: actions-user
-      company: "@actions"
+      company: '@actions'
     - github: huynhicode
       url: https://www.huynhicode.dev/
       avatar: https://avatars.githubusercontent.com/u/35910788?v=4
@@ -854,7 +652,7 @@
       avatar: https://avatars.githubusercontent.com/u/556934?v=4
       name: Eric Simons
       location: San Francisco, CA
-      company: "@StackBlitz"
+      company: '@StackBlitz'
     - github: pngwn
       twitter: evilpingwin
       avatar: https://avatars.githubusercontent.com/u/12937446?v=4
@@ -913,7 +711,7 @@
       avatar: https://avatars.githubusercontent.com/u/35429197?v=4
       name: Samuel Stroschein
       location: SF / NYC
-      company: "@opral"
+      company: '@opral'
     - github: LorisSigrist
       twitter: loris_sigrist
       url: https://sigrist.dev
@@ -975,7 +773,7 @@
       avatar: https://avatars.githubusercontent.com/u/10342829?v=4
       name: Seppe Dekeyser
       location: Belgium
-      company: "@Edu-Tech-Group "
+      company: '@Edu-Tech-Group '
     - github: fehnomenal
       url: https://fehn.systems
       avatar: https://avatars.githubusercontent.com/u/9959940?v=4
@@ -1045,35 +843,6 @@
       name: James Trimble's ONS work
       location: UK
       company: Office for National Statistics
-- title: Pancake
-  url: https://pancake-charts.surge.sh
-  repo: https://github.com/Rich-Harris/pancake
-  description: >-
-    Experimental Svelte charting library. Visualize data with a combination of
-    HTML, SVG and canvas/WebGL. Designed with server-side rendering in mind, so
-    graphs potentially work without JavaScript. <a
-    href="https://dev.to/richharris/a-new-technique-for-making-responsive-javascript-free-charts-gmp">Blog
-    post</a>.
-  uses:
-    - D3
-    - surge.sh
-    - TypeScript
-  tags:
-    - canvas
-    - charts
-    - dataviz
-    - graphics
-    - open source
-    - WebGL
-  date_created: 2019-10-01T00:00:00.000Z
-  date_added: 2022-04-05T00:00:00.000Z
-  slug: pancake
-  repo_stars: 1325
-  contributors:
-    - github: Rich-Harris
-      avatar: https://avatars.githubusercontent.com/u/1162160?v=4
-      name: Rich Harris
-      location: NYC
 - title: Svelte Headless UI
   url: https://svelte-headlessui.goss.io
   repo: https://github.com/rgossiaux/svelte-headlessui
@@ -1126,44 +895,11 @@
       avatar: https://avatars.githubusercontent.com/u/195918?v=4
       name: Hunter Perrin
       location: San Diego, CA
-      company: "@sciactive"
+      company: '@sciactive'
     - github: fiorelorenzo
       avatar: https://avatars.githubusercontent.com/u/29930922?v=4
       name: Lorenzo Fiore
       location: Milan, Italy
-- title: Fluent Svelte
-  url: https://fluent-svelte.vercel.app
-  repo: https://github.com/Tropix126/fluent-svelte
-  description: A faithful implementation of Microsoft&#39;s Fluent design system in Svelte.
-  uses:
-    - MDsveX
-    - SCSS
-    - TypeScript
-    - remark
-    - rehype
-    - PNPM
-    - PostCSS
-    - Prism
-  tags:
-    - component library
-    - design system
-    - open source
-    - windows ui
-  date_created: 2021-06-05T00:00:00.000Z
-  date_added: 2022-04-24T00:00:00.000Z
-  slug: fluent-svelte
-  repo_stars: 644
-  contributors:
-    - github: tropicaaal
-      url: https://tropical.sh/
-      avatar: https://avatars.githubusercontent.com/u/42101043?v=4
-      name: Tropical
-    - github: TheOnlyTails
-      twitter: The_Only_Tails
-      url: https://theonlytails.com
-      avatar: https://avatars.githubusercontent.com/u/65342367?v=4
-      name: Shachar Zidon
-      location: Here
 - title: SvelteKit on Edge
   url: https://sveltekit-on-the-edge.vercel.app
   repo: https://github.com/Rich-Harris/sveltekit-on-the-edge
@@ -1216,7 +952,7 @@
     - github: ItsMeBrianD
       twitter: BrianDonald_
       avatar: https://avatars.githubusercontent.com/u/10779616?v=4
-      name: "Brian D "
+      name: 'Brian D '
       location: Lincoln, NE
     - github: hughess
       url: https://evidence.dev
@@ -1230,13 +966,13 @@
       avatar: https://avatars.githubusercontent.com/u/58074498?v=4
       name: Archie Sarre Wood
       location: Toronto, ON
-      company: "@evidence-dev "
+      company: '@evidence-dev '
     - github: zachstence
       url: https://linkedin.com/in/zachary-stence
       avatar: https://avatars.githubusercontent.com/u/31896377?v=4
       name: Zach Stence
       location: Grand Prairie, TX
-      company: "@evidence-dev"
+      company: '@evidence-dev'
     - github: csjh
       avatar: https://avatars.githubusercontent.com/u/61282104?v=4
       name: csjh
@@ -1355,46 +1091,6 @@
       avatar: https://avatars.githubusercontent.com/u/33033422?v=4
       name: Chris Nicholas
       location: United Kingdom
-- title: Sveltestrap
-  url: https://sveltestrap.js.org
-  repo: https://github.com/bestguy/sveltestrap
-  description: Bootstrap 4 &amp; 5 components for Svelte.
-  uses:
-    - Storybook
-    - Babel
-    - Testing Library
-    - Jest
-    - PostCSS
-    - Prism
-  tags:
-    - component library
-    - open source
-  date_created: 2017-03-19T00:00:00.000Z
-  date_added: 2022-06-02T00:00:00.000Z
-  slug: sveltestrap
-  repo_stars: 1309
-  contributors:
-    - github: bestguy
-      avatar: https://avatars.githubusercontent.com/u/405608?v=4
-      name: Gary Thomas
-      location: San Diego, California
-    - github: gary-mycase
-      avatar: https://avatars.githubusercontent.com/u/110414772?v=4
-      name: Gary Thomas
-    - github: eddie0329
-      url: https://eddie-sunny.tistory.com/
-      avatar: https://avatars.githubusercontent.com/u/40482274?v=4
-      name: Eddie
-      location: Seoul, Korea
-      company: kakaomobility
-    - github: BlackFenix2
-      twitter: ErnieFrancisIV
-      url: https://erniefrancisiv.com
-      avatar: https://avatars.githubusercontent.com/u/15244006?v=4
-      name: Ernie Francis
-    - github: thomatha
-      avatar: https://avatars.githubusercontent.com/u/55523823?v=4
-      name: Thao Thomas
 - title: Svelvet
   url: https://svelvet.io
   repo: https://github.com/oslabs-beta/Svelvet
@@ -1529,7 +1225,7 @@
       avatar: https://avatars.githubusercontent.com/u/15649739?v=4
       name: hugocasa
       location: Switzerland
-      company: "@windmill-labs "
+      company: '@windmill-labs '
     - github: fatonramadani
       avatar: https://avatars.githubusercontent.com/u/456655?v=4
       name: Faton Ramadani
@@ -1579,7 +1275,7 @@
       avatar: https://avatars.githubusercontent.com/u/3834780?v=4
       name: Micheal Parks
       location: New York City
-      company: "@viamrobotics"
+      company: '@viamrobotics'
     - github: DefinitelyMaybe
       twitter: 0Rawr
       url: https://definitelymaybe.github.io/
@@ -1622,7 +1318,7 @@
       avatar: https://avatars.githubusercontent.com/u/13417496?v=4
       name: Kabir Goel
       location: Berkeley, CA
-      company: "@cartesia-ai"
+      company: '@cartesia-ai'
 - title: Hexapipes
   url: https://hexapipes.vercel.app
   repo: https://github.com/gereleth/hexapipes
@@ -1983,13 +1679,13 @@
       avatar: https://avatars.githubusercontent.com/u/234708?v=4
       name: Scott Spence
       location: London, United Kingdom
-      company: "@XtendOps-developers"
+      company: '@XtendOps-developers'
     - github: renovate-bot
       twitter: renovatebot
       url: https://mend.io/renovate/
       avatar: https://avatars.githubusercontent.com/u/25180681?v=4
       name: Mend Renovate
-      company: "@mend"
+      company: '@mend'
 - title: SvelteKit static blog starter
   url: https://sveltekit-static-starter.netlify.app
   repo: https://github.com/josh-collinsworth/sveltekit-blog-starter
@@ -2020,7 +1716,7 @@
       avatar: https://avatars.githubusercontent.com/u/22334764?v=4
       name: Josh Collinsworth
       location: Kansas City area
-      company: "@denoland "
+      company: '@denoland '
 - title: svelte-put
   url: https://svelte-put.vnphanquang.com
   repo: https://github.com/vnphanquang/svelte-put
@@ -2075,28 +1771,6 @@
       avatar: https://avatars.githubusercontent.com/u/13258203?v=4
       name: Mehdi Vasigh
       location: Atlanta, GA
-- title: sveltekit-typescript-showcase
-  url: https://github.com/ivanhofer/sveltekit-typescript-showcase
-  repo: https://github.com/ivanhofer/sveltekit-typescript-showcase
-  description: >-
-    This repository shows how Svelte and SvelteKit work together with
-    TypeScript.
-  uses:
-    - TypeScript
-  tags:
-    - learning
-    - open source
-    - showcase
-    - tutorial
-  date_created: 2022-03-07T00:00:00.000Z
-  date_added: 2023-02-24T00:00:00.000Z
-  slug: sveltekit-typescript-showcase
-  repo_stars: 726
-  contributors:
-    - github: ivanhofer
-      avatar: https://avatars.githubusercontent.com/u/21335119?v=4
-      name: Hofer Ivan
-      location: Italy
 - title: svelte-command-palette
   url: https://svelte-command-palette.vercel.app
   repo: https://github.com/rohitpotato/svelte-command-palette
@@ -2124,37 +1798,7 @@
       avatar: https://avatars.githubusercontent.com/u/30090495?v=4
       name: Rohit Kashyap
       location: Bengaluru, India
-      company: "@zeptonow"
-- title: svelte-legos
-  url: https://svelte-legos.surge.sh
-  repo: https://github.com/ankurrsinghal/svelte-legos
-  npm: https://npmjs.com/package/svelte-legos
-  description: A library of Svelte actions.
-  uses:
-    - TypeScript
-    - vitest
-    - Tailwind
-    - PostCSS
-    - Prism
-  tags:
-    - actions
-    - component library
-    - NPM package
-    - open source
-  date_created: 2023-02-21T00:00:00.000Z
-  date_added: 2023-03-06T00:00:00.000Z
-  slug: svelte-legos
-  repo_stars: 821
-  contributors:
-    - github: ankurrsinghal
-      twitter: ankurpsinghal
-      avatar: https://avatars.githubusercontent.com/u/17961105?v=4
-      name: Ankur Singhal
-    - github: jalavosus
-      url: https://alavosus.xyz
-      avatar: https://avatars.githubusercontent.com/u/5103026?v=4
-      name: Jamie Alavosus
-      location: New York, USA
+      company: '@zeptonow'
 - title: Watch This
   url: https://github.com/StephDietz/watch-this/issues/28
   repo: https://github.com/StephDietz/watch-this
@@ -2233,13 +1877,13 @@
       avatar: https://avatars.githubusercontent.com/u/25119303?v=4
       name: Nathan Sarrazin
       location: Karlsruhe, DE
-      company: "@apple"
+      company: '@apple'
     - github: gary149
       url: https://twitter.com/victormustar
       avatar: https://avatars.githubusercontent.com/u/3841370?v=4
       name: Victor Muštar
       location: Paris
-      company: "@huggingface"
+      company: '@huggingface'
     - github: coyotte508
       url: https://coyo.dev
       avatar: https://avatars.githubusercontent.com/u/342922?v=4
@@ -2306,8 +1950,8 @@
       url: https://ricciuti.me
       avatar: https://avatars.githubusercontent.com/u/26281609?v=4
       name: Paolo Ricciuti
-      location: "Campobasso "
-      company: "@mainmatter "
+      location: 'Campobasso '
+      company: '@mainmatter '
     - github: SarcevicAntonio
       url: https://www.sarcevic.dev/
       avatar: https://avatars.githubusercontent.com/u/6685200?v=4
@@ -2339,7 +1983,7 @@
     - github: pdrbrnd
       avatar: https://avatars.githubusercontent.com/u/5202712?v=4
       name: Pedro Brandão
-      company: "@Significa "
+      company: '@Significa '
     - github: kaaps
       avatar: https://avatars.githubusercontent.com/u/6265625?v=4
       name: kaaps
@@ -2347,20 +1991,20 @@
       avatar: https://avatars.githubusercontent.com/u/98809371?v=4
       name: Filipe Ferreira
       location: Porto, Portugal
-      company: "@significa"
+      company: '@significa'
     - github: danilowoz
       twitter: danilowoz
       url: https://danilowoz.com
       avatar: https://avatars.githubusercontent.com/u/4838076?v=4
       name: Danilo Woznica
-      company: "@resend"
+      company: '@resend'
     - github: tofran
       twitter: tofran_
       url: https://tofran.com
       avatar: https://avatars.githubusercontent.com/u/5692603?v=4
       name: Francisco Marques
       location: Portugal
-      company: "@significa"
+      company: '@significa'
 - title: shadcn-svelte
   url: https://shadcn-svelte.com
   site_src: https://github.com/huntabyte/shadcn-svelte/tree/96e8866/docs
@@ -2410,42 +2054,6 @@
       name: Hubbe
       location: Sweden
       company: Fem Punkter AB
-- title: learn.svelte.dev
-  url: https://learn.svelte.dev
-  repo: https://github.com/sveltejs/learn.svelte.dev
-  description: A soup-to-nuts interactive tutorial on how to build apps with Svelte.
-  uses:
-    - Vercel
-    - PNPM
-    - Prism
-    - MarkedJS
-    - CodeMirror
-  tags:
-    - community
-    - docs
-    - education
-    - open source
-    - tutorial
-  date_created: 2023-05-15T00:00:00.000Z
-  date_added: 2023-07-27T00:00:00.000Z
-  slug: learn.svelte.dev
-  repo_stars: 543
-  contributors:
-    - github: Rich-Harris
-      avatar: https://avatars.githubusercontent.com/u/1162160?v=4
-      name: Rich Harris
-      location: NYC
-    - github: dummdidumm
-      twitter: dummdidumm_
-      avatar: https://avatars.githubusercontent.com/u/5968653?v=4
-      name: Simon H
-      location: Germany
-      company: Vercel
-    - github: tomoam
-      twitter: tomoam_mat
-      avatar: https://avatars.githubusercontent.com/u/29677552?v=4
-      name: tomoam
-      location: Tokyo, Japan
 - title: Dotfyle
   url: https://dotfyle.com
   repo: https://github.com/codicocodes/dotfyle
@@ -2520,7 +2128,7 @@
       avatar: https://avatars.githubusercontent.com/u/59029985?v=4
       name: Specy
       location: Italy
-      company: "@discerns-ai"
+      company: '@discerns-ai'
 - title: Open WebUI
   url: https://docs.openwebui.com
   repo: https://github.com/open-webui/open-webui
@@ -2550,7 +2158,7 @@
       avatar: https://avatars.githubusercontent.com/u/25473318?v=4
       name: Tim Baek
       location: localhost
-      company: "@open-webui"
+      company: '@open-webui'
     - github: Classic298
       avatar: https://avatars.githubusercontent.com/u/27028174?v=4
       name: Classic298
@@ -2611,7 +2219,7 @@
       avatar: https://avatars.githubusercontent.com/u/36593685?v=4
       name: Daniel Dietzler
       location: Germany
-      company: "@immich-app "
+      company: '@immich-app '
 - title: Auth starter app
   url: https://passlock.dev
   repo: https://github.com/passlock-dev/passlock
@@ -2666,13 +2274,13 @@
       avatar: https://avatars.githubusercontent.com/u/234708?v=4
       name: Scott Spence
       location: London, United Kingdom
-      company: "@XtendOps-developers"
+      company: '@XtendOps-developers'
     - github: renovate-bot
       twitter: renovatebot
       url: https://mend.io/renovate/
       avatar: https://avatars.githubusercontent.com/u/25180681?v=4
       name: Mend Renovate
-      company: "@mend"
+      company: '@mend'
 - title: barnsworthburning
   url: https://barnsworthburning.net
   repo: https://github.com/Aias/barnsworthburning
