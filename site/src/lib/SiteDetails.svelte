@@ -19,16 +19,19 @@
   )
 
   let tools = $derived(
-    uses.map((tool) => {
-      const href = uses_links[tool.toLowerCase()]
-      if (!href) {
-        console.error(`Unknown tool: ${tool}`)
-      } else if (!href.startsWith(`https`)) {
-        // All tools should have an https URL
-        throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
-      }
-      return [tool, href]
-    }),
+    uses
+      .map((tool) => {
+        const href = uses_links[tool.toLowerCase()]
+        if (!href) {
+          console.error(`Unknown tool: ${tool}`)
+          return null
+        }
+        if (!href.startsWith(`https`)) {
+          throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
+        }
+        return [tool, href]
+      })
+      .filter((entry) => entry !== null),
   )
 </script>
 
