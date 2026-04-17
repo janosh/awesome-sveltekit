@@ -43,13 +43,13 @@
       avatar: https://avatars.githubusercontent.com/u/1519870?v=4
       name: Dominic Gannaway
       location: London, United Kingdom
-      company: '@attio'
+      company: "@attio"
     - github: tanhauhau
       url: https://twitter.com/lihautan
       avatar: https://avatars.githubusercontent.com/u/2338632?v=4
       name: Tan Li Hau
       location: Singapore
-      company: '@Shopee'
+      company: "@Shopee"
 - title: Official SvelteKit docs
   url: https://kit.svelte.dev
   repo: https://github.com/sveltejs/kit
@@ -214,12 +214,12 @@
       avatar: https://avatars.githubusercontent.com/u/1419286?v=4
       name: Milan Pavlik
       location: Prague, CZE
-      company: '@gitpod-io'
+      company: "@gitpod-io"
     - github: geropl
       avatar: https://avatars.githubusercontent.com/u/32448529?v=4
       name: Gero Posmyk-Leinemann
       location: Germany
-      company: '@gitpod-io '
+      company: "@gitpod-io "
     - github: aledbf
       twitter: aledbf
       url: https://www.linkedin.com/in/aledbf/
@@ -229,14 +229,14 @@
     - github: roboquat
       avatar: https://avatars.githubusercontent.com/u/87151047?v=4
       name: Robo Quat
-      company: '@gitpod'
+      company: "@gitpod"
     - github: csweichel
       twitter: csweichel
       url: https://csweichel.de
       avatar: https://avatars.githubusercontent.com/u/3210701?v=4
       name: Christian Weichel
       location: Kiel, Germany
-      company: '@gitpod-io '
+      company: "@gitpod-io "
 - title: puruvj.dev
   url: https://puruvj.dev
   repo: https://github.com/puruvj/puruvjdev3
@@ -282,13 +282,13 @@
       avatar: https://avatars.githubusercontent.com/u/234708?v=4
       name: Scott Spence
       location: London, United Kingdom
-      company: '@XtendOps-developers'
+      company: "@XtendOps-developers"
     - github: renovate-bot
       twitter: renovatebot
       url: https://mend.io/renovate/
       avatar: https://avatars.githubusercontent.com/u/25180681?v=4
       name: Mend Renovate
-      company: '@mend'
+      company: "@mend"
 - title: Beatbump
   url: https://beatbump.io
   repo: https://github.com/snuffyDev/beatbump
@@ -409,7 +409,7 @@
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
-      company: '@svelte-society '
+      company: "@svelte-society "
 - title: Flayks
   url: https://flayks.com
   description: >-
@@ -458,7 +458,7 @@
       url: https://github.com/actions
       avatar: https://avatars.githubusercontent.com/u/65916846?v=4
       name: actions-user
-      company: '@actions'
+      company: "@actions"
 - title: Level Up Tutorials
   url: https://leveluptutorials.com
   description: Video tutorials for web developers and designers.
@@ -527,12 +527,12 @@
       avatar: https://avatars.githubusercontent.com/u/19785650?v=4
       name: Michael West
       location: United Kingdom
-      company: '@microsoft'
+      company: "@microsoft"
     - github: marcelwgn
       twitter: marcelwgndev
       avatar: https://avatars.githubusercontent.com/u/16122379?v=4
       name: Marcel W.
-      company: '@microsoft'
+      company: "@microsoft"
 - title: Svelte Summit Fall 2021
   url: https://sveltesummit.com
   repo: https://github.com/svelte-society/svelte-summit
@@ -558,7 +558,7 @@
       avatar: https://avatars.githubusercontent.com/u/534488?v=4
       name: Kevin Åberg Kultalahti
       location: Sweden
-      company: '@svelte-society '
+      company: "@svelte-society "
     - github: Wolfr
       twitter: wolfr_2
       url: https://obra.studio
@@ -604,7 +604,7 @@
       avatar: https://avatars.githubusercontent.com/u/14755525?v=4
       name: Moritz Mähr
       location: Bern & Zurich
-      company: '@DHBern & @eth-library'
+      company: "@DHBern & @eth-library"
     - github: thodel
       url: https://dh.unibe.ch
       avatar: https://avatars.githubusercontent.com/u/18015683?v=4
@@ -634,13 +634,13 @@
       url: https://russellsamora.github.io
       avatar: https://avatars.githubusercontent.com/u/324631?v=4
       name: Russell Samora
-      company: '@the-pudding'
+      company: "@the-pudding"
     - github: jadiehm
       twitter: jadiehm
       avatar: https://avatars.githubusercontent.com/u/10521931?v=4
       name: Jan Diehm
       location: San Antonio
-      company: '@the-pudding '
+      company: "@the-pudding "
     - github: mmcghee18
       twitter: mich_mcghee
       url: >-
@@ -676,7 +676,7 @@
       avatar: https://avatars.githubusercontent.com/u/50108258?v=4
       name: 藍+85CD
       location: (intermediate value)
-      company: '@moeru-ai'
+      company: "@moeru-ai"
 - title: connorrothschild.com
   url: https://connorrothschild.com
   repo: https://github.com/connorrothschild/v4
@@ -802,7 +802,7 @@
       url: https://sidharth.dev
       avatar: https://avatars.githubusercontent.com/u/10703445?v=4
       name: Sidharth Vinod
-      company: '@Mermaid-Chart'
+      company: "@Mermaid-Chart"
     - github: knsv
       avatar: https://avatars.githubusercontent.com/u/5837277?v=4
       name: Knut Sveidqvist
@@ -816,7 +816,7 @@
       url: https://github.com/actions
       avatar: https://avatars.githubusercontent.com/u/65916846?v=4
       name: actions-user
-      company: '@actions'
+      company: "@actions"
     - github: huynhicode
       url: https://www.huynhicode.dev/
       avatar: https://avatars.githubusercontent.com/u/35910788?v=4
@@ -854,7 +854,7 @@
       avatar: https://avatars.githubusercontent.com/u/556934?v=4
       name: Eric Simons
       location: San Francisco, CA
-      company: '@StackBlitz'
+      company: "@StackBlitz"
     - github: pngwn
       twitter: evilpingwin
       avatar: https://avatars.githubusercontent.com/u/12937446?v=4
@@ -913,7 +913,7 @@
       avatar: https://avatars.githubusercontent.com/u/35429197?v=4
       name: Samuel Stroschein
       location: SF / NYC
-      company: '@opral'
+      company: "@opral"
     - github: LorisSigrist
       twitter: loris_sigrist
       url: https://sigrist.dev
@@ -975,7 +975,7 @@
       avatar: https://avatars.githubusercontent.com/u/10342829?v=4
       name: Seppe Dekeyser
       location: Belgium
-      company: '@Edu-Tech-Group '
+      company: "@Edu-Tech-Group "
     - github: fehnomenal
       url: https://fehn.systems
       avatar: https://avatars.githubusercontent.com/u/9959940?v=4
@@ -1126,7 +1126,7 @@
       avatar: https://avatars.githubusercontent.com/u/195918?v=4
       name: Hunter Perrin
       location: San Diego, CA
-      company: '@sciactive'
+      company: "@sciactive"
     - github: fiorelorenzo
       avatar: https://avatars.githubusercontent.com/u/29930922?v=4
       name: Lorenzo Fiore
@@ -1216,7 +1216,7 @@
     - github: ItsMeBrianD
       twitter: BrianDonald_
       avatar: https://avatars.githubusercontent.com/u/10779616?v=4
-      name: 'Brian D '
+      name: "Brian D "
       location: Lincoln, NE
     - github: hughess
       url: https://evidence.dev
@@ -1230,69 +1230,16 @@
       avatar: https://avatars.githubusercontent.com/u/58074498?v=4
       name: Archie Sarre Wood
       location: Toronto, ON
-      company: '@evidence-dev '
+      company: "@evidence-dev "
     - github: zachstence
       url: https://linkedin.com/in/zachary-stence
       avatar: https://avatars.githubusercontent.com/u/31896377?v=4
       name: Zach Stence
       location: Grand Prairie, TX
-      company: '@evidence-dev'
+      company: "@evidence-dev"
     - github: csjh
       avatar: https://avatars.githubusercontent.com/u/61282104?v=4
       name: csjh
-- title: Coolify
-  url: https://coolify.io
-  repo: https://github.com/coollabsio/coolify
-  description: An open-source &amp; self-hostable Heroku / Netlify alternative.
-  uses:
-    - PNPM
-    - TypeScript
-    - Tailwind
-    - sveltekit-i18n
-    - PostCSS
-    - Husky
-  tags:
-    - databases
-    - deployment
-    - docker
-    - mongodb
-    - open source
-    - redis
-    - self-hosting
-    - sql
-  date_created: 2021-03-24T00:00:00.000Z
-  date_added: 2022-05-10T00:00:00.000Z
-  slug: coolify
-  repo_stars: 50102
-  contributors:
-    - github: andrasbacsai
-      twitter: heyandras
-      url: https://coolify.io
-      avatar: https://avatars.githubusercontent.com/u/5845193?v=4
-      name: Andras Bacsai
-      location: Székesfehérvár, Hungary
-      company: '@coollabsio'
-    - github: peaklabs-dev
-      twitter: peaklabs_dev
-      avatar: https://avatars.githubusercontent.com/u/122374094?v=4
-      name: 🏔️ Peak
-      location: 🏔️ Peak One
-      company: '@coollabsio '
-    - github: ShadowArcanist
-      url: https://shadowarcanist.com
-      avatar: https://avatars.githubusercontent.com/u/162910371?v=4
-      name: ShadowArcanist
-      company: '@coollabsio (Coolify), @Airoflare '
-    - github: ijpatricio
-      twitter: PatricioOnCode
-      url: https://jpat.dev
-      avatar: https://avatars.githubusercontent.com/u/26031459?v=4
-      name: Patricio
-    - github: yipfram
-      url: https://www.rrchs.fr
-      avatar: https://avatars.githubusercontent.com/u/46826777?v=4
-      name: Romain ROCHAS
-      location: Lyon, France
 - title: Flowbite
   url: https://flowbite-svelte.com
   repo: https://github.com/themesberg/flowbite-svelte
@@ -1582,7 +1529,7 @@
       avatar: https://avatars.githubusercontent.com/u/15649739?v=4
       name: hugocasa
       location: Switzerland
-      company: '@windmill-labs '
+      company: "@windmill-labs "
     - github: fatonramadani
       avatar: https://avatars.githubusercontent.com/u/456655?v=4
       name: Faton Ramadani
@@ -1632,7 +1579,7 @@
       avatar: https://avatars.githubusercontent.com/u/3834780?v=4
       name: Micheal Parks
       location: New York City
-      company: '@viamrobotics'
+      company: "@viamrobotics"
     - github: DefinitelyMaybe
       twitter: 0Rawr
       url: https://definitelymaybe.github.io/
@@ -1675,7 +1622,7 @@
       avatar: https://avatars.githubusercontent.com/u/13417496?v=4
       name: Kabir Goel
       location: Berkeley, CA
-      company: '@cartesia-ai'
+      company: "@cartesia-ai"
 - title: Hexapipes
   url: https://hexapipes.vercel.app
   repo: https://github.com/gereleth/hexapipes
@@ -2036,13 +1983,13 @@
       avatar: https://avatars.githubusercontent.com/u/234708?v=4
       name: Scott Spence
       location: London, United Kingdom
-      company: '@XtendOps-developers'
+      company: "@XtendOps-developers"
     - github: renovate-bot
       twitter: renovatebot
       url: https://mend.io/renovate/
       avatar: https://avatars.githubusercontent.com/u/25180681?v=4
       name: Mend Renovate
-      company: '@mend'
+      company: "@mend"
 - title: SvelteKit static blog starter
   url: https://sveltekit-static-starter.netlify.app
   repo: https://github.com/josh-collinsworth/sveltekit-blog-starter
@@ -2073,7 +2020,7 @@
       avatar: https://avatars.githubusercontent.com/u/22334764?v=4
       name: Josh Collinsworth
       location: Kansas City area
-      company: '@denoland '
+      company: "@denoland "
 - title: svelte-put
   url: https://svelte-put.vnphanquang.com
   repo: https://github.com/vnphanquang/svelte-put
@@ -2177,7 +2124,7 @@
       avatar: https://avatars.githubusercontent.com/u/30090495?v=4
       name: Rohit Kashyap
       location: Bengaluru, India
-      company: '@zeptonow'
+      company: "@zeptonow"
 - title: svelte-legos
   url: https://svelte-legos.surge.sh
   repo: https://github.com/ankurrsinghal/svelte-legos
@@ -2286,13 +2233,13 @@
       avatar: https://avatars.githubusercontent.com/u/25119303?v=4
       name: Nathan Sarrazin
       location: Karlsruhe, DE
-      company: '@apple'
+      company: "@apple"
     - github: gary149
       url: https://twitter.com/victormustar
       avatar: https://avatars.githubusercontent.com/u/3841370?v=4
       name: Victor Muštar
       location: Paris
-      company: '@huggingface'
+      company: "@huggingface"
     - github: coyotte508
       url: https://coyo.dev
       avatar: https://avatars.githubusercontent.com/u/342922?v=4
@@ -2359,8 +2306,8 @@
       url: https://ricciuti.me
       avatar: https://avatars.githubusercontent.com/u/26281609?v=4
       name: Paolo Ricciuti
-      location: 'Campobasso '
-      company: '@mainmatter '
+      location: "Campobasso "
+      company: "@mainmatter "
     - github: SarcevicAntonio
       url: https://www.sarcevic.dev/
       avatar: https://avatars.githubusercontent.com/u/6685200?v=4
@@ -2392,7 +2339,7 @@
     - github: pdrbrnd
       avatar: https://avatars.githubusercontent.com/u/5202712?v=4
       name: Pedro Brandão
-      company: '@Significa '
+      company: "@Significa "
     - github: kaaps
       avatar: https://avatars.githubusercontent.com/u/6265625?v=4
       name: kaaps
@@ -2400,20 +2347,20 @@
       avatar: https://avatars.githubusercontent.com/u/98809371?v=4
       name: Filipe Ferreira
       location: Porto, Portugal
-      company: '@significa'
+      company: "@significa"
     - github: danilowoz
       twitter: danilowoz
       url: https://danilowoz.com
       avatar: https://avatars.githubusercontent.com/u/4838076?v=4
       name: Danilo Woznica
-      company: '@resend'
+      company: "@resend"
     - github: tofran
       twitter: tofran_
       url: https://tofran.com
       avatar: https://avatars.githubusercontent.com/u/5692603?v=4
       name: Francisco Marques
       location: Portugal
-      company: '@significa'
+      company: "@significa"
 - title: shadcn-svelte
   url: https://shadcn-svelte.com
   site_src: https://github.com/huntabyte/shadcn-svelte/tree/96e8866/docs
@@ -2573,7 +2520,7 @@
       avatar: https://avatars.githubusercontent.com/u/59029985?v=4
       name: Specy
       location: Italy
-      company: '@discerns-ai'
+      company: "@discerns-ai"
 - title: Open WebUI
   url: https://docs.openwebui.com
   repo: https://github.com/open-webui/open-webui
@@ -2603,7 +2550,7 @@
       avatar: https://avatars.githubusercontent.com/u/25473318?v=4
       name: Tim Baek
       location: localhost
-      company: '@open-webui'
+      company: "@open-webui"
     - github: Classic298
       avatar: https://avatars.githubusercontent.com/u/27028174?v=4
       name: Classic298
@@ -2664,7 +2611,7 @@
       avatar: https://avatars.githubusercontent.com/u/36593685?v=4
       name: Daniel Dietzler
       location: Germany
-      company: '@immich-app '
+      company: "@immich-app "
 - title: Auth starter app
   url: https://passlock.dev
   repo: https://github.com/passlock-dev/passlock
@@ -2719,13 +2666,13 @@
       avatar: https://avatars.githubusercontent.com/u/234708?v=4
       name: Scott Spence
       location: London, United Kingdom
-      company: '@XtendOps-developers'
+      company: "@XtendOps-developers"
     - github: renovate-bot
       twitter: renovatebot
       url: https://mend.io/renovate/
       avatar: https://avatars.githubusercontent.com/u/25180681?v=4
       name: Mend Renovate
-      company: '@mend'
+      company: "@mend"
 - title: barnsworthburning
   url: https://barnsworthburning.net
   repo: https://github.com/Aias/barnsworthburning
