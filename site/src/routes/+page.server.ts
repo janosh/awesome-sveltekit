@@ -15,6 +15,11 @@ export const load: ServerLoad = async () => {
       { cache: `force-cache`, headers },
     )
 
+    if (!response.ok) {
+      console.error(`GitHub API returned ${response.status}: ${response.statusText}`)
+      return { repo_contributors: [] }
+    }
+
     const repo_contributors = ((await response.json()) as RepoContributor[]).filter(
       (itm) => itm.type !== `Bot`,
     )

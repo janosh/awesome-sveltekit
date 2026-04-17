@@ -17,7 +17,7 @@
   {/if}
   {name ?? github}
   {#if twitter}
-    <a href="https://twitter.com/@{twitter}">
+    <a href="https://twitter.com/{twitter.replace(/^@/, ``)}">
       <Icon icon="fa-brands:twitter" inline />
     </a>
   {/if}

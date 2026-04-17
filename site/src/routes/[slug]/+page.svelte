@@ -35,9 +35,9 @@
   {#snippet children({ item, kind })}
     {@const [slug, site] = item as [string, Site]}
     <div style="max-width: 250px">
-      <h3 style:text-align={kind == `next` ? `right` : `left`}>
+      <h3 style:text-align={kind === `next` ? `right` : `left`}>
         <a href={slug}>
-          {@html kind == `next` ? `Next &rarr;` : `&larr; Previous`}
+          {@html kind === `next` ? `Next &rarr;` : `&larr; Previous`}
         </a>
       </h3>
       <SitePreview {site} />
