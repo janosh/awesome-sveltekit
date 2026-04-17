@@ -47,16 +47,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [CodeMirror], [Mapbox], [Docker]
 
-1. **[Coolify](https://coolify.io)**&nbsp;
-   [[code](https://github.com/coollabsio/coolify)]&ensp;
-   <a href="https://github.com/coollabsio/coolify/stargazers">
-   <img src="https://img.shields.io/github/stars/coollabsio/coolify?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   An open-source &amp; self-hostable Heroku / Netlify alternative.<br>
-
-   uses: [PNPM], [TypeScript], [Tailwind], [sveltekit-i18n], [PostCSS], [Husky]
-
 1. **[Official SvelteKit docs](https://kit.svelte.dev)**&nbsp;
    [[code](https://github.com/sveltejs/kit/tree/main/documentation/docs)]&ensp;
    <a href="https://github.com/sveltejs/kit/stargazers">
