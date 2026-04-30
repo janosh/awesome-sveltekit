@@ -823,3 +823,14 @@
   tags: [AI, reader, desktop app, open source]
   date_created: 2025-05-06
   date_added: 2026-01-31
+
+- title: Classic Klondike Solitaire
+    url: https://classicklondikesolitaire.com
+    repo:
+    description:
+      A highly optimized, zero dependency solitaire engine handling complex state management for over 100 mathematical game variations.
+      Built for instant load times and perfect mobile scaling with daily seeds and global leaderboards.
+    uses: [SvelteKit, TypeScript]
+    tags: [game, state management, performance, interactive]
+    date_created: 2024-12-01
+    date_added: 2026-03-29
