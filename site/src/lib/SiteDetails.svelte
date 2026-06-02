@@ -7,30 +7,30 @@
   import Person from './Person.svelte'
   import Screenshot from './Screenshot.svelte'
 
-  let { site, ...rest }: HTMLAttributes<HTMLElementTagNameMap[`section`]> & {
+  let {
+    site,
+    ...rest
+  }: HTMLAttributes<HTMLElementTagNameMap[`section`]> & {
     site: Site
   } = $props()
-  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(
-    site,
-  )
+  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(site)
 
   let days_since_created = $derived(
-    Math.floor((Date.now() - date_created.getTime()) / (1000 * 60 * 60 * 24)),
+    Math.floor((Date.now() - date_created.getTime()) / 86_400_000),
   )
 
   let tools = $derived(
-    uses
-      .flatMap((tool) => {
-        const href = uses_links[tool.toLowerCase()]
-        if (!href) {
-          console.error(`Unknown tool: ${tool}`)
-          return []
-        }
-        if (!href.startsWith(`https`)) {
-          throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
-        }
-        return [[tool, href]]
-      }),
+    uses.flatMap((tool) => {
+      const href = uses_links[tool.toLowerCase()]
+      if (!href) {
+        console.error(`Unknown tool: ${tool}`)
+        return []
+      }
+      if (!href.startsWith(`https`)) {
+        throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
+      }
+      return [[tool, href]]
+    }),
   )
 </script>
 
@@ -62,16 +62,15 @@
       <a href="{site.repo}/stargazers">{repo_stars.toLocaleString()}</a>
     </p>
   {/if}
-  {#if contributors?.length > 0}
+  {#if contributors?.length}
+    {@const contrib_label = contributors.length > 1 ? `Contributors` : `Creator`}
     <hr />
     <div class:flex={contributors.length === 1} style="margin: 1em 0">
       <Icon icon="octicon:person" style="margin-right: 1em" />
       {#if site.repo}
-        <a href="{site.repo}/contributors">
-          {contributors.length > 1 ? `Contributors` : `Creator`}
-        </a>
+        <a href="{site.repo}/contributors">{contrib_label}</a>
       {:else}
-        {contributors.length > 1 ? `Contributors` : `Creator`}
+        {contrib_label}
       {/if}
       {#if contributors.length > 1}
         <ol class="contributors">
@@ -94,7 +93,7 @@
       <span style="flex: 1"></span>
       <svelte:element
         this={site.repo ? `a` : `span`}
-        {...(site.repo ? { href: site.repo } : {})}
+        {...site.repo ? { href: site.repo } : {}}
         title="{days_since_created} days ago"
         {@attach tooltip()}
       >
@@ -102,7 +101,7 @@
       </svelte:element>
     </p>
   {/if}
-  {#if tags?.length > 0}
+  {#if tags.length > 0}
     <hr />
     <p class="tags flex">
       <Icon icon="octicon:tag" />&ensp;Tags&emsp;
@@ -111,7 +110,7 @@
       {/each}
     </p>
   {/if}
-  {#if tools && tools?.length > 0}
+  {#if tools.length > 0}
     <hr />
     <p class="uses flex">
       <Icon icon="octicon:stack-16" />&ensp;Uses&emsp;

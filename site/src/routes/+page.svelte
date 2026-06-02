@@ -14,7 +14,7 @@
   }
 
   const tags = Object.entries(tag_counts).filter(([, count]) => count > 2)
-  tags.sort(([t1], [t2]) => t1.localeCompare(t2))
+  tags.sort(([tag_a], [tag_b]) => tag_a.localeCompare(tag_b))
 
   const contributor_counts: Record<string, number> = {}
   for (const site of sites) {
@@ -27,33 +27,26 @@
   }
 
   const contributors = Object.entries(contributor_counts).toSorted(
-    (contrib1, contrib2) => contrib2[1] - contrib1[1],
+    (contributor_a, contributor_b) => contributor_b[1] - contributor_a[1],
   )
 
-  function arr_includes(
-    arr: string[],
-    values: string[],
-    mode: `all` | `any`,
-  ): boolean {
+  function arr_includes(arr: string[], values: string[], mode: `all` | `any`): boolean {
     if (values.length === 0) return true
     if (arr.length === 0) return false
-    if (mode === `all`) return values.every((val) => arr.includes(val))
-    if (mode === `any`) return values.some((val) => arr.includes(val))
-    throw new Error(`Unexpected filter mode=${mode}`)
+    return mode === `all`
+      ? values.every((value) => arr.includes(value))
+      : values.some((value) => arr.includes(value))
   }
 
   let sort_order: `asc` | `desc` = $state(`desc`)
-  let sort_factor = $derived.by(() => {
-    if (sort_order === `desc`) return 1
-    return -1
-  })
+  let sort_factor = $derived(sort_order === `desc` ? 1 : -1)
   $effect(() => {
     const filtered_sites = sites.filter((site) => {
-      const query_match = filters.search?.length === 0 ||
-        JSON.stringify(site).includes(filters.search)
+      const query_match =
+        filters.search === `` || JSON.stringify(site).includes(filters.search)
 
       const tag_match = arr_includes(
-        site.tags ?? [],
+        site.tags,
         filters.tags.map((t) => t.label), // Tags the site should have
         filters.tags_mode, // All or any
       )
@@ -66,16 +59,11 @@
       return query_match && tag_match && contrib_match
     })
 
-    if (sorted.by === `stars`) {
-      sorted.sites = filtered_sites.toSorted(
-        (siteA, siteB) =>
-          sort_factor * ((siteB.repo_stars ?? 0) - (siteA.repo_stars ?? 0)),
-      )
-    } else if (sorted.by === `date`) {
-      sorted.sites = filtered_sites.toSorted(
-        (siteA, siteB) => sort_factor * (Number(siteB.date_created) - Number(siteA.date_created)),
-      )
-    }
+    const sort_value = (site: (typeof sites)[number]) =>
+      sorted.by === `stars` ? (site.repo_stars ?? 0) : Number(site.date_created)
+    sorted.sites = filtered_sites.toSorted(
+      (site_a, site_b) => sort_factor * (sort_value(site_b) - sort_value(site_a)),
+    )
   })
 
   const meta_description = `Awesome examples of SvelteKit sites in the wild`
@@ -109,7 +97,7 @@
   {#if sorted.sites.length < sites.length}
     <p>
       <span>{sorted.sites.length}</span> match{sorted.sites.length !== 1 ? `es` : ``}
-      {#if sorted.sites?.length === 0}
+      {#if sorted.sites.length === 0}
         (try different filters)
       {/if}
     </p>
@@ -135,9 +123,10 @@
   /> this list?
   <a href="{repository}/edit/main/sites.yml">
     <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt" />
-    PRs welcome</a>! This collection is meant as a learning resource for Svelte devs.
-  While a site with private code can give inspiration, there's little educational value if
-  you can't inspect how it was made.
+    PRs welcome</a
+  >! This collection is meant as a learning resource for Svelte devs. While a site with
+  private code can give inspiration, there's little educational value if you can't inspect
+  how it was made.
 </p>
 
 <p style="max-width: 40em">

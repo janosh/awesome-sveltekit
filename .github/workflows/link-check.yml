@@ -36,4 +36,8 @@ jobs:
             --exclude 'parks.lol'
             --exclude 'aiqino.netlify.app'
             --exclude 'highlightjs.org'
+            --exclude 'mvasigh.dev'
+            --exclude 'deepwiki.netlify.app'
+            --exclude 'houdinigraphql.com'
+            --exclude '//davjhan.com'
             -- ./**/*.{md,svelte,ts,yml}

@@ -7,7 +7,7 @@ export const load: ServerLoad = async () => {
     // Try to fetch contributors with GitHub token if available in environment
     const headers: Record<string, string> = {}
     const github_token = process.env.GITHUB_TOKEN
-    if (github_token !== undefined && github_token !== ``) {
+    if (github_token) {
       headers.Authorization = `token ${github_token}`
     }
 
@@ -22,7 +22,7 @@ export const load: ServerLoad = async () => {
     }
 
     const repo_contributors = ((await response.json()) as RepoContributor[]).filter(
-      (itm) => itm.type !== `Bot`,
+      (contributor) => contributor.type !== `Bot`,
     )
     return { repo_contributors }
   } catch (error) {

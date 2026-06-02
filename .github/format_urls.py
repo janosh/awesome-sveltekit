@@ -20,7 +20,7 @@ def main() -> int:
             "(.*https?://.+)/(\\s|\\?|$)", r"\g<1>\g<2>", text, flags=re.MULTILINE
         )
 
-        with open(filename, "w") as file:
+        with open(filename, mode="w") as file:
             file.write(text)
 
     return 0

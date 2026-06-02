@@ -2,8 +2,8 @@ import type { Site } from './index'
 
 export const filters = $state<{
   search: string
-  tags: { label: string; value: string; count: number }[]
-  contributors: { label: string; value: string; count: number }[]
+  tags: { label: string; count: number }[]
+  contributors: { label: string; count: number }[]
   contributors_mode: `all` | `any`
   tags_mode: `all` | `any`
 }>({

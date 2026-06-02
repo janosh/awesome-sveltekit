@@ -16,10 +16,12 @@ jobs:
       - name: Set up node
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Install deps
-        run: npm install
+        # --ignore-scripts skips puppeteer/sharp build scripts (not needed for
+        # lint) which pnpm otherwise gates behind interactive approval
+        run: corepack enable && pnpm install --ignore-scripts
         working-directory: site
 
       - name: Run prek

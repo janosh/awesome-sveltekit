@@ -12,12 +12,12 @@ export type Action = (typeof action_types)[number]
 
 if (import.meta.main) {
   const raw_action = process.env.ACTION ?? `add-missing`
-  if (!action_types.includes(raw_action as Action)) {
+  const action = action_types.find((action_type) => action_type === raw_action)
+  if (!action) {
     throw new Error(
       `Invalid ACTION="${raw_action}", must be one of: ${action_types.join(`, `)}`,
     )
   }
-  const action = raw_action as Action
   await fetch_github_metadata({ action })
   update_readme()
 

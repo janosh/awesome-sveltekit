@@ -5,7 +5,12 @@
   import Screenshot from './Screenshot.svelte'
   import { filters } from './state.svelte'
 
-  let { site, idx = 0, tags = false, ...rest }: HTMLAttributes<HTMLAnchorElement> & {
+  let {
+    site,
+    idx = 0,
+    tags = false,
+    ...rest
+  }: HTMLAttributes<HTMLAnchorElement> & {
     site: Site
     idx?: number
     tags?: boolean
@@ -30,7 +35,7 @@
   <p class="tags flex">
     <Icon icon="octicon:tag" style="margin: 0 1ex 0 0" />
     {#each site.tags as tag (tag)}
-      <small class:active={filters.tags.find((t) => t.label === tag)}>
+      <small class:active={filters.tags.some((filter_tag) => filter_tag.label === tag)}>
         {tag}
       </small>
     {/each}
