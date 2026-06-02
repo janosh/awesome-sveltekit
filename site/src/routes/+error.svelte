@@ -3,7 +3,7 @@
   import { homepage, name } from '$site/package.json'
   import Icon from '@iconify/svelte'
 
-  let online: boolean = $state(true)
+  let online = $state(true)
 </script>
 
 <svelte:head>
@@ -20,7 +20,7 @@
       <a href="{homepage}/issues" target="_blank" rel="noreferrer">GitHub</a>. Thanks! 🙏
     </p>
   {/if}
-  {#if online === false}
+  {#if !online}
     Looks like you're offline. If you think your connection is fine, check the
     <a href="https://githubstatus.com">GitHub status page</a>
     as this site is hosted by &thinsp;<Icon icon="octicon:mark-github" inline />&thinsp;

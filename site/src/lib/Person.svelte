@@ -1,11 +1,10 @@
 <script lang="ts">
   import Icon from '@iconify/svelte'
   import type { HTMLAttributes } from 'svelte/elements'
-  import type { Contributor } from './index'
+  import type { SiteAuthor } from './index'
 
-  let { person, ...rest }: HTMLAttributes<HTMLSpanElement> & {
-    person: Contributor
-  } = $props()
+  let { person, ...rest }: { person: SiteAuthor } & HTMLAttributes<HTMLSpanElement> =
+    $props()
 
   let { name, twitter, github, url, avatar } = $derived(person)
 </script>

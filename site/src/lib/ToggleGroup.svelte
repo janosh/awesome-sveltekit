@@ -1,7 +1,11 @@
 <script lang="ts">
   import type { HTMLAttributes } from 'svelte/elements'
 
-  let { value = $bindable(), options, ...rest }: HTMLAttributes<HTMLDivElement> & {
+  let {
+    value = $bindable(),
+    options,
+    ...rest
+  }: HTMLAttributes<HTMLDivElement> & {
     value: string
     options: Record<string, string>
   } = $props()

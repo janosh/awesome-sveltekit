@@ -8,7 +8,7 @@
   let { data } = $props()
 
   let head_title = $derived(`${data.site.title} | Awesome SvelteKit`)
-  let plain_description = $derived(data.site?.description?.replaceAll(/<[^>]*>/gu, ``))
+  let plain_description = $derived(data.site.description?.replaceAll(/<[^>]*>/gu, ``))
 </script>
 
 <svelte:head>
@@ -29,7 +29,7 @@
   <SiteDetails site={data.site} />
 </main>
 <PrevNext
-  items={data.sites?.map((site) => [site.slug, site])}
+  items={data.sites.map((site) => [site.slug, site])}
   current={data.slug}
   style="max-width: var(--main-max-width)"
 >
@@ -87,7 +87,9 @@
     position: absolute;
     top: 2em;
     left: 2em;
-    transition: color 0.3s, background-color 0.3s;
+    transition:
+      color 0.3s,
+      background-color 0.3s;
   }
   a.back:hover {
     background: rgba(255, 255, 255, 0.4);

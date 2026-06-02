@@ -809,7 +809,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [octokit]: https://github.com/octokit/octokit.js
 [ogl]: https://github.com/oframe/ogl
 [panzoom]: https://github.com/timmywil/panzoom
-[passlock]: https://github.com/passlock-dev/passkeys
+[passlock]: https://github.com/passlock-dev/passlock
 [picocss]: https://picocss.com
 [plausible]: https://plausible.io
 [playwright]: https://playwright.dev

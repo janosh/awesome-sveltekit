@@ -2,15 +2,15 @@
 saves them as AVIF to site/static/screenshots. */
 
 import type { Site } from '$lib'
-import yaml from 'js-yaml'
+import { load } from 'js-yaml'
 import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
 import process from 'node:process'
-import puppeteer from 'puppeteer'
+import { launch } from 'puppeteer'
 import sharp from 'sharp'
 import type { Action } from './'
 
-type Browser = Awaited<ReturnType<typeof puppeteer.launch>>
+type Browser = Awaited<ReturnType<typeof launch>>
 type Page = Awaited<ReturnType<Browser[`newPage`]>>
 
 async function goto_site(page: Page, url: string): Promise<void> {
@@ -31,16 +31,16 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
   const screenshot_dir = `../site/static/screenshots`
 
   const sites = (
-    yaml.load(fs.readFileSync(`../site/src/sites.yml`, `utf8`)) as Site[]
+    load(fs.readFileSync(`../site/src/sites.yml`, `utf8`)) as Site[]
   ).toSorted((s1, s2) => s1.title.localeCompare(s2.title))
 
-  const browser = await puppeteer.launch()
+  const browser = await launch()
   const page = await browser.newPage()
 
   fs.mkdirSync(screenshot_dir, { recursive: true })
 
-  const screenshots_arg = process.argv.find((arg) => arg.startsWith(`screenshots:`))
-  if (action && ![`add-missing`, `update-existing`].includes(action)) {
+  if (action === `make-screenshots`) {
+    const screenshots_arg = process.argv.find((arg) => arg.startsWith(`screenshots:`))
     throw new Error(
       `Correct usage: vite [dev] screenshots:[report|download|re-download], got ${screenshots_arg}\n`,
     )
@@ -49,7 +49,7 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
   const msg = {
     'add-missing': `Adding screenshots for sites without them`,
     'update-existing': `Updating all existing screenshots`,
-  }[action as string]
+  }[action]
   console.warn(msg)
 
   const created: string[] = []
@@ -63,37 +63,32 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
     const img_path = `${screenshot_dir}/${slug}.avif`
     const img_exists = fs.existsSync(img_path)
 
-    const should_skip_existing = action !== `update-existing` && img_exists
-    if (should_skip_existing) {
+    if (action !== `update-existing` && img_exists) {
       existed.push(site.slug)
-    } else {
-      console.warn(`${idx + 1}/${sites.length}: ${slug}`)
-
-      let should_skip = false
-      try {
-        await goto_site(page, site.url)
-      } catch (error) {
-        console.warn(`skipping ${slug} due to ${String(error)}`)
-        skipped.push(site.slug)
-        should_skip = true
-      }
-
-      if (!should_skip) {
-        // Wait for sites with on-load animations to settle
-        await new Promise<void>((resolve) => {
-          setTimeout(resolve, 2000)
-        })
-        await page.setViewport({ height: 900, width: 1200 })
-        const hires = await page.screenshot()
-        await page.setViewport({ deviceScaleFactor: 0.5, height: 900, width: 1200 })
-        const lores = await page.screenshot()
-        await sharp(hires).toFile(img_path)
-        await sharp(lores).toFile(`${screenshot_dir}/${slug}.small.avif`)
-
-        if (img_exists) updated.push(site.slug)
-        else created.push(site.slug)
-      }
+      continue
     }
+
+    console.warn(`${idx + 1}/${sites.length}: ${slug}`)
+
+    try {
+      await goto_site(page, site.url)
+    } catch (error) {
+      console.warn(`skipping ${slug} due to ${String(error)}`)
+      skipped.push(site.slug)
+      continue
+    }
+
+    // Wait for sites with on-load animations to settle
+    await new Promise<void>((resolve) => setTimeout(resolve, 2000))
+    await page.setViewport({ height: 900, width: 1200 })
+    const hires = await page.screenshot()
+    await page.setViewport({ deviceScaleFactor: 0.5, height: 900, width: 1200 })
+    const lores = await page.screenshot()
+    await sharp(hires).toFile(img_path)
+    await sharp(lores).toFile(`${screenshot_dir}/${slug}.small.avif`)
+
+    if (img_exists) updated.push(site.slug)
+    else created.push(site.slug)
   }
 
   await browser.close()

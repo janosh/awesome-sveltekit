@@ -8,8 +8,7 @@
   import type { Site } from './index'
   import SitePreview from './SitePreview.svelte'
 
-  let { sites, ...rest }: { sites: Site[] } & HTMLAttributes<HTMLOListElement> =
-    $props()
+  let { sites, ...rest }: { sites: Site[] } & HTMLAttributes<HTMLOListElement> = $props()
   let active_idx = $state(-1)
 
   function handle_keyup(event: KeyboardEvent) {
@@ -24,8 +23,11 @@
       Escape: -1,
     }[event.key]
     if (to !== undefined && to >= 0) active_idx = to
-    const active = document.querySelector(`ol > li.active`)
-    if (active) active.scrollIntoViewIfNeeded()
+    // scrollIntoViewIfNeeded is non-standard (WebKit/Blink only), missing from lib.dom
+    const active = document.querySelector<
+      Element & { scrollIntoViewIfNeeded?: () => void }
+    >(`ol > li.active`)
+    active?.scrollIntoViewIfNeeded?.()
   }
 </script>
 
