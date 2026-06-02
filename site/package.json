@@ -18,23 +18,25 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@iconify/svelte": "^5.2.1",
-    "@playwright/test": "^1.60.0",
-    "@rollup/plugin-yaml": "^4.1.2",
+    "@iconify/svelte": "^5.2.2",
+    "@janosh/vite-config": "github:janosh/dotfiles",
+    "@playwright/test": "^1.61.0",
+    "@rollup/plugin-yaml": "^5.0.0",
     "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.60.1",
+    "@sveltejs/kit": "^2.67.0",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^25.9.0",
-    "js-yaml": "^4.1.1",
-    "marked": "^18.0.4",
-    "puppeteer": "^25.0.4",
-    "sharp": "^0.34.5",
-    "svelte": "^5.55.8",
-    "svelte-check-rs": "^0.9.13",
-    "svelte-multiselect": "11.7.1",
+    "@types/node": "^26.0.0",
+    "js-yaml": "^5.1.0",
+    "marked": "^18.0.5",
+    "puppeteer": "^25.2.0",
+    "sharp": "^0.35.2",
+    "svelte": "^5.56.4",
+    "svelte-check-rs": "^0.10.1",
+    "svelte-multiselect": "11.7.2",
     "typescript": "6.0.3",
-    "vite": "^8.0.13",
-    "vite-plus": "latest"
-  }
+    "vite": "^8.0.16",
+    "vite-plus": "0.2.1"
+  },
+  "packageManager": "pnpm@11.5.0"
 }

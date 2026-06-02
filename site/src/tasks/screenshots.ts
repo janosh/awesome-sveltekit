@@ -2,15 +2,15 @@
 saves them as AVIF to site/static/screenshots. */
 
 import type { Site } from '$lib'
-import yaml from 'js-yaml'
+import { load } from 'js-yaml'
 import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
 import process from 'node:process'
-import puppeteer from 'puppeteer'
+import { launch } from 'puppeteer'
 import sharp from 'sharp'
 import type { Action } from './'
 
-type Browser = Awaited<ReturnType<typeof puppeteer.launch>>
+type Browser = Awaited<ReturnType<typeof launch>>
 type Page = Awaited<ReturnType<Browser[`newPage`]>>
 
 async function goto_site(page: Page, url: string): Promise<void> {
@@ -31,10 +31,10 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
   const screenshot_dir = `../site/static/screenshots`
 
   const sites = (
-    yaml.load(fs.readFileSync(`../site/src/sites.yml`, `utf8`)) as Site[]
+    load(fs.readFileSync(`../site/src/sites.yml`, `utf8`)) as Site[]
   ).toSorted((s1, s2) => s1.title.localeCompare(s2.title))
 
-  const browser = await puppeteer.launch()
+  const browser = await launch()
   const page = await browser.newPage()
 
   fs.mkdirSync(screenshot_dir, { recursive: true })

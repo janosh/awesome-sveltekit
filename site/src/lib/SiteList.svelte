@@ -25,7 +25,8 @@
     }[event.key]
     if (to !== undefined && to >= 0) active_idx = to
     const active = document.querySelector(`ol > li.active`)
-    if (active) active.scrollIntoViewIfNeeded()
+    // scrollIntoViewIfNeeded is non-standard (WebKit/Blink only), missing from lib.dom
+    if (active) (active as Element & { scrollIntoViewIfNeeded?: () => void }).scrollIntoViewIfNeeded?.()
   }
 </script>
 

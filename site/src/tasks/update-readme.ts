@@ -1,6 +1,6 @@
 /* This file parses sites.yml, then updates the list of sites in the readme. */
 
-import yaml from 'js-yaml'
+import { load } from 'js-yaml'
 import fs from 'node:fs'
 import type { Site } from '$lib'
 
@@ -9,7 +9,7 @@ export function update_readme(options: { readme_path?: string } = {}): void {
   const sites_path = `src/sites.yml`
 
   const readme = fs.readFileSync(readme_path, `utf8`)
-  const sites = yaml.load(fs.readFileSync(sites_path, `utf8`)) as Site[]
+  const sites = load(fs.readFileSync(sites_path, `utf8`)) as Site[]
 
   const new_line = `\n   `
 
@@ -26,7 +26,7 @@ export function update_readme(options: { readme_path?: string } = {}): void {
         let code_link = ``
         if (repo !== undefined && repo !== ``) {
           const [, repo_handle] = repo.split(`github.com/`)
-          if (repo_handle === undefined || repo_handle.split(`/`).length !== 2) {
+          if (repo_handle?.split(`/`).length !== 2) {
             throw new Error(`bad repo handle ${repo_handle}`)
           }
           const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
@@ -48,7 +48,7 @@ export function update_readme(options: { readme_path?: string } = {}): void {
     .join(`\n`)
 
   const uses_links = Object.entries(
-    yaml.load(fs.readFileSync(`../tools.yml`, `utf8`)) as Record<string, string>,
+    load(fs.readFileSync(`../tools.yml`, `utf8`)) as Record<string, string>,
   )
     .map(([name, url]) => `[${name}]: ${url}`)
     .join(`\n`)

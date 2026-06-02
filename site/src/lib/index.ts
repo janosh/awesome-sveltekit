@@ -19,10 +19,10 @@ export interface Site {
   date_created: Date
   slug: string
   repo_stars?: number
-  contributors?: Contributor[]
+  contributors?: SiteAuthor[]
 }
 
-export interface Contributor {
+export interface SiteAuthor {
   name: string
   url?: string
   twitter?: string

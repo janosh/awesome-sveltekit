@@ -11,5 +11,8 @@ jobs:
   build:
     uses: janosh/workflows/.github/workflows/nodejs-gh-pages.yml@main
     with:
-      node-version: 22
+      node-version: 24
       working-directory: site
+      # --ignore-scripts skips puppeteer/sharp build scripts (not needed to build
+      # the static site) which pnpm otherwise gates behind interactive approval
+      install-cmd: corepack enable && pnpm install --ignore-scripts

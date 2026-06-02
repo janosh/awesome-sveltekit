@@ -1,7 +1,8 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
   import { repository } from '$site/package.json'
-  import '$site/src/app.css'
+  // oxlint-disable-next-line no-unassigned-import
+  import '../app.css'
   import sites from '$site/src/sites.yml'
   import type { Snippet } from 'svelte'
   import { CmdPalette, GitHubCorner } from 'svelte-multiselect'

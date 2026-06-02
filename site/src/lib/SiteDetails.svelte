@@ -62,7 +62,7 @@
       <a href="{site.repo}/stargazers">{repo_stars.toLocaleString()}</a>
     </p>
   {/if}
-  {#if contributors?.length > 0}
+  {#if contributors && contributors.length > 0}
     <hr />
     <div class:flex={contributors.length === 1} style="margin: 1em 0">
       <Icon icon="octicon:person" style="margin-right: 1em" />

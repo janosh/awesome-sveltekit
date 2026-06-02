@@ -1,5 +1,5 @@
 <script lang="ts">
-  import MultiSelect from 'svelte-multiselect'
+  import MultiSelect, { type ObjectOption } from 'svelte-multiselect'
   import { filters, sort_by, sorted } from './state.svelte'
   import ToggleGroup from './ToggleGroup.svelte'
 
@@ -18,9 +18,10 @@
       placeholder="Filter by tag..."
       bind:selected={filters.tags}
     >
-      {#snippet option({ option }: { option: { label: string; count: number } })}
+      {#snippet option({ option })}
+        {@const opt = option as ObjectOption}
         <span style="display: flex">
-          {option.label} <span style="flex: 1"></span> {option.count}
+          {opt.label} <span style="flex: 1"></span> {opt.count}
         </span>
       {/snippet}
     </MultiSelect>
@@ -34,9 +35,10 @@
       placeholder="Filter by contributor..."
       bind:selected={filters.contributors}
     >
-      {#snippet option({ option }: { option: { label: string; count: number } })}
+      {#snippet option({ option })}
+        {@const opt = option as ObjectOption}
         <span style="display: flex">
-          {option.label} <span style="flex: 1"></span> {option.count}
+          {opt.label} <span style="flex: 1"></span> {opt.count}
         </span>
       {/snippet}
     </MultiSelect>
