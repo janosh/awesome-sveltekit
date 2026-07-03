@@ -4,6 +4,7 @@
     "strict": true,
     "module": "esnext",
     "target": "esnext",
+    "allowImportingTsExtensions": true,
     "moduleResolution": "bundler",
     "skipLibCheck": true,
 

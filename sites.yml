@@ -55,8 +55,7 @@
 - title: Guess The Year
   url: https://github.com/davjhan/guess-the-year-game
   repo: https://github.com/davjhan/guess-the-year-game
-  description:
-    Round-based browser game where you guess the year in which famous event happened.
+  description: Round-based browser game where you guess the year in which famous event happened.
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
   uses: [Tailwind, Netlify]
   tags: [game]
@@ -264,8 +263,7 @@
 - title: Layer Cake
   url: https://layercake.graphics
   repo: https://github.com/mhkeller/layercake
-  description:
-    Graphics framework for Svelte with colorful demo page. Can generate responsive
+  description: Graphics framework for Svelte with colorful demo page. Can generate responsive
     graphics server-side that work without JavaScript.
   uses: [D3, GitHub Pages, JSDoc, Mocha, Underscore]
   tags: [charts, dataviz, graphics, layers, canvas, WebGL]
@@ -295,8 +293,7 @@
 - title: SvelteKit on Edge
   url: https://sveltekit-on-the-edge.vercel.app
   repo: https://github.com/Rich-Harris/sveltekit-on-the-edge
-  description:
-    SvelteKit, running on the edge. In this case, Vercel's edge network.
+  description: SvelteKit, running on the edge. In this case, Vercel's edge network.
     See <https://twitter.com/leeerob/status/1517627769924034565>.
   uses: [PNPM, Vercel]
   tags: [speed, caching, deployment]
@@ -326,8 +323,7 @@
   url: https://janosh.github.io/matterviz
   repo: https://github.com/janosh/matterviz
   npm: https://npmjs.com/package/matterviz
-  description:
-    "Interactive visualizations for materials science: periodic tables, 3d crystal
+  description: "Interactive visualizations for materials science: periodic tables, 3d crystal
     structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps, scatter plots."
   uses:
     - TypeScript
@@ -536,8 +532,7 @@
 - title: Fireship
   url: https://fireship.io
   repo: https://github.com/fireship-io/fireship.io
-  description:
-    The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
+  description: The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
     (for static content management), Firebase for Auth and DB, Flamethrower for routing.
   uses: [Tailwind, Hugo, Firebase, Flamethrower, Sass, PostCSS, Algolia]
   tags: [education, tutorials, web dev]
@@ -548,8 +543,7 @@
   url: https://intl-explorer.com
   repo: https://github.com/jesperorb/intl-explorer
   description: A tool for experimenting and trying out the ECMAScript Internationalization API.
-  uses:
-    [TypeScript, PNPM, Playwright, Vercel, svelte-highlight, Husky, commitlint]
+  uses: [TypeScript, PNPM, Playwright, Vercel, svelte-highlight, Husky, commitlint]
   tags: [education, tutorials, web dev, interactive, playground]
   date_created: 2021-12-02
   date_added: 2022-11-27
@@ -577,8 +571,7 @@
 - title: SvelteKit static blog starter
   url: https://sveltekit-static-starter.netlify.app
   repo: https://github.com/josh-collinsworth/sveltekit-blog-starter
-  description:
-    A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDSvex, Rehype
+  description: A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDSvex, Rehype
     and background preloading.
   uses: [Netlify, MDsveX, Sass, Husky]
   tags: [blog starter, sass, markdown, mdsvex, page transitions, seo, rss]
@@ -616,8 +609,7 @@
 - title: Watch This
   url: https://github.com/StephDietz/watch-this/issues/28
   repo: https://github.com/StephDietz/watch-this
-  description:
-    Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
+  description: Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
     recommendations based on user input.
   uses: [TypeScript, Vercel, Tailwind]
   tags: [content recommendation, edge functions, machine learning]
@@ -692,8 +684,7 @@
   site_src: https://github.com/huntabyte/shadcn-svelte/tree/96e8866/docs
   repo: https://github.com/huntabyte/shadcn-svelte
   description: shadcn/ui, but for Svelte.
-  uses:
-    [TypeScript, Vercel, Tailwind, PNPM, Changesets, vitest, Prism, MarkedJS]
+  uses: [TypeScript, Vercel, Tailwind, PNPM, Changesets, vitest, Prism, MarkedJS]
   tags: [component library, community]
   date_created: 2023-05-15
   date_added: 2023-07-06
@@ -755,8 +746,7 @@
 - title: Svead
   url: https://svead.pages.dev
   repo: https://github.com/spences10/svead
-  description:
-    Svead 🍺, a component that allows you to set head meta information, canonical, title,
+  description: Svead 🍺, a component that allows you to set head meta information, canonical, title,
     Twitter and Facebook Open Graph tags, and schema.org data.
   uses:
     - TypeScript
@@ -799,8 +789,7 @@
   repo: https://github.com/VERT-sh/VERT
   description: A file converter that converts files client-side while being completely ad-free.
   uses: [TypeScript, Tailwind, Coolify, WASM, FFmpeg, libvips, Plausible]
-  tags:
-    [ffmpeg, conversion, wasm, vips, open source, graphics, video, audio, files]
+  tags: [ffmpeg, conversion, wasm, vips, open source, graphics, video, audio, files]
   date_created: 2024-11-12
   date_added: 2025-02-20
 
@@ -816,8 +805,7 @@
 - title: Saga Reader
   url: https://aiqino.netlify.app
   repo: https://github.com/sopaco/saga-reader
-  description:
-    Blazing-fast and extremely lightweight AI-powered internet reader.
+  description: Blazing-fast and extremely lightweight AI-powered internet reader.
     Your AI-driven think tank assistant built with Rust, Tauri and Svelte.
   uses: [Skeleton, Rust, Tauri, Netlify]
   tags: [AI, reader, desktop app, open source]
@@ -831,8 +819,7 @@
     SvelteKit and Convex starter for building SaaS products, with auth, billing,
     realtime data, AI, tests, deployment setup, and a kickstart prompt for coding
     agents.
-  uses:
-    [SvelteKit, Convex, Better Auth, Autumn, Tailwind, shadcn-svelte, Cloudflare]
+  uses: [SvelteKit, Convex, Better Auth, Autumn, Tailwind, shadcn-svelte, Cloudflare]
   tags: [SaaS, starter, template, Convex, auth, billing, AI, open source]
   date_created: 2026-05-17
   date_added: 2026-07-02

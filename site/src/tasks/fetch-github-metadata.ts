@@ -1,7 +1,7 @@
 /* This file parses sites.yml, fetches GH metadata like contributors
 and stars for each site, then writes the results to site/src/sites.yml. */
 
-import type { RepoContributor, Site } from '$lib'
+import type { RepoContributor, Site } from '../lib/index.ts'
 import { dump, load } from 'js-yaml'
 import { marked } from 'marked'
 import fs from 'node:fs'
@@ -97,8 +97,8 @@ export async function fetch_github_metadata(
       `https://api.github.com/repos/${repo_handle}/contributors`,
     )
     const contributors = raw_contributors
-      .filter((itm) => itm.contributions > 10 && itm.type === `User`)
-      .toSorted((c1, c2) => c2.contributions - c1.contributions)
+      .filter((person) => person.contributions > 10 && person.type === `User`)
+      .toSorted((person_a, person_b) => person_b.contributions - person_a.contributions)
       .slice(0, 5)
 
     const full_contributors = await Promise.all(
