@@ -60,7 +60,7 @@
     })
 
     const sort_value = (site: (typeof sites)[number]) =>
-      sorted.by === `stars` ? (site.repo_stars ?? 0) : Number(site.date_created)
+      sorted.by === `stars` ? (site.repo_stars ?? 0) : Date.parse(site.date_created)
     sorted.sites = filtered_sites.toSorted(
       (site_a, site_b) => sort_factor * (sort_value(site_b) - sort_value(site_a)),
     )
