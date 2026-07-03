@@ -15,8 +15,8 @@ export interface Site {
   site_src?: string
   tags: string[]
   uses: string[]
-  date_added: Date
-  date_created: Date
+  date_added: string
+  date_created: string
   slug: string
   repo_stars?: number
   contributors?: SiteAuthor[]

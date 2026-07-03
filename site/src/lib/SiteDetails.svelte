@@ -16,7 +16,7 @@
   let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(site)
 
   let days_since_created = $derived(
-    Math.floor((Date.now() - date_created.getTime()) / 86_400_000),
+    Math.floor((Date.now() - Date.parse(date_created)) / 86_400_000),
   )
 
   let tools = $derived(
@@ -97,7 +97,7 @@
         title="{days_since_created} days ago"
         {@attach tooltip()}
       >
-        {date_created.toISOString().split(`T`)[0]}
+        {date_created.split(`T`)[0]}
       </svelte:element>
     </p>
   {/if}

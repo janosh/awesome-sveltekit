@@ -1,0 +1,58 @@
+name: Generated site assets
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - sites.yml
+      - tools.yml
+      - readme.md
+      - site/package.json
+      - site/src/tasks/**
+      - site/src/sites.yml
+      - site/static/screenshots/**
+      - .github/workflows/generated-site-assets.yml
+
+jobs:
+  generated-site-assets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v6
+
+      - name: Set up node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install deps
+        run: corepack enable && pnpm install --ignore-scripts
+        working-directory: site
+
+      - name: Install Puppeteer Chrome
+        run: node_modules/.bin/puppeteer browsers install chrome
+        working-directory: site
+
+      - name: Run generated site tasks
+        run: pnpm site-tasks
+        working-directory: site
+        env:
+          ACTION: make-screenshots
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Check generated files
+        # git status --porcelain (unlike git diff) also catches untracked files,
+        # e.g. freshly created screenshots for a newly added site
+        run: |
+          generated_paths=(readme.md site/src/sites.yml site/static/screenshots)
+          if [[ -n "$(git status --porcelain -- "${generated_paths[@]}")" ]]; then
+            git status --short -- "${generated_paths[@]}"
+            git diff -- "${generated_paths[@]}"
+            msg="Generated site assets are out of date."
+            msg="$msg Run 'cd site && ACTION=make-screenshots pnpm site-tasks' and commit the changes."
+            echo "::error::$msg"
+            exit 1
+          fi

@@ -547,6 +547,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [TypeScript], [Playwright], [PostCSS], [Tailwind], [Release It], [Vercel]
 
+1. **[Auth starter app](https://passlock.dev)**&nbsp;
+   [[code](https://github.com/passlock-dev/passlock)]&ensp;
+   <a href="https://github.com/passlock-dev/passlock/stargazers">
+   <img src="https://img.shields.io/github/stars/passlock-dev/passlock?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   SvelteKit template featuring Passkeys, Social Sign in and more.<br>
+
+   uses: [passlock], [tailwind], [superforms], [lucia]
+
 1. **[sveltekit-mdsvex-blog](https://sveltekit-mdsvex-blog.netlify.app)**&nbsp;
    [[code](https://github.com/mvasigh/sveltekit-mdsvex-blog)]&ensp;
    <a href="https://github.com/mvasigh/sveltekit-mdsvex-blog/stargazers">
@@ -576,16 +586,6 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    A tool for experimenting and trying out the ECMAScript Internationalization API.<br>
 
    uses: [TypeScript], [PNPM], [Playwright], [Vercel], [svelte-highlight], [Husky], [commitlint]
-
-1. **[Auth starter app](https://passlock.dev)**&nbsp;
-   [[code](https://github.com/passlock-dev/passlock)]&ensp;
-   <a href="https://github.com/passlock-dev/passlock/stargazers">
-   <img src="https://img.shields.io/github/stars/passlock-dev/passlock?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   SvelteKit template featuring Passkeys, Social Sign in and more.<br>
-
-   uses: [passlock], [tailwind], [superforms], [lucia]
 
 1. **[Svead](https://svead.pages.dev)**&nbsp;
    [[code](https://github.com/spences10/svead)]&ensp;
@@ -672,6 +672,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
    An experimental commonplace book / digital garden with a richly interconnected set of links, notes, and ideas.<br>
 
    uses: [TypeScript], [Airtable], [Radix], [MarkedJS], [Cloudflare Pages]
+
+1. **[Product Plate](https://productplate.pages.dev)**&nbsp;
+   [[code](https://github.com/rodrgds/productplate)]&ensp;
+   <a href="https://github.com/rodrgds/productplate/stargazers">
+   <img src="https://img.shields.io/github/stars/rodrgds/productplate?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   SvelteKit and Convex starter for building SaaS products, with auth, billing, realtime data, AI, tests, deployment setup, and a kickstart prompt for coding agents.<br>
+
+   uses: [SvelteKit], [Convex], [Better Auth], [Autumn], [Tailwind], [shadcn-svelte], [Cloudflare]
 
 1. **[ConcertMash](https://concertmash.com)**&nbsp;
    [[code](https://github.com/mcmxcdev/ConcertMash)]&ensp;

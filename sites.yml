@@ -823,3 +823,14 @@
   tags: [AI, reader, desktop app, open source]
   date_created: 2025-05-06
   date_added: 2026-01-31
+
+- title: Product Plate
+  url: https://productplate.pages.dev
+  repo: https://github.com/rodrgds/productplate
+  description:
+    SvelteKit and Convex starter for building SaaS products, with auth, billing,
+    realtime data, AI, tests, deployment setup, and a kickstart prompt for coding agents.
+  uses: [SvelteKit, Convex, Better Auth, Autumn, Tailwind, shadcn-svelte, Cloudflare]
+  tags: [SaaS, starter, template, Convex, auth, billing, AI, open source]
+  date_created: 2026-05-17
+  date_added: 2026-07-02

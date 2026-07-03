@@ -39,5 +39,7 @@ jobs:
             --exclude 'mvasigh.dev'
             --exclude 'deepwiki.netlify.app'
             --exclude 'houdinigraphql.com'
+            --exclude 'sarcevic.dev'
+            --exclude 'fempunkter.se'
             --exclude '//davjhan.com'
             -- ./**/*.{md,svelte,ts,yml}
