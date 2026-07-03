@@ -1,7 +1,5 @@
-// CLI entrypoint for all generated-asset tasks. Runs directly with plain node:
-// ACTION=make-screenshots node src/tasks/index.ts [--lenient]
-// --lenient logs and skips steps whose requirements (GH_TOKEN, Chrome) are
-// missing instead of failing. Used by dev-server plugin in vite.config.ts.
+// CLI entrypoint for all generated-asset tasks. Use `pnpm site-tasks`.
+// --lenient logs and skips when requirements (GH_TOKEN, Chrome) are missing.
 
 import process from 'node:process'
 import { fetch_github_metadata } from './fetch-github-metadata.ts'
@@ -25,19 +23,15 @@ async function run_site_tasks(options: { action?: string; strict?: boolean } = {
     )
   }
 
-  async function try_run(label: string, callback: () => Promise<void> | void) {
-    try {
-      await callback()
-    } catch (error) {
-      if (strict) throw error
-      console.warn(`Skipping ${label}: ${error instanceof Error ? error.message : error}`)
+  try {
+    await fetch_github_metadata({ action })
+    update_readme()
+    if (action === `make-screenshots`) {
+      await make_screenshots({ action: `add-missing` })
     }
-  }
-
-  await try_run(`GitHub metadata`, () => fetch_github_metadata({ action }))
-  await try_run(`README update`, () => update_readme())
-  if (action === `make-screenshots`) {
-    await try_run(`screenshots`, () => make_screenshots({ action: `add-missing` }))
+  } catch (error) {
+    if (strict) throw error
+    console.warn(`Skipping site tasks: ${error instanceof Error ? error.message : error}`)
   }
 }
 

@@ -16,7 +16,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "site-tasks": "node src/tasks/index.ts"
+    "site-tasks": "node --env-file-if-exists=.env src/tasks/index.ts"
   },
   "devDependencies": {
     "@iconify/svelte": "^5.2.2",

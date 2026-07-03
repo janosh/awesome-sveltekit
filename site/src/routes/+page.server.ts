@@ -1,19 +1,15 @@
+import { env } from '$env/dynamic/private'
 import type { RepoContributor } from '$lib'
 import type { ServerLoad } from '@sveltejs/kit'
-import process from 'node:process'
 
 export const load: ServerLoad = async () => {
   try {
-    // Try to fetch contributors with GitHub token if available in environment
-    const headers: Record<string, string> = {}
-    const github_token = process.env.GITHUB_TOKEN
-    if (github_token) {
-      headers.Authorization = `token ${github_token}`
-    }
+    const github_token = env.GH_TOKEN ?? env.GITHUB_TOKEN
+    if (!github_token) return { repo_contributors: [] }
 
     const response = await fetch(
       `https://api.github.com/repos/janosh/awesome-sveltekit/contributors`,
-      { cache: `force-cache`, headers },
+      { cache: `force-cache`, headers: { Authorization: `token ${github_token}` } },
     )
 
     if (!response.ok) {
