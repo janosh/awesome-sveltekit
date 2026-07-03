@@ -5,7 +5,7 @@ import type { Site } from '$lib'
 import { load } from 'js-yaml'
 import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
-import process from 'node:process'
+import { setTimeout as sleep } from 'node:timers/promises'
 import { launch } from 'puppeteer'
 import sharp from 'sharp'
 import type { Action } from './'
@@ -30,21 +30,22 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
   const start = performance.now()
   const screenshot_dir = `../site/static/screenshots`
 
+  if (action === `make-screenshots`) {
+    throw new Error(
+      `make_screenshots() takes screenshots in 'add-missing' or 'update-existing' mode, got action='${action}'`,
+    )
+  }
+
   const sites = (
     load(fs.readFileSync(`../site/src/sites.yml`, `utf8`)) as Site[]
-  ).toSorted((s1, s2) => s1.title.localeCompare(s2.title))
+  ).toSorted((site_a, site_b) => site_a.title.localeCompare(site_b.title))
 
-  const browser = await launch()
+  const browser = await launch({
+    args: process.env.CI ? [`--no-sandbox`, `--disable-setuid-sandbox`] : [],
+  })
   const page = await browser.newPage()
 
   fs.mkdirSync(screenshot_dir, { recursive: true })
-
-  if (action === `make-screenshots`) {
-    const screenshots_arg = process.argv.find((arg) => arg.startsWith(`screenshots:`))
-    throw new Error(
-      `Correct usage: vite [dev] screenshots:[report|download|re-download], got ${screenshots_arg}\n`,
-    )
-  }
 
   const msg = {
     'add-missing': `Adding screenshots for sites without them`,
@@ -79,7 +80,7 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
     }
 
     // Wait for sites with on-load animations to settle
-    await new Promise<void>((resolve) => setTimeout(resolve, 2000))
+    await sleep(2000)
     await page.setViewport({ height: 900, width: 1200 })
     const hires = await page.screenshot()
     await page.setViewport({ deviceScaleFactor: 0.5, height: 900, width: 1200 })

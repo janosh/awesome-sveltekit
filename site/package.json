@@ -15,7 +15,8 @@
   "repository": "https://github.com/janosh/awesome-sveltekit",
   "type": "module",
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "site-tasks": "node src/tasks/index.ts"
   },
   "devDependencies": {
     "@iconify/svelte": "^5.2.2",
@@ -28,6 +29,7 @@
     "@types/node": "^26.0.1",
     "js-yaml": "^5.1.0",
     "marked": "^18.0.5",
+    "oxlint": "^1.72.0",
     "puppeteer": "^25.2.0",
     "sharp": "^0.35.2",
     "svelte": "^5.56.4",
@@ -35,7 +37,7 @@
     "svelte-multiselect": "11.7.2",
     "typescript": "6.0.3",
     "vite": "^8.0.16",
-    "vite-plus": "0.2.1"
+    "vite-plus": "0.2.2"
   },
   "packageManager": "pnpm@11.9.0"
 }
