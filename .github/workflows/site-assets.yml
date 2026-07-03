@@ -1,4 +1,4 @@
-name: Generated site assets
+name: Generate site assets
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ on:
       - site/src/tasks/**
       - site/src/sites.yml
       - site/static/screenshots/**
-      - .github/workflows/generated-site-assets.yml
+      - .github/workflows/site-assets.yml
 
 jobs:
   generated-site-assets:
@@ -44,15 +44,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Check generated files
-        # git status --porcelain (unlike git diff) also catches untracked files,
-        # e.g. freshly created screenshots for a newly added site
         run: |
           generated_paths=(readme.md site/src/sites.yml site/static/screenshots)
-          if [[ -n "$(git status --porcelain -- "${generated_paths[@]}")" ]]; then
-            git status --short -- "${generated_paths[@]}"
-            git diff -- "${generated_paths[@]}"
-            msg="Generated site assets are out of date."
-            msg="$msg Run 'cd site && ACTION=make-screenshots pnpm site-tasks' and commit the changes."
-            echo "::error::$msg"
-            exit 1
-          fi
+          [[ -z "$(git status --porcelain -- "${generated_paths[@]}")" ]] && exit 0
+          git status --short -- "${generated_paths[@]}"
+          git diff -- "${generated_paths[@]}"
+          msg="Generated site assets are out of date."
+          msg="$msg Run 'cd site && ACTION=make-screenshots pnpm site-tasks' and commit the changes."
+          echo "::error::$msg"
+          exit 1
