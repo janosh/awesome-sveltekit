@@ -88,7 +88,7 @@ repos:
         pass_filenames: false
       - id: svelte-check
         name: Svelte type check
-        entry: bash -c 'cd site && npx svelte-kit sync && npx svelte-check-rs --threshold error'
+        entry: bash -c 'cd site && npx svelte-kit sync && npx svelte-check --threshold error'
         language: system
         types_or: [ts, svelte]
         pass_filenames: false

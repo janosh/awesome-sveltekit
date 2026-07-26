@@ -33,9 +33,9 @@
     "puppeteer": "^25.3.0",
     "sharp": "^0.35.3",
     "svelte": "^5.56.8",
-    "svelte-check-rs": "^0.11.0",
+    "svelte-check": "^4.7.3",
     "svelte-multiselect": "11.8.0",
-    "typescript": "7.0.2",
+    "typescript": "6.0.3",
     "vite": "^8.1.5",
     "vite-plus": "0.2.6"
   },
