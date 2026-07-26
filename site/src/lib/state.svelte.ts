@@ -1,37 +1,30 @@
-import type { Site } from './index'
-
 export const filter_modes = { all: `all`, any: `any` } as const
 type FilterMode = keyof typeof filter_modes
+// the shape MultiSelect binds into filters.tags/contributors
+type SelectOption = { label: string; count: number }
 
 export const filters = $state<{
   search: string
-  tags: { label: string; count: number }[]
-  contributors: { label: string; count: number }[]
+  tags: SelectOption[]
+  contributors: SelectOption[]
   contributors_mode: FilterMode
   tags_mode: FilterMode
-}>({
-  contributors: [],
-  contributors_mode: `any`,
-  search: ``,
-  tags: [],
-  tags_mode: `any`,
-})
+}>({ contributors: [], contributors_mode: `any`, search: ``, tags: [], tags_mode: `any` })
 
 export const sort_by = { date: `Date Created`, stars: `GitHub Stars` } as const
-export type SortBy = keyof typeof sort_by
+type SortBy = keyof typeof sort_by
 export const sort_orders = { asc: `asc`, desc: `desc` } as const
 type SortOrder = keyof typeof sort_orders
 
-export const sorted = $state<{ by: SortBy; order: SortOrder; sites: Site[] }>({
+export const sorted = $state<{ by: SortBy; order: SortOrder }>({
   by: `stars`,
   order: `desc`,
-  sites: [],
 })
 
 // URL params mirroring filter/sort state. Multi-selects join their labels with
 // commas (?tags=a,b). No tag or contributor name contains a comma.
 const url_keys = `q tags tags_mode contributors contributors_mode sort order`.split(` `)
-const join = (items: { label: string }[]) => items.map(({ label }) => label).join(`,`)
+const join = (items: SelectOption[]) => items.map(({ label }) => label).join(`,`)
 
 type LabelCounts = [label: string, count: number][]
 type FilterOptions = { tags: LabelCounts; contributors: LabelCounts }

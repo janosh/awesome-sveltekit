@@ -61,31 +61,32 @@
     url_synced = true
   })
 
-  let sort_factor = $derived(sorted.order === `desc` ? 1 : -1)
-  $effect(() => {
-    const filtered_sites = sites.filter((site) => {
-      const query_match =
-        filters.search === `` || JSON.stringify(site).includes(filters.search)
-
-      const tag_match = arr_includes(
-        site.tags,
-        filters.tags.map((t) => t.label), // Tags the site should have
-        filters.tags_mode, // All or any
-      )
-      const contrib_match = arr_includes(
-        site.contributors?.map((c) => c.name) ?? [],
-        filters.contributors.map((c) => c.label), // Contributors the site should have
-        filters.contributors_mode, // All or any
-      )
-
-      return query_match && tag_match && contrib_match
-    })
-
+  let matching_sites = $derived.by(() => {
+    const sort_factor = sorted.order === `desc` ? 1 : -1
     const sort_value = (site: (typeof sites)[number]) =>
       sorted.by === `stars` ? (site.repo_stars ?? 0) : Date.parse(site.date_created)
-    sorted.sites = filtered_sites.toSorted(
-      (site_a, site_b) => sort_factor * (sort_value(site_b) - sort_value(site_a)),
-    )
+
+    return sites
+      .filter((site) => {
+        const query_match =
+          filters.search === `` || JSON.stringify(site).includes(filters.search)
+
+        const tag_match = arr_includes(
+          site.tags,
+          filters.tags.map((t) => t.label), // Tags the site should have
+          filters.tags_mode, // All or any
+        )
+        const contrib_match = arr_includes(
+          site.contributors?.map((c) => c.name) ?? [],
+          filters.contributors.map((c) => c.label), // Contributors the site should have
+          filters.contributors_mode, // All or any
+        )
+
+        return query_match && tag_match && contrib_match
+      })
+      .toSorted(
+        (site_a, site_b) => sort_factor * (sort_value(site_b) - sort_value(site_a)),
+      )
   })
 
   const meta_description = `Awesome examples of SvelteKit sites in the wild`
@@ -111,16 +112,16 @@
 
   <Filters {tags} {contributors} />
 
-  {#if sorted.sites.length < sites.length}
+  {#if matching_sites.length < sites.length}
     <p>
-      <span>{sorted.sites.length}</span> match{sorted.sites.length !== 1 ? `es` : ``}
-      {#if sorted.sites.length === 0}
+      <span>{matching_sites.length}</span> match{matching_sites.length !== 1 ? `es` : ``}
+      {#if matching_sites.length === 0}
         (try different filters)
       {/if}
     </p>
   {/if}
 
-  <SiteList sites={sorted.sites} />
+  <SiteList sites={matching_sites} />
 
   <h2>
     🙏 Big thanks to

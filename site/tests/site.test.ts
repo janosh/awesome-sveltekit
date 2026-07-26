@@ -43,6 +43,12 @@ test(`filters and sorts the site list, mirroring state in URL params`, async ({
   await tag_select.locator(`ul.options li`).first().click()
   await expect(page).toHaveURL(/&tags=component\+library,docs$/)
 
+  // MultiSelect keeps its dropdown open after a pick. Once the filter bar wraps
+  // (narrow viewports, e.g. CI) the open list sits over the sort buttons and
+  // swallows their clicks, so dismiss it first.
+  await tag_input.press(`Escape`)
+  await expect(tag_select.locator(`ul.options`)).toBeHidden()
+
   await page.getByRole(`button`, { name: `Date Created` }).click()
   await page.getByRole(`button`, { name: `asc`, exact: true }).click()
   await expect(page).toHaveURL(/&sort=date&order=asc$/)
@@ -51,6 +57,7 @@ test(`filters and sorts the site list, mirroring state in URL params`, async ({
   await page.fill(`[placeholder='Search...']`, ``)
   await tag_input.press(`Backspace`)
   await tag_input.press(`Backspace`)
+  await tag_input.press(`Escape`)
   // Dropping below two tags unmounts the all/any toggle, shifting the sort
   // buttons ~120px. Wait for the URL (written in an effect, so after the DOM
   // update) before clicking them, or the clicks land on stale coordinates.
