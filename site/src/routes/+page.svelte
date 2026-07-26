@@ -1,7 +1,7 @@
 <script lang="ts">
   import { replaceState } from '$app/navigation'
   import { page } from '$app/state'
-  import { ContributorList, Filters, SiteList } from '$lib'
+  import { ContributorList, Filters, type Site, SiteList } from '$lib'
   import {
     filters,
     filters_from_query,
@@ -15,35 +15,29 @@
 
   let { data } = $props()
 
-  const tag_counts: Record<string, number> = {}
-  for (const tag of sites.flatMap((site) => site.tags)) {
-    tag_counts[tag] = (tag_counts[tag] ?? 0) + 1
+  const count_by = (values: string[]) => {
+    const counts: Record<string, number> = {}
+    for (const value of values) counts[value] = (counts[value] ?? 0) + 1
+    return Object.entries(counts)
   }
 
-  const tags = Object.entries(tag_counts).filter(([, count]) => count > 2)
-  tags.sort(([tag_a], [tag_b]) => tag_a.localeCompare(tag_b))
+  const tags = count_by(sites.flatMap((site) => site.tags))
+    .filter(([, count]) => count > 2)
+    .toSorted(([tag_a], [tag_b]) => tag_a.localeCompare(tag_b))
 
-  const contributor_counts: Record<string, number> = {}
-  for (const site of sites) {
-    for (const contributor of site.contributors ?? []) {
-      const { name } = contributor
-      if (name && name !== `Janosh Riebesell`) {
-        contributor_counts[name] = (contributor_counts[name] ?? 0) + 1
-      }
-    }
-  }
-
-  const contributors = Object.entries(contributor_counts).toSorted(
-    (contributor_a, contributor_b) => contributor_b[1] - contributor_a[1],
+  const contributor_names = sites.flatMap((site) =>
+    (site.contributors ?? []).map(({ name }) => name),
   )
+  const contributors = count_by(
+    contributor_names.filter((name) => name && name !== `Janosh Riebesell`),
+  ).toSorted((contributor_a, contributor_b) => contributor_b[1] - contributor_a[1])
 
-  function arr_includes(arr: string[], values: string[], mode: `all` | `any`): boolean {
-    if (values.length === 0) return true
-    if (arr.length === 0) return false
-    return mode === `all`
-      ? values.every((value) => arr.includes(value))
-      : values.some((value) => arr.includes(value))
-  }
+  // an empty filter matches everything, so no need to special-case empty values
+  const arr_includes = (values: string[], required: string[], mode: `all` | `any`) =>
+    required.length === 0 ||
+    (mode === `all`
+      ? required.every((item) => values.includes(item))
+      : required.some((item) => values.includes(item)))
 
   // Restore filter/sort state from the URL on mount and on back/forward nav
   // (which remounts this component). Reading page.url.searchParams is off
@@ -63,26 +57,23 @@
 
   let matching_sites = $derived.by(() => {
     const sort_factor = sorted.order === `desc` ? 1 : -1
-    const sort_value = (site: (typeof sites)[number]) =>
+    const sort_value = (site: Site) =>
       sorted.by === `stars` ? (site.repo_stars ?? 0) : Date.parse(site.date_created)
+    // the selected labels don't vary per site, so resolve them once
+    const tag_labels = filters.tags.map(({ label }) => label)
+    const contributor_labels = filters.contributors.map(({ label }) => label)
 
     return sites
       .filter((site) => {
         const query_match =
           filters.search === `` || JSON.stringify(site).includes(filters.search)
-
-        const tag_match = arr_includes(
-          site.tags,
-          filters.tags.map((t) => t.label), // Tags the site should have
-          filters.tags_mode, // All or any
+        const tag_match = arr_includes(site.tags, tag_labels, filters.tags_mode)
+        const contributor_match = arr_includes(
+          site.contributors?.map(({ name }) => name) ?? [],
+          contributor_labels,
+          filters.contributors_mode,
         )
-        const contrib_match = arr_includes(
-          site.contributors?.map((c) => c.name) ?? [],
-          filters.contributors.map((c) => c.label), // Contributors the site should have
-          filters.contributors_mode, // All or any
-        )
-
-        return query_match && tag_match && contrib_match
+        return query_match && tag_match && contributor_match
       })
       .toSorted(
         (site_a, site_b) => sort_factor * (sort_value(site_b) - sort_value(site_a)),
