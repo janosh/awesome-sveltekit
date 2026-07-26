@@ -1,10 +1,17 @@
 <script lang="ts">
+  import { replaceState } from '$app/navigation'
+  import { page } from '$app/state'
   import { ContributorList, Filters, SiteList } from '$lib'
-  import { filters, sorted } from '$lib/state.svelte'
+  import {
+    filters,
+    filters_from_query,
+    filters_to_query,
+    sorted,
+  } from '$lib/state.svelte'
   import { repository } from '$site/package.json'
   import sites from '$site/src/sites.yml'
   import Icon from '@iconify/svelte'
-  import type { Snapshot } from './$types'
+  import { onMount } from 'svelte'
 
   let { data } = $props()
 
@@ -38,8 +45,23 @@
       : values.some((value) => arr.includes(value))
   }
 
-  let sort_order: `asc` | `desc` = $state(`desc`)
-  let sort_factor = $derived(sort_order === `desc` ? 1 : -1)
+  // Restore filter/sort state from the URL on mount and on back/forward nav
+  // (which remounts this component). Reading page.url.searchParams is off
+  // limits with prerendering enabled, hence location and post-hydration.
+  let url_synced = false
+  onMount(() => filters_from_query(location.search, { tags, contributors }))
+  // Mirror every subsequent change back into the URL. Compare against location,
+  // not page.url, which replaceState leaves stale.
+  $effect(() => {
+    const url = new URL(location.href)
+    url.search = filters_to_query(url)
+    // The first run only mirrors back the state just restored above. Skipping
+    // it also avoids calling replaceState before the router has started.
+    if (url_synced && url.href !== location.href) replaceState(url, page.state)
+    url_synced = true
+  })
+
+  let sort_factor = $derived(sorted.order === `desc` ? 1 : -1)
   $effect(() => {
     const filtered_sites = sites.filter((site) => {
       const query_match =
@@ -67,11 +89,6 @@
   })
 
   const meta_description = `Awesome examples of SvelteKit sites in the wild`
-
-  export const snapshot: Snapshot = {
-    capture: () => ({ sort_order }),
-    restore: (values) => ({ sort_order } = values),
-  }
 </script>
 
 <svelte:head>
@@ -92,7 +109,7 @@
     {sites.length} Awesome Examples of SvelteKit in the Wild
   </h1>
 
-  <Filters {tags} bind:sort_order {contributors} />
+  <Filters {tags} {contributors} />
 
   {#if sorted.sites.length < sites.length}
     <p>
