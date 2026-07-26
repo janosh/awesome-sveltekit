@@ -1,6 +1,9 @@
 import { env } from '$env/dynamic/private'
-import type { RepoContributor } from '$lib'
 import type { ServerLoad } from '@sveltejs/kit'
+import type { Contributor } from 'svelte-widgets'
+
+// GitHub's contributor payload; ContributorList only needs the structural fields
+type GhContributor = Contributor & { type: `User` | `Bot` }
 
 export const load: ServerLoad = async () => {
   try {
@@ -17,7 +20,7 @@ export const load: ServerLoad = async () => {
       return { repo_contributors: [] }
     }
 
-    const repo_contributors = ((await response.json()) as RepoContributor[]).filter(
+    const repo_contributors = ((await response.json()) as GhContributor[]).filter(
       (contributor) => contributor.type !== `Bot`,
     )
     return { repo_contributors }

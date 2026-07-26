@@ -8,7 +8,7 @@
     "learning resource",
     "sveltekit"
   ],
-  "homepage": "https://janosh.github.io/awesome-sveltekit",
+  "homepage": "https://awesome-sveltekit.janosh.dev",
   "bugs": "https://github.com/janosh/awesome-sveltekit/issues",
   "license": "MIT",
   "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
@@ -19,25 +19,23 @@
     "site-tasks": "node --env-file-if-exists=.env src/tasks/index.ts"
   },
   "devDependencies": {
-    "@iconify/svelte": "^5.2.2",
-    "@janosh/vite-config": "github:janosh/dotfiles",
-    "@playwright/test": "^1.62.0",
+    "@playwright/test": "^1.62.1",
     "@rollup/plugin-yaml": "^5.0.0",
     "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.70.1",
+    "@sveltejs/kit": "^2.70.2",
     "@sveltejs/vite-plugin-svelte": "^7.2.0",
-    "@types/node": "^26.1.1",
+    "@types/node": "^26.1.2",
     "js-yaml": "^5.2.2",
     "marked": "^18.0.7",
-    "oxlint": "^1.75.0",
-    "puppeteer": "^25.3.0",
+    "oxlint": "^1.76.0",
+    "puppeteer": "^25.4.0",
     "sharp": "^0.35.3",
     "svelte": "^5.56.8",
-    "svelte-check": "^4.7.3",
-    "svelte-multiselect": "11.8.0",
+    "svelte-check": "^4.7.4",
+    "svelte-widgets": "^1.4.0",
     "typescript": "6.0.3",
-    "vite": "^8.1.5",
-    "vite-plus": "0.2.6"
+    "vite": "^8.2.0",
+    "vite-plus": "0.2.7"
   },
   "packageManager": "pnpm@11.9.0"
 }

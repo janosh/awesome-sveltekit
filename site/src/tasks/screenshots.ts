@@ -1,14 +1,13 @@
-/* This file parses sites.yml, generates low+hi-res screenshots for each site and
-saves them as AVIF to site/static/screenshots. */
+// This file parses sites.yml, generates low+hi-res screenshots for each site and
+// saves them as AVIF to site/static/screenshots.
 
-import type { Site } from '$lib'
-import { load } from 'js-yaml'
 import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
 import { setTimeout as sleep } from 'node:timers/promises'
 import { launch } from 'puppeteer'
 import sharp from 'sharp'
 import type { Action } from './'
+import { load_sites } from './enrich-sites.ts'
 
 type Browser = Awaited<ReturnType<typeof launch>>
 type Page = Awaited<ReturnType<Browser[`newPage`]>>
@@ -36,9 +35,9 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
     )
   }
 
-  const sites = (
-    load(fs.readFileSync(`../site/src/sites.yml`, `utf8`)) as Site[]
-  ).toSorted((site_a, site_b) => site_a.title.localeCompare(site_b.title))
+  const sites = load_sites().toSorted((site_a, site_b) =>
+    site_a.title.localeCompare(site_b.title),
+  )
 
   const browser = await launch({
     args: process.env.CI ? [`--no-sandbox`, `--disable-setuid-sandbox`] : [],

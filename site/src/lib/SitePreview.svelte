@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Icon from '@iconify/svelte'
+  import { Icon } from 'svelte-widgets'
+  import { Star, Tag } from 'svelte-widgets/icons'
   import type { HTMLAttributes } from 'svelte/elements'
   import type { Site } from './index'
   import Screenshot from './Screenshot.svelte'
@@ -26,14 +27,14 @@
   </span>
   {#if site.repo_stars}
     <small class="flex">
-      <Icon icon="octicon:star" />
-      &nbsp;{site.repo_stars.toLocaleString()}
+      <Icon icon={Star} />
+      {site.repo_stars.toLocaleString()}
     </small>
   {/if}
 </div>
 {#if tags}
   <p class="tags flex">
-    <Icon icon="octicon:tag" style="margin: 0 1ex 0 0" />
+    <Icon icon={Tag} />
     {#each site.tags as tag (tag)}
       <small class:active={filters.tags.some((filter_tag) => filter_tag.label === tag)}>
         {tag}
@@ -43,9 +44,15 @@
 {/if}
 
 <style>
-  div.flex {
-    margin-top: 6pt;
-    justify-content: space-between;
+  .flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1ex;
+    &:where(div) {
+      margin-top: 6pt;
+      justify-content: space-between;
+    }
   }
   p.tags small {
     background-color: rgba(255, 255, 255, 0.2);
@@ -54,9 +61,6 @@
     margin: 3pt 0;
     border-radius: 3pt;
     font-size: 9pt;
-  }
-  p.tags small:not(:last-child) {
-    margin-right: 1ex;
   }
   p.tags small.active {
     font-weight: bold;

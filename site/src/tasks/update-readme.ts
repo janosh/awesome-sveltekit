@@ -1,15 +1,14 @@
-/* This file parses sites.yml, then updates the list of sites in the readme. */
+// This file parses sites.yml, then updates the list of sites in the readme.
 
 import { load } from 'js-yaml'
 import fs from 'node:fs'
-import type { Site } from '$lib'
+import { load_sites } from './enrich-sites.ts'
 
 export function update_readme(options: { readme_path?: string } = {}): void {
   const { readme_path = `../readme.md` } = options
-  const sites_path = `src/sites.yml`
 
   const readme = fs.readFileSync(readme_path, `utf8`)
-  const sites = load(fs.readFileSync(sites_path, `utf8`)) as Site[]
+  const sites = load_sites()
 
   const new_line = `\n   `
 

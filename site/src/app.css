@@ -3,18 +3,9 @@
   --main-max-width: 1300px;
   color-scheme: dark;
 
-  --sms-bg: black;
-  --sms-max-width: 22em;
-  --sms-selected-bg: rgba(255, 255, 255, 0.15);
-  --sms-options-bg: #2e2935;
-  --sms-border: 1px solid #333;
-  --sms-options-border: var(--sms-border);
-  --sms-li-active-bg: rgba(255, 255, 255, 0.15);
-  --sms-placeholder-color: gray;
-
   --github-corner-color: var(--bg);
   --github-corner-bg: white;
-  --tooltip-bg: var(--sms-options-bg);
+  --tooltip-bg: #2e2935;
 }
 body {
   background: var(--bg);
@@ -30,32 +21,12 @@ main {
   margin-bottom: 3em;
   width: 100%;
 }
-input[type='search'] {
-  border: 1px solid #333;
-  outline: none;
-  padding: 3pt 1ex;
-  border-radius: 3pt;
-  color: inherit;
-  background: black;
-  font-size: 1em;
-}
-input[type='search']::placeholder {
-  color: gray;
-}
 a {
   color: cornflowerblue;
   text-decoration: none;
 }
 a:hover {
   color: orange;
-}
-.flex {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-:where(h1, h2, h3, h4, h5, h6) {
-  scroll-margin-top: 100px;
 }
 
 ::highlight(highlight-match) {

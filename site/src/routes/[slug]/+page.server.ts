@@ -1,4 +1,4 @@
-import sites from '$site/src/sites.yml'
+import sites from '$root/sites.yml'
 import { error } from '@sveltejs/kit'
 import type { EntryGenerator, PageServerLoad } from './$types'
 

@@ -3,20 +3,25 @@
   import { repository } from '$site/package.json'
   // oxlint-disable-next-line no-unassigned-import
   import '../app.css'
-  import sites from '$site/src/sites.yml'
+  import sites from '$root/sites.yml'
   import type { Snippet } from 'svelte'
-  import { CmdPalette, GitHubCorner } from 'svelte-multiselect'
+  import { CommandMenu, GitHubCorner } from 'svelte-widgets'
 
   let { children }: { children: Snippet<[]> } = $props()
   let inner_width = $state(0)
 
   const actions = sites.map(({ title, slug }) => ({
+    id: slug,
     action: () => goto(slug),
     label: title,
   }))
 </script>
 
-<CmdPalette {actions} placeholder="Go to..." />
+<CommandMenu
+  {actions}
+  placeholder="Go to..."
+  recent_actions_key="awesome-sveltekit-cmd"
+/>
 
 <svelte:window bind:innerWidth={inner_width} />
 

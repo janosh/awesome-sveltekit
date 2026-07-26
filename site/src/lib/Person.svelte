@@ -1,35 +1,24 @@
 <script lang="ts">
-  import Icon from '@iconify/svelte'
+  import { Icon } from 'svelte-widgets'
+  import { ExternalLink, GitHub, Twitter } from 'svelte-widgets/icons'
   import type { HTMLAttributes } from 'svelte/elements'
   import type { SiteAuthor } from './index'
 
   let { person, ...rest }: { person: SiteAuthor } & HTMLAttributes<HTMLSpanElement> =
     $props()
-
   let { name, twitter, github, url, avatar } = $derived(person)
 </script>
 
 <span {...rest}>
-  <!-- show github profile photo -->
   {#if avatar}
     <img src="{avatar}&size=100" alt={name} />
   {/if}
   {name ?? github}
-  {#if twitter}
-    <a href="https://twitter.com/{twitter.replace(/^@/, ``)}">
-      <Icon icon="fa-brands:twitter" inline />
-    </a>
-  {/if}
-  {#if github}
-    <a href="https://github.com/{github}">
-      <Icon icon="octicon:mark-github" inline />
-    </a>
-  {/if}
-  {#if url}
-    <a href={url}>
-      <Icon icon="octicon:link-external" inline />
-    </a>
-  {/if}
+  {#if twitter}<a href="https://twitter.com/{twitter.replace(/^@/, ``)}"
+      ><Icon icon={Twitter} /></a
+    >{/if}
+  {#if github}<a href="https://github.com/{github}"><Icon icon={GitHub} /></a>{/if}
+  {#if url}<a href={url}><Icon icon={ExternalLink} /></a>{/if}
 </span>
 
 <style>

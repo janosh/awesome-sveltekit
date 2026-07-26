@@ -32,7 +32,7 @@ repos:
     rev: v2.4.3
     hooks:
       - id: codespell
-        exclude: ^site/src/sites.yml$
+        exclude: ^site/src/site-metadata.yml$
         args: [--ignore-words-list, 'ons,linz', --check-filenames]
         stages: [pre-commit, commit-msg]
 
@@ -42,7 +42,7 @@ repos:
       - id: typos
         types: [text]
         args: []
-        exclude: ^site/src/sites.yml|.pre-commit-config.yaml$
+        exclude: ^site/src/site-metadata.yml|.pre-commit-config.yaml$
 
   - repo: local
     hooks:

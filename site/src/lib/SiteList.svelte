@@ -1,7 +1,7 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
   import { filters } from '$lib/state.svelte'
-  import { highlight_matches } from 'svelte-multiselect/attachments'
+  import { highlight_matches } from 'svelte-widgets/attachments'
   import { flip } from 'svelte/animate'
   import type { HTMLAttributes } from 'svelte/elements'
   import { fade } from 'svelte/transition'

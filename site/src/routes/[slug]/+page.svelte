@@ -2,8 +2,8 @@
   import { SiteDetails, SitePreview } from '$lib'
   import type { Site } from '$lib/index'
   import { repository } from '$site/package.json'
-  import Icon from '@iconify/svelte'
-  import { PrevNext } from 'svelte-multiselect'
+  import { Icon, PrevNext } from 'svelte-widgets'
+  import { PullRequest, Sunglasses } from 'svelte-widgets/icons'
 
   let { data } = $props()
 
@@ -47,14 +47,11 @@
 </PrevNext>
 
 <footer>
-  Have a site you'd like to add to this
-  <Icon icon="mdi:sunglasses" inline style="margin: 0 2pt" />
-  collection?
+  Have a site you'd like to add to this <Icon icon={Sunglasses} /> collection?
   <a href="{repository}/edit/main/sites.yml">
-    <Icon icon="octicon:git-pull-request" inline style="margin: 0 2pt 0 4pt" />
+    <Icon icon={PullRequest} />
     PRs welcome!
   </a>
-
   <p>
     <small>
       Use arrow keys &thinsp;&larr; &rarr;&thinsp; to navigate between sites.
@@ -98,5 +95,8 @@
     text-align: center;
     margin: 6em 0 2em;
     color: white;
+    :global(svg) {
+      margin-inline: 2pt;
+    }
   }
 </style>

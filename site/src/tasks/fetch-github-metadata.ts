@@ -1,24 +1,30 @@
-/* This file parses sites.yml, fetches GH metadata like contributors
-and stars for each site, then writes the results to site/src/sites.yml. */
+// This file parses sites.yml, fetches GH metadata like contributors and stars
+// for each site, then writes just that fetched data to site/src/site-metadata.yml
+// keyed by slug. The site list itself lives only in sites.yml.
 
-import type { RepoContributor, Site } from '../lib/index.ts'
-import { dump, load } from 'js-yaml'
-import { marked } from 'marked'
+import type { Site } from '../lib/index.ts'
+import { dump } from 'js-yaml'
 import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
 import process from 'node:process'
+import type { Contributor } from 'svelte-widgets'
 import type { Action } from './'
+import { load_metadata, load_sites, metadata_path } from './enrich-sites.ts'
+import type { SiteMetadata } from './enrich-sites.ts'
 
-type GitHubUser = RepoContributor & {
+// GitHub /contributors + /users payloads; widgets Contributor is the shared core
+type GhContributor = Contributor & {
+  url: string
+  type: `User` | `Bot`
+  contributions: number
+}
+type GitHubUser = GhContributor & {
   name: string | null
   location: string | null
   company: string | null
   blog: string | null
   twitter_username: string | null
 }
-
-export const title_to_slug = (title: string): string =>
-  title.toLowerCase().replaceAll(` `, `-`)
 
 function https_url(url: string): string | undefined {
   if (!url) return undefined
@@ -33,14 +39,11 @@ export async function fetch_github_metadata(
   options: { action?: Action } = {},
 ): Promise<void> {
   const { action = `add-missing` } = options
-  const in_path = `../sites.yml`
-  const out_path = `../site/src/sites.yml`
 
-  const sites = load(fs.readFileSync(in_path, `utf8`)) as Site[]
-
-  const old_sites = fs.existsSync(out_path)
-    ? (load(fs.readFileSync(out_path, `utf8`)) as Site[])
-    : []
+  // load_sites assigns the slugs and rejects duplicates
+  const sites = load_sites()
+  // Retained so a run without a full refetch keeps previously fetched data
+  const metadata: SiteMetadata = load_metadata()
 
   const this_file = import.meta.url.split(`/`).pop()
 
@@ -48,9 +51,8 @@ export async function fetch_github_metadata(
 
   const start = performance.now()
 
-  const old_slugs = new Set(old_sites.map((site) => site.slug))
+  const old_slugs = new Set(Object.keys(metadata))
 
-  const seen_sites = new Set<string>()
   const skipped_sites: string[] = []
   const updated_sites: string[] = []
 
@@ -70,8 +72,8 @@ export async function fetch_github_metadata(
     return body
   }
 
-  async function update_site_from_github(site: Site, slug: string): Promise<boolean> {
-    const repo_url = site.repo
+  async function fetch_site_metadata(site: Site): Promise<boolean> {
+    const { repo: repo_url, slug } = site
     if (!has_text(repo_url) || (old_slugs.has(slug) && action !== `update-existing`)) {
       return false
     }
@@ -83,17 +85,19 @@ export async function fetch_github_metadata(
       return false
     }
 
+    const entry = metadata[slug] ?? {}
+
     // Fetch stars
     try {
       const url = `https://api.github.com/repos/${repo_handle}`
       const repo = await fetch_check<{ stargazers_count: number }>(url)
-      site.repo_stars = repo.stargazers_count
+      entry.repo_stars = repo.stargazers_count
     } catch (error) {
       console.error(`Error fetching stars for ${site.title}:`, error)
     }
 
     // Fetch most active contributors
-    const raw_contributors = await fetch_check<RepoContributor[]>(
+    const raw_contributors = await fetch_check<GhContributor[]>(
       `https://api.github.com/repos/${repo_handle}/contributors`,
     )
     const contributors = raw_contributors
@@ -105,7 +109,7 @@ export async function fetch_github_metadata(
       contributors.map((person) => fetch_check<GitHubUser>(person.url)),
     )
 
-    site.contributors = full_contributors.map(
+    entry.contributors = full_contributors.map(
       ({ name, location, company, ...contributor }) => ({
         avatar: contributor.avatar_url,
         company: company ?? undefined,
@@ -117,50 +121,27 @@ export async function fetch_github_metadata(
       }),
     )
 
+    metadata[slug] = entry
     return true
   }
 
-  // Only update site/src/sites.js if a new site was added to sites.yml
-  // Or repo stars were last fetched more than a month ago.
+  // Only refetch when a site was added to sites.yml, unless action forces it
   for (const site of sites) {
-    const slug = title_to_slug(site.title)
-
-    if (seen_sites.has(slug)) throw new Error(`Duplicate slug ${slug}`)
-    seen_sites.add(slug)
-
-    site.slug = slug
-
-    // Add open-source tag for all sites with repo key
-    if (has_text(site.repo) && !site.tags.includes(`open source`)) {
-      site.tags.push(`open source`)
-      site.tags.sort((tag_a, tag_b) => tag_a.localeCompare(tag_b)) // Sort tags alphabetically in place
-    }
-
-    const updated = await update_site_from_github(site, slug)
-    if (updated) updated_sites.push(slug)
-    else skipped_sites.push(slug)
+    const updated = await fetch_site_metadata(site)
+    if (updated) updated_sites.push(site.slug)
+    else skipped_sites.push(site.slug)
   }
 
-  const new_sites = await Promise.all(
-    sites.map(async (site) => {
-      const old_site = old_sites.find(
-        (candidate_site) => candidate_site.slug === site.slug,
-      )
-      // Retain fetched GitHub data from old_sites in case we didn't refetch
-      site.repo_stars ??= old_site?.repo_stars
-      site.contributors ??= old_site?.contributors
-      if (has_text(site.description)) {
-        site.description = await marked.parseInline(site.description)
-      }
-
-      return site
-    }),
-  )
+  // Keep only sites still listed in sites.yml
+  const pruned: SiteMetadata = {}
+  for (const { slug } of sites) {
+    if (metadata[slug]) pruned[slug] = metadata[slug]
+  }
 
   const wall_time = ((performance.now() - start) / 1000).toFixed(2)
 
-  const comment = `# auto-generated by ${this_file}\n\n`
-  fs.writeFileSync(out_path, comment + dump(new_sites))
+  const comment = `# auto-generated by ${this_file}, do not edit\n\n`
+  fs.writeFileSync(metadata_path, comment + dump(pruned, { sortKeys: true }))
 
   console.warn(
     `${this_file} took ${wall_time}s, updated ${updated_sites.length}, ` +

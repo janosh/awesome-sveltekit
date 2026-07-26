@@ -1,7 +1,8 @@
 <script lang="ts">
+  import { Icon } from 'svelte-widgets'
+  import { Account, GitHub, NPM, Project, Stack, Star, Tag } from 'svelte-widgets/icons'
   import uses_links from '$root/tools.yml'
-  import Icon from '@iconify/svelte'
-  import { tooltip } from 'svelte-multiselect/attachments'
+  import { tooltip } from 'svelte-widgets/attachments'
   import type { HTMLAttributes } from 'svelte/elements'
   import type { Site } from './index'
   import Person from './Person.svelte'
@@ -41,12 +42,10 @@
     <a href={url}>{title}</a>
     <small>
       {#if repo}
-        <a href={repo}><Icon icon="octicon:mark-github" color="white" /></a>
+        <a href={repo}><Icon icon={GitHub} /></a>
       {/if}
       {#if npm}
-        <a href={npm}>
-          <Icon icon="teenyicons:npm-solid" color="white" height="2.5ex" />
-        </a>
+        <a href={npm}><Icon icon={NPM} height="2.5ex" /></a>
       {/if}
     </small>
   </h1>
@@ -57,12 +56,12 @@
 
   <dl>
     {#if repo && repo_stars}
-      <dt><Icon icon="octicon:star" />Stars</dt>
+      <dt><Icon icon={Star} />Stars</dt>
       <dd><a href={repo}>{repo_stars.toLocaleString()}</a></dd>
     {/if}
     {#if contributors?.length}
       <dt>
-        <Icon icon="octicon:person" />
+        <Icon icon={Account} />
         <svelte:element this={contrib_url ? `a` : `span`} href={contrib_url}>
           {contributors.length > 1 ? `Contributors` : `Creator`}
         </svelte:element>
@@ -80,7 +79,7 @@
       </dd>
     {/if}
     {#if date_created}
-      <dt><Icon icon="octicon:project" />Project started on</dt>
+      <dt><Icon icon={Project} />Project started on</dt>
       <dd>
         <svelte:element
           this={repo ? `a` : `span`}
@@ -88,12 +87,12 @@
           title="{days_since_created} days ago"
           {@attach tooltip()}
         >
-          {date_created.split(`T`)[0]}
+          {date_created}
         </svelte:element>
       </dd>
     {/if}
     {#if tags.length > 0}
-      <dt><Icon icon="octicon:tag" />Tags</dt>
+      <dt><Icon icon={Tag} />Tags</dt>
       <dd class="chips">
         {#each tags as tag (tag)}
           <span>{tag}</span>
@@ -101,7 +100,7 @@
       </dd>
     {/if}
     {#if tools.length > 0}
-      <dt><Icon icon="octicon:stack-16" />Uses</dt>
+      <dt><Icon icon={Stack} />Uses</dt>
       <dd class="chips">
         {#each tools as [tool, href] (tool)}
           <a {href}>{tool}</a>
@@ -127,6 +126,9 @@
     display: flex;
     gap: 10pt;
     place-items: center;
+    a {
+      color: white;
+    }
   }
   /* two columns so labels and values each line up, however the values wrap */
   dl {

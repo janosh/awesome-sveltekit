@@ -13,8 +13,7 @@ export const filters = $state<{
 
 export const sort_by = { date: `Date Created`, stars: `GitHub Stars` } as const
 type SortBy = keyof typeof sort_by
-export const sort_orders = { asc: `asc`, desc: `desc` } as const
-type SortOrder = keyof typeof sort_orders
+type SortOrder = `asc` | `desc`
 
 export const sorted = $state<{ by: SortBy; order: SortOrder }>({
   by: `stars`,
@@ -76,5 +75,6 @@ export function filters_from_query(query: string, options: FilterOptions) {
   filters.tags_mode = mode(`tags_mode`)
   filters.contributors_mode = mode(`contributors_mode`)
   sorted.by = parse_key(params.get(`sort`), sort_by, `stars`)
-  sorted.order = parse_key(params.get(`order`), sort_orders, `desc`)
+  // only `asc` is non-default; anything else (incl. missing/bogus) → desc
+  sorted.order = params.get(`order`) === `asc` ? `asc` : `desc`
 }

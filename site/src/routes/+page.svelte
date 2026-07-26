@@ -1,7 +1,7 @@
 <script lang="ts">
   import { replaceState } from '$app/navigation'
   import { page } from '$app/state'
-  import { ContributorList, Filters, type Site, SiteList } from '$lib'
+  import { Filters, type Site, SiteList } from '$lib'
   import {
     filters,
     filters_from_query,
@@ -9,9 +9,10 @@
     sorted,
   } from '$lib/state.svelte'
   import { repository } from '$site/package.json'
-  import sites from '$site/src/sites.yml'
-  import Icon from '@iconify/svelte'
+  import sites from '$root/sites.yml'
   import { onMount } from 'svelte'
+  import { ContributorList, Icon } from 'svelte-widgets'
+  import { GitHub, PullRequest, Sunglasses } from 'svelte-widgets/icons'
 
   let { data } = $props()
 
@@ -120,28 +121,24 @@
       all {data.repo_contributors.length} contributors
     </a>
   </h2>
-  <ContributorList contributors={data.repo_contributors} />
+  <ContributorList contributors={data.repo_contributors} --contributor-gap="2ex" />
 </main>
 
 <h2>🎉 Suggestions Welcome</h2>
-<p style="max-width: 40em">
-  Want to add an <em>open source</em> project to <Icon
-    icon="mdi:sunglasses"
-    inline
-    style="margin: 0 2pt"
-  /> this list?
+<p>
+  Want to add an <em>open source</em> project to <Icon icon={Sunglasses} /> this list?
   <a href="{repository}/edit/main/sites.yml">
-    <Icon icon="octicon:git-pull-request" inline style="margin: 0 1pt 0 3pt" />
+    <Icon icon={PullRequest} />
     PRs welcome</a
   >! This collection is meant as a learning resource for Svelte devs. While a site with
   private code can give inspiration, there's little educational value if you can't inspect
   how it was made.
 </p>
 
-<p style="max-width: 40em">
+<p>
   A good place to discover Svelte projects (not necessarily SvelteKit) is
   <a href="https://github.com/trending/svelte?since=monthly">
-    <Icon icon="octicon:mark-github" inline style="margin: 0 1pt 0 3pt" />
+    <Icon icon={GitHub} />
     GitHub Trending
   </a>. If anything on that list stands out to you but is missing here, please add it!
 </p>
@@ -152,16 +149,22 @@
     margin: auto;
     display: block;
   }
-  :where(:global(h1, h2, p)) {
+  :where(h1, h2, p) {
     text-align: center;
     margin: 1em auto;
   }
   h2 {
     margin: 3em auto 2em;
   }
-  p span {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 0 3pt;
-    border-radius: 2pt;
+  p {
+    max-width: 40em;
+    :global(svg) {
+      margin-inline: 2pt;
+    }
+    span {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 0 3pt;
+      border-radius: 2pt;
+    }
   }
 </style>

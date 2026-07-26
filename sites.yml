@@ -11,9 +11,8 @@
 
 - title: Svelte.dev
   url: https://svelte.dev
-  repo: https://github.com/sveltejs/svelte
-  # Sapper to SvelteKit migration in https://git.io/JXSh1
-  site_src: https://github.com/sveltejs/svelte/tree/master/sites/svelte.dev
+  repo: https://github.com/sveltejs/svelte.dev
+  # Site moved out of sveltejs/svelte into its own repo
   npm: https://npmjs.com/package/svelte
   description: Cybernetically enhanced web apps.
   uses: [CodeMirror, Mapbox, Docker]
@@ -22,7 +21,7 @@
   date_added: 2021-11-11
 
 - title: Official SvelteKit docs
-  url: https://kit.svelte.dev
+  url: https://svelte.dev/docs/kit
   repo: https://github.com/sveltejs/kit
   site_src: https://github.com/sveltejs/kit/tree/main/documentation/docs
   npm: https://npmjs.com/package/@sveltejs/kit
@@ -33,14 +32,14 @@
   date_added: 2021-05-25
 
 - title: Scientific Diagrams
-  url: https://janosh.github.io/diagrams
+  url: https://diagrams.janosh.dev
   repo: https://github.com/janosh/diagrams
   description: >-
     100+ MIT-licensed scientific diagrams created with CeTZ (Typst) and/or TikZ
     (LaTeX).
     Mostly about physics, chemistry, and machine learning.
   tags: [research, science, diagrams, graphics, latex]
-  uses: [TypeScript, svelte-multiselect, pre-commit, PNPM, svelte-enhanced-img]
+  uses: [TypeScript, svelte-widgets, pre-commit, PNPM, svelte-enhanced-img]
   date_created: 2020-08-09
   date_added: 2021-05-25
 
@@ -120,7 +119,7 @@
   date_added: 2021-10-01
 
 - title: Level Up Tutorials
-  url: https://leveluptutorials.com
+  url: https://levelup.video
   description: Video tutorials for web developers and designers.
   uses: [TypeScript, Google Tag Manager]
   tags: [tutorials, education, videos, web development, design]
@@ -129,7 +128,7 @@
 
 - title: JSchallenger
   url: https://jschallenger.com
-  description: Free Javascript challenges. Learn Javascript online by solving coding exercises.
+  description: Free JavaScript challenges. Learn JavaScript online by solving coding exercises.
   uses: [Tailwind, DynamoDB, AWS]
   tags: [education, coding challenges, JavaScript]
   date_created: 2021-10-09
@@ -320,16 +319,16 @@
   date_added: 2022-05-19
 
 - title: MatterViz
-  url: https://janosh.github.io/matterviz
+  url: https://matterviz.janosh.dev
   repo: https://github.com/janosh/matterviz
   npm: https://npmjs.com/package/matterviz
   description: "Interactive visualizations for materials science: periodic tables, 3d crystal
-    structures (Molecules coming soon), Bohr atoms, nuclei, heatmaps, scatter plots."
+    structures, molecules, Bohr atoms, nuclei, heatmaps, scatter plots."
   uses:
     - TypeScript
     - pre-commit
     - D3
-    - svelte-multiselect
+    - svelte-widgets
     - Vitest
     - Playwright
     - PNPM
@@ -384,7 +383,7 @@
   site_src: https://github.com/windmill-labs/windmill/blob/-/frontend
   description:
     An OSS developer platform to build multi-step automations and internal apps from minimal
-    Python and Typescript scripts.
+    Python and TypeScript scripts.
   uses:
     - TypeScript
     - Tailwind
@@ -432,7 +431,7 @@
   repo: https://github.com/itswadesh/svelte-commerce
   description:
     Headless, Authentication, Cart & Checkout, TailwindCSS, Server Rendered, Proxy + API Integrated, Animations, Stores,
-    Lazy Loading, Loading Indicators, Carousel, Instant Search, Faceted Filters, Typescript, Open Source, MIT license. 1
+    Lazy Loading, Loading Indicators, Carousel, Instant Search, Faceted Filters, TypeScript, Open Source, MIT license. 1
     command deploy to your own server, 1 click deploy to Netlify/Vercel.
   uses: [Vercel, Tailwind, TypeScript, svelte-toasts, PostCSS, cssnano]
   tags: [commerce, shopping, login, store]
@@ -481,7 +480,7 @@
   url: https://housesof.world
   description: A travel, photography and design project showcasing charismatic houses around the world.
   uses:
-    - Typescript
+    - TypeScript
     - SCSS
     - PostCSS
     - Motion One
@@ -503,34 +502,34 @@
 
 - title: Skeleton
   url: https://skeleton.dev
-  repo: https://github.com/Brain-Bones/skeleton
+  repo: https://github.com/skeletonlabs/skeleton
   description: A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit, Vite, and Astro.
-  uses: [Vitest, PostCSS, highlight.js, Tailwind, Typescript, jsdom]
+  uses: [Vitest, PostCSS, highlight.js, Tailwind, TypeScript, jsdom]
   tags: [component library]
   date_created: 2022-02-23
   date_added: 2022-10-30
 
-- title: Svelte MultiSelect
-  url: https://janosh.github.io/svelte-multiselect
-  repo: https://github.com/janosh/svelte-multiselect
-  description: Keyboard-friendly, accessible and highly customizable multi-select component.
-  npm: https://npmjs.com/package/svelte-multiselect
+- title: Svelte Widgets
+  url: https://svelte-widgets.janosh.dev
+  repo: https://github.com/janosh/svelte-widgets
+  description: Keyboard-friendly, accessible Svelte components — MultiSelect, Toc, Masonry, CommandMenu, and more.
+  npm: https://npmjs.com/package/svelte-widgets
   uses:
     - Vitest
     - Playwright
-    - Typescript
+    - TypeScript
     - PNPM
     - pre-commit
     - rehype
     - jsdom
     - GitHub Pages
     - mdsvexamples
-  tags: [forms, select component, interactive, NPM package]
+  tags: [component library, forms, interactive, NPM package]
   date_created: 2021-05-07
   date_added: 2022-10-30
 
 - title: Fireship
-  url: https://fireship.io
+  url: https://fireship.dev
   repo: https://github.com/fireship-io/fireship.io
   description: The Fireship PRO course platform frontend built with Svelte, Tailwind CSS, Hugo
     (for static content management), Firebase for Auth and DB, Flamethrower for routing.
@@ -571,7 +570,7 @@
 - title: SvelteKit static blog starter
   url: https://sveltekit-static-starter.netlify.app
   repo: https://github.com/josh-collinsworth/sveltekit-blog-starter
-  description: A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDSvex, Rehype
+  description: A pre-configured SvelteKit static blog starter, with Sass, Markdown, MDsveX, rehype
     and background preloading.
   uses: [Netlify, MDsveX, Sass, Husky]
   tags: [blog starter, sass, markdown, mdsvex, page transitions, seo, rss]
@@ -591,7 +590,7 @@
   url: https://sveltekit-mdsvex-blog.netlify.app
   repo: https://github.com/mvasigh/sveltekit-mdsvex-blog
   description: A minimalist blog template built with SvelteKit and MDsveX.
-  uses: [TypeScript, MDsveX, Rehype, Remark, PNPM, Vitest, Playwright]
+  uses: [TypeScript, MDsveX, rehype, remark, PNPM, Vitest, Playwright]
   tags: [blog, markdown, template, starter]
   date_created: 2021-05-08
   date_added: 2023-01-15
@@ -649,7 +648,7 @@
   description: Supercharged REPL for Svelte (think StackBlitz specialized for Svelte)
   uses:
     - Playwright
-    - vitest
+    - Vitest
     - Iconify
     - MarkedJS
     - TypeScript
@@ -664,15 +663,15 @@
 - title: Significa.co
   url: https://significa.co
   repo: https://github.com/significa/significa.co
-  description: Product Design and Development agency website, built with Sveltekit.
+  description: Product Design and Development agency website, built with SvelteKit.
   uses:
     - TypeScript
     - Vercel
     - Tailwind
     - AWS
-    - Dynamodb
+    - DynamoDB
     - Notion
-    - Storyblock
+    - Storyblok
     - Matter.js
     - Plausible
   tags: [company, agency]
@@ -684,7 +683,7 @@
   site_src: https://github.com/huntabyte/shadcn-svelte/tree/96e8866/docs
   repo: https://github.com/huntabyte/shadcn-svelte
   description: shadcn/ui, but for Svelte.
-  uses: [TypeScript, Vercel, Tailwind, PNPM, Changesets, vitest, Prism, MarkedJS]
+  uses: [TypeScript, Vercel, Tailwind, PNPM, Changesets, Vitest, Prism, MarkedJS]
   tags: [component library, community]
   date_created: 2023-05-15
   date_added: 2023-07-06
@@ -712,7 +711,7 @@
   repo: https://github.com/Specy/asm-editor
   description: A modern webapp to write, run and learn M68K assembly code.
   uses: [TypeScript, Sass, Monaco, WASM]
-  tags: [Javascript, interpreter, emulator, assembly, M68K]
+  tags: [JavaScript, interpreter, emulator, assembly, M68K]
   date_created: 2022-04-22
   date_added: 2023-09-30
 
@@ -738,7 +737,7 @@
   url: https://passlock.dev
   repo: https://github.com/passlock-dev/passlock
   description: SvelteKit template featuring Passkeys, Social Sign in and more.
-  uses: [passlock, tailwind, superforms, lucia]
+  uses: [passlock, Tailwind, superforms, lucia]
   tags: [security, authentication, passkeys, template]
   date_created: 2024-04-22
   date_added: 2024-05-17
@@ -797,7 +796,7 @@
   url: https://statue.dev
   repo: https://github.com/accretional/statue
   description: A Svelte-based static site generator with built in component library.
-  uses: [GitHub Pages, CloudFlare Pages, Netlify]
+  uses: [GitHub Pages, Cloudflare Pages, Netlify]
   tags: [static site generator, blogs, docs]
   date_created: 2025-03-24
   date_added: 2025-12-04
