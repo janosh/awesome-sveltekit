@@ -101,15 +101,16 @@ test(`restores filter and sort state from URL params`, async ({ page }) => {
   )
 
   // Unknown values fall back to defaults instead of erroring
-  await page.goto(`/?tags=not-a-real-tag&sort=bogus&utm_source=test`, {
+  await page.goto(`/?q=blog&tags=not-a-real-tag&utm_source=test&sort=bogus`, {
     waitUntil: `networkidle`,
   })
   // MultiSelect only renders its placeholder while nothing is selected
   await expect(page.getByPlaceholder(`Filter by tag...`)).toBeVisible()
   await expect(page.getByRole(`button`, { name: `GitHub Stars` })).toHaveClass(/active/)
-  // Unmanaged params are left alone, unknown managed ones are dropped
-  await page.fill(`[placeholder='Search...']`, `blog`)
-  await expect(page).toHaveURL(`/?utm_source=test&q=blog`)
+  // Unmanaged params survive, unknown managed ones are dropped, and managed
+  // params keep their position instead of being shuffled to the end
+  await page.fill(`[placeholder='Search...']`, `docs`)
+  await expect(page).toHaveURL(`/?q=docs&utm_source=test`)
 })
 
 test(`can navigate between detail pages with arrow keys`, async ({ page }) => {

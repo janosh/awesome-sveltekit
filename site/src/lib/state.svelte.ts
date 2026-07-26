@@ -23,25 +23,28 @@ export const sorted = $state<{ by: SortBy; order: SortOrder }>({
 
 // URL params mirroring filter/sort state. Multi-selects join their labels with
 // commas (?tags=a,b). No tag or contributor name contains a comma.
-const url_keys = `q tags tags_mode contributors contributors_mode sort order`.split(` `)
 const join = (items: SelectOption[]) => items.map(({ label }) => label).join(`,`)
 
 type LabelCounts = [label: string, count: number][]
 type FilterOptions = { tags: LabelCounts; contributors: LabelCounts }
 
-// Params at their default value are omitted to keep shared links short.
 export function filters_to_query(url: URL): string {
   const params = new URLSearchParams(url.searchParams)
-  for (const key of url_keys) params.delete(key)
-
-  const { search, tags, contributors, tags_mode, contributors_mode } = filters
-  if (search) params.set(`q`, search)
-  if (tags.length) params.set(`tags`, join(tags))
-  if (contributors.length) params.set(`contributors`, join(contributors))
-  if (tags_mode !== `any`) params.set(`tags_mode`, tags_mode)
-  if (contributors_mode !== `any`) params.set(`contributors_mode`, contributors_mode)
-  if (sorted.by !== `stars`) params.set(`sort`, sorted.by)
-  if (sorted.order !== `desc`) params.set(`order`, sorted.order)
+  // Every param we own, as key => [current value, default]. Anything sitting at
+  // its default is dropped to keep shared links short.
+  const managed: Record<string, [value: string, default_value: string]> = {
+    q: [filters.search, ``],
+    tags: [join(filters.tags), ``],
+    contributors: [join(filters.contributors), ``],
+    tags_mode: [filters.tags_mode, `any`],
+    contributors_mode: [filters.contributors_mode, `any`],
+    sort: [sorted.by, `stars`],
+    order: [sorted.order, `desc`],
+  }
+  for (const [key, [value, default_value]] of Object.entries(managed)) {
+    if (value === default_value) params.delete(key)
+    else params.set(key, value)
+  }
 
   // commas are legal in a query string, so leave them readable
   return params.toString().replaceAll(`%2C`, `,`)
