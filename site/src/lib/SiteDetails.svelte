@@ -58,7 +58,7 @@
   <dl>
     {#if repo && repo_stars}
       <dt><Icon icon="octicon:star" />Stars</dt>
-      <dd><a href="{repo}/stargazers">{repo_stars.toLocaleString()}</a></dd>
+      <dd><a href={repo}>{repo_stars.toLocaleString()}</a></dd>
     {/if}
     {#if contributors?.length}
       <dt>

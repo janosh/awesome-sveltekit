@@ -30,9 +30,10 @@ export function update_readme(options: { readme_path?: string } = {}): void {
             throw new Error(`bad repo handle ${repo_handle}`)
           }
           const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
+          // link the badge at the repo, not /stargazers, which GitHub 404s
           code_link =
             `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
-            `<a href="${repo}/stargazers">${new_line}${star_badge}${new_line}</a>`
+            `<a href="${repo}">${new_line}${star_badge}${new_line}</a>`
         }
 
         let metadata = description

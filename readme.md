@@ -19,7 +19,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Open WebUI](https://docs.openwebui.com)**&nbsp;
    [[code](https://github.com/open-webui/open-webui)]&ensp;
-   <a href="https://github.com/open-webui/open-webui/stargazers">
+   <a href="https://github.com/open-webui/open-webui">
    <img src="https://img.shields.io/github/stars/open-webui/open-webui?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -29,7 +29,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Immich](https://immich.app)**&nbsp;
    [[code](https://github.com/immich-app/immich)]&ensp;
-   <a href="https://github.com/immich-app/immich/stargazers">
+   <a href="https://github.com/immich-app/immich">
    <img src="https://img.shields.io/github/stars/immich-app/immich?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -39,7 +39,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelte.dev](https://svelte.dev)**&nbsp;
    [[code](https://github.com/sveltejs/svelte/tree/master/sites/svelte.dev)]&ensp;
-   <a href="https://github.com/sveltejs/svelte/stargazers">
+   <a href="https://github.com/sveltejs/svelte">
    <img src="https://img.shields.io/github/stars/sveltejs/svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -49,7 +49,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Official SvelteKit docs](https://kit.svelte.dev)**&nbsp;
    [[code](https://github.com/sveltejs/kit/tree/main/documentation/docs)]&ensp;
-   <a href="https://github.com/sveltejs/kit/stargazers">
+   <a href="https://github.com/sveltejs/kit">
    <img src="https://img.shields.io/github/stars/sveltejs/kit?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -59,7 +59,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Windmill](https://windmill.dev)**&nbsp;
    [[code](https://github.com/windmill-labs/windmill/blob/-/frontend)]&ensp;
-   <a href="https://github.com/windmill-labs/windmill/stargazers">
+   <a href="https://github.com/windmill-labs/windmill">
    <img src="https://img.shields.io/github/stars/windmill-labs/windmill?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -69,7 +69,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[VERT](https://vert.sh)**&nbsp;
    [[code](https://github.com/VERT-sh/VERT)]&ensp;
-   <a href="https://github.com/VERT-sh/VERT/stargazers">
+   <a href="https://github.com/VERT-sh/VERT">
    <img src="https://img.shields.io/github/stars/VERT-sh/VERT?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -79,7 +79,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Chat UI](https://huggingface.co/chat)**&nbsp;
    [[code](https://github.com/huggingface/chat-ui)]&ensp;
-   <a href="https://github.com/huggingface/chat-ui/stargazers">
+   <a href="https://github.com/huggingface/chat-ui">
    <img src="https://img.shields.io/github/stars/huggingface/chat-ui?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -89,7 +89,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[shadcn-svelte](https://shadcn-svelte.com)**&nbsp;
    [[code](https://github.com/huntabyte/shadcn-svelte/tree/96e8866/docs)]&ensp;
-   <a href="https://github.com/huntabyte/shadcn-svelte/stargazers">
+   <a href="https://github.com/huntabyte/shadcn-svelte">
    <img src="https://img.shields.io/github/stars/huntabyte/shadcn-svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -99,7 +99,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[mermaid-live-editor](https://mermaid.live)**&nbsp;
    [[code](https://github.com/mermaid-js/mermaid-live-editor)]&ensp;
-   <a href="https://github.com/mermaid-js/mermaid-live-editor/stargazers">
+   <a href="https://github.com/mermaid-js/mermaid-live-editor">
    <img src="https://img.shields.io/github/stars/mermaid-js/mermaid-live-editor?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -109,7 +109,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Skeleton](https://skeleton.dev)**&nbsp;
    [[code](https://github.com/Brain-Bones/skeleton)]&ensp;
-   <a href="https://github.com/Brain-Bones/skeleton/stargazers">
+   <a href="https://github.com/Brain-Bones/skeleton">
    <img src="https://img.shields.io/github/stars/Brain-Bones/skeleton?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -119,7 +119,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[evidence](https://evidence.dev)**&nbsp;
    [[code](https://github.com/evidence-dev/evidence/blob/-/sites/example-project)]&ensp;
-   <a href="https://github.com/evidence-dev/evidence/stargazers">
+   <a href="https://github.com/evidence-dev/evidence">
    <img src="https://img.shields.io/github/stars/evidence-dev/evidence?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -129,7 +129,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Fireship](https://fireship.io)**&nbsp;
    [[code](https://github.com/fireship-io/fireship.io)]&ensp;
-   <a href="https://github.com/fireship-io/fireship.io/stargazers">
+   <a href="https://github.com/fireship-io/fireship.io">
    <img src="https://img.shields.io/github/stars/fireship-io/fireship.io?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -139,7 +139,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelte Material UI](https://sveltematerialui.com)**&nbsp;
    [[code](https://github.com/hperrin/svelte-material-ui/blob/-/packages/site)]&ensp;
-   <a href="https://github.com/hperrin/svelte-material-ui/stargazers">
+   <a href="https://github.com/hperrin/svelte-material-ui">
    <img src="https://img.shields.io/github/stars/hperrin/svelte-material-ui?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -149,7 +149,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Threlte](https://threlte.xyz)**&nbsp;
    [[code](https://github.com/threlte/threlte/blob/-/apps/docs)]&ensp;
-   <a href="https://github.com/threlte/threlte/stargazers">
+   <a href="https://github.com/threlte/threlte">
    <img src="https://img.shields.io/github/stars/threlte/threlte?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -159,7 +159,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[StemRoller](https://stemroller.com)**&nbsp;
    [[code](https://github.com/stemrollerapp/stemroller)]&ensp;
-   <a href="https://github.com/stemrollerapp/stemroller/stargazers">
+   <a href="https://github.com/stemrollerapp/stemroller">
    <img src="https://img.shields.io/github/stars/stemrollerapp/stemroller?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -169,7 +169,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Flowbite](https://flowbite-svelte.com)**&nbsp;
    [[code](https://github.com/themesberg/flowbite-svelte)]&ensp;
-   <a href="https://github.com/themesberg/flowbite-svelte/stargazers">
+   <a href="https://github.com/themesberg/flowbite-svelte">
    <img src="https://img.shields.io/github/stars/themesberg/flowbite-svelte?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -179,7 +179,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[macos-web](https://macos-web.app)**&nbsp;
    [[code](https://github.com/PuruVJ/macos-web)]&ensp;
-   <a href="https://github.com/PuruVJ/macos-web/stargazers">
+   <a href="https://github.com/PuruVJ/macos-web">
    <img src="https://img.shields.io/github/stars/PuruVJ/macos-web?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -189,7 +189,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[svelte-realworld](https://github.com/gothinkster/realworld)**&nbsp;
    [[code](https://github.com/sveltejs/realworld)]&ensp;
-   <a href="https://github.com/sveltejs/realworld/stargazers">
+   <a href="https://github.com/sveltejs/realworld">
    <img src="https://img.shields.io/github/stars/sveltejs/realworld?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -199,7 +199,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelte Headless UI](https://svelte-headlessui.goss.io)**&nbsp;
    [[code](https://github.com/rgossiaux/svelte-headlessui)]&ensp;
-   <a href="https://github.com/rgossiaux/svelte-headlessui/stargazers">
+   <a href="https://github.com/rgossiaux/svelte-headlessui">
    <img src="https://img.shields.io/github/stars/rgossiaux/svelte-headlessui?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -209,7 +209,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelte Commerce](https://arialshop.com)**&nbsp;
    [[code](https://github.com/itswadesh/svelte-commerce)]&ensp;
-   <a href="https://github.com/itswadesh/svelte-commerce/stargazers">
+   <a href="https://github.com/itswadesh/svelte-commerce">
    <img src="https://img.shields.io/github/stars/itswadesh/svelte-commerce?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -219,7 +219,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[inlang](https://inlang.com)**&nbsp;
    [[code](https://github.com/inlang/monorepo)]&ensp;
-   <a href="https://github.com/inlang/monorepo/stargazers">
+   <a href="https://github.com/inlang/monorepo">
    <img src="https://img.shields.io/github/stars/inlang/monorepo?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -229,7 +229,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Layer Cake](https://layercake.graphics)**&nbsp;
    [[code](https://github.com/mhkeller/layercake)]&ensp;
-   <a href="https://github.com/mhkeller/layercake/stargazers">
+   <a href="https://github.com/mhkeller/layercake">
    <img src="https://img.shields.io/github/stars/mhkeller/layercake?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -239,7 +239,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[editable-website](https://editable.website)**&nbsp;
    [[code](https://github.com/michael/editable-website)]&ensp;
-   <a href="https://github.com/michael/editable-website/stargazers">
+   <a href="https://github.com/michael/editable-website">
    <img src="https://img.shields.io/github/stars/michael/editable-website?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -249,7 +249,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Cryptgeon](https://cryptgeon.org)**&nbsp;
    [[code](https://github.com/cupcakearmy/cryptgeon/blob/-/packages/frontend)]&ensp;
-   <a href="https://github.com/cupcakearmy/cryptgeon/stargazers">
+   <a href="https://github.com/cupcakearmy/cryptgeon">
    <img src="https://img.shields.io/github/stars/cupcakearmy/cryptgeon?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -259,7 +259,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Dotfyle](https://dotfyle.com)**&nbsp;
    [[code](https://github.com/codicocodes/dotfyle)]&ensp;
-   <a href="https://github.com/codicocodes/dotfyle/stargazers">
+   <a href="https://github.com/codicocodes/dotfyle">
    <img src="https://img.shields.io/github/stars/codicocodes/dotfyle?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -269,7 +269,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[svelte-french-toast](https://svelte-french-toast.com)**&nbsp;
    [[code](https://github.com/kbrgl/svelte-french-toast)]&ensp;
-   <a href="https://github.com/kbrgl/svelte-french-toast/stargazers">
+   <a href="https://github.com/kbrgl/svelte-french-toast">
    <img src="https://img.shields.io/github/stars/kbrgl/svelte-french-toast?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -279,7 +279,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[svelte-put](https://svelte-put.vnphanquang.com)**&nbsp;
    [[code](https://github.com/vnphanquang/svelte-put)]&ensp;
-   <a href="https://github.com/vnphanquang/svelte-put/stargazers">
+   <a href="https://github.com/vnphanquang/svelte-put">
    <img src="https://img.shields.io/github/stars/vnphanquang/svelte-put?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -289,7 +289,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Houdini GraphQL](https://houdinigraphql.com)**&nbsp;
    [[code](https://github.com/HoudiniGraphQL/houdini)]&ensp;
-   <a href="https://github.com/HoudiniGraphQL/houdini/stargazers">
+   <a href="https://github.com/HoudiniGraphQL/houdini">
    <img src="https://img.shields.io/github/stars/HoudiniGraphQL/houdini?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -299,7 +299,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[tRPC-SvelteKit](https://icflorescu.github.io/trpc-sveltekit)**&nbsp;
    [[code](https://github.com/icflorescu/trpc-sveltekit)]&ensp;
-   <a href="https://github.com/icflorescu/trpc-sveltekit/stargazers">
+   <a href="https://github.com/icflorescu/trpc-sveltekit">
    <img src="https://img.shields.io/github/stars/icflorescu/trpc-sveltekit?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -309,7 +309,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[swyxkit](https://swyxkit.netlify.app)**&nbsp;
    [[code](https://github.com/sw-yx/swyxkit)]&ensp;
-   <a href="https://github.com/sw-yx/swyxkit/stargazers">
+   <a href="https://github.com/sw-yx/swyxkit">
    <img src="https://img.shields.io/github/stars/sw-yx/swyxkit?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -319,7 +319,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Urara](https://urara-demo.netlify.app)**&nbsp;
    [[code](https://github.com/importantimport/urara)]&ensp;
-   <a href="https://github.com/importantimport/urara/stargazers">
+   <a href="https://github.com/importantimport/urara">
    <img src="https://img.shields.io/github/stars/importantimport/urara?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -329,7 +329,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[SvelteKit static blog starter](https://sveltekit-static-starter.netlify.app)**&nbsp;
    [[code](https://github.com/josh-collinsworth/sveltekit-blog-starter)]&ensp;
-   <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter/stargazers">
+   <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">
    <img src="https://img.shields.io/github/stars/josh-collinsworth/sveltekit-blog-starter?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -339,7 +339,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Joy of Code](https://joyofcode.xyz)**&nbsp;
    [[code](https://github.com/mattcroat/joy-of-code)]&ensp;
-   <a href="https://github.com/mattcroat/joy-of-code/stargazers">
+   <a href="https://github.com/mattcroat/joy-of-code">
    <img src="https://img.shields.io/github/stars/mattcroat/joy-of-code?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -349,7 +349,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[QWER](https://svelte-qwer.vercel.app)**&nbsp;
    [[code](https://github.com/kwchang0831/svelte-QWER)]&ensp;
-   <a href="https://github.com/kwchang0831/svelte-QWER/stargazers">
+   <a href="https://github.com/kwchang0831/svelte-QWER">
    <img src="https://img.shields.io/github/stars/kwchang0831/svelte-QWER?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -359,7 +359,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Files](https://files.community)**&nbsp;
    [[code](https://github.com/files-community/website)]&ensp;
-   <a href="https://github.com/files-community/website/stargazers">
+   <a href="https://github.com/files-community/website">
    <img src="https://img.shields.io/github/stars/files-community/website?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -369,7 +369,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Saga Reader](https://aiqino.netlify.app)**&nbsp;
    [[code](https://github.com/sopaco/saga-reader)]&ensp;
-   <a href="https://github.com/sopaco/saga-reader/stargazers">
+   <a href="https://github.com/sopaco/saga-reader">
    <img src="https://img.shields.io/github/stars/sopaco/saga-reader?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -379,7 +379,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelte Society](https://sveltesociety.dev)**&nbsp;
    [[code](https://github.com/svelte-society/sveltesociety.dev)]&ensp;
-   <a href="https://github.com/svelte-society/sveltesociety.dev/stargazers">
+   <a href="https://github.com/svelte-society/sveltesociety.dev">
    <img src="https://img.shields.io/github/stars/svelte-society/sveltesociety.dev?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -389,7 +389,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[SvelteLab](https://sveltelab.dev)**&nbsp;
    [[code](https://github.com/sveltelab/sveltelab)]&ensp;
-   <a href="https://github.com/sveltelab/sveltelab/stargazers">
+   <a href="https://github.com/sveltelab/sveltelab">
    <img src="https://img.shields.io/github/stars/sveltelab/sveltelab?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -399,7 +399,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Scientific Diagrams](https://janosh.github.io/diagrams)**&nbsp;
    [[code](https://github.com/janosh/diagrams)]&ensp;
-   <a href="https://github.com/janosh/diagrams/stargazers">
+   <a href="https://github.com/janosh/diagrams">
    <img src="https://img.shields.io/github/stars/janosh/diagrams?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -409,7 +409,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Watch This](https://github.com/StephDietz/watch-this/issues/28)**&nbsp;
    [[code](https://github.com/StephDietz/watch-this)]&ensp;
-   <a href="https://github.com/StephDietz/watch-this/stargazers">
+   <a href="https://github.com/StephDietz/watch-this">
    <img src="https://img.shields.io/github/stars/StephDietz/watch-this?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -419,7 +419,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[neovim craft](https://neovimcraft.com)**&nbsp;
    [[code](https://github.com/neurosnap/neovimcraft)]&ensp;
-   <a href="https://github.com/neurosnap/neovimcraft/stargazers">
+   <a href="https://github.com/neurosnap/neovimcraft">
    <img src="https://img.shields.io/github/stars/neurosnap/neovimcraft?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -429,7 +429,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelte MultiSelect](https://janosh.github.io/svelte-multiselect)**&nbsp;
    [[code](https://github.com/janosh/svelte-multiselect)]&ensp;
-   <a href="https://github.com/janosh/svelte-multiselect/stargazers">
+   <a href="https://github.com/janosh/svelte-multiselect">
    <img src="https://img.shields.io/github/stars/janosh/svelte-multiselect?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -439,7 +439,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Modern Fluid Typography Editor](https://modern-fluid-typography.vercel.app)**&nbsp;
    [[code](https://github.com/codeAdrian/modern-fluid-typography-editor)]&ensp;
-   <a href="https://github.com/codeAdrian/modern-fluid-typography-editor/stargazers">
+   <a href="https://github.com/codeAdrian/modern-fluid-typography-editor">
    <img src="https://img.shields.io/github/stars/codeAdrian/modern-fluid-typography-editor?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -449,7 +449,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Matt Fantinel](https://fantinel.dev)**&nbsp;
    [[code](https://github.com/matfantinel/matfantinel.github.io)]&ensp;
-   <a href="https://github.com/matfantinel/matfantinel.github.io/stargazers">
+   <a href="https://github.com/matfantinel/matfantinel.github.io">
    <img src="https://img.shields.io/github/stars/matfantinel/matfantinel.github.io?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -459,7 +459,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[MatterViz](https://janosh.github.io/matterviz)**&nbsp;
    [[code](https://github.com/janosh/matterviz)]&ensp;
-   <a href="https://github.com/janosh/matterviz/stargazers">
+   <a href="https://github.com/janosh/matterviz">
    <img src="https://img.shields.io/github/stars/janosh/matterviz?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -469,7 +469,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Significa.co](https://significa.co)**&nbsp;
    [[code](https://github.com/significa/significa.co)]&ensp;
-   <a href="https://github.com/significa/significa.co/stargazers">
+   <a href="https://github.com/significa/significa.co">
    <img src="https://img.shields.io/github/stars/significa/significa.co?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -479,7 +479,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[ASM Editor](https://asm-editor.specy.app)**&nbsp;
    [[code](https://github.com/Specy/asm-editor)]&ensp;
-   <a href="https://github.com/Specy/asm-editor/stargazers">
+   <a href="https://github.com/Specy/asm-editor">
    <img src="https://img.shields.io/github/stars/Specy/asm-editor?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -489,7 +489,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelte Intl Precompile](https://github.com/cibernox/svelte-intl-precompile)**&nbsp;
    [[code](https://github.com/cibernox/svelte-intl-precompile)]&ensp;
-   <a href="https://github.com/cibernox/svelte-intl-precompile/stargazers">
+   <a href="https://github.com/cibernox/svelte-intl-precompile">
    <img src="https://img.shields.io/github/stars/cibernox/svelte-intl-precompile?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -499,7 +499,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[SvelteKit Embed](https://sveltekit-embed.vercel.app)**&nbsp;
    [[code](https://github.com/spences10/sveltekit-embed)]&ensp;
-   <a href="https://github.com/spences10/sveltekit-embed/stargazers">
+   <a href="https://github.com/spences10/sveltekit-embed">
    <img src="https://img.shields.io/github/stars/spences10/sveltekit-embed?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -509,7 +509,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)**&nbsp;
    [[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&ensp;
-   <a href="https://github.com/Rich-Harris/sveltekit-on-the-edge/stargazers">
+   <a href="https://github.com/Rich-Harris/sveltekit-on-the-edge">
    <img src="https://img.shields.io/github/stars/Rich-Harris/sveltekit-on-the-edge?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -519,7 +519,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Pixel Art Together](https://pixelart.liveblocks.app)**&nbsp;
    [[code](https://github.com/liveblocks/pixel-art-together)]&ensp;
-   <a href="https://github.com/liveblocks/pixel-art-together/stargazers">
+   <a href="https://github.com/liveblocks/pixel-art-together">
    <img src="https://img.shields.io/github/stars/liveblocks/pixel-art-together?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -529,7 +529,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Hexapipes](https://hexapipes.vercel.app)**&nbsp;
    [[code](https://github.com/gereleth/hexapipes)]&ensp;
-   <a href="https://github.com/gereleth/hexapipes/stargazers">
+   <a href="https://github.com/gereleth/hexapipes">
    <img src="https://img.shields.io/github/stars/gereleth/hexapipes?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -539,7 +539,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[svelte-command-palette](https://svelte-command-palette.vercel.app)**&nbsp;
    [[code](https://github.com/rohitpotato/svelte-command-palette)]&ensp;
-   <a href="https://github.com/rohitpotato/svelte-command-palette/stargazers">
+   <a href="https://github.com/rohitpotato/svelte-command-palette">
    <img src="https://img.shields.io/github/stars/rohitpotato/svelte-command-palette?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -549,7 +549,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Auth starter app](https://passlock.dev)**&nbsp;
    [[code](https://github.com/passlock-dev/passlock)]&ensp;
-   <a href="https://github.com/passlock-dev/passlock/stargazers">
+   <a href="https://github.com/passlock-dev/passlock">
    <img src="https://img.shields.io/github/stars/passlock-dev/passlock?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -559,7 +559,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[sveltekit-mdsvex-blog](https://sveltekit-mdsvex-blog.netlify.app)**&nbsp;
    [[code](https://github.com/mvasigh/sveltekit-mdsvex-blog)]&ensp;
-   <a href="https://github.com/mvasigh/sveltekit-mdsvex-blog/stargazers">
+   <a href="https://github.com/mvasigh/sveltekit-mdsvex-blog">
    <img src="https://img.shields.io/github/stars/mvasigh/sveltekit-mdsvex-blog?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -569,7 +569,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Statue](https://statue.dev)**&nbsp;
    [[code](https://github.com/accretional/statue)]&ensp;
-   <a href="https://github.com/accretional/statue/stargazers">
+   <a href="https://github.com/accretional/statue">
    <img src="https://img.shields.io/github/stars/accretional/statue?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -579,7 +579,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Intl Explorer](https://intl-explorer.com)**&nbsp;
    [[code](https://github.com/jesperorb/intl-explorer)]&ensp;
-   <a href="https://github.com/jesperorb/intl-explorer/stargazers">
+   <a href="https://github.com/jesperorb/intl-explorer">
    <img src="https://img.shields.io/github/stars/jesperorb/intl-explorer?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -589,7 +589,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svead](https://svead.pages.dev)**&nbsp;
    [[code](https://github.com/spences10/svead)]&ensp;
-   <a href="https://github.com/spences10/svead/stargazers">
+   <a href="https://github.com/spences10/svead">
    <img src="https://img.shields.io/github/stars/spences10/svead?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -599,7 +599,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Paper Trader Game](https://paper-trader.davjhan.com)**&nbsp;
    [[code](https://github.com/davjhan/paper-trader-game)]&ensp;
-   <a href="https://github.com/davjhan/paper-trader-game/stargazers">
+   <a href="https://github.com/davjhan/paper-trader-game">
    <img src="https://img.shields.io/github/stars/davjhan/paper-trader-game?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -615,7 +615,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[The Pudding](https://pudding.cool)**&nbsp;
    [[code](https://github.com/the-pudding/website)]&ensp;
-   <a href="https://github.com/the-pudding/website/stargazers">
+   <a href="https://github.com/the-pudding/website">
    <img src="https://img.shields.io/github/stars/the-pudding/website?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -625,7 +625,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[connorrothschild.com](https://connorrothschild.com)**&nbsp;
    [[code](https://github.com/connorrothschild/v4)]&ensp;
-   <a href="https://github.com/connorrothschild/v4/stargazers">
+   <a href="https://github.com/connorrothschild/v4">
    <img src="https://img.shields.io/github/stars/connorrothschild/v4?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -635,7 +635,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[macOS-Themed Portfolio](https://macosportfolio.netlify.app)**&nbsp;
    [[code](https://github.com/ansxuman/macOS-Themed-Portfolio)]&ensp;
-   <a href="https://github.com/ansxuman/macOS-Themed-Portfolio/stargazers">
+   <a href="https://github.com/ansxuman/macOS-Themed-Portfolio">
    <img src="https://img.shields.io/github/stars/ansxuman/macOS-Themed-Portfolio?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -645,7 +645,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Guess The Year](https://github.com/davjhan/guess-the-year-game)**&nbsp;
    [[code](https://github.com/davjhan/guess-the-year-game)]&ensp;
-   <a href="https://github.com/davjhan/guess-the-year-game/stargazers">
+   <a href="https://github.com/davjhan/guess-the-year-game">
    <img src="https://img.shields.io/github/stars/davjhan/guess-the-year-game?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -655,7 +655,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Multi-Monitor Calculator](https://multimonitorcalculator.com)**&nbsp;
    [[code](https://github.com/KevinVandy/multi-monitor_calculator)]&ensp;
-   <a href="https://github.com/KevinVandy/multi-monitor_calculator/stargazers">
+   <a href="https://github.com/KevinVandy/multi-monitor_calculator">
    <img src="https://img.shields.io/github/stars/KevinVandy/multi-monitor_calculator?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -665,7 +665,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[barnsworthburning](https://barnsworthburning.net)**&nbsp;
    [[code](https://github.com/Aias/barnsworthburning)]&ensp;
-   <a href="https://github.com/Aias/barnsworthburning/stargazers">
+   <a href="https://github.com/Aias/barnsworthburning">
    <img src="https://img.shields.io/github/stars/Aias/barnsworthburning?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -675,7 +675,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Product Plate](https://productplate.pages.dev)**&nbsp;
    [[code](https://github.com/rodrgds/productplate)]&ensp;
-   <a href="https://github.com/rodrgds/productplate/stargazers">
+   <a href="https://github.com/rodrgds/productplate">
    <img src="https://img.shields.io/github/stars/rodrgds/productplate?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -685,7 +685,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[OpenPost](https://openpost.social)**&nbsp;
    [[code](https://github.com/rodrgds/openpost/tree/main/frontend)]&ensp;
-   <a href="https://github.com/rodrgds/openpost/stargazers">
+   <a href="https://github.com/rodrgds/openpost">
    <img src="https://img.shields.io/github/stars/rodrgds/openpost?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -695,7 +695,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[ConcertMash](https://concertmash.com)**&nbsp;
    [[code](https://github.com/mcmxcdev/ConcertMash)]&ensp;
-   <a href="https://github.com/mcmxcdev/ConcertMash/stargazers">
+   <a href="https://github.com/mcmxcdev/ConcertMash">
    <img src="https://img.shields.io/github/stars/mcmxcdev/ConcertMash?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -705,7 +705,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Team Health Check](https://team-health-check-coral.vercel.app)**&nbsp;
    [[code](https://github.com/codehub-kirans/team-health-check)]&ensp;
-   <a href="https://github.com/codehub-kirans/team-health-check/stargazers">
+   <a href="https://github.com/codehub-kirans/team-health-check">
    <img src="https://img.shields.io/github/stars/codehub-kirans/team-health-check?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -715,7 +715,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[digital criticism](https://critique-digitale.ch)**&nbsp;
    [[code](https://github.com/critique-digitale/critique-digitale.ch)]&ensp;
-   <a href="https://github.com/critique-digitale/critique-digitale.ch/stargazers">
+   <a href="https://github.com/critique-digitale/critique-digitale.ch">
    <img src="https://img.shields.io/github/stars/critique-digitale/critique-digitale.ch?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -725,7 +725,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
 1. **[Svelvet](https://svelvet.io)**&nbsp;
    [[code](https://github.com/oslabs-beta/Svelvet)]&ensp;
-   <a href="https://github.com/oslabs-beta/Svelvet/stargazers">
+   <a href="https://github.com/oslabs-beta/Svelvet">
    <img src="https://img.shields.io/github/stars/oslabs-beta/Svelvet?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
@@ -766,13 +766,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [airtable]: https://airtable.com
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
+[autumn]: https://useautumn.com
 [aws]: https://aws.amazon.com
+[better auth]: https://better-auth.com
 [changesets]: https://github.com/changesets/changesets
 [chart.js]: https://chartjs.org
 [cloudflare pages]: https://pages.cloudflare.com
 [cloudflare]: https://cloudflare.com
 [codemirror]: https://codemirror.net
 [commitlint]: https://github.com/conventional-changelog/commitlint
+[convex]: https://convex.dev
 [coolify]: https://coolify.io
 [cssnano]: https://cssnano.github.io/cssnano
 [cypress]: https://cypress.io
@@ -792,6 +795,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [github api]: https://docs.github.com/rest
 [github pages]: https://pages.github.com
 [gitpod]: https://gitpod.io
+[go]: https://go.dev
 [google analytics]: https://analytics.google.com
 [google tag manager]: https://tagmanager.google.com
 [gsap]: https://greensock.com/gsap
@@ -837,6 +841,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [pnpm]: https://pnpm.io
 [pocketbase]: https://pocketbase.io
 [postcss]: https://postcss.org
+[postgresql]: https://postgresql.org
 [pre-commit]: https://pre-commit.com
 [prism]: https://prismjs.com
 [prisma]: https://prisma.io
@@ -851,9 +856,11 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
 [scss]: https://sass-lang.com/documentation/syntax
+[shadcn-svelte]: https://shadcn-svelte.com
 [skeleton]: https://skeleton.dev
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
+[sqlite]: https://sqlite.org
 [storyblock]: https://storyblok.com
 [supabase]: https://supabase.com
 [superforms]: https://github.com/ciscoheat/sveltekit-superforms
@@ -864,6 +871,7 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 [svelte-markdown]: https://github.com/pablo-abc/svelte-markdown
 [svelte-multiselect]: https://github.com/janosh/svelte-multiselect
 [svelte-toasts]: https://github.com/mzohaibqc/svelte-toasts
+[sveltekit]: https://svelte.dev/docs/kit
 [swell commerce]: https://swell.is
 [tailwind]: https://tailwindcss.com
 [tauri]: https://tauri.app
