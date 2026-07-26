@@ -823,3 +823,13 @@
   tags: [SaaS, starter, template, Convex, auth, billing, AI, open source]
   date_created: 2026-05-17
   date_added: 2026-07-02
+
+- title: OpenPost
+  url: https://openpost.social
+  repo: https://github.com/rodrgds/openpost
+  site_src: https://github.com/rodrgds/openpost/tree/main/frontend
+  description: Self-hosted social media scheduler with an MCP server, CLI, and API.
+  uses: [SvelteKit, Go, TypeScript, Tailwind, PNPM, Docker, SQLite, PostgreSQL, Playwright]
+  tags: [self-hosted, social media, scheduling, automation, open source]
+  date_created: 2026-03-21
+  date_added: 2026-07-26

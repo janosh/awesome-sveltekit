@@ -2493,3 +2493,36 @@
       name: Rodrigo Dias
       twitter: rodrgds
       url: https://rgo.pt
+- title: OpenPost
+  url: https://openpost.social
+  repo: https://github.com/rodrgds/openpost
+  site_src: https://github.com/rodrgds/openpost/tree/main/frontend
+  description: Self-hosted social media scheduler with an MCP server, CLI, and API.
+  uses:
+    - SvelteKit
+    - Go
+    - TypeScript
+    - Tailwind
+    - PNPM
+    - Docker
+    - SQLite
+    - PostgreSQL
+    - Playwright
+  tags:
+    - self-hosted
+    - social media
+    - scheduling
+    - automation
+    - open source
+  date_created: '2026-03-21'
+  date_added: '2026-07-26'
+  slug: openpost
+  repo_stars: 17
+  contributors:
+    - avatar: https://avatars.githubusercontent.com/u/77681625?v=4
+      company: FEUP
+      github: rodrgds
+      location: Porto, Portugal
+      name: Rodrigo Dias
+      twitter: rodrgds
+      url: https://rgo.pt

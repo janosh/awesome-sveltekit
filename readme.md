@@ -683,6 +683,16 @@ Awesome examples of SvelteKit in the wild. Visit **[janosh.github.io/awesome-sve
 
    uses: [SvelteKit], [Convex], [Better Auth], [Autumn], [Tailwind], [shadcn-svelte], [Cloudflare]
 
+1. **[OpenPost](https://openpost.social)**&nbsp;
+   [[code](https://github.com/rodrgds/openpost/tree/main/frontend)]&ensp;
+   <a href="https://github.com/rodrgds/openpost/stargazers">
+   <img src="https://img.shields.io/github/stars/rodrgds/openpost?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Self-hosted social media scheduler with an MCP server, CLI, and API.<br>
+
+   uses: [SvelteKit], [Go], [TypeScript], [Tailwind], [PNPM], [Docker], [SQLite], [PostgreSQL], [Playwright]
+
 1. **[ConcertMash](https://concertmash.com)**&nbsp;
    [[code](https://github.com/mcmxcdev/ConcertMash)]&ensp;
    <a href="https://github.com/mcmxcdev/ConcertMash/stargazers">
