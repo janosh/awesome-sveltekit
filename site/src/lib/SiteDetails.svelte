@@ -13,11 +13,13 @@
   }: HTMLAttributes<HTMLElementTagNameMap[`section`]> & {
     site: Site
   } = $props()
-  let { title, url, tags, uses, contributors, date_created, repo_stars } = $derived(site)
+  let { title, url, tags, uses, contributors, date_created, repo_stars, repo, npm } =
+    $derived(site)
 
   let days_since_created = $derived(
     Math.floor((Date.now() - Date.parse(date_created)) / 86_400_000),
   )
+  let contrib_url = $derived(repo ? `${repo}/contributors` : undefined)
 
   let tools = $derived(
     uses.flatMap((tool) => {
@@ -37,14 +39,12 @@
 <section {...rest}>
   <h1>
     <a href={url}>{title}</a>
-    <small style="display: flex; gap: 10pt; place-items: center">
-      {#if site.repo}
-        <a href={site.repo}>
-          <Icon icon="octicon:mark-github" color="white" />
-        </a>
+    <small>
+      {#if repo}
+        <a href={repo}><Icon icon="octicon:mark-github" color="white" /></a>
       {/if}
-      {#if site.npm}
-        <a href={site.npm}>
+      {#if npm}
+        <a href={npm}>
           <Icon icon="teenyicons:npm-solid" color="white" height="2.5ex" />
         </a>
       {/if}
@@ -54,71 +54,61 @@
   {#if site.description}
     <p>{@html site.description}</p>
   {/if}
-  {#if site.repo && repo_stars}
-    <hr />
-    <p class="flex">
-      <Icon icon="octicon:star" />&emsp;Stars
-      <span style="flex: 1"></span>
-      <a href="{site.repo}/stargazers">{repo_stars.toLocaleString()}</a>
-    </p>
-  {/if}
-  {#if contributors?.length}
-    {@const contrib_label = contributors.length > 1 ? `Contributors` : `Creator`}
-    <hr />
-    <div class:flex={contributors.length === 1} style="margin: 1em 0">
-      <Icon icon="octicon:person" style="margin-right: 1em" />
-      {#if site.repo}
-        <a href="{site.repo}/contributors">{contrib_label}</a>
-      {:else}
-        {contrib_label}
-      {/if}
-      {#if contributors.length > 1}
-        <ol class="contributors">
-          {#each contributors as person (person.name)}
-            <li>
-              <Person {person} />
-            </li>
-          {/each}
-        </ol>
-      {:else}
-        <span style="flex: 1"></span>
-        <Person person={contributors[0]} />
-      {/if}
-    </div>
-  {/if}
-  {#if date_created}
-    <hr />
-    <p class="flex">
-      <Icon icon="octicon:project" />&emsp;Project started on
-      <span style="flex: 1"></span>
-      <svelte:element
-        this={site.repo ? `a` : `span`}
-        {...site.repo ? { href: site.repo } : {}}
-        title="{days_since_created} days ago"
-        {@attach tooltip()}
-      >
-        {date_created.split(`T`)[0]}
-      </svelte:element>
-    </p>
-  {/if}
-  {#if tags.length > 0}
-    <hr />
-    <p class="tags flex">
-      <Icon icon="octicon:tag" />&ensp;Tags&emsp;
-      {#each tags as tag (tag)}
-        <span>{tag}</span>
-      {/each}
-    </p>
-  {/if}
-  {#if tools.length > 0}
-    <hr />
-    <p class="uses flex">
-      <Icon icon="octicon:stack-16" />&ensp;Uses&emsp;
-      {#each tools as [tool, href] (tool)}
-        <a {href}>{tool}</a>
-      {/each}
-    </p>
-  {/if}
+
+  <dl>
+    {#if repo && repo_stars}
+      <dt><Icon icon="octicon:star" />Stars</dt>
+      <dd><a href={repo}>{repo_stars.toLocaleString()}</a></dd>
+    {/if}
+    {#if contributors?.length}
+      <dt>
+        <Icon icon="octicon:person" />
+        <svelte:element this={contrib_url ? `a` : `span`} href={contrib_url}>
+          {contributors.length > 1 ? `Contributors` : `Creator`}
+        </svelte:element>
+      </dt>
+      <dd>
+        {#if contributors.length > 1}
+          <ol>
+            {#each contributors as person (person.name)}
+              <li><Person {person} /></li>
+            {/each}
+          </ol>
+        {:else}
+          <Person person={contributors[0]} />
+        {/if}
+      </dd>
+    {/if}
+    {#if date_created}
+      <dt><Icon icon="octicon:project" />Project started on</dt>
+      <dd>
+        <svelte:element
+          this={repo ? `a` : `span`}
+          href={repo}
+          title="{days_since_created} days ago"
+          {@attach tooltip()}
+        >
+          {date_created.split(`T`)[0]}
+        </svelte:element>
+      </dd>
+    {/if}
+    {#if tags.length > 0}
+      <dt><Icon icon="octicon:tag" />Tags</dt>
+      <dd class="chips">
+        {#each tags as tag (tag)}
+          <span>{tag}</span>
+        {/each}
+      </dd>
+    {/if}
+    {#if tools.length > 0}
+      <dt><Icon icon="octicon:stack-16" />Uses</dt>
+      <dd class="chips">
+        {#each tools as [tool, href] (tool)}
+          <a {href}>{tool}</a>
+        {/each}
+      </dd>
+    {/if}
+  </dl>
 </section>
 <aside>
   <Screenshot {title} />
@@ -134,31 +124,44 @@
   }
   h1 small {
     font-size: 14pt;
+    display: flex;
+    gap: 10pt;
+    place-items: center;
   }
-  hr {
-    height: 0.1px;
-    background-color: lightblue;
-    border: none;
+  /* two columns so labels and values each line up, however the values wrap */
+  dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  :is(dt, dd) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6pt;
+    margin: 0;
+    padding: 8pt 0;
+    border-top: 0.5px solid lightblue;
+  }
+  dt {
+    padding-right: 1em;
+  }
+  dd {
+    justify-content: end;
+  }
+  dd ol {
+    margin: 0;
+    line-height: 1.6em;
+  }
+  dd.chips > * {
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 1.2em;
+    padding: 1pt 3pt;
+    border-radius: 3pt;
   }
   @media (max-width: 750px) {
     aside {
       max-width: 500px;
       margin: auto;
     }
-  }
-  ol.contributors {
-    line-height: 1.6em;
-  }
-  p.uses,
-  p.tags {
-    gap: 5pt;
-  }
-  p.uses a,
-  p.tags span {
-    background-color: rgba(255, 255, 255, 0.1);
-    line-height: 1.2em;
-    padding: 1pt 3pt;
-    margin: 3pt 0;
-    border-radius: 3pt;
   }
 </style>

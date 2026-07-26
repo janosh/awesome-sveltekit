@@ -41,5 +41,5 @@ jobs:
             --exclude 'houdinigraphql.com'
             --exclude 'sarcevic.dev'
             --exclude 'fempunkter.se'
-            --exclude '//davjhan.com'
+            --exclude 'davjhan\.com'
             -- ./**/*.{md,svelte,ts,yml}

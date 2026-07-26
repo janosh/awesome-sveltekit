@@ -1,19 +1,12 @@
 <script lang="ts">
   import MultiSelect, { type ObjectOption } from 'svelte-multiselect'
-  import { filters, sort_by, sorted } from './state.svelte'
+  import { filter_modes, filters, sort_by, sort_orders, sorted } from './state.svelte'
   import ToggleGroup from './ToggleGroup.svelte'
 
   let {
     tags,
     contributors,
-    sort_order = $bindable(`desc`),
-  }: {
-    tags: [string, number][]
-    contributors: [string, number][]
-    sort_order?: `asc` | `desc`
-  } = $props()
-
-  const filter_mode_options = { all: `all`, any: `any` }
+  }: { tags: [string, number][]; contributors: [string, number][] } = $props()
 </script>
 
 {#snippet option({ option }: { option: ObjectOption })}
@@ -33,7 +26,7 @@
       {option}
     />
     {#if filters.tags.length > 1}
-      <ToggleGroup bind:value={filters.tags_mode} options={filter_mode_options} />
+      <ToggleGroup bind:value={filters.tags_mode} options={filter_modes} />
     {/if}
   </div>
   <div class="filter-group">
@@ -44,12 +37,12 @@
       {option}
     />
     {#if filters.contributors.length > 1}
-      <ToggleGroup bind:value={filters.contributors_mode} options={filter_mode_options} />
+      <ToggleGroup bind:value={filters.contributors_mode} options={filter_modes} />
     {/if}
   </div>
   <div class="filter-group">
     <ToggleGroup bind:value={sorted.by} options={sort_by} />
-    <ToggleGroup bind:value={sort_order} options={{ asc: `asc`, desc: `desc` }} />
+    <ToggleGroup bind:value={sorted.order} options={sort_orders} />
   </div>
 </div>
 

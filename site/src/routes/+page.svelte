@@ -1,77 +1,86 @@
 <script lang="ts">
-  import { ContributorList, Filters, SiteList } from '$lib'
-  import { filters, sorted } from '$lib/state.svelte'
+  import { replaceState } from '$app/navigation'
+  import { page } from '$app/state'
+  import { ContributorList, Filters, type Site, SiteList } from '$lib'
+  import {
+    filters,
+    filters_from_query,
+    filters_to_query,
+    sorted,
+  } from '$lib/state.svelte'
   import { repository } from '$site/package.json'
   import sites from '$site/src/sites.yml'
   import Icon from '@iconify/svelte'
-  import type { Snapshot } from './$types'
+  import { onMount } from 'svelte'
 
   let { data } = $props()
 
-  const tag_counts: Record<string, number> = {}
-  for (const tag of sites.flatMap((site) => site.tags)) {
-    tag_counts[tag] = (tag_counts[tag] ?? 0) + 1
+  const count_by = (values: string[]) => {
+    const counts: Record<string, number> = {}
+    for (const value of values) counts[value] = (counts[value] ?? 0) + 1
+    return Object.entries(counts)
   }
 
-  const tags = Object.entries(tag_counts).filter(([, count]) => count > 2)
-  tags.sort(([tag_a], [tag_b]) => tag_a.localeCompare(tag_b))
+  const tags = count_by(sites.flatMap((site) => site.tags))
+    .filter(([, count]) => count > 2)
+    .toSorted(([tag_a], [tag_b]) => tag_a.localeCompare(tag_b))
 
-  const contributor_counts: Record<string, number> = {}
-  for (const site of sites) {
-    for (const contributor of site.contributors ?? []) {
-      const { name } = contributor
-      if (name && name !== `Janosh Riebesell`) {
-        contributor_counts[name] = (contributor_counts[name] ?? 0) + 1
-      }
-    }
-  }
-
-  const contributors = Object.entries(contributor_counts).toSorted(
-    (contributor_a, contributor_b) => contributor_b[1] - contributor_a[1],
+  const contributor_names = sites.flatMap((site) =>
+    (site.contributors ?? []).map(({ name }) => name),
   )
+  const contributors = count_by(
+    contributor_names.filter((name) => name && name !== `Janosh Riebesell`),
+  ).toSorted((contributor_a, contributor_b) => contributor_b[1] - contributor_a[1])
 
-  function arr_includes(arr: string[], values: string[], mode: `all` | `any`): boolean {
-    if (values.length === 0) return true
-    if (arr.length === 0) return false
-    return mode === `all`
-      ? values.every((value) => arr.includes(value))
-      : values.some((value) => arr.includes(value))
-  }
+  // an empty filter matches everything, so no need to special-case empty values
+  const arr_includes = (values: string[], required: string[], mode: `all` | `any`) =>
+    required.length === 0 ||
+    (mode === `all`
+      ? required.every((item) => values.includes(item))
+      : required.some((item) => values.includes(item)))
 
-  let sort_order: `asc` | `desc` = $state(`desc`)
-  let sort_factor = $derived(sort_order === `desc` ? 1 : -1)
+  // Restore filter/sort state from the URL on mount and on back/forward nav
+  // (which remounts this component). Reading page.url.searchParams is off
+  // limits with prerendering enabled, hence location and post-hydration.
+  let url_synced = false
+  onMount(() => filters_from_query(location.search, { tags, contributors }))
+  // Mirror every subsequent change back into the URL. Compare against location,
+  // not page.url, which replaceState leaves stale.
   $effect(() => {
-    const filtered_sites = sites.filter((site) => {
-      const query_match =
-        filters.search === `` || JSON.stringify(site).includes(filters.search)
+    const url = new URL(location.href)
+    url.search = filters_to_query(url)
+    // The first run only mirrors back the state just restored above. Skipping
+    // it also avoids calling replaceState before the router has started.
+    if (url_synced && url.href !== location.href) replaceState(url, page.state)
+    url_synced = true
+  })
 
-      const tag_match = arr_includes(
-        site.tags,
-        filters.tags.map((t) => t.label), // Tags the site should have
-        filters.tags_mode, // All or any
-      )
-      const contrib_match = arr_includes(
-        site.contributors?.map((c) => c.name) ?? [],
-        filters.contributors.map((c) => c.label), // Contributors the site should have
-        filters.contributors_mode, // All or any
-      )
-
-      return query_match && tag_match && contrib_match
-    })
-
-    const sort_value = (site: (typeof sites)[number]) =>
+  let matching_sites = $derived.by(() => {
+    const sort_factor = sorted.order === `desc` ? 1 : -1
+    const sort_value = (site: Site) =>
       sorted.by === `stars` ? (site.repo_stars ?? 0) : Date.parse(site.date_created)
-    sorted.sites = filtered_sites.toSorted(
-      (site_a, site_b) => sort_factor * (sort_value(site_b) - sort_value(site_a)),
-    )
+    // the selected labels don't vary per site, so resolve them once
+    const tag_labels = filters.tags.map(({ label }) => label)
+    const contributor_labels = filters.contributors.map(({ label }) => label)
+
+    return sites
+      .filter((site) => {
+        const query_match =
+          filters.search === `` || JSON.stringify(site).includes(filters.search)
+        const tag_match = arr_includes(site.tags, tag_labels, filters.tags_mode)
+        const contributor_match = arr_includes(
+          site.contributors?.map(({ name }) => name) ?? [],
+          contributor_labels,
+          filters.contributors_mode,
+        )
+        return query_match && tag_match && contributor_match
+      })
+      .toSorted(
+        (site_a, site_b) => sort_factor * (sort_value(site_b) - sort_value(site_a)),
+      )
   })
 
   const meta_description = `Awesome examples of SvelteKit sites in the wild`
-
-  export const snapshot: Snapshot = {
-    capture: () => ({ sort_order }),
-    restore: (values) => ({ sort_order } = values),
-  }
 </script>
 
 <svelte:head>
@@ -92,18 +101,18 @@
     {sites.length} Awesome Examples of SvelteKit in the Wild
   </h1>
 
-  <Filters {tags} bind:sort_order {contributors} />
+  <Filters {tags} {contributors} />
 
-  {#if sorted.sites.length < sites.length}
+  {#if matching_sites.length < sites.length}
     <p>
-      <span>{sorted.sites.length}</span> match{sorted.sites.length !== 1 ? `es` : ``}
-      {#if sorted.sites.length === 0}
+      <span>{matching_sites.length}</span> match{matching_sites.length !== 1 ? `es` : ``}
+      {#if matching_sites.length === 0}
         (try different filters)
       {/if}
     </p>
   {/if}
 
-  <SiteList sites={sorted.sites} />
+  <SiteList sites={matching_sites} />
 
   <h2>
     🙏 Big thanks to
