@@ -686,7 +686,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 1. **[OpenPost](https://openpost.social)**&nbsp;
    [[code](https://github.com/getopenpost/openpost/tree/main/frontend)]&ensp;
    <a href="https://github.com/getopenpost/openpost">
-   <img src="https://img.shields.io/github/stars/rodrgds/openpost?logo=github" alt="GitHub stars" valign="middle">
+   <img src="https://img.shields.io/github/stars/getopenpost/openpost?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    Self-hosted social media scheduler with an MCP server, CLI, and API.<br>
