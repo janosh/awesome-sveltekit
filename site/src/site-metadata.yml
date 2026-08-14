@@ -55,7 +55,7 @@ chat-ui:
       location: London, UK
       name: Adrien Denat
       url: https://adriendenat.com
-  repo_stars: 10852
+  repo_stars: 10885
 concertmash:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/16797721?v=4
@@ -79,28 +79,13 @@ cryptgeon:
       location: Germany
       name: Nicco
       url: https://nicco.io
-  repo_stars: 1487
-digital-criticism:
-  contributors:
-    - avatar: https://avatars.githubusercontent.com/u/14755525?v=4
-      company: '@DHBern & @eth-library'
-      github: maehr
-      location: Bern & Zurich
-      name: Moritz Mähr
-      url: https://moritzmaehr.ch
-    - avatar: https://avatars.githubusercontent.com/u/18015683?v=4
-      company: Universität Bern
-      github: thodel
-      location: Bern
-      name: Tobias Hodel
-      url: https://dh.unibe.ch
-  repo_stars: 5
+  repo_stars: 1505
 dotfyle:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/76068197?v=4
       github: codicocodes
       name: codicocodes
-  repo_stars: 1219
+  repo_stars: 1223
 editable-website:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/2931?v=4
@@ -110,7 +95,7 @@ editable-website:
       name: Michael Aufreiter
       twitter: _mql
       url: https://editable.website
-  repo_stars: 1735
+  repo_stars: 1736
 evidence:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/10779616?v=4
@@ -140,7 +125,7 @@ evidence:
     - avatar: https://avatars.githubusercontent.com/u/61282104?v=4
       github: csjh
       name: csjh
-  repo_stars: 6800
+  repo_stars: 6848
 files:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/39923744?v=4
@@ -167,7 +152,7 @@ files:
       github: marcelwgn
       name: Marcel W.
       twitter: marcelwgndev
-  repo_stars: 464
+  repo_stars: 462
 fireship:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/10172199?v=4
@@ -190,7 +175,7 @@ fireship:
       github: ryzizub
       name: Dominik Šimoník
       url: https://ryzizub.com
-  repo_stars: 3757
+  repo_stars: 3756
 flowbite:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/147320?v=4
@@ -218,7 +203,7 @@ flowbite:
       github: RyanZhiNie
       location: Beijing, China
       name: Zhi Nie
-  repo_stars: 2779
+  repo_stars: 2782
 guess-the-year:
   contributors: []
   repo_stars: 47
@@ -252,7 +237,7 @@ houdini-graphql:
       location: Munich
       name: Andreas Fehn
       url: https://fehn.systems
-  repo_stars: 981
+  repo_stars: 982
 immich:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/27055614?v=4
@@ -276,41 +261,7 @@ immich:
       github: danieldietzler
       location: Germany
       name: Daniel Dietzler
-  repo_stars: 109432
-inlang:
-  contributors:
-    - avatar: https://avatars.githubusercontent.com/u/35429197?v=4
-      company: '@opral'
-      github: samuelstroschein
-      location: SF / NYC
-      name: Samuel Stroschein
-      twitter: samuelstroschei
-      url: https://samuelstroschein.com/
-    - avatar: https://avatars.githubusercontent.com/u/43482866?v=4
-      github: LorisSigrist
-      location: Zürich
-      name: Loris Sigrist
-      twitter: loris_sigrist
-      url: https://sigrist.dev
-    - avatar: https://avatars.githubusercontent.com/u/34959078?v=4
-      github: felixhaeberle
-      location: Berlin, Germany
-      name: Felix Häberle
-      twitter: felixhaberle
-      url: https://felixhaeberle.com
-    - avatar: https://avatars.githubusercontent.com/u/58360188?v=4
-      company: Slite & Super.work
-      github: NilsJacobsen
-      location: Munich
-      name: Nils Jacobsen
-      twitter: _NilsJacobsen
-      url: https://nilsjacobsen.me
-    - avatar: https://avatars.githubusercontent.com/u/59048346?v=4
-      github: NiklasBuchfink
-      location: Lucerne, Switzerland
-      name: Niklas Buchfink
-      url: https://niklasbuchfink.com
-  repo_stars: 1970
+  repo_stars: 110458
 intl-explorer:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/21122051?v=4
@@ -343,7 +294,7 @@ layer-cake:
       github: jtrim-ons
       location: UK
       name: James Trimble's ONS work
-  repo_stars: 1784
+  repo_stars: 1786
 macos-themed-portfolio:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/43794060?v=4
@@ -360,7 +311,7 @@ macos-web:
       name: Puru Vijay
       twitter: puruvjdev
       url: https://puruvj.dev
-  repo_stars: 2650
+  repo_stars: 2653
 markushatvan.com:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/16797721?v=4
@@ -383,7 +334,7 @@ matt-fantinel:
       github: actions-user
       name: actions-user
       url: https://github.com/actions
-  repo_stars: 333
+  repo_stars: 334
 matterviz:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/30958850?v=4
@@ -392,7 +343,7 @@ matterviz:
       location: San Francisco
       name: Janosh Riebesell
       url: https://janosh.dev
-  repo_stars: 353
+  repo_stars: 355
 mermaid-live-editor:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/10703445?v=4
@@ -419,10 +370,7 @@ mermaid-live-editor:
       github: huynhicode
       name: Steph
       url: https://www.huynhicode.dev/
-  repo_stars: 6717
-modern-fluid-typography-editor:
-  contributors: []
-  repo_stars: 353
+  repo_stars: 6745
 multi-monitor-calculator:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/28243511?v=4
@@ -470,7 +418,7 @@ official-sveltekit-docs:
       github: elliott-with-the-longest-name-on-github
       location: Denver, CO
       name: Elliott Johnson
-  repo_stars: 20706
+  repo_stars: 20739
 open-webui:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/25473318?v=4
@@ -500,7 +448,7 @@ open-webui:
       location: Shenzhen, China
       name: Shirasawa
       url: https://t.me/Shirasawa
-  repo_stars: 147500
+  repo_stars: 148749
 openpost:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/77681625?v=4
@@ -510,7 +458,7 @@ openpost:
       name: Rodrigo Dias
       twitter: rodrgds
       url: https://rgo.pt
-  repo_stars: 17
+  repo_stars: 20
 paper-trader-game:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/10100613?v=4
@@ -539,7 +487,7 @@ product-plate:
       name: Rodrigo Dias
       twitter: rodrgds
       url: https://rgo.pt
-  repo_stars: 32
+  repo_stars: 34
 qwer:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/88667293?v=4
@@ -547,7 +495,7 @@ qwer:
       name: AH WEI
       twitter: kwchang0831
       url: https://www.kwchang0831.dev
-  repo_stars: 475
+  repo_stars: 476
 saga-reader:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/15891288?v=4
@@ -556,7 +504,7 @@ saga-reader:
       location: BeiJing
       name: Sopaco
       url: https://www.vantagemarkets.co.uk/
-  repo_stars: 531
+  repo_stars: 533
 scientific-diagrams:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/30958850?v=4
@@ -565,7 +513,7 @@ scientific-diagrams:
       location: San Francisco
       name: Janosh Riebesell
       url: https://janosh.dev
-  repo_stars: 666
+  repo_stars: 676
 shadcn-svelte:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/64506580?v=4
@@ -593,7 +541,7 @@ shadcn-svelte:
       location: Austin, Texas
       name: maxffarrell
       url: https://maxffarrell.com
-  repo_stars: 9007
+  repo_stars: 9036
 significa.co:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/5202712?v=4
@@ -621,7 +569,7 @@ significa.co:
       name: Francisco Marques
       twitter: tofran_
       url: https://tofran.com
-  repo_stars: 304
+  repo_stars: 306
 skeleton:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/1509726?v=4
@@ -647,7 +595,7 @@ skeleton:
       github: thomasbjespersen
       location: Fort Collins, CO
       name: Thomas Bunk Jespersen
-  repo_stars: 6032
+  repo_stars: 6038
 statue:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/62581780?v=4
@@ -671,13 +619,13 @@ statue:
       location: San Francisco
       name: Fred Weitendorf
       url: https://accretional.com
-  repo_stars: 175
+  repo_stars: 176
 stemroller:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/35245220?v=4
       github: iffyloop
       name: iffyloop
-  repo_stars: 3137
+  repo_stars: 3144
 svead:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/234708?v=4
@@ -701,7 +649,7 @@ svelte-command-palette:
       name: Rohit Kashyap
       twitter: rohitpotato
       url: https://rohitpotato.xyz
-  repo_stars: 216
+  repo_stars: 217
 svelte-commerce:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/1191896?v=4
@@ -729,7 +677,7 @@ svelte-commerce:
       location: Berlin, Germany
       name: Ashok
       url: https://iashok.codes
-  repo_stars: 1799
+  repo_stars: 1804
 svelte-french-toast:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/13417496?v=4
@@ -746,7 +694,7 @@ svelte-headless-ui:
       github: rgossiaux
       location: San Francisco
       name: Ryan Gossiaux
-  repo_stars: 1796
+  repo_stars: 1793
 svelte-intl-precompile:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/265339?v=4
@@ -754,7 +702,7 @@ svelte-intl-precompile:
       location: Coruña, Spain
       name: Miguel Camba
       twitter: miguelcamba
-  repo_stars: 280
+  repo_stars: 279
 svelte-material-ui:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/195918?v=4
@@ -775,7 +723,7 @@ svelte-put:
       location: Vietnam
       name: Quang Phan
       url: https://vnphanquang.com
-  repo_stars: 1033
+  repo_stars: 1036
 svelte-realworld:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/1162160?v=4
@@ -800,7 +748,7 @@ svelte-realworld:
       location: London, UK
       name: pngwn
       twitter: evilpingwin
-  repo_stars: 2416
+  repo_stars: 2415
 svelte-society:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/534488?v=4
@@ -810,7 +758,7 @@ svelte-society:
       name: Kevin Åberg Kultalahti
       twitter: kevmodrome
       url: https://kevinak.se
-  repo_stars: 454
+  repo_stars: 453
 svelte-widgets:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/30958850?v=4
@@ -849,7 +797,7 @@ svelte.dev:
       github: elliott-with-the-longest-name-on-github
       location: Denver, CO
       name: Elliott Johnson
-  repo_stars: 322
+  repo_stars: 326
 sveltekit-embed:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/234708?v=4
@@ -863,7 +811,7 @@ sveltekit-embed:
       name: Mend Renovate
       twitter: renovatebot
       url: https://mend.io/renovate/
-  repo_stars: 237
+  repo_stars: 239
 sveltekit-mdsvex-blog:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/13258203?v=4
@@ -888,7 +836,7 @@ sveltekit-static-blog-starter:
       location: Kansas City area
       name: Josh Collinsworth
       url: https://joshcollinsworth.com/
-  repo_stars: 508
+  repo_stars: 509
 sveltelab:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/26281609?v=4
@@ -921,16 +869,6 @@ svelvet:
       location: Irvine, CA
       name: Ruxin(Carolyn) Zheng
   repo_stars: 1
-swyxkit:
-  contributors:
-    - avatar: https://avatars.githubusercontent.com/u/6764957?v=4
-      company: smol.ai
-      github: swyxio
-      location: San Francisco
-      name: swyx.io
-      twitter: swyx
-      url: https://learninpublic.org
-  repo_stars: 711
 team-health-check:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/72293681?v=4
@@ -990,7 +928,7 @@ threlte:
       github: jerzakm
       location: Warsaw
       name: Marcin Jerzak
-  repo_stars: 3312
+  repo_stars: 3321
 trpc-sveltekit:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/581999?v=4
@@ -1008,11 +946,11 @@ urara:
       location: (intermediate value)
       name: 藍+85CD
       url: https://kwaa.dev
-  repo_stars: 647
+  repo_stars: 648
 vert:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/45893380?v=4
-      company: '@hackclub'
+      company: '@slimevr'
       github: JovannMC
       name: Maya
       twitter: JovannMC
@@ -1034,14 +972,7 @@ vert:
       name: azure
       twitter: possiblyazure
       url: https://azuuure.dev
-  repo_stars: 15318
-watch-this:
-  contributors:
-    - avatar: https://avatars.githubusercontent.com/u/49788645?v=4
-      github: StephDietz
-      name: Stephanie Dietz
-      twitter: steph_dietz_
-  repo_stars: 403
+  repo_stars: 15361
 windmill:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/275584?v=4
@@ -1067,4 +998,4 @@ windmill:
       github: diegoimbert
       location: Paris
       name: Diego Imbert
-  repo_stars: 17403
+  repo_stars: 17538

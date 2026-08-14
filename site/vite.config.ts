@@ -4,7 +4,7 @@ import { sveltekit } from '@sveltejs/kit/vite'
 import { spawn } from 'node:child_process'
 import process from 'node:process'
 import { loadEnv, type Plugin } from 'vite'
-import { defineConfig } from 'vite-plus'
+import { defineConfig, lazyPlugins } from 'vite-plus'
 import { enrich_sites, load_metadata } from './src/tasks/enrich-sites.ts'
 import type { Site } from './src/lib/index.ts'
 
@@ -31,7 +31,7 @@ const run_site_tasks = (env: Record<string, string>): Plugin => ({
 
 export default defineConfig(({ mode }) => ({
   ...make_config(),
-  plugins: [
+  plugins: lazyPlugins(() => [
     run_site_tasks(loadEnv(mode, process.cwd(), ``)),
     sveltekit(),
     // sites.yml holds only hand-written fields. Merging the fetched GitHub data
@@ -46,7 +46,7 @@ export default defineConfig(({ mode }) => ({
         return sites as unknown as typeof data
       },
     }),
-  ],
+  ]),
   preview: { port: 3000 },
   server: {
     fs: { allow: [`../..`] }, // Needed to import from $root

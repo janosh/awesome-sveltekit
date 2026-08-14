@@ -177,7 +177,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [TypeScript], [Vercel], [SCSS], [PNPM], [Iconify]
 
-1. **[svelte-realworld](https://github.com/gothinkster/realworld)**&nbsp;
+1. **[svelte-realworld](https://realworld.svelte.dev)**&nbsp;
    [[code](https://github.com/sveltejs/realworld)]&ensp;
    <a href="https://github.com/sveltejs/realworld">
    <img src="https://img.shields.io/github/stars/sveltejs/realworld?logo=github" alt="GitHub stars" valign="middle">
@@ -185,17 +185,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    SvelteKit implementation of the RealWorld app.<br>
 
-   uses: [Netlify], [MarkedJS]
-
-1. **[inlang](https://inlang.com)**&nbsp;
-   [[code](https://github.com/inlang/monorepo)]&ensp;
-   <a href="https://github.com/inlang/monorepo">
-   <img src="https://img.shields.io/github/stars/inlang/monorepo?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Translate software products 2x faster.<br>
-
-   uses: [TypeScript], [Vercel], [IBM Carbon], [Tailwind], [Supabase]
+   uses: [Vercel], [MarkedJS], [TypeScript], [PNPM], [sanitize-html]
 
 1. **[Svelte Commerce](https://arialshop.com)**&nbsp;
    [[code](https://github.com/itswadesh/svelte-commerce)]&ensp;
@@ -207,7 +197,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [Vercel], [Tailwind], [TypeScript], [svelte-toasts], [PostCSS], [cssnano]
 
-1. **[Svelte Headless UI](https://svelte-headlessui.goss.io)**&nbsp;
+1. **[Svelte Headless UI](https://svelte-headlessui.goss.io/docs/2.0)**&nbsp;
    [[code](https://github.com/rgossiaux/svelte-headlessui)]&ensp;
    <a href="https://github.com/rgossiaux/svelte-headlessui">
    <img src="https://img.shields.io/github/stars/rgossiaux/svelte-headlessui?logo=github" alt="GitHub stars" valign="middle">
@@ -228,14 +218,14 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    uses: [D3], [GitHub Pages], [JSDoc], [Mocha], [Underscore]
 
 1. **[editable-website](https://editable.website)**&nbsp;
-   [[code](https://github.com/michael/editable-website)]&ensp;
-   <a href="https://github.com/michael/editable-website">
-   <img src="https://img.shields.io/github/stars/michael/editable-website?logo=github" alt="GitHub stars" valign="middle">
+   [[code](https://github.com/michael/editable)]&ensp;
+   <a href="https://github.com/michael/editable">
+   <img src="https://img.shields.io/github/stars/michael/editable?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    A SvelteKit template for building CMS-free editable websites.<br>
 
-   uses: [Tailwind], [ProseMirror], [AWS]
+   uses: [Tailwind], [AWS], [SQLite], [TypeScript], [PNPM]
 
 1. **[Cryptgeon](https://cryptgeon.org)**&nbsp;
    [[code](https://github.com/cupcakearmy/cryptgeon/blob/-/packages/frontend)]&ensp;
@@ -285,7 +275,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    Documentation site for Houdini.<br>
 
-   uses: [PNPM], [MDsveX], [Husky], [highlight.js]
+   uses: [Astro], [PNPM], [TypeScript], [Tailwind]
 
 1. **[tRPC-SvelteKit](https://icflorescu.github.io/trpc-sveltekit)**&nbsp;
    [[code](https://github.com/icflorescu/trpc-sveltekit)]&ensp;
@@ -296,16 +286,6 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    End-to-end type-safe APIs for your SvelteKit applications.<br>
 
    uses: [TypeScript], [tRPC]
-
-1. **[swyxkit](https://swyxkit.vercel.app)**&nbsp;
-   [[code](https://github.com/swyxio/swyxkit)]&ensp;
-   <a href="https://github.com/swyxio/swyxkit">
-   <img src="https://img.shields.io/github/stars/swyxio/swyxkit?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!<br>
-
-   uses: [Tailwind], [Netlify]
 
 1. **[Scientific Diagrams](https://diagrams.janosh.dev)**&nbsp;
    [[code](https://github.com/janosh/diagrams)]&ensp;
@@ -338,14 +318,14 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    uses: [Skeleton], [Rust], [Tauri], [Netlify]
 
 1. **[Joy of Code](https://joyofcode.xyz)**&nbsp;
-   [[code](https://github.com/mattcroat/joy-of-code)]&ensp;
-   <a href="https://github.com/mattcroat/joy-of-code">
-   <img src="https://img.shields.io/github/stars/mattcroat/joy-of-code?logo=github" alt="GitHub stars" valign="middle">
+   [[code](https://github.com/matiadev/joy-of-code)]&ensp;
+   <a href="https://github.com/matiadev/joy-of-code">
+   <img src="https://img.shields.io/github/stars/matiadev/joy-of-code?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    🌸 Joy of Code is a digital garden growing curious minds.<br>
 
-   uses: [GitHub API], [Monaco], [Playwright], [Google Analytics], [Supabase], [Vercel], [PNPM], [Sass], [TypeScript], [remark], [rehype]
+   uses: [Playwright], [Vercel], [PNPM], [TypeScript], [remark], [rehype]
 
 1. **[SvelteKit static blog starter](https://sveltekit-static-starter.netlify.app)**&nbsp;
    [[code](https://github.com/josh-collinsworth/sveltekit-blog-starter)]&ensp;
@@ -397,16 +377,6 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [Playwright], [Vitest], [Iconify], [MarkedJS], [TypeScript], [PNPM], [Pocketbase], [Vercel], [Tailwind]
 
-1. **[Watch This](https://github.com/StephDietz/watch-this/issues/28)**&nbsp;
-   [[code](https://github.com/StephDietz/watch-this)]&ensp;
-   <a href="https://github.com/StephDietz/watch-this">
-   <img src="https://img.shields.io/github/stars/StephDietz/watch-this?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema recommendations based on user input.<br>
-
-   uses: [TypeScript], [Vercel], [Tailwind]
-
 1. **[Svelte Widgets](https://svelte-widgets.janosh.dev)**&nbsp;
    [[code](https://github.com/janosh/svelte-widgets)]&ensp;
    <a href="https://github.com/janosh/svelte-widgets">
@@ -427,16 +397,6 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [TypeScript], [Husky]
 
-1. **[Modern Fluid Typography Editor](https://modern-fluid-typography.vercel.app)**&nbsp;
-   [[code](https://github.com/codeAdrian/modern-fluid-typography-editor)]&ensp;
-   <a href="https://github.com/codeAdrian/modern-fluid-typography-editor">
-   <img src="https://img.shields.io/github/stars/codeAdrian/modern-fluid-typography-editor?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Easily create and fine-tune fluid typography values with Modern CSS <code>clamp()</code>.<br>
-
-   uses: [TypeScript], [PostCSS], [Chart.js], [cssnano]
-
 1. **[MatterViz](https://matterviz.janosh.dev)**&nbsp;
    [[code](https://github.com/janosh/matterviz)]&ensp;
    <a href="https://github.com/janosh/matterviz">
@@ -448,14 +408,14 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    uses: [TypeScript], [pre-commit], [D3], [svelte-widgets], [Vitest], [Playwright], [PNPM], [jsdom], [GitHub Pages]
 
 1. **[Matt Fantinel](https://fantinel.dev)**&nbsp;
-   [[code](https://github.com/matfantinel/matfantinel.github.io)]&ensp;
-   <a href="https://github.com/matfantinel/matfantinel.github.io">
-   <img src="https://img.shields.io/github/stars/matfantinel/matfantinel.github.io?logo=github" alt="GitHub stars" valign="middle">
+   [[code](https://github.com/matfantinel/fantinel.dev)]&ensp;
+   <a href="https://github.com/matfantinel/fantinel.dev">
+   <img src="https://img.shields.io/github/stars/matfantinel/fantinel.dev?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    Personal website and blog of Matt Fantinel, web developer.<br>
 
-   uses: [MDsveX], [SCSS], [Iconoir], [Plausible]
+   uses: [Astro], [SCSS], [Vercel], [TypeScript], [Storybook]
 
 1. **[Svelte.dev](https://svelte.dev)**&nbsp;
    [[code](https://github.com/sveltejs/svelte.dev)]&ensp;
@@ -507,7 +467,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [TypeScript], [PNPM], [Vercel], [MDsveX], [Tailwind], [PostCSS], [Husky], [Playwright], [DaisyUI]
 
-1. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app)**&nbsp;
+1. **[SvelteKit on Edge](https://sveltekit-on-the-edge.vercel.app/edge)**&nbsp;
    [[code](https://github.com/Rich-Harris/sveltekit-on-the-edge)]&ensp;
    <a href="https://github.com/Rich-Harris/sveltekit-on-the-edge">
    <img src="https://img.shields.io/github/stars/Rich-Harris/sveltekit-on-the-edge?logo=github" alt="GitHub stars" valign="middle">
@@ -643,7 +603,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [MDsveX], [GSAP], [Netlify]
 
-1. **[Guess The Year](https://github.com/davjhan/guess-the-year-game)**&nbsp;
+1. **[Guess The Year](https://guess-the-year.davjhan.com)**&nbsp;
    [[code](https://github.com/davjhan/guess-the-year-game)]&ensp;
    <a href="https://github.com/davjhan/guess-the-year-game">
    <img src="https://img.shields.io/github/stars/davjhan/guess-the-year-game?logo=github" alt="GitHub stars" valign="middle">
@@ -684,9 +644,9 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    uses: [SvelteKit], [Convex], [Better Auth], [Autumn], [Tailwind], [shadcn-svelte], [Cloudflare]
 
 1. **[OpenPost](https://openpost.social)**&nbsp;
-   [[code](https://github.com/rodrgds/openpost/tree/main/frontend)]&ensp;
-   <a href="https://github.com/rodrgds/openpost">
-   <img src="https://img.shields.io/github/stars/rodrgds/openpost?logo=github" alt="GitHub stars" valign="middle">
+   [[code](https://github.com/getopenpost/openpost/tree/main/frontend)]&ensp;
+   <a href="https://github.com/getopenpost/openpost">
+   <img src="https://img.shields.io/github/stars/getopenpost/openpost?logo=github" alt="GitHub stars" valign="middle">
    </a>
 
    Self-hosted social media scheduler with an MCP server, CLI, and API.<br>
@@ -712,16 +672,6 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    A tool to visualize historical agile scrum team performance based on behavior anchors.<br>
 
    uses: [PicoCSS], [Pocketbase], [Vercel]
-
-1. **[digital criticism](https://critique-digitale.ch)**&nbsp;
-   [[code](https://github.com/critique-digitale/critique-digitale.ch)]&ensp;
-   <a href="https://github.com/critique-digitale/critique-digitale.ch">
-   <img src="https://img.shields.io/github/stars/critique-digitale/critique-digitale.ch?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   Scholarly conference in the digital humanities.<br>
-
-   uses: [MDsveX], [MVP.css], [Cloudflare]
 
 1. **[Svelvet](https://svelvet.io)**&nbsp;
    [[code](https://github.com/oslabs-beta/Svelvet)]&ensp;
@@ -766,6 +716,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [airtable]: https://airtable.com
 [algolia]: https://algolia.com
 [anime.js]: https://animejs.com
+[astro]: https://astro.build
 [autumn]: https://useautumn.com
 [aws]: https://aws.amazon.com
 [better auth]: https://better-auth.com
@@ -782,7 +733,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [cytoscape.js]: https://js.cytoscape.org
 [d3]: https://d3js.org
 [daisyui]: https://daisyui.com
-[directus]: https://directus.io
+[directus]: https://directus.com
 [docker]: https://docker.com
 [dynamodb]: https://aws.amazon.com/dynamodb
 [echarts]: https://github.com/apache/echarts
@@ -792,21 +743,17 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [firebase]: https://firebase.google.com
 [flamethrower]: https://github.com/fireship-io/flamethrower
 [flutter]: https://flutter.dev
-[github api]: https://docs.github.com/rest
 [github pages]: https://pages.github.com
 [gitpod]: https://gitpod.io
 [go]: https://go.dev
-[google analytics]: https://analytics.google.com
 [google tag manager]: https://tagmanager.google.com
-[gsap]: https://greensock.com/gsap
+[gsap]: https://gsap.com
 [highlight.js]: https://highlightjs.org
 [huggingface hub]: https://github.com/huggingface/huggingface_hub
 [huggingface inference]: https://github.com/huggingface/text-generation-inference
 [hugo]: https://gohugo.io
 [husky]: https://github.com/typicode/husky
-[ibm carbon]: https://carbondesignsystem.com
 [iconify]: https://iconify.design
-[iconoir]: https://iconoir.com
 [jest]: https://jestjs.io
 [js-yaml]: https://github.com/nodeca/js-yaml
 [jsdoc]: https://jsdoc.app
@@ -825,11 +772,10 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [mocha]: https://mochajs.org
 [monaco]: https://microsoft.github.io/monaco-editor
 [motion one]: https://motion.dev
-[mvp.css]: https://github.com/andybrewer/mvp
 [nestjs]: https://nestjs.com
 [netlify]: https://netlify.com
 [nginx]: https://nginx.org
-[notion]: https://notion.so
+[notion]: https://notion.com
 [octokit]: https://github.com/octokit/octokit.js
 [ogl]: https://github.com/oframe/ogl
 [panzoom]: https://github.com/timmywil/panzoom
@@ -845,7 +791,6 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [pre-commit]: https://pre-commit.com
 [prism]: https://prismjs.com
 [prisma]: https://prisma.io
-[prosemirror]: https://prosemirror.net
 [python]: https://python.org
 [radix]: https://radix-ui.com
 [rehype]: https://github.com/rehypejs/rehype
@@ -862,7 +807,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
 [sqlite]: https://sqlite.org
 [storyblok]: https://storyblok.com
-[supabase]: https://supabase.com
+[storybook]: https://storybook.js.org
 [superforms]: https://github.com/ciscoheat/sveltekit-superforms
 [svelte forms lib]: https://github.com/tjinauyeung/svelte-forms-lib
 [svelte-enhanced-img]: https://svelte.dev/docs/kit/images#sveltejs-enhanced-img
@@ -879,7 +824,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [three.js]: https://threejs.org
 [trpc-sveltekit]: https://github.com/icflorescu/trpc-sveltekit
 [trpc]: https://trpc.io
-[turbo]: https://github.com/vercel/turbo
+[turbo]: https://github.com/vercel/turborepo
 [typescript]: https://typescriptlang.org
 [underscore]: https://underscorejs.org
 [unocss]: https://github.com/unocss/unocss
@@ -887,7 +832,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [vercel]: https://vercel.com
 [vitest]: https://vitest.dev
 [wasm]: https://webassembly.org
-[webgl]: https://developer.mozilla.org/docs/Web/API/WebGL_API
+[webgl]: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 [ytdl-core]: https://github.com/fent/node-ytdl-core
 
 ## 🎉 Suggestions Welcome

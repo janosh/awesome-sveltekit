@@ -1,6 +1,7 @@
 airtable: https://airtable.com
 algolia: https://algolia.com
 anime.js: https://animejs.com
+astro: https://astro.build
 autumn: https://useautumn.com
 aws: https://aws.amazon.com
 better auth: https://better-auth.com
@@ -17,7 +18,7 @@ cypress: https://cypress.io
 cytoscape.js: https://js.cytoscape.org
 d3: https://d3js.org
 daisyui: https://daisyui.com
-directus: https://directus.io
+directus: https://directus.com
 docker: https://docker.com
 dynamodb: https://aws.amazon.com/dynamodb
 echarts: https://github.com/apache/echarts
@@ -27,21 +28,17 @@ filepond: https://pqina.nl/filepond
 firebase: https://firebase.google.com
 flamethrower: https://github.com/fireship-io/flamethrower
 flutter: https://flutter.dev
-github api: https://docs.github.com/rest
 github pages: https://pages.github.com
 gitpod: https://gitpod.io
 go: https://go.dev
-google analytics: https://analytics.google.com
 google tag manager: https://tagmanager.google.com
-gsap: https://greensock.com/gsap
+gsap: https://gsap.com
 highlight.js: https://highlightjs.org
 huggingface hub: https://github.com/huggingface/huggingface_hub
 huggingface inference: https://github.com/huggingface/text-generation-inference
 hugo: https://gohugo.io
 husky: https://github.com/typicode/husky
-ibm carbon: https://carbondesignsystem.com
 iconify: https://iconify.design
-iconoir: https://iconoir.com
 jest: https://jestjs.io
 js-yaml: https://github.com/nodeca/js-yaml
 jsdoc: https://jsdoc.app
@@ -60,11 +57,10 @@ mdsvexamples: https://github.com/mattjennings/mdsvexamples
 mocha: https://mochajs.org
 monaco: https://microsoft.github.io/monaco-editor
 motion one: https://motion.dev
-mvp.css: https://github.com/andybrewer/mvp
 nestjs: https://nestjs.com
 netlify: https://netlify.com
 nginx: https://nginx.org
-notion: https://notion.so
+notion: https://notion.com
 octokit: https://github.com/octokit/octokit.js
 ogl: https://github.com/oframe/ogl
 panzoom: https://github.com/timmywil/panzoom
@@ -80,7 +76,6 @@ postgresql: https://postgresql.org
 pre-commit: https://pre-commit.com
 prism: https://prismjs.com
 prisma: https://prisma.io
-prosemirror: https://prosemirror.net
 python: https://python.org
 radix: https://radix-ui.com
 rehype: https://github.com/rehypejs/rehype
@@ -97,7 +92,7 @@ smui: https://sveltematerialui.com
 spotify web api: https://github.com/JMPerez/spotify-web-api-js
 sqlite: https://sqlite.org
 storyblok: https://storyblok.com
-supabase: https://supabase.com
+storybook: https://storybook.js.org
 superforms: https://github.com/ciscoheat/sveltekit-superforms
 svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
 svelte-enhanced-img: https://svelte.dev/docs/kit/images#sveltejs-enhanced-img
@@ -114,7 +109,7 @@ testing library: https://testing-library.com
 three.js: https://threejs.org
 trpc-sveltekit: https://github.com/icflorescu/trpc-sveltekit
 trpc: https://trpc.io
-turbo: https://github.com/vercel/turbo
+turbo: https://github.com/vercel/turborepo
 typescript: https://typescriptlang.org
 underscore: https://underscorejs.org
 unocss: https://github.com/unocss/unocss
@@ -122,5 +117,5 @@ uvu: https://github.com/lukeed/uvu
 vercel: https://vercel.com
 vitest: https://vitest.dev
 wasm: https://webassembly.org
-webgl: https://developer.mozilla.org/docs/Web/API/WebGL_API
+webgl: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
 ytdl-core: https://github.com/fent/node-ytdl-core
