@@ -52,7 +52,7 @@
   date_added: 2021-05-25
 
 - title: Guess The Year
-  url: https://github.com/davjhan/guess-the-year-game
+  url: https://guess-the-year.davjhan.com
   repo: https://github.com/davjhan/guess-the-year-game
   description: Round-based browser game where you guess the year in which famous event happened.
     Answers range between 1900-2021. You start with 100 points. The more your guess is off, the more points you loose.
@@ -81,15 +81,6 @@
   date_created: 2021-07-18
   date_added: 2021-08-13
 
-- title: swyxkit
-  url: https://swyxkit.vercel.app
-  repo: https://github.com/swyxio/swyxkit
-  description: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for 2022!
-  tags: [programming, blog, portfolio]
-  uses: [Tailwind, Netlify]
-  date_created: 2020-09-11
-  date_added: 2021-09-01
-
 - title: Svelte Society
   url: https://sveltesociety.dev
   repo: https://github.com/svelte-society/sveltesociety.dev
@@ -111,10 +102,10 @@
 
 - title: Matt Fantinel
   url: https://fantinel.dev
-  repo: https://github.com/matfantinel/matfantinel.github.io
+  repo: https://github.com/matfantinel/fantinel.dev
   description: Personal website and blog of Matt Fantinel, web developer.
-  uses: [MDsveX, SCSS, Iconoir, Plausible]
-  tags: [personal, blog, portfolio, SCSS, MDsveX]
+  uses: [Astro, SCSS, Vercel, TypeScript, Storybook]
+  tags: [personal, blog, portfolio, SCSS, Astro]
   date_created: 2021-09-07
   date_added: 2021-10-01
 
@@ -150,15 +141,6 @@
   tags: [data viz, statistics, machine learning]
   date_created: 2021-01-01
   date_added: 2021-10-19
-
-- title: digital criticism
-  url: https://critique-digitale.ch
-  repo: https://github.com/critique-digitale/critique-digitale.ch
-  description: Scholarly conference in the digital humanities.
-  uses: [MDsveX, MVP.css, Cloudflare]
-  tags: [education, conference, community event, learning]
-  date_created: 2021-07-06
-  date_added: 2021-10-28
 
 - title: The Pudding
   url: https://pudding.cool
@@ -196,15 +178,6 @@
   date_created: 2018-06-08
   date_added: 2022-01-01
 
-- title: Modern Fluid Typography Editor
-  url: https://modern-fluid-typography.vercel.app
-  repo: https://github.com/codeAdrian/modern-fluid-typography-editor
-  description: Easily create and fine-tune fluid typography values with Modern CSS `clamp()`.
-  uses: [TypeScript, PostCSS, Chart.js, cssnano]
-  tags: [developer tool, design, frontend, typography]
-  date_created: 2021-11-29
-  date_added: 2022-01-04
-
 - title: mermaid-live-editor
   url: https://mermaid.live
   repo: https://github.com/mermaid-js/mermaid-live-editor
@@ -215,10 +188,10 @@
   date_added: 2022-02-05
 
 - title: svelte-realworld
-  url: https://github.com/gothinkster/realworld
+  url: https://realworld.svelte.dev
   repo: https://github.com/sveltejs/realworld
   description: SvelteKit implementation of the RealWorld app.
-  uses: [Netlify, MarkedJS]
+  uses: [Vercel, MarkedJS, TypeScript, PNPM, sanitize-html]
   tags: [demo, performance, benchmark]
   date_created: 2017-04-20
   date_added: 2022-02-06
@@ -232,20 +205,11 @@
   date_created: 2021-08-12
   date_added: 2022-02-06
 
-- title: inlang
-  url: https://inlang.com
-  repo: https://github.com/inlang/monorepo
-  description: Translate software products 2x faster.
-  uses: [TypeScript, Vercel, IBM Carbon, Tailwind, Supabase]
-  tags: [front-end, developer tool, localization, i18n]
-  date_created: 2021-08-04
-  date_added: 2022-02-23
-
 - title: Houdini GraphQL
   url: https://houdinigraphql.com
   repo: https://github.com/HoudiniGraphQL/houdini
   description: Documentation site for Houdini.
-  uses: [PNPM, MDsveX, Husky, highlight.js]
+  uses: [Astro, PNPM, TypeScript, Tailwind]
   tags: [graphql, data fetching, front-end, developer tool, minimal]
   date_created: 2021-01-19
   date_added: 2022-03-22
@@ -270,7 +234,7 @@
   date_added: 2022-03-24
 
 - title: Svelte Headless UI
-  url: https://svelte-headlessui.goss.io
+  url: https://svelte-headlessui.goss.io/docs/2.0
   repo: https://github.com/rgossiaux/svelte-headlessui
   description: Unofficial Svelte port of Headless UI components.
   uses: [MDsveX, TypeScript, PostCSS, Tailwind, cssnano, Jest, rehype]
@@ -290,7 +254,7 @@
   date_added: 2022-04-16
 
 - title: SvelteKit on Edge
-  url: https://sveltekit-on-the-edge.vercel.app
+  url: https://sveltekit-on-the-edge.vercel.app/edge
   repo: https://github.com/Rich-Harris/sveltekit-on-the-edge
   description: SvelteKit, running on the edge. In this case, Vercel's edge network.
     See <https://twitter.com/leeerob/status/1517627769924034565>.
@@ -440,17 +404,12 @@
 
 - title: Joy of Code
   url: https://joyofcode.xyz
-  repo: https://github.com/mattcroat/joy-of-code
+  repo: https://github.com/matiadev/joy-of-code
   description: 🌸 Joy of Code is a digital garden growing curious minds.
   uses:
-    - GitHub API
-    - Monaco
     - Playwright
-    - Google Analytics
-    - Supabase
     - Vercel
     - PNPM
-    - Sass
     - TypeScript
     - remark
     - rehype
@@ -605,22 +564,12 @@
   date_created: 2022-06-17
   date_added: 2023-02-27
 
-- title: Watch This
-  url: https://github.com/StephDietz/watch-this/issues/28
-  repo: https://github.com/StephDietz/watch-this
-  description: Uses OpenAI GPT-3 API and streaming Vercel edge functions to generate cinema
-    recommendations based on user input.
-  uses: [TypeScript, Vercel, Tailwind]
-  tags: [content recommendation, edge functions, machine learning]
-  date_created: 2023-01-26
-  date_added: 2023-03-25
-
 - title: editable-website
   url: https://editable.website
-  repo: https://github.com/michael/editable-website
+  repo: https://github.com/michael/editable
   description: A SvelteKit template for building CMS-free editable websites.
-  uses: [Tailwind, ProseMirror, AWS]
-  tags: [postgres, richtext, editable, cms-free, template]
+  uses: [Tailwind, AWS, SQLite, TypeScript, PNPM]
+  tags: [sqlite, richtext, editable, cms-free, template]
   date_created: 2023-04-04
   date_added: 2023-05-07
 
