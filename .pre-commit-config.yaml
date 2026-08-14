@@ -82,7 +82,7 @@ repos:
     hooks:
       - id: vp-check
         name: Format + Lint (vite-plus)
-        entry: bash -c 'cd site && node_modules/.bin/vp check --fix'
+        entry: bash -c 'cd site && npx svelte-kit sync && node_modules/.bin/vp check --fix'
         types_or: [file]
         language: system
         pass_filenames: false
