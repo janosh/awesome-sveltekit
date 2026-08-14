@@ -9,8 +9,8 @@ on:
       - tools.yml
       - readme.md
       - site/package.json
+      - site/src/site-metadata.yml
       - site/src/tasks/**
-      - site/src/sites.yml
       - site/static/screenshots/**
       - .github/workflows/site-assets.yml
 
@@ -45,7 +45,7 @@ jobs:
 
       - name: Check generated files
         run: |
-          generated_paths=(readme.md site/src/sites.yml site/static/screenshots)
+          generated_paths=(readme.md site/src/site-metadata.yml site/static/screenshots)
           [[ -z "$(git status --porcelain -- "${generated_paths[@]}")" ]] && exit 0
           git status --short -- "${generated_paths[@]}"
           git diff -- "${generated_paths[@]}"
