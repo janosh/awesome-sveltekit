@@ -21,6 +21,7 @@ jobs:
         with:
           args: >-
             --accept 200..=206,429,403,500,502,503
+            --accept-timeouts
             --max-retries 3
             --retry-wait-time 5
             --timeout 60
@@ -30,8 +31,4 @@ jobs:
             --exclude 'github.com/janosh/awesome-sveltekit/network'
             --exclude 'mvasigh.dev'
             --exclude 'tauri.app'
-            --exclude 'guess-the-year.davjhan.com'
-            --exclude 'alec.aivazis.com'
-            --exclude 'sveltekit-static-starter.netlify.app'
-            --exclude 'jesperorb.com'
             -- ./**/*.{md,svelte,ts,yml}
