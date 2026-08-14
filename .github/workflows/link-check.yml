@@ -32,4 +32,6 @@ jobs:
             --exclude 'tauri.app'
             --exclude 'guess-the-year.davjhan.com'
             --exclude 'alec.aivazis.com'
+            --exclude 'sveltekit-static-starter.netlify.app'
+            --exclude 'jesperorb.com'
             -- ./**/*.{md,svelte,ts,yml}
