@@ -171,6 +171,22 @@ test(`detail page renders meta tags and an aligned definition list`, async ({ pa
     `Uses`,
   ])
 
+  await page.evaluate(() => {
+    navigator.clipboard.writeText = (text) => {
+      document.documentElement.dataset.copied = text
+      return Promise.resolve()
+    }
+  })
+  for (const [name, href] of [
+    [`Copy repo URL`, `https://github.com/sveltejs/svelte.dev`],
+    [`Copy npm URL`, `https://npmjs.com/package/svelte`],
+  ] as const) {
+    const copy_btn = page.getByRole(`button`, { name })
+    await expect(copy_btn).toBeVisible()
+    await copy_btn.click()
+    expect(await page.locator(`html`).getAttribute(`data-copied`)).toBe(href)
+  }
+
   // The tags row wraps at this width. Wrapped chips must stay inside the value
   // column instead of spilling back under the label.
   await page.setViewportSize({ width: 1000, height: 900 })
@@ -190,6 +206,7 @@ test(`detail page renders meta tags and an aligned definition list`, async ({ pa
   // Sites without a repo drop to plain text without leaking an href onto spans
   await page.goto(`/markushatvan.com`, { waitUntil: `networkidle` })
   await expect(page.locator(`span[href]`)).toHaveCount(0)
+  await expect(page.getByRole(`button`, { name: /Copy (?:repo|npm) URL/ })).toHaveCount(0)
   await expect(page.locator(`main dl > dt`)).toHaveText([
     `Creator`,
     `Project started on`,
