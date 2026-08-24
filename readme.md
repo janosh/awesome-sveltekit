@@ -88,7 +88,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    uses: [TypeScript], [Vercel], [Tailwind], [PNPM], [Changesets], [Vitest], [Prism], [MarkedJS]
 
 1. **[evidence](https://evidence.dev)**&nbsp;
-   [[code](https://github.com/evidence-dev/evidence/blob/-/sites/example-project)]&ensp;
+   [[code](https://github.com/evidence-dev/evidence)]&ensp;
    <a href="https://github.com/evidence-dev/evidence">
    <img src="https://img.shields.io/github/stars/evidence-dev/evidence?logo=github" alt="GitHub stars" valign="middle">
    </a>

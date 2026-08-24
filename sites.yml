@@ -266,7 +266,6 @@
 - title: evidence
   url: https://evidence.dev
   repo: https://github.com/evidence-dev/evidence
-  site_src: https://github.com/evidence-dev/evidence/blob/-/sites/example-project
   description: Evidence enables analysts to deliver a polished business intelligence system using SQL and markdown.
   uses: [PNPM, Changesets, echarts, uvu]
   tags: [analytics, business-intelligence, sql, markdown, data viz, charts]
