@@ -783,10 +783,10 @@
   date_added: 2026-07-26
 
 - title: SVAR Svelte Core
-  url: https://svar.dev/svelte/core/
+  url: https://svar.dev/svelte/core
   repo: https://github.com/svar-widgets/core
-  description: 
-    A UI library of 30+ form controls, popups, date pickers & navigation components. 
+  description:
+    A UI library of 30+ form controls, popups, date pickers & navigation components.
     Part of the broader SVAR Svelte component suite.
   uses: [TypeScript]
   tags: [component library, open source, NPM package, dark-mode, forms]

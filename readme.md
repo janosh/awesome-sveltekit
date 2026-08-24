@@ -457,6 +457,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [JS-Yaml], [JSON5]
 
+1. **[SVAR Svelte Core](https://svar.dev/svelte/core)**&nbsp;
+   [[code](https://github.com/svar-widgets/core)]&ensp;
+   <a href="https://github.com/svar-widgets/core">
+   <img src="https://img.shields.io/github/stars/svar-widgets/core?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A UI library of 30+ form controls, popups, date pickers &amp; navigation components. Part of the broader SVAR Svelte component suite.<br>
+
+   uses: [TypeScript]
+
 1. **[SvelteKit Embed](https://sveltekit-embed.vercel.app)**&nbsp;
    [[code](https://github.com/spences10/sveltekit-embed)]&ensp;
    <a href="https://github.com/spences10/sveltekit-embed">

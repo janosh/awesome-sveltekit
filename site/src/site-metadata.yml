@@ -626,6 +626,17 @@ stemroller:
       github: iffyloop
       name: iffyloop
   repo_stars: 3144
+svar-svelte-core:
+  contributors:
+    - avatar: https://avatars.githubusercontent.com/u/152524502?v=4
+      github: marta-ko
+      location: Polish, Warsaw
+      name: Marta Kowalska
+    - avatar: https://avatars.githubusercontent.com/u/167756647?v=4
+      github: olgatash
+      location: Gdansk, Poland
+      name: Olga Tashlikovich
+  repo_stars: 269
 svead:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/234708?v=4
