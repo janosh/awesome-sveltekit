@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Icon } from 'svelte-widgets'
+  import { CopyButton, Icon } from 'svelte-widgets'
   import { Account, GitHub, NPM, Project, Stack, Star, Tag } from 'svelte-widgets/icons'
   import uses_links from '$root/tools.yml'
   import { tooltip } from 'svelte-widgets/attachments'
@@ -40,12 +40,18 @@
 <section {...rest}>
   <h1>
     <a href={url}>{title}</a>
-    <small>
+    <small {@attach tooltip()}>
       {#if repo}
-        <a href={repo}><Icon icon={GitHub} /></a>
+        <span>
+          <a href={repo}><Icon icon={GitHub} /></a>
+          <CopyButton content={repo} aria-label={`Copy repo URL`} />
+        </span>
       {/if}
       {#if npm}
-        <a href={npm}><Icon icon={NPM} height="2.5ex" /></a>
+        <span>
+          <a href={npm}><Icon icon={NPM} height="2.5ex" /></a>
+          <CopyButton content={npm} aria-label={`Copy npm URL`} />
+        </span>
       {/if}
     </small>
   </h1>
@@ -126,8 +132,24 @@
     display: flex;
     gap: 10pt;
     place-items: center;
+    > span {
+      display: flex;
+      align-items: center;
+      gap: 4pt;
+    }
     a {
       color: white;
+    }
+    :global([data-sms-copy]) {
+      color: white;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font: inherit;
+    }
+    :global([data-sms-copy]:hover) {
+      color: orange;
     }
   }
   /* two columns so labels and values each line up, however the values wrap */

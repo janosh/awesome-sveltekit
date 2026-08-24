@@ -12,6 +12,20 @@ repos:
       - id: trailing-whitespace
       - id: file-contents-sorter
         files: ^tools\.yml$
+      - id: deny-pattern
+        name: 'Brackets should not be inside links [[link]](url) -> [[link](url)]'
+        args: ['\]\]\(']
+        types: [markdown]
+      - id: deny-pattern
+        name: URLs must use HTTPS
+        args: ['http:']
+        types_or: [markdown, yaml]
+        exclude: .pre-commit-config.yaml
+      - id: deny-pattern
+        name: No repeated spaces
+        args: ['\S+\s{2,}']
+        types: [text]
+        exclude_types: [javascript, ts]
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.38.0
@@ -37,7 +51,7 @@ repos:
         stages: [pre-commit, commit-msg]
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.48.0
+    rev: v1.49.0
     hooks:
       - id: typos
         types: [text]
@@ -51,26 +65,6 @@ repos:
         entry: screenshot filenames must end in .avif
         language: fail
         files: '^site/static/screenshots/.*(?<!\.avif)$'
-
-      - id: no-bracket-links
-        name: 'Brackets should not be inside links [[link]](url) -> [[link](url)]'
-        entry: '\]\]\('
-        language: pygrep
-        types: [markdown]
-
-      - id: no-http
-        name: URLs must use HTTPS
-        entry: 'http:'
-        language: pygrep
-        types_or: [markdown, yaml]
-        exclude: .pre-commit-config.yaml
-
-      - id: no-repeated-whitespace
-        name: No repeated spaces
-        entry: '\S+\s{2,}'
-        language: pygrep
-        types: [text]
-        exclude_types: [javascript, ts]
 
       - id: format-urls
         name: Format URLs

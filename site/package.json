@@ -22,19 +22,19 @@
     "@playwright/test": "^1.62.1",
     "@rollup/plugin-yaml": "^5.0.0",
     "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.70.2",
+    "@sveltejs/kit": "^2.70.3",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@types/node": "^26.2.0",
-    "js-yaml": "^5.2.3",
-    "marked": "^18.0.9",
-    "puppeteer": "^25.7.0",
+    "js-yaml": "^5.3.0",
+    "marked": "^18.0.10",
+    "puppeteer": "^25.8.0",
     "sharp": "^0.35.3",
-    "svelte": "^5.56.9",
+    "svelte": "^5.56.10",
     "svelte-check": "^4.7.6",
-    "svelte-widgets": "^1.5.0",
+    "svelte-widgets": "^1.6.0",
     "typescript": "6.0.3",
-    "vite": "^8.2.1",
-    "vite-plus": "0.2.9"
+    "vite": "^8.2.2",
+    "vite-plus": "0.3.0"
   },
   "packageManager": "pnpm@11.9.0"
 }

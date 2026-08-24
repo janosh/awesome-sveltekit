@@ -88,7 +88,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    uses: [TypeScript], [Vercel], [Tailwind], [PNPM], [Changesets], [Vitest], [Prism], [MarkedJS]
 
 1. **[evidence](https://evidence.dev)**&nbsp;
-   [[code](https://github.com/evidence-dev/evidence/blob/-/sites/example-project)]&ensp;
+   [[code](https://github.com/evidence-dev/evidence)]&ensp;
    <a href="https://github.com/evidence-dev/evidence">
    <img src="https://img.shields.io/github/stars/evidence-dev/evidence?logo=github" alt="GitHub stars" valign="middle">
    </a>
@@ -456,6 +456,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    I18n library for Svelte that analyzes your keys at build time for maximum performance and minimal footprint. Built as a SvelteKit plugin so good to use as a reference if you want to build one yourself.<br>
 
    uses: [JS-Yaml], [JSON5]
+
+1. **[SVAR Svelte Core](https://svar.dev/svelte/core)**&nbsp;
+   [[code](https://github.com/svar-widgets/core)]&ensp;
+   <a href="https://github.com/svar-widgets/core">
+   <img src="https://img.shields.io/github/stars/svar-widgets/core?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A UI library of 30+ form controls, popups, date pickers &amp; navigation components. Part of the broader SVAR Svelte component suite.<br>
+
+   uses: [TypeScript]
 
 1. **[SvelteKit Embed](https://sveltekit-embed.vercel.app)**&nbsp;
    [[code](https://github.com/spences10/sveltekit-embed)]&ensp;
