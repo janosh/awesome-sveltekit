@@ -9,10 +9,6 @@ import { defineConfig, lazyPlugins } from 'vite-plus'
 import { enrich_sites, load_metadata } from './src/tasks/enrich-sites.ts'
 import type { Site } from './src/lib/index.ts'
 
-// passed inline to sveltekit() (Kit >= 2.62) so no separate svelte.config.ts is needed;
-// kit options (adapter, alias) sit at the top level rather than under `kit`
-const svelte_config = { adapter: adapter(), alias: { $root: `..`, $site: `.` } }
-
 // Refresh generated assets (GitHub metadata, readme, screenshots) on dev server
 // start. Spawns the task CLI as a child process rather than importing it so
 // puppeteer/sharp stay out of the esbuild-bundled vite config and dev + CI run
@@ -38,7 +34,8 @@ export default defineConfig(({ mode }) => ({
   ...make_config(),
   plugins: lazyPlugins(() => [
     run_site_tasks(loadEnv(mode, process.cwd(), ``)),
-    sveltekit(svelte_config),
+    // kit config passed inline (Kit >= 2.62) so no separate svelte.config.ts is needed
+    sveltekit({ adapter: adapter(), alias: { $root: `..`, $site: `.` } }),
     // sites.yml holds only hand-written fields. Merging the fetched GitHub data
     // and deriving slug/tags/description here keeps marked out of the client
     // bundle and means the site list exists in exactly one file.

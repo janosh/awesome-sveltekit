@@ -23,8 +23,7 @@ jobs:
         # lint) which pnpm otherwise gates behind interactive approval
         run: corepack enable && pnpm install --ignore-scripts
         working-directory: site
-      # vp staged (the prek hook) only sees staged files, so on --all-files it's a no-op;
-      # run the full format/lint/type checks explicitly here
+      # the vp-staged prek hook is a no-op without staged files, so check everything here
       - name: Format, lint and type-check
         run: |
           pnpm exec vp check
