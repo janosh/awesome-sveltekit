@@ -10,7 +10,7 @@ on:
     - cron: '0 0 1 * *' # monthly link check
 
 jobs:
-  check:
+  prek:
     if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
@@ -54,7 +54,7 @@ jobs:
             --exclude 'tauri.app'
             -- ./**/*.{md,svelte,ts,yml}
 
-  test:
+  tests:
     if: github.event_name != 'schedule'
     uses: janosh/workflows/.github/workflows/npm-test.yml@main
     with:
