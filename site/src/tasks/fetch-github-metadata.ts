@@ -35,6 +35,16 @@ function https_url(url: string): string | undefined {
 const has_text = (value: string | undefined): value is string =>
   value !== undefined && value !== ``
 
+// recursively sort object keys so the dumped YAML is stable (js-yaml 5 deprecated sortKeys)
+const sort_keys = (value: unknown): unknown => {
+  if (Array.isArray(value)) return value.map(sort_keys)
+  if (typeof value !== `object` || value === null) return value
+  const entries = Object.entries(value).toSorted(([key_a], [key_b]) =>
+    key_a < key_b ? -1 : 1,
+  )
+  return Object.fromEntries(entries.map(([key, val]) => [key, sort_keys(val)]))
+}
+
 export async function fetch_github_metadata(
   options: { action?: Action } = {},
 ): Promise<void> {
@@ -44,16 +54,6 @@ export async function fetch_github_metadata(
   const sites = load_sites()
   // Retained so a run without a full refetch keeps previously fetched data
   const metadata: SiteMetadata = load_metadata()
-
-  // recursively sort object keys so the dumped YAML is stable (js-yaml 5 deprecated sortKeys)
-  const sort_keys = (value: unknown): unknown => {
-    if (Array.isArray(value)) return value.map(sort_keys)
-    if (typeof value !== `object` || value === null) return value
-    const entries = Object.entries(value).sort(([key_a], [key_b]) =>
-      key_a < key_b ? -1 : 1,
-    )
-    return Object.fromEntries(entries.map(([key, val]) => [key, sort_keys(val)]))
-  }
 
   const this_file = import.meta.url.split(`/`).pop()
 
