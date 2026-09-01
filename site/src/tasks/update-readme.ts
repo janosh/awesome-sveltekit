@@ -21,29 +21,23 @@ export function update_readme(options: { readme_path?: string } = {}): void {
         throw new Error(`missing field(s) in site '${title}'`)
       }
 
-      try {
-        let code_link = ``
-        if (repo !== undefined && repo !== ``) {
-          const [, repo_handle] = repo.split(`github.com/`)
-          if (repo_handle?.split(`/`).length !== 2) {
-            throw new Error(`bad repo handle ${repo_handle}`)
-          }
-          const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
-          // link the badge at the repo, not /stargazers, which GitHub 404s
-          code_link =
-            `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
-            `<a href="${repo}">${new_line}${star_badge}${new_line}</a>`
+      let code_link = ``
+      if (repo) {
+        const [, repo_handle] = repo.split(`github.com/`)
+        if (repo_handle?.split(`/`).length !== 2) {
+          throw new Error(`bad repo handle ${repo_handle} for site '${title}'`)
         }
-
-        let metadata = description
-        if (uses?.length > 0) {
-          metadata += `<br>\n${new_line}uses: [${uses.join(`], [`)}]`
-        }
-
-        return `1. **[${title}](${url})**${code_link}\n${new_line}${metadata}\n`
-      } catch (error) {
-        throw new Error(`${String(error)} for site '${title}'`, { cause: error })
+        const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
+        // link the badge at the repo, not /stargazers, which GitHub 404s
+        code_link =
+          `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
+          `<a href="${repo}">${new_line}${star_badge}${new_line}</a>`
       }
+
+      let metadata = description
+      if (uses.length > 0) metadata += `<br>\n${new_line}uses: [${uses.join(`], [`)}]`
+
+      return `1. **[${title}](${url})**${code_link}\n${new_line}${metadata}\n`
     })
     .join(`\n`)
 

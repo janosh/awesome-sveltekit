@@ -13,7 +13,7 @@
   {#if avatar}
     <img src="{avatar}&size=100" alt={name} />
   {/if}
-  {name ?? github}
+  {name}
   {#if twitter}<a href="https://twitter.com/{twitter.replace(/^@/, ``)}"
       ><Icon icon={Twitter} /></a
     >{/if}

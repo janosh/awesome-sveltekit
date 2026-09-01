@@ -4,13 +4,10 @@
 import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
 import { setTimeout as sleep } from 'node:timers/promises'
-import { launch } from 'puppeteer'
+import { launch, type Page } from 'puppeteer'
 import sharp from 'sharp'
 import type { Action } from './'
 import { load_sites } from './enrich-sites.ts'
-
-type Browser = Awaited<ReturnType<typeof launch>>
-type Page = Awaited<ReturnType<Browser[`newPage`]>>
 
 async function goto_site(page: Page, url: string): Promise<void> {
   try {
@@ -24,16 +21,12 @@ async function goto_site(page: Page, url: string): Promise<void> {
   }
 }
 
-export async function make_screenshots(options: { action?: Action } = {}): Promise<void> {
+export async function make_screenshots(
+  options: { action?: Exclude<Action, `make-screenshots`> } = {},
+): Promise<void> {
   const { action = `add-missing` } = options
   const start = performance.now()
   const screenshot_dir = `../site/static/screenshots`
-
-  if (action === `make-screenshots`) {
-    throw new Error(
-      `make_screenshots() takes screenshots in 'add-missing' or 'update-existing' mode, got action='${action}'`,
-    )
-  }
 
   const sites = load_sites().toSorted((site_a, site_b) =>
     site_a.title.localeCompare(site_b.title),
@@ -52,10 +45,7 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
   }[action]
   console.warn(msg)
 
-  const created: string[] = []
-  const updated: string[] = []
-  const skipped: string[] = []
-  const existed: string[] = []
+  const counts = { created: 0, updated: 0, skipped: 0, existed: 0 }
 
   for (const [idx, site] of sites.entries()) {
     const { slug } = site
@@ -64,7 +54,7 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
     const img_exists = fs.existsSync(img_path)
 
     if (action !== `update-existing` && img_exists) {
-      existed.push(site.slug)
+      counts.existed++
       continue
     }
 
@@ -74,7 +64,7 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
       await goto_site(page, site.url)
     } catch (error) {
       console.warn(`skipping ${slug} due to ${String(error)}`)
-      skipped.push(site.slug)
+      counts.skipped++
       continue
     }
 
@@ -87,8 +77,8 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
     await sharp(hires).toFile(img_path)
     await sharp(lores).toFile(`${screenshot_dir}/${slug}.small.avif`)
 
-    if (img_exists) updated.push(site.slug)
-    else created.push(site.slug)
+    if (img_exists) counts.updated++
+    else counts.created++
   }
 
   await browser.close()
@@ -97,9 +87,9 @@ export async function make_screenshots(options: { action?: Action } = {}): Promi
 
   const this_file = import.meta.url.split(`/`).pop()
 
-  if (created.length > 0 || updated.length > 0) {
+  if (counts.created > 0 || counts.updated > 0) {
     console.warn(
-      `${this_file} took ${wall_time}s, created ${created.length} new, ${updated.length} updated, ${skipped.length} skipped, ${existed.length} already had screenshots\n`,
+      `${this_file} took ${wall_time}s, created ${counts.created} new, ${counts.updated} updated, ${counts.skipped} skipped, ${counts.existed} already had screenshots\n`,
     )
   } else {
     console.warn(`No changes from ${this_file} in ${wall_time}s\n`)

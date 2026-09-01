@@ -74,15 +74,11 @@ repos:
 
   - repo: local
     hooks:
-      - id: vp-check
-        name: Format + Lint (vite-plus)
-        entry: bash -c 'cd site && npx svelte-kit sync && node_modules/.bin/vp check --fix'
-        types_or: [file]
+      - id: vp-staged
+        name: Format, lint and type-check staged files (vp staged)
+        # task list comes from make_config() `staged` in site/vite.config.ts; vp reads the
+        # staged set from git itself, so pass_filenames stays off and it fires once per commit
+        entry: site/node_modules/.bin/vp staged --cwd site
         language: system
         pass_filenames: false
-      - id: svelte-check
-        name: Svelte type check
-        entry: bash -c 'cd site && npx svelte-kit sync && npx svelte-check --threshold error'
-        language: system
-        types_or: [ts, svelte]
-        pass_filenames: false
+        stages: [pre-commit]

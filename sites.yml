@@ -772,7 +772,7 @@
   date_added: 2026-07-02
 
 - title: OpenPost
-  url: https://openpost.social
+  url: https://openpo.st
   repo: https://github.com/getopenpost/openpost
   site_src: https://github.com/getopenpost/openpost/tree/main/frontend
   description: Self-hosted social media scheduler with an MCP server, CLI, and API.

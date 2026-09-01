@@ -19,7 +19,7 @@
 </script>
 
 <a href={site.slug} {...rest}>
-  <Screenshot title={site.title} resolution=".small" style="cursor: pointer" />
+  <Screenshot {site} resolution=".small" style="cursor: pointer" />
 </a>
 <div class="flex">
   <span>

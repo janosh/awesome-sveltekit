@@ -116,7 +116,7 @@
   </dl>
 </section>
 <aside>
-  <Screenshot {title} />
+  <Screenshot {site} />
 </aside>
 
 <style>

@@ -143,8 +143,14 @@ test(`can navigate landing page with arrow keys`, async ({ page }) => {
   await expect(page.locator(`ol > li.active`)).toHaveCount(0)
   await page.keyboard.press(`ArrowRight`)
 
-  const slug = await page.locator(`ol > li.active > a:has(> img)`).getAttribute(`href`)
+  const active_link = page.locator(`ol > li.active > a:has(> img)`)
+  const slug = await active_link.getAttribute(`href`)
   expect(slug).toBeTruthy()
+  // screenshot paths derive from the same slug as the detail page route
+  await expect(active_link.locator(`img`)).toHaveAttribute(
+    `src`,
+    `/screenshots/${slug}.small.avif`,
+  )
 
   await page.keyboard.press(`Enter`)
   await page.waitForURL(`/${slug}`, { waitUntil: `networkidle` })

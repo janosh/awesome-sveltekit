@@ -31,4 +31,4 @@
   <base target="_{inner_width > 600 ? `blank` : `self`}" />
 </svelte:head>
 
-{@render children?.()}
+{@render children()}

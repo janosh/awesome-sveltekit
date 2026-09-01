@@ -2,16 +2,7 @@
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
     "strict": true,
-    "module": "esnext",
-    "target": "esnext",
-    "allowImportingTsExtensions": true,
-    "moduleResolution": "bundler",
     "skipLibCheck": true,
-
-    // To have warnings/errors of the Svelte compiler at the correct position,
-    // enable source maps by default.
-    "sourceMap": true,
-
-    "forceConsistentCasingInFileNames": true
+    "allowImportingTsExtensions": true
   }
 }
