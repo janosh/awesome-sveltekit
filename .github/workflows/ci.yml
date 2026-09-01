@@ -26,8 +26,9 @@ jobs:
       # the vp-staged prek hook is a no-op without staged files, so check everything here
       - name: Format, lint and type-check
         run: |
+          pnpm exec svelte-kit sync # generates .svelte-kit/tsconfig.json which tsconfig.json extends
           pnpm exec vp check
-          pnpm exec svelte-kit sync && pnpm exec svelte-check --threshold error
+          pnpm exec svelte-check --threshold error
         working-directory: site
       - name: Run prek
         uses: j178/prek-action@v2
