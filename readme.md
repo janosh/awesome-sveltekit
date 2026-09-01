@@ -653,7 +653,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [SvelteKit], [Convex], [Better Auth], [Autumn], [Tailwind], [shadcn-svelte], [Cloudflare]
 
-1. **[OpenPost](https://openpost.social)**&nbsp;
+1. **[OpenPost](https://openpo.st)**&nbsp;
    [[code](https://github.com/getopenpost/openpost/tree/main/frontend)]&ensp;
    <a href="https://github.com/getopenpost/openpost">
    <img src="https://img.shields.io/github/stars/getopenpost/openpost?logo=github" alt="GitHub stars" valign="middle">
