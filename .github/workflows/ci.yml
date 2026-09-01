@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *' # monthly link check
+
+jobs:
+  check:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install deps
+        # --ignore-scripts skips puppeteer/sharp build scripts (not needed for
+        # lint) which pnpm otherwise gates behind interactive approval
+        run: corepack enable && pnpm install --ignore-scripts
+        working-directory: site
+      - name: Run prek
+        uses: j178/prek-action@v2
+
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Discover broken links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --accept 200..=206,429,403,500,502,503
+            --accept-timeouts
+            --max-retries 3
+            --retry-wait-time 5
+            --timeout 60
+            --exclude '%7B'
+            --exclude 'npmjs.com'
+            --exclude 'linkedin.com'
+            --exclude 'github.com/janosh/awesome-sveltekit/network'
+            --exclude 'mvasigh.dev'
+            --exclude 'tauri.app'
+            -- ./**/*.{md,svelte,ts,yml}
+
+  test:
+    if: github.event_name != 'schedule'
+    uses: janosh/workflows/.github/workflows/npm-test.yml@main
+    with:
+      working-directory: site
+      test-cmd: ''
+      e2e-test-cmd: npx playwright test
+      install-e2e: npx playwright install chromium
+
+  build:
+    if: github.event_name != 'schedule'
+    uses: janosh/workflows/.github/workflows/nodejs-gh-pages.yml@main
+    with:
+      node-version: 24
+      working-directory: site
+      # --ignore-scripts skips puppeteer/sharp build scripts (not needed to build
+      # the static site) which pnpm otherwise gates behind interactive approval
+      install-cmd: corepack enable && pnpm install --ignore-scripts

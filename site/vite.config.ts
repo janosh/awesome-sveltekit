@@ -1,12 +1,17 @@
-import { make_config } from 'svelte-widgets/vite-config'
 import yaml from '@rollup/plugin-yaml'
+import adapter from '@sveltejs/adapter-static'
 import { sveltekit } from '@sveltejs/kit/vite'
 import { spawn } from 'node:child_process'
 import process from 'node:process'
+import { make_config } from 'svelte-widgets/vite-config'
 import { loadEnv, type Plugin } from 'vite'
 import { defineConfig, lazyPlugins } from 'vite-plus'
 import { enrich_sites, load_metadata } from './src/tasks/enrich-sites.ts'
 import type { Site } from './src/lib/index.ts'
+
+// passed inline to sveltekit() (Kit >= 2.62) so no separate svelte.config.ts is needed;
+// kit options (adapter, alias) sit at the top level rather than under `kit`
+const svelte_config = { adapter: adapter(), alias: { $root: `..`, $site: `.` } }
 
 // Refresh generated assets (GitHub metadata, readme, screenshots) on dev server
 // start. Spawns the task CLI as a child process rather than importing it so
@@ -33,7 +38,7 @@ export default defineConfig(({ mode }) => ({
   ...make_config(),
   plugins: lazyPlugins(() => [
     run_site_tasks(loadEnv(mode, process.cwd(), ``)),
-    sveltekit(),
+    sveltekit(svelte_config),
     // sites.yml holds only hand-written fields. Merging the fetched GitHub data
     // and deriving slug/tags/description here keeps marked out of the client
     // bundle and means the site list exists in exactly one file.
