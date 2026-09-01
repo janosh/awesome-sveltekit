@@ -23,6 +23,13 @@ jobs:
         # lint) which pnpm otherwise gates behind interactive approval
         run: corepack enable && pnpm install --ignore-scripts
         working-directory: site
+      # vp staged (the prek hook) only sees staged files, so on --all-files it's a no-op;
+      # run the full format/lint/type checks explicitly here
+      - name: Format, lint and type-check
+        run: |
+          pnpm exec vp check
+          pnpm exec svelte-kit sync && pnpm exec svelte-check --threshold error
+        working-directory: site
       - name: Run prek
         uses: j178/prek-action@v2
 
