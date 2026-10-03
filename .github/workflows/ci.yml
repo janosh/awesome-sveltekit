@@ -19,9 +19,15 @@ jobs:
         with:
           node-version: 24
       - name: Install deps
-        # --ignore-scripts skips puppeteer/sharp build scripts (not needed for
-        # lint) which pnpm otherwise gates behind interactive approval
-        run: corepack enable && pnpm install --ignore-scripts
+        # svelte-widgets is a git dependency whose `prepare` builds its dist/, so it's the one
+        # allowed build (CI-only pnpm-workspace.yaml); other build scripts (puppeteer) are
+        # skipped without failing. pnpm runs that prepare with npm, whose strict peer resolver
+        # rejects svelte-widgets' dev deps, hence legacy peer deps (uppercase survives pnpm's
+        # lifecycle env filtering).
+        run: &pnpm-install >-
+          corepack enable &&
+          echo 'allowBuilds: { svelte-widgets: true }' > pnpm-workspace.yaml &&
+          NPM_CONFIG_LEGACY_PEER_DEPS=true pnpm install --config.strict-dep-builds=false
         working-directory: site
       # the vp-staged prek hook is a no-op without staged files, so check everything here
       - name: Format, lint and type-check
@@ -59,6 +65,7 @@ jobs:
     uses: janosh/workflows/.github/workflows/npm-test.yml@main
     with:
       working-directory: site
+      install-cmd: *pnpm-install
       test-cmd: npx vp test run
       e2e-test-cmd: npx playwright test
       install-e2e: npx playwright install chromium
@@ -69,6 +76,4 @@ jobs:
     with:
       node-version: 24
       working-directory: site
-      # --ignore-scripts skips puppeteer/sharp build scripts (not needed to build
-      # the static site) which pnpm otherwise gates behind interactive approval
-      install-cmd: corepack enable && pnpm install --ignore-scripts
+      install-cmd: *pnpm-install
