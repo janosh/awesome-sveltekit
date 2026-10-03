@@ -62,7 +62,7 @@ jobs:
 
   tests:
     if: github.event_name != 'schedule'
-    uses: janosh/workflows/.github/workflows/npm-test.yml@deploy-only-from-main
+    uses: janosh/workflows/.github/workflows/npm-test.yml@main
     with:
       working-directory: site
       install-cmd: *pnpm-install
@@ -72,7 +72,7 @@ jobs:
 
   build:
     if: github.event_name != 'schedule'
-    uses: janosh/workflows/.github/workflows/nodejs-gh-pages.yml@deploy-only-from-main
+    uses: janosh/workflows/.github/workflows/nodejs-gh-pages.yml@main
     with:
       node-version: 24
       working-directory: site
