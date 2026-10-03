@@ -19,15 +19,15 @@ jobs:
         with:
           node-version: 24
       - name: Install deps
-        # svelte-widgets is a git dependency whose `prepare` builds its dist/, so it's the one
-        # allowed build (CI-only pnpm-workspace.yaml); other build scripts (puppeteer) are
-        # skipped without failing. pnpm runs that prepare with npm, whose strict peer resolver
-        # rejects svelte-widgets' dev deps, hence legacy peer deps (uppercase survives pnpm's
-        # lifecycle env filtering).
+        # svelte-widgets is a git dependency whose `prepare` builds its dist/, so build scripts
+        # must run (pnpm's allowBuilds can't name a moving git dep, only its exact tarball URL).
+        # Puppeteer's Chrome download isn't needed outside the site-assets workflow. pnpm runs
+        # that prepare with npm, whose strict peer resolver rejects svelte-widgets' dev deps,
+        # hence legacy peer deps (uppercase survives pnpm's lifecycle env filtering).
         run: &pnpm-install >-
           corepack enable &&
-          echo 'allowBuilds: { svelte-widgets: true }' > pnpm-workspace.yaml &&
-          NPM_CONFIG_LEGACY_PEER_DEPS=true pnpm install --config.strict-dep-builds=false
+          PUPPETEER_SKIP_DOWNLOAD=true NPM_CONFIG_LEGACY_PEER_DEPS=true
+          pnpm install --config.dangerously-allow-all-builds=true
         working-directory: site
       # the vp-staged prek hook is a no-op without staged files, so check everything here
       - name: Format, lint and type-check
