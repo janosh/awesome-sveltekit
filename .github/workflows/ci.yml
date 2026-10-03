@@ -62,17 +62,17 @@ jobs:
 
   tests:
     if: github.event_name != 'schedule'
-    uses: janosh/workflows/.github/workflows/npm-test.yml@main
+    uses: janosh/workflows/.github/workflows/npm-test.yml@deploy-only-from-main
     with:
       working-directory: site
       install-cmd: *pnpm-install
       test-cmd: npx vp test run
       e2e-test-cmd: npx playwright test
-      install-e2e: npx playwright install chromium
+      e2e-install-cmd: npx playwright install chromium
 
   build:
     if: github.event_name != 'schedule'
-    uses: janosh/workflows/.github/workflows/nodejs-gh-pages.yml@main
+    uses: janosh/workflows/.github/workflows/nodejs-gh-pages.yml@deploy-only-from-main
     with:
       node-version: 24
       working-directory: site
