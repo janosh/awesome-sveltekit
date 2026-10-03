@@ -1,10 +1,10 @@
 <script lang="ts">
   import { CopyButton, Icon } from 'svelte-widgets'
   import { Account, GitHub, NPM, Project, Stack, Star, Tag } from 'svelte-widgets/icons'
-  import uses_links from '$root/tools.yml'
+  import uses_links from '../../../tools.yml'
   import { tooltip } from 'svelte-widgets/attachments'
   import type { HTMLAttributes } from 'svelte/elements'
-  import type { Site } from './index'
+  import type { Site } from './index.ts'
   import Person from './Person.svelte'
   import Screenshot from './Screenshot.svelte'
 

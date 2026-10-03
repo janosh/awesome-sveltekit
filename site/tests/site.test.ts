@@ -135,13 +135,24 @@ test(`can navigate between detail pages with arrow keys`, async ({ page }) => {
 
   await page.keyboard.press(`ArrowRight`)
   await page.waitForURL(`/${next_href}`)
+  await page.keyboard.press(`ArrowLeft`)
+  await page.waitForURL(`/svelte.dev`)
 })
 
 test(`can navigate landing page with arrow keys`, async ({ page }) => {
   await page.goto(`/`, { waitUntil: `networkidle` })
 
   await expect(page.locator(`ol > li.active`)).toHaveCount(0)
+  // ArrowLeft with nothing highlighted starts at the last card
+  await page.keyboard.press(`ArrowLeft`)
+  await expect(page.locator(`ol > li`).last()).toHaveClass(/active/)
+  await page.keyboard.press(`Escape`)
   await page.keyboard.press(`ArrowRight`)
+  // ArrowLeft from the first card wraps to the last, ArrowRight wraps back
+  await page.keyboard.press(`ArrowLeft`)
+  await expect(page.locator(`ol > li`).last()).toHaveClass(/active/)
+  await page.keyboard.press(`ArrowRight`)
+  await expect(page.locator(`ol > li`).first()).toHaveClass(/active/)
 
   const active_link = page.locator(`ol > li.active > a:has(> img)`)
   const slug = await active_link.getAttribute(`href`)
@@ -151,6 +162,16 @@ test(`can navigate landing page with arrow keys`, async ({ page }) => {
     `src`,
     `/screenshots/${slug}.small.avif`,
   )
+
+  // arrow keys typed into the search box edit the query, not the highlight
+  const search = page.getByPlaceholder(`Search...`)
+  await search.press(`ArrowRight`)
+  await expect(page.locator(`ol > li`).first()).toHaveClass(/active/)
+  await search.blur()
+
+  await page.keyboard.press(`Escape`)
+  await expect(page.locator(`ol > li.active`)).toHaveCount(0)
+  await page.keyboard.press(`ArrowRight`)
 
   await page.keyboard.press(`Enter`)
   await page.waitForURL(`/${slug}`, { waitUntil: `networkidle` })

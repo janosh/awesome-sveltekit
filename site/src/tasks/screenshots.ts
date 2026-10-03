@@ -6,7 +6,7 @@ import { performance } from 'node:perf_hooks'
 import { setTimeout as sleep } from 'node:timers/promises'
 import { launch, type Page } from 'puppeteer'
 import sharp from 'sharp'
-import type { Action } from './'
+import type { Action } from './index.ts'
 import { load_sites } from './enrich-sites.ts'
 
 async function goto_site(page: Page, url: string): Promise<void> {

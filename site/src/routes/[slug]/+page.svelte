@@ -1,15 +1,30 @@
 <script lang="ts">
-  import { SiteDetails, SitePreview } from '$lib'
-  import type { Site } from '$lib/index'
-  import { repository } from '$site/package.json'
+  import { goto } from '$app/navigation'
+  import { resolve } from '$app/paths'
+  import { SiteDetails, SitePreview } from '#lib'
+  import { repository } from '#site/package.json'
   import { Icon, PrevNext } from 'svelte-widgets'
   import { PullRequest, Sunglasses } from 'svelte-widgets/icons'
+  import { is_editable_event_target, is_modifier_chord } from 'svelte-widgets/utils'
 
   let { data } = $props()
 
   let head_title = $derived(`${data.site.title} | Awesome SvelteKit`)
   let plain_description = $derived(data.site.description?.replaceAll(/<[^>]*>/gu, ``))
+
+  // PrevNext only renders links, so arrow-key navigation (wrapping at the ends) lives here
+  function handle_keyup(event: KeyboardEvent) {
+    if (is_modifier_chord(event) || is_editable_event_target(event.target)) return
+    const step = { ArrowLeft: -1, ArrowRight: 1 }[event.key]
+    const { sites, slug } = data
+    if (step === undefined || sites.length < 2) return
+    const idx = sites.findIndex((site) => site.slug === slug)
+    const target = sites[(idx + step + sites.length) % sites.length]
+    goto(resolve(`/[slug]`, { slug: target.slug }))
+  }
 </script>
+
+<svelte:window onkeyup={handle_keyup} />
 
 <svelte:head>
   <title>{head_title}</title>
@@ -29,19 +44,18 @@
   <SiteDetails site={data.site} />
 </main>
 <PrevNext
-  items={data.sites.map((site) => [site.slug, site])}
+  items={data.sites.map((site) => ({ href: site.slug, label: site.title, site }))}
   current={data.slug}
   style="max-width: var(--main-max-width)"
 >
   {#snippet children({ item, kind })}
-    {@const [slug, site] = item as [string, Site]}
     <div style="max-width: 250px">
       <h3 style:text-align={kind === `next` ? `right` : `left`}>
-        <a href={slug}>
+        <a href={item.href}>
           {@html kind === `next` ? `Next &rarr;` : `&larr; Previous`}
         </a>
       </h3>
-      <SitePreview {site} />
+      <SitePreview site={item.site} />
     </div>
   {/snippet}
 </PrevNext>

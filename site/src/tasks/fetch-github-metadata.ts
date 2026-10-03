@@ -8,7 +8,7 @@ import fs from 'node:fs'
 import { performance } from 'node:perf_hooks'
 import process from 'node:process'
 import type { Contributor } from 'svelte-widgets'
-import type { Action } from './'
+import type { Action } from './index.ts'
 import { load_metadata, load_sites, metadata_path } from './enrich-sites.ts'
 import type { SiteMetadata } from './enrich-sites.ts'
 

@@ -1,5 +1,5 @@
-export const filter_modes = { all: `all`, any: `any` } as const
-type FilterMode = keyof typeof filter_modes
+export const filter_modes = [`all`, `any`] as const
+type FilterMode = (typeof filter_modes)[number]
 // the shape MultiSelect binds into filters.tags/contributors
 type SelectOption = { label: string; count: number }
 
@@ -11,8 +11,11 @@ export const filters = $state<{
   tags_mode: FilterMode
 }>({ contributors: [], contributors_mode: `any`, search: ``, tags: [], tags_mode: `any` })
 
-export const sort_by = { date: `Date Created`, stars: `GitHub Stars` } as const
-type SortBy = keyof typeof sort_by
+export const sort_options = [
+  { value: `date`, label: `Date Created` },
+  { value: `stars`, label: `GitHub Stars` },
+] as const
+type SortBy = (typeof sort_options)[number][`value`]
 type SortOrder = `asc` | `desc`
 
 export const sorted = $state<{ by: SortBy; order: SortOrder }>({
@@ -53,9 +56,9 @@ export function filters_to_query(url: URL): string {
 // hand-edited or stale URL still renders the page.
 const parse_key = <T extends string>(
   value: string | null,
-  options: Record<T, unknown>,
+  allowed: readonly T[],
   fallback: T,
-): T => (Object.hasOwn(options, value ?? ``) ? (value as T) : fallback)
+): T => (allowed.includes(value as T) ? (value as T) : fallback)
 
 // Iterating options rather than values drops unknown labels and duplicates, so
 // the URL can only express states the UI can also produce (and round-trip).
@@ -74,7 +77,11 @@ export function filters_from_query(query: string, options: FilterOptions) {
   const mode = (key: string) => parse_key(params.get(key), filter_modes, `any`)
   filters.tags_mode = mode(`tags_mode`)
   filters.contributors_mode = mode(`contributors_mode`)
-  sorted.by = parse_key(params.get(`sort`), sort_by, `stars`)
+  sorted.by = parse_key(
+    params.get(`sort`),
+    sort_options.map(({ value }) => value),
+    `stars`,
+  )
   // only `asc` is non-default; anything else (incl. missing/bogus) → desc
   sorted.order = params.get(`order`) === `asc` ? `asc` : `desc`
 }

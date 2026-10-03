@@ -2,7 +2,7 @@
   import { Icon } from 'svelte-widgets'
   import { ExternalLink, GitHub, Twitter } from 'svelte-widgets/icons'
   import type { HTMLAttributes } from 'svelte/elements'
-  import type { SiteAuthor } from './index'
+  import type { SiteAuthor } from './index.ts'
 
   let { person, ...rest }: { person: SiteAuthor } & HTMLAttributes<HTMLSpanElement> =
     $props()

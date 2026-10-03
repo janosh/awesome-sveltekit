@@ -1,15 +1,14 @@
 <script lang="ts">
-  import { replaceState } from '$app/navigation'
-  import { page } from '$app/state'
-  import { Filters, type Site, SiteList } from '$lib'
+  import { goto } from '$app/navigation'
+  import { Filters, type Site, SiteList } from '#lib'
   import {
     filters,
     filters_from_query,
     filters_to_query,
     sorted,
-  } from '$lib/state.svelte'
-  import { repository } from '$site/package.json'
-  import sites from '$root/sites.yml'
+  } from '#lib/state.svelte.ts'
+  import { repository } from '#site/package.json'
+  import sites from '../../../sites.yml'
   import { onMount } from 'svelte'
   import { ContributorList, Icon } from 'svelte-widgets'
   import { GitHub, PullRequest, Sunglasses } from 'svelte-widgets/icons'
@@ -46,13 +45,14 @@
   let url_synced = false
   onMount(() => filters_from_query(location.search, { tags, contributors }))
   // Mirror every subsequent change back into the URL. Compare against location,
-  // not page.url, which replaceState leaves stale.
+  // not page.url, which shallow navigation leaves stale.
   $effect(() => {
     const url = new URL(location.href)
     url.search = filters_to_query(url)
     // The first run only mirrors back the state just restored above. Skipping
-    // it also avoids calling replaceState before the router has started.
-    if (url_synced && url.href !== location.href) replaceState(url, page.state)
+    // it also avoids navigating before the router has started.
+    if (url_synced && url.href !== location.href)
+      goto(url, { shallow: true, replace: true })
     url_synced = true
   })
 
