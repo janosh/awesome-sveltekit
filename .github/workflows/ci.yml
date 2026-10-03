@@ -19,14 +19,20 @@ jobs:
         with:
           node-version: 24
       - name: Install deps
-        # --ignore-scripts skips puppeteer/sharp build scripts (not needed for
-        # lint) which pnpm otherwise gates behind interactive approval
-        run: corepack enable && pnpm install --ignore-scripts
+        # svelte-widgets is a git dependency whose `prepare` builds its dist/, so build scripts
+        # must run (pnpm's allowBuilds can't name a moving git dep, only its exact tarball URL).
+        # Puppeteer's Chrome download isn't needed outside the site-assets workflow. pnpm runs
+        # that prepare with npm, whose strict peer resolver rejects svelte-widgets' dev deps,
+        # hence legacy peer deps (uppercase survives pnpm's lifecycle env filtering).
+        run: &pnpm-install >-
+          corepack enable &&
+          PUPPETEER_SKIP_DOWNLOAD=true NPM_CONFIG_LEGACY_PEER_DEPS=true
+          pnpm install --config.dangerously-allow-all-builds=true
         working-directory: site
       # the vp-staged prek hook is a no-op without staged files, so check everything here
       - name: Format, lint and type-check
         run: |
-          pnpm exec svelte-kit sync # generates .svelte-kit/tsconfig.json which tsconfig.json extends
+          pnpm exec svelte-kit sync # generates node_modules/$app/tsconfig.json which tsconfig.json extends
           pnpm exec vp check
           pnpm exec svelte-check --threshold error
         working-directory: site
@@ -59,9 +65,10 @@ jobs:
     uses: janosh/workflows/.github/workflows/npm-test.yml@main
     with:
       working-directory: site
-      test-cmd: ''
+      install-cmd: *pnpm-install
+      test-cmd: npx vp test run
       e2e-test-cmd: npx playwright test
-      install-e2e: npx playwright install chromium
+      e2e-install-cmd: npx playwright install chromium
 
   build:
     if: github.event_name != 'schedule'
@@ -69,6 +76,4 @@ jobs:
     with:
       node-version: 24
       working-directory: site
-      # --ignore-scripts skips puppeteer/sharp build scripts (not needed to build
-      # the static site) which pnpm otherwise gates behind interactive approval
-      install-cmd: corepack enable && pnpm install --ignore-scripts
+      install-cmd: *pnpm-install

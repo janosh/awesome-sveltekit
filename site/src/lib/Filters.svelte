@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ButtonGroup, MultiSelect, type ObjectOption } from 'svelte-widgets'
-  import { filter_modes, filters, sort_by, sorted } from './state.svelte'
+  import { filter_modes, filters, sort_options, sorted } from './state.svelte.ts'
 
   let {
     tags,
@@ -21,12 +21,12 @@
     <MultiSelect
       options={tags.map(([label, count]) => ({ label, count }))}
       placeholder="Filter by tag..."
-      bind:selected={filters.tags}
+      bind:value={filters.tags}
       {option}
     />
     {#if filters.tags.length > 1}
       <ButtonGroup
-        bind:selected={filters.tags_mode}
+        bind:value={filters.tags_mode}
         options={filter_modes}
         label="Tag match mode"
       />
@@ -36,21 +36,21 @@
     <MultiSelect
       options={contributors.map(([label, count]) => ({ label, count }))}
       placeholder="Filter by contributor..."
-      bind:selected={filters.contributors}
+      bind:value={filters.contributors}
       {option}
     />
     {#if filters.contributors.length > 1}
       <ButtonGroup
-        bind:selected={filters.contributors_mode}
+        bind:value={filters.contributors_mode}
         options={filter_modes}
         label="Contributor match mode"
       />
     {/if}
   </div>
   <ButtonGroup
-    bind:selected={sorted.by}
+    bind:value={sorted.by}
     bind:sort_order={sorted.order}
-    options={sort_by}
+    options={sort_options}
     label="Sort by"
   />
 </div>

@@ -6,11 +6,7 @@ import { fetch_github_metadata } from './fetch-github-metadata.ts'
 import { make_screenshots } from './screenshots.ts'
 import { update_readme } from './update-readme.ts'
 
-export const action_types = [
-  `add-missing`,
-  `update-existing`,
-  `make-screenshots`,
-] as const
+const action_types = [`add-missing`, `update-existing`, `make-screenshots`] as const
 export type Action = (typeof action_types)[number]
 
 async function run_site_tasks(options: { action?: string; strict?: boolean } = {}) {

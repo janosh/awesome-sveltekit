@@ -1,4 +1,4 @@
-import { env } from '$env/dynamic/private'
+import { GH_TOKEN, GITHUB_TOKEN } from '$app/env/private'
 import type { ServerLoad } from '@sveltejs/kit'
 import type { Contributor } from 'svelte-widgets'
 
@@ -7,7 +7,7 @@ type GhContributor = Contributor & { type: `User` | `Bot` }
 
 export const load: ServerLoad = async () => {
   try {
-    const github_token = env.GH_TOKEN ?? env.GITHUB_TOKEN
+    const github_token = GH_TOKEN ?? GITHUB_TOKEN
     if (!github_token) return { repo_contributors: [] }
 
     const response = await fetch(

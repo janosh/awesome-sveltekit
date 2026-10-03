@@ -2,9 +2,9 @@
   import { Icon } from 'svelte-widgets'
   import { Star, Tag } from 'svelte-widgets/icons'
   import type { HTMLAttributes } from 'svelte/elements'
-  import type { Site } from './index'
+  import type { Site } from './index.ts'
   import Screenshot from './Screenshot.svelte'
-  import { filters } from './state.svelte'
+  import { filters } from './state.svelte.ts'
 
   let {
     site,

@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { HTMLAttributes } from 'svelte/elements'
-  import type { Site } from './index'
+  import type { Site } from './index.ts'
 
   let {
     site,

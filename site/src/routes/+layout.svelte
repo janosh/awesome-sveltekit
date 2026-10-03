@@ -1,9 +1,10 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
-  import { repository } from '$site/package.json'
+  import { resolve } from '$app/paths'
+  import { repository } from '#site/package.json'
   // oxlint-disable-next-line no-unassigned-import
   import '../app.css'
-  import sites from '$root/sites.yml'
+  import sites from '../../../sites.yml'
   import type { Snippet } from 'svelte'
   import { CommandMenu, GitHubCorner } from 'svelte-widgets'
 
@@ -12,7 +13,7 @@
 
   const actions = sites.map(({ title, slug }) => ({
     id: slug,
-    action: () => goto(slug),
+    action: () => goto(resolve(`/[slug]`, { slug })),
     label: title,
   }))
 </script>

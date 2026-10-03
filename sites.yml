@@ -774,7 +774,7 @@
 - title: OpenPost
   url: https://openpo.st
   repo: https://github.com/getopenpost/openpost
-  site_src: https://github.com/getopenpost/openpost/tree/main/frontend
+  site_src: https://github.com/getopenpost/openpost/tree/main/apps/web
   description: Self-hosted social media scheduler with an MCP server, CLI, and API.
   uses: [SvelteKit, Go, TypeScript, Tailwind, PNPM, Docker, SQLite, PostgreSQL, Playwright]
   tags: [self-hosted, social media, scheduling, automation, open source]
