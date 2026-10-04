@@ -692,6 +692,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [Playwright], [D3], [Testing Library], [Tailwind], [PostCSS], [Vitest]
 
+1. **[MonoMap](https://monomap.app)**&nbsp;
+   [[code](https://github.com/tehnika-mk/monomap)]&ensp;
+   <a href="https://github.com/tehnika-mk/monomap">
+   <img src="https://img.shields.io/github/stars/tehnika-mk/monomap?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Keyboard-first, local-first mind map and kanban board that stores everything in your browser and works offline.<br>
+
+   uses: [SvelteKit], [TypeScript], [Tailwind]
+
 1. **[Flayks](https://flayks.com)**
 
    Portfolio of Félix Péault, Digital Designer and Art Director. Sanity.io [<a href="https://sanity.io/blog/felix-peault-community-interview">interview</a>], [<a href="https://sanity.io/projects/flayks-portfolio-2021">feature</a>].<br>

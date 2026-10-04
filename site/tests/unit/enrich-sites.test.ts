@@ -6,7 +6,7 @@ import { enrich_sites, load_sites } from '../../src/tasks/enrich-sites.ts'
 const raw_site: Site = {
   title: `Example Site`,
   url: `https://example.com`,
-  repo: `https://github.com/example/site`,
+  repo: `https://github.com/sveltejs/kit`,
   tags: [`docs`],
   uses: [`SvelteKit`],
   date_created: `2021-10-19`,
