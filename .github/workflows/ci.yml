@@ -14,8 +14,8 @@ jobs:
     if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
       - name: Install deps
@@ -37,12 +37,12 @@ jobs:
           pnpm exec svelte-check --threshold error
         working-directory: site
       - name: Run prek
-        uses: j178/prek-action@v2
+        uses: j178/prek-action@main
 
   link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Discover broken links
         uses: lycheeverse/lychee-action@v2
         with:

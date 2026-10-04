@@ -371,6 +371,15 @@ mermaid-live-editor:
       name: Steph
       url: https://www.huynhicode.dev/
   repo_stars: 6745
+monomap:
+  contributors:
+    - avatar: https://avatars.githubusercontent.com/u/201666277?v=4
+      company: '@tehnika-mk '
+      github: petar-io
+      location: Skopje
+      name: Petar Petkovski
+      url: https://tehnika.mk
+  repo_stars: 1
 multi-monitor-calculator:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/28243511?v=4

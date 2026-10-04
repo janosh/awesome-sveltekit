@@ -791,3 +791,13 @@
   tags: [component library, open source, NPM package, dark-mode, forms]
   date_created: 2023-11-13
   date_added: 2026-08-24
+
+- title: MonoMap
+  url: https://monomap.app
+  repo: https://github.com/tehnika-mk/monomap
+  description: Keyboard-first, local-first mind map and kanban board that stores everything
+    in your browser and works offline.
+  uses: [SvelteKit, TypeScript, Tailwind]
+  tags: [notes, mind map, kanban]
+  date_created: 2026-08-12
+  date_added: 2026-09-28
