@@ -1,3 +1,5 @@
+import type { Site } from './index.ts'
+
 export const filter_modes = [`all`, `any`] as const
 type FilterMode = (typeof filter_modes)[number]
 // the shape MultiSelect binds into filters.tags/contributors
@@ -85,3 +87,27 @@ export function filters_from_query(query: string, options: FilterOptions) {
   // only `asc` is non-default; anything else (incl. missing/bogus) → desc
   sorted.order = params.get(`order`) === `asc` ? `asc` : `desc`
 }
+
+// Case-, accent- and whitespace-insensitive, folding text like the highlight_matches
+// attachment so `zoltan` finds "Zoltán"
+export const fold = (text: string) =>
+  text
+    .normalize(`NFD`)
+    .replaceAll(/\p{Diacritic}/gu, ``)
+    .toLowerCase()
+    .replaceAll(/\s+/gu, ` `)
+
+// What the search box matches: title, domain, description, tags, tools and contributor
+// names, never raw JSON (whose keys like "date" would match every site). Fields are
+// joined with NUL so a query can't match across two of them.
+export const search_text = (site: Site) =>
+  fold(
+    [
+      site.title,
+      site.url.replace(/^https?:\/\//u, ``),
+      site.description_text ?? ``,
+      ...site.tags,
+      ...site.uses,
+      ...(site.contributors ?? []).map(({ name }) => name),
+    ].join(`\0`),
+  )

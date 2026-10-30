@@ -5,25 +5,18 @@ import type { Contributor } from 'svelte-widgets'
 // GitHub's contributor payload; ContributorList only needs the structural fields
 type GhContributor = Contributor & { type: `User` | `Bot` }
 
+// The endpoint is public; a token (when set) only raises the rate limit. An empty
+// list hides the contributors section rather than failing the build.
 export const load: ServerLoad = async () => {
+  const token = GH_TOKEN ?? GITHUB_TOKEN
   try {
-    const github_token = GH_TOKEN ?? GITHUB_TOKEN
-    if (!github_token) return { repo_contributors: [] }
-
     const response = await fetch(
       `https://api.github.com/repos/janosh/awesome-sveltekit/contributors`,
-      { cache: `force-cache`, headers: { Authorization: `token ${github_token}` } },
+      { cache: `force-cache`, headers: token ? { authorization: `token ${token}` } : {} },
     )
-
-    if (!response.ok) {
-      console.error(`GitHub API returned ${response.status}: ${response.statusText}`)
-      return { repo_contributors: [] }
-    }
-
-    const repo_contributors = ((await response.json()) as GhContributor[]).filter(
-      (contributor) => contributor.type !== `Bot`,
-    )
-    return { repo_contributors }
+    if (!response.ok) throw new Error(`HTTP ${response.status} ${response.statusText}`)
+    const contributors = (await response.json()) as GhContributor[]
+    return { repo_contributors: contributors.filter(({ type }) => type !== `Bot`) }
   } catch (error) {
     console.error(`Failed to fetch contributors:`, error)
     return { repo_contributors: [] }

@@ -19,15 +19,9 @@ jobs:
         with:
           node-version: 24
       - name: Install deps
-        # svelte-widgets is a git dependency whose `prepare` builds its dist/, so build scripts
-        # must run (pnpm's allowBuilds can't name a moving git dep, only its exact tarball URL).
-        # Puppeteer's Chrome download isn't needed outside the site-assets workflow. pnpm runs
-        # that prepare with npm, whose strict peer resolver rejects svelte-widgets' dev deps,
-        # hence legacy peer deps (uppercase survives pnpm's lifecycle env filtering).
-        run: &pnpm-install >-
-          corepack enable &&
-          PUPPETEER_SKIP_DOWNLOAD=true NPM_CONFIG_LEGACY_PEER_DEPS=true
-          pnpm install --config.dangerously-allow-all-builds=true
+        # puppeteer's postinstall downloads Chrome, which only site-assets.yml needs (and
+        # installs itself); pnpm fails CI installs on unapproved build scripts, so deny it
+        run: &pnpm-install corepack enable && pnpm install --allow-build '!puppeteer'
         working-directory: site
       # the vp-staged prek hook is a no-op without staged files, so check everything here
       - name: Format, lint and type-check
@@ -37,7 +31,7 @@ jobs:
           pnpm exec svelte-check --threshold error
         working-directory: site
       - name: Run prek
-        uses: j178/prek-action@main
+        uses: j178/prek-action@v3
 
   link-check:
     runs-on: ubuntu-latest
@@ -77,3 +71,5 @@ jobs:
       node-version: 24
       working-directory: site
       install-cmd: *pnpm-install
+      # the homepage lists repo contributors; a token avoids the shared runners' IP rate limit
+      build-cmd: GITHUB_TOKEN=${{ github.token }} pnpm run build

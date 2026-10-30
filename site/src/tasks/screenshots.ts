@@ -107,7 +107,3 @@ export async function make_screenshots(
     }
   }
 }
-
-if (import.meta.main) {
-  await make_screenshots()
-}

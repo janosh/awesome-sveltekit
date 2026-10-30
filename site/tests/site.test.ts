@@ -250,3 +250,19 @@ test(`shows 404 page for invalid slugs`, async ({ page }) => {
   expect(response?.status()).toBe(404)
   await expect(page.getByText(`Page 'not-a-real-site' not found`)).toBeVisible()
 })
+
+test(`Enter after filtering past the highlighted card doesn't crash`, async ({
+  page,
+}) => {
+  const errors: string[] = []
+  page.on(`pageerror`, (error) => errors.push(error.message))
+  await page.goto(`/`, { waitUntil: `networkidle` })
+  for (let idx = 0; idx < 10; idx++) await page.keyboard.press(`ArrowRight`)
+  const search = page.getByPlaceholder(`Search...`)
+  await search.fill(`immich`)
+  await expect(page.locator(`ol > li`)).toHaveCount(1)
+  await search.blur()
+  await page.keyboard.press(`Enter`)
+  await expect(page).toHaveURL(/\?q=immich$/) // no navigation, no highlighted card left
+  expect(errors).toEqual([])
+})

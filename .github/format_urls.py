@@ -7,7 +7,7 @@ def main() -> int:
         with open(filename) as file:
             text = file.read()
 
-        text = text.replace("www.", "")
+        text = text.replace("https://www.", "https://")
 
         # remove trailing slash from URLs
         if filename == "readme.md":

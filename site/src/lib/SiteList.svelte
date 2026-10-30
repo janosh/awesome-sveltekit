@@ -15,6 +15,8 @@
 
   function handle_keyup(event: KeyboardEvent) {
     if (sites.length === 0 || is_editable_event_target(event.target)) return
+    // filtering may have shrunk the list below the highlighted card
+    if (active_idx >= sites.length) active_idx = -1
     if (event.key === `Escape`) active_idx = -1
     if (event.key === `Enter` && active_idx >= 0) {
       goto(resolve(`/[slug]`, { slug: sites[active_idx].slug }))
@@ -37,7 +39,7 @@
   {@attach highlight_matches({ query: filters.search, css_class: `highlight-match` })}
   {...rest}
 >
-  {#each sites as site, idx (site.url)}
+  {#each sites as site, idx (site.slug)}
     <li
       animate:flip={{ duration: 400 }}
       in:fade={{ delay: 100 }}

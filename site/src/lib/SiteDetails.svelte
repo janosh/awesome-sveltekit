@@ -22,19 +22,8 @@
   )
   let contrib_url = $derived(repo ? `${repo}/contributors` : undefined)
 
-  let tools = $derived(
-    uses.flatMap((tool) => {
-      const href = uses_links[tool.toLowerCase()]
-      if (!href) {
-        console.error(`Unknown tool: ${tool}`)
-        return []
-      }
-      if (!href.startsWith(`https`)) {
-        throw new Error(`All tool URLs should use HTTPS: ${tool} has href: ${href}`)
-      }
-      return [[tool, href]]
-    }),
-  )
+  // tests/unit/enrich-sites.test.ts checks every tool has an HTTPS link in tools.yml
+  let tools = $derived(uses.map((tool) => [tool, uses_links[tool.toLowerCase()]]))
 </script>
 
 <section {...rest}>

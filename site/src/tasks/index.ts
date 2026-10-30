@@ -19,15 +19,21 @@ async function run_site_tasks(options: { action?: string; strict?: boolean } = {
     )
   }
 
-  try {
-    await fetch_github_metadata({ action })
-    update_readme()
-    if (action === `make-screenshots`) {
-      await make_screenshots({ action: `add-missing` })
+  const tasks = [
+    () => fetch_github_metadata({ action }),
+    async () => update_readme(),
+    ...(action === `make-screenshots` ? [() => make_screenshots()] : []),
+  ]
+  // lenient mode runs each task even if an earlier one failed (e.g. no GH_TOKEN in dev)
+  for (const task of tasks) {
+    try {
+      await task()
+    } catch (error) {
+      if (strict) throw error
+      console.warn(
+        `Skipping a site task: ${error instanceof Error ? error.message : error}`,
+      )
     }
-  } catch (error) {
-    if (strict) throw error
-    console.warn(`Skipping site tasks: ${error instanceof Error ? error.message : error}`)
   }
 }
 

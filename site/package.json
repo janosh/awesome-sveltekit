@@ -24,21 +24,21 @@
     "site-tasks": "node --env-file-if-exists=.env src/tasks/index.ts"
   },
   "devDependencies": {
-    "@playwright/test": "^1.63.0",
+    "@playwright/test": "^1.64.1",
     "@sveltejs/adapter-static": "^4.0.0",
-    "@sveltejs/kit": "^3.0.0",
+    "@sveltejs/kit": "^3.1.0",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
-    "@types/node": "^26.4.1",
-    "js-yaml": "^5.4.1",
-    "marked": "^18.0.11",
-    "puppeteer": "^25.10.0",
-    "sharp": "^0.35.4",
-    "svelte": "^5.57.1",
-    "svelte-check": "^4.7.6",
-    "svelte-widgets": "github:janosh/svelte-widgets#main",
+    "@types/node": "^26.6.5",
+    "js-yaml": "^5.5.0",
+    "marked": "^18.1.1",
+    "puppeteer": "^25.16.0",
+    "sharp": "^0.35.5",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.7",
+    "svelte-widgets": "^1.10.0",
     "typescript": "^6.0.3",
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0",
-    "vite-plus": "1.0.0"
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0",
+    "vite-plus": "1.4.0"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@12.15.0"
 }

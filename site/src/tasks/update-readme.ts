@@ -2,7 +2,7 @@
 
 import { load } from 'js-yaml'
 import fs from 'node:fs'
-import { load_sites } from './enrich-sites.ts'
+import { load_sites, repo_handle } from './enrich-sites.ts'
 
 export function update_readme(options: { readme_path?: string } = {}): void {
   const { readme_path = `../readme.md` } = options
@@ -23,11 +23,7 @@ export function update_readme(options: { readme_path?: string } = {}): void {
 
       let code_link = ``
       if (repo) {
-        const [, repo_handle] = repo.split(`github.com/`)
-        if (repo_handle?.split(`/`).length !== 2) {
-          throw new Error(`bad repo handle ${repo_handle} for site '${title}'`)
-        }
-        const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle}?logo=github" alt="GitHub stars" valign="middle">`
+        const star_badge = `<img src="https://img.shields.io/github/stars/${repo_handle(repo)}?logo=github" alt="GitHub stars" valign="middle">`
         // link the badge at the repo, not /stargazers, which GitHub 404s
         code_link =
           `&nbsp;${new_line}[[code](${site_src ?? repo})]&ensp;${new_line}` +
@@ -57,8 +53,4 @@ export function update_readme(options: { readme_path?: string } = {}): void {
 
   const this_file = import.meta.url.split(`/`).pop()
   console.warn(`${this_file} updated readme\n`)
-}
-
-if (import.meta.main) {
-  update_readme()
 }

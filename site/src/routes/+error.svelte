@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state'
-  import { homepage, name } from '#site/package.json'
+  import { bugs, name } from '#site/package.json'
   import { Icon } from 'svelte-widgets'
   import { GitHub } from 'svelte-widgets/icons'
 
@@ -18,7 +18,7 @@
   {#if page.status >= 500}
     <p>
       If page reloading doesn't help, please raise an issue on
-      <a href="{homepage}/issues" target="_blank" rel="noreferrer">GitHub</a>. Thanks! 🙏
+      <a href={bugs} target="_blank" rel="noreferrer">GitHub</a>. Thanks! 🙏
     </p>
   {/if}
   {#if !online}
