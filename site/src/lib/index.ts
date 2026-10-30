@@ -6,7 +6,8 @@ export { default as SitePreview } from './SitePreview.svelte'
 export interface Site {
   title: string
   url: string
-  description?: string
+  description?: string // inline HTML rendered from sites.yml markdown
+  description_text?: string // the same as plain text, for search and meta tags
   repo?: string
   npm?: string
   site_src?: string

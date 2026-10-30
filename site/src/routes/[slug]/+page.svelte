@@ -10,7 +10,7 @@
   let { data } = $props()
 
   let head_title = $derived(`${data.site.title} | Awesome SvelteKit`)
-  let plain_description = $derived(data.site.description?.replaceAll(/<[^>]*>/gu, ``))
+  let plain_description = $derived(data.site.description_text)
 
   // PrevNext only renders links, so arrow-key navigation (wrapping at the ends) lives here
   function handle_keyup(event: KeyboardEvent) {

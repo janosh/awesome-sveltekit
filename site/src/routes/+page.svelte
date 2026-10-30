@@ -5,6 +5,8 @@
     filters,
     filters_from_query,
     filters_to_query,
+    search_matcher,
+    search_text,
     sorted,
   } from '#lib/state.svelte.ts'
   import { repository } from '#site/package.json'
@@ -31,6 +33,8 @@
   const contributors = count_by(
     contributor_names.filter((name) => name && name !== `Janosh Riebesell`),
   ).toSorted((contributor_a, contributor_b) => contributor_b[1] - contributor_a[1])
+
+  const search_texts = new Map(sites.map((site) => [site, search_text(site)]))
 
   // an empty filter matches everything, so no need to special-case empty values
   const arr_includes = (values: string[], required: string[], mode: `all` | `any`) =>
@@ -64,10 +68,11 @@
     const tag_labels = filters.tags.map(({ label }) => label)
     const contributor_labels = filters.contributors.map(({ label }) => label)
 
+    const matches_query = search_matcher(filters.search)
+
     return sites
       .filter((site) => {
-        const query_match =
-          filters.search === `` || JSON.stringify(site).includes(filters.search)
+        const query_match = matches_query(search_texts.get(site) ?? ``)
         const tag_match = arr_includes(site.tags, tag_labels, filters.tags_mode)
         const contributor_match = arr_includes(
           site.contributors?.map(({ name }) => name) ?? [],
@@ -115,13 +120,15 @@
 
   <SiteList sites={matching_sites} />
 
-  <h2>
-    🙏 Big thanks to
-    <a href="{repository}/graphs/contributors" target="_blank" rel="noreferrer">
-      all {data.repo_contributors.length} contributors
-    </a>
-  </h2>
-  <ContributorList contributors={data.repo_contributors} --contributor-gap="2ex" />
+  {#if data.repo_contributors.length}
+    <h2>
+      🙏 Big thanks to
+      <a href="{repository}/graphs/contributors" target="_blank" rel="noreferrer">
+        all {data.repo_contributors.length} contributors
+      </a>
+    </h2>
+    <ContributorList contributors={data.repo_contributors} --contributor-gap="2ex" />
+  {/if}
 </main>
 
 <h2>🎉 Suggestions Welcome</h2>

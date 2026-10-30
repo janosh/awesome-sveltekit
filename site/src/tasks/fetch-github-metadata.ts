@@ -9,7 +9,7 @@ import { performance } from 'node:perf_hooks'
 import process from 'node:process'
 import type { Contributor } from 'svelte-widgets'
 import type { Action } from './index.ts'
-import { load_metadata, load_sites, metadata_path } from './enrich-sites.ts'
+import { load_metadata, load_sites, metadata_path, repo_handle } from './enrich-sites.ts'
 import type { SiteMetadata } from './enrich-sites.ts'
 
 // GitHub /contributors + /users payloads; widgets Contributor is the shared core
@@ -65,9 +65,9 @@ export async function fetch_github_metadata(
 
   async function fetch_check<T>(url: string): Promise<T> {
     const response = await fetch(url, { headers })
-    const body = (await response.json()) as T & { message?: unknown }
-    if (typeof body.message === `string`) throw new Error(body.message)
-    return body
+    if (!response.ok)
+      throw new Error(`${url}: HTTP ${response.status} ${response.statusText}`)
+    return (await response.json()) as T
   }
 
   async function fetch_site_metadata(site: Site): Promise<boolean> {
@@ -76,28 +76,10 @@ export async function fetch_github_metadata(
     const fetched_before = Object.hasOwn(metadata, slug)
     if (!repo_url || (fetched_before && action !== `update-existing`)) return false
 
-    // Also skip site if repo key cannot be parsed into a user login and a repo name
-    const [, repo_handle] = repo_url.split(`github.com/`)
-    if (repo_handle?.split(`/`).length !== 2) {
-      console.error(`bad repo handle ${repo_handle}`)
-      return false
-    }
-
-    const entry = metadata[slug] ?? {}
-
-    // Fetch stars
-    try {
-      const url = `https://api.github.com/repos/${repo_handle}`
-      const repo = await fetch_check<{ stargazers_count: number }>(url)
-      entry.repo_stars = repo.stargazers_count
-    } catch (error) {
-      console.error(`Error fetching stars for ${site.title}:`, error)
-    }
-
-    // Fetch most active contributors
-    const raw_contributors = await fetch_check<GhContributor[]>(
-      `https://api.github.com/repos/${repo_handle}/contributors`,
-    )
+    const api_url = `https://api.github.com/repos/${repo_handle(repo_url)}`
+    const repo = await fetch_check<{ stargazers_count: number }>(api_url)
+    const raw_contributors = await fetch_check<GhContributor[]>(`${api_url}/contributors`)
+    // most active human contributors
     const contributors = raw_contributors
       .filter((person) => person.contributions > 10 && person.type === `User`)
       .toSorted((person_a, person_b) => person_b.contributions - person_a.contributions)
@@ -107,26 +89,34 @@ export async function fetch_github_metadata(
       contributors.map((person) => fetch_check<GitHubUser>(person.url)),
     )
 
-    entry.contributors = full_contributors.map(
-      ({ name, location, company, ...contributor }) => ({
-        avatar: contributor.avatar_url,
-        company: company ?? undefined,
-        github: contributor.login,
-        location: location ?? undefined,
-        name: name ?? contributor.login,
-        twitter: contributor.twitter_username ?? undefined,
-        url: https_url(contributor.blog),
-      }),
-    )
-
-    metadata[slug] = entry
+    // replaced only once every request succeeded, so a failure keeps the old entry
+    metadata[slug] = {
+      repo_stars: repo.stargazers_count,
+      contributors: full_contributors.map((user) => ({
+        avatar: user.avatar_url,
+        company: user.company ?? undefined,
+        github: user.login,
+        location: user.location ?? undefined,
+        name: user.name ?? user.login,
+        twitter: user.twitter_username ?? undefined,
+        url: https_url(user.blog),
+      })),
+    }
     return true
   }
 
   // Only refetch when a site was added to sites.yml, unless action forces it
   let n_updated = 0
+  const failed: string[] = []
   for (const site of sites) {
-    if (await fetch_site_metadata(site)) n_updated++
+    try {
+      if (await fetch_site_metadata(site)) n_updated++
+    } catch (error) {
+      // a renamed or deleted repo shouldn't cost every other site its metadata,
+      // but still fails the run below (after writing what did succeed)
+      console.error(`GitHub fetch failed for ${site.title}:`, error)
+      failed.push(site.title)
+    }
   }
 
   // Keep only sites still listed in sites.yml
@@ -142,10 +132,7 @@ export async function fetch_github_metadata(
 
   console.warn(
     `${this_file} took ${wall_time}s, updated ${n_updated}, ` +
-      `skipped ${sites.length - n_updated}\n`,
+      `skipped ${sites.length - n_updated - failed.length}, failed ${failed.length}\n`,
   )
-}
-
-if (import.meta.main) {
-  await fetch_github_metadata()
+  if (failed.length) throw new Error(`GitHub fetch failed for: ${failed.join(`, `)}`)
 }
