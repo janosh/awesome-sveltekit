@@ -676,8 +676,8 @@
   repo: https://github.com/syntaxfm/website
   description: Website of the Syntax web development podcast, with every episode, show
     notes, transcripts, a custom audio player and search.
-  uses: [TypeScript, Prisma, Vercel, Sentry, Rehype, Remark, Playwright, Vitest]
-  tags: [podcast, web dev, videos]
+  uses: [TypeScript, Prisma, Vercel, Sentry, rehype, remark, Playwright, Vitest]
+  tags: [podcast, web dev, video]
   date_created: 2017-06-19
   date_added: 2026-10-30
 

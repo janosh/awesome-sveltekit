@@ -132,7 +132,7 @@ export async function fetch_github_metadata(
 
   console.warn(
     `${this_file} took ${wall_time}s, updated ${n_updated}, ` +
-      `skipped ${sites.length - n_updated}\n`,
+      `skipped ${sites.length - n_updated - failed.length}, failed ${failed.length}\n`,
   )
   if (failed.length) throw new Error(`GitHub fetch failed for: ${failed.join(`, `)}`)
 }

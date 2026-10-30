@@ -77,7 +77,9 @@ it.each([
 })
 
 it(`decodes the entities marked escapes in the plain-text description`, () => {
-  const [site] = enrich_sites([{ ...raw_site, description: `Sweet & *Vercel's* <3` }], {})
-  expect(site.description).toBe(`Sweet &amp; <em>Vercel&#39;s</em> &lt;3`)
-  expect(site.description_text).toBe(`Sweet & Vercel's <3`)
+  const description = `Sweet & *Vercel's* <3  \nnext<br>line`
+  const [site] = enrich_sites([{ ...raw_site, description }], {})
+  expect(site.description).toBe(`Sweet &amp; <em>Vercel&#39;s</em> &lt;3<br>next<br>line`)
+  // line breaks become spaces instead of gluing words together
+  expect(site.description_text).toBe(`Sweet & Vercel's <3 next line`)
 })

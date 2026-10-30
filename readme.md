@@ -314,7 +314,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    Website of the Syntax web development podcast, with every episode, show notes, transcripts, a custom audio player and search.<br>
 
-   uses: [TypeScript], [Prisma], [Vercel], [Sentry], [Rehype], [Remark], [Playwright], [Vitest]
+   uses: [TypeScript], [Prisma], [Vercel], [Sentry], [rehype], [remark], [Playwright], [Vitest]
 
 1. **[Kagi Kite](https://news.kagi.com)**&nbsp;
    [[code](https://github.com/kagisearch/kite-public)]&ensp;

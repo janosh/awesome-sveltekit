@@ -250,18 +250,32 @@ test(`shows 404 page for invalid slugs`, async ({ page }) => {
   await expect(page.getByText(`Page 'not-a-real-site' not found`)).toBeVisible()
 })
 
-test(`Enter after filtering past the highlighted card doesn't crash`, async ({
-  page,
-}) => {
+test(`the highlight follows its site through filtering`, async ({ page }) => {
   const errors: string[] = []
   page.on(`pageerror`, (error) => errors.push(error.message))
   await page.goto(`/`, { waitUntil: `networkidle` })
   for (let idx = 0; idx < 10; idx++) await page.keyboard.press(`ArrowRight`)
+  const active = page.locator(`ol > li.active`)
+  const slug = await active.locator(`> a`).getAttribute(`href`)
+  const title = await active.locator(`a[href^="http"]`).first().textContent()
   const search = page.getByPlaceholder(`Search...`)
-  await search.fill(`immich`)
-  await expect(page.locator(`ol > li`)).toHaveCount(1)
+
+  // a query keeping the site moves it up the list, and the highlight moves with it
+  await search.fill(title ?? ``)
+  await expect(page.locator(`ol > li.active > a`)).toHaveAttribute(`href`, slug ?? ``)
   await search.blur()
   await page.keyboard.press(`Enter`)
-  await expect(page).toHaveURL(/\?q=immich$/) // no navigation, no highlighted card left
+  await expect(page).toHaveURL(new RegExp(`/${slug}$`))
+
+  // a query filtering the site out (Immich ranks 2nd, not 10th) leaves nothing
+  // highlighted, so Enter stays put
+  await page.goto(`/`, { waitUntil: `networkidle` })
+  for (let idx = 0; idx < 10; idx++) await page.keyboard.press(`ArrowRight`)
+  await search.fill(`immich`)
+  await expect(page.locator(`ol > li`)).toHaveCount(1)
+  await expect(page.locator(`ol > li.active`)).toHaveCount(0)
+  await search.blur()
+  await page.keyboard.press(`Enter`)
+  await expect(page).toHaveURL(/\?q=immich$/)
   expect(errors).toEqual([])
 })

@@ -11,20 +11,23 @@
   import SitePreview from './SitePreview.svelte'
 
   let { sites, ...rest }: { sites: Site[] } & HTMLAttributes<HTMLOListElement> = $props()
-  let active_idx = $state(-1)
+  // track the highlighted site, not its index, so filtering can't shift the highlight
+  // onto another card; a filtered-out site leaves nothing highlighted (-1)
+  let active_slug = $state<string>()
+  let active_idx = $derived(sites.findIndex(({ slug }) => slug === active_slug))
 
   function handle_keyup(event: KeyboardEvent) {
     if (sites.length === 0 || is_editable_event_target(event.target)) return
-    // filtering may have shrunk the list below the highlighted card
-    if (active_idx >= sites.length) active_idx = -1
-    if (event.key === `Escape`) active_idx = -1
+    if (event.key === `Escape`) active_slug = undefined
     if (event.key === `Enter` && active_idx >= 0) {
       goto(resolve(`/[slug]`, { slug: sites[active_idx].slug }))
     }
     const step = { ArrowLeft: -1, ArrowRight: 1 }[event.key]
     // from no highlight (-1), → starts at the first card and ← at the last
     const from = active_idx < 0 && step === -1 ? 0 : active_idx
-    if (step !== undefined) active_idx = (from + step + sites.length) % sites.length
+    if (step !== undefined) {
+      active_slug = sites[(from + step + sites.length) % sites.length].slug
+    }
     // scrollIntoViewIfNeeded is non-standard (WebKit/Blink only), missing from lib.dom
     const active = document.querySelector<
       Element & { scrollIntoViewIfNeeded?: () => void }

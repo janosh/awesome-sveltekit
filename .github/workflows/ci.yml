@@ -50,9 +50,8 @@ jobs:
             --exclude 'npmjs.com'
             --exclude 'linkedin.com'
             --exclude 'github.com/janosh/awesome-sveltekit/network'
-            --exclude 'mvasigh.dev'
             --exclude 'tauri.app'
-            --exclude 'tropical.sh'
+            --exclude-path 'site/src/site-metadata.yml'
             -- ./**/*.{md,svelte,ts,yml}
 
   tests:

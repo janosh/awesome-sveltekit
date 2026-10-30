@@ -1,34 +1,51 @@
 import sites from '../../../sites.yml'
 import { expect, it } from 'vite-plus/test'
-import { fold, search_text } from '../../src/lib/state.svelte.ts'
+import type { Site } from '../../src/lib/index.ts'
+import { search_matcher, search_text } from '../../src/lib/state.svelte.ts'
 
-const matches = (query: string) =>
-  sites
-    .filter((site) => search_text(site).includes(fold(query)))
+const matches = (query: string, candidates: Site[] = sites) =>
+  candidates
+    .filter((site) => search_matcher(query)(search_text(site)))
     .map(({ title }) => title)
 
-it(`folds case, accents and whitespace like highlight_matches`, () => {
-  expect(fold(`Zoltán  Félix\tSVELTEKIT`)).toBe(`zoltan felix sveltekit`)
-})
-
 it.each([
-  [`date`, (titles: string[]) => titles.length < sites.length], // not a JSON key match
-  // the URL scheme isn't indexed, only links shown in description text
-  [`https`, (titles: string[]) => titles.length < 5],
-  [`sveltekit`, (titles: string[]) => titles.includes(`Official SvelteKit docs`)],
-  [`IMMICH`, (titles: string[]) => titles.includes(`Immich`)],
-])(`search for %j`, (query, check) => {
-  expect(check(matches(query))).toBe(true)
+  [``, sites.map(({ title }) => title)],
+  [`Cybernetically`, [`Svelte.dev`]], // only in its description
+  [`tracker-free`, [`cobalt`]], // likewise, after a hyphen
+  [`IMMICH`, [`Immich`]],
+])(`search for %j`, (query, expected) => {
+  expect(matches(query)).toEqual(expected)
 })
 
-it(`matches tools, tags, contributor names and decoded descriptions, not across fields`, () => {
-  const site = sites.find(({ contributors, uses }) => contributors?.length && uses.length)
-  if (!site) throw new Error(`no site with contributors and tools`)
-  const text = search_text(site)
-  for (const word of [site.uses[0], site.tags[0], site.contributors?.[0]?.name ?? ``]) {
-    expect(text).toContain(fold(word))
-  }
-  expect(sites.some((other) => /&(?:amp|#39);/u.test(search_text(other)))).toBe(false)
-  // the last tag and first tool are separate fields, so their concatenation never matches
-  expect(text).not.toContain(fold(`${site.tags.at(-1)} ${site.uses[0]}`))
+it.each([`date`, `https`, `^`, `slug`])(`%j doesn't match every site`, (query) => {
+  // raw JSON keys, the URL scheme and regex/diacritic-like chars aren't indexed
+  expect(matches(query).length).toBeLessThan(sites.length / 2)
+})
+
+it(`folds case, accents and whitespace, keeps typed accents and field boundaries`, () => {
+  const site = (title: string, extra: Partial<Site> = {}): Site => ({
+    title,
+    slug: title,
+    url: `https://example.com`,
+    tags: [`tag one`],
+    uses: [`Tool`],
+    date_created: `2024-01-01`,
+    date_added: `2024-01-01`,
+    ...extra,
+  })
+  const candidates = [
+    site(`Zoltán  Café`),
+    site(`Zoltan Cafe`, { description_text: `Q&A for devs` }),
+  ]
+  expect(matches(`zoltan cafe`, candidates)).toEqual([`Zoltán  Café`, `Zoltan Cafe`])
+  expect(matches(`café`, candidates)).toEqual([`Zoltán  Café`])
+  expect(matches(`q&a`, candidates)).toEqual([`Zoltan Cafe`])
+  // the last tag and the first tool are separate fields, so their concatenation never matches
+  expect(matches(`one tool`, candidates)).toEqual([])
+})
+
+it(`indexes decoded descriptions, never marked's entities`, () => {
+  expect(sites.some((site) => /&(?:amp|lt|gt|quot|#39);/u.test(search_text(site)))).toBe(
+    false,
+  )
 })

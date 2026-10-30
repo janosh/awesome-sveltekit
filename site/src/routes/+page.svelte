@@ -5,7 +5,7 @@
     filters,
     filters_from_query,
     filters_to_query,
-    fold,
+    search_matcher,
     search_text,
     sorted,
   } from '#lib/state.svelte.ts'
@@ -68,11 +68,11 @@
     const tag_labels = filters.tags.map(({ label }) => label)
     const contributor_labels = filters.contributors.map(({ label }) => label)
 
-    const query = fold(filters.search.trim())
+    const matches_query = search_matcher(filters.search)
 
     return sites
       .filter((site) => {
-        const query_match = !query || search_texts.get(site)?.includes(query)
+        const query_match = matches_query(search_texts.get(site) ?? ``)
         const tag_match = arr_includes(site.tags, tag_labels, filters.tags_mode)
         const contributor_match = arr_includes(
           site.contributors?.map(({ name }) => name) ?? [],

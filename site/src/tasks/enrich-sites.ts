@@ -13,7 +13,8 @@ export type SiteMetadata = Record<
   { repo_stars?: number; contributors?: SiteAuthor[] }
 >
 
-// marked's inline HTML as plain text: drop tags, decode the entities marked escapes
+// marked's inline HTML as plain text: line breaks become spaces, other tags go, and
+// the entities marked escapes are decoded
 const entities: Record<string, string> = {
   '&amp;': `&`,
   '&lt;': `<`,
@@ -23,6 +24,7 @@ const entities: Record<string, string> = {
 }
 const html_to_text = (html: string) =>
   html
+    .replaceAll(/<br\s*\/?>/gu, ` `)
     .replaceAll(/<[^>]+>/gu, ``)
     .replaceAll(/&(?:amp|lt|gt|quot|#39);/gu, (ent) => entities[ent])
 
