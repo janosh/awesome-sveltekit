@@ -231,11 +231,10 @@ test(`detail page renders meta tags and an aligned definition list`, async ({ pa
   for (const chip of chips) expect(chip.left).toBeGreaterThan(label_right)
 
   // Sites without a repo drop to plain text without leaking an href onto spans
-  await page.goto(`/markushatvan.com`, { waitUntil: `networkidle` })
+  await page.goto(`/jschallenger`, { waitUntil: `networkidle` })
   await expect(page.locator(`span[href]`)).toHaveCount(0)
   await expect(page.getByRole(`button`, { name: /Copy (?:repo|npm) URL/ })).toHaveCount(0)
   await expect(page.locator(`main dl > dt`)).toHaveText([
-    `Creator`,
     `Project started on`,
     `Tags`,
     `Uses`,

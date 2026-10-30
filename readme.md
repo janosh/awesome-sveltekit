@@ -396,16 +396,6 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [Skeleton], [Rust], [Tauri], [Netlify]
 
-1. **[Joy of Code](https://joyofcode.xyz)**&nbsp;
-   [[code](https://github.com/matiadev/joy-of-code)]&ensp;
-   <a href="https://github.com/matiadev/joy-of-code">
-   <img src="https://img.shields.io/github/stars/matiadev/joy-of-code?logo=github" alt="GitHub stars" valign="middle">
-   </a>
-
-   🌸 Joy of Code is a digital garden growing curious minds.<br>
-
-   uses: [Playwright], [Vercel], [PNPM], [TypeScript], [remark], [rehype]
-
 1. **[SvelteKit static blog starter](https://sveltekit-static-starter.netlify.app)**&nbsp;
    [[code](https://github.com/josh-collinsworth/sveltekit-blog-starter)]&ensp;
    <a href="https://github.com/josh-collinsworth/sveltekit-blog-starter">

@@ -269,21 +269,6 @@
   date_created: 2020-04-27
   date_added: 2022-08-23
 
-- title: Joy of Code
-  url: https://joyofcode.xyz
-  repo: https://github.com/matiadev/joy-of-code
-  description: 🌸 Joy of Code is a digital garden growing curious minds.
-  uses:
-    - Playwright
-    - Vercel
-    - PNPM
-    - TypeScript
-    - remark
-    - rehype
-  tags: [blog, community, cms]
-  date_created: 2020-10-19
-  date_added: 2022-08-31
-
 - title: QWER
   url: https://svelte-qwer.vercel.app
   repo: https://github.com/kwchang0831/svelte-QWER

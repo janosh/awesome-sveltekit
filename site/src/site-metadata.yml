@@ -340,15 +340,6 @@ intl-explorer:
       name: jesperorb
       url: https://jesperorb.com
   repo_stars: 134
-joy-of-code:
-  contributors:
-    - avatar: https://avatars.githubusercontent.com/u/38083522?v=4
-      github: matiadev
-      location: Zagreb, Croatia
-      name: Matia
-      twitter: joyofcodedev
-      url: https://matia.xyz/
-  repo_stars: 514
 kagi-kite:
   contributors:
     - avatar: https://avatars.githubusercontent.com/u/102177626?v=4
