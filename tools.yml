@@ -1,6 +1,5 @@
 airtable: https://airtable.com
 algolia: https://algolia.com
-anime.js: https://animejs.com
 astro: https://astro.build
 autumn: https://useautumn.com
 aws: https://aws.amazon.com
@@ -26,29 +25,20 @@ dynamodb: https://aws.amazon.com/dynamodb
 echarts: https://github.com/apache/echarts
 electron: https://electronjs.org
 ffmpeg: https://ffmpeg.org
-filepond: https://pqina.nl/filepond
-firebase: https://firebase.google.com
-flamethrower: https://github.com/fireship-io/flamethrower
 flutter: https://flutter.dev
 github pages: https://pages.github.com
 gitpod: https://gitpod.io
 go: https://go.dev
 google tag manager: https://tagmanager.google.com
-gsap: https://gsap.com
 highlight.js: https://highlightjs.org
 huggingface hub: https://github.com/huggingface/huggingface_hub
 huggingface inference: https://github.com/huggingface/text-generation-inference
-hugo: https://gohugo.io
 husky: https://github.com/typicode/husky
 iconify: https://iconify.design
-jest: https://jestjs.io
-js-yaml: https://github.com/nodeca/js-yaml
 jsdoc: https://jsdoc.app
 jsdom: https://github.com/jsdom/jsdom
-json5: https://github.com/json5/json5
 katex: https://github.com/KaTeX/KaTeX
 libvips: https://libvips.org
-liveblocks: https://liveblocks.io
 lodash: https://lodash.com
 lucia: https://github.com/lucia-auth/lucia
 mapbox: https://mapbox.com
@@ -66,9 +56,7 @@ nginx: https://nginx.org
 notion: https://notion.com
 octokit: https://github.com/octokit/octokit.js
 ogl: https://github.com/oframe/ogl
-panzoom: https://github.com/timmywil/panzoom
 passlock: https://github.com/passlock-dev/passlock
-picocss: https://picocss.com
 plausible: https://plausible.io
 playwright: https://playwright.dev
 pm2: https://pm2.io
@@ -86,20 +74,16 @@ release it: https://github.com/release-it/release-it
 remark: https://github.com/remarkjs/remark
 rust: https://rust-lang.org
 sanitize-html: https://github.com/apostrophecms/sanitize-html
-sanity: https://sanity.io
 sass: https://sass-lang.com
 scss: https://sass-lang.com/documentation/syntax
 sentry: https://sentry.io
 shadcn-svelte: https://shadcn-svelte.com
 shiki: https://shiki.style
 skeleton: https://skeleton.dev
-smui: https://sveltematerialui.com
-spotify web api: https://github.com/JMPerez/spotify-web-api-js
 sqlite: https://sqlite.org
 storyblok: https://storyblok.com
 storybook: https://storybook.js.org
 superforms: https://github.com/ciscoheat/sveltekit-superforms
-svelte forms lib: https://github.com/tjinauyeung/svelte-forms-lib
 svelte-enhanced-img: https://svelte.dev/docs/kit/images#sveltejs-enhanced-img
 svelte-highlight: https://github.com/metonym/svelte-highlight
 svelte-intl-precompile: https://github.com/cibernox/svelte-intl-precompile
