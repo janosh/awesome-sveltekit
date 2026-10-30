@@ -7,6 +7,7 @@ aws: https://aws.amazon.com
 better auth: https://better-auth.com
 changesets: https://github.com/changesets/changesets
 chart.js: https://chartjs.org
+cheerpx: https://cheerpx.io
 cloudflare pages: https://pages.cloudflare.com
 cloudflare: https://cloudflare.com
 codemirror: https://codemirror.net
@@ -20,6 +21,7 @@ d3: https://d3js.org
 daisyui: https://daisyui.com
 directus: https://directus.com
 docker: https://docker.com
+drizzle: https://orm.drizzle.team
 dynamodb: https://aws.amazon.com/dynamodb
 echarts: https://github.com/apache/echarts
 electron: https://electronjs.org
@@ -50,6 +52,7 @@ liveblocks: https://liveblocks.io
 lodash: https://lodash.com
 lucia: https://github.com/lucia-auth/lucia
 mapbox: https://mapbox.com
+maplibre: https://maplibre.org
 markedjs: https://marked.js.org
 matter.js: https://brm.io/matter-js
 mdsvex: https://github.com/pngwn/MDsveX
@@ -86,7 +89,9 @@ sanitize-html: https://github.com/apostrophecms/sanitize-html
 sanity: https://sanity.io
 sass: https://sass-lang.com
 scss: https://sass-lang.com/documentation/syntax
+sentry: https://sentry.io
 shadcn-svelte: https://shadcn-svelte.com
+shiki: https://shiki.style
 skeleton: https://skeleton.dev
 smui: https://sveltematerialui.com
 spotify web api: https://github.com/JMPerez/spotify-web-api-js
@@ -118,4 +123,5 @@ vercel: https://vercel.com
 vitest: https://vitest.dev
 wasm: https://webassembly.org
 webgl: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+xterm.js: https://xtermjs.org
 ytdl-core: https://github.com/fent/node-ytdl-core

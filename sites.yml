@@ -801,3 +801,109 @@
   tags: [notes, mind map, kanban]
   date_created: 2026-08-12
   date_added: 2026-09-28
+
+- title: crates.io
+  url: https://crates.io
+  repo: https://github.com/rust-lang/crates.io
+  site_src: https://github.com/rust-lang/crates.io/tree/main/svelte
+  description: The Rust community's package registry, with crate search, docs, versions,
+    download stats and source browsing. Its web UI was rewritten from Ember to SvelteKit.
+  uses: [Rust, PostgreSQL, TypeScript, UnoCSS, Chart.js, Shiki, Storybook, Playwright, Vitest]
+  tags: [dev tools, package registry, monorepo]
+  date_created: 2014-06-30
+  date_added: 2026-10-30
+
+- title: cobalt
+  url: https://cobalt.tools
+  repo: https://github.com/imputnet/cobalt
+  site_src: https://github.com/imputnet/cobalt/tree/main/web
+  description: Ad-free, tracker-free media downloader. Paste a link from YouTube, TikTok,
+    SoundCloud and many more and get the file, with in-browser remuxing via WebAssembly.
+  uses: [TypeScript, MDsveX, FFmpeg, WASM, Docker]
+  tags: [media, video, audio, downloader, privacy, self-hosted]
+  date_created: 2022-07-08
+  date_added: 2026-10-30
+
+- title: WebVM
+  url: https://webvm.io
+  repo: https://github.com/leaningtech/webvm
+  description: A full Linux virtual machine that runs entirely in the browser, with an x86
+    JIT compiled to WebAssembly, a terminal, a persistent disk and Tailscale networking.
+  uses: [CheerpX, WASM, xterm.js, Tailwind]
+  tags: [emulator, wasm, dev tools, terminal]
+  date_created: 2022-01-31
+  date_added: 2026-10-30
+
+- title: Harper
+  url: https://writewithharper.com
+  repo: https://github.com/Automattic/harper
+  site_src: https://github.com/Automattic/harper/tree/master/packages/web
+  npm: https://npmjs.com/package/harper.js
+  description: Offline, privacy-first grammar checker for the web, editors and browsers.
+    Its Rust core compiles to WebAssembly, so the site's live editor checks text without
+    sending it anywhere.
+  uses: [Rust, WASM, TypeScript, Tailwind, Drizzle, Chart.js]
+  tags: [writing, grammar, wasm, privacy, monorepo, NPM package]
+  date_created: 2023-10-22
+  date_added: 2026-10-30
+
+- title: Kagi Kite
+  url: https://news.kagi.com
+  repo: https://github.com/kagisearch/kite-public
+  description: Kagi's news app. Groups stories from many sources into daily, AI-summarized
+    events per category, with maps, timelines and translations.
+  uses: [TypeScript, Tailwind, Drizzle, PostgreSQL, Three.js, Vitest, Testing Library]
+  tags: [news, AI, i18n]
+  date_created: 2024-10-30
+  date_added: 2026-10-30
+
+- title: Syntax.fm
+  url: https://syntax.fm
+  repo: https://github.com/syntaxfm/website
+  description: Website of the Syntax web development podcast, with every episode, show
+    notes, transcripts, a custom audio player and search.
+  uses: [TypeScript, Prisma, Vercel, Sentry, Rehype, Remark, Playwright, Vitest]
+  tags: [podcast, web dev, videos]
+  date_created: 2017-06-19
+  date_added: 2026-10-30
+
+- title: svgl
+  url: https://svgl.app
+  repo: https://github.com/pheralb/svgl
+  description: Library of optimized SVG brand logos with light and dark variants, one-click
+    copy as SVG or framework component, and a public API.
+  uses: [TypeScript, Tailwind, shadcn-svelte, Shiki]
+  tags: [icons, design, graphics, API]
+  date_created: 2022-01-16
+  date_added: 2026-10-30
+
+- title: gpx.studio
+  url: https://gpx.studio
+  repo: https://github.com/gpxstudio/gpx.studio
+  site_src: https://github.com/gpxstudio/gpx.studio/tree/main/website
+  description: Online route planner and GPX editor. Draw, merge, split and clean up tracks
+    on a map, with elevation profiles and 3D terrain, in many languages.
+  uses: [TypeScript, MapLibre, Tailwind, shadcn-svelte, Chart.js, MDsveX]
+  tags: [maps, sports, data viz, i18n]
+  date_created: 2024-04-08
+  date_added: 2026-10-30
+
+- title: Ghostty Config
+  url: https://ghostty.zerebos.com
+  repo: https://github.com/zerebos/ghostty-config
+  description: Visual config generator for the Ghostty terminal. Pick fonts, colors,
+    keybindings and every other option in a form with live previews, then export the file.
+  uses: [TypeScript, Cloudflare, Vitest]
+  tags: [dev tools, terminal, themes]
+  date_created: 2024-08-26
+  date_added: 2026-10-30
+
+- title: Component Party
+  url: https://component-party.dev
+  repo: https://github.com/matschik/component-party.dev
+  description: Side-by-side comparison of component syntax across JS frameworks like Svelte,
+    React, Vue, Angular, Solid and Qwik, from reactivity to lifecycle to forms.
+  uses: [TypeScript, Tailwind, Shiki, Iconify, Playwright]
+  tags: [education, web dev, programming]
+  date_created: 2022-03-28
+  date_added: 2026-10-30

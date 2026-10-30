@@ -36,6 +36,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [NestJS], [TypeScript], [Tailwind], [Flutter], [Python]
 
+1. **[cobalt](https://cobalt.tools)**&nbsp;
+   [[code](https://github.com/imputnet/cobalt/tree/main/web)]&ensp;
+   <a href="https://github.com/imputnet/cobalt">
+   <img src="https://img.shields.io/github/stars/imputnet/cobalt?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Ad-free, tracker-free media downloader. Paste a link from YouTube, TikTok, SoundCloud and many more and get the file, with in-browser remuxing via WebAssembly.<br>
+
+   uses: [TypeScript], [MDsveX], [FFmpeg], [WASM], [Docker]
+
 1. **[Official SvelteKit docs](https://svelte.dev/docs/kit)**&nbsp;
    [[code](https://github.com/sveltejs/kit/tree/main/documentation/docs)]&ensp;
    <a href="https://github.com/sveltejs/kit">
@@ -55,6 +65,26 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    An OSS developer platform to build multi-step automations and internal apps from minimal Python and TypeScript scripts.<br>
 
    uses: [TypeScript], [Tailwind], [cssnano], [Cypress], [PostCSS], [svelte-highlight], [svelte-markdown]
+
+1. **[WebVM](https://webvm.io)**&nbsp;
+   [[code](https://github.com/leaningtech/webvm)]&ensp;
+   <a href="https://github.com/leaningtech/webvm">
+   <img src="https://img.shields.io/github/stars/leaningtech/webvm?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   A full Linux virtual machine that runs entirely in the browser, with an x86 JIT compiled to WebAssembly, a terminal, a persistent disk and Tailscale networking.<br>
+
+   uses: [CheerpX], [WASM], [xterm.js], [Tailwind]
+
+1. **[Harper](https://writewithharper.com)**&nbsp;
+   [[code](https://github.com/Automattic/harper/tree/master/packages/web)]&ensp;
+   <a href="https://github.com/Automattic/harper">
+   <img src="https://img.shields.io/github/stars/Automattic/harper?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Offline, privacy-first grammar checker for the web, editors and browsers. Its Rust core compiles to WebAssembly, so the site&#39;s live editor checks text without sending it anywhere.<br>
+
+   uses: [Rust], [WASM], [TypeScript], [Tailwind], [Drizzle], [Chart.js]
 
 1. **[VERT](https://vert.sh)**&nbsp;
    [[code](https://github.com/VERT-sh/VERT)]&ensp;
@@ -106,6 +136,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [TypeScript], [Docker], [Tailwind], [PostCSS], [Cypress], [Husky]
 
+1. **[svgl](https://svgl.app)**&nbsp;
+   [[code](https://github.com/pheralb/svgl)]&ensp;
+   <a href="https://github.com/pheralb/svgl">
+   <img src="https://img.shields.io/github/stars/pheralb/svgl?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Library of optimized SVG brand logos with light and dark variants, one-click copy as SVG or framework component, and a public API.<br>
+
+   uses: [TypeScript], [Tailwind], [shadcn-svelte], [Shiki]
+
 1. **[Skeleton](https://skeleton.dev)**&nbsp;
    [[code](https://github.com/skeletonlabs/skeleton)]&ensp;
    <a href="https://github.com/skeletonlabs/skeleton">
@@ -115,6 +155,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    A fully featured web UI toolkit for Svelte + Tailwind. Supports SvelteKit, Vite, and Astro.<br>
 
    uses: [Vitest], [PostCSS], [highlight.js], [Tailwind], [TypeScript], [jsdom]
+
+1. **[Ghostty Config](https://ghostty.zerebos.com)**&nbsp;
+   [[code](https://github.com/zerebos/ghostty-config)]&ensp;
+   <a href="https://github.com/zerebos/ghostty-config">
+   <img src="https://img.shields.io/github/stars/zerebos/ghostty-config?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Visual config generator for the Ghostty terminal. Pick fonts, colors, keybindings and every other option in a form with live previews, then export the file.<br>
+
+   uses: [TypeScript], [Cloudflare], [Vitest]
 
 1. **[Fireship](https://fireship.dev)**&nbsp;
    [[code](https://github.com/fireship-io/fireship.io)]&ensp;
@@ -126,6 +176,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [Tailwind], [Hugo], [Firebase], [Flamethrower], [Sass], [PostCSS], [Algolia]
 
+1. **[crates.io](https://crates.io)**&nbsp;
+   [[code](https://github.com/rust-lang/crates.io/tree/main/svelte)]&ensp;
+   <a href="https://github.com/rust-lang/crates.io">
+   <img src="https://img.shields.io/github/stars/rust-lang/crates.io?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   The Rust community&#39;s package registry, with crate search, docs, versions, download stats and source browsing. Its web UI was rewritten from Ember to SvelteKit.<br>
+
+   uses: [Rust], [PostgreSQL], [TypeScript], [UnoCSS], [Chart.js], [Shiki], [Storybook], [Playwright], [Vitest]
+
 1. **[Svelte Material UI](https://sveltematerialui.com)**&nbsp;
    [[code](https://github.com/hperrin/svelte-material-ui/blob/-/packages/site)]&ensp;
    <a href="https://github.com/hperrin/svelte-material-ui">
@@ -135,6 +195,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    Svelte Material UI Components.<br>
 
    uses: [MDsveX], [TypeScript], [highlight.js], [remark], [Sass]
+
+1. **[Component Party](https://component-party.dev)**&nbsp;
+   [[code](https://github.com/matschik/component-party.dev)]&ensp;
+   <a href="https://github.com/matschik/component-party.dev">
+   <img src="https://img.shields.io/github/stars/matschik/component-party.dev?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Side-by-side comparison of component syntax across JS frameworks like Svelte, React, Vue, Angular, Solid and Qwik, from reactivity to lifecycle to forms.<br>
+
+   uses: [TypeScript], [Tailwind], [Shiki], [Iconify], [Playwright]
 
 1. **[Threlte](https://threlte.xyz)**&nbsp;
    [[code](https://github.com/threlte/threlte/blob/-/apps/docs)]&ensp;
@@ -236,6 +306,16 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 
    uses: [svelte-intl-precompile], [sanitize-html]
 
+1. **[gpx.studio](https://gpx.studio)**&nbsp;
+   [[code](https://github.com/gpxstudio/gpx.studio/tree/main/website)]&ensp;
+   <a href="https://github.com/gpxstudio/gpx.studio">
+   <img src="https://img.shields.io/github/stars/gpxstudio/gpx.studio?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Online route planner and GPX editor. Draw, merge, split and clean up tracks on a map, with elevation profiles and 3D terrain, in many languages.<br>
+
+   uses: [TypeScript], [MapLibre], [Tailwind], [shadcn-svelte], [Chart.js], [MDsveX]
+
 1. **[Dotfyle](https://dotfyle.com)**&nbsp;
    [[code](https://github.com/codicocodes/dotfyle)]&ensp;
    <a href="https://github.com/codicocodes/dotfyle">
@@ -245,6 +325,26 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
    Discover and share Neovim configurations and plugins.<br>
 
    uses: [TypeScript], [PNPM], [tRPC-SvelteKit], [Prisma], [Tailwind], [Octokit]
+
+1. **[Syntax.fm](https://syntax.fm)**&nbsp;
+   [[code](https://github.com/syntaxfm/website)]&ensp;
+   <a href="https://github.com/syntaxfm/website">
+   <img src="https://img.shields.io/github/stars/syntaxfm/website?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Website of the Syntax web development podcast, with every episode, show notes, transcripts, a custom audio player and search.<br>
+
+   uses: [TypeScript], [Prisma], [Vercel], [Sentry], [Rehype], [Remark], [Playwright], [Vitest]
+
+1. **[Kagi Kite](https://news.kagi.com)**&nbsp;
+   [[code](https://github.com/kagisearch/kite-public)]&ensp;
+   <a href="https://github.com/kagisearch/kite-public">
+   <img src="https://img.shields.io/github/stars/kagisearch/kite-public?logo=github" alt="GitHub stars" valign="middle">
+   </a>
+
+   Kagi&#39;s news app. Groups stories from many sources into daily, AI-summarized events per category, with maps, timelines and translations.<br>
+
+   uses: [TypeScript], [Tailwind], [Drizzle], [PostgreSQL], [Three.js], [Vitest], [Testing Library]
 
 1. **[svelte-french-toast](https://svelte-french-toast.com)**&nbsp;
    [[code](https://github.com/kbrgl/svelte-french-toast)]&ensp;
@@ -741,6 +841,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [better auth]: https://better-auth.com
 [changesets]: https://github.com/changesets/changesets
 [chart.js]: https://chartjs.org
+[cheerpx]: https://cheerpx.io
 [cloudflare pages]: https://pages.cloudflare.com
 [cloudflare]: https://cloudflare.com
 [codemirror]: https://codemirror.net
@@ -754,6 +855,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [daisyui]: https://daisyui.com
 [directus]: https://directus.com
 [docker]: https://docker.com
+[drizzle]: https://orm.drizzle.team
 [dynamodb]: https://aws.amazon.com/dynamodb
 [echarts]: https://github.com/apache/echarts
 [electron]: https://electronjs.org
@@ -784,6 +886,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [lodash]: https://lodash.com
 [lucia]: https://github.com/lucia-auth/lucia
 [mapbox]: https://mapbox.com
+[maplibre]: https://maplibre.org
 [markedjs]: https://marked.js.org
 [matter.js]: https://brm.io/matter-js
 [mdsvex]: https://github.com/pngwn/MDsveX
@@ -820,7 +923,9 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [sanity]: https://sanity.io
 [sass]: https://sass-lang.com
 [scss]: https://sass-lang.com/documentation/syntax
+[sentry]: https://sentry.io
 [shadcn-svelte]: https://shadcn-svelte.com
+[shiki]: https://shiki.style
 [skeleton]: https://skeleton.dev
 [smui]: https://sveltematerialui.com
 [spotify web api]: https://github.com/JMPerez/spotify-web-api-js
@@ -852,6 +957,7 @@ Awesome examples of SvelteKit in the wild. Visit **[awesome-sveltekit.janosh.dev
 [vitest]: https://vitest.dev
 [wasm]: https://webassembly.org
 [webgl]: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+[xterm.js]: https://xtermjs.org
 [ytdl-core]: https://github.com/fent/node-ytdl-core
 
 ## 🎉 Suggestions Welcome
