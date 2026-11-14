@@ -341,7 +341,6 @@
 
 - title: Intl Explorer
   url: https://intl-explorer.com
-  repo: https://github.com/jesperorb/intl-explorer
   description: A tool for experimenting and trying out the ECMAScript Internationalization API.
   uses: [TypeScript, PNPM, Playwright, Vercel, svelte-highlight, Husky, commitlint]
   tags: [education, tutorials, web dev, interactive, playground]
